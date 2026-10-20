@@ -47,6 +47,8 @@ All labels, checkmarks, prices and buttons are live HTML. Tests cover free previ
 
 The cloud onboarding UI cannot expose the internal Vite server as a user-facing preview. Both development and production servers responded successfully during diagnosis; a working internal server does not create a publicly accessible website. The portable download is provided for trying the game outside this environment.
 
+Workspace file links did not start a download in the user's chat. The verified ZIP is therefore also retained as `downloads/Sundae-Run-Playable.zip` for delivery through the GitHub file-download route. Its archive integrity and embedded HTML hash match `qa/current/release.json`; no application changes or additional test run were needed for this delivery-only copy. Access follows the repository's existing GitHub permissions; its visibility was not changed.
+
 ## Remaining scope
 
 Tyres, suspension, body kits and four further wheel previews are unavailable. Real retailer URLs, affiliate accounts, live prices, verified vehicle fitment, a product CMS and click reporting have not been added. The catalogue and product dialog support optional merchant information independently of game credits; see `docs/PRODUCT_CATALOGUE.md`.

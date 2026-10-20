@@ -4,6 +4,12 @@ A fixed-camera STI customisation screen with a warm Sundae Run workshop, a gold 
 
 ![Sundae Run Garage](qa/current/default-1672.jpg)
 
+## Download and play
+
+**[Download Sundae Run ZIP](https://github.com/bukenbekruip/sundaerun/raw/refs/heads/main/downloads/Sundae-Run-Playable.zip)** (21 MB). Sign in to GitHub with access to this repository if prompted. Extract the ZIP, then open `OPEN-SUNDAE-RUN.html` in Chrome or Edge. No Node.js installation is needed for this download.
+
+If the download does not start, [open the ZIP's GitHub file page](https://github.com/bukenbekruip/sundaerun/blob/main/downloads/Sundae-Run-Playable.zip) and choose **Download raw file**. The file is a copy of the verified portable build recorded in `qa/current/release.json`.
+
 ## Run the source
 
 Use Node.js 22.12 or newer; the cloud setup uses Node 24. Open a terminal in the folder containing `package.json`:
