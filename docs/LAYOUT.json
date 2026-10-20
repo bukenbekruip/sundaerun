@@ -1,0 +1,159 @@
+{
+  "reference_dimensions": {
+    "width": 1672,
+    "height": 941
+  },
+  "bounds_format": "[left,top,right,bottom]",
+  "regions": {
+    "viewport": [
+      0,
+      0,
+      1672,
+      941
+    ],
+    "brand_logo_top_left": [
+      25,
+      0,
+      408,
+      163
+    ],
+    "level_xp": [
+      426,
+      15,
+      736,
+      64
+    ],
+    "money": [
+      1109,
+      14,
+      1321,
+      65
+    ],
+    "day_clock": [
+      1335,
+      14,
+      1545,
+      65
+    ],
+    "settings": [
+      1558,
+      14,
+      1626,
+      65
+    ],
+    "sidebar": [
+      25,
+      166,
+      271,
+      560
+    ],
+    "sidebar_tyre_row": [
+      35,
+      214,
+      262,
+      277
+    ],
+    "sidebar_wheels_row": [
+      35,
+      282,
+      262,
+      343
+    ],
+    "sidebar_paint_row": [
+      35,
+      348,
+      262,
+      412
+    ],
+    "sidebar_suspension_row": [
+      35,
+      419,
+      262,
+      482
+    ],
+    "sidebar_bodykit_row": [
+      35,
+      487,
+      262,
+      550
+    ],
+    "wall_logo": [
+      560,
+      66,
+      980,
+      222
+    ],
+    "sti_hero": [
+      439,
+      265,
+      1327,
+      612
+    ],
+    "rear_wheel_reference": [
+      458,
+      433,
+      551,
+      563
+    ],
+    "front_wheel_reference": [
+      785,
+      425,
+      922,
+      604
+    ],
+    "platform_reference": [
+      256,
+      524,
+      1510,
+      626
+    ],
+    "bottom_wheels_panel": [
+      27,
+      626,
+      971,
+      896
+    ],
+    "wheel_tab": [
+      298,
+      635,
+      448,
+      680
+    ],
+    "tyres_tab": [
+      449,
+      635,
+      599,
+      680
+    ],
+    "wheel_cards_row": [
+      75,
+      690,
+      936,
+      883
+    ],
+    "bottom_paint_panel": [
+      973,
+      626,
+      1346,
+      896
+    ],
+    "paint_swatches": [
+      991,
+      725,
+      1335,
+      830
+    ],
+    "bottom_checkout_panel": [
+      1347,
+      625,
+      1625,
+      895
+    ],
+    "apply_button": [
+      1354,
+      780,
+      1616,
+      879
+    ]
+  }
+}
