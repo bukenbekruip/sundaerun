@@ -7,7 +7,7 @@
     <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
     <meta
       name="description"
-      content="Build your look in the Sundae Run Garage. Customise an STI, Porsche 911 GT3 RS or Toyota 86 with your favourite wheels and paint."
+      content="Build your look in the Sundae Run Garage. Customise an STI, Porsche 911 GT3 RS or Toyota 86 with wheels, tyres, paint, suspension and body kits."
     />
     <title>Sundae Run Garage — Customisation</title>
   </head>
@@ -117,14 +117,14 @@
           <div class="menu-heading">
             <span class="back-chevron" aria-hidden="true">‹</span> CUSTOMISATION
           </div>
-          <button class="category" data-category="tyres" disabled>
+          <button class="category" data-category="tyres" aria-pressed="false">
             <svg viewBox="0 0 28 28" aria-hidden="true">
               <ellipse cx="14" cy="14" rx="9" ry="11" />
               <ellipse cx="14" cy="14" rx="4" ry="7" />
               <path
                 d="m8 5 3 3m-5 3 4 2m-4 5 4 1m8-13-3 3m7 3-4 2m3 5-4 1"
               /></svg
-            ><span>Tyres</span><small>Soon</small>
+            ><span>Tyres</span>
           </button>
           <button
             class="category current"
@@ -144,21 +144,25 @@
               /></svg
             ><span>Paint</span>
           </button>
-          <button class="category" data-category="suspension" disabled>
+          <button
+            class="category"
+            data-category="suspension"
+            aria-pressed="false"
+          >
             <svg viewBox="0 0 28 28" aria-hidden="true">
               <path
                 d="m8 24 12-20m-3 0 6 3M5 21l6 4M10 18l7 2-3-7 7 2-3-7"
               /></svg
-            ><span>Suspension</span><small>Soon</small>
+            ><span>Suspension</span>
           </button>
-          <button class="category" data-category="body" disabled>
+          <button class="category" data-category="body" aria-pressed="false">
             <svg viewBox="0 0 28 28" aria-hidden="true">
               <path
                 d="m3 17 2-5 5-4h9l4 5 2 1v6h-3m-15 0H3v-3m4-4h14M10 8l-2 5m9-5 3 5"
               />
               <circle cx="8" cy="20" r="3" />
               <circle cx="21" cy="20" r="3" /></svg
-            ><span>Body kit</span><small>Soon</small>
+            ><span>Body kit</span>
           </button>
         </nav>
 
@@ -170,11 +174,15 @@
           >
             <div class="panel-heading wheel-panel-heading">
               <h1 id="wheels-title">
-                <svg viewBox="0 0 28 28" aria-hidden="true">
+                <svg
+                  id="parts-title-icon"
+                  viewBox="0 0 28 28"
+                  aria-hidden="true"
+                >
                   <circle cx="14" cy="14" r="11" />
                   <circle cx="14" cy="14" r="3" />
                   <path d="M14 3v8m3 2 8-2m-9 6 4 7m-8-7-4 7m3-11-8-2" /></svg
-                >Wheels &amp; tyres
+                ><span id="parts-title-text">Wheels &amp; tyres</span>
               </h1>
               <div class="wheel-tabs" aria-label="Wheel and tyre category">
                 <button
@@ -183,11 +191,11 @@
                   aria-pressed="true"
                 >
                   Wheels</button
-                ><button data-category="tyres" disabled>
-                  Tyres <small>Soon</small>
+                ><button data-category="tyres" aria-pressed="false">
+                  Tyres
                 </button>
               </div>
-              <div class="rail-arrows">
+              <div id="wheel-navigation" class="rail-arrows">
                 <button
                   class="icon-button"
                   data-wheel-step="-1"
@@ -208,7 +216,25 @@
               class="wheel-products"
               aria-label="Wheel designs"
             ></div>
-            <p class="panel-footnote">
+            <div
+              id="tyre-products"
+              class="part-products"
+              aria-label="Tyre packages"
+              hidden
+            ></div>
+            <div
+              id="suspension-products"
+              class="part-products"
+              aria-label="Suspension packages"
+              hidden
+            ></div>
+            <div
+              id="body-products"
+              class="part-products"
+              aria-label="Body kits"
+              hidden
+            ></div>
+            <p id="parts-footnote" class="panel-footnote">
               Preview your look. Product details are available on each card.
             </p>
           </section>
@@ -301,8 +327,8 @@
       </div>
       <p class="dialog-copy">
         Keep a fitted build for the STI, Porsche 911 GT3 RS and Toyota 86. Your
-        progress is saved in this browser. Previews are free until you apply
-        them.
+        wheels, tyres, paint, suspension and body kits are saved in this
+        browser. Previews are free until you apply them.
       </p>
       <div class="settings-info">
         <span class="settings-info-mark" aria-hidden="true">✓</span>
@@ -320,8 +346,8 @@
       <div id="reset-confirmation" class="reset-confirmation" hidden>
         <h3>Start fresh?</h3>
         <p>
-          This clears the saved builds for all three cars and restores the
-          starting garage credits.
+          This clears every fitted upgrade and saved build for all three cars,
+          then restores the starting garage credits.
         </p>
         <div class="dialog-actions">
           <button id="reset-cancel" class="secondary-button">

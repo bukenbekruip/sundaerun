@@ -1,14 +1,14 @@
 # Sundae Run Garage
 
-A fixed-camera customisation screen with a warm Sundae Run workshop, a gold turntable, live HTML controls, and separate car artwork. Choose a Subaru WRX STI, Porsche 911 GT3 RS or Toyota 86, six wheel concepts and twelve paint colours. Tyres, suspension and body kits remain unavailable until their own artwork and behaviour are prepared.
+A fixed-camera customisation screen with a warm Sundae Run workshop, a gold turntable, live HTML controls, and separate car artwork. Choose a Subaru WRX STI, Porsche 911 GT3 RS or Toyota 86, six wheel concepts and twelve paint colours. Add road, semi-slick or slick tyres, three suspension settings and three carbon body-kit choices. These are concept previews with fictional credits.
 
-![Sundae Run Garage](qa/expanded/sti-default-1672.jpg)
+![Sundae Run Garage](qa/upgrades/sti-body-track-1672.jpg)
 
 ## Download and play
 
-**[Download Sundae Run ZIP](https://github.com/bukenbekruip/sundaerun/raw/refs/heads/main/downloads/Sundae-Run-Playable.zip)** (about 43 MB). Sign in to GitHub with access to this repository if prompted. Extract the ZIP, then open `OPEN-SUNDAE-RUN.html` in Chrome or Edge. No Node.js installation is needed for this download.
+**[Download Sundae Run ZIP](https://github.com/bukenbekruip/sundaerun/raw/refs/heads/main/downloads/Sundae-Run-Playable.zip)** (about 54 MB). Sign in to GitHub with access to this repository if prompted. Extract the ZIP, then open `OPEN-SUNDAE-RUN.html` in Chrome or Edge. No Node.js installation is needed for this download.
 
-If the download does not start, [open the ZIP's GitHub file page](https://github.com/bukenbekruip/sundaerun/blob/main/downloads/Sundae-Run-Playable.zip) and choose **Download raw file**. The file is a copy of the verified three-car build recorded in `qa/expanded/release.json`.
+If the download does not start, [open the ZIP's GitHub file page](https://github.com/bukenbekruip/sundaerun/blob/main/downloads/Sundae-Run-Playable.zip) and choose **Download raw file**. The file is a copy of the verified upgrade build recorded in `qa/upgrades/release.json`.
 
 ## Run the source
 
@@ -38,7 +38,9 @@ The cloud onboarding chat does not expose its internal server as a public previe
 - Previewing is free. Cancel restores the last applied appearance.
 - Applying the default wheel and paint combination costs 3,700 fictional credits, taking the initial balance from 48,320 to 44,620. Owned parts can be fitted again without another charge.
 - Applied choices and balance save in the current browser. Uncommitted previews do not become applied changes after a reload.
-- Each car remembers its applied build and owned parts. Switching cars discards an unfinished free preview and restores that car's saved build; the credit balance is shared. Existing STI saves migrate automatically.
+- Each car remembers its applied build and owned parts. Switching cars discards an unfinished free preview and restores that car's saved build; the credit balance is shared. Existing STI and three-car saves migrate automatically, keeping valid credits and purchases.
+- Tyre changes preserve size and rim geometry. Suspension lowers the rigid body while the wheels stay planted. Street and track kits add carbon splitters, canards and sill details.
+- The original tyre, suspension and body options are included; upgraded parts are purchased once per car.
 - Settings includes a confirmed reset. Missing scene images keep Apply disabled and offer Retry.
 - Desktop artwork and controls scale together. Narrow screens retain the whole car and use readable scrolling controls.
 
@@ -62,7 +64,7 @@ python3 tests/browser-smoke.py
 python3 tests/portable-smoke.py
 ```
 
-Those scripts cover transactions, per-car persistence, save migration, image-load races and failures, all 216 appearances, viewport sizing, protected paint pixels, and the portable build's resource independence. Current screenshots and results are in `qa/expanded/`; the first release's evidence remains in `qa/current/`. The visual review and known limits are recorded in [the progress log](docs/PROGRESS_AND_TEST_RESULTS.md).
+Those scripts cover five-part transactions, per-car persistence, save migration, image-load races and failures, the 216 baseline paint combinations, 486 blue mechanical combinations and representative painted upgrades, viewport sizing, protected paint/tyre pixels and wheel contacts, and the portable build's resource independence. Current upgrade screenshots and results are in `qa/upgrades/`; the earlier three-car release remains in `qa/expanded/`; the first release's evidence remains in `qa/current/`. The visual review and known limits are recorded in [the progress log](docs/PROGRESS_AND_TEST_RESULTS.md).
 
 ## Project map
 
@@ -71,6 +73,7 @@ Those scripts cover transactions, per-car persistence, save migration, image-loa
 - `src/catalogue.js`: catalogue and optional merchant data.
 - `src/scene.js`, `public/assets/scene/`, `public/assets/cars/`: registered full-car wheel variants and vehicle placement.
 - `src/paint-renderer.js`: authored paint regions, protected trim/glass/light/wheel regions and runtime paint rendering.
+- `src/upgrade-renderer.js`, `public/assets/upgrades/`: authored rubber clipping, fixed wheel extraction, rigid body lowering and registered carbon additions.
 - `public/assets/products/`: clean product thumbnails.
 - `reference/`, `source-art/`: original artwork preserved from the handover.
 - `CODEX_HANDOFF.md`, `README_START_HERE.md`, `FILE_MANIFEST.json`: historical transfer context and original checksums.

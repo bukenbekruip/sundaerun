@@ -104,17 +104,129 @@ export const paints = freeze(
   })),
 );
 
-// Tyres can use the same product/merchant/fitment shape when verified assets exist.
-export const tyres = freeze([]);
+export const selectionKinds = freeze([
+  "wheel",
+  "paint",
+  "tyre",
+  "suspension",
+  "body",
+]);
+export const DEFAULT_UPGRADES = freeze({
+  tyre: "road",
+  suspension: "original",
+  body: "original",
+});
+
+const upgrade = (type, id, name, gamePrice, description, attributes = {}) => ({
+  id,
+  type,
+  name,
+  brand: "Sundae Run",
+  gamePrice,
+  gameCurrency: "credits",
+  description,
+  thumbnail: null,
+  included: gamePrice === 0,
+  productStatus: "concept-reference",
+  previewVehicleIds: vehicles.map(({ id: vehicleId }) => vehicleId),
+  previewReady: false,
+  merchant: null,
+  fitment: pendingFitment(),
+  ...attributes,
+});
+
+export const tyres = freeze([
+  upgrade(
+    "tyre",
+    "road",
+    "Performance road",
+    0,
+    "Original road-tyre appearance; standard size and profile.",
+    { tread: "road", keepsOriginalDimensions: true },
+  ),
+  upgrade(
+    "tyre",
+    "sport",
+    "Sport semi-slick",
+    1600,
+    "Semi-slick tread concept; the original tyre size and profile are retained.",
+    { tread: "semi-slick", keepsOriginalDimensions: true },
+  ),
+  upgrade(
+    "tyre",
+    "track",
+    "Track slick",
+    2400,
+    "Smooth track-tread concept; the original tyre size and profile are retained.",
+    { tread: "slick", keepsOriginalDimensions: true },
+  ),
+]);
+
+export const suspensions = freeze([
+  upgrade(
+    "suspension",
+    "original",
+    "Original suspension",
+    0,
+    "The car's original illustrated ride height.",
+    { rideHeight: "original" },
+  ),
+  upgrade(
+    "suspension",
+    "sport",
+    "Sport coilovers",
+    2200,
+    "A composed, lowered sport-stance concept.",
+    { rideHeight: "sport" },
+  ),
+  upgrade(
+    "suspension",
+    "track",
+    "Track coilovers",
+    3400,
+    "A lower track-stance concept.",
+    { rideHeight: "track" },
+  ),
+]);
+
+export const bodykits = freeze([
+  upgrade(
+    "body",
+    "original",
+    "Original bodywork",
+    0,
+    "The current bodywork without additional carbon aero.",
+    { components: [] },
+  ),
+  upgrade(
+    "body",
+    "street",
+    "Street carbon kit",
+    2800,
+    "Carbon splitter, canard and sill additions; original panels and bumpers retained.",
+    { components: ["splitter", "canards", "sills"] },
+  ),
+  upgrade(
+    "body",
+    "track",
+    "Track aero kit",
+    4600,
+    "A more assertive carbon splitter, canard and sill package; no replacement bumpers or widebody conversion.",
+    { components: ["track-splitter", "track-canards", "track-sills"] },
+  ),
+]);
+
 export const catalogue = freeze({
   vehicle: VEHICLE,
   vehicles,
   wheels,
   paints,
   tyres,
+  suspensions,
+  bodykits,
 });
 
-export function getProduct(kind, id) {
+export function getProducts(kind) {
   const collections = {
     wheel: wheels,
     wheels,
@@ -122,19 +234,45 @@ export function getProduct(kind, id) {
     paints,
     tyre: tyres,
     tyres,
+    suspension: suspensions,
+    suspensions,
+    body: bodykits,
+    bodies: bodykits,
+    bodykit: bodykits,
+    bodykits,
   };
-  const collection = Object.hasOwn(collections, kind)
-    ? collections[kind]
-    : null;
-  return collection?.find((product) => product.id === id) ?? null;
+  const collection = Object.hasOwn(collections, kind) ? collections[kind] : [];
+  return collection;
+}
+
+export function getProduct(kind, id) {
+  return getProducts(kind).find((product) => product.id === id) ?? null;
 }
 
 export function getVariantKey(selection) {
-  return `${selection?.vehicle ?? VEHICLE.id}:${selection?.paint}:${selection?.wheel}`;
+  const base = `${selection?.vehicle ?? VEHICLE.id}:${selection?.paint}:${selection?.wheel}`;
+  const choices = Object.fromEntries(
+    Object.entries(DEFAULT_UPGRADES).map(([kind, baseline]) => [
+      kind,
+      selection?.[kind] === undefined ? baseline : selection[kind],
+    ]),
+  );
+  return Object.entries(DEFAULT_UPGRADES).every(
+    ([kind, baseline]) => choices[kind] === baseline,
+  )
+    ? base
+    : `${base}:${choices.tyre}:${choices.suspension}:${choices.body}`;
 }
 
-/** A registered vehicle/wheel render supports the catalogue's paint renderer. */
-export function isPreviewAvailable(selection, variants = {}) {
+const lookup = (entries, key) =>
+  entries instanceof Map ? entries.get(key) : entries?.[key];
+const readyAsset = (entry) =>
+  entry?.ready === true &&
+  typeof entry.src === "string" &&
+  entry.src.trim().length > 0;
+
+/** Every nonbaseline addition requires its own verified preview capability. */
+export function isPreviewAvailable(selection, variants = {}, upgrades = {}) {
   const vehicle = selection?.vehicle ?? VEHICLE.id;
   if (
     !getVehicle(vehicle) ||
@@ -142,13 +280,30 @@ export function isPreviewAvailable(selection, variants = {}) {
     !getProduct("paint", selection?.paint)
   )
     return false;
-  const key = `${vehicle}:${selection.wheel}`;
-  const variant = variants instanceof Map ? variants.get(key) : variants?.[key];
-  return (
-    variant?.ready === true &&
-    typeof variant.src === "string" &&
-    variant.src.trim().length > 0
+  const choices = Object.fromEntries(
+    Object.entries(DEFAULT_UPGRADES).map(([kind, baseline]) => [
+      kind,
+      selection?.[kind] === undefined ? baseline : selection[kind],
+    ]),
   );
+  if (Object.entries(choices).some(([kind, id]) => !getProduct(kind, id)))
+    return false;
+  const key = `${vehicle}:${selection.wheel}`;
+  const variant = lookup(variants, key);
+  if (!readyAsset(variant)) return false;
+  if (
+    choices.suspension !== DEFAULT_UPGRADES.suspension &&
+    variant.suspensionReady !== true
+  )
+    return false;
+  for (const kind of ["tyre", "body"]) {
+    if (
+      choices[kind] !== DEFAULT_UPGRADES[kind] &&
+      !readyAsset(lookup(upgrades, `${vehicle}:${kind}:${choices[kind]}`))
+    )
+      return false;
+  }
+  return true;
 }
 
 /**

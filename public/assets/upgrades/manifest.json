@@ -1,0 +1,308 @@
+{
+  "provenance": "Twelve image_gen concept upgrade assets, published as unchanged byte copies of the recorded generated originals. Original handover references and complete-car renders remain unchanged.",
+  "logicalCanvas": {
+    "width": 1672,
+    "height": 941
+  },
+  "vehicleTransforms": {
+    "sti": {
+      "left": 418.27272727272725,
+      "top": 169.63636363636363,
+      "width": 912,
+      "height": 513.2727272727273
+    },
+    "porsche": {
+      "left": 418.27272727272725,
+      "top": 169.63636363636363,
+      "width": 912,
+      "height": 513.2727272727273
+    },
+    "gt86": {
+      "left": 418.27272727272725,
+      "top": 159.27272727272725,
+      "width": 912,
+      "height": 513.2727272727273
+    }
+  },
+  "registrationNote": "Upgrade images retain the same full canvas, camera and contact coordinates as their vehicle source. Native width may vary by up to two pixels; the compositor registers the whole canvas uniformly. Never subject-fit a tyre pair or draw a full-car tyre source unmasked.",
+  "suspensionMethod": "Suspension uses authored wheel/ground separation and translates the complete rigid body and attached kit by a calibrated integer offset. It does not resize wheels, tyres or painted body geometry.",
+  "validationScope": "Checksums, decoded alpha and camera metadata can detect missing, changed, flattened or recentered assets. Visual browser review is also required for trim attachment, rubber masking and suspension occlusion. These are concept previews, not verified physical fitment or tyre-performance simulations.",
+  "assets": {
+    "sti:tyre:sport": {
+      "src": "assets/upgrades/sti/tyre-sport.png",
+      "width": 1671,
+      "height": 941,
+      "mode": "RGBA",
+      "bytes": 1575591,
+      "sha256": "39b61baad623ae1f3e723417d32381e8b5617ce2899e3a21ed3d5af94034a2a2",
+      "opaqueBoundsAlpha128": [
+        38,
+        174,
+        1667,
+        810
+      ],
+      "alphaStatistics": {
+        "transparentPixels": 809740,
+        "opaquePixelsAlpha128": 743618,
+        "totalPixels": 1572411
+      },
+      "rendering": "fullcar_source_clipped_to_rubber",
+      "sourceCar": "assets/scene/blue-sr-01.png",
+      "sourceGeneratedOriginal": "exec-bc1fdb88-40d4-48d6-9c52-78f38b6e6cb1.png",
+      "generationMethod": "image_gen registered full-car rubber-material edit; runtime draws only authored rubber annuli and preserves the active rim, painted body and original silhouette alpha."
+    },
+    "sti:tyre:track": {
+      "src": "assets/upgrades/sti/tyre-track.png",
+      "width": 1672,
+      "height": 941,
+      "mode": "RGBA",
+      "bytes": 1557287,
+      "sha256": "5efa9282194adf89080be616fe960d642fd963fecd75bf8121086ce1db46772b",
+      "opaqueBoundsAlpha128": [
+        38,
+        174,
+        1667,
+        813
+      ],
+      "alphaStatistics": {
+        "transparentPixels": 809253,
+        "opaquePixelsAlpha128": 747252,
+        "totalPixels": 1573352
+      },
+      "rendering": "fullcar_source_clipped_to_rubber",
+      "sourceCar": "assets/scene/blue-sr-01.png",
+      "sourceGeneratedOriginal": "exec-5dc1787c-901e-4e3f-bee1-dedb8a49cb9e.png",
+      "generationMethod": "image_gen registered full-car rubber-material edit; runtime draws only authored rubber annuli and preserves the active rim, painted body and original silhouette alpha."
+    },
+    "sti:body:street": {
+      "src": "assets/upgrades/sti/body-street.png",
+      "width": 1671,
+      "height": 941,
+      "mode": "RGBA",
+      "bytes": 241581,
+      "sha256": "4fadd6ae3e45a516ed8e6306be46efe95873fdeda1934452b7da29d2ddd036ec",
+      "opaqueBoundsAlpha128": [
+        232,
+        566,
+        1660,
+        789
+      ],
+      "alphaStatistics": {
+        "transparentPixels": 1499089,
+        "opaquePixelsAlpha128": 57359,
+        "totalPixels": 1572411
+      },
+      "rendering": "sparse_registered_additive_carbon_layer",
+      "sourceCar": "assets/scene/blue-sr-01.png",
+      "sourceGeneratedOriginal": "exec-ae93d109-2256-48e4-b8e8-b93b7df3e154.png",
+      "generationMethod": "image_gen sparse, camera-registered additive carbon parts; no original car, painted bumper, glass, wheel or wing layer."
+    },
+    "sti:body:track": {
+      "src": "assets/upgrades/sti/body-track.png",
+      "width": 1671,
+      "height": 941,
+      "mode": "RGBA",
+      "bytes": 300975,
+      "sha256": "3d299b582114540d8c28ceca752d0adc61f3d95446848111b27d66a4acf281c0",
+      "opaqueBoundsAlpha128": [
+        226,
+        564,
+        1664,
+        800
+      ],
+      "alphaStatistics": {
+        "transparentPixels": 1473813,
+        "opaquePixelsAlpha128": 85656,
+        "totalPixels": 1572411
+      },
+      "rendering": "sparse_registered_additive_carbon_layer",
+      "sourceCar": "assets/scene/blue-sr-01.png",
+      "sourceGeneratedOriginal": "exec-2a02ecde-21bd-420c-94e1-751a5a422a82.png",
+      "generationMethod": "image_gen sparse, camera-registered additive carbon parts; no original car, painted bumper, glass, wheel or wing layer."
+    },
+    "porsche:tyre:sport": {
+      "src": "assets/upgrades/porsche/tyre-sport.png",
+      "width": 1672,
+      "height": 941,
+      "mode": "RGBA",
+      "bytes": 1487312,
+      "sha256": "f3919b34c2d851d4d7c4d14c79b1ccd92dbd2e5d56ac8da3da3982142ee4ab41",
+      "opaqueBoundsAlpha128": [
+        35,
+        202,
+        1657,
+        810
+      ],
+      "alphaStatistics": {
+        "transparentPixels": 851229,
+        "opaquePixelsAlpha128": 702017,
+        "totalPixels": 1573352
+      },
+      "rendering": "fullcar_source_clipped_to_rubber",
+      "sourceCar": "assets/cars/porsche/sr-01.png",
+      "sourceGeneratedOriginal": "exec-d761e70a-8d91-44de-8225-2af9296dade3.png",
+      "generationMethod": "image_gen registered full-car rubber-material edit; runtime draws only authored rubber annuli and preserves the active rim, painted body and original silhouette alpha."
+    },
+    "porsche:tyre:track": {
+      "src": "assets/upgrades/porsche/tyre-track.png",
+      "width": 1671,
+      "height": 941,
+      "mode": "RGBA",
+      "bytes": 1489334,
+      "sha256": "faae1adadf7aef097ce9dd5104fa9b4ef590c291567f731a7f11f6f6a458b4b1",
+      "opaqueBoundsAlpha128": [
+        35,
+        202,
+        1658,
+        810
+      ],
+      "alphaStatistics": {
+        "transparentPixels": 847523,
+        "opaquePixelsAlpha128": 692290,
+        "totalPixels": 1572411
+      },
+      "rendering": "fullcar_source_clipped_to_rubber",
+      "sourceCar": "assets/cars/porsche/sr-01.png",
+      "sourceGeneratedOriginal": "exec-d4f4724d-3c8b-4d4f-a899-420131815eab.png",
+      "generationMethod": "image_gen registered full-car rubber-material edit; runtime draws only authored rubber annuli and preserves the active rim, painted body and original silhouette alpha."
+    },
+    "porsche:body:street": {
+      "src": "assets/upgrades/porsche/body-street.png",
+      "width": 1672,
+      "height": 941,
+      "mode": "RGBA",
+      "bytes": 239639,
+      "sha256": "43395e53b24e44ab61cf9604227b5877324d0e8cca1e79ae24c009ae82177c52",
+      "opaqueBoundsAlpha128": [
+        36,
+        563,
+        1652,
+        798
+      ],
+      "alphaStatistics": {
+        "transparentPixels": 1498114,
+        "opaquePixelsAlpha128": 60324,
+        "totalPixels": 1573352
+      },
+      "rendering": "sparse_registered_additive_carbon_layer",
+      "sourceCar": "assets/cars/porsche/sr-01.png",
+      "sourceGeneratedOriginal": "exec-2c6e2803-c87a-4702-969f-f2cb6344ae31.png",
+      "generationMethod": "image_gen sparse, camera-registered additive carbon parts; no original car, painted bumper, glass, wheel or wing layer."
+    },
+    "porsche:body:track": {
+      "src": "assets/upgrades/porsche/body-track.png",
+      "width": 1672,
+      "height": 941,
+      "mode": "RGBA",
+      "bytes": 320264,
+      "sha256": "f344d58cb9a42a83d12899f96b207e5f039cc4a7c534a67bf187f18c1c1ca9e5",
+      "opaqueBoundsAlpha128": [
+        35,
+        519,
+        1657,
+        809
+      ],
+      "alphaStatistics": {
+        "transparentPixels": 1472210,
+        "opaquePixelsAlpha128": 86262,
+        "totalPixels": 1573352
+      },
+      "rendering": "sparse_registered_additive_carbon_layer",
+      "sourceCar": "assets/cars/porsche/sr-01.png",
+      "sourceGeneratedOriginal": "exec-1181001f-351c-4406-81a9-3c44bc50535d.png",
+      "generationMethod": "image_gen sparse, camera-registered additive carbon parts; no original car, painted bumper, glass, wheel or wing layer."
+    },
+    "gt86:tyre:sport": {
+      "src": "assets/upgrades/gt86/tyre-sport.png",
+      "width": 1670,
+      "height": 941,
+      "mode": "RGBA",
+      "bytes": 1540591,
+      "sha256": "45a8bf713a08e9f04b8b3ca160ac14873a3d14f9f0fe2d6f46157ece50ddc5de",
+      "opaqueBoundsAlpha128": [
+        31,
+        190,
+        1667,
+        831
+      ],
+      "alphaStatistics": {
+        "transparentPixels": 815206,
+        "opaquePixelsAlpha128": 739528,
+        "totalPixels": 1571470
+      },
+      "rendering": "fullcar_source_clipped_to_rubber",
+      "sourceCar": "assets/cars/gt86/sr-01.png",
+      "sourceGeneratedOriginal": "exec-1a52b462-0957-40bf-b156-45c05df25f3e.png",
+      "generationMethod": "image_gen registered full-car rubber-material edit; runtime draws only authored rubber annuli and preserves the active rim, painted body and original silhouette alpha."
+    },
+    "gt86:tyre:track": {
+      "src": "assets/upgrades/gt86/tyre-track.png",
+      "width": 1670,
+      "height": 941,
+      "mode": "RGBA",
+      "bytes": 1534503,
+      "sha256": "a91b9c7ffbaa8c8c6696a591fb6e1be41c7d5140e151cd27389d4a480f8f376d",
+      "opaqueBoundsAlpha128": [
+        32,
+        190,
+        1668,
+        831
+      ],
+      "alphaStatistics": {
+        "transparentPixels": 817165,
+        "opaquePixelsAlpha128": 738883,
+        "totalPixels": 1571470
+      },
+      "rendering": "fullcar_source_clipped_to_rubber",
+      "sourceCar": "assets/cars/gt86/sr-01.png",
+      "sourceGeneratedOriginal": "exec-bb239627-3acb-4c49-abb5-af24f431e376.png",
+      "generationMethod": "image_gen registered full-car rubber-material edit; runtime draws only authored rubber annuli and preserves the active rim, painted body and original silhouette alpha."
+    },
+    "gt86:body:street": {
+      "src": "assets/upgrades/gt86/body-street.png",
+      "width": 1672,
+      "height": 941,
+      "mode": "RGBA",
+      "bytes": 200557,
+      "sha256": "2c05cb41d791c262f7083baae00cbbffd94b0b3a369fda67837059001ee38233",
+      "opaqueBoundsAlpha128": [
+        32,
+        580,
+        1657,
+        803
+      ],
+      "alphaStatistics": {
+        "transparentPixels": 1512987,
+        "opaquePixelsAlpha128": 43054,
+        "totalPixels": 1573352
+      },
+      "rendering": "sparse_registered_additive_carbon_layer",
+      "sourceCar": "assets/cars/gt86/sr-01.png",
+      "sourceGeneratedOriginal": "exec-665fd352-3557-46f9-9e2b-13cb56e05b3b.png",
+      "generationMethod": "image_gen sparse, camera-registered additive carbon parts; no original car, painted bumper, glass, wheel or wing layer."
+    },
+    "gt86:body:track": {
+      "src": "assets/upgrades/gt86/body-track.png",
+      "width": 1672,
+      "height": 941,
+      "mode": "RGBA",
+      "bytes": 279909,
+      "sha256": "b5498d2ca4c91f5222becaabcf89a744507df1c14ee59b70f9d6aefc048de4aa",
+      "opaqueBoundsAlpha128": [
+        31,
+        563,
+        1661,
+        812
+      ],
+      "alphaStatistics": {
+        "transparentPixels": 1486973,
+        "opaquePixelsAlpha128": 72050,
+        "totalPixels": 1573352
+      },
+      "rendering": "sparse_registered_additive_carbon_layer",
+      "sourceCar": "assets/cars/gt86/sr-01.png",
+      "sourceGeneratedOriginal": "exec-f6cd0e0e-0d28-4ac4-b2e8-5507686d74c8.png",
+      "generationMethod": "image_gen sparse, camera-registered additive carbon parts; no original car, painted bumper, glass, wheel or wing layer."
+    }
+  }
+}

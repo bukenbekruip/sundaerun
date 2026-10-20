@@ -49,7 +49,7 @@ The cloud onboarding UI cannot expose the internal Vite server as a user-facing 
 
 Workspace file links did not start a download in the user's chat. The verified ZIP is therefore also retained as `downloads/Sundae-Run-Playable.zip` for delivery through the GitHub file-download route. Its archive integrity and embedded HTML hash match `qa/current/release.json`; no application changes or additional test run were needed for this delivery-only copy. Access follows the repository's existing GitHub permissions; its visibility was not changed.
 
-## Remaining scope
+## Remaining scope after the first release (historical)
 
 Tyres, suspension and body kits are unavailable. Real retailer URLs, affiliate accounts, live prices, verified vehicle fitment, a product CMS and click reporting have not been added. The catalogue and product dialog support optional merchant information independently of game credits; see `docs/PRODUCT_CATALOGUE.md`.
 
@@ -79,3 +79,23 @@ The native vehicle selector restores each car's own applied appearance. Ownershi
 Current results, screenshots and source/build hashes are in `qa/expanded/`. Root formatted the source before the tested production build; `build-provenance.json` records the final hashes. `qa/current/` remains historical first-release evidence. No tests were disabled or replaced by zero-test runs.
 
 The rebuilt `downloads/Sundae-Run-Playable.zip` contains exactly the tested portable HTML, opening instructions and the Inter license. Its ZIP integrity and embedded HTML hash were verified; `qa/expanded/release.json` records both hashes. Portable proof used HTTP delivery with every additional request blocked. Direct `file://` opening remains untested because managed Chromium blocks that protocol. A publicly hosted site and restoration in a new cloud task are not claimed.
+
+## Tyres, suspension and carbon-kit release — 2026-10-21
+
+The user requested tyres, suspension and body kits for the existing three cars. All five categories now have live preview controls, itemised pricing, Apply/Cancel and per-car ownership. The new categories each have an included original option and two paid upgrades. Version-4 saves preserve valid version-2 and version-3 credits, purchases and applied builds; migration supplies included baseline upgrades without charging.
+
+### Artwork and geometry
+
+Twelve generated PNGs provide two rubber materials and two sparse carbon packages per car. Misregistered isolated tyre pairs and a misplaced first STI track kit were rejected. Accepted tyre PNGs contain registered full-car sources, but the compositor draws **only authored rubber annuli**, retaining the original rim, brakes and silhouette alpha. Kits add carbon splitters, canards and sill details. No replacement bumpers, widebody conversion, real tyre dimensions or suspension physics are implied.
+
+Suspension separates the authored wheels and translucent ground shadow, then lowers the rigid body by a calibrated integer offset. Initial visual review caught detached lower tyre crescents; contour corrections were completed before the production build. The frozen upgrade-renderer SHA-256 is `8cdb92ad8bb388e9d5944f152870bf17d0e140adc781e55c58b831bf4caad690`. Independent checks covered all 18 wheel bases in white and black at maximum lowering: **36 cases, 144 wheel/contact patches, 3,600 sampled pixels, zero changed RGBA channels**. Six all-rim proof sheets and six actual-interface screenshots were inspected. Their results are retained in `qa/upgrades/suspension-summary.json` and `suspension-results.json`.
+
+The conservative rim guards retain tiny fragments of original STI sidewall lettering with the alternate rubber skins. This is a known cosmetic limit; rim lips and brake geometry take priority. The earlier illustrated paint reflections and small source-detail variations also remain. These are concept previews with unverified physical product fitment.
+
+### Native controls and production verification
+
+The new native cards have accessible selection state and product dialogs; five checkout lines fit the original panel. The small-screen Track-kit description initially overlapped its price; the card-height correction passed the affected phone cases. Independent UI review covered three cars and all three new categories at 1672, 1366, 1920, 390, 360 and 320 pixel widths. Evidence is retained with the `parts-ui-` prefix.
+
+`npm test` passed **27 tests, zero failed/skipped**, including decoded PNG alpha integrity, original artwork preservation, five-part transactions/migrations and exhaustive availability/unique-key enumeration for **5,832 selections**. That enumeration is distinct from browser coverage. `npm run build:standalone` passed with **38 runtime images** and a **72,671,362-byte (69.30 MiB)** portable HTML, inside the 96 MiB budget.
+
+The first portable harness attempt timed out during initial document navigation before executing any checks. A second attempt passed 328 checks before Playwright timed out waiting for scheduled navigation after a paint-button click had completed; no navigation, extra requests or browser errors occurred. The harness now allows 60 seconds for the larger document and the normal Playwright 30-second interaction budget. Native buttons skip the irrelevant navigation wait, while explicit variant/decode/price assertions remain required. Both initial timeout results are preserved, and the final run records per-preview timings. The final portable run passed **1,273 checks, zero failed**, covering all 216 baseline paints, 18 representative upgraded builds and five-part purchases/saves across all three cars. All 38 embedded image keys resolved with **zero additional network requests, console errors or uncaught page errors**. The artifact SHA-256 is `25a1ca01d84f4ce2f2d9b4e8be6acf52d8f3aa454c9d8ac2ee46b3509559eb53`. The extended browser run completed the 216 baseline previews and all 162 STI mechanical selections, then hit 15-second native-input timeouts in the Porsche matrix and painted-maximum case. No pixel or pricing assertion failed in those reported cases. The remaining functional cases are continuing, and the timed-out batches require a harness retry. **Full 486-case browser success is not claimed for this release.** The download contains the independently passed portable artifact; both archive CRC and its embedded HTML SHA-256 match the tested file.

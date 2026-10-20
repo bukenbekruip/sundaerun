@@ -1,0 +1,17 @@
+{
+  "rendererSHA256": "8cdb92ad8bb388e9d5944f152870bf17d0e140adc781e55c58b831bf4caad690",
+  "matchesTestedSHA": true,
+  "cases": 36,
+  "wheelBases": 18,
+  "colours": [
+    "black",
+    "white"
+  ],
+  "samplePatches": 144,
+  "samplePixels": 3600,
+  "changedChannels": 0,
+  "pageErrors": [],
+  "visualReview": "Six native all-rim white/black sheets and six real-app max-drop screenshots inspected. Detached tyre crescents corrected; body fins remain attached.",
+  "roiCaveat": "The coarse lower-left ROI reports 13/20 opaque pixels on Toyota TE37/BBS/OZ at native y765,x710..729. These are the adjacent carbon sill-fin edge and are deliberately excluded from the fixed wheel layer. They are not detached tyre pixels.",
+  "cosmeticLimit": "Small original STI lettering fragments remain in conservative lower rim guard bands for alternate tyre skins. Rim guards were intentionally preserved."
+}

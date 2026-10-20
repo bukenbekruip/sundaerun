@@ -42,7 +42,7 @@ rendered canvas height = 513.2727272727
 
 The blue original-wheel opaque source bounds at alpha ≥128 are `(38,177,1666,811)`, mapped to approximately `(439,266.18,1327,612)`. This fits the approved car silhouette zone and preserves both complete tyre contacts on the platform. Parent visually inspected the static composite at `qa/current/gate-a-static-blue.png` and confirmed viable registration.
 
-Toyota uses the same scale and horizontal position, with its **entire car** shifted up by `19 × 6/11` stage pixels because its generated tyre contacts were lower on the native canvas. Body, tyres and wheels always move together. Narrow layouts derive positions from the same whole-car transform.
+Toyota uses the same scale and horizontal position, with its **entire car** shifted up by `19 × 6/11` stage pixels because its generated tyre contacts were lower on the native canvas. The original placement moves the complete car together. Suspension then translates the rigid body by a small calibrated integer offset while authored wheel and ground masks keep the wheels and contacts fixed. Narrow layouts derive positions from the same whole-car transform.
 
 The image tool introduces minor native-dimension and illustration variance: widths 1670–1672 and heights 941–942. Most opaque edges vary by a few source pixels; the STI OZ roof differs by eight source pixels (about four stage pixels). Never crop-to-content or independently fit body/wheels per variant. Browser screenshots must confirm stable switching and each paint mask must cover the variant's actual panels.
 
@@ -59,3 +59,13 @@ Current visual review and browser evidence are recorded in `docs/PROGRESS_AND_TE
 ## Product thumbnails
 
 All six wheel concepts use clean transparent product images in `public/assets/products/`. Their source renders were inspected on the live charcoal cards. The old selected SR-01 thumbnail included a baked green check and frame; none of the current products uses that image. Only the DOM supplies the active checkmark.
+
+## Tyres, suspension and carbon kits
+
+The user requested all three additional categories. Twelve new PNGs live under `public/assets/upgrades/{sti,porsche,gt86}/`; their metadata is in `public/assets/upgrades/manifest.json`. Each vehicle has sport/track tyre skins and street/track carbon kits. Generated isolated tyre pairs were rejected because their camera/spacing drifted. The accepted tyre sources are full registered car edits: **only rubber pixels inside the authored tyre annulus may be drawn**. Original alpha, diameter, rims and brakes are retained. Never draw a tyre-source PNG as an unconstrained car overlay.
+
+The body-kit images are sparse transparent carbon additions, registered to the same camera. They add splitters, canards and sill details; they do not simulate replacement bumpers or widebody panels. Kits translate with the body. Baseline selections bypass recomposition and keep the earlier wheel/paint renders unchanged.
+
+`src/upgrade-renderer.js` splits authored wheel assemblies and translucent ground shadow from the moving body. Suspension applies a downward integer translation to the rigid body only, with per-car offsets; it never scales the car or wheels. An original-blue paint guard refines arch boundaries independently of selected paint. Review high-contrast paints and every wheel base for detached tyre fragments or captured body trim whenever these contours change.
+
+Current scope supplies 3 cars × 6 rims × 12 paints × 3 tyres × 3 suspension settings × 3 body packages = 5,832 selections. Availability enumeration is distinct from browser/pixel validation; `qa/upgrades/` records the actual tested cases. All packages are illustrated concepts with unverified real-world fitment.

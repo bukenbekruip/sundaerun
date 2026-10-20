@@ -8,7 +8,7 @@ import {
   sep,
 } from "node:path";
 import { fileURLToPath } from "node:url";
-import { variants } from "../src/scene.js";
+import { variants, upgradeVariants } from "../src/scene.js";
 
 // Run after the Vite build. No original artwork or legacy demo is modified.
 const projectRoot = resolve(dirname(fileURLToPath(import.meta.url)), "..");
@@ -16,7 +16,7 @@ const dist = await realpath(
   resolve(process.argv[2] ?? resolve(projectRoot, "dist")),
 );
 const output = resolve(dist, "OPEN-SUNDAE-RUN.html");
-const maximumBytes = 64 * 1024 * 1024;
+const maximumBytes = 96 * 1024 * 1024;
 const mimeTypes = {
   ".png": "image/png",
   ".webp": "image/webp",
@@ -259,6 +259,11 @@ async function collectRuntimeImages() {
         .filter(({ ready }) => ready)
         .map(({ src }) => src),
     ),
+    ...new Set(
+      Object.values(upgradeVariants)
+        .filter(({ ready }) => ready)
+        .map(({ src }) => src),
+    ),
     ...productFiles
       .filter((name) => /\.(?:png|webp)$/i.test(name))
       .map((name) => `assets/products/${name}`),
@@ -373,7 +378,7 @@ if (entryCount !== 1) fail(`expected one module entry, found ${entryCount}`);
 const bytes = Buffer.byteLength(html);
 if (bytes >= maximumBytes)
   fail(
-    `artifact is ${(bytes / 1024 / 1024).toFixed(2)} MiB; reduce unused scene/font payloads below 64 MiB`,
+    `artifact is ${(bytes / 1024 / 1024).toFixed(2)} MiB; reduce unused scene/font payloads below 96 MiB`,
   );
 await writeFile(output, html);
 console.log(`Portable game written: ${output}`);

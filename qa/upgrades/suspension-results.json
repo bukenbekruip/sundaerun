@@ -1,0 +1,1584 @@
+{
+  "rendererSHA256": "8cdb92ad8bb388e9d5944f152870bf17d0e140adc781e55c58b831bf4caad690",
+  "cases": [
+    {
+      "vehicle": "sti",
+      "wheel": "sr-01",
+      "paint": "white",
+      "samples": [
+        {
+          "name": "rear-wheel",
+          "x": 174,
+          "y": 598,
+          "differences": 0
+        },
+        {
+          "name": "front-wheel",
+          "x": 798,
+          "y": 650,
+          "differences": 0
+        },
+        {
+          "name": "rear-contact",
+          "x": 207,
+          "y": 724,
+          "differences": 0
+        },
+        {
+          "name": "front-contact",
+          "x": 850,
+          "y": 805,
+          "differences": 0
+        }
+      ],
+      "missed": [
+        {
+          "name": "rear-lower-left",
+          "count": 0,
+          "bounds": null
+        },
+        {
+          "name": "front-lower-left",
+          "count": 0,
+          "bounds": null
+        }
+      ]
+    },
+    {
+      "vehicle": "sti",
+      "wheel": "te37",
+      "paint": "white",
+      "samples": [
+        {
+          "name": "rear-wheel",
+          "x": 174,
+          "y": 598,
+          "differences": 0
+        },
+        {
+          "name": "front-wheel",
+          "x": 798,
+          "y": 650,
+          "differences": 0
+        },
+        {
+          "name": "rear-contact",
+          "x": 207,
+          "y": 724,
+          "differences": 0
+        },
+        {
+          "name": "front-contact",
+          "x": 850,
+          "y": 805,
+          "differences": 0
+        }
+      ],
+      "missed": [
+        {
+          "name": "rear-lower-left",
+          "count": 0,
+          "bounds": null
+        },
+        {
+          "name": "front-lower-left",
+          "count": 0,
+          "bounds": null
+        }
+      ]
+    },
+    {
+      "vehicle": "sti",
+      "wheel": "bbs-lm",
+      "paint": "white",
+      "samples": [
+        {
+          "name": "rear-wheel",
+          "x": 174,
+          "y": 598,
+          "differences": 0
+        },
+        {
+          "name": "front-wheel",
+          "x": 798,
+          "y": 650,
+          "differences": 0
+        },
+        {
+          "name": "rear-contact",
+          "x": 207,
+          "y": 724,
+          "differences": 0
+        },
+        {
+          "name": "front-contact",
+          "x": 850,
+          "y": 805,
+          "differences": 0
+        }
+      ],
+      "missed": [
+        {
+          "name": "rear-lower-left",
+          "count": 0,
+          "bounds": null
+        },
+        {
+          "name": "front-lower-left",
+          "count": 0,
+          "bounds": null
+        }
+      ]
+    },
+    {
+      "vehicle": "sti",
+      "wheel": "oz",
+      "paint": "white",
+      "samples": [
+        {
+          "name": "rear-wheel",
+          "x": 174,
+          "y": 598,
+          "differences": 0
+        },
+        {
+          "name": "front-wheel",
+          "x": 798,
+          "y": 650,
+          "differences": 0
+        },
+        {
+          "name": "rear-contact",
+          "x": 207,
+          "y": 724,
+          "differences": 0
+        },
+        {
+          "name": "front-contact",
+          "x": 850,
+          "y": 805,
+          "differences": 0
+        }
+      ],
+      "missed": [
+        {
+          "name": "rear-lower-left",
+          "count": 0,
+          "bounds": null
+        },
+        {
+          "name": "front-lower-left",
+          "count": 0,
+          "bounds": null
+        }
+      ]
+    },
+    {
+      "vehicle": "sti",
+      "wheel": "rotiform",
+      "paint": "white",
+      "samples": [
+        {
+          "name": "rear-wheel",
+          "x": 174,
+          "y": 598,
+          "differences": 0
+        },
+        {
+          "name": "front-wheel",
+          "x": 798,
+          "y": 650,
+          "differences": 0
+        },
+        {
+          "name": "rear-contact",
+          "x": 207,
+          "y": 724,
+          "differences": 0
+        },
+        {
+          "name": "front-contact",
+          "x": 850,
+          "y": 805,
+          "differences": 0
+        }
+      ],
+      "missed": [
+        {
+          "name": "rear-lower-left",
+          "count": 0,
+          "bounds": null
+        },
+        {
+          "name": "front-lower-left",
+          "count": 0,
+          "bounds": null
+        }
+      ]
+    },
+    {
+      "vehicle": "sti",
+      "wheel": "work",
+      "paint": "white",
+      "samples": [
+        {
+          "name": "rear-wheel",
+          "x": 174,
+          "y": 598,
+          "differences": 0
+        },
+        {
+          "name": "front-wheel",
+          "x": 798,
+          "y": 650,
+          "differences": 0
+        },
+        {
+          "name": "rear-contact",
+          "x": 207,
+          "y": 724,
+          "differences": 0
+        },
+        {
+          "name": "front-contact",
+          "x": 850,
+          "y": 805,
+          "differences": 0
+        }
+      ],
+      "missed": [
+        {
+          "name": "rear-lower-left",
+          "count": 0,
+          "bounds": null
+        },
+        {
+          "name": "front-lower-left",
+          "count": 0,
+          "bounds": null
+        }
+      ]
+    },
+    {
+      "vehicle": "sti",
+      "wheel": "sr-01",
+      "paint": "black",
+      "samples": [
+        {
+          "name": "rear-wheel",
+          "x": 174,
+          "y": 598,
+          "differences": 0
+        },
+        {
+          "name": "front-wheel",
+          "x": 798,
+          "y": 650,
+          "differences": 0
+        },
+        {
+          "name": "rear-contact",
+          "x": 207,
+          "y": 724,
+          "differences": 0
+        },
+        {
+          "name": "front-contact",
+          "x": 850,
+          "y": 805,
+          "differences": 0
+        }
+      ],
+      "missed": [
+        {
+          "name": "rear-lower-left",
+          "count": 0,
+          "bounds": null
+        },
+        {
+          "name": "front-lower-left",
+          "count": 0,
+          "bounds": null
+        }
+      ]
+    },
+    {
+      "vehicle": "sti",
+      "wheel": "te37",
+      "paint": "black",
+      "samples": [
+        {
+          "name": "rear-wheel",
+          "x": 174,
+          "y": 598,
+          "differences": 0
+        },
+        {
+          "name": "front-wheel",
+          "x": 798,
+          "y": 650,
+          "differences": 0
+        },
+        {
+          "name": "rear-contact",
+          "x": 207,
+          "y": 724,
+          "differences": 0
+        },
+        {
+          "name": "front-contact",
+          "x": 850,
+          "y": 805,
+          "differences": 0
+        }
+      ],
+      "missed": [
+        {
+          "name": "rear-lower-left",
+          "count": 0,
+          "bounds": null
+        },
+        {
+          "name": "front-lower-left",
+          "count": 0,
+          "bounds": null
+        }
+      ]
+    },
+    {
+      "vehicle": "sti",
+      "wheel": "bbs-lm",
+      "paint": "black",
+      "samples": [
+        {
+          "name": "rear-wheel",
+          "x": 174,
+          "y": 598,
+          "differences": 0
+        },
+        {
+          "name": "front-wheel",
+          "x": 798,
+          "y": 650,
+          "differences": 0
+        },
+        {
+          "name": "rear-contact",
+          "x": 207,
+          "y": 724,
+          "differences": 0
+        },
+        {
+          "name": "front-contact",
+          "x": 850,
+          "y": 805,
+          "differences": 0
+        }
+      ],
+      "missed": [
+        {
+          "name": "rear-lower-left",
+          "count": 0,
+          "bounds": null
+        },
+        {
+          "name": "front-lower-left",
+          "count": 0,
+          "bounds": null
+        }
+      ]
+    },
+    {
+      "vehicle": "sti",
+      "wheel": "oz",
+      "paint": "black",
+      "samples": [
+        {
+          "name": "rear-wheel",
+          "x": 174,
+          "y": 598,
+          "differences": 0
+        },
+        {
+          "name": "front-wheel",
+          "x": 798,
+          "y": 650,
+          "differences": 0
+        },
+        {
+          "name": "rear-contact",
+          "x": 207,
+          "y": 724,
+          "differences": 0
+        },
+        {
+          "name": "front-contact",
+          "x": 850,
+          "y": 805,
+          "differences": 0
+        }
+      ],
+      "missed": [
+        {
+          "name": "rear-lower-left",
+          "count": 0,
+          "bounds": null
+        },
+        {
+          "name": "front-lower-left",
+          "count": 0,
+          "bounds": null
+        }
+      ]
+    },
+    {
+      "vehicle": "sti",
+      "wheel": "rotiform",
+      "paint": "black",
+      "samples": [
+        {
+          "name": "rear-wheel",
+          "x": 174,
+          "y": 598,
+          "differences": 0
+        },
+        {
+          "name": "front-wheel",
+          "x": 798,
+          "y": 650,
+          "differences": 0
+        },
+        {
+          "name": "rear-contact",
+          "x": 207,
+          "y": 724,
+          "differences": 0
+        },
+        {
+          "name": "front-contact",
+          "x": 850,
+          "y": 805,
+          "differences": 0
+        }
+      ],
+      "missed": [
+        {
+          "name": "rear-lower-left",
+          "count": 0,
+          "bounds": null
+        },
+        {
+          "name": "front-lower-left",
+          "count": 0,
+          "bounds": null
+        }
+      ]
+    },
+    {
+      "vehicle": "sti",
+      "wheel": "work",
+      "paint": "black",
+      "samples": [
+        {
+          "name": "rear-wheel",
+          "x": 174,
+          "y": 598,
+          "differences": 0
+        },
+        {
+          "name": "front-wheel",
+          "x": 798,
+          "y": 650,
+          "differences": 0
+        },
+        {
+          "name": "rear-contact",
+          "x": 207,
+          "y": 724,
+          "differences": 0
+        },
+        {
+          "name": "front-contact",
+          "x": 850,
+          "y": 805,
+          "differences": 0
+        }
+      ],
+      "missed": [
+        {
+          "name": "rear-lower-left",
+          "count": 0,
+          "bounds": null
+        },
+        {
+          "name": "front-lower-left",
+          "count": 0,
+          "bounds": null
+        }
+      ]
+    },
+    {
+      "vehicle": "porsche",
+      "wheel": "sr-01",
+      "paint": "white",
+      "samples": [
+        {
+          "name": "rear-wheel",
+          "x": 180,
+          "y": 580,
+          "differences": 0
+        },
+        {
+          "name": "front-wheel",
+          "x": 855,
+          "y": 640,
+          "differences": 0
+        },
+        {
+          "name": "rear-contact",
+          "x": 190,
+          "y": 710,
+          "differences": 0
+        },
+        {
+          "name": "front-contact",
+          "x": 860,
+          "y": 802,
+          "differences": 0
+        }
+      ],
+      "missed": [
+        {
+          "name": "rear-lower-left",
+          "count": 0,
+          "bounds": null
+        },
+        {
+          "name": "front-lower-left",
+          "count": 0,
+          "bounds": null
+        }
+      ]
+    },
+    {
+      "vehicle": "porsche",
+      "wheel": "te37",
+      "paint": "white",
+      "samples": [
+        {
+          "name": "rear-wheel",
+          "x": 180,
+          "y": 580,
+          "differences": 0
+        },
+        {
+          "name": "front-wheel",
+          "x": 855,
+          "y": 640,
+          "differences": 0
+        },
+        {
+          "name": "rear-contact",
+          "x": 190,
+          "y": 710,
+          "differences": 0
+        },
+        {
+          "name": "front-contact",
+          "x": 860,
+          "y": 802,
+          "differences": 0
+        }
+      ],
+      "missed": [
+        {
+          "name": "rear-lower-left",
+          "count": 0,
+          "bounds": null
+        },
+        {
+          "name": "front-lower-left",
+          "count": 0,
+          "bounds": null
+        }
+      ]
+    },
+    {
+      "vehicle": "porsche",
+      "wheel": "bbs-lm",
+      "paint": "white",
+      "samples": [
+        {
+          "name": "rear-wheel",
+          "x": 180,
+          "y": 580,
+          "differences": 0
+        },
+        {
+          "name": "front-wheel",
+          "x": 855,
+          "y": 640,
+          "differences": 0
+        },
+        {
+          "name": "rear-contact",
+          "x": 190,
+          "y": 710,
+          "differences": 0
+        },
+        {
+          "name": "front-contact",
+          "x": 860,
+          "y": 802,
+          "differences": 0
+        }
+      ],
+      "missed": [
+        {
+          "name": "rear-lower-left",
+          "count": 0,
+          "bounds": null
+        },
+        {
+          "name": "front-lower-left",
+          "count": 0,
+          "bounds": null
+        }
+      ]
+    },
+    {
+      "vehicle": "porsche",
+      "wheel": "oz",
+      "paint": "white",
+      "samples": [
+        {
+          "name": "rear-wheel",
+          "x": 180,
+          "y": 580,
+          "differences": 0
+        },
+        {
+          "name": "front-wheel",
+          "x": 855,
+          "y": 640,
+          "differences": 0
+        },
+        {
+          "name": "rear-contact",
+          "x": 190,
+          "y": 710,
+          "differences": 0
+        },
+        {
+          "name": "front-contact",
+          "x": 860,
+          "y": 802,
+          "differences": 0
+        }
+      ],
+      "missed": [
+        {
+          "name": "rear-lower-left",
+          "count": 0,
+          "bounds": null
+        },
+        {
+          "name": "front-lower-left",
+          "count": 0,
+          "bounds": null
+        }
+      ]
+    },
+    {
+      "vehicle": "porsche",
+      "wheel": "rotiform",
+      "paint": "white",
+      "samples": [
+        {
+          "name": "rear-wheel",
+          "x": 180,
+          "y": 580,
+          "differences": 0
+        },
+        {
+          "name": "front-wheel",
+          "x": 855,
+          "y": 640,
+          "differences": 0
+        },
+        {
+          "name": "rear-contact",
+          "x": 190,
+          "y": 710,
+          "differences": 0
+        },
+        {
+          "name": "front-contact",
+          "x": 860,
+          "y": 802,
+          "differences": 0
+        }
+      ],
+      "missed": [
+        {
+          "name": "rear-lower-left",
+          "count": 0,
+          "bounds": null
+        },
+        {
+          "name": "front-lower-left",
+          "count": 0,
+          "bounds": null
+        }
+      ]
+    },
+    {
+      "vehicle": "porsche",
+      "wheel": "work",
+      "paint": "white",
+      "samples": [
+        {
+          "name": "rear-wheel",
+          "x": 180,
+          "y": 580,
+          "differences": 0
+        },
+        {
+          "name": "front-wheel",
+          "x": 855,
+          "y": 640,
+          "differences": 0
+        },
+        {
+          "name": "rear-contact",
+          "x": 190,
+          "y": 710,
+          "differences": 0
+        },
+        {
+          "name": "front-contact",
+          "x": 860,
+          "y": 802,
+          "differences": 0
+        }
+      ],
+      "missed": [
+        {
+          "name": "rear-lower-left",
+          "count": 0,
+          "bounds": null
+        },
+        {
+          "name": "front-lower-left",
+          "count": 0,
+          "bounds": null
+        }
+      ]
+    },
+    {
+      "vehicle": "porsche",
+      "wheel": "sr-01",
+      "paint": "black",
+      "samples": [
+        {
+          "name": "rear-wheel",
+          "x": 180,
+          "y": 580,
+          "differences": 0
+        },
+        {
+          "name": "front-wheel",
+          "x": 855,
+          "y": 640,
+          "differences": 0
+        },
+        {
+          "name": "rear-contact",
+          "x": 190,
+          "y": 710,
+          "differences": 0
+        },
+        {
+          "name": "front-contact",
+          "x": 860,
+          "y": 802,
+          "differences": 0
+        }
+      ],
+      "missed": [
+        {
+          "name": "rear-lower-left",
+          "count": 0,
+          "bounds": null
+        },
+        {
+          "name": "front-lower-left",
+          "count": 0,
+          "bounds": null
+        }
+      ]
+    },
+    {
+      "vehicle": "porsche",
+      "wheel": "te37",
+      "paint": "black",
+      "samples": [
+        {
+          "name": "rear-wheel",
+          "x": 180,
+          "y": 580,
+          "differences": 0
+        },
+        {
+          "name": "front-wheel",
+          "x": 855,
+          "y": 640,
+          "differences": 0
+        },
+        {
+          "name": "rear-contact",
+          "x": 190,
+          "y": 710,
+          "differences": 0
+        },
+        {
+          "name": "front-contact",
+          "x": 860,
+          "y": 802,
+          "differences": 0
+        }
+      ],
+      "missed": [
+        {
+          "name": "rear-lower-left",
+          "count": 0,
+          "bounds": null
+        },
+        {
+          "name": "front-lower-left",
+          "count": 0,
+          "bounds": null
+        }
+      ]
+    },
+    {
+      "vehicle": "porsche",
+      "wheel": "bbs-lm",
+      "paint": "black",
+      "samples": [
+        {
+          "name": "rear-wheel",
+          "x": 180,
+          "y": 580,
+          "differences": 0
+        },
+        {
+          "name": "front-wheel",
+          "x": 855,
+          "y": 640,
+          "differences": 0
+        },
+        {
+          "name": "rear-contact",
+          "x": 190,
+          "y": 710,
+          "differences": 0
+        },
+        {
+          "name": "front-contact",
+          "x": 860,
+          "y": 802,
+          "differences": 0
+        }
+      ],
+      "missed": [
+        {
+          "name": "rear-lower-left",
+          "count": 0,
+          "bounds": null
+        },
+        {
+          "name": "front-lower-left",
+          "count": 0,
+          "bounds": null
+        }
+      ]
+    },
+    {
+      "vehicle": "porsche",
+      "wheel": "oz",
+      "paint": "black",
+      "samples": [
+        {
+          "name": "rear-wheel",
+          "x": 180,
+          "y": 580,
+          "differences": 0
+        },
+        {
+          "name": "front-wheel",
+          "x": 855,
+          "y": 640,
+          "differences": 0
+        },
+        {
+          "name": "rear-contact",
+          "x": 190,
+          "y": 710,
+          "differences": 0
+        },
+        {
+          "name": "front-contact",
+          "x": 860,
+          "y": 802,
+          "differences": 0
+        }
+      ],
+      "missed": [
+        {
+          "name": "rear-lower-left",
+          "count": 0,
+          "bounds": null
+        },
+        {
+          "name": "front-lower-left",
+          "count": 0,
+          "bounds": null
+        }
+      ]
+    },
+    {
+      "vehicle": "porsche",
+      "wheel": "rotiform",
+      "paint": "black",
+      "samples": [
+        {
+          "name": "rear-wheel",
+          "x": 180,
+          "y": 580,
+          "differences": 0
+        },
+        {
+          "name": "front-wheel",
+          "x": 855,
+          "y": 640,
+          "differences": 0
+        },
+        {
+          "name": "rear-contact",
+          "x": 190,
+          "y": 710,
+          "differences": 0
+        },
+        {
+          "name": "front-contact",
+          "x": 860,
+          "y": 802,
+          "differences": 0
+        }
+      ],
+      "missed": [
+        {
+          "name": "rear-lower-left",
+          "count": 0,
+          "bounds": null
+        },
+        {
+          "name": "front-lower-left",
+          "count": 0,
+          "bounds": null
+        }
+      ]
+    },
+    {
+      "vehicle": "porsche",
+      "wheel": "work",
+      "paint": "black",
+      "samples": [
+        {
+          "name": "rear-wheel",
+          "x": 180,
+          "y": 580,
+          "differences": 0
+        },
+        {
+          "name": "front-wheel",
+          "x": 855,
+          "y": 640,
+          "differences": 0
+        },
+        {
+          "name": "rear-contact",
+          "x": 190,
+          "y": 710,
+          "differences": 0
+        },
+        {
+          "name": "front-contact",
+          "x": 860,
+          "y": 802,
+          "differences": 0
+        }
+      ],
+      "missed": [
+        {
+          "name": "rear-lower-left",
+          "count": 0,
+          "bounds": null
+        },
+        {
+          "name": "front-lower-left",
+          "count": 0,
+          "bounds": null
+        }
+      ]
+    },
+    {
+      "vehicle": "gt86",
+      "wheel": "sr-01",
+      "paint": "white",
+      "samples": [
+        {
+          "name": "rear-wheel",
+          "x": 176,
+          "y": 596,
+          "differences": 0
+        },
+        {
+          "name": "front-wheel",
+          "x": 852,
+          "y": 667,
+          "differences": 0
+        },
+        {
+          "name": "rear-contact",
+          "x": 185,
+          "y": 733,
+          "differences": 0
+        },
+        {
+          "name": "front-contact",
+          "x": 852,
+          "y": 821,
+          "differences": 0
+        }
+      ],
+      "missed": [
+        {
+          "name": "rear-lower-left",
+          "count": 0,
+          "bounds": null
+        },
+        {
+          "name": "front-lower-left",
+          "count": 0,
+          "bounds": null
+        }
+      ]
+    },
+    {
+      "vehicle": "gt86",
+      "wheel": "te37",
+      "paint": "white",
+      "samples": [
+        {
+          "name": "rear-wheel",
+          "x": 176,
+          "y": 596,
+          "differences": 0
+        },
+        {
+          "name": "front-wheel",
+          "x": 852,
+          "y": 667,
+          "differences": 0
+        },
+        {
+          "name": "rear-contact",
+          "x": 185,
+          "y": 733,
+          "differences": 0
+        },
+        {
+          "name": "front-contact",
+          "x": 852,
+          "y": 821,
+          "differences": 0
+        }
+      ],
+      "missed": [
+        {
+          "name": "rear-lower-left",
+          "count": 0,
+          "bounds": null
+        },
+        {
+          "name": "front-lower-left",
+          "count": 13,
+          "bounds": [
+            710,
+            765,
+            722,
+            765
+          ]
+        }
+      ]
+    },
+    {
+      "vehicle": "gt86",
+      "wheel": "bbs-lm",
+      "paint": "white",
+      "samples": [
+        {
+          "name": "rear-wheel",
+          "x": 176,
+          "y": 596,
+          "differences": 0
+        },
+        {
+          "name": "front-wheel",
+          "x": 852,
+          "y": 667,
+          "differences": 0
+        },
+        {
+          "name": "rear-contact",
+          "x": 185,
+          "y": 733,
+          "differences": 0
+        },
+        {
+          "name": "front-contact",
+          "x": 852,
+          "y": 821,
+          "differences": 0
+        }
+      ],
+      "missed": [
+        {
+          "name": "rear-lower-left",
+          "count": 0,
+          "bounds": null
+        },
+        {
+          "name": "front-lower-left",
+          "count": 20,
+          "bounds": [
+            710,
+            765,
+            729,
+            765
+          ]
+        }
+      ]
+    },
+    {
+      "vehicle": "gt86",
+      "wheel": "oz",
+      "paint": "white",
+      "samples": [
+        {
+          "name": "rear-wheel",
+          "x": 176,
+          "y": 596,
+          "differences": 0
+        },
+        {
+          "name": "front-wheel",
+          "x": 852,
+          "y": 667,
+          "differences": 0
+        },
+        {
+          "name": "rear-contact",
+          "x": 185,
+          "y": 733,
+          "differences": 0
+        },
+        {
+          "name": "front-contact",
+          "x": 852,
+          "y": 821,
+          "differences": 0
+        }
+      ],
+      "missed": [
+        {
+          "name": "rear-lower-left",
+          "count": 0,
+          "bounds": null
+        },
+        {
+          "name": "front-lower-left",
+          "count": 20,
+          "bounds": [
+            710,
+            765,
+            729,
+            765
+          ]
+        }
+      ]
+    },
+    {
+      "vehicle": "gt86",
+      "wheel": "rotiform",
+      "paint": "white",
+      "samples": [
+        {
+          "name": "rear-wheel",
+          "x": 176,
+          "y": 596,
+          "differences": 0
+        },
+        {
+          "name": "front-wheel",
+          "x": 852,
+          "y": 667,
+          "differences": 0
+        },
+        {
+          "name": "rear-contact",
+          "x": 185,
+          "y": 733,
+          "differences": 0
+        },
+        {
+          "name": "front-contact",
+          "x": 852,
+          "y": 821,
+          "differences": 0
+        }
+      ],
+      "missed": [
+        {
+          "name": "rear-lower-left",
+          "count": 0,
+          "bounds": null
+        },
+        {
+          "name": "front-lower-left",
+          "count": 0,
+          "bounds": null
+        }
+      ]
+    },
+    {
+      "vehicle": "gt86",
+      "wheel": "work",
+      "paint": "white",
+      "samples": [
+        {
+          "name": "rear-wheel",
+          "x": 176,
+          "y": 596,
+          "differences": 0
+        },
+        {
+          "name": "front-wheel",
+          "x": 852,
+          "y": 667,
+          "differences": 0
+        },
+        {
+          "name": "rear-contact",
+          "x": 185,
+          "y": 733,
+          "differences": 0
+        },
+        {
+          "name": "front-contact",
+          "x": 852,
+          "y": 821,
+          "differences": 0
+        }
+      ],
+      "missed": [
+        {
+          "name": "rear-lower-left",
+          "count": 0,
+          "bounds": null
+        },
+        {
+          "name": "front-lower-left",
+          "count": 0,
+          "bounds": null
+        }
+      ]
+    },
+    {
+      "vehicle": "gt86",
+      "wheel": "sr-01",
+      "paint": "black",
+      "samples": [
+        {
+          "name": "rear-wheel",
+          "x": 176,
+          "y": 596,
+          "differences": 0
+        },
+        {
+          "name": "front-wheel",
+          "x": 852,
+          "y": 667,
+          "differences": 0
+        },
+        {
+          "name": "rear-contact",
+          "x": 185,
+          "y": 733,
+          "differences": 0
+        },
+        {
+          "name": "front-contact",
+          "x": 852,
+          "y": 821,
+          "differences": 0
+        }
+      ],
+      "missed": [
+        {
+          "name": "rear-lower-left",
+          "count": 0,
+          "bounds": null
+        },
+        {
+          "name": "front-lower-left",
+          "count": 0,
+          "bounds": null
+        }
+      ]
+    },
+    {
+      "vehicle": "gt86",
+      "wheel": "te37",
+      "paint": "black",
+      "samples": [
+        {
+          "name": "rear-wheel",
+          "x": 176,
+          "y": 596,
+          "differences": 0
+        },
+        {
+          "name": "front-wheel",
+          "x": 852,
+          "y": 667,
+          "differences": 0
+        },
+        {
+          "name": "rear-contact",
+          "x": 185,
+          "y": 733,
+          "differences": 0
+        },
+        {
+          "name": "front-contact",
+          "x": 852,
+          "y": 821,
+          "differences": 0
+        }
+      ],
+      "missed": [
+        {
+          "name": "rear-lower-left",
+          "count": 0,
+          "bounds": null
+        },
+        {
+          "name": "front-lower-left",
+          "count": 13,
+          "bounds": [
+            710,
+            765,
+            722,
+            765
+          ]
+        }
+      ]
+    },
+    {
+      "vehicle": "gt86",
+      "wheel": "bbs-lm",
+      "paint": "black",
+      "samples": [
+        {
+          "name": "rear-wheel",
+          "x": 176,
+          "y": 596,
+          "differences": 0
+        },
+        {
+          "name": "front-wheel",
+          "x": 852,
+          "y": 667,
+          "differences": 0
+        },
+        {
+          "name": "rear-contact",
+          "x": 185,
+          "y": 733,
+          "differences": 0
+        },
+        {
+          "name": "front-contact",
+          "x": 852,
+          "y": 821,
+          "differences": 0
+        }
+      ],
+      "missed": [
+        {
+          "name": "rear-lower-left",
+          "count": 0,
+          "bounds": null
+        },
+        {
+          "name": "front-lower-left",
+          "count": 20,
+          "bounds": [
+            710,
+            765,
+            729,
+            765
+          ]
+        }
+      ]
+    },
+    {
+      "vehicle": "gt86",
+      "wheel": "oz",
+      "paint": "black",
+      "samples": [
+        {
+          "name": "rear-wheel",
+          "x": 176,
+          "y": 596,
+          "differences": 0
+        },
+        {
+          "name": "front-wheel",
+          "x": 852,
+          "y": 667,
+          "differences": 0
+        },
+        {
+          "name": "rear-contact",
+          "x": 185,
+          "y": 733,
+          "differences": 0
+        },
+        {
+          "name": "front-contact",
+          "x": 852,
+          "y": 821,
+          "differences": 0
+        }
+      ],
+      "missed": [
+        {
+          "name": "rear-lower-left",
+          "count": 0,
+          "bounds": null
+        },
+        {
+          "name": "front-lower-left",
+          "count": 20,
+          "bounds": [
+            710,
+            765,
+            729,
+            765
+          ]
+        }
+      ]
+    },
+    {
+      "vehicle": "gt86",
+      "wheel": "rotiform",
+      "paint": "black",
+      "samples": [
+        {
+          "name": "rear-wheel",
+          "x": 176,
+          "y": 596,
+          "differences": 0
+        },
+        {
+          "name": "front-wheel",
+          "x": 852,
+          "y": 667,
+          "differences": 0
+        },
+        {
+          "name": "rear-contact",
+          "x": 185,
+          "y": 733,
+          "differences": 0
+        },
+        {
+          "name": "front-contact",
+          "x": 852,
+          "y": 821,
+          "differences": 0
+        }
+      ],
+      "missed": [
+        {
+          "name": "rear-lower-left",
+          "count": 0,
+          "bounds": null
+        },
+        {
+          "name": "front-lower-left",
+          "count": 0,
+          "bounds": null
+        }
+      ]
+    },
+    {
+      "vehicle": "gt86",
+      "wheel": "work",
+      "paint": "black",
+      "samples": [
+        {
+          "name": "rear-wheel",
+          "x": 176,
+          "y": 596,
+          "differences": 0
+        },
+        {
+          "name": "front-wheel",
+          "x": 852,
+          "y": 667,
+          "differences": 0
+        },
+        {
+          "name": "rear-contact",
+          "x": 185,
+          "y": 733,
+          "differences": 0
+        },
+        {
+          "name": "front-contact",
+          "x": 852,
+          "y": 821,
+          "differences": 0
+        }
+      ],
+      "missed": [
+        {
+          "name": "rear-lower-left",
+          "count": 0,
+          "bounds": null
+        },
+        {
+          "name": "front-lower-left",
+          "count": 0,
+          "bounds": null
+        }
+      ]
+    }
+  ],
+  "errors": []
+}

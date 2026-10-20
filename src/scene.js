@@ -1,4 +1,5 @@
-// Each vehicle is a complete render. Body and wheels always move and scale together.
+// Complete-car bases share a uniform stage transform. The upgrade renderer
+// can lower the rigid body while authored wheel/contact masks remain fixed.
 export const STAGE = Object.freeze({ width: 1672, height: 941 });
 export const CAR_TRANSFORM = Object.freeze({
   left: 418.27272727272725,
@@ -26,6 +27,7 @@ export const variants = Object.freeze(
               ? `assets/scene/blue-${wheel}.png`
               : `assets/cars/${vehicle}/${wheel}.png`,
           ready: true,
+          suspensionReady: true,
         }),
       ]),
     ),
@@ -33,6 +35,33 @@ export const variants = Object.freeze(
 );
 export const getSceneVariant = (selection) =>
   variants[`${selection.vehicle ?? "sti"}:${selection.wheel}`];
+export const upgradeVariants = Object.freeze(
+  Object.fromEntries(
+    ["sti", "porsche", "gt86"].flatMap((vehicle) => [
+      ...["sport", "track"].map((id) => [
+        `${vehicle}:tyre:${id}`,
+        Object.freeze({
+          src: `assets/upgrades/${vehicle}/tyre-${id}.png`,
+          ready: true,
+        }),
+      ]),
+      ...["street", "track"].map((id) => [
+        `${vehicle}:body:${id}`,
+        Object.freeze({
+          src: `assets/upgrades/${vehicle}/body-${id}.png`,
+          ready: true,
+        }),
+      ]),
+    ]),
+  ),
+);
+export function getUpgradeVariant(selection, kind) {
+  const baseline = kind === "tyre" ? "road" : "original";
+  const id = selection[kind] ?? baseline;
+  return id === baseline
+    ? null
+    : upgradeVariants[`${selection.vehicle ?? "sti"}:${kind}:${id}`];
+}
 export function assetUrl(path) {
   const key = path.replace(/^\.\//, "");
   return (

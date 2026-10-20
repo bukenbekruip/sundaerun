@@ -1,0 +1,35 @@
+{
+  "edition": "tyres, suspension and carbon kits",
+  "release_date": "2026-10-21",
+  "vehicles": [
+    "Subaru WRX STI",
+    "Porsche 911 GT3 RS",
+    "Toyota 86"
+  ],
+  "wheel_concepts": 6,
+  "paint_colours": 12,
+  "tyre_choices": 3,
+  "suspension_choices": 3,
+  "body_choices": 3,
+  "available_selections": 5832,
+  "portable_html": {
+    "file": "OPEN-SUNDAE-RUN.html",
+    "bytes": 72671362,
+    "sha256": "25a1ca01d84f4ce2f2d9b4e8be6acf52d8f3aa454c9d8ac2ee46b3509559eb53"
+  },
+  "download_zip": {
+    "file": "Sundae-Run-Playable.zip",
+    "bytes": 53825039,
+    "sha256": "6809b71e02b3baad0ff656444bf64e74a72004b215cf722468e726e1460a5755"
+  },
+  "archive_integrity": "verified",
+  "node_tests_passed": 27,
+  "portable_checks_passed": 1273,
+  "portable_coverage_counts": {
+    "baseline_paint": 216,
+    "representative_upgrades": 18
+  },
+  "geometry_cases_passed": 36,
+  "production_browser_status": "Extended matrix still in progress; two 15-second native-input timeouts require harness retries. Full 486-case success is not claimed.",
+  "file_protocol_scope": "Not tested: file:// navigation is blocked by managed Chromium policy."
+}

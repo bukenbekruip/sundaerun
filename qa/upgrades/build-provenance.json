@@ -1,0 +1,110 @@
+{
+  "recorded_at_utc": "2026-10-20T22:05:28.663451+00:00",
+  "scope": "Verified current portable artifact, Node state/art tests and independent geometry checks. Extended browser matrix is still in progress; no full-matrix success, deployed website or fresh-cloud restoration is claimed.",
+  "node_tests_passed": 27,
+  "portable": {
+    "checks_passed": 1273,
+    "checks_failed": 0,
+    "coverage_counts": {
+      "baseline_paint": 216,
+      "representative_upgrades": 18
+    },
+    "extra_network_requests": 0,
+    "artifact_bytes": 72671362
+  },
+  "geometry": {
+    "rendererSHA256": "8cdb92ad8bb388e9d5944f152870bf17d0e140adc781e55c58b831bf4caad690",
+    "matchesTestedSHA": true,
+    "cases": 36,
+    "wheelBases": 18,
+    "colours": [
+      "black",
+      "white"
+    ],
+    "samplePatches": 144,
+    "samplePixels": 3600,
+    "changedChannels": 0,
+    "pageErrors": [],
+    "visualReview": "Six native all-rim white/black sheets and six real-app max-drop screenshots inspected. Detached tyre crescents corrected; body fins remain attached.",
+    "roiCaveat": "The coarse lower-left ROI reports 13/20 opaque pixels on Toyota TE37/BBS/OZ at native y765,x710..729. These are the adjacent carbon sill-fin edge and are deliberately excluded from the fixed wheel layer. They are not detached tyre pixels.",
+    "cosmeticLimit": "Small original STI lettering fragments remain in conservative lower rim guard bands for alternate tyre skins. Rim guards were intentionally preserved."
+  },
+  "browser_extended_status": "Extended matrix still in progress; two 15-second native-input timeouts require harness retries. Full 486-case success is not claimed.",
+  "files": {
+    "src/paint-renderer.js": {
+      "file": "paint-renderer.js",
+      "bytes": 14795,
+      "sha256": "e9701f34ca7d9b61539a1742ced9b1d794df39680e9abe09d92c7a815688caf0"
+    },
+    "src/upgrade-renderer.js": {
+      "file": "upgrade-renderer.js",
+      "bytes": 11645,
+      "sha256": "8cdb92ad8bb388e9d5944f152870bf17d0e140adc781e55c58b831bf4caad690"
+    },
+    "src/scene.js": {
+      "file": "scene.js",
+      "bytes": 2214,
+      "sha256": "f85e0daec6778b10b8a75ac55e888471e239f90b69dd0d931c12f10f6773bc53"
+    },
+    "src/catalogue.js": {
+      "file": "catalogue.js",
+      "bytes": 9071,
+      "sha256": "6baf2f7731921039f29f85d4bea044a9550cb70d6b3b96528a8e3ae8d713481a"
+    },
+    "src/state.js": {
+      "file": "state.js",
+      "bytes": 6637,
+      "sha256": "0decc7542144b3a33b9593e8df29a57c113d7c6217c5ee3c05ce8843560e6231"
+    },
+    "app.js": {
+      "file": "app.js",
+      "bytes": 24674,
+      "sha256": "37fe2e565a6e74f0ffc02fffac6bb7dfd9c7c988d5e8be1efd9234c9ea503bd6"
+    },
+    "index.html": {
+      "file": "index.html",
+      "bytes": 13799,
+      "sha256": "4d8fba83dd140cd72becddd71545dbadcc74b6e5923a9ebe2bdd41a5db750ab9"
+    },
+    "src/ui.css": {
+      "file": "ui.css",
+      "bytes": 48710,
+      "sha256": "22b0f479999b37242326522a42ca38fd29d93e863a261972fcd1e1ac1941a1fe"
+    },
+    "public/assets/cars/manifest.json": {
+      "file": "manifest.json",
+      "bytes": 7344,
+      "sha256": "a3f8adfc0edd5ad26f4f6ce962b742222883caeee32092cd8195ac9e4354fe2f"
+    },
+    "public/assets/upgrades/manifest.json": {
+      "file": "manifest.json",
+      "bytes": 11856,
+      "sha256": "84b69b6cbd41d645488065e4ca0d0784ccb2c340b42b8275deaf78fd3e16d245"
+    },
+    "tests/browser-smoke.py": {
+      "file": "browser-smoke.py",
+      "bytes": 58216,
+      "sha256": "a8a2fdf31018324864ddadf099042cd96bf64312c6b729dcc048cc2f7b93d803"
+    },
+    "tests/portable-smoke.py": {
+      "file": "portable-smoke.py",
+      "bytes": 22870,
+      "sha256": "5299e37107dc9a6a66b88040840ebc937b6a42f43ca042a793df224b6784e4aa"
+    },
+    "dist/index.html": {
+      "file": "index.html",
+      "bytes": 13904,
+      "sha256": "7bee3bb4e4f0ccca9cab414a986fb5b58a52bfa0896d2fd28b6fa6a262b11c46"
+    },
+    "dist/OPEN-SUNDAE-RUN.html": {
+      "file": "OPEN-SUNDAE-RUN.html",
+      "bytes": 72671362,
+      "sha256": "25a1ca01d84f4ce2f2d9b4e8be6acf52d8f3aa454c9d8ac2ee46b3509559eb53"
+    },
+    "dist/assets/index-DkXUO9bB.js": {
+      "file": "index-DkXUO9bB.js",
+      "bytes": 39904,
+      "sha256": "9709cf329874d6a2d8f3b3700ca3a33a34696b263f7b69339ddc8867c6473a7a"
+    }
+  }
+}

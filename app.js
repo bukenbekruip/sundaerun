@@ -4,6 +4,8 @@ import {
   wheels,
   paints,
   vehicles,
+  getProducts,
+  selectionKinds,
   getVehicle,
   getProduct,
   getVariantKey,
@@ -27,9 +29,12 @@ import {
   CAR_TRANSFORMS,
   variants,
   getSceneVariant,
+  upgradeVariants,
+  getUpgradeVariant,
   assetUrl,
 } from "./src/scene.js";
 import { renderCar } from "./src/paint-renderer.js";
+import { renderUpgrades } from "./src/upgrade-renderer.js";
 
 const $ = (selector) => document.querySelector(selector);
 const $$ = (selector) => [...document.querySelectorAll(selector)];
@@ -54,6 +59,38 @@ let toastTimer,
 let lastDisplayed = selectionFor();
 const imageCache = new Map();
 const renderCache = new Map();
+const paintCache = new Map();
+const partCategories = {
+  wheels: "wheel",
+  tyres: "tyre",
+  suspension: "suspension",
+  body: "body",
+  paint: "wheel",
+};
+const partLabels = {
+  wheel: "Wheels",
+  paint: "Paint",
+  tyre: "Tyres",
+  suspension: "Suspension",
+  body: "Body kit",
+};
+const partPanels = {
+  wheel: "#wheel-products",
+  tyre: "#tyre-products",
+  suspension: "#suspension-products",
+  body: "#body-products",
+};
+const partFootnotes = {
+  wheel: "Preview your look. Product details are available on each card.",
+  tyre: "Choose road, semi-slick or slick rubber. Tyre size and profile stay the same.",
+  suspension:
+    "Lower the body while the wheels and tyre contacts stay in place.",
+  body: "Carbon splitter, canard and sill additions. Each kit moves with the car body.",
+};
+const sameBuild = () =>
+  selectionKinds.every((kind) => state.preview[kind] === state.applied[kind]);
+const available = (selection) =>
+  isPreviewAvailable(selection, variants, upgradeVariants);
 
 function positionCar(vehicle) {
   const transform = CAR_TRANSFORMS[vehicle];
@@ -94,6 +131,14 @@ function save() {
   }
   $("#storage-notice").hidden = storageAvailable;
 }
+function keepCategoryVisible() {
+  if (!state || !matchMedia("(max-width: 1099px)").matches) return;
+  const rail = $(".category-menu");
+  const active = rail.querySelector("[data-category].current");
+  if (active)
+    rail.scrollLeft =
+      active.offsetLeft - rail.clientWidth / 2 + active.offsetWidth / 2;
+}
 function resize() {
   const narrow = matchMedia("(max-width: 1099px)").matches;
   $("#stage").style.setProperty(
@@ -105,7 +150,10 @@ function resize() {
     ),
   );
 }
-addEventListener("resize", resize);
+addEventListener("resize", () => {
+  resize();
+  keepCategoryVisible();
+});
 resize();
 function loadImage(src, cache = true) {
   if (!cache)
@@ -153,11 +201,36 @@ async function showCar(selection) {
       rendered = renderCache.get(key);
       renderCache.delete(key);
     } else {
-      rendered = await renderCar(
-        original,
-        selection.vehicle,
-        getProduct("paint", selection.paint),
+      const paintKey = `${selection.vehicle}:${selection.paint}:${selection.wheel}`;
+      let painted = original;
+      if (selection.paint !== "blue") {
+        if (paintCache.has(paintKey)) {
+          painted = paintCache.get(paintKey);
+          paintCache.delete(paintKey);
+        } else {
+          const paintedSource = await renderCar(
+            original,
+            selection.vehicle,
+            getProduct("paint", selection.paint),
+          );
+          painted = await loadImage(paintedSource, false);
+        }
+        paintCache.set(paintKey, painted);
+        while (paintCache.size > 4)
+          paintCache.delete(paintCache.keys().next().value);
+      }
+      const [tyreImage, kitImage] = await Promise.all(
+        ["tyre", "body"].map((kind) => {
+          const variant = getUpgradeVariant(selection, kind);
+          return variant ? loadImage(assetUrl(variant.src)) : null;
+        }),
       );
+      if (request !== artRequest) return;
+      rendered = await renderUpgrades(painted, selection.vehicle, selection, {
+        baseImage: original,
+        tyreImage,
+        kitImage,
+      });
     }
     renderCache.set(key, rendered);
     while (renderCache.size > 8)
@@ -167,7 +240,7 @@ async function showCar(selection) {
     positionCar(selection.vehicle);
     $("#car-image").src = rendered;
     $("#car-image").alt =
-      `${getProduct("paint", selection.paint).name} ${getVehicle(selection.vehicle).name} with ${getProduct("wheel", selection.wheel).name} concept wheels`;
+      `${getProduct("paint", selection.paint).name} ${getVehicle(selection.vehicle).name} with ${getProduct("wheel", selection.wheel).name} wheels, ${getProduct("tyre", selection.tyre).name} tyres, ${getProduct("suspension", selection.suspension).name} and ${getProduct("body", selection.body).name}; concept preview`;
     $("#car-image").dataset.variant = key;
     currentArt = key;
     lastDisplayed = { ...selection };
@@ -265,6 +338,60 @@ function makeControls() {
     );
     $("#paint-options").append(button);
   }
+  for (const kind of ["tyre", "suspension", "body"]) {
+    for (const product of getProducts(kind)) {
+      const card = element("article", "part-card");
+      const button = element("button", "part-select");
+      button.type = "button";
+      button.dataset.partKind = kind;
+      button.dataset.part = product.id;
+      button.setAttribute(
+        "aria-label",
+        `${product.name}, ${product.included ? "included" : product.gamePrice.toLocaleString("en-US") + " garage credits"}`,
+      );
+      const check = element("span", "selection-check", "✓");
+      check.setAttribute("aria-hidden", "true");
+      button.append(
+        check,
+        partIcon(kind),
+        element("span", "part-name", product.name),
+        element("span", "part-description", product.description),
+        element(
+          "span",
+          "part-price",
+          product.included ? "Included" : credits(product.gamePrice),
+        ),
+      );
+      const details = element("button", "product-details", "Product details");
+      details.type = "button";
+      details.dataset.product = product.id;
+      details.dataset.productKind = kind;
+      details.setAttribute("aria-label", `Product details for ${product.name}`);
+      card.append(button, details);
+      $(partPanels[kind]).append(card);
+    }
+  }
+}
+function partIcon(kind) {
+  const svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+  svg.setAttribute("viewBox", "0 0 64 64");
+  svg.setAttribute("aria-hidden", "true");
+  svg.setAttribute("class", "part-icon");
+  svg.setAttribute("width", "64");
+  svg.setAttribute("height", "64");
+  svg.setAttribute("fill", "none");
+  svg.setAttribute("stroke", "currentColor");
+  svg.setAttribute("stroke-width", "1.6");
+  svg.setAttribute("stroke-linecap", "round");
+  svg.setAttribute("stroke-linejoin", "round");
+  const paths = {
+    tyre: '<ellipse cx="32" cy="32" rx="19" ry="26"/><ellipse cx="32" cy="32" rx="9" ry="19"/><path d="m17 15 7 5m-10 6 9 4m-9 10 9 3m24-28-7 5m10 6-9 4m9 10-9 3"/>',
+    suspension:
+      '<path d="m20 55 25-46m-8-3 14 7M13 51l14 8m0-34 17 5-11-13 16 5M21 36l17 5-11-13m-12 19 17 5-11-13"/>',
+    body: '<path d="m8 40 4-13 11-9h19l10 13 4 4v13H8zM19 28h25M9 43h46M5 49h54M13 48l-4 8m42-8 4 8"/><path d="m12 34 8 3m26-3-8 3"/>',
+  };
+  svg.innerHTML = paths[kind];
+  return svg;
 }
 function updateControls() {
   const vehicle = getVehicle(state.vehicle);
@@ -279,34 +406,68 @@ function updateControls() {
     button.classList.toggle("current", active);
   }
   for (const button of $$(".wheel-select")) {
-    const available = isPreviewAvailable(
-      { ...selectionFor(), wheel: button.dataset.wheel },
-      variants,
-    );
-    button.disabled = !available;
+    const ready = available({ ...selectionFor(), wheel: button.dataset.wheel });
+    button.disabled = !ready;
     button.setAttribute(
       "aria-pressed",
       String(button.dataset.wheel === state.preview.wheel),
     );
-    button.querySelector(".availability-label").textContent = available
+    button.querySelector(".availability-label").textContent = ready
       ? "Concept preview"
       : "Preview coming soon";
   }
   for (const button of $$(".paint-option")) {
-    button.disabled = !isPreviewAvailable(
-      { ...selectionFor(), paint: button.dataset.paint },
-      variants,
-    );
+    button.disabled = !available({
+      ...selectionFor(),
+      paint: button.dataset.paint,
+    });
     button.setAttribute(
       "aria-pressed",
       String(button.dataset.paint === state.preview.paint),
     );
   }
+  for (const button of $$(".part-select")) {
+    const kind = button.dataset.partKind;
+    button.disabled = !available({
+      ...selectionFor(),
+      [kind]: button.dataset.part,
+    });
+    button.setAttribute(
+      "aria-pressed",
+      String(button.dataset.part === state.preview[kind]),
+    );
+  }
+  const activeKind = partCategories[state.category];
+  for (const [kind, selector] of Object.entries(partPanels))
+    $(selector).hidden = kind !== activeKind;
+  $("#parts-title-text").textContent =
+    activeKind === "wheel" ? "Wheels & tyres" : partLabels[activeKind];
+  const titleIcon = $("#parts-title-icon");
+  if (titleIcon.dataset.kind !== activeKind) {
+    titleIcon.setAttribute(
+      "viewBox",
+      activeKind === "wheel" ? "0 0 28 28" : "0 0 64 64",
+    );
+    titleIcon.innerHTML =
+      activeKind === "wheel"
+        ? '<circle cx="14" cy="14" r="11"/><circle cx="14" cy="14" r="3"/><path d="M14 3v8m3 2 8-2m-9 6 4 7m-8-7-4 7m3-11-8-2"/>'
+        : partIcon(activeKind).innerHTML;
+    titleIcon.dataset.kind = activeKind;
+  }
+  $("#parts-footnote").textContent = partFootnotes[activeKind];
+  for (const button of $$("[data-wheel-step]"))
+    button.setAttribute(
+      "aria-label",
+      `${Number(button.dataset.wheelStep) < 0 ? "Previous" : "Next"} ${partLabels[activeKind].toLowerCase()}`,
+    );
   for (const button of $$("[data-category]")) {
-    const active = button.dataset.category === state.category;
+    const active = button.closest(".wheel-tabs")
+      ? partCategories[button.dataset.category] === activeKind
+      : button.dataset.category === state.category;
     button.setAttribute("aria-pressed", String(active));
     button.classList.toggle("current", active);
   }
+  keepCategoryVisible();
   const paint = getProduct("paint", state.preview.paint);
   $(".finish-pill").textContent = paint.finish;
   $("#paint-name").textContent = paint.name;
@@ -317,9 +478,7 @@ function updateControls() {
     "aria-label",
     `${state.balance.toLocaleString("en-US")} garage credits`,
   );
-  const altered =
-    state.preview.wheel !== state.applied.wheel ||
-    state.preview.paint !== state.applied.paint;
+  const altered = !sameBuild();
   $("#cancel-preview").disabled = !altered;
   $("#preview-status").textContent = altered
     ? "Preview · not applied"
@@ -334,16 +493,22 @@ function updateCheckout() {
     ...quote.items.map((item) => {
       const row = element("li", "quote-line");
       row.append(
-        element("span", "", item.kind === "wheel" ? "Wheels" : "Paint"),
-        element("strong", "", item.owned ? "Owned" : credits(item.charge)),
+        element("span", "", partLabels[item.kind]),
+        element(
+          "strong",
+          "",
+          item.included
+            ? "Included"
+            : item.owned
+              ? "Owned"
+              : credits(item.charge),
+        ),
       );
       return row;
     }),
   );
   $("#total-price").textContent = credits(quote.total);
-  const same =
-    state.preview.wheel === state.applied.wheel &&
-    state.preview.paint === state.applied.paint;
+  const same = sameBuild();
   const button = $("#apply-button");
   const sceneReady =
     garageReady && currentArt === getVariantKey(selectionFor());
@@ -372,28 +537,28 @@ function render() {
 }
 function preview(changes) {
   const next = selectPreview(state, changes);
-  if (
-    !isPreviewAvailable({ ...next.preview, vehicle: next.vehicle }, variants)
-  ) {
+  if (!available({ ...next.preview, vehicle: next.vehicle })) {
     notify("A matching car render is still being prepared for that option.");
     return;
   }
   state = next;
   render();
 }
-function showProduct(id) {
-  const product = getProduct("wheel", id);
+function showProduct(id, kind = "wheel") {
+  const product = getProduct(kind, id);
   if (!product) return;
   const content = $("#product-content");
   content.replaceChildren();
   const title = element("h2", "", product.name);
   title.id = "product-title";
-  content.append(element("p", "eyebrow", "Wheel details"), title);
-  const image = element("img", "detail-wheel");
-  image.src = assetUrl(product.thumbnail);
-  image.alt = `${product.name} design reference`;
+  content.append(element("p", "eyebrow", `${partLabels[kind]} details`), title);
+  if (product.thumbnail) {
+    const image = element("img", "detail-wheel");
+    image.src = assetUrl(product.thumbnail);
+    image.alt = `${product.name} design reference`;
+    content.append(image);
+  } else content.append(partIcon(kind));
   content.append(
-    image,
     element(
       "p",
       "detail-caption",
@@ -402,9 +567,14 @@ function showProduct(id) {
     element(
       "p",
       "",
-      "This preview shows an in-game wheel design. Physical vehicle fitment has not been verified.",
+      product.description ??
+        "This preview shows an in-game wheel design. Physical vehicle fitment has not been verified.",
     ),
   );
+  if (kind !== "wheel")
+    content.append(
+      element("p", "muted", "Physical vehicle fitment has not been verified."),
+    );
   const link = getMerchantLink(product);
   if (link) {
     if (link.price !== null && link.currency)
@@ -419,7 +589,7 @@ function showProduct(id) {
       element(
         "p",
         "muted",
-        "Check vehicle compatibility, diameter, width, offset, and bolt pattern with the retailer.",
+        "Check vehicle compatibility, measurements and installation requirements with the retailer.",
       ),
     );
     const anchor = element("a", "primary-link", "View at retailer ↗");
@@ -460,6 +630,17 @@ $("#wheel-products").addEventListener("click", (event) => {
     preview({ wheel: select.dataset.wheel, category: "wheels" });
   else if (details) showProduct(details.dataset.product);
 });
+for (const kind of ["tyre", "suspension", "body"])
+  $(partPanels[kind]).addEventListener("click", (event) => {
+    const select = event.target.closest(".part-select[data-part]");
+    const details = event.target.closest(".product-details[data-product]");
+    if (select && !select.disabled)
+      preview({
+        [kind]: select.dataset.part,
+        category: kind === "tyre" ? "tyres" : kind,
+      });
+    else if (details) showProduct(details.dataset.product, kind);
+  });
 $("#paint-options").addEventListener("click", (event) => {
   const button = event.target.closest("[data-paint]");
   if (button && !button.disabled)
@@ -473,32 +654,41 @@ for (const button of $$("[data-category]"))
     const target =
       button.dataset.category === "paint"
         ? $(".paint-option[aria-pressed='true']")
-        : $(".wheel-select[aria-pressed='true']");
+        : $(partPanels[partCategories[state.category]]).querySelector(
+            "[aria-pressed='true']",
+          );
     target?.focus({
       preventScroll: !matchMedia("(max-width: 1099px)").matches,
     });
   });
 for (const button of $$("[data-wheel-step]"))
   button.addEventListener("click", () => {
-    const available = wheels.filter((wheel) =>
-      isPreviewAvailable({ ...selectionFor(), wheel: wheel.id }, variants),
+    const kind = partCategories[state.category];
+    const options = getProducts(kind).filter((product) =>
+      available({ ...selectionFor(), [kind]: product.id }),
     );
-    const index = available.findIndex(
-      (wheel) => wheel.id === state.preview.wheel,
+    const index = options.findIndex(
+      (product) => product.id === state.preview[kind],
     );
     const next =
-      available[
-        (index + Number(button.dataset.wheelStep) + available.length) %
-          available.length
+      options[
+        (index + Number(button.dataset.wheelStep) + options.length) %
+          options.length
       ];
     if (next) {
-      preview({ wheel: next.id, category: "wheels" });
+      preview({
+        [kind]: next.id,
+        category:
+          kind === "tyre" ? "tyres" : kind === "wheel" ? "wheels" : kind,
+      });
       if (matchMedia("(max-width: 1099px)").matches)
-        $(".wheel-select[aria-pressed='true']")?.scrollIntoView({
-          block: "nearest",
-          inline: "center",
-          behavior: "instant",
-        });
+        $(partPanels[kind])
+          .querySelector("[aria-pressed='true']")
+          ?.scrollIntoView({
+            block: "nearest",
+            inline: "center",
+            behavior: "instant",
+          });
     }
   });
 $("#cancel-preview").addEventListener("click", () => {
