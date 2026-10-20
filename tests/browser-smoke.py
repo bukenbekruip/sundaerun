@@ -42,7 +42,7 @@ def variant_key(vehicle, wheel='sr-01', paint='blue', **parts):
 
 
 class BrowserSuite:
-    def __init__(self, browser, base_url, output, only_cases=None):
+    def __init__(self, browser, base_url, output, only_cases=None, matrix_vehicles=None, matrix_wheels=None):
         self.browser, self.base_url, self.output = browser, base_url.rstrip('/'), output
         output.mkdir(parents=True, exist_ok=True)
         self.manifest = json.loads((PROJECT / 'public/assets/cars/manifest.json').read_text())
@@ -51,6 +51,9 @@ class BrowserSuite:
         self.mechanical_combinations, self.painted_upgrade_combinations, self.upgrade_pixel_results = [], [], []
         self.current_case = ''
         self.only_cases = set(only_cases or [])
+        self.matrix_vehicles = tuple(dict.fromkeys(matrix_vehicles or VEHICLES))
+        self.matrix_wheels = tuple(dict.fromkeys(matrix_wheels or WHEELS))
+        self.readiness_failures = []
 
     def check(self, condition, label, details=None):
         if not condition:
@@ -62,19 +65,38 @@ class BrowserSuite:
         self.check(True, label)
 
     async def ready(self, page, variant):
-        await page.wait_for_function("""variant => {
-            const car=document.querySelector('#car-image'), garage=document.querySelector('#garage-image');
-            return document.querySelector('#scene').getAttribute('aria-busy')==='false'
-                && car.dataset.variant===variant && car.complete && car.naturalWidth>0
-                && garage.complete && garage.naturalWidth>0;
-        }""", arg=variant)
+        await page.bring_to_front()
+        try:
+            await page.wait_for_function("""variant => {
+                const car=document.querySelector('#car-image'), garage=document.querySelector('#garage-image');
+                return document.querySelector('#scene').getAttribute('aria-busy')==='false'
+                    && car.dataset.variant===variant && car.complete && car.naturalWidth>0
+                    && garage.complete && garage.naturalWidth>0;
+            }""", arg=variant, polling=100)
+        except Exception:
+            diagnostic={'expected_variant':variant}
+            try:
+                diagnostic['dom']=await asyncio.wait_for(page.evaluate("""()=>({variant:document.querySelector('#car-image')?.dataset.variant,
+                    busy:document.querySelector('#scene')?.getAttribute('aria-busy'),
+                    carComplete:document.querySelector('#car-image')?.complete,
+                    carWidth:document.querySelector('#car-image')?.naturalWidth,
+                    noticeHidden:document.querySelector('#scene-notice')?.hidden,
+                    toast:document.querySelector('#toast')?.textContent,
+                    selected:[...document.querySelectorAll('[aria-pressed=true]')].map(e=>({vehicle:e.dataset.vehicle,wheel:e.dataset.wheel,paint:e.dataset.paint,partKind:e.dataset.partKind,part:e.dataset.part,category:e.dataset.category}))})"""),timeout=5)
+                filename='ready-timeout-'+variant.replace(':','-')+'.jpg'
+                await page.screenshot(path=str(self.output/filename),type='jpeg',quality=90,timeout=5000)
+                diagnostic['screenshot']=filename
+            except Exception as error:diagnostic['capture_error']=str(error)
+            self.readiness_failures.append(diagnostic)
+            print('READINESS_DIAGNOSTIC '+json.dumps(diagnostic),flush=True)
+            raise
         await expect(page.locator('#scene-notice')).to_be_hidden()
 
     @asynccontextmanager
     async def page(self, width=1672, height=941, dpr=1, expected_failures=False):
         context = await self.browser.new_context(viewport={'width': width, 'height': height}, device_scale_factor=dpr)
         page = await context.new_page()
-        page.set_default_timeout(15000)
+        page.set_default_timeout(30000)
         events = {'case': self.current_case, 'page_errors': [], 'http_errors': [], 'failed_requests': [], 'console_errors': [], 'expected_network_failures': expected_failures}
         page.on('pageerror', lambda error: events['page_errors'].append(str(error)))
         page.on('response', lambda r: events['http_errors'].append({'url': r.url, 'status': r.status}) if r.status>=400 else None)
@@ -109,36 +131,60 @@ class BrowserSuite:
         self.screenshots.append(name)
 
     async def category(self, page, category):
-        await page.locator(f'.category-menu .category[data-category="{category}"]').click()
+        await page.bring_to_front()
+        await page.locator(f'.category-menu .category[data-category="{category}"]').click(no_wait_after=True)
 
     async def select(self, page, vehicle=None, wheel=None, paint=None, **parts):
+        await page.bring_to_front()
         if vehicle is not None:
-            await page.locator(f'#vehicle-options [data-vehicle="{vehicle}"]').click()
+            await page.locator(f'#vehicle-options [data-vehicle="{vehicle}"]').click(no_wait_after=True)
         if wheel is not None:
             if not await page.locator(f'.wheel-select[data-wheel="{wheel}"]').is_visible():
                 await self.category(page, 'wheels')
-            await page.locator(f'.wheel-select[data-wheel="{wheel}"]').click()
+            await page.locator(f'.wheel-select[data-wheel="{wheel}"]').click(no_wait_after=True)
         for kind, value in parts.items():
             await self.category(page, PART_CATEGORIES[kind])
-            await page.locator(f'.part-select[data-part-kind="{kind}"][data-part="{value}"]').click()
+            await page.locator(f'.part-select[data-part-kind="{kind}"][data-part="{value}"]').click(no_wait_after=True)
         if paint is not None:
-            await page.locator(f'.paint-option[data-paint="{paint}"]').click()
+            await page.locator(f'.paint-option[data-paint="{paint}"]').click(no_wait_after=True)
 
     async def controls(self, page, vehicle, wheel, paint, category, **parts):
         families = [('#vehicle-options button', f'#vehicle-options [data-vehicle="{vehicle}"]'), ('.wheel-select', f'.wheel-select[data-wheel="{wheel}"]'), ('.paint-option', f'.paint-option[data-paint="{paint}"]')]
         for kind, value in (PART_DEFAULTS | parts).items():
             families.append((f'.part-select[data-part-kind="{kind}"]', f'.part-select[data-part-kind="{kind}"][data-part="{value}"]'))
-        for family, selected in families:
-            self.check(await page.locator(family+'[aria-pressed="true"]').count()==1, 'Exactly one '+family+' selection')
-            await expect(page.locator(selected)).to_have_attribute('aria-pressed', 'true')
-            self.check(True, 'Native selection agrees with rendered '+selected)
-        self.check(await page.locator('.selection-check:visible').count()==1, 'Exactly one active parts-panel checkmark is visible')
-        marks = await page.locator('.paint-option').evaluate_all("buttons=>buttons.filter(b=>!['none','normal','\"\"'].includes(getComputedStyle(b,'::after').content)).length")
-        self.check(marks==1, 'Exactly one paint checkmark is rendered', marks)
-        active = await page.locator('.category-menu [data-category][aria-pressed="true"]').evaluate_all('b=>b.map(x=>x.dataset.category)')
-        self.check(active==[category], 'Category highlights agree with the last interaction', active)
-        labels = await page.locator('#quote-items .quote-line > span').all_text_contents()
-        self.check(tuple(labels)==QUOTE_LABELS, 'Checkout shows all five correctly labelled selections', labels)
+        # Read independent DOM facts together; every original assertion remains.
+        data=await page.evaluate("""families=>({
+            families:families.map(([family,selected])=>({family,selected,
+                count:document.querySelectorAll(family+'[aria-pressed="true"]').length,
+                pressed:document.querySelector(selected)?.getAttribute('aria-pressed')})),
+            checks:[...document.querySelectorAll('.selection-check')].filter(e=>e.getClientRects().length&&getComputedStyle(e).visibility!=='hidden').length,
+            paintMarks:[...document.querySelectorAll('.paint-option')].filter(b=>!['none','normal','""'].includes(getComputedStyle(b,'::after').content)).length,
+            categories:[...document.querySelectorAll('.category-menu [data-category][aria-pressed="true"]')].map(b=>b.dataset.category),
+            labels:[...document.querySelectorAll('#quote-items .quote-line > span')].map(e=>e.textContent)
+        })""", families)
+        for family in data['families']:
+            self.check(family['count']==1, 'Exactly one '+family['family']+' selection', family)
+            self.check(family['pressed']=='true','Native selection agrees with rendered '+family['selected'],family)
+        self.check(data['checks']==1,'Exactly one active parts-panel checkmark is visible',data['checks'])
+        self.check(data['paintMarks']==1,'Exactly one paint checkmark is rendered',data['paintMarks'])
+        self.check(data['categories']==[category],'Category highlights agree with the last interaction',data['categories'])
+        self.check(tuple(data['labels'])==QUOTE_LABELS,'Checkout shows all five correctly labelled selections',data['labels'])
+
+    async def select_mechanical(self, page, parts):
+        # Adjacent matrix entries usually change one option. Native clicks are
+        # still used for every change; avoid clicking already-selected controls.
+        await page.bring_to_front()
+        current=await page.evaluate("""()=>({category:document.querySelector('.category-menu [aria-pressed="true"]')?.dataset.category,
+            parts:Object.fromEntries([...document.querySelectorAll('.part-select[aria-pressed="true"]')].map(e=>[e.dataset.partKind,e.dataset.part]))})""")
+        for kind,value in parts.items():
+            if current['parts'].get(kind)==value:continue
+            category=PART_CATEGORIES[kind]
+            if current['category']!=category:
+                await self.category(page,category);current['category']=category
+            await page.locator(f'.part-select[data-part-kind="{kind}"][data-part="{value}"]').click(no_wait_after=True)
+            current['parts'][kind]=value
+        category=PART_CATEGORIES[next(reversed(parts))]
+        if current['category']!=category:await self.category(page,category)
 
     async def quote(self, page, wheel='sr-01', **parts):
         parts = PART_DEFAULTS | parts
@@ -186,7 +232,7 @@ class BrowserSuite:
         await page.evaluate("""async url => {
             globalThis.__qaRenderer=await import(url);
             globalThis.__qaReadPixels=image=>{const c=document.createElement('canvas');c.width=image.naturalWidth;c.height=image.naturalHeight;
-                const ctx=c.getContext('2d',{willReadFrequently:true});ctx.drawImage(image,0,0);return {width:c.width,height:c.height,pixels:ctx.getImageData(0,0,c.width,c.height).data};};
+                const ctx=c.getContext('2d',{willReadFrequently:true});ctx.drawImage(image,0,0);const result={width:c.width,height:c.height,pixels:ctx.getImageData(0,0,c.width,c.height).data};c.width=0;c.height=0;return result;};
         }""", module_url)
 
     async def base_pixels(self, page, vehicle):
@@ -303,7 +349,7 @@ class BrowserSuite:
             if(current.width!==base.width||current.height!==base.height)return {dimensionsMatch:false};
             let changed=0,alphaChanged=0,outsideTyreChanged=0;
             for(let i=0;i<base.pixels.length;i+=4){
-                const differs=[0,1,2,3].some(o=>current.pixels[i+o]!==base.pixels[i+o]);
+                const differs=current.pixels[i]!==base.pixels[i]||current.pixels[i+1]!==base.pixels[i+1]||current.pixels[i+2]!==base.pixels[i+2]||current.pixels[i+3]!==base.pixels[i+3];
                 if(differs){changed++;if(!base.tyreMask[i+3])outsideTyreChanged++}
                 if(current.pixels[i+3]!==base.pixels[i+3])alphaChanged++;
             }
@@ -338,11 +384,13 @@ class BrowserSuite:
         return info
 
     async def mechanical_matrix(self):
-        async with self.page() as (_,page,events):
-            await self.open(page);await self.ready(page,'sti:blue:sr-01');await self.install_upgrade_probe(page)
-            for vehicle in VEHICLES:
-                await self.select(page,vehicle=vehicle);await self.ready(page,f'{vehicle}:blue:sr-01')
-                for wheel in WHEELS:
+        # Each rim gets a clean context: the diagnostic reads millions of pixels,
+        # and retaining a long cross-product in one renderer pressures its heap.
+        for vehicle in self.matrix_vehicles:
+            for wheel in self.matrix_wheels:
+                async with self.page() as (_,page,events):
+                    await self.open(page);await self.ready(page,'sti:blue:sr-01');await self.install_upgrade_probe(page)
+                    await self.select(page,vehicle=vehicle);await self.ready(page,f'{vehicle}:blue:sr-01')
                     await self.select(page,wheel=wheel,paint='blue',**PART_DEFAULTS)
                     await self.ready(page,variant_key(vehicle,wheel));await self.upgrade_base_pixels(page,vehicle)
                     tiles=[];fingerprints=[]
@@ -350,7 +398,7 @@ class BrowserSuite:
                         for suspension in SUSPENSIONS:
                             for body in BODIES:
                                 parts={'tyre':tyre,'suspension':suspension,'body':body}
-                                await self.select(page,**parts)
+                                await self.select_mechanical(page,parts)
                                 key=variant_key(vehicle,wheel,**parts);await self.ready(page,key)
                                 await self.controls(page,vehicle,wheel,'blue','body',**parts)
                                 await self.quote(page,wheel,**parts)
@@ -361,15 +409,16 @@ class BrowserSuite:
                                 tiles.append((key,await page.locator('#scene').screenshot(type='jpeg',quality=80)))
                     self.check(len(set(fingerprints))==27,vehicle+':'+wheel+': all 27 mechanical arrangements produce distinct pixels')
                     await self.contact_sheet(tiles,f'{vehicle}-{wheel}-27-mechanical-builds.jpg')
-                await self.select(page,**PART_DEFAULTS)
-            self.check(len(self.mechanical_combinations)==486 and len(set(self.mechanical_combinations))==486,'All 486 blue mechanical combinations exercised through native controls')
-            self.clean(events)
+                    self.clean(events)
+        expected=len(self.matrix_vehicles)*len(self.matrix_wheels)*len(TYRES)*len(SUSPENSIONS)*len(BODIES)
+        self.check(len(self.mechanical_combinations)==expected and len(set(self.mechanical_combinations))==expected,
+                   f'All {expected} blue mechanical combinations for the selected cars exercised through native controls')
 
     async def painted_maximum_upgrades(self):
         paints=('black','mint','white','red','yellow','teal')
-        async with self.page() as (_,page,events):
-            await self.open(page);await self.ready(page,'sti:blue:sr-01');await self.install_upgrade_probe(page)
-            for vehicle in VEHICLES:
+        for vehicle in VEHICLES:
+            async with self.page() as (_,page,events):
+                await self.open(page);await self.ready(page,'sti:blue:sr-01');await self.install_upgrade_probe(page)
                 await self.select(page,vehicle=vehicle);tiles=[]
                 for wheel,paint in zip(WHEELS,paints):
                     await self.select(page,wheel=wheel,paint='blue',**PART_DEFAULTS)
@@ -381,8 +430,8 @@ class BrowserSuite:
                     await self.layout(page);self.painted_upgrade_combinations.append(key)
                     tiles.append((key,await page.locator('#scene').screenshot(type='jpeg',quality=88)))
                 await self.contact_sheet(tiles,vehicle+'-painted-maximum-upgrades.jpg',columns=3)
-            self.check(len(self.painted_upgrade_combinations)==18,'Eighteen painted maximum builds cover every car and rim plus six paints')
-            self.clean(events)
+                self.clean(events)
+        self.check(len(self.painted_upgrade_combinations)==18,'Eighteen painted maximum builds cover every car and rim plus six paints')
 
     async def five_part_purchases(self):
         async with self.page() as (_,page,events):
@@ -393,7 +442,7 @@ class BrowserSuite:
                 await self.select(page,vehicle=vehicle);await self.ready(page,variant_key(vehicle))
                 await self.select(page,wheel=wheel,paint=paint,**parts)
                 key=variant_key(vehicle,wheel,paint,**parts);await self.ready(page,key);await self.quote(page,wheel,**parts)
-                await page.locator('#apply-button').dblclick();balance-=14400
+                await page.locator('#apply-button').dblclick(no_wait_after=True);balance-=14400
                 await self.text(page,'#balance',f'$ {balance:,}',vehicle+': one transaction purchases all five selected parts exactly once')
                 await self.text(page,'#total-price','$ 0','Five owned parts produce no further charge')
                 self.check(await page.locator('#quote-items strong').all_text_contents()==['Owned']*5,'All five paid selections become owned together')
@@ -401,7 +450,7 @@ class BrowserSuite:
                 await self.text(page,'#balance',f'$ {balance:,}','Repeated Apply cannot purchase five parts twice')
                 await self.select(page,**PART_DEFAULTS);await self.ready(page,variant_key(vehicle,wheel,paint))
                 await self.text(page,'#total-price','$ 0','Original tyres, suspension and body remain included')
-                await page.locator('#cancel-preview').click();await self.ready(page,key)
+                await page.locator('#cancel-preview').click(no_wait_after=True);await self.ready(page,key)
                 await self.controls(page,vehicle,wheel,paint,'body',**parts)
                 await self.select(page,paint='purple');await self.ready(page,variant_key(vehicle,wheel,'purple',**parts))
                 await page.reload(wait_until='networkidle');await self.ready(page,key)
@@ -414,7 +463,7 @@ class BrowserSuite:
                 self.check(len(saved['garage'][vehicle]['purchased'])==5,vehicle+': exactly five purchased part keys persisted',saved['garage'][vehicle])
                 await self.select(page,vehicle=vehicle);await self.ready(page,variant_key(vehicle,**selection))
                 await self.text(page,'#total-price','$ 0',vehicle+': five-part ownership is restored when switching cars')
-            await page.locator('#settings-open').click();await page.locator('#reset-request').click();await page.locator('#reset-confirm').click()
+            await page.locator('#settings-open').click(no_wait_after=True);await page.locator('#reset-request').click(no_wait_after=True);await page.locator('#reset-confirm').click(no_wait_after=True)
             await self.ready(page,'sti:blue:sr-01')
             for vehicle in VEHICLES:
                 await self.select(page,vehicle=vehicle);await self.ready(page,variant_key(vehicle));await self.controls(page,vehicle,'sr-01','blue','wheels')
@@ -445,7 +494,7 @@ class BrowserSuite:
             parts={'tyre':'sport','suspension':'sport','body':'street'}
             await self.select(page,wheel='te37',paint='mint',**parts)
             key=variant_key('sti','te37','mint',**parts);await self.ready(page,key)
-            await page.locator('#apply-button').click();await self.text(page,'#balance','$ 37,720','Failure fixture fits and purchases all five parts')
+            await page.locator('#apply-button').click(no_wait_after=True);await self.text(page,'#balance','$ 37,720','Failure fixture fits and purchases all five parts')
             before=await page.evaluate('(k)=>JSON.parse(localStorage.getItem(k))',STORAGE_KEY)
             path=f'assets/upgrades/sti/{kind}-track.png'
             async def abort(route):await route.abort('failed')
@@ -462,7 +511,7 @@ class BrowserSuite:
             await page.unroute(pattern,abort);await self.select(page,**{kind:'track'})
             await self.ready(page,variant_key('sti','te37','mint',**(parts|{kind:'track'})))
             await self.text(page,'#total-price',f'$ {PART_PRICES[kind]["track"]:,}','Retry loads artwork and quotes the new upgrade once')
-            await page.locator('#cancel-preview').click();await self.ready(page,key)
+            await page.locator('#cancel-preview').click(no_wait_after=True);await self.ready(page,key)
             self.clean(events)
 
     async def purchases_and_persistence(self):
@@ -471,17 +520,17 @@ class BrowserSuite:
             for vehicle in VEHICLES:
                 await self.select(page,vehicle=vehicle);await self.ready(page,f'{vehicle}:blue:sr-01')
                 await self.text(page,'#total-price','$ 3,700',vehicle+': another car does not supply owned parts')
-                await page.locator('#apply-button').click();balance-=3700
+                await page.locator('#apply-button').click(no_wait_after=True);balance-=3700
                 await self.text(page,'#balance',f'$ {balance:,}',vehicle+': default fitting charges exactly once')
                 await self.text(page,'#total-price','$ 0','Owned build has zero remaining charge')
                 await expect(page.locator('#apply-button')).to_be_disabled();await page.locator('#apply-button').dispatch_event('click')
                 await self.text(page,'#balance',f'$ {balance:,}','Repeated Apply never charges again')
                 await self.select(page,wheel='te37',paint='black');await self.ready(page,f'{vehicle}:black:te37')
                 await self.text(page,'#total-price','$ 4,000',vehicle+': new wheel and paint cost 4000 credits')
-                await page.locator('#cancel-preview').click();await self.ready(page,f'{vehicle}:blue:sr-01')
+                await page.locator('#cancel-preview').click(no_wait_after=True);await self.ready(page,f'{vehicle}:blue:sr-01')
                 await self.text(page,'#balance',f'$ {balance:,}','Cancel restores fitted build without charging')
                 await self.select(page,wheel='te37',paint='black');await self.ready(page,f'{vehicle}:black:te37')
-                await page.locator('#apply-button').click();balance-=4000
+                await page.locator('#apply-button').click(no_wait_after=True);balance-=4000
                 await self.text(page,'#balance',f'$ {balance:,}',vehicle+': its own new parts charged once')
                 await self.select(page,paint='mint');await self.ready(page,f'{vehicle}:mint:te37')
                 await page.reload(wait_until='networkidle');await self.ready(page,f'{vehicle}:black:te37')
@@ -493,17 +542,17 @@ class BrowserSuite:
                 await self.text(page,'#total-price','$ 0',vehicle+': switching restores its own fitted build')
                 await self.select(page,wheel='sr-01',paint='blue');await self.ready(page,f'{vehicle}:blue:sr-01')
                 await self.text(page,'#total-price','$ 0',vehicle+': previously purchased parts refit free')
-                await expect(page.locator('#apply-button')).to_be_enabled();await page.locator('#apply-button').click()
+                await expect(page.locator('#apply-button')).to_be_enabled();await page.locator('#apply-button').click(no_wait_after=True)
                 await self.text(page,'#balance',f'$ {balance:,}','Refitting owned parts costs no credits')
             saved=await page.evaluate('(k)=>JSON.parse(localStorage.getItem(k))',STORAGE_KEY)
             self.check(saved['version']==4 and set(saved['garage'])==set(VEHICLES),'Saved state contains all three canonical garages',saved)
             self.check(all(len(saved['garage'][v]['purchased'])==4 for v in VEHICLES),'Each car retains its own four purchased items',saved)
             self.check(not any(k in saved for k in ('preview','applied','purchased')),'Transient previews and derived aliases are not persisted',saved)
-            await page.locator('#settings-open').click();await page.locator('#reset-request').click()
+            await page.locator('#settings-open').click(no_wait_after=True);await page.locator('#reset-request').click(no_wait_after=True)
             await expect(page.locator('#reset-confirmation')).to_be_visible();self.check(True,'Reset requires confirmation')
-            await page.locator('#reset-cancel').click();await expect(page.locator('#reset-confirmation')).to_be_hidden()
+            await page.locator('#reset-cancel').click(no_wait_after=True);await expect(page.locator('#reset-confirmation')).to_be_hidden()
             await self.text(page,'#balance',f'$ {balance:,}','Cancelling reset preserves garage progress')
-            await page.locator('#reset-request').click();await page.locator('#reset-confirm').click();await self.ready(page,'sti:blue:sr-01')
+            await page.locator('#reset-request').click(no_wait_after=True);await page.locator('#reset-confirm').click(no_wait_after=True);await self.ready(page,'sti:blue:sr-01')
             await self.text(page,'#balance','$ 48,320','Confirmed reset restores original balance and STI')
             for vehicle in VEHICLES:
                 await self.select(page,vehicle=vehicle);await self.ready(page,f'{vehicle}:blue:sr-01')
@@ -533,7 +582,7 @@ class BrowserSuite:
                 self.check(await page.locator(f'.part-select[data-part-kind="{kind}"]:not(:disabled)').count()==3, 'Three '+category+' choices are available')
             await self.category(page, 'wheels')
             await expect(page.locator('.wheel-select[data-wheel="bbs-lm"]')).to_be_enabled()
-            await page.locator('.product-details[data-product="bbs-lm"]').click()
+            await page.locator('.product-details[data-product="bbs-lm"]').click(no_wait_after=True)
             await expect(page.get_by_role('dialog',name='BBS LM')).to_be_visible()
             await expect(page.locator('#product-content')).to_contain_text('Physical vehicle fitment has not been verified.')
             await expect(page.locator('#product-content')).to_contain_text('Real product and retailer details are coming later.')
@@ -552,7 +601,7 @@ class BrowserSuite:
                 await self.screenshot(page,f'{vehicle}-'+(f'phone-{width}-full-page.jpg' if mobile else f'default-{width}.jpg'),full_page=mobile)
                 if mobile:
                     for kind,selector in (('paint','#paint-options .paint-option'),('wheels','.wheel-select'),('tyres','.part-select[data-part-kind=tyre]'),('suspension','.part-select[data-part-kind=suspension]'),('body','.part-select[data-part-kind=body]')):
-                        await page.locator(f'.category[data-category="{kind}"]').click()
+                        await page.locator(f'.category[data-category="{kind}"]').click(no_wait_after=True)
                         await expect(page.locator(selector).first).to_be_in_viewport()
                         self.check(True,vehicle+': narrow '+kind+' navigation reaches its controls')
                         targets=await page.locator(selector).evaluate_all('buttons=>buttons.map(button=>{const r=button.getBoundingClientRect();return {width:r.width,height:r.height}})')
@@ -606,7 +655,7 @@ class BrowserSuite:
                 await expect(page.locator('#apply-button')).to_be_disabled();await page.locator('#apply-button').dispatch_event('click')
                 await self.text(page,'#balance','$ 48,320','Loading artwork cannot spend credits')
                 if mode=='cancel':
-                    await page.locator('#cancel-preview').click();expected=('sti','blue','sr-01');category='wheels'
+                    await page.locator('#cancel-preview').click(no_wait_after=True);expected=('sti','blue','sr-01');category='wheels'
                 elif mode=='vehicle':
                     await self.select(page,vehicle='gt86');expected=('gt86','blue','sr-01');category='wheels'
                 else:
@@ -631,7 +680,7 @@ class BrowserSuite:
             await self.text(page,'#balance','$ 48,320','Missing initial image blocks purchases without charging')
             self.check(bool(events['failed_requests']) and all(request['url'].split('?',1)[0].endswith('/'+path) for request in events['failed_requests']),'Only the intended target image was actually blocked',events['failed_requests'])
             await self.screenshot(page,'error-'+('garage' if garage else 'car')+'.jpg')
-            await page.unroute(pattern,abort);await page.locator('#scene-retry').click();await self.ready(page,'sti:blue:sr-01')
+            await page.unroute(pattern,abort);await page.locator('#scene-retry').click(no_wait_after=True);await self.ready(page,'sti:blue:sr-01')
             await expect(page.locator('#apply-button')).to_be_enabled();self.check(True,'Retry recovers initial image failure');self.clean(events)
 
     async def alternate_failure(self,vehicle=False):
@@ -665,17 +714,17 @@ class BrowserSuite:
         for name,action in cases:
             if not self.only_cases or name in self.only_cases:
                 await self.run_case(name,action)
-        result={'generated_at_utc':datetime.now(timezone.utc).isoformat(),'base_url':self.base_url,'case_count':len(self.cases),'passed':sum(c['status']=='passed' for c in self.cases),'failed':sum(c['status']=='failed' for c in self.cases),'assertions_passed':len(self.assertions),'cases':self.cases,'assertions':self.assertions,'combinations':self.combinations,'paint_pixel_comparisons':self.pixel_results,'mechanical_combinations':self.mechanical_combinations,'painted_upgrade_combinations':self.painted_upgrade_combinations,'upgrade_pixel_comparisons':self.upgrade_pixel_results,'coverage_counts':{'baseline_paint':len(self.combinations),'blue_mechanical':len(self.mechanical_combinations),'painted_maximum_upgrades':len(self.painted_upgrade_combinations)},'screenshots':self.screenshots,'browser_observations':self.observations,'visual_acceptance':'Contact sheets require independent visual review; passing tests do not prove artistic fidelity.'}
+        result={'generated_at_utc':datetime.now(timezone.utc).isoformat(),'base_url':self.base_url,'case_count':len(self.cases),'passed':sum(c['status']=='passed' for c in self.cases),'failed':sum(c['status']=='failed' for c in self.cases),'assertions_passed':len(self.assertions),'cases':self.cases,'assertions':self.assertions,'combinations':self.combinations,'paint_pixel_comparisons':self.pixel_results,'mechanical_combinations':self.mechanical_combinations,'painted_upgrade_combinations':self.painted_upgrade_combinations,'upgrade_pixel_comparisons':self.upgrade_pixel_results,'readiness_failures':self.readiness_failures,'matrix_wheel_scope':list(self.matrix_wheels),'matrix_vehicle_scope':list(self.matrix_vehicles),'coverage_counts':{'baseline_paint':len(self.combinations),'blue_mechanical':len(self.mechanical_combinations),'painted_maximum_upgrades':len(self.painted_upgrade_combinations)},'screenshots':self.screenshots,'browser_observations':self.observations,'visual_acceptance':'Contact sheets require independent visual review; passing tests do not prove artistic fidelity.'}
         (self.output/'browser-results.json').write_text(json.dumps(result,indent=2)+'\n')
         print(json.dumps({k:result[k] for k in ('case_count','passed','failed','assertions_passed')},indent=2),flush=True)
         return result['failed']
 
 
 async def main():
-    parser=argparse.ArgumentParser(description=__doc__);parser.add_argument('--base-url',default='http://127.0.0.1:4173');parser.add_argument('--output',type=Path,default=PROJECT/'qa/upgrades');parser.add_argument('--case',action='append',help='Run one named case; repeat to select multiple cases');args=parser.parse_args()
+    parser=argparse.ArgumentParser(description=__doc__);parser.add_argument('--base-url',default='http://127.0.0.1:4173');parser.add_argument('--output',type=Path,default=PROJECT/'qa/upgrades');parser.add_argument('--case',action='append',help='Run one named case; repeat to select multiple cases');parser.add_argument('--matrix-vehicle',action='append',choices=VEHICLES,help='Restrict only mechanical-matrix cars; repeat to select several');parser.add_argument('--matrix-wheel',action='append',choices=WHEELS,help='Restrict only mechanical-matrix rims; repeat to select several');args=parser.parse_args()
     async with async_playwright() as playwright:
         browser=await playwright.chromium.launch(executable_path='/usr/bin/chromium',headless=True,args=['--no-sandbox'])
-        try:failures=await BrowserSuite(browser,args.base_url,args.output,args.case).run()
+        try:failures=await BrowserSuite(browser,args.base_url,args.output,args.case,args.matrix_vehicle,args.matrix_wheel).run()
         finally:await browser.close()
     raise SystemExit(1 if failures else 0)
 

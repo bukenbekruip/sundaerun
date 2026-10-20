@@ -1,0 +1,4667 @@
+{
+  "generated_at_utc": "2026-10-20T22:24:15.536571+00:00",
+  "base_url": "http://127.0.0.1:4173",
+  "case_count": 1,
+  "passed": 1,
+  "failed": 0,
+  "assertions_passed": 675,
+  "cases": [
+    {
+      "name": "all-486-blue-mechanical-combinations",
+      "status": "passed",
+      "assertions_passed": 675
+    }
+  ],
+  "assertions": [
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Built page responds HTTP 200",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Three-car page has its intended title",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Upgrade diagnostic imports the actual paint renderer dependency",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one #vehicle-options button selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered #vehicle-options [data-vehicle=\"porsche\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .wheel-select selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .wheel-select[data-wheel=\"oz\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .paint-option selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .paint-option[data-paint=\"blue\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .part-select[data-part-kind=\"tyre\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"tyre\"][data-part=\"road\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .part-select[data-part-kind=\"suspension\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"suspension\"][data-part=\"original\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .part-select[data-part-kind=\"body\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"body\"][data-part=\"original\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one active parts-panel checkmark is visible",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one paint checkmark is rendered",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Category highlights agree with the last interaction",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Checkout shows all five correctly labelled selections",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "All five quote lines reflect selected unowned parts",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Total includes each selected paid part exactly once",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Mechanical preview never spends credits",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "porsche:blue:oz: complete-car canvas dimensions preserved",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "porsche:blue:oz: garage plate remains identical",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "porsche:blue:oz: both rim centres retain their position and original pixels",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "porsche:blue:oz: front and rear ground contacts are both measured",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "porsche:blue:oz: both original-body tyre contact patches retain their alpha footprint and coordinates",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "porsche:blue:oz: suspension keeps both road-tyre contact patches pixel-identical",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "porsche:blue:oz: tyre choice preserves every alpha byte",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "porsche:blue:oz: tyre choice changes only the renderer-authored rubber mask",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "porsche:blue:oz: baseline exact or selected upgrade visibly changes pixels",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one #vehicle-options button selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered #vehicle-options [data-vehicle=\"porsche\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .wheel-select selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .wheel-select[data-wheel=\"oz\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .paint-option selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .paint-option[data-paint=\"blue\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .part-select[data-part-kind=\"tyre\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"tyre\"][data-part=\"road\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .part-select[data-part-kind=\"suspension\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"suspension\"][data-part=\"original\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .part-select[data-part-kind=\"body\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"body\"][data-part=\"street\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one active parts-panel checkmark is visible",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one paint checkmark is rendered",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Category highlights agree with the last interaction",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Checkout shows all five correctly labelled selections",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "All five quote lines reflect selected unowned parts",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Total includes each selected paid part exactly once",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Mechanical preview never spends credits",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "porsche:blue:oz:road:original:street: complete-car canvas dimensions preserved",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "porsche:blue:oz:road:original:street: garage plate remains identical",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "porsche:blue:oz:road:original:street: both rim centres retain their position and original pixels",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "porsche:blue:oz:road:original:street: front and rear ground contacts are both measured",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "porsche:blue:oz:road:original:street: baseline exact or selected upgrade visibly changes pixels",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one #vehicle-options button selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered #vehicle-options [data-vehicle=\"porsche\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .wheel-select selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .wheel-select[data-wheel=\"oz\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .paint-option selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .paint-option[data-paint=\"blue\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .part-select[data-part-kind=\"tyre\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"tyre\"][data-part=\"road\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .part-select[data-part-kind=\"suspension\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"suspension\"][data-part=\"original\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .part-select[data-part-kind=\"body\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"body\"][data-part=\"track\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one active parts-panel checkmark is visible",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one paint checkmark is rendered",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Category highlights agree with the last interaction",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Checkout shows all five correctly labelled selections",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "All five quote lines reflect selected unowned parts",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Total includes each selected paid part exactly once",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Mechanical preview never spends credits",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "porsche:blue:oz:road:original:track: complete-car canvas dimensions preserved",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "porsche:blue:oz:road:original:track: garage plate remains identical",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "porsche:blue:oz:road:original:track: both rim centres retain their position and original pixels",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "porsche:blue:oz:road:original:track: front and rear ground contacts are both measured",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "porsche:blue:oz:road:original:track: baseline exact or selected upgrade visibly changes pixels",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one #vehicle-options button selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered #vehicle-options [data-vehicle=\"porsche\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .wheel-select selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .wheel-select[data-wheel=\"oz\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .paint-option selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .paint-option[data-paint=\"blue\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .part-select[data-part-kind=\"tyre\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"tyre\"][data-part=\"road\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .part-select[data-part-kind=\"suspension\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"suspension\"][data-part=\"sport\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .part-select[data-part-kind=\"body\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"body\"][data-part=\"original\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one active parts-panel checkmark is visible",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one paint checkmark is rendered",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Category highlights agree with the last interaction",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Checkout shows all five correctly labelled selections",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "All five quote lines reflect selected unowned parts",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Total includes each selected paid part exactly once",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Mechanical preview never spends credits",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "porsche:blue:oz:road:sport:original: complete-car canvas dimensions preserved",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "porsche:blue:oz:road:sport:original: garage plate remains identical",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "porsche:blue:oz:road:sport:original: both rim centres retain their position and original pixels",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "porsche:blue:oz:road:sport:original: front and rear ground contacts are both measured",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "porsche:blue:oz:road:sport:original: both original-body tyre contact patches retain their alpha footprint and coordinates",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "porsche:blue:oz:road:sport:original: suspension keeps both road-tyre contact patches pixel-identical",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "porsche:blue:oz:road:sport:original: baseline exact or selected upgrade visibly changes pixels",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one #vehicle-options button selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered #vehicle-options [data-vehicle=\"porsche\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .wheel-select selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .wheel-select[data-wheel=\"oz\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .paint-option selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .paint-option[data-paint=\"blue\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .part-select[data-part-kind=\"tyre\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"tyre\"][data-part=\"road\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .part-select[data-part-kind=\"suspension\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"suspension\"][data-part=\"sport\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .part-select[data-part-kind=\"body\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"body\"][data-part=\"street\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one active parts-panel checkmark is visible",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one paint checkmark is rendered",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Category highlights agree with the last interaction",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Checkout shows all five correctly labelled selections",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "All five quote lines reflect selected unowned parts",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Total includes each selected paid part exactly once",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Mechanical preview never spends credits",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "porsche:blue:oz:road:sport:street: complete-car canvas dimensions preserved",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "porsche:blue:oz:road:sport:street: garage plate remains identical",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "porsche:blue:oz:road:sport:street: both rim centres retain their position and original pixels",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "porsche:blue:oz:road:sport:street: front and rear ground contacts are both measured",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "porsche:blue:oz:road:sport:street: baseline exact or selected upgrade visibly changes pixels",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one #vehicle-options button selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered #vehicle-options [data-vehicle=\"porsche\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .wheel-select selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .wheel-select[data-wheel=\"oz\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .paint-option selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .paint-option[data-paint=\"blue\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .part-select[data-part-kind=\"tyre\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"tyre\"][data-part=\"road\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .part-select[data-part-kind=\"suspension\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"suspension\"][data-part=\"sport\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .part-select[data-part-kind=\"body\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"body\"][data-part=\"track\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one active parts-panel checkmark is visible",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one paint checkmark is rendered",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Category highlights agree with the last interaction",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Checkout shows all five correctly labelled selections",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "All five quote lines reflect selected unowned parts",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Total includes each selected paid part exactly once",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Mechanical preview never spends credits",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "porsche:blue:oz:road:sport:track: complete-car canvas dimensions preserved",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "porsche:blue:oz:road:sport:track: garage plate remains identical",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "porsche:blue:oz:road:sport:track: both rim centres retain their position and original pixels",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "porsche:blue:oz:road:sport:track: front and rear ground contacts are both measured",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "porsche:blue:oz:road:sport:track: baseline exact or selected upgrade visibly changes pixels",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one #vehicle-options button selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered #vehicle-options [data-vehicle=\"porsche\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .wheel-select selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .wheel-select[data-wheel=\"oz\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .paint-option selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .paint-option[data-paint=\"blue\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .part-select[data-part-kind=\"tyre\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"tyre\"][data-part=\"road\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .part-select[data-part-kind=\"suspension\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"suspension\"][data-part=\"track\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .part-select[data-part-kind=\"body\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"body\"][data-part=\"original\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one active parts-panel checkmark is visible",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one paint checkmark is rendered",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Category highlights agree with the last interaction",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Checkout shows all five correctly labelled selections",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "All five quote lines reflect selected unowned parts",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Total includes each selected paid part exactly once",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Mechanical preview never spends credits",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "porsche:blue:oz:road:track:original: complete-car canvas dimensions preserved",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "porsche:blue:oz:road:track:original: garage plate remains identical",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "porsche:blue:oz:road:track:original: both rim centres retain their position and original pixels",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "porsche:blue:oz:road:track:original: front and rear ground contacts are both measured",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "porsche:blue:oz:road:track:original: both original-body tyre contact patches retain their alpha footprint and coordinates",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "porsche:blue:oz:road:track:original: suspension keeps both road-tyre contact patches pixel-identical",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "porsche:blue:oz:road:track:original: baseline exact or selected upgrade visibly changes pixels",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one #vehicle-options button selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered #vehicle-options [data-vehicle=\"porsche\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .wheel-select selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .wheel-select[data-wheel=\"oz\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .paint-option selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .paint-option[data-paint=\"blue\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .part-select[data-part-kind=\"tyre\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"tyre\"][data-part=\"road\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .part-select[data-part-kind=\"suspension\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"suspension\"][data-part=\"track\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .part-select[data-part-kind=\"body\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"body\"][data-part=\"street\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one active parts-panel checkmark is visible",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one paint checkmark is rendered",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Category highlights agree with the last interaction",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Checkout shows all five correctly labelled selections",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "All five quote lines reflect selected unowned parts",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Total includes each selected paid part exactly once",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Mechanical preview never spends credits",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "porsche:blue:oz:road:track:street: complete-car canvas dimensions preserved",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "porsche:blue:oz:road:track:street: garage plate remains identical",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "porsche:blue:oz:road:track:street: both rim centres retain their position and original pixels",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "porsche:blue:oz:road:track:street: front and rear ground contacts are both measured",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "porsche:blue:oz:road:track:street: baseline exact or selected upgrade visibly changes pixels",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one #vehicle-options button selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered #vehicle-options [data-vehicle=\"porsche\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .wheel-select selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .wheel-select[data-wheel=\"oz\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .paint-option selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .paint-option[data-paint=\"blue\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .part-select[data-part-kind=\"tyre\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"tyre\"][data-part=\"road\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .part-select[data-part-kind=\"suspension\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"suspension\"][data-part=\"track\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .part-select[data-part-kind=\"body\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"body\"][data-part=\"track\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one active parts-panel checkmark is visible",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one paint checkmark is rendered",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Category highlights agree with the last interaction",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Checkout shows all five correctly labelled selections",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "All five quote lines reflect selected unowned parts",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Total includes each selected paid part exactly once",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Mechanical preview never spends credits",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "porsche:blue:oz:road:track:track: complete-car canvas dimensions preserved",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "porsche:blue:oz:road:track:track: garage plate remains identical",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "porsche:blue:oz:road:track:track: both rim centres retain their position and original pixels",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "porsche:blue:oz:road:track:track: front and rear ground contacts are both measured",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "porsche:blue:oz:road:track:track: baseline exact or selected upgrade visibly changes pixels",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one #vehicle-options button selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered #vehicle-options [data-vehicle=\"porsche\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .wheel-select selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .wheel-select[data-wheel=\"oz\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .paint-option selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .paint-option[data-paint=\"blue\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .part-select[data-part-kind=\"tyre\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"tyre\"][data-part=\"sport\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .part-select[data-part-kind=\"suspension\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"suspension\"][data-part=\"original\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .part-select[data-part-kind=\"body\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"body\"][data-part=\"original\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one active parts-panel checkmark is visible",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one paint checkmark is rendered",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Category highlights agree with the last interaction",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Checkout shows all five correctly labelled selections",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "All five quote lines reflect selected unowned parts",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Total includes each selected paid part exactly once",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Mechanical preview never spends credits",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "porsche:blue:oz:sport:original:original: complete-car canvas dimensions preserved",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "porsche:blue:oz:sport:original:original: garage plate remains identical",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "porsche:blue:oz:sport:original:original: both rim centres retain their position and original pixels",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "porsche:blue:oz:sport:original:original: front and rear ground contacts are both measured",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "porsche:blue:oz:sport:original:original: both original-body tyre contact patches retain their alpha footprint and coordinates",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "porsche:blue:oz:sport:original:original: tyre choice preserves every alpha byte",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "porsche:blue:oz:sport:original:original: tyre choice changes only the renderer-authored rubber mask",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "porsche:blue:oz:sport:original:original: baseline exact or selected upgrade visibly changes pixels",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one #vehicle-options button selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered #vehicle-options [data-vehicle=\"porsche\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .wheel-select selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .wheel-select[data-wheel=\"oz\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .paint-option selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .paint-option[data-paint=\"blue\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .part-select[data-part-kind=\"tyre\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"tyre\"][data-part=\"sport\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .part-select[data-part-kind=\"suspension\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"suspension\"][data-part=\"original\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .part-select[data-part-kind=\"body\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"body\"][data-part=\"street\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one active parts-panel checkmark is visible",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one paint checkmark is rendered",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Category highlights agree with the last interaction",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Checkout shows all five correctly labelled selections",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "All five quote lines reflect selected unowned parts",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Total includes each selected paid part exactly once",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Mechanical preview never spends credits",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "porsche:blue:oz:sport:original:street: complete-car canvas dimensions preserved",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "porsche:blue:oz:sport:original:street: garage plate remains identical",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "porsche:blue:oz:sport:original:street: both rim centres retain their position and original pixels",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "porsche:blue:oz:sport:original:street: front and rear ground contacts are both measured",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "porsche:blue:oz:sport:original:street: baseline exact or selected upgrade visibly changes pixels",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one #vehicle-options button selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered #vehicle-options [data-vehicle=\"porsche\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .wheel-select selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .wheel-select[data-wheel=\"oz\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .paint-option selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .paint-option[data-paint=\"blue\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .part-select[data-part-kind=\"tyre\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"tyre\"][data-part=\"sport\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .part-select[data-part-kind=\"suspension\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"suspension\"][data-part=\"original\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .part-select[data-part-kind=\"body\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"body\"][data-part=\"track\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one active parts-panel checkmark is visible",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one paint checkmark is rendered",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Category highlights agree with the last interaction",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Checkout shows all five correctly labelled selections",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "All five quote lines reflect selected unowned parts",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Total includes each selected paid part exactly once",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Mechanical preview never spends credits",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "porsche:blue:oz:sport:original:track: complete-car canvas dimensions preserved",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "porsche:blue:oz:sport:original:track: garage plate remains identical",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "porsche:blue:oz:sport:original:track: both rim centres retain their position and original pixels",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "porsche:blue:oz:sport:original:track: front and rear ground contacts are both measured",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "porsche:blue:oz:sport:original:track: baseline exact or selected upgrade visibly changes pixels",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one #vehicle-options button selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered #vehicle-options [data-vehicle=\"porsche\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .wheel-select selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .wheel-select[data-wheel=\"oz\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .paint-option selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .paint-option[data-paint=\"blue\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .part-select[data-part-kind=\"tyre\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"tyre\"][data-part=\"sport\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .part-select[data-part-kind=\"suspension\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"suspension\"][data-part=\"sport\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .part-select[data-part-kind=\"body\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"body\"][data-part=\"original\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one active parts-panel checkmark is visible",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one paint checkmark is rendered",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Category highlights agree with the last interaction",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Checkout shows all five correctly labelled selections",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "All five quote lines reflect selected unowned parts",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Total includes each selected paid part exactly once",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Mechanical preview never spends credits",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "porsche:blue:oz:sport:sport:original: complete-car canvas dimensions preserved",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "porsche:blue:oz:sport:sport:original: garage plate remains identical",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "porsche:blue:oz:sport:sport:original: both rim centres retain their position and original pixels",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "porsche:blue:oz:sport:sport:original: front and rear ground contacts are both measured",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "porsche:blue:oz:sport:sport:original: both original-body tyre contact patches retain their alpha footprint and coordinates",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "porsche:blue:oz:sport:sport:original: baseline exact or selected upgrade visibly changes pixels",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one #vehicle-options button selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered #vehicle-options [data-vehicle=\"porsche\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .wheel-select selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .wheel-select[data-wheel=\"oz\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .paint-option selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .paint-option[data-paint=\"blue\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .part-select[data-part-kind=\"tyre\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"tyre\"][data-part=\"sport\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .part-select[data-part-kind=\"suspension\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"suspension\"][data-part=\"sport\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .part-select[data-part-kind=\"body\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"body\"][data-part=\"street\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one active parts-panel checkmark is visible",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one paint checkmark is rendered",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Category highlights agree with the last interaction",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Checkout shows all five correctly labelled selections",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "All five quote lines reflect selected unowned parts",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Total includes each selected paid part exactly once",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Mechanical preview never spends credits",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "porsche:blue:oz:sport:sport:street: complete-car canvas dimensions preserved",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "porsche:blue:oz:sport:sport:street: garage plate remains identical",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "porsche:blue:oz:sport:sport:street: both rim centres retain their position and original pixels",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "porsche:blue:oz:sport:sport:street: front and rear ground contacts are both measured",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "porsche:blue:oz:sport:sport:street: baseline exact or selected upgrade visibly changes pixels",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one #vehicle-options button selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered #vehicle-options [data-vehicle=\"porsche\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .wheel-select selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .wheel-select[data-wheel=\"oz\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .paint-option selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .paint-option[data-paint=\"blue\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .part-select[data-part-kind=\"tyre\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"tyre\"][data-part=\"sport\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .part-select[data-part-kind=\"suspension\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"suspension\"][data-part=\"sport\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .part-select[data-part-kind=\"body\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"body\"][data-part=\"track\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one active parts-panel checkmark is visible",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one paint checkmark is rendered",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Category highlights agree with the last interaction",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Checkout shows all five correctly labelled selections",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "All five quote lines reflect selected unowned parts",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Total includes each selected paid part exactly once",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Mechanical preview never spends credits",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "porsche:blue:oz:sport:sport:track: complete-car canvas dimensions preserved",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "porsche:blue:oz:sport:sport:track: garage plate remains identical",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "porsche:blue:oz:sport:sport:track: both rim centres retain their position and original pixels",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "porsche:blue:oz:sport:sport:track: front and rear ground contacts are both measured",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "porsche:blue:oz:sport:sport:track: baseline exact or selected upgrade visibly changes pixels",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one #vehicle-options button selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered #vehicle-options [data-vehicle=\"porsche\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .wheel-select selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .wheel-select[data-wheel=\"oz\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .paint-option selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .paint-option[data-paint=\"blue\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .part-select[data-part-kind=\"tyre\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"tyre\"][data-part=\"sport\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .part-select[data-part-kind=\"suspension\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"suspension\"][data-part=\"track\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .part-select[data-part-kind=\"body\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"body\"][data-part=\"original\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one active parts-panel checkmark is visible",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one paint checkmark is rendered",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Category highlights agree with the last interaction",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Checkout shows all five correctly labelled selections",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "All five quote lines reflect selected unowned parts",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Total includes each selected paid part exactly once",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Mechanical preview never spends credits",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "porsche:blue:oz:sport:track:original: complete-car canvas dimensions preserved",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "porsche:blue:oz:sport:track:original: garage plate remains identical",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "porsche:blue:oz:sport:track:original: both rim centres retain their position and original pixels",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "porsche:blue:oz:sport:track:original: front and rear ground contacts are both measured",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "porsche:blue:oz:sport:track:original: both original-body tyre contact patches retain their alpha footprint and coordinates",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "porsche:blue:oz:sport:track:original: baseline exact or selected upgrade visibly changes pixels",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one #vehicle-options button selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered #vehicle-options [data-vehicle=\"porsche\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .wheel-select selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .wheel-select[data-wheel=\"oz\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .paint-option selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .paint-option[data-paint=\"blue\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .part-select[data-part-kind=\"tyre\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"tyre\"][data-part=\"sport\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .part-select[data-part-kind=\"suspension\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"suspension\"][data-part=\"track\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .part-select[data-part-kind=\"body\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"body\"][data-part=\"street\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one active parts-panel checkmark is visible",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one paint checkmark is rendered",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Category highlights agree with the last interaction",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Checkout shows all five correctly labelled selections",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "All five quote lines reflect selected unowned parts",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Total includes each selected paid part exactly once",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Mechanical preview never spends credits",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "porsche:blue:oz:sport:track:street: complete-car canvas dimensions preserved",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "porsche:blue:oz:sport:track:street: garage plate remains identical",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "porsche:blue:oz:sport:track:street: both rim centres retain their position and original pixels",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "porsche:blue:oz:sport:track:street: front and rear ground contacts are both measured",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "porsche:blue:oz:sport:track:street: baseline exact or selected upgrade visibly changes pixels",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one #vehicle-options button selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered #vehicle-options [data-vehicle=\"porsche\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .wheel-select selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .wheel-select[data-wheel=\"oz\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .paint-option selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .paint-option[data-paint=\"blue\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .part-select[data-part-kind=\"tyre\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"tyre\"][data-part=\"sport\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .part-select[data-part-kind=\"suspension\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"suspension\"][data-part=\"track\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .part-select[data-part-kind=\"body\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"body\"][data-part=\"track\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one active parts-panel checkmark is visible",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one paint checkmark is rendered",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Category highlights agree with the last interaction",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Checkout shows all five correctly labelled selections",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "All five quote lines reflect selected unowned parts",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Total includes each selected paid part exactly once",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Mechanical preview never spends credits",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "porsche:blue:oz:sport:track:track: complete-car canvas dimensions preserved",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "porsche:blue:oz:sport:track:track: garage plate remains identical",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "porsche:blue:oz:sport:track:track: both rim centres retain their position and original pixels",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "porsche:blue:oz:sport:track:track: front and rear ground contacts are both measured",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "porsche:blue:oz:sport:track:track: baseline exact or selected upgrade visibly changes pixels",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one #vehicle-options button selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered #vehicle-options [data-vehicle=\"porsche\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .wheel-select selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .wheel-select[data-wheel=\"oz\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .paint-option selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .paint-option[data-paint=\"blue\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .part-select[data-part-kind=\"tyre\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"tyre\"][data-part=\"track\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .part-select[data-part-kind=\"suspension\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"suspension\"][data-part=\"original\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .part-select[data-part-kind=\"body\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"body\"][data-part=\"original\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one active parts-panel checkmark is visible",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one paint checkmark is rendered",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Category highlights agree with the last interaction",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Checkout shows all five correctly labelled selections",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "All five quote lines reflect selected unowned parts",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Total includes each selected paid part exactly once",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Mechanical preview never spends credits",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "porsche:blue:oz:track:original:original: complete-car canvas dimensions preserved",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "porsche:blue:oz:track:original:original: garage plate remains identical",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "porsche:blue:oz:track:original:original: both rim centres retain their position and original pixels",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "porsche:blue:oz:track:original:original: front and rear ground contacts are both measured",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "porsche:blue:oz:track:original:original: both original-body tyre contact patches retain their alpha footprint and coordinates",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "porsche:blue:oz:track:original:original: tyre choice preserves every alpha byte",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "porsche:blue:oz:track:original:original: tyre choice changes only the renderer-authored rubber mask",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "porsche:blue:oz:track:original:original: baseline exact or selected upgrade visibly changes pixels",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one #vehicle-options button selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered #vehicle-options [data-vehicle=\"porsche\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .wheel-select selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .wheel-select[data-wheel=\"oz\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .paint-option selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .paint-option[data-paint=\"blue\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .part-select[data-part-kind=\"tyre\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"tyre\"][data-part=\"track\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .part-select[data-part-kind=\"suspension\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"suspension\"][data-part=\"original\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .part-select[data-part-kind=\"body\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"body\"][data-part=\"street\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one active parts-panel checkmark is visible",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one paint checkmark is rendered",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Category highlights agree with the last interaction",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Checkout shows all five correctly labelled selections",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "All five quote lines reflect selected unowned parts",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Total includes each selected paid part exactly once",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Mechanical preview never spends credits",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "porsche:blue:oz:track:original:street: complete-car canvas dimensions preserved",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "porsche:blue:oz:track:original:street: garage plate remains identical",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "porsche:blue:oz:track:original:street: both rim centres retain their position and original pixels",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "porsche:blue:oz:track:original:street: front and rear ground contacts are both measured",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "porsche:blue:oz:track:original:street: baseline exact or selected upgrade visibly changes pixels",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one #vehicle-options button selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered #vehicle-options [data-vehicle=\"porsche\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .wheel-select selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .wheel-select[data-wheel=\"oz\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .paint-option selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .paint-option[data-paint=\"blue\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .part-select[data-part-kind=\"tyre\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"tyre\"][data-part=\"track\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .part-select[data-part-kind=\"suspension\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"suspension\"][data-part=\"original\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .part-select[data-part-kind=\"body\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"body\"][data-part=\"track\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one active parts-panel checkmark is visible",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one paint checkmark is rendered",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Category highlights agree with the last interaction",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Checkout shows all five correctly labelled selections",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "All five quote lines reflect selected unowned parts",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Total includes each selected paid part exactly once",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Mechanical preview never spends credits",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "porsche:blue:oz:track:original:track: complete-car canvas dimensions preserved",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "porsche:blue:oz:track:original:track: garage plate remains identical",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "porsche:blue:oz:track:original:track: both rim centres retain their position and original pixels",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "porsche:blue:oz:track:original:track: front and rear ground contacts are both measured",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "porsche:blue:oz:track:original:track: baseline exact or selected upgrade visibly changes pixels",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one #vehicle-options button selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered #vehicle-options [data-vehicle=\"porsche\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .wheel-select selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .wheel-select[data-wheel=\"oz\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .paint-option selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .paint-option[data-paint=\"blue\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .part-select[data-part-kind=\"tyre\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"tyre\"][data-part=\"track\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .part-select[data-part-kind=\"suspension\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"suspension\"][data-part=\"sport\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .part-select[data-part-kind=\"body\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"body\"][data-part=\"original\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one active parts-panel checkmark is visible",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one paint checkmark is rendered",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Category highlights agree with the last interaction",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Checkout shows all five correctly labelled selections",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "All five quote lines reflect selected unowned parts",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Total includes each selected paid part exactly once",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Mechanical preview never spends credits",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "porsche:blue:oz:track:sport:original: complete-car canvas dimensions preserved",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "porsche:blue:oz:track:sport:original: garage plate remains identical",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "porsche:blue:oz:track:sport:original: both rim centres retain their position and original pixels",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "porsche:blue:oz:track:sport:original: front and rear ground contacts are both measured",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "porsche:blue:oz:track:sport:original: both original-body tyre contact patches retain their alpha footprint and coordinates",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "porsche:blue:oz:track:sport:original: baseline exact or selected upgrade visibly changes pixels",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one #vehicle-options button selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered #vehicle-options [data-vehicle=\"porsche\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .wheel-select selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .wheel-select[data-wheel=\"oz\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .paint-option selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .paint-option[data-paint=\"blue\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .part-select[data-part-kind=\"tyre\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"tyre\"][data-part=\"track\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .part-select[data-part-kind=\"suspension\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"suspension\"][data-part=\"sport\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .part-select[data-part-kind=\"body\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"body\"][data-part=\"street\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one active parts-panel checkmark is visible",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one paint checkmark is rendered",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Category highlights agree with the last interaction",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Checkout shows all five correctly labelled selections",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "All five quote lines reflect selected unowned parts",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Total includes each selected paid part exactly once",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Mechanical preview never spends credits",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "porsche:blue:oz:track:sport:street: complete-car canvas dimensions preserved",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "porsche:blue:oz:track:sport:street: garage plate remains identical",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "porsche:blue:oz:track:sport:street: both rim centres retain their position and original pixels",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "porsche:blue:oz:track:sport:street: front and rear ground contacts are both measured",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "porsche:blue:oz:track:sport:street: baseline exact or selected upgrade visibly changes pixels",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one #vehicle-options button selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered #vehicle-options [data-vehicle=\"porsche\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .wheel-select selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .wheel-select[data-wheel=\"oz\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .paint-option selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .paint-option[data-paint=\"blue\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .part-select[data-part-kind=\"tyre\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"tyre\"][data-part=\"track\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .part-select[data-part-kind=\"suspension\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"suspension\"][data-part=\"sport\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .part-select[data-part-kind=\"body\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"body\"][data-part=\"track\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one active parts-panel checkmark is visible",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one paint checkmark is rendered",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Category highlights agree with the last interaction",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Checkout shows all five correctly labelled selections",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "All five quote lines reflect selected unowned parts",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Total includes each selected paid part exactly once",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Mechanical preview never spends credits",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "porsche:blue:oz:track:sport:track: complete-car canvas dimensions preserved",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "porsche:blue:oz:track:sport:track: garage plate remains identical",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "porsche:blue:oz:track:sport:track: both rim centres retain their position and original pixels",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "porsche:blue:oz:track:sport:track: front and rear ground contacts are both measured",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "porsche:blue:oz:track:sport:track: baseline exact or selected upgrade visibly changes pixels",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one #vehicle-options button selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered #vehicle-options [data-vehicle=\"porsche\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .wheel-select selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .wheel-select[data-wheel=\"oz\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .paint-option selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .paint-option[data-paint=\"blue\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .part-select[data-part-kind=\"tyre\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"tyre\"][data-part=\"track\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .part-select[data-part-kind=\"suspension\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"suspension\"][data-part=\"track\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .part-select[data-part-kind=\"body\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"body\"][data-part=\"original\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one active parts-panel checkmark is visible",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one paint checkmark is rendered",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Category highlights agree with the last interaction",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Checkout shows all five correctly labelled selections",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "All five quote lines reflect selected unowned parts",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Total includes each selected paid part exactly once",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Mechanical preview never spends credits",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "porsche:blue:oz:track:track:original: complete-car canvas dimensions preserved",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "porsche:blue:oz:track:track:original: garage plate remains identical",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "porsche:blue:oz:track:track:original: both rim centres retain their position and original pixels",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "porsche:blue:oz:track:track:original: front and rear ground contacts are both measured",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "porsche:blue:oz:track:track:original: both original-body tyre contact patches retain their alpha footprint and coordinates",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "porsche:blue:oz:track:track:original: baseline exact or selected upgrade visibly changes pixels",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one #vehicle-options button selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered #vehicle-options [data-vehicle=\"porsche\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .wheel-select selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .wheel-select[data-wheel=\"oz\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .paint-option selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .paint-option[data-paint=\"blue\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .part-select[data-part-kind=\"tyre\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"tyre\"][data-part=\"track\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .part-select[data-part-kind=\"suspension\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"suspension\"][data-part=\"track\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .part-select[data-part-kind=\"body\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"body\"][data-part=\"street\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one active parts-panel checkmark is visible",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one paint checkmark is rendered",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Category highlights agree with the last interaction",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Checkout shows all five correctly labelled selections",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "All five quote lines reflect selected unowned parts",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Total includes each selected paid part exactly once",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Mechanical preview never spends credits",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "porsche:blue:oz:track:track:street: complete-car canvas dimensions preserved",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "porsche:blue:oz:track:track:street: garage plate remains identical",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "porsche:blue:oz:track:track:street: both rim centres retain their position and original pixels",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "porsche:blue:oz:track:track:street: front and rear ground contacts are both measured",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "porsche:blue:oz:track:track:street: baseline exact or selected upgrade visibly changes pixels",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one #vehicle-options button selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered #vehicle-options [data-vehicle=\"porsche\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .wheel-select selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .wheel-select[data-wheel=\"oz\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .paint-option selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .paint-option[data-paint=\"blue\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .part-select[data-part-kind=\"tyre\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"tyre\"][data-part=\"track\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .part-select[data-part-kind=\"suspension\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"suspension\"][data-part=\"track\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .part-select[data-part-kind=\"body\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"body\"][data-part=\"track\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one active parts-panel checkmark is visible",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one paint checkmark is rendered",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Category highlights agree with the last interaction",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Checkout shows all five correctly labelled selections",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "All five quote lines reflect selected unowned parts",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Total includes each selected paid part exactly once",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Mechanical preview never spends credits",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "porsche:blue:oz:track:track:track: complete-car canvas dimensions preserved",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "porsche:blue:oz:track:track:track: garage plate remains identical",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "porsche:blue:oz:track:track:track: both rim centres retain their position and original pixels",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "porsche:blue:oz:track:track:track: front and rear ground contacts are both measured",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "porsche:blue:oz:track:track:track: baseline exact or selected upgrade visibly changes pixels",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "porsche:oz: all 27 mechanical arrangements produce distinct pixels",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "No page_errors",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "No http_errors",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "No failed_requests",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "No console_errors",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "All 27 blue mechanical combinations for the selected cars exercised through native controls",
+      "status": "passed"
+    }
+  ],
+  "combinations": [],
+  "paint_pixel_comparisons": [],
+  "mechanical_combinations": [
+    "porsche:blue:oz",
+    "porsche:blue:oz:road:original:street",
+    "porsche:blue:oz:road:original:track",
+    "porsche:blue:oz:road:sport:original",
+    "porsche:blue:oz:road:sport:street",
+    "porsche:blue:oz:road:sport:track",
+    "porsche:blue:oz:road:track:original",
+    "porsche:blue:oz:road:track:street",
+    "porsche:blue:oz:road:track:track",
+    "porsche:blue:oz:sport:original:original",
+    "porsche:blue:oz:sport:original:street",
+    "porsche:blue:oz:sport:original:track",
+    "porsche:blue:oz:sport:sport:original",
+    "porsche:blue:oz:sport:sport:street",
+    "porsche:blue:oz:sport:sport:track",
+    "porsche:blue:oz:sport:track:original",
+    "porsche:blue:oz:sport:track:street",
+    "porsche:blue:oz:sport:track:track",
+    "porsche:blue:oz:track:original:original",
+    "porsche:blue:oz:track:original:street",
+    "porsche:blue:oz:track:original:track",
+    "porsche:blue:oz:track:sport:original",
+    "porsche:blue:oz:track:sport:street",
+    "porsche:blue:oz:track:sport:track",
+    "porsche:blue:oz:track:track:original",
+    "porsche:blue:oz:track:track:street",
+    "porsche:blue:oz:track:track:track"
+  ],
+  "painted_upgrade_combinations": [],
+  "upgrade_pixel_comparisons": [
+    {
+      "variant": "porsche:blue:oz",
+      "dimensionsMatch": true,
+      "changed": 0,
+      "alphaChanged": 0,
+      "outsideTyreChanged": 0,
+      "rimSamples": [
+        {
+          "name": "rear-wheel",
+          "x": 180,
+          "y": 580,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        },
+        {
+          "name": "front-wheel",
+          "x": 854,
+          "y": 640,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        }
+      ],
+      "contactSamples": [
+        {
+          "name": "rear-contact",
+          "x": 190,
+          "y": 710,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        },
+        {
+          "name": "front-contact",
+          "x": 859,
+          "y": 802,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        }
+      ],
+      "garageChanged": 0,
+      "fingerprint": "028e9902a0cf126a93b929e2b0d73166723f6638ef6a58b2521a3ca7fe057f22"
+    },
+    {
+      "variant": "porsche:blue:oz:road:original:street",
+      "dimensionsMatch": true,
+      "changed": 73124,
+      "alphaChanged": 63765,
+      "outsideTyreChanged": 70730,
+      "rimSamples": [
+        {
+          "name": "rear-wheel",
+          "x": 180,
+          "y": 580,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        },
+        {
+          "name": "front-wheel",
+          "x": 854,
+          "y": 640,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        }
+      ],
+      "contactSamples": [
+        {
+          "name": "rear-contact",
+          "x": 190,
+          "y": 710,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        },
+        {
+          "name": "front-contact",
+          "x": 859,
+          "y": 802,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        }
+      ],
+      "garageChanged": 0,
+      "fingerprint": "fecdb071f1bfc6e1cc705c4a15c8a9c3af45f71068f97bbdf17fbbb1140e8529"
+    },
+    {
+      "variant": "porsche:blue:oz:road:original:track",
+      "dimensionsMatch": true,
+      "changed": 99596,
+      "alphaChanged": 89958,
+      "outsideTyreChanged": 93241,
+      "rimSamples": [
+        {
+          "name": "rear-wheel",
+          "x": 180,
+          "y": 580,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        },
+        {
+          "name": "front-wheel",
+          "x": 854,
+          "y": 640,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        }
+      ],
+      "contactSamples": [
+        {
+          "name": "rear-contact",
+          "x": 190,
+          "y": 710,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        },
+        {
+          "name": "front-contact",
+          "x": 859,
+          "y": 802,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        }
+      ],
+      "garageChanged": 0,
+      "fingerprint": "cc38d3ffbebabf7fd2d9915689f79622d31bf7c4488ec387cd9590ca60785a4c"
+    },
+    {
+      "variant": "porsche:blue:oz:road:sport:original",
+      "dimensionsMatch": true,
+      "changed": 602998,
+      "alphaChanged": 109292,
+      "outsideTyreChanged": 599832,
+      "rimSamples": [
+        {
+          "name": "rear-wheel",
+          "x": 180,
+          "y": 580,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        },
+        {
+          "name": "front-wheel",
+          "x": 854,
+          "y": 640,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        }
+      ],
+      "contactSamples": [
+        {
+          "name": "rear-contact",
+          "x": 190,
+          "y": 710,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        },
+        {
+          "name": "front-contact",
+          "x": 859,
+          "y": 802,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        }
+      ],
+      "garageChanged": 0,
+      "fingerprint": "d412f39ca68992aef1923a24f13323dc6f1aed4e985ff11af884e34baff607c8"
+    },
+    {
+      "variant": "porsche:blue:oz:road:sport:street",
+      "dimensionsMatch": true,
+      "changed": 610725,
+      "alphaChanged": 158656,
+      "outsideTyreChanged": 605574,
+      "rimSamples": [
+        {
+          "name": "rear-wheel",
+          "x": 180,
+          "y": 580,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        },
+        {
+          "name": "front-wheel",
+          "x": 854,
+          "y": 640,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        }
+      ],
+      "contactSamples": [
+        {
+          "name": "rear-contact",
+          "x": 190,
+          "y": 710,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        },
+        {
+          "name": "front-contact",
+          "x": 859,
+          "y": 802,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        }
+      ],
+      "garageChanged": 0,
+      "fingerprint": "4c92ca8961d7e48e564e3e9d8a9a5e719e9d83029c4fc44b4cff6de9cb661e8c"
+    },
+    {
+      "variant": "porsche:blue:oz:road:sport:track",
+      "dimensionsMatch": true,
+      "changed": 621144,
+      "alphaChanged": 181979,
+      "outsideTyreChanged": 612072,
+      "rimSamples": [
+        {
+          "name": "rear-wheel",
+          "x": 180,
+          "y": 580,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        },
+        {
+          "name": "front-wheel",
+          "x": 854,
+          "y": 640,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        }
+      ],
+      "contactSamples": [
+        {
+          "name": "rear-contact",
+          "x": 190,
+          "y": 710,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        },
+        {
+          "name": "front-contact",
+          "x": 859,
+          "y": 802,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        }
+      ],
+      "garageChanged": 0,
+      "fingerprint": "26b35766069334405ca6abfd40e64f8156d6eebdfcdc1853d058fb6d51b108fa"
+    },
+    {
+      "variant": "porsche:blue:oz:road:track:original",
+      "dimensionsMatch": true,
+      "changed": 612999,
+      "alphaChanged": 158656,
+      "outsideTyreChanged": 607840,
+      "rimSamples": [
+        {
+          "name": "rear-wheel",
+          "x": 180,
+          "y": 580,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        },
+        {
+          "name": "front-wheel",
+          "x": 854,
+          "y": 640,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        }
+      ],
+      "contactSamples": [
+        {
+          "name": "rear-contact",
+          "x": 190,
+          "y": 710,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        },
+        {
+          "name": "front-contact",
+          "x": 859,
+          "y": 802,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        }
+      ],
+      "garageChanged": 0,
+      "fingerprint": "f1e8aec64450ae17da7f58c7e79f16ca6d4e6014d726f75f8c572d8d97752608"
+    },
+    {
+      "variant": "porsche:blue:oz:road:track:street",
+      "dimensionsMatch": true,
+      "changed": 620516,
+      "alphaChanged": 201631,
+      "outsideTyreChanged": 613570,
+      "rimSamples": [
+        {
+          "name": "rear-wheel",
+          "x": 180,
+          "y": 580,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        },
+        {
+          "name": "front-wheel",
+          "x": 854,
+          "y": 640,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        }
+      ],
+      "contactSamples": [
+        {
+          "name": "rear-contact",
+          "x": 190,
+          "y": 710,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        },
+        {
+          "name": "front-contact",
+          "x": 859,
+          "y": 802,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        }
+      ],
+      "garageChanged": 0,
+      "fingerprint": "4bd64127ee3ded164046d2db271b64854e7d5f946b92b862be708240bfce0fea"
+    },
+    {
+      "variant": "porsche:blue:oz:road:track:track",
+      "dimensionsMatch": true,
+      "changed": 630722,
+      "alphaChanged": 223639,
+      "outsideTyreChanged": 619830,
+      "rimSamples": [
+        {
+          "name": "rear-wheel",
+          "x": 180,
+          "y": 580,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        },
+        {
+          "name": "front-wheel",
+          "x": 854,
+          "y": 640,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        }
+      ],
+      "contactSamples": [
+        {
+          "name": "rear-contact",
+          "x": 190,
+          "y": 710,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        },
+        {
+          "name": "front-contact",
+          "x": 859,
+          "y": 802,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        }
+      ],
+      "garageChanged": 0,
+      "fingerprint": "4c4d2e74d9c3b322fc3074fb8777e996dd4b79ef81fa575a8ccb1f4863691870"
+    },
+    {
+      "variant": "porsche:blue:oz:sport:original:original",
+      "dimensionsMatch": true,
+      "changed": 35958,
+      "alphaChanged": 0,
+      "outsideTyreChanged": 0,
+      "rimSamples": [
+        {
+          "name": "rear-wheel",
+          "x": 180,
+          "y": 580,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        },
+        {
+          "name": "front-wheel",
+          "x": 854,
+          "y": 640,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        }
+      ],
+      "contactSamples": [
+        {
+          "name": "rear-contact",
+          "x": 190,
+          "y": 710,
+          "changes": 25,
+          "alphaChanges": 0,
+          "opaque": 25
+        },
+        {
+          "name": "front-contact",
+          "x": 859,
+          "y": 802,
+          "changes": 25,
+          "alphaChanges": 0,
+          "opaque": 25
+        }
+      ],
+      "garageChanged": 0,
+      "fingerprint": "55e6549057a08bc9f3f583b325eaa4628eaf5fb08c8703e73024aacc3bfd978e"
+    },
+    {
+      "variant": "porsche:blue:oz:sport:original:street",
+      "dimensionsMatch": true,
+      "changed": 106857,
+      "alphaChanged": 63765,
+      "outsideTyreChanged": 70730,
+      "rimSamples": [
+        {
+          "name": "rear-wheel",
+          "x": 180,
+          "y": 580,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        },
+        {
+          "name": "front-wheel",
+          "x": 854,
+          "y": 640,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        }
+      ],
+      "contactSamples": [
+        {
+          "name": "rear-contact",
+          "x": 190,
+          "y": 710,
+          "changes": 25,
+          "alphaChanges": 0,
+          "opaque": 25
+        },
+        {
+          "name": "front-contact",
+          "x": 859,
+          "y": 802,
+          "changes": 25,
+          "alphaChanges": 0,
+          "opaque": 25
+        }
+      ],
+      "garageChanged": 0,
+      "fingerprint": "0840e98c190c050cc104b084ff6e95ad500110e78362cf17e0d9d4cec80dc94c"
+    },
+    {
+      "variant": "porsche:blue:oz:sport:original:track",
+      "dimensionsMatch": true,
+      "changed": 129633,
+      "alphaChanged": 89958,
+      "outsideTyreChanged": 93241,
+      "rimSamples": [
+        {
+          "name": "rear-wheel",
+          "x": 180,
+          "y": 580,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        },
+        {
+          "name": "front-wheel",
+          "x": 854,
+          "y": 640,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        }
+      ],
+      "contactSamples": [
+        {
+          "name": "rear-contact",
+          "x": 190,
+          "y": 710,
+          "changes": 25,
+          "alphaChanges": 0,
+          "opaque": 25
+        },
+        {
+          "name": "front-contact",
+          "x": 859,
+          "y": 802,
+          "changes": 25,
+          "alphaChanges": 0,
+          "opaque": 25
+        }
+      ],
+      "garageChanged": 0,
+      "fingerprint": "bc08e6cdfbd5d31d1c03b0f22e63930e395f0c74849a965262d37a8432137e64"
+    },
+    {
+      "variant": "porsche:blue:oz:sport:sport:original",
+      "dimensionsMatch": true,
+      "changed": 636356,
+      "alphaChanged": 109292,
+      "outsideTyreChanged": 599832,
+      "rimSamples": [
+        {
+          "name": "rear-wheel",
+          "x": 180,
+          "y": 580,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        },
+        {
+          "name": "front-wheel",
+          "x": 854,
+          "y": 640,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        }
+      ],
+      "contactSamples": [
+        {
+          "name": "rear-contact",
+          "x": 190,
+          "y": 710,
+          "changes": 25,
+          "alphaChanges": 0,
+          "opaque": 25
+        },
+        {
+          "name": "front-contact",
+          "x": 859,
+          "y": 802,
+          "changes": 25,
+          "alphaChanges": 0,
+          "opaque": 25
+        }
+      ],
+      "garageChanged": 0,
+      "fingerprint": "996ea5ed9bb2ebd14041b67a80bdaee33db1ca64be6bfd05a2f94e029869ed2a"
+    },
+    {
+      "variant": "porsche:blue:oz:sport:sport:street",
+      "dimensionsMatch": true,
+      "changed": 642213,
+      "alphaChanged": 158656,
+      "outsideTyreChanged": 605575,
+      "rimSamples": [
+        {
+          "name": "rear-wheel",
+          "x": 180,
+          "y": 580,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        },
+        {
+          "name": "front-wheel",
+          "x": 854,
+          "y": 640,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        }
+      ],
+      "contactSamples": [
+        {
+          "name": "rear-contact",
+          "x": 190,
+          "y": 710,
+          "changes": 25,
+          "alphaChanges": 0,
+          "opaque": 25
+        },
+        {
+          "name": "front-contact",
+          "x": 859,
+          "y": 802,
+          "changes": 25,
+          "alphaChanges": 0,
+          "opaque": 25
+        }
+      ],
+      "garageChanged": 0,
+      "fingerprint": "f0cb61f3155cc09732aebd7522c2ca0b143397f586a4dc075f361dfb346262e0"
+    },
+    {
+      "variant": "porsche:blue:oz:sport:sport:track",
+      "dimensionsMatch": true,
+      "changed": 648976,
+      "alphaChanged": 181979,
+      "outsideTyreChanged": 612072,
+      "rimSamples": [
+        {
+          "name": "rear-wheel",
+          "x": 180,
+          "y": 580,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        },
+        {
+          "name": "front-wheel",
+          "x": 854,
+          "y": 640,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        }
+      ],
+      "contactSamples": [
+        {
+          "name": "rear-contact",
+          "x": 190,
+          "y": 710,
+          "changes": 25,
+          "alphaChanges": 0,
+          "opaque": 25
+        },
+        {
+          "name": "front-contact",
+          "x": 859,
+          "y": 802,
+          "changes": 25,
+          "alphaChanges": 0,
+          "opaque": 25
+        }
+      ],
+      "garageChanged": 0,
+      "fingerprint": "63a19be53d189cc69b8195ac487204c548fdd8ae34348f2daf25384392dcfb51"
+    },
+    {
+      "variant": "porsche:blue:oz:sport:track:original",
+      "dimensionsMatch": true,
+      "changed": 644571,
+      "alphaChanged": 158656,
+      "outsideTyreChanged": 607842,
+      "rimSamples": [
+        {
+          "name": "rear-wheel",
+          "x": 180,
+          "y": 580,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        },
+        {
+          "name": "front-wheel",
+          "x": 854,
+          "y": 640,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        }
+      ],
+      "contactSamples": [
+        {
+          "name": "rear-contact",
+          "x": 190,
+          "y": 710,
+          "changes": 25,
+          "alphaChanges": 0,
+          "opaque": 25
+        },
+        {
+          "name": "front-contact",
+          "x": 859,
+          "y": 802,
+          "changes": 25,
+          "alphaChanges": 0,
+          "opaque": 25
+        }
+      ],
+      "garageChanged": 0,
+      "fingerprint": "8ce615325c83f908bc5c9648e679df71c6ce4cf231e521382cc86e3eaa338052"
+    },
+    {
+      "variant": "porsche:blue:oz:sport:track:street",
+      "dimensionsMatch": true,
+      "changed": 650414,
+      "alphaChanged": 201631,
+      "outsideTyreChanged": 613571,
+      "rimSamples": [
+        {
+          "name": "rear-wheel",
+          "x": 180,
+          "y": 580,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        },
+        {
+          "name": "front-wheel",
+          "x": 854,
+          "y": 640,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        }
+      ],
+      "contactSamples": [
+        {
+          "name": "rear-contact",
+          "x": 190,
+          "y": 710,
+          "changes": 25,
+          "alphaChanges": 0,
+          "opaque": 25
+        },
+        {
+          "name": "front-contact",
+          "x": 859,
+          "y": 802,
+          "changes": 25,
+          "alphaChanges": 0,
+          "opaque": 25
+        }
+      ],
+      "garageChanged": 0,
+      "fingerprint": "52bc6e234ea9ecaf56ab48fdae065e32ec593ba11d897e77abbee8dbf4854cad"
+    },
+    {
+      "variant": "porsche:blue:oz:sport:track:track",
+      "dimensionsMatch": true,
+      "changed": 656984,
+      "alphaChanged": 223639,
+      "outsideTyreChanged": 619830,
+      "rimSamples": [
+        {
+          "name": "rear-wheel",
+          "x": 180,
+          "y": 580,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        },
+        {
+          "name": "front-wheel",
+          "x": 854,
+          "y": 640,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        }
+      ],
+      "contactSamples": [
+        {
+          "name": "rear-contact",
+          "x": 190,
+          "y": 710,
+          "changes": 25,
+          "alphaChanges": 0,
+          "opaque": 25
+        },
+        {
+          "name": "front-contact",
+          "x": 859,
+          "y": 802,
+          "changes": 25,
+          "alphaChanges": 0,
+          "opaque": 25
+        }
+      ],
+      "garageChanged": 0,
+      "fingerprint": "51d3548558fa1474350d6de56f7fe915e8cf42fd10d9c7f1e6bbc430973721d5"
+    },
+    {
+      "variant": "porsche:blue:oz:track:original:original",
+      "dimensionsMatch": true,
+      "changed": 36113,
+      "alphaChanged": 0,
+      "outsideTyreChanged": 0,
+      "rimSamples": [
+        {
+          "name": "rear-wheel",
+          "x": 180,
+          "y": 580,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        },
+        {
+          "name": "front-wheel",
+          "x": 854,
+          "y": 640,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        }
+      ],
+      "contactSamples": [
+        {
+          "name": "rear-contact",
+          "x": 190,
+          "y": 710,
+          "changes": 24,
+          "alphaChanges": 0,
+          "opaque": 25
+        },
+        {
+          "name": "front-contact",
+          "x": 859,
+          "y": 802,
+          "changes": 25,
+          "alphaChanges": 0,
+          "opaque": 25
+        }
+      ],
+      "garageChanged": 0,
+      "fingerprint": "2639b33f94f480e35b35e08e2c1a9610fa5a13d8d45c4372f5414a5ff610dc38"
+    },
+    {
+      "variant": "porsche:blue:oz:track:original:street",
+      "dimensionsMatch": true,
+      "changed": 107023,
+      "alphaChanged": 63765,
+      "outsideTyreChanged": 70730,
+      "rimSamples": [
+        {
+          "name": "rear-wheel",
+          "x": 180,
+          "y": 580,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        },
+        {
+          "name": "front-wheel",
+          "x": 854,
+          "y": 640,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        }
+      ],
+      "contactSamples": [
+        {
+          "name": "rear-contact",
+          "x": 190,
+          "y": 710,
+          "changes": 24,
+          "alphaChanges": 0,
+          "opaque": 25
+        },
+        {
+          "name": "front-contact",
+          "x": 859,
+          "y": 802,
+          "changes": 25,
+          "alphaChanges": 0,
+          "opaque": 25
+        }
+      ],
+      "garageChanged": 0,
+      "fingerprint": "75bbee22ce880b83e7f055d6868256f4f91df59e6ea5f93ebc1859c6bf0981f8"
+    },
+    {
+      "variant": "porsche:blue:oz:track:original:track",
+      "dimensionsMatch": true,
+      "changed": 129837,
+      "alphaChanged": 89958,
+      "outsideTyreChanged": 93241,
+      "rimSamples": [
+        {
+          "name": "rear-wheel",
+          "x": 180,
+          "y": 580,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        },
+        {
+          "name": "front-wheel",
+          "x": 854,
+          "y": 640,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        }
+      ],
+      "contactSamples": [
+        {
+          "name": "rear-contact",
+          "x": 190,
+          "y": 710,
+          "changes": 24,
+          "alphaChanges": 0,
+          "opaque": 25
+        },
+        {
+          "name": "front-contact",
+          "x": 859,
+          "y": 802,
+          "changes": 25,
+          "alphaChanges": 0,
+          "opaque": 25
+        }
+      ],
+      "garageChanged": 0,
+      "fingerprint": "10515208844e3b7543551564d464937b87b4bfb8cc3d5665f613127e17eb2d68"
+    },
+    {
+      "variant": "porsche:blue:oz:track:sport:original",
+      "dimensionsMatch": true,
+      "changed": 636471,
+      "alphaChanged": 109292,
+      "outsideTyreChanged": 599833,
+      "rimSamples": [
+        {
+          "name": "rear-wheel",
+          "x": 180,
+          "y": 580,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        },
+        {
+          "name": "front-wheel",
+          "x": 854,
+          "y": 640,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        }
+      ],
+      "contactSamples": [
+        {
+          "name": "rear-contact",
+          "x": 190,
+          "y": 710,
+          "changes": 24,
+          "alphaChanges": 0,
+          "opaque": 25
+        },
+        {
+          "name": "front-contact",
+          "x": 859,
+          "y": 802,
+          "changes": 25,
+          "alphaChanges": 0,
+          "opaque": 25
+        }
+      ],
+      "garageChanged": 0,
+      "fingerprint": "4b8ddf4b2b85ca6ed7a4ea0ccd824f24a4d7f884764026bb6d2e02c0c9e34ff7"
+    },
+    {
+      "variant": "porsche:blue:oz:track:sport:street",
+      "dimensionsMatch": true,
+      "changed": 642333,
+      "alphaChanged": 158656,
+      "outsideTyreChanged": 605574,
+      "rimSamples": [
+        {
+          "name": "rear-wheel",
+          "x": 180,
+          "y": 580,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        },
+        {
+          "name": "front-wheel",
+          "x": 854,
+          "y": 640,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        }
+      ],
+      "contactSamples": [
+        {
+          "name": "rear-contact",
+          "x": 190,
+          "y": 710,
+          "changes": 24,
+          "alphaChanges": 0,
+          "opaque": 25
+        },
+        {
+          "name": "front-contact",
+          "x": 859,
+          "y": 802,
+          "changes": 25,
+          "alphaChanges": 0,
+          "opaque": 25
+        }
+      ],
+      "garageChanged": 0,
+      "fingerprint": "a288cd32b7aac79ab79e29bd0ac15857bc811a568d8901c6e10a4a831ad666e9"
+    },
+    {
+      "variant": "porsche:blue:oz:track:sport:track",
+      "dimensionsMatch": true,
+      "changed": 649130,
+      "alphaChanged": 181979,
+      "outsideTyreChanged": 612072,
+      "rimSamples": [
+        {
+          "name": "rear-wheel",
+          "x": 180,
+          "y": 580,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        },
+        {
+          "name": "front-wheel",
+          "x": 854,
+          "y": 640,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        }
+      ],
+      "contactSamples": [
+        {
+          "name": "rear-contact",
+          "x": 190,
+          "y": 710,
+          "changes": 24,
+          "alphaChanges": 0,
+          "opaque": 25
+        },
+        {
+          "name": "front-contact",
+          "x": 859,
+          "y": 802,
+          "changes": 25,
+          "alphaChanges": 0,
+          "opaque": 25
+        }
+      ],
+      "garageChanged": 0,
+      "fingerprint": "6a70ced89a2de3281b84ae6c5011d3c12cb6592ba9104011345362102b318cb7"
+    },
+    {
+      "variant": "porsche:blue:oz:track:track:original",
+      "dimensionsMatch": true,
+      "changed": 644677,
+      "alphaChanged": 158656,
+      "outsideTyreChanged": 607838,
+      "rimSamples": [
+        {
+          "name": "rear-wheel",
+          "x": 180,
+          "y": 580,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        },
+        {
+          "name": "front-wheel",
+          "x": 854,
+          "y": 640,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        }
+      ],
+      "contactSamples": [
+        {
+          "name": "rear-contact",
+          "x": 190,
+          "y": 710,
+          "changes": 24,
+          "alphaChanges": 0,
+          "opaque": 25
+        },
+        {
+          "name": "front-contact",
+          "x": 859,
+          "y": 802,
+          "changes": 25,
+          "alphaChanges": 0,
+          "opaque": 25
+        }
+      ],
+      "garageChanged": 0,
+      "fingerprint": "4668ee625040e1646dab6c10fc4198d6c148415b3c3b3096c283b62d62add0e1"
+    },
+    {
+      "variant": "porsche:blue:oz:track:track:street",
+      "dimensionsMatch": true,
+      "changed": 650524,
+      "alphaChanged": 201631,
+      "outsideTyreChanged": 613571,
+      "rimSamples": [
+        {
+          "name": "rear-wheel",
+          "x": 180,
+          "y": 580,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        },
+        {
+          "name": "front-wheel",
+          "x": 854,
+          "y": 640,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        }
+      ],
+      "contactSamples": [
+        {
+          "name": "rear-contact",
+          "x": 190,
+          "y": 710,
+          "changes": 24,
+          "alphaChanges": 0,
+          "opaque": 25
+        },
+        {
+          "name": "front-contact",
+          "x": 859,
+          "y": 802,
+          "changes": 25,
+          "alphaChanges": 0,
+          "opaque": 25
+        }
+      ],
+      "garageChanged": 0,
+      "fingerprint": "b18e520eea92a1bcb7ec9f6f0c811fdf818ece08b78dd588e3c5dae3b56bf844"
+    },
+    {
+      "variant": "porsche:blue:oz:track:track:track",
+      "dimensionsMatch": true,
+      "changed": 657125,
+      "alphaChanged": 223639,
+      "outsideTyreChanged": 619830,
+      "rimSamples": [
+        {
+          "name": "rear-wheel",
+          "x": 180,
+          "y": 580,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        },
+        {
+          "name": "front-wheel",
+          "x": 854,
+          "y": 640,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        }
+      ],
+      "contactSamples": [
+        {
+          "name": "rear-contact",
+          "x": 190,
+          "y": 710,
+          "changes": 24,
+          "alphaChanges": 0,
+          "opaque": 25
+        },
+        {
+          "name": "front-contact",
+          "x": 859,
+          "y": 802,
+          "changes": 25,
+          "alphaChanges": 0,
+          "opaque": 25
+        }
+      ],
+      "garageChanged": 0,
+      "fingerprint": "af6fe5e2564dc0a2e6b78ab941ac6e04a403e81783be31e7e92b1f89631e0b3e"
+    }
+  ],
+  "readiness_failures": [],
+  "matrix_wheel_scope": [
+    "oz"
+  ],
+  "matrix_vehicle_scope": [
+    "porsche"
+  ],
+  "coverage_counts": {
+    "baseline_paint": 0,
+    "blue_mechanical": 27,
+    "painted_maximum_upgrades": 0
+  },
+  "screenshots": [
+    "porsche-oz-27-mechanical-builds.jpg"
+  ],
+  "browser_observations": [
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "page_errors": [],
+      "http_errors": [],
+      "failed_requests": [],
+      "console_errors": [],
+      "expected_network_failures": false
+    }
+  ],
+  "visual_acceptance": "Contact sheets require independent visual review; passing tests do not prove artistic fidelity."
+}

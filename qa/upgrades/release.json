@@ -1,6 +1,5 @@
 {
   "edition": "tyres, suspension and carbon kits",
-  "release_date": "2026-10-21",
   "vehicles": [
     "Subaru WRX STI",
     "Porsche 911 GT3 RS",
@@ -24,12 +23,22 @@
   },
   "archive_integrity": "verified",
   "node_tests_passed": 27,
+  "browser_cases_passed": 23,
+  "browser_checks_passed": 20872,
+  "browser_coverage_counts": {
+    "baseline_paint": 216,
+    "blue_mechanical": 486,
+    "painted_maximum_upgrades": 18
+  },
   "portable_checks_passed": 1273,
   "portable_coverage_counts": {
     "baseline_paint": 216,
     "representative_upgrades": 18
   },
-  "geometry_cases_passed": 36,
-  "production_browser_status": "Extended matrix still in progress; two 15-second native-input timeouts require harness retries. Full 486-case success is not claimed.",
-  "file_protocol_scope": "Not tested: file:// navigation is blocked by managed Chromium policy."
+  "browser_result_file": "browser-results.json",
+  "portable_result_file": "portable-results.json",
+  "coverage_scope": "See current results for exact baseline/mechanical/painted-upgrade coverage. All 5,832 keys are validated by Node availability enumeration; that count is not a claim of 5,832 browser tests.",
+  "file_protocol_scope": "Not tested: file:// navigation is blocked by managed Chromium policy.",
+  "release_date": "2026-10-21",
+  "browser_execution_scope": "Composite 23-case report: completed batches retained, timed-out batches revalidated, exact 486-key mechanical set asserted. Check count includes successful steps from retries."
 }

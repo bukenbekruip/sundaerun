@@ -1,0 +1,59 @@
+{
+  "generated_at_utc": "2026-10-20T22:09:46.499961+00:00",
+  "base_url": "http://127.0.0.1:4173",
+  "case_count": 1,
+  "passed": 0,
+  "failed": 1,
+  "assertions_passed": 3,
+  "cases": [
+    {
+      "name": "all-486-blue-mechanical-combinations",
+      "status": "failed",
+      "assertions_passed": 3,
+      "error": "Locator.click: Timeout 30000ms exceeded.\nCall log:\n  - waiting for locator(\".category-menu .category[data-category=\\\"suspension\\\"]\")\n",
+      "traceback": "Traceback (most recent call last):\n  File \"/workspace/sundae-run/tests/browser-smoke.py\", line 657, in run_case\n    try:await action()\n        ^^^^^^^^^^^^^^\n  File \"/workspace/sundae-run/tests/browser-smoke.py\", line 349, in mechanical_matrix\n    await self.select(page,wheel=wheel,paint='blue',**PART_DEFAULTS)\n  File \"/workspace/sundae-run/tests/browser-smoke.py\", line 123, in select\n    await self.category(page, PART_CATEGORIES[kind])\n  File \"/workspace/sundae-run/tests/browser-smoke.py\", line 113, in category\n    await page.locator(f'.category-menu .category[data-category=\"{category}\"]').click(no_wait_after=True)\n  File \"/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/playwright/async_api/_generated.py\", line 17894, in click\n    await self._impl_obj.click(\n  File \"/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/playwright/_impl/_locator.py\", line 165, in click\n    return await self._frame._click(self._selector, strict=True, **params)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/playwright/_impl/_frame.py\", line 593, in _click\n    await self._channel.send(\"click\", self._timeout, locals_to_params(locals()))\n  File \"/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/playwright/_impl/_connection.py\", line 76, in send\n    return await self._connection.wrap_api_call(\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages/playwright/_impl/_connection.py\", line 632, in wrap_api_call\n    raise rewrite_error(error, f\"{parsed_st['apiName']}: {error}\") from None\nplaywright._impl._errors.TimeoutError: Locator.click: Timeout 30000ms exceeded.\nCall log:\n  - waiting for locator(\".category-menu .category[data-category=\\\"suspension\\\"]\")\n\n"
+    }
+  ],
+  "assertions": [
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Built page responds HTTP 200",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Three-car page has its intended title",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Upgrade diagnostic imports the actual paint renderer dependency",
+      "status": "passed"
+    }
+  ],
+  "combinations": [],
+  "paint_pixel_comparisons": [],
+  "mechanical_combinations": [],
+  "painted_upgrade_combinations": [],
+  "upgrade_pixel_comparisons": [],
+  "matrix_vehicle_scope": [
+    "porsche"
+  ],
+  "coverage_counts": {
+    "baseline_paint": 0,
+    "blue_mechanical": 0,
+    "painted_maximum_upgrades": 0
+  },
+  "screenshots": [],
+  "browser_observations": [
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "page_errors": [],
+      "http_errors": [],
+      "failed_requests": [],
+      "console_errors": [],
+      "expected_network_failures": false
+    }
+  ],
+  "visual_acceptance": "Contact sheets require independent visual review; passing tests do not prove artistic fidelity."
+}

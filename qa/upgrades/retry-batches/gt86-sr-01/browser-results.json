@@ -1,0 +1,4667 @@
+{
+  "generated_at_utc": "2026-10-20T22:29:54.347505+00:00",
+  "base_url": "http://127.0.0.1:4173",
+  "case_count": 1,
+  "passed": 1,
+  "failed": 0,
+  "assertions_passed": 675,
+  "cases": [
+    {
+      "name": "all-486-blue-mechanical-combinations",
+      "status": "passed",
+      "assertions_passed": 675
+    }
+  ],
+  "assertions": [
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Built page responds HTTP 200",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Three-car page has its intended title",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Upgrade diagnostic imports the actual paint renderer dependency",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one #vehicle-options button selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered #vehicle-options [data-vehicle=\"gt86\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .wheel-select selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .wheel-select[data-wheel=\"sr-01\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .paint-option selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .paint-option[data-paint=\"blue\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .part-select[data-part-kind=\"tyre\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"tyre\"][data-part=\"road\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .part-select[data-part-kind=\"suspension\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"suspension\"][data-part=\"original\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .part-select[data-part-kind=\"body\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"body\"][data-part=\"original\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one active parts-panel checkmark is visible",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one paint checkmark is rendered",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Category highlights agree with the last interaction",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Checkout shows all five correctly labelled selections",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "All five quote lines reflect selected unowned parts",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Total includes each selected paid part exactly once",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Mechanical preview never spends credits",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "gt86:blue:sr-01: complete-car canvas dimensions preserved",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "gt86:blue:sr-01: garage plate remains identical",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "gt86:blue:sr-01: both rim centres retain their position and original pixels",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "gt86:blue:sr-01: front and rear ground contacts are both measured",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "gt86:blue:sr-01: both original-body tyre contact patches retain their alpha footprint and coordinates",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "gt86:blue:sr-01: suspension keeps both road-tyre contact patches pixel-identical",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "gt86:blue:sr-01: tyre choice preserves every alpha byte",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "gt86:blue:sr-01: tyre choice changes only the renderer-authored rubber mask",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "gt86:blue:sr-01: baseline exact or selected upgrade visibly changes pixels",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one #vehicle-options button selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered #vehicle-options [data-vehicle=\"gt86\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .wheel-select selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .wheel-select[data-wheel=\"sr-01\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .paint-option selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .paint-option[data-paint=\"blue\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .part-select[data-part-kind=\"tyre\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"tyre\"][data-part=\"road\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .part-select[data-part-kind=\"suspension\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"suspension\"][data-part=\"original\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .part-select[data-part-kind=\"body\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"body\"][data-part=\"street\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one active parts-panel checkmark is visible",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one paint checkmark is rendered",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Category highlights agree with the last interaction",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Checkout shows all five correctly labelled selections",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "All five quote lines reflect selected unowned parts",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Total includes each selected paid part exactly once",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Mechanical preview never spends credits",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "gt86:blue:sr-01:road:original:street: complete-car canvas dimensions preserved",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "gt86:blue:sr-01:road:original:street: garage plate remains identical",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "gt86:blue:sr-01:road:original:street: both rim centres retain their position and original pixels",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "gt86:blue:sr-01:road:original:street: front and rear ground contacts are both measured",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "gt86:blue:sr-01:road:original:street: baseline exact or selected upgrade visibly changes pixels",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one #vehicle-options button selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered #vehicle-options [data-vehicle=\"gt86\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .wheel-select selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .wheel-select[data-wheel=\"sr-01\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .paint-option selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .paint-option[data-paint=\"blue\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .part-select[data-part-kind=\"tyre\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"tyre\"][data-part=\"road\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .part-select[data-part-kind=\"suspension\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"suspension\"][data-part=\"original\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .part-select[data-part-kind=\"body\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"body\"][data-part=\"track\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one active parts-panel checkmark is visible",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one paint checkmark is rendered",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Category highlights agree with the last interaction",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Checkout shows all five correctly labelled selections",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "All five quote lines reflect selected unowned parts",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Total includes each selected paid part exactly once",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Mechanical preview never spends credits",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "gt86:blue:sr-01:road:original:track: complete-car canvas dimensions preserved",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "gt86:blue:sr-01:road:original:track: garage plate remains identical",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "gt86:blue:sr-01:road:original:track: both rim centres retain their position and original pixels",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "gt86:blue:sr-01:road:original:track: front and rear ground contacts are both measured",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "gt86:blue:sr-01:road:original:track: baseline exact or selected upgrade visibly changes pixels",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one #vehicle-options button selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered #vehicle-options [data-vehicle=\"gt86\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .wheel-select selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .wheel-select[data-wheel=\"sr-01\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .paint-option selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .paint-option[data-paint=\"blue\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .part-select[data-part-kind=\"tyre\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"tyre\"][data-part=\"road\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .part-select[data-part-kind=\"suspension\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"suspension\"][data-part=\"sport\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .part-select[data-part-kind=\"body\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"body\"][data-part=\"original\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one active parts-panel checkmark is visible",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one paint checkmark is rendered",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Category highlights agree with the last interaction",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Checkout shows all five correctly labelled selections",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "All five quote lines reflect selected unowned parts",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Total includes each selected paid part exactly once",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Mechanical preview never spends credits",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "gt86:blue:sr-01:road:sport:original: complete-car canvas dimensions preserved",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "gt86:blue:sr-01:road:sport:original: garage plate remains identical",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "gt86:blue:sr-01:road:sport:original: both rim centres retain their position and original pixels",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "gt86:blue:sr-01:road:sport:original: front and rear ground contacts are both measured",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "gt86:blue:sr-01:road:sport:original: both original-body tyre contact patches retain their alpha footprint and coordinates",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "gt86:blue:sr-01:road:sport:original: suspension keeps both road-tyre contact patches pixel-identical",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "gt86:blue:sr-01:road:sport:original: baseline exact or selected upgrade visibly changes pixels",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one #vehicle-options button selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered #vehicle-options [data-vehicle=\"gt86\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .wheel-select selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .wheel-select[data-wheel=\"sr-01\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .paint-option selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .paint-option[data-paint=\"blue\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .part-select[data-part-kind=\"tyre\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"tyre\"][data-part=\"road\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .part-select[data-part-kind=\"suspension\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"suspension\"][data-part=\"sport\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .part-select[data-part-kind=\"body\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"body\"][data-part=\"street\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one active parts-panel checkmark is visible",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one paint checkmark is rendered",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Category highlights agree with the last interaction",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Checkout shows all five correctly labelled selections",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "All five quote lines reflect selected unowned parts",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Total includes each selected paid part exactly once",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Mechanical preview never spends credits",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "gt86:blue:sr-01:road:sport:street: complete-car canvas dimensions preserved",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "gt86:blue:sr-01:road:sport:street: garage plate remains identical",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "gt86:blue:sr-01:road:sport:street: both rim centres retain their position and original pixels",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "gt86:blue:sr-01:road:sport:street: front and rear ground contacts are both measured",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "gt86:blue:sr-01:road:sport:street: baseline exact or selected upgrade visibly changes pixels",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one #vehicle-options button selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered #vehicle-options [data-vehicle=\"gt86\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .wheel-select selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .wheel-select[data-wheel=\"sr-01\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .paint-option selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .paint-option[data-paint=\"blue\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .part-select[data-part-kind=\"tyre\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"tyre\"][data-part=\"road\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .part-select[data-part-kind=\"suspension\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"suspension\"][data-part=\"sport\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .part-select[data-part-kind=\"body\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"body\"][data-part=\"track\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one active parts-panel checkmark is visible",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one paint checkmark is rendered",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Category highlights agree with the last interaction",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Checkout shows all five correctly labelled selections",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "All five quote lines reflect selected unowned parts",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Total includes each selected paid part exactly once",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Mechanical preview never spends credits",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "gt86:blue:sr-01:road:sport:track: complete-car canvas dimensions preserved",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "gt86:blue:sr-01:road:sport:track: garage plate remains identical",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "gt86:blue:sr-01:road:sport:track: both rim centres retain their position and original pixels",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "gt86:blue:sr-01:road:sport:track: front and rear ground contacts are both measured",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "gt86:blue:sr-01:road:sport:track: baseline exact or selected upgrade visibly changes pixels",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one #vehicle-options button selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered #vehicle-options [data-vehicle=\"gt86\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .wheel-select selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .wheel-select[data-wheel=\"sr-01\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .paint-option selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .paint-option[data-paint=\"blue\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .part-select[data-part-kind=\"tyre\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"tyre\"][data-part=\"road\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .part-select[data-part-kind=\"suspension\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"suspension\"][data-part=\"track\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .part-select[data-part-kind=\"body\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"body\"][data-part=\"original\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one active parts-panel checkmark is visible",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one paint checkmark is rendered",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Category highlights agree with the last interaction",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Checkout shows all five correctly labelled selections",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "All five quote lines reflect selected unowned parts",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Total includes each selected paid part exactly once",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Mechanical preview never spends credits",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "gt86:blue:sr-01:road:track:original: complete-car canvas dimensions preserved",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "gt86:blue:sr-01:road:track:original: garage plate remains identical",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "gt86:blue:sr-01:road:track:original: both rim centres retain their position and original pixels",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "gt86:blue:sr-01:road:track:original: front and rear ground contacts are both measured",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "gt86:blue:sr-01:road:track:original: both original-body tyre contact patches retain their alpha footprint and coordinates",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "gt86:blue:sr-01:road:track:original: suspension keeps both road-tyre contact patches pixel-identical",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "gt86:blue:sr-01:road:track:original: baseline exact or selected upgrade visibly changes pixels",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one #vehicle-options button selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered #vehicle-options [data-vehicle=\"gt86\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .wheel-select selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .wheel-select[data-wheel=\"sr-01\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .paint-option selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .paint-option[data-paint=\"blue\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .part-select[data-part-kind=\"tyre\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"tyre\"][data-part=\"road\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .part-select[data-part-kind=\"suspension\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"suspension\"][data-part=\"track\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .part-select[data-part-kind=\"body\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"body\"][data-part=\"street\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one active parts-panel checkmark is visible",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one paint checkmark is rendered",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Category highlights agree with the last interaction",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Checkout shows all five correctly labelled selections",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "All five quote lines reflect selected unowned parts",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Total includes each selected paid part exactly once",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Mechanical preview never spends credits",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "gt86:blue:sr-01:road:track:street: complete-car canvas dimensions preserved",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "gt86:blue:sr-01:road:track:street: garage plate remains identical",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "gt86:blue:sr-01:road:track:street: both rim centres retain their position and original pixels",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "gt86:blue:sr-01:road:track:street: front and rear ground contacts are both measured",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "gt86:blue:sr-01:road:track:street: baseline exact or selected upgrade visibly changes pixels",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one #vehicle-options button selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered #vehicle-options [data-vehicle=\"gt86\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .wheel-select selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .wheel-select[data-wheel=\"sr-01\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .paint-option selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .paint-option[data-paint=\"blue\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .part-select[data-part-kind=\"tyre\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"tyre\"][data-part=\"road\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .part-select[data-part-kind=\"suspension\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"suspension\"][data-part=\"track\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .part-select[data-part-kind=\"body\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"body\"][data-part=\"track\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one active parts-panel checkmark is visible",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one paint checkmark is rendered",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Category highlights agree with the last interaction",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Checkout shows all five correctly labelled selections",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "All five quote lines reflect selected unowned parts",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Total includes each selected paid part exactly once",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Mechanical preview never spends credits",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "gt86:blue:sr-01:road:track:track: complete-car canvas dimensions preserved",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "gt86:blue:sr-01:road:track:track: garage plate remains identical",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "gt86:blue:sr-01:road:track:track: both rim centres retain their position and original pixels",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "gt86:blue:sr-01:road:track:track: front and rear ground contacts are both measured",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "gt86:blue:sr-01:road:track:track: baseline exact or selected upgrade visibly changes pixels",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one #vehicle-options button selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered #vehicle-options [data-vehicle=\"gt86\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .wheel-select selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .wheel-select[data-wheel=\"sr-01\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .paint-option selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .paint-option[data-paint=\"blue\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .part-select[data-part-kind=\"tyre\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"tyre\"][data-part=\"sport\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .part-select[data-part-kind=\"suspension\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"suspension\"][data-part=\"original\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .part-select[data-part-kind=\"body\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"body\"][data-part=\"original\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one active parts-panel checkmark is visible",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one paint checkmark is rendered",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Category highlights agree with the last interaction",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Checkout shows all five correctly labelled selections",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "All five quote lines reflect selected unowned parts",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Total includes each selected paid part exactly once",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Mechanical preview never spends credits",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "gt86:blue:sr-01:sport:original:original: complete-car canvas dimensions preserved",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "gt86:blue:sr-01:sport:original:original: garage plate remains identical",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "gt86:blue:sr-01:sport:original:original: both rim centres retain their position and original pixels",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "gt86:blue:sr-01:sport:original:original: front and rear ground contacts are both measured",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "gt86:blue:sr-01:sport:original:original: both original-body tyre contact patches retain their alpha footprint and coordinates",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "gt86:blue:sr-01:sport:original:original: tyre choice preserves every alpha byte",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "gt86:blue:sr-01:sport:original:original: tyre choice changes only the renderer-authored rubber mask",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "gt86:blue:sr-01:sport:original:original: baseline exact or selected upgrade visibly changes pixels",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one #vehicle-options button selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered #vehicle-options [data-vehicle=\"gt86\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .wheel-select selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .wheel-select[data-wheel=\"sr-01\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .paint-option selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .paint-option[data-paint=\"blue\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .part-select[data-part-kind=\"tyre\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"tyre\"][data-part=\"sport\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .part-select[data-part-kind=\"suspension\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"suspension\"][data-part=\"original\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .part-select[data-part-kind=\"body\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"body\"][data-part=\"street\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one active parts-panel checkmark is visible",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one paint checkmark is rendered",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Category highlights agree with the last interaction",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Checkout shows all five correctly labelled selections",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "All five quote lines reflect selected unowned parts",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Total includes each selected paid part exactly once",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Mechanical preview never spends credits",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "gt86:blue:sr-01:sport:original:street: complete-car canvas dimensions preserved",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "gt86:blue:sr-01:sport:original:street: garage plate remains identical",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "gt86:blue:sr-01:sport:original:street: both rim centres retain their position and original pixels",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "gt86:blue:sr-01:sport:original:street: front and rear ground contacts are both measured",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "gt86:blue:sr-01:sport:original:street: baseline exact or selected upgrade visibly changes pixels",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one #vehicle-options button selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered #vehicle-options [data-vehicle=\"gt86\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .wheel-select selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .wheel-select[data-wheel=\"sr-01\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .paint-option selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .paint-option[data-paint=\"blue\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .part-select[data-part-kind=\"tyre\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"tyre\"][data-part=\"sport\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .part-select[data-part-kind=\"suspension\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"suspension\"][data-part=\"original\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .part-select[data-part-kind=\"body\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"body\"][data-part=\"track\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one active parts-panel checkmark is visible",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one paint checkmark is rendered",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Category highlights agree with the last interaction",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Checkout shows all five correctly labelled selections",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "All five quote lines reflect selected unowned parts",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Total includes each selected paid part exactly once",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Mechanical preview never spends credits",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "gt86:blue:sr-01:sport:original:track: complete-car canvas dimensions preserved",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "gt86:blue:sr-01:sport:original:track: garage plate remains identical",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "gt86:blue:sr-01:sport:original:track: both rim centres retain their position and original pixels",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "gt86:blue:sr-01:sport:original:track: front and rear ground contacts are both measured",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "gt86:blue:sr-01:sport:original:track: baseline exact or selected upgrade visibly changes pixels",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one #vehicle-options button selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered #vehicle-options [data-vehicle=\"gt86\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .wheel-select selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .wheel-select[data-wheel=\"sr-01\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .paint-option selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .paint-option[data-paint=\"blue\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .part-select[data-part-kind=\"tyre\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"tyre\"][data-part=\"sport\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .part-select[data-part-kind=\"suspension\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"suspension\"][data-part=\"sport\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .part-select[data-part-kind=\"body\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"body\"][data-part=\"original\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one active parts-panel checkmark is visible",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one paint checkmark is rendered",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Category highlights agree with the last interaction",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Checkout shows all five correctly labelled selections",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "All five quote lines reflect selected unowned parts",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Total includes each selected paid part exactly once",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Mechanical preview never spends credits",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "gt86:blue:sr-01:sport:sport:original: complete-car canvas dimensions preserved",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "gt86:blue:sr-01:sport:sport:original: garage plate remains identical",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "gt86:blue:sr-01:sport:sport:original: both rim centres retain their position and original pixels",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "gt86:blue:sr-01:sport:sport:original: front and rear ground contacts are both measured",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "gt86:blue:sr-01:sport:sport:original: both original-body tyre contact patches retain their alpha footprint and coordinates",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "gt86:blue:sr-01:sport:sport:original: baseline exact or selected upgrade visibly changes pixels",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one #vehicle-options button selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered #vehicle-options [data-vehicle=\"gt86\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .wheel-select selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .wheel-select[data-wheel=\"sr-01\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .paint-option selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .paint-option[data-paint=\"blue\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .part-select[data-part-kind=\"tyre\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"tyre\"][data-part=\"sport\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .part-select[data-part-kind=\"suspension\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"suspension\"][data-part=\"sport\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .part-select[data-part-kind=\"body\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"body\"][data-part=\"street\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one active parts-panel checkmark is visible",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one paint checkmark is rendered",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Category highlights agree with the last interaction",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Checkout shows all five correctly labelled selections",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "All five quote lines reflect selected unowned parts",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Total includes each selected paid part exactly once",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Mechanical preview never spends credits",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "gt86:blue:sr-01:sport:sport:street: complete-car canvas dimensions preserved",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "gt86:blue:sr-01:sport:sport:street: garage plate remains identical",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "gt86:blue:sr-01:sport:sport:street: both rim centres retain their position and original pixels",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "gt86:blue:sr-01:sport:sport:street: front and rear ground contacts are both measured",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "gt86:blue:sr-01:sport:sport:street: baseline exact or selected upgrade visibly changes pixels",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one #vehicle-options button selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered #vehicle-options [data-vehicle=\"gt86\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .wheel-select selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .wheel-select[data-wheel=\"sr-01\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .paint-option selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .paint-option[data-paint=\"blue\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .part-select[data-part-kind=\"tyre\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"tyre\"][data-part=\"sport\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .part-select[data-part-kind=\"suspension\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"suspension\"][data-part=\"sport\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .part-select[data-part-kind=\"body\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"body\"][data-part=\"track\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one active parts-panel checkmark is visible",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one paint checkmark is rendered",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Category highlights agree with the last interaction",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Checkout shows all five correctly labelled selections",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "All five quote lines reflect selected unowned parts",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Total includes each selected paid part exactly once",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Mechanical preview never spends credits",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "gt86:blue:sr-01:sport:sport:track: complete-car canvas dimensions preserved",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "gt86:blue:sr-01:sport:sport:track: garage plate remains identical",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "gt86:blue:sr-01:sport:sport:track: both rim centres retain their position and original pixels",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "gt86:blue:sr-01:sport:sport:track: front and rear ground contacts are both measured",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "gt86:blue:sr-01:sport:sport:track: baseline exact or selected upgrade visibly changes pixels",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one #vehicle-options button selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered #vehicle-options [data-vehicle=\"gt86\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .wheel-select selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .wheel-select[data-wheel=\"sr-01\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .paint-option selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .paint-option[data-paint=\"blue\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .part-select[data-part-kind=\"tyre\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"tyre\"][data-part=\"sport\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .part-select[data-part-kind=\"suspension\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"suspension\"][data-part=\"track\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .part-select[data-part-kind=\"body\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"body\"][data-part=\"original\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one active parts-panel checkmark is visible",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one paint checkmark is rendered",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Category highlights agree with the last interaction",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Checkout shows all five correctly labelled selections",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "All five quote lines reflect selected unowned parts",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Total includes each selected paid part exactly once",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Mechanical preview never spends credits",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "gt86:blue:sr-01:sport:track:original: complete-car canvas dimensions preserved",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "gt86:blue:sr-01:sport:track:original: garage plate remains identical",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "gt86:blue:sr-01:sport:track:original: both rim centres retain their position and original pixels",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "gt86:blue:sr-01:sport:track:original: front and rear ground contacts are both measured",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "gt86:blue:sr-01:sport:track:original: both original-body tyre contact patches retain their alpha footprint and coordinates",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "gt86:blue:sr-01:sport:track:original: baseline exact or selected upgrade visibly changes pixels",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one #vehicle-options button selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered #vehicle-options [data-vehicle=\"gt86\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .wheel-select selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .wheel-select[data-wheel=\"sr-01\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .paint-option selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .paint-option[data-paint=\"blue\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .part-select[data-part-kind=\"tyre\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"tyre\"][data-part=\"sport\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .part-select[data-part-kind=\"suspension\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"suspension\"][data-part=\"track\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .part-select[data-part-kind=\"body\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"body\"][data-part=\"street\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one active parts-panel checkmark is visible",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one paint checkmark is rendered",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Category highlights agree with the last interaction",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Checkout shows all five correctly labelled selections",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "All five quote lines reflect selected unowned parts",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Total includes each selected paid part exactly once",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Mechanical preview never spends credits",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "gt86:blue:sr-01:sport:track:street: complete-car canvas dimensions preserved",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "gt86:blue:sr-01:sport:track:street: garage plate remains identical",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "gt86:blue:sr-01:sport:track:street: both rim centres retain their position and original pixels",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "gt86:blue:sr-01:sport:track:street: front and rear ground contacts are both measured",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "gt86:blue:sr-01:sport:track:street: baseline exact or selected upgrade visibly changes pixels",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one #vehicle-options button selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered #vehicle-options [data-vehicle=\"gt86\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .wheel-select selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .wheel-select[data-wheel=\"sr-01\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .paint-option selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .paint-option[data-paint=\"blue\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .part-select[data-part-kind=\"tyre\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"tyre\"][data-part=\"sport\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .part-select[data-part-kind=\"suspension\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"suspension\"][data-part=\"track\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .part-select[data-part-kind=\"body\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"body\"][data-part=\"track\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one active parts-panel checkmark is visible",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one paint checkmark is rendered",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Category highlights agree with the last interaction",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Checkout shows all five correctly labelled selections",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "All five quote lines reflect selected unowned parts",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Total includes each selected paid part exactly once",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Mechanical preview never spends credits",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "gt86:blue:sr-01:sport:track:track: complete-car canvas dimensions preserved",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "gt86:blue:sr-01:sport:track:track: garage plate remains identical",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "gt86:blue:sr-01:sport:track:track: both rim centres retain their position and original pixels",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "gt86:blue:sr-01:sport:track:track: front and rear ground contacts are both measured",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "gt86:blue:sr-01:sport:track:track: baseline exact or selected upgrade visibly changes pixels",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one #vehicle-options button selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered #vehicle-options [data-vehicle=\"gt86\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .wheel-select selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .wheel-select[data-wheel=\"sr-01\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .paint-option selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .paint-option[data-paint=\"blue\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .part-select[data-part-kind=\"tyre\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"tyre\"][data-part=\"track\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .part-select[data-part-kind=\"suspension\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"suspension\"][data-part=\"original\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .part-select[data-part-kind=\"body\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"body\"][data-part=\"original\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one active parts-panel checkmark is visible",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one paint checkmark is rendered",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Category highlights agree with the last interaction",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Checkout shows all five correctly labelled selections",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "All five quote lines reflect selected unowned parts",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Total includes each selected paid part exactly once",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Mechanical preview never spends credits",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "gt86:blue:sr-01:track:original:original: complete-car canvas dimensions preserved",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "gt86:blue:sr-01:track:original:original: garage plate remains identical",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "gt86:blue:sr-01:track:original:original: both rim centres retain their position and original pixels",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "gt86:blue:sr-01:track:original:original: front and rear ground contacts are both measured",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "gt86:blue:sr-01:track:original:original: both original-body tyre contact patches retain their alpha footprint and coordinates",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "gt86:blue:sr-01:track:original:original: tyre choice preserves every alpha byte",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "gt86:blue:sr-01:track:original:original: tyre choice changes only the renderer-authored rubber mask",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "gt86:blue:sr-01:track:original:original: baseline exact or selected upgrade visibly changes pixels",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one #vehicle-options button selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered #vehicle-options [data-vehicle=\"gt86\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .wheel-select selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .wheel-select[data-wheel=\"sr-01\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .paint-option selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .paint-option[data-paint=\"blue\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .part-select[data-part-kind=\"tyre\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"tyre\"][data-part=\"track\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .part-select[data-part-kind=\"suspension\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"suspension\"][data-part=\"original\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .part-select[data-part-kind=\"body\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"body\"][data-part=\"street\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one active parts-panel checkmark is visible",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one paint checkmark is rendered",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Category highlights agree with the last interaction",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Checkout shows all five correctly labelled selections",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "All five quote lines reflect selected unowned parts",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Total includes each selected paid part exactly once",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Mechanical preview never spends credits",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "gt86:blue:sr-01:track:original:street: complete-car canvas dimensions preserved",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "gt86:blue:sr-01:track:original:street: garage plate remains identical",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "gt86:blue:sr-01:track:original:street: both rim centres retain their position and original pixels",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "gt86:blue:sr-01:track:original:street: front and rear ground contacts are both measured",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "gt86:blue:sr-01:track:original:street: baseline exact or selected upgrade visibly changes pixels",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one #vehicle-options button selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered #vehicle-options [data-vehicle=\"gt86\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .wheel-select selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .wheel-select[data-wheel=\"sr-01\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .paint-option selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .paint-option[data-paint=\"blue\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .part-select[data-part-kind=\"tyre\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"tyre\"][data-part=\"track\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .part-select[data-part-kind=\"suspension\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"suspension\"][data-part=\"original\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .part-select[data-part-kind=\"body\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"body\"][data-part=\"track\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one active parts-panel checkmark is visible",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one paint checkmark is rendered",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Category highlights agree with the last interaction",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Checkout shows all five correctly labelled selections",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "All five quote lines reflect selected unowned parts",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Total includes each selected paid part exactly once",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Mechanical preview never spends credits",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "gt86:blue:sr-01:track:original:track: complete-car canvas dimensions preserved",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "gt86:blue:sr-01:track:original:track: garage plate remains identical",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "gt86:blue:sr-01:track:original:track: both rim centres retain their position and original pixels",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "gt86:blue:sr-01:track:original:track: front and rear ground contacts are both measured",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "gt86:blue:sr-01:track:original:track: baseline exact or selected upgrade visibly changes pixels",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one #vehicle-options button selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered #vehicle-options [data-vehicle=\"gt86\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .wheel-select selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .wheel-select[data-wheel=\"sr-01\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .paint-option selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .paint-option[data-paint=\"blue\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .part-select[data-part-kind=\"tyre\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"tyre\"][data-part=\"track\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .part-select[data-part-kind=\"suspension\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"suspension\"][data-part=\"sport\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .part-select[data-part-kind=\"body\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"body\"][data-part=\"original\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one active parts-panel checkmark is visible",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one paint checkmark is rendered",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Category highlights agree with the last interaction",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Checkout shows all five correctly labelled selections",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "All five quote lines reflect selected unowned parts",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Total includes each selected paid part exactly once",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Mechanical preview never spends credits",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "gt86:blue:sr-01:track:sport:original: complete-car canvas dimensions preserved",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "gt86:blue:sr-01:track:sport:original: garage plate remains identical",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "gt86:blue:sr-01:track:sport:original: both rim centres retain their position and original pixels",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "gt86:blue:sr-01:track:sport:original: front and rear ground contacts are both measured",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "gt86:blue:sr-01:track:sport:original: both original-body tyre contact patches retain their alpha footprint and coordinates",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "gt86:blue:sr-01:track:sport:original: baseline exact or selected upgrade visibly changes pixels",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one #vehicle-options button selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered #vehicle-options [data-vehicle=\"gt86\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .wheel-select selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .wheel-select[data-wheel=\"sr-01\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .paint-option selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .paint-option[data-paint=\"blue\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .part-select[data-part-kind=\"tyre\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"tyre\"][data-part=\"track\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .part-select[data-part-kind=\"suspension\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"suspension\"][data-part=\"sport\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .part-select[data-part-kind=\"body\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"body\"][data-part=\"street\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one active parts-panel checkmark is visible",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one paint checkmark is rendered",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Category highlights agree with the last interaction",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Checkout shows all five correctly labelled selections",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "All five quote lines reflect selected unowned parts",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Total includes each selected paid part exactly once",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Mechanical preview never spends credits",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "gt86:blue:sr-01:track:sport:street: complete-car canvas dimensions preserved",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "gt86:blue:sr-01:track:sport:street: garage plate remains identical",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "gt86:blue:sr-01:track:sport:street: both rim centres retain their position and original pixels",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "gt86:blue:sr-01:track:sport:street: front and rear ground contacts are both measured",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "gt86:blue:sr-01:track:sport:street: baseline exact or selected upgrade visibly changes pixels",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one #vehicle-options button selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered #vehicle-options [data-vehicle=\"gt86\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .wheel-select selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .wheel-select[data-wheel=\"sr-01\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .paint-option selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .paint-option[data-paint=\"blue\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .part-select[data-part-kind=\"tyre\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"tyre\"][data-part=\"track\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .part-select[data-part-kind=\"suspension\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"suspension\"][data-part=\"sport\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .part-select[data-part-kind=\"body\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"body\"][data-part=\"track\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one active parts-panel checkmark is visible",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one paint checkmark is rendered",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Category highlights agree with the last interaction",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Checkout shows all five correctly labelled selections",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "All five quote lines reflect selected unowned parts",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Total includes each selected paid part exactly once",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Mechanical preview never spends credits",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "gt86:blue:sr-01:track:sport:track: complete-car canvas dimensions preserved",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "gt86:blue:sr-01:track:sport:track: garage plate remains identical",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "gt86:blue:sr-01:track:sport:track: both rim centres retain their position and original pixels",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "gt86:blue:sr-01:track:sport:track: front and rear ground contacts are both measured",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "gt86:blue:sr-01:track:sport:track: baseline exact or selected upgrade visibly changes pixels",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one #vehicle-options button selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered #vehicle-options [data-vehicle=\"gt86\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .wheel-select selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .wheel-select[data-wheel=\"sr-01\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .paint-option selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .paint-option[data-paint=\"blue\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .part-select[data-part-kind=\"tyre\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"tyre\"][data-part=\"track\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .part-select[data-part-kind=\"suspension\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"suspension\"][data-part=\"track\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .part-select[data-part-kind=\"body\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"body\"][data-part=\"original\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one active parts-panel checkmark is visible",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one paint checkmark is rendered",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Category highlights agree with the last interaction",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Checkout shows all five correctly labelled selections",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "All five quote lines reflect selected unowned parts",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Total includes each selected paid part exactly once",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Mechanical preview never spends credits",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "gt86:blue:sr-01:track:track:original: complete-car canvas dimensions preserved",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "gt86:blue:sr-01:track:track:original: garage plate remains identical",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "gt86:blue:sr-01:track:track:original: both rim centres retain their position and original pixels",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "gt86:blue:sr-01:track:track:original: front and rear ground contacts are both measured",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "gt86:blue:sr-01:track:track:original: both original-body tyre contact patches retain their alpha footprint and coordinates",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "gt86:blue:sr-01:track:track:original: baseline exact or selected upgrade visibly changes pixels",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one #vehicle-options button selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered #vehicle-options [data-vehicle=\"gt86\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .wheel-select selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .wheel-select[data-wheel=\"sr-01\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .paint-option selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .paint-option[data-paint=\"blue\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .part-select[data-part-kind=\"tyre\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"tyre\"][data-part=\"track\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .part-select[data-part-kind=\"suspension\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"suspension\"][data-part=\"track\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .part-select[data-part-kind=\"body\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"body\"][data-part=\"street\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one active parts-panel checkmark is visible",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one paint checkmark is rendered",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Category highlights agree with the last interaction",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Checkout shows all five correctly labelled selections",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "All five quote lines reflect selected unowned parts",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Total includes each selected paid part exactly once",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Mechanical preview never spends credits",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "gt86:blue:sr-01:track:track:street: complete-car canvas dimensions preserved",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "gt86:blue:sr-01:track:track:street: garage plate remains identical",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "gt86:blue:sr-01:track:track:street: both rim centres retain their position and original pixels",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "gt86:blue:sr-01:track:track:street: front and rear ground contacts are both measured",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "gt86:blue:sr-01:track:track:street: baseline exact or selected upgrade visibly changes pixels",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one #vehicle-options button selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered #vehicle-options [data-vehicle=\"gt86\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .wheel-select selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .wheel-select[data-wheel=\"sr-01\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .paint-option selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .paint-option[data-paint=\"blue\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .part-select[data-part-kind=\"tyre\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"tyre\"][data-part=\"track\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .part-select[data-part-kind=\"suspension\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"suspension\"][data-part=\"track\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one .part-select[data-part-kind=\"body\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"body\"][data-part=\"track\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one active parts-panel checkmark is visible",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Exactly one paint checkmark is rendered",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Category highlights agree with the last interaction",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Checkout shows all five correctly labelled selections",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "All five quote lines reflect selected unowned parts",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Total includes each selected paid part exactly once",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "Mechanical preview never spends credits",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "gt86:blue:sr-01:track:track:track: complete-car canvas dimensions preserved",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "gt86:blue:sr-01:track:track:track: garage plate remains identical",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "gt86:blue:sr-01:track:track:track: both rim centres retain their position and original pixels",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "gt86:blue:sr-01:track:track:track: front and rear ground contacts are both measured",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "gt86:blue:sr-01:track:track:track: baseline exact or selected upgrade visibly changes pixels",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "gt86:sr-01: all 27 mechanical arrangements produce distinct pixels",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "No page_errors",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "No http_errors",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "No failed_requests",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "No console_errors",
+      "status": "passed"
+    },
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "assertion": "All 27 blue mechanical combinations for the selected cars exercised through native controls",
+      "status": "passed"
+    }
+  ],
+  "combinations": [],
+  "paint_pixel_comparisons": [],
+  "mechanical_combinations": [
+    "gt86:blue:sr-01",
+    "gt86:blue:sr-01:road:original:street",
+    "gt86:blue:sr-01:road:original:track",
+    "gt86:blue:sr-01:road:sport:original",
+    "gt86:blue:sr-01:road:sport:street",
+    "gt86:blue:sr-01:road:sport:track",
+    "gt86:blue:sr-01:road:track:original",
+    "gt86:blue:sr-01:road:track:street",
+    "gt86:blue:sr-01:road:track:track",
+    "gt86:blue:sr-01:sport:original:original",
+    "gt86:blue:sr-01:sport:original:street",
+    "gt86:blue:sr-01:sport:original:track",
+    "gt86:blue:sr-01:sport:sport:original",
+    "gt86:blue:sr-01:sport:sport:street",
+    "gt86:blue:sr-01:sport:sport:track",
+    "gt86:blue:sr-01:sport:track:original",
+    "gt86:blue:sr-01:sport:track:street",
+    "gt86:blue:sr-01:sport:track:track",
+    "gt86:blue:sr-01:track:original:original",
+    "gt86:blue:sr-01:track:original:street",
+    "gt86:blue:sr-01:track:original:track",
+    "gt86:blue:sr-01:track:sport:original",
+    "gt86:blue:sr-01:track:sport:street",
+    "gt86:blue:sr-01:track:sport:track",
+    "gt86:blue:sr-01:track:track:original",
+    "gt86:blue:sr-01:track:track:street",
+    "gt86:blue:sr-01:track:track:track"
+  ],
+  "painted_upgrade_combinations": [],
+  "upgrade_pixel_comparisons": [
+    {
+      "variant": "gt86:blue:sr-01",
+      "dimensionsMatch": true,
+      "changed": 0,
+      "alphaChanged": 0,
+      "outsideTyreChanged": 0,
+      "rimSamples": [
+        {
+          "name": "rear-wheel",
+          "x": 176,
+          "y": 596,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        },
+        {
+          "name": "front-wheel",
+          "x": 851,
+          "y": 667,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        }
+      ],
+      "contactSamples": [
+        {
+          "name": "rear-contact",
+          "x": 185,
+          "y": 733,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        },
+        {
+          "name": "front-contact",
+          "x": 851,
+          "y": 821,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        }
+      ],
+      "garageChanged": 0,
+      "fingerprint": "eb147575790f51d1e9035b1074775db59339aceea99f5e5553206446a6ef1dd1"
+    },
+    {
+      "variant": "gt86:blue:sr-01:road:original:street",
+      "dimensionsMatch": true,
+      "changed": 57783,
+      "alphaChanged": 45467,
+      "outsideTyreChanged": 56097,
+      "rimSamples": [
+        {
+          "name": "rear-wheel",
+          "x": 176,
+          "y": 596,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        },
+        {
+          "name": "front-wheel",
+          "x": 851,
+          "y": 667,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        }
+      ],
+      "contactSamples": [
+        {
+          "name": "rear-contact",
+          "x": 185,
+          "y": 733,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        },
+        {
+          "name": "front-contact",
+          "x": 851,
+          "y": 821,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        }
+      ],
+      "garageChanged": 0,
+      "fingerprint": "ff8193b18c0a082bfa4806f92bccc3d02a4015c4cc038827b2933532d742cae6"
+    },
+    {
+      "variant": "gt86:blue:sr-01:road:original:track",
+      "dimensionsMatch": true,
+      "changed": 84836,
+      "alphaChanged": 75829,
+      "outsideTyreChanged": 81337,
+      "rimSamples": [
+        {
+          "name": "rear-wheel",
+          "x": 176,
+          "y": 596,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        },
+        {
+          "name": "front-wheel",
+          "x": 851,
+          "y": 667,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        }
+      ],
+      "contactSamples": [
+        {
+          "name": "rear-contact",
+          "x": 185,
+          "y": 733,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        },
+        {
+          "name": "front-contact",
+          "x": 851,
+          "y": 821,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        }
+      ],
+      "garageChanged": 0,
+      "fingerprint": "1be188374465169095414e2927d81952e15561f7c94f20d67474811276c7db2c"
+    },
+    {
+      "variant": "gt86:blue:sr-01:road:sport:original",
+      "dimensionsMatch": true,
+      "changed": 650425,
+      "alphaChanged": 158199,
+      "outsideTyreChanged": 646296,
+      "rimSamples": [
+        {
+          "name": "rear-wheel",
+          "x": 176,
+          "y": 596,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        },
+        {
+          "name": "front-wheel",
+          "x": 851,
+          "y": 667,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        }
+      ],
+      "contactSamples": [
+        {
+          "name": "rear-contact",
+          "x": 185,
+          "y": 733,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        },
+        {
+          "name": "front-contact",
+          "x": 851,
+          "y": 821,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        }
+      ],
+      "garageChanged": 0,
+      "fingerprint": "4a436988e8fc5e076ae08c8f2f62521398318f663418637eca7a28f397bfff2d"
+    },
+    {
+      "variant": "gt86:blue:sr-01:road:sport:street",
+      "dimensionsMatch": true,
+      "changed": 654237,
+      "alphaChanged": 188522,
+      "outsideTyreChanged": 648768,
+      "rimSamples": [
+        {
+          "name": "rear-wheel",
+          "x": 176,
+          "y": 596,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        },
+        {
+          "name": "front-wheel",
+          "x": 851,
+          "y": 667,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        }
+      ],
+      "contactSamples": [
+        {
+          "name": "rear-contact",
+          "x": 185,
+          "y": 733,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        },
+        {
+          "name": "front-contact",
+          "x": 851,
+          "y": 821,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        }
+      ],
+      "garageChanged": 0,
+      "fingerprint": "4c6a14066216da35f16f2b84345d7e797452c3159096a0c15b12257722ce0e53"
+    },
+    {
+      "variant": "gt86:blue:sr-01:road:sport:track",
+      "dimensionsMatch": true,
+      "changed": 661255,
+      "alphaChanged": 212298,
+      "outsideTyreChanged": 654124,
+      "rimSamples": [
+        {
+          "name": "rear-wheel",
+          "x": 176,
+          "y": 596,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        },
+        {
+          "name": "front-wheel",
+          "x": 851,
+          "y": 667,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        }
+      ],
+      "contactSamples": [
+        {
+          "name": "rear-contact",
+          "x": 185,
+          "y": 733,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        },
+        {
+          "name": "front-contact",
+          "x": 851,
+          "y": 821,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        }
+      ],
+      "garageChanged": 0,
+      "fingerprint": "d4760320d63ff5c28cf8ebdf710319929b316db88de09c4869224aebd3b67714"
+    },
+    {
+      "variant": "gt86:blue:sr-01:road:track:original",
+      "dimensionsMatch": true,
+      "changed": 659769,
+      "alphaChanged": 211057,
+      "outsideTyreChanged": 653223,
+      "rimSamples": [
+        {
+          "name": "rear-wheel",
+          "x": 176,
+          "y": 596,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        },
+        {
+          "name": "front-wheel",
+          "x": 851,
+          "y": 667,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        }
+      ],
+      "contactSamples": [
+        {
+          "name": "rear-contact",
+          "x": 185,
+          "y": 733,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        },
+        {
+          "name": "front-contact",
+          "x": 851,
+          "y": 821,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        }
+      ],
+      "garageChanged": 0,
+      "fingerprint": "74ee715bdea0de673b2417489cff3dd5764504ebbdc95a07e156bba0e80908a2"
+    },
+    {
+      "variant": "gt86:blue:sr-01:road:track:street",
+      "dimensionsMatch": true,
+      "changed": 663426,
+      "alphaChanged": 234369,
+      "outsideTyreChanged": 655648,
+      "rimSamples": [
+        {
+          "name": "rear-wheel",
+          "x": 176,
+          "y": 596,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        },
+        {
+          "name": "front-wheel",
+          "x": 851,
+          "y": 667,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        }
+      ],
+      "contactSamples": [
+        {
+          "name": "rear-contact",
+          "x": 185,
+          "y": 733,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        },
+        {
+          "name": "front-contact",
+          "x": 851,
+          "y": 821,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        }
+      ],
+      "garageChanged": 0,
+      "fingerprint": "7bdaa551710b654623eb646b6b0496f008b0d804cbbb47f1cda1026d9331c7b6"
+    },
+    {
+      "variant": "gt86:blue:sr-01:road:track:track",
+      "dimensionsMatch": true,
+      "changed": 670214,
+      "alphaChanged": 257313,
+      "outsideTyreChanged": 660940,
+      "rimSamples": [
+        {
+          "name": "rear-wheel",
+          "x": 176,
+          "y": 596,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        },
+        {
+          "name": "front-wheel",
+          "x": 851,
+          "y": 667,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        }
+      ],
+      "contactSamples": [
+        {
+          "name": "rear-contact",
+          "x": 185,
+          "y": 733,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        },
+        {
+          "name": "front-contact",
+          "x": 851,
+          "y": 821,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        }
+      ],
+      "garageChanged": 0,
+      "fingerprint": "6b054d25d6ae746e067019256d1affe9ba7b6989840a6d150c1f36a10eab1402"
+    },
+    {
+      "variant": "gt86:blue:sr-01:sport:original:original",
+      "dimensionsMatch": true,
+      "changed": 33557,
+      "alphaChanged": 0,
+      "outsideTyreChanged": 0,
+      "rimSamples": [
+        {
+          "name": "rear-wheel",
+          "x": 176,
+          "y": 596,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        },
+        {
+          "name": "front-wheel",
+          "x": 851,
+          "y": 667,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        }
+      ],
+      "contactSamples": [
+        {
+          "name": "rear-contact",
+          "x": 185,
+          "y": 733,
+          "changes": 25,
+          "alphaChanges": 0,
+          "opaque": 25
+        },
+        {
+          "name": "front-contact",
+          "x": 851,
+          "y": 821,
+          "changes": 25,
+          "alphaChanges": 0,
+          "opaque": 25
+        }
+      ],
+      "garageChanged": 0,
+      "fingerprint": "36cae911f3698c02bed8ae4af644521bd2b7d38aad9160d069dffed12ccad53b"
+    },
+    {
+      "variant": "gt86:blue:sr-01:sport:original:street",
+      "dimensionsMatch": true,
+      "changed": 89688,
+      "alphaChanged": 45467,
+      "outsideTyreChanged": 56097,
+      "rimSamples": [
+        {
+          "name": "rear-wheel",
+          "x": 176,
+          "y": 596,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        },
+        {
+          "name": "front-wheel",
+          "x": 851,
+          "y": 667,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        }
+      ],
+      "contactSamples": [
+        {
+          "name": "rear-contact",
+          "x": 185,
+          "y": 733,
+          "changes": 25,
+          "alphaChanges": 0,
+          "opaque": 25
+        },
+        {
+          "name": "front-contact",
+          "x": 851,
+          "y": 821,
+          "changes": 25,
+          "alphaChanges": 0,
+          "opaque": 25
+        }
+      ],
+      "garageChanged": 0,
+      "fingerprint": "5bc974c1c661919c1f59634132f2a3e876d43b4b57c55d8bfd992e695269db8e"
+    },
+    {
+      "variant": "gt86:blue:sr-01:sport:original:track",
+      "dimensionsMatch": true,
+      "changed": 115057,
+      "alphaChanged": 75829,
+      "outsideTyreChanged": 81337,
+      "rimSamples": [
+        {
+          "name": "rear-wheel",
+          "x": 176,
+          "y": 596,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        },
+        {
+          "name": "front-wheel",
+          "x": 851,
+          "y": 667,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        }
+      ],
+      "contactSamples": [
+        {
+          "name": "rear-contact",
+          "x": 185,
+          "y": 733,
+          "changes": 25,
+          "alphaChanges": 0,
+          "opaque": 25
+        },
+        {
+          "name": "front-contact",
+          "x": 851,
+          "y": 821,
+          "changes": 25,
+          "alphaChanges": 0,
+          "opaque": 25
+        }
+      ],
+      "garageChanged": 0,
+      "fingerprint": "45b0c57e3a9d4b401b7945efdff964c31dee9e3bbbf8937d290cbdf67de7376e"
+    },
+    {
+      "variant": "gt86:blue:sr-01:sport:sport:original",
+      "dimensionsMatch": true,
+      "changed": 680394,
+      "alphaChanged": 158199,
+      "outsideTyreChanged": 646294,
+      "rimSamples": [
+        {
+          "name": "rear-wheel",
+          "x": 176,
+          "y": 596,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        },
+        {
+          "name": "front-wheel",
+          "x": 851,
+          "y": 667,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        }
+      ],
+      "contactSamples": [
+        {
+          "name": "rear-contact",
+          "x": 185,
+          "y": 733,
+          "changes": 25,
+          "alphaChanges": 0,
+          "opaque": 25
+        },
+        {
+          "name": "front-contact",
+          "x": 851,
+          "y": 821,
+          "changes": 25,
+          "alphaChanges": 0,
+          "opaque": 25
+        }
+      ],
+      "garageChanged": 0,
+      "fingerprint": "68388430d8379db5e219ce08dbb4bfbcdab06d2905e3d708e388aa8064d6c65e"
+    },
+    {
+      "variant": "gt86:blue:sr-01:sport:sport:street",
+      "dimensionsMatch": true,
+      "changed": 682893,
+      "alphaChanged": 188522,
+      "outsideTyreChanged": 648768,
+      "rimSamples": [
+        {
+          "name": "rear-wheel",
+          "x": 176,
+          "y": 596,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        },
+        {
+          "name": "front-wheel",
+          "x": 851,
+          "y": 667,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        }
+      ],
+      "contactSamples": [
+        {
+          "name": "rear-contact",
+          "x": 185,
+          "y": 733,
+          "changes": 25,
+          "alphaChanges": 0,
+          "opaque": 25
+        },
+        {
+          "name": "front-contact",
+          "x": 851,
+          "y": 821,
+          "changes": 25,
+          "alphaChanges": 0,
+          "opaque": 25
+        }
+      ],
+      "garageChanged": 0,
+      "fingerprint": "fe6c82255e2dd2de0717104fda7bfe3373f476e10061e08e5be986e863140501"
+    },
+    {
+      "variant": "gt86:blue:sr-01:sport:sport:track",
+      "dimensionsMatch": true,
+      "changed": 688383,
+      "alphaChanged": 212298,
+      "outsideTyreChanged": 654124,
+      "rimSamples": [
+        {
+          "name": "rear-wheel",
+          "x": 176,
+          "y": 596,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        },
+        {
+          "name": "front-wheel",
+          "x": 851,
+          "y": 667,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        }
+      ],
+      "contactSamples": [
+        {
+          "name": "rear-contact",
+          "x": 185,
+          "y": 733,
+          "changes": 25,
+          "alphaChanges": 0,
+          "opaque": 25
+        },
+        {
+          "name": "front-contact",
+          "x": 851,
+          "y": 821,
+          "changes": 25,
+          "alphaChanges": 0,
+          "opaque": 25
+        }
+      ],
+      "garageChanged": 0,
+      "fingerprint": "dd2a26fc2df36d5788b5968ea15d39df5c444d4352453b14900dce20d5b45dee"
+    },
+    {
+      "variant": "gt86:blue:sr-01:sport:track:original",
+      "dimensionsMatch": true,
+      "changed": 687439,
+      "alphaChanged": 211057,
+      "outsideTyreChanged": 653223,
+      "rimSamples": [
+        {
+          "name": "rear-wheel",
+          "x": 176,
+          "y": 596,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        },
+        {
+          "name": "front-wheel",
+          "x": 851,
+          "y": 667,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        }
+      ],
+      "contactSamples": [
+        {
+          "name": "rear-contact",
+          "x": 185,
+          "y": 733,
+          "changes": 25,
+          "alphaChanges": 0,
+          "opaque": 25
+        },
+        {
+          "name": "front-contact",
+          "x": 851,
+          "y": 821,
+          "changes": 25,
+          "alphaChanges": 0,
+          "opaque": 25
+        }
+      ],
+      "garageChanged": 0,
+      "fingerprint": "b13d5ebe6d367b68cf0ea9653278a844aa0859b20fc3fe9acd5f6b7931cfb1b6"
+    },
+    {
+      "variant": "gt86:blue:sr-01:sport:track:street",
+      "dimensionsMatch": true,
+      "changed": 689882,
+      "alphaChanged": 234369,
+      "outsideTyreChanged": 655649,
+      "rimSamples": [
+        {
+          "name": "rear-wheel",
+          "x": 176,
+          "y": 596,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        },
+        {
+          "name": "front-wheel",
+          "x": 851,
+          "y": 667,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        }
+      ],
+      "contactSamples": [
+        {
+          "name": "rear-contact",
+          "x": 185,
+          "y": 733,
+          "changes": 25,
+          "alphaChanges": 0,
+          "opaque": 25
+        },
+        {
+          "name": "front-contact",
+          "x": 851,
+          "y": 821,
+          "changes": 25,
+          "alphaChanges": 0,
+          "opaque": 25
+        }
+      ],
+      "garageChanged": 0,
+      "fingerprint": "92e31273a478ff4865f189f86d5c2c30c14a178e2ecd8ea55f27ed5b1ad4df45"
+    },
+    {
+      "variant": "gt86:blue:sr-01:sport:track:track",
+      "dimensionsMatch": true,
+      "changed": 695343,
+      "alphaChanged": 257313,
+      "outsideTyreChanged": 660940,
+      "rimSamples": [
+        {
+          "name": "rear-wheel",
+          "x": 176,
+          "y": 596,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        },
+        {
+          "name": "front-wheel",
+          "x": 851,
+          "y": 667,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        }
+      ],
+      "contactSamples": [
+        {
+          "name": "rear-contact",
+          "x": 185,
+          "y": 733,
+          "changes": 25,
+          "alphaChanges": 0,
+          "opaque": 25
+        },
+        {
+          "name": "front-contact",
+          "x": 851,
+          "y": 821,
+          "changes": 25,
+          "alphaChanges": 0,
+          "opaque": 25
+        }
+      ],
+      "garageChanged": 0,
+      "fingerprint": "ee934ca52ee80f044b9ab3221dbb91dd0339782123a3dd75f668fe5c0d3a8bc1"
+    },
+    {
+      "variant": "gt86:blue:sr-01:track:original:original",
+      "dimensionsMatch": true,
+      "changed": 33827,
+      "alphaChanged": 0,
+      "outsideTyreChanged": 0,
+      "rimSamples": [
+        {
+          "name": "rear-wheel",
+          "x": 176,
+          "y": 596,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        },
+        {
+          "name": "front-wheel",
+          "x": 851,
+          "y": 667,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        }
+      ],
+      "contactSamples": [
+        {
+          "name": "rear-contact",
+          "x": 185,
+          "y": 733,
+          "changes": 25,
+          "alphaChanges": 0,
+          "opaque": 25
+        },
+        {
+          "name": "front-contact",
+          "x": 851,
+          "y": 821,
+          "changes": 25,
+          "alphaChanges": 0,
+          "opaque": 25
+        }
+      ],
+      "garageChanged": 0,
+      "fingerprint": "03c41110efca5ba2f86a100cb6a155809a8dfa3041756fee656cc25368087dbf"
+    },
+    {
+      "variant": "gt86:blue:sr-01:track:original:street",
+      "dimensionsMatch": true,
+      "changed": 89961,
+      "alphaChanged": 45467,
+      "outsideTyreChanged": 56097,
+      "rimSamples": [
+        {
+          "name": "rear-wheel",
+          "x": 176,
+          "y": 596,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        },
+        {
+          "name": "front-wheel",
+          "x": 851,
+          "y": 667,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        }
+      ],
+      "contactSamples": [
+        {
+          "name": "rear-contact",
+          "x": 185,
+          "y": 733,
+          "changes": 25,
+          "alphaChanges": 0,
+          "opaque": 25
+        },
+        {
+          "name": "front-contact",
+          "x": 851,
+          "y": 821,
+          "changes": 25,
+          "alphaChanges": 0,
+          "opaque": 25
+        }
+      ],
+      "garageChanged": 0,
+      "fingerprint": "e7648bf108eac6545ae583908be780ffa75f2e2782f4ee9aa380fb82d5a0aa52"
+    },
+    {
+      "variant": "gt86:blue:sr-01:track:original:track",
+      "dimensionsMatch": true,
+      "changed": 115329,
+      "alphaChanged": 75829,
+      "outsideTyreChanged": 81337,
+      "rimSamples": [
+        {
+          "name": "rear-wheel",
+          "x": 176,
+          "y": 596,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        },
+        {
+          "name": "front-wheel",
+          "x": 851,
+          "y": 667,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        }
+      ],
+      "contactSamples": [
+        {
+          "name": "rear-contact",
+          "x": 185,
+          "y": 733,
+          "changes": 25,
+          "alphaChanges": 0,
+          "opaque": 25
+        },
+        {
+          "name": "front-contact",
+          "x": 851,
+          "y": 821,
+          "changes": 25,
+          "alphaChanges": 0,
+          "opaque": 25
+        }
+      ],
+      "garageChanged": 0,
+      "fingerprint": "fd1d33afe9872727226d260bfe3b4cb1bf2c8d6a27a6e291710a9523e105f5bf"
+    },
+    {
+      "variant": "gt86:blue:sr-01:track:sport:original",
+      "dimensionsMatch": true,
+      "changed": 680572,
+      "alphaChanged": 158199,
+      "outsideTyreChanged": 646296,
+      "rimSamples": [
+        {
+          "name": "rear-wheel",
+          "x": 176,
+          "y": 596,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        },
+        {
+          "name": "front-wheel",
+          "x": 851,
+          "y": 667,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        }
+      ],
+      "contactSamples": [
+        {
+          "name": "rear-contact",
+          "x": 185,
+          "y": 733,
+          "changes": 25,
+          "alphaChanges": 0,
+          "opaque": 25
+        },
+        {
+          "name": "front-contact",
+          "x": 851,
+          "y": 821,
+          "changes": 25,
+          "alphaChanges": 0,
+          "opaque": 25
+        }
+      ],
+      "garageChanged": 0,
+      "fingerprint": "96cdb299b1ee462073b1236b52b30dd0b3e60c86d454339e296b8aac1b58185c"
+    },
+    {
+      "variant": "gt86:blue:sr-01:track:sport:street",
+      "dimensionsMatch": true,
+      "changed": 683059,
+      "alphaChanged": 188522,
+      "outsideTyreChanged": 648768,
+      "rimSamples": [
+        {
+          "name": "rear-wheel",
+          "x": 176,
+          "y": 596,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        },
+        {
+          "name": "front-wheel",
+          "x": 851,
+          "y": 667,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        }
+      ],
+      "contactSamples": [
+        {
+          "name": "rear-contact",
+          "x": 185,
+          "y": 733,
+          "changes": 25,
+          "alphaChanges": 0,
+          "opaque": 25
+        },
+        {
+          "name": "front-contact",
+          "x": 851,
+          "y": 821,
+          "changes": 25,
+          "alphaChanges": 0,
+          "opaque": 25
+        }
+      ],
+      "garageChanged": 0,
+      "fingerprint": "2d6aff2f7e22b564c115fc74f2629a5f65d53732523aa5e266c5767974d0b2d6"
+    },
+    {
+      "variant": "gt86:blue:sr-01:track:sport:track",
+      "dimensionsMatch": true,
+      "changed": 688571,
+      "alphaChanged": 212298,
+      "outsideTyreChanged": 654124,
+      "rimSamples": [
+        {
+          "name": "rear-wheel",
+          "x": 176,
+          "y": 596,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        },
+        {
+          "name": "front-wheel",
+          "x": 851,
+          "y": 667,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        }
+      ],
+      "contactSamples": [
+        {
+          "name": "rear-contact",
+          "x": 185,
+          "y": 733,
+          "changes": 25,
+          "alphaChanges": 0,
+          "opaque": 25
+        },
+        {
+          "name": "front-contact",
+          "x": 851,
+          "y": 821,
+          "changes": 25,
+          "alphaChanges": 0,
+          "opaque": 25
+        }
+      ],
+      "garageChanged": 0,
+      "fingerprint": "ba2d330dbbb168dc93a6a58f7d7e727faffdb2d2d26dd493c277c273f4265feb"
+    },
+    {
+      "variant": "gt86:blue:sr-01:track:track:original",
+      "dimensionsMatch": true,
+      "changed": 687582,
+      "alphaChanged": 211057,
+      "outsideTyreChanged": 653222,
+      "rimSamples": [
+        {
+          "name": "rear-wheel",
+          "x": 176,
+          "y": 596,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        },
+        {
+          "name": "front-wheel",
+          "x": 851,
+          "y": 667,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        }
+      ],
+      "contactSamples": [
+        {
+          "name": "rear-contact",
+          "x": 185,
+          "y": 733,
+          "changes": 25,
+          "alphaChanges": 0,
+          "opaque": 25
+        },
+        {
+          "name": "front-contact",
+          "x": 851,
+          "y": 821,
+          "changes": 25,
+          "alphaChanges": 0,
+          "opaque": 25
+        }
+      ],
+      "garageChanged": 0,
+      "fingerprint": "52f021b5644ce940f2a607a33aca767e9da39180f91452c9fbb913629d42571c"
+    },
+    {
+      "variant": "gt86:blue:sr-01:track:track:street",
+      "dimensionsMatch": true,
+      "changed": 690029,
+      "alphaChanged": 234369,
+      "outsideTyreChanged": 655648,
+      "rimSamples": [
+        {
+          "name": "rear-wheel",
+          "x": 176,
+          "y": 596,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        },
+        {
+          "name": "front-wheel",
+          "x": 851,
+          "y": 667,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        }
+      ],
+      "contactSamples": [
+        {
+          "name": "rear-contact",
+          "x": 185,
+          "y": 733,
+          "changes": 25,
+          "alphaChanges": 0,
+          "opaque": 25
+        },
+        {
+          "name": "front-contact",
+          "x": 851,
+          "y": 821,
+          "changes": 25,
+          "alphaChanges": 0,
+          "opaque": 25
+        }
+      ],
+      "garageChanged": 0,
+      "fingerprint": "f1a1b40ec26b03fc873e47184f05a3d71b34fbe77e0892efaf3c179217aace95"
+    },
+    {
+      "variant": "gt86:blue:sr-01:track:track:track",
+      "dimensionsMatch": true,
+      "changed": 695499,
+      "alphaChanged": 257313,
+      "outsideTyreChanged": 660940,
+      "rimSamples": [
+        {
+          "name": "rear-wheel",
+          "x": 176,
+          "y": 596,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        },
+        {
+          "name": "front-wheel",
+          "x": 851,
+          "y": 667,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        }
+      ],
+      "contactSamples": [
+        {
+          "name": "rear-contact",
+          "x": 185,
+          "y": 733,
+          "changes": 25,
+          "alphaChanges": 0,
+          "opaque": 25
+        },
+        {
+          "name": "front-contact",
+          "x": 851,
+          "y": 821,
+          "changes": 25,
+          "alphaChanges": 0,
+          "opaque": 25
+        }
+      ],
+      "garageChanged": 0,
+      "fingerprint": "b736706227eb580d17946b0168a0091808d291b5b886c2ee492b45ed9b96dfb0"
+    }
+  ],
+  "readiness_failures": [],
+  "matrix_wheel_scope": [
+    "sr-01"
+  ],
+  "matrix_vehicle_scope": [
+    "gt86"
+  ],
+  "coverage_counts": {
+    "baseline_paint": 0,
+    "blue_mechanical": 27,
+    "painted_maximum_upgrades": 0
+  },
+  "screenshots": [
+    "gt86-sr-01-27-mechanical-builds.jpg"
+  ],
+  "browser_observations": [
+    {
+      "case": "all-486-blue-mechanical-combinations",
+      "page_errors": [],
+      "http_errors": [],
+      "failed_requests": [],
+      "console_errors": [],
+      "expected_network_failures": false
+    }
+  ],
+  "visual_acceptance": "Contact sheets require independent visual review; passing tests do not prove artistic fidelity."
+}

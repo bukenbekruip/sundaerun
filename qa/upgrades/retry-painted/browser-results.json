@@ -1,0 +1,3794 @@
+{
+  "generated_at_utc": "2026-10-20T22:12:45.984870+00:00",
+  "base_url": "http://127.0.0.1:4173",
+  "case_count": 1,
+  "passed": 1,
+  "failed": 0,
+  "assertions_passed": 580,
+  "cases": [
+    {
+      "name": "painted-maximum-upgrade-builds",
+      "status": "passed",
+      "assertions_passed": 580
+    }
+  ],
+  "assertions": [
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Built page responds HTTP 200",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Three-car page has its intended title",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Upgrade diagnostic imports the actual paint renderer dependency",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Exactly one #vehicle-options button selection",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Native selection agrees with rendered #vehicle-options [data-vehicle=\"sti\"]",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Exactly one .wheel-select selection",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Native selection agrees with rendered .wheel-select[data-wheel=\"sr-01\"]",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Exactly one .paint-option selection",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Native selection agrees with rendered .paint-option[data-paint=\"black\"]",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Exactly one .part-select[data-part-kind=\"tyre\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"tyre\"][data-part=\"track\"]",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Exactly one .part-select[data-part-kind=\"suspension\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"suspension\"][data-part=\"track\"]",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Exactly one .part-select[data-part-kind=\"body\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"body\"][data-part=\"track\"]",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Exactly one active parts-panel checkmark is visible",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Exactly one paint checkmark is rendered",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Category highlights agree with the last interaction",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Checkout shows all five correctly labelled selections",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "All five quote lines reflect selected unowned parts",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Total includes each selected paid part exactly once",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "sti:black:sr-01:track:track:track: complete-car canvas dimensions preserved",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "sti:black:sr-01:track:track:track: garage plate remains identical",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "sti:black:sr-01:track:track:track: both rim centres retain their position and original pixels",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "sti:black:sr-01:track:track:track: front and rear ground contacts are both measured",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "sti:black:sr-01:track:track:track: baseline exact or selected upgrade visibly changes pixels",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Document has no horizontal overflow",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Complete opaque car fits inside scene",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Whole car width fits the viewport",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Checkout width is not clipped",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Checkout is visible after scrolling when needed",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Apply button is reachable",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "All five quote rows fit inside checkout",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Five-line quote, total and Apply do not overlap",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Exactly one #vehicle-options button selection",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Native selection agrees with rendered #vehicle-options [data-vehicle=\"sti\"]",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Exactly one .wheel-select selection",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Native selection agrees with rendered .wheel-select[data-wheel=\"te37\"]",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Exactly one .paint-option selection",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Native selection agrees with rendered .paint-option[data-paint=\"mint\"]",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Exactly one .part-select[data-part-kind=\"tyre\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"tyre\"][data-part=\"track\"]",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Exactly one .part-select[data-part-kind=\"suspension\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"suspension\"][data-part=\"track\"]",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Exactly one .part-select[data-part-kind=\"body\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"body\"][data-part=\"track\"]",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Exactly one active parts-panel checkmark is visible",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Exactly one paint checkmark is rendered",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Category highlights agree with the last interaction",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Checkout shows all five correctly labelled selections",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "All five quote lines reflect selected unowned parts",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Total includes each selected paid part exactly once",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "sti:mint:te37:track:track:track: complete-car canvas dimensions preserved",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "sti:mint:te37:track:track:track: garage plate remains identical",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "sti:mint:te37:track:track:track: both rim centres retain their position and original pixels",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "sti:mint:te37:track:track:track: front and rear ground contacts are both measured",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "sti:mint:te37:track:track:track: baseline exact or selected upgrade visibly changes pixels",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Document has no horizontal overflow",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Complete opaque car fits inside scene",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Whole car width fits the viewport",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Checkout width is not clipped",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Checkout is visible after scrolling when needed",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Apply button is reachable",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "All five quote rows fit inside checkout",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Five-line quote, total and Apply do not overlap",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Exactly one #vehicle-options button selection",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Native selection agrees with rendered #vehicle-options [data-vehicle=\"sti\"]",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Exactly one .wheel-select selection",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Native selection agrees with rendered .wheel-select[data-wheel=\"bbs-lm\"]",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Exactly one .paint-option selection",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Native selection agrees with rendered .paint-option[data-paint=\"white\"]",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Exactly one .part-select[data-part-kind=\"tyre\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"tyre\"][data-part=\"track\"]",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Exactly one .part-select[data-part-kind=\"suspension\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"suspension\"][data-part=\"track\"]",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Exactly one .part-select[data-part-kind=\"body\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"body\"][data-part=\"track\"]",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Exactly one active parts-panel checkmark is visible",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Exactly one paint checkmark is rendered",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Category highlights agree with the last interaction",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Checkout shows all five correctly labelled selections",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "All five quote lines reflect selected unowned parts",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Total includes each selected paid part exactly once",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "sti:white:bbs-lm:track:track:track: complete-car canvas dimensions preserved",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "sti:white:bbs-lm:track:track:track: garage plate remains identical",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "sti:white:bbs-lm:track:track:track: both rim centres retain their position and original pixels",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "sti:white:bbs-lm:track:track:track: front and rear ground contacts are both measured",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "sti:white:bbs-lm:track:track:track: baseline exact or selected upgrade visibly changes pixels",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Document has no horizontal overflow",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Complete opaque car fits inside scene",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Whole car width fits the viewport",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Checkout width is not clipped",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Checkout is visible after scrolling when needed",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Apply button is reachable",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "All five quote rows fit inside checkout",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Five-line quote, total and Apply do not overlap",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Exactly one #vehicle-options button selection",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Native selection agrees with rendered #vehicle-options [data-vehicle=\"sti\"]",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Exactly one .wheel-select selection",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Native selection agrees with rendered .wheel-select[data-wheel=\"oz\"]",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Exactly one .paint-option selection",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Native selection agrees with rendered .paint-option[data-paint=\"red\"]",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Exactly one .part-select[data-part-kind=\"tyre\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"tyre\"][data-part=\"track\"]",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Exactly one .part-select[data-part-kind=\"suspension\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"suspension\"][data-part=\"track\"]",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Exactly one .part-select[data-part-kind=\"body\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"body\"][data-part=\"track\"]",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Exactly one active parts-panel checkmark is visible",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Exactly one paint checkmark is rendered",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Category highlights agree with the last interaction",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Checkout shows all five correctly labelled selections",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "All five quote lines reflect selected unowned parts",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Total includes each selected paid part exactly once",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "sti:red:oz:track:track:track: complete-car canvas dimensions preserved",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "sti:red:oz:track:track:track: garage plate remains identical",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "sti:red:oz:track:track:track: both rim centres retain their position and original pixels",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "sti:red:oz:track:track:track: front and rear ground contacts are both measured",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "sti:red:oz:track:track:track: baseline exact or selected upgrade visibly changes pixels",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Document has no horizontal overflow",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Complete opaque car fits inside scene",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Whole car width fits the viewport",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Checkout width is not clipped",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Checkout is visible after scrolling when needed",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Apply button is reachable",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "All five quote rows fit inside checkout",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Five-line quote, total and Apply do not overlap",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Exactly one #vehicle-options button selection",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Native selection agrees with rendered #vehicle-options [data-vehicle=\"sti\"]",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Exactly one .wheel-select selection",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Native selection agrees with rendered .wheel-select[data-wheel=\"rotiform\"]",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Exactly one .paint-option selection",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Native selection agrees with rendered .paint-option[data-paint=\"yellow\"]",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Exactly one .part-select[data-part-kind=\"tyre\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"tyre\"][data-part=\"track\"]",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Exactly one .part-select[data-part-kind=\"suspension\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"suspension\"][data-part=\"track\"]",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Exactly one .part-select[data-part-kind=\"body\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"body\"][data-part=\"track\"]",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Exactly one active parts-panel checkmark is visible",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Exactly one paint checkmark is rendered",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Category highlights agree with the last interaction",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Checkout shows all five correctly labelled selections",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "All five quote lines reflect selected unowned parts",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Total includes each selected paid part exactly once",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "sti:yellow:rotiform:track:track:track: complete-car canvas dimensions preserved",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "sti:yellow:rotiform:track:track:track: garage plate remains identical",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "sti:yellow:rotiform:track:track:track: both rim centres retain their position and original pixels",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "sti:yellow:rotiform:track:track:track: front and rear ground contacts are both measured",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "sti:yellow:rotiform:track:track:track: baseline exact or selected upgrade visibly changes pixels",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Document has no horizontal overflow",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Complete opaque car fits inside scene",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Whole car width fits the viewport",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Checkout width is not clipped",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Checkout is visible after scrolling when needed",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Apply button is reachable",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "All five quote rows fit inside checkout",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Five-line quote, total and Apply do not overlap",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Exactly one #vehicle-options button selection",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Native selection agrees with rendered #vehicle-options [data-vehicle=\"sti\"]",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Exactly one .wheel-select selection",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Native selection agrees with rendered .wheel-select[data-wheel=\"work\"]",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Exactly one .paint-option selection",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Native selection agrees with rendered .paint-option[data-paint=\"teal\"]",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Exactly one .part-select[data-part-kind=\"tyre\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"tyre\"][data-part=\"track\"]",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Exactly one .part-select[data-part-kind=\"suspension\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"suspension\"][data-part=\"track\"]",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Exactly one .part-select[data-part-kind=\"body\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"body\"][data-part=\"track\"]",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Exactly one active parts-panel checkmark is visible",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Exactly one paint checkmark is rendered",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Category highlights agree with the last interaction",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Checkout shows all five correctly labelled selections",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "All five quote lines reflect selected unowned parts",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Total includes each selected paid part exactly once",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "sti:teal:work:track:track:track: complete-car canvas dimensions preserved",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "sti:teal:work:track:track:track: garage plate remains identical",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "sti:teal:work:track:track:track: both rim centres retain their position and original pixels",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "sti:teal:work:track:track:track: front and rear ground contacts are both measured",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "sti:teal:work:track:track:track: baseline exact or selected upgrade visibly changes pixels",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Document has no horizontal overflow",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Complete opaque car fits inside scene",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Whole car width fits the viewport",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Checkout width is not clipped",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Checkout is visible after scrolling when needed",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Apply button is reachable",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "All five quote rows fit inside checkout",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Five-line quote, total and Apply do not overlap",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "No page_errors",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "No http_errors",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "No failed_requests",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "No console_errors",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Built page responds HTTP 200",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Three-car page has its intended title",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Upgrade diagnostic imports the actual paint renderer dependency",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Exactly one #vehicle-options button selection",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Native selection agrees with rendered #vehicle-options [data-vehicle=\"porsche\"]",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Exactly one .wheel-select selection",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Native selection agrees with rendered .wheel-select[data-wheel=\"sr-01\"]",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Exactly one .paint-option selection",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Native selection agrees with rendered .paint-option[data-paint=\"black\"]",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Exactly one .part-select[data-part-kind=\"tyre\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"tyre\"][data-part=\"track\"]",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Exactly one .part-select[data-part-kind=\"suspension\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"suspension\"][data-part=\"track\"]",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Exactly one .part-select[data-part-kind=\"body\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"body\"][data-part=\"track\"]",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Exactly one active parts-panel checkmark is visible",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Exactly one paint checkmark is rendered",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Category highlights agree with the last interaction",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Checkout shows all five correctly labelled selections",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "All five quote lines reflect selected unowned parts",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Total includes each selected paid part exactly once",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "porsche:black:sr-01:track:track:track: complete-car canvas dimensions preserved",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "porsche:black:sr-01:track:track:track: garage plate remains identical",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "porsche:black:sr-01:track:track:track: both rim centres retain their position and original pixels",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "porsche:black:sr-01:track:track:track: front and rear ground contacts are both measured",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "porsche:black:sr-01:track:track:track: baseline exact or selected upgrade visibly changes pixels",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Document has no horizontal overflow",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Complete opaque car fits inside scene",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Whole car width fits the viewport",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Checkout width is not clipped",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Checkout is visible after scrolling when needed",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Apply button is reachable",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "All five quote rows fit inside checkout",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Five-line quote, total and Apply do not overlap",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Exactly one #vehicle-options button selection",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Native selection agrees with rendered #vehicle-options [data-vehicle=\"porsche\"]",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Exactly one .wheel-select selection",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Native selection agrees with rendered .wheel-select[data-wheel=\"te37\"]",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Exactly one .paint-option selection",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Native selection agrees with rendered .paint-option[data-paint=\"mint\"]",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Exactly one .part-select[data-part-kind=\"tyre\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"tyre\"][data-part=\"track\"]",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Exactly one .part-select[data-part-kind=\"suspension\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"suspension\"][data-part=\"track\"]",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Exactly one .part-select[data-part-kind=\"body\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"body\"][data-part=\"track\"]",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Exactly one active parts-panel checkmark is visible",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Exactly one paint checkmark is rendered",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Category highlights agree with the last interaction",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Checkout shows all five correctly labelled selections",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "All five quote lines reflect selected unowned parts",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Total includes each selected paid part exactly once",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "porsche:mint:te37:track:track:track: complete-car canvas dimensions preserved",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "porsche:mint:te37:track:track:track: garage plate remains identical",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "porsche:mint:te37:track:track:track: both rim centres retain their position and original pixels",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "porsche:mint:te37:track:track:track: front and rear ground contacts are both measured",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "porsche:mint:te37:track:track:track: baseline exact or selected upgrade visibly changes pixels",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Document has no horizontal overflow",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Complete opaque car fits inside scene",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Whole car width fits the viewport",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Checkout width is not clipped",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Checkout is visible after scrolling when needed",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Apply button is reachable",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "All five quote rows fit inside checkout",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Five-line quote, total and Apply do not overlap",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Exactly one #vehicle-options button selection",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Native selection agrees with rendered #vehicle-options [data-vehicle=\"porsche\"]",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Exactly one .wheel-select selection",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Native selection agrees with rendered .wheel-select[data-wheel=\"bbs-lm\"]",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Exactly one .paint-option selection",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Native selection agrees with rendered .paint-option[data-paint=\"white\"]",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Exactly one .part-select[data-part-kind=\"tyre\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"tyre\"][data-part=\"track\"]",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Exactly one .part-select[data-part-kind=\"suspension\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"suspension\"][data-part=\"track\"]",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Exactly one .part-select[data-part-kind=\"body\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"body\"][data-part=\"track\"]",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Exactly one active parts-panel checkmark is visible",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Exactly one paint checkmark is rendered",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Category highlights agree with the last interaction",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Checkout shows all five correctly labelled selections",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "All five quote lines reflect selected unowned parts",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Total includes each selected paid part exactly once",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "porsche:white:bbs-lm:track:track:track: complete-car canvas dimensions preserved",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "porsche:white:bbs-lm:track:track:track: garage plate remains identical",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "porsche:white:bbs-lm:track:track:track: both rim centres retain their position and original pixels",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "porsche:white:bbs-lm:track:track:track: front and rear ground contacts are both measured",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "porsche:white:bbs-lm:track:track:track: baseline exact or selected upgrade visibly changes pixels",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Document has no horizontal overflow",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Complete opaque car fits inside scene",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Whole car width fits the viewport",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Checkout width is not clipped",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Checkout is visible after scrolling when needed",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Apply button is reachable",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "All five quote rows fit inside checkout",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Five-line quote, total and Apply do not overlap",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Exactly one #vehicle-options button selection",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Native selection agrees with rendered #vehicle-options [data-vehicle=\"porsche\"]",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Exactly one .wheel-select selection",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Native selection agrees with rendered .wheel-select[data-wheel=\"oz\"]",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Exactly one .paint-option selection",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Native selection agrees with rendered .paint-option[data-paint=\"red\"]",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Exactly one .part-select[data-part-kind=\"tyre\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"tyre\"][data-part=\"track\"]",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Exactly one .part-select[data-part-kind=\"suspension\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"suspension\"][data-part=\"track\"]",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Exactly one .part-select[data-part-kind=\"body\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"body\"][data-part=\"track\"]",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Exactly one active parts-panel checkmark is visible",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Exactly one paint checkmark is rendered",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Category highlights agree with the last interaction",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Checkout shows all five correctly labelled selections",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "All five quote lines reflect selected unowned parts",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Total includes each selected paid part exactly once",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "porsche:red:oz:track:track:track: complete-car canvas dimensions preserved",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "porsche:red:oz:track:track:track: garage plate remains identical",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "porsche:red:oz:track:track:track: both rim centres retain their position and original pixels",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "porsche:red:oz:track:track:track: front and rear ground contacts are both measured",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "porsche:red:oz:track:track:track: baseline exact or selected upgrade visibly changes pixels",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Document has no horizontal overflow",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Complete opaque car fits inside scene",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Whole car width fits the viewport",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Checkout width is not clipped",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Checkout is visible after scrolling when needed",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Apply button is reachable",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "All five quote rows fit inside checkout",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Five-line quote, total and Apply do not overlap",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Exactly one #vehicle-options button selection",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Native selection agrees with rendered #vehicle-options [data-vehicle=\"porsche\"]",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Exactly one .wheel-select selection",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Native selection agrees with rendered .wheel-select[data-wheel=\"rotiform\"]",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Exactly one .paint-option selection",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Native selection agrees with rendered .paint-option[data-paint=\"yellow\"]",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Exactly one .part-select[data-part-kind=\"tyre\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"tyre\"][data-part=\"track\"]",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Exactly one .part-select[data-part-kind=\"suspension\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"suspension\"][data-part=\"track\"]",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Exactly one .part-select[data-part-kind=\"body\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"body\"][data-part=\"track\"]",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Exactly one active parts-panel checkmark is visible",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Exactly one paint checkmark is rendered",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Category highlights agree with the last interaction",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Checkout shows all five correctly labelled selections",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "All five quote lines reflect selected unowned parts",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Total includes each selected paid part exactly once",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "porsche:yellow:rotiform:track:track:track: complete-car canvas dimensions preserved",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "porsche:yellow:rotiform:track:track:track: garage plate remains identical",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "porsche:yellow:rotiform:track:track:track: both rim centres retain their position and original pixels",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "porsche:yellow:rotiform:track:track:track: front and rear ground contacts are both measured",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "porsche:yellow:rotiform:track:track:track: baseline exact or selected upgrade visibly changes pixels",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Document has no horizontal overflow",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Complete opaque car fits inside scene",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Whole car width fits the viewport",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Checkout width is not clipped",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Checkout is visible after scrolling when needed",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Apply button is reachable",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "All five quote rows fit inside checkout",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Five-line quote, total and Apply do not overlap",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Exactly one #vehicle-options button selection",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Native selection agrees with rendered #vehicle-options [data-vehicle=\"porsche\"]",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Exactly one .wheel-select selection",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Native selection agrees with rendered .wheel-select[data-wheel=\"work\"]",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Exactly one .paint-option selection",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Native selection agrees with rendered .paint-option[data-paint=\"teal\"]",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Exactly one .part-select[data-part-kind=\"tyre\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"tyre\"][data-part=\"track\"]",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Exactly one .part-select[data-part-kind=\"suspension\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"suspension\"][data-part=\"track\"]",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Exactly one .part-select[data-part-kind=\"body\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"body\"][data-part=\"track\"]",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Exactly one active parts-panel checkmark is visible",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Exactly one paint checkmark is rendered",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Category highlights agree with the last interaction",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Checkout shows all five correctly labelled selections",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "All five quote lines reflect selected unowned parts",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Total includes each selected paid part exactly once",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "porsche:teal:work:track:track:track: complete-car canvas dimensions preserved",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "porsche:teal:work:track:track:track: garage plate remains identical",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "porsche:teal:work:track:track:track: both rim centres retain their position and original pixels",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "porsche:teal:work:track:track:track: front and rear ground contacts are both measured",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "porsche:teal:work:track:track:track: baseline exact or selected upgrade visibly changes pixels",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Document has no horizontal overflow",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Complete opaque car fits inside scene",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Whole car width fits the viewport",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Checkout width is not clipped",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Checkout is visible after scrolling when needed",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Apply button is reachable",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "All five quote rows fit inside checkout",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Five-line quote, total and Apply do not overlap",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "No page_errors",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "No http_errors",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "No failed_requests",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "No console_errors",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Built page responds HTTP 200",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Three-car page has its intended title",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Upgrade diagnostic imports the actual paint renderer dependency",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Exactly one #vehicle-options button selection",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Native selection agrees with rendered #vehicle-options [data-vehicle=\"gt86\"]",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Exactly one .wheel-select selection",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Native selection agrees with rendered .wheel-select[data-wheel=\"sr-01\"]",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Exactly one .paint-option selection",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Native selection agrees with rendered .paint-option[data-paint=\"black\"]",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Exactly one .part-select[data-part-kind=\"tyre\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"tyre\"][data-part=\"track\"]",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Exactly one .part-select[data-part-kind=\"suspension\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"suspension\"][data-part=\"track\"]",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Exactly one .part-select[data-part-kind=\"body\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"body\"][data-part=\"track\"]",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Exactly one active parts-panel checkmark is visible",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Exactly one paint checkmark is rendered",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Category highlights agree with the last interaction",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Checkout shows all five correctly labelled selections",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "All five quote lines reflect selected unowned parts",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Total includes each selected paid part exactly once",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "gt86:black:sr-01:track:track:track: complete-car canvas dimensions preserved",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "gt86:black:sr-01:track:track:track: garage plate remains identical",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "gt86:black:sr-01:track:track:track: both rim centres retain their position and original pixels",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "gt86:black:sr-01:track:track:track: front and rear ground contacts are both measured",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "gt86:black:sr-01:track:track:track: baseline exact or selected upgrade visibly changes pixels",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Document has no horizontal overflow",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Complete opaque car fits inside scene",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Whole car width fits the viewport",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Checkout width is not clipped",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Checkout is visible after scrolling when needed",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Apply button is reachable",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "All five quote rows fit inside checkout",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Five-line quote, total and Apply do not overlap",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Exactly one #vehicle-options button selection",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Native selection agrees with rendered #vehicle-options [data-vehicle=\"gt86\"]",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Exactly one .wheel-select selection",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Native selection agrees with rendered .wheel-select[data-wheel=\"te37\"]",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Exactly one .paint-option selection",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Native selection agrees with rendered .paint-option[data-paint=\"mint\"]",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Exactly one .part-select[data-part-kind=\"tyre\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"tyre\"][data-part=\"track\"]",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Exactly one .part-select[data-part-kind=\"suspension\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"suspension\"][data-part=\"track\"]",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Exactly one .part-select[data-part-kind=\"body\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"body\"][data-part=\"track\"]",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Exactly one active parts-panel checkmark is visible",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Exactly one paint checkmark is rendered",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Category highlights agree with the last interaction",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Checkout shows all five correctly labelled selections",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "All five quote lines reflect selected unowned parts",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Total includes each selected paid part exactly once",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "gt86:mint:te37:track:track:track: complete-car canvas dimensions preserved",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "gt86:mint:te37:track:track:track: garage plate remains identical",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "gt86:mint:te37:track:track:track: both rim centres retain their position and original pixels",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "gt86:mint:te37:track:track:track: front and rear ground contacts are both measured",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "gt86:mint:te37:track:track:track: baseline exact or selected upgrade visibly changes pixels",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Document has no horizontal overflow",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Complete opaque car fits inside scene",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Whole car width fits the viewport",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Checkout width is not clipped",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Checkout is visible after scrolling when needed",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Apply button is reachable",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "All five quote rows fit inside checkout",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Five-line quote, total and Apply do not overlap",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Exactly one #vehicle-options button selection",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Native selection agrees with rendered #vehicle-options [data-vehicle=\"gt86\"]",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Exactly one .wheel-select selection",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Native selection agrees with rendered .wheel-select[data-wheel=\"bbs-lm\"]",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Exactly one .paint-option selection",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Native selection agrees with rendered .paint-option[data-paint=\"white\"]",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Exactly one .part-select[data-part-kind=\"tyre\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"tyre\"][data-part=\"track\"]",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Exactly one .part-select[data-part-kind=\"suspension\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"suspension\"][data-part=\"track\"]",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Exactly one .part-select[data-part-kind=\"body\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"body\"][data-part=\"track\"]",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Exactly one active parts-panel checkmark is visible",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Exactly one paint checkmark is rendered",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Category highlights agree with the last interaction",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Checkout shows all five correctly labelled selections",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "All five quote lines reflect selected unowned parts",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Total includes each selected paid part exactly once",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "gt86:white:bbs-lm:track:track:track: complete-car canvas dimensions preserved",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "gt86:white:bbs-lm:track:track:track: garage plate remains identical",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "gt86:white:bbs-lm:track:track:track: both rim centres retain their position and original pixels",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "gt86:white:bbs-lm:track:track:track: front and rear ground contacts are both measured",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "gt86:white:bbs-lm:track:track:track: baseline exact or selected upgrade visibly changes pixels",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Document has no horizontal overflow",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Complete opaque car fits inside scene",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Whole car width fits the viewport",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Checkout width is not clipped",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Checkout is visible after scrolling when needed",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Apply button is reachable",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "All five quote rows fit inside checkout",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Five-line quote, total and Apply do not overlap",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Exactly one #vehicle-options button selection",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Native selection agrees with rendered #vehicle-options [data-vehicle=\"gt86\"]",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Exactly one .wheel-select selection",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Native selection agrees with rendered .wheel-select[data-wheel=\"oz\"]",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Exactly one .paint-option selection",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Native selection agrees with rendered .paint-option[data-paint=\"red\"]",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Exactly one .part-select[data-part-kind=\"tyre\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"tyre\"][data-part=\"track\"]",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Exactly one .part-select[data-part-kind=\"suspension\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"suspension\"][data-part=\"track\"]",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Exactly one .part-select[data-part-kind=\"body\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"body\"][data-part=\"track\"]",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Exactly one active parts-panel checkmark is visible",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Exactly one paint checkmark is rendered",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Category highlights agree with the last interaction",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Checkout shows all five correctly labelled selections",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "All five quote lines reflect selected unowned parts",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Total includes each selected paid part exactly once",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "gt86:red:oz:track:track:track: complete-car canvas dimensions preserved",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "gt86:red:oz:track:track:track: garage plate remains identical",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "gt86:red:oz:track:track:track: both rim centres retain their position and original pixels",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "gt86:red:oz:track:track:track: front and rear ground contacts are both measured",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "gt86:red:oz:track:track:track: baseline exact or selected upgrade visibly changes pixels",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Document has no horizontal overflow",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Complete opaque car fits inside scene",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Whole car width fits the viewport",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Checkout width is not clipped",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Checkout is visible after scrolling when needed",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Apply button is reachable",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "All five quote rows fit inside checkout",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Five-line quote, total and Apply do not overlap",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Exactly one #vehicle-options button selection",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Native selection agrees with rendered #vehicle-options [data-vehicle=\"gt86\"]",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Exactly one .wheel-select selection",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Native selection agrees with rendered .wheel-select[data-wheel=\"rotiform\"]",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Exactly one .paint-option selection",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Native selection agrees with rendered .paint-option[data-paint=\"yellow\"]",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Exactly one .part-select[data-part-kind=\"tyre\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"tyre\"][data-part=\"track\"]",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Exactly one .part-select[data-part-kind=\"suspension\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"suspension\"][data-part=\"track\"]",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Exactly one .part-select[data-part-kind=\"body\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"body\"][data-part=\"track\"]",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Exactly one active parts-panel checkmark is visible",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Exactly one paint checkmark is rendered",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Category highlights agree with the last interaction",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Checkout shows all five correctly labelled selections",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "All five quote lines reflect selected unowned parts",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Total includes each selected paid part exactly once",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "gt86:yellow:rotiform:track:track:track: complete-car canvas dimensions preserved",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "gt86:yellow:rotiform:track:track:track: garage plate remains identical",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "gt86:yellow:rotiform:track:track:track: both rim centres retain their position and original pixels",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "gt86:yellow:rotiform:track:track:track: front and rear ground contacts are both measured",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "gt86:yellow:rotiform:track:track:track: baseline exact or selected upgrade visibly changes pixels",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Document has no horizontal overflow",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Complete opaque car fits inside scene",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Whole car width fits the viewport",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Checkout width is not clipped",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Checkout is visible after scrolling when needed",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Apply button is reachable",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "All five quote rows fit inside checkout",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Five-line quote, total and Apply do not overlap",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Exactly one #vehicle-options button selection",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Native selection agrees with rendered #vehicle-options [data-vehicle=\"gt86\"]",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Exactly one .wheel-select selection",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Native selection agrees with rendered .wheel-select[data-wheel=\"work\"]",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Exactly one .paint-option selection",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Native selection agrees with rendered .paint-option[data-paint=\"teal\"]",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Exactly one .part-select[data-part-kind=\"tyre\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"tyre\"][data-part=\"track\"]",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Exactly one .part-select[data-part-kind=\"suspension\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"suspension\"][data-part=\"track\"]",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Exactly one .part-select[data-part-kind=\"body\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"body\"][data-part=\"track\"]",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Exactly one active parts-panel checkmark is visible",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Exactly one paint checkmark is rendered",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Category highlights agree with the last interaction",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Checkout shows all five correctly labelled selections",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "All five quote lines reflect selected unowned parts",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Total includes each selected paid part exactly once",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "gt86:teal:work:track:track:track: complete-car canvas dimensions preserved",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "gt86:teal:work:track:track:track: garage plate remains identical",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "gt86:teal:work:track:track:track: both rim centres retain their position and original pixels",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "gt86:teal:work:track:track:track: front and rear ground contacts are both measured",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "gt86:teal:work:track:track:track: baseline exact or selected upgrade visibly changes pixels",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Document has no horizontal overflow",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Complete opaque car fits inside scene",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Whole car width fits the viewport",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Checkout width is not clipped",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Checkout is visible after scrolling when needed",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Apply button is reachable",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "All five quote rows fit inside checkout",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Five-line quote, total and Apply do not overlap",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "No page_errors",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "No http_errors",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "No failed_requests",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "No console_errors",
+      "status": "passed"
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "assertion": "Eighteen painted maximum builds cover every car and rim plus six paints",
+      "status": "passed"
+    }
+  ],
+  "combinations": [],
+  "paint_pixel_comparisons": [],
+  "mechanical_combinations": [],
+  "painted_upgrade_combinations": [
+    "sti:black:sr-01:track:track:track",
+    "sti:mint:te37:track:track:track",
+    "sti:white:bbs-lm:track:track:track",
+    "sti:red:oz:track:track:track",
+    "sti:yellow:rotiform:track:track:track",
+    "sti:teal:work:track:track:track",
+    "porsche:black:sr-01:track:track:track",
+    "porsche:mint:te37:track:track:track",
+    "porsche:white:bbs-lm:track:track:track",
+    "porsche:red:oz:track:track:track",
+    "porsche:yellow:rotiform:track:track:track",
+    "porsche:teal:work:track:track:track",
+    "gt86:black:sr-01:track:track:track",
+    "gt86:mint:te37:track:track:track",
+    "gt86:white:bbs-lm:track:track:track",
+    "gt86:red:oz:track:track:track",
+    "gt86:yellow:rotiform:track:track:track",
+    "gt86:teal:work:track:track:track"
+  ],
+  "upgrade_pixel_comparisons": [
+    {
+      "variant": "sti:black:sr-01:track:track:track",
+      "dimensionsMatch": true,
+      "changed": 730575,
+      "alphaChanged": 289752,
+      "outsideTyreChanged": 695233,
+      "rimSamples": [
+        {
+          "name": "rear-wheel",
+          "x": 174,
+          "y": 598,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        },
+        {
+          "name": "front-wheel",
+          "x": 798,
+          "y": 650,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        }
+      ],
+      "contactSamples": [
+        {
+          "name": "rear-contact",
+          "x": 207,
+          "y": 724,
+          "changes": 15,
+          "alphaChanges": 0,
+          "opaque": 25
+        },
+        {
+          "name": "front-contact",
+          "x": 850,
+          "y": 805,
+          "changes": 25,
+          "alphaChanges": 0,
+          "opaque": 25
+        }
+      ],
+      "garageChanged": 0,
+      "fingerprint": "8809a61dfb5799f4257ed0bc56deb74ca5a006fc76e3f3ef8ed2c74b9c3a5028"
+    },
+    {
+      "variant": "sti:mint:te37:track:track:track",
+      "dimensionsMatch": true,
+      "changed": 729811,
+      "alphaChanged": 239884,
+      "outsideTyreChanged": 694672,
+      "rimSamples": [
+        {
+          "name": "rear-wheel",
+          "x": 174,
+          "y": 598,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        },
+        {
+          "name": "front-wheel",
+          "x": 798,
+          "y": 650,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        }
+      ],
+      "contactSamples": [
+        {
+          "name": "rear-contact",
+          "x": 207,
+          "y": 724,
+          "changes": 3,
+          "alphaChanges": 0,
+          "opaque": 25
+        },
+        {
+          "name": "front-contact",
+          "x": 849,
+          "y": 805,
+          "changes": 25,
+          "alphaChanges": 0,
+          "opaque": 25
+        }
+      ],
+      "garageChanged": 0,
+      "fingerprint": "73d0dfb338d946b36c34a31a28db18b92df3efa359bd28496751424b6d2327c6"
+    },
+    {
+      "variant": "sti:white:bbs-lm:track:track:track",
+      "dimensionsMatch": true,
+      "changed": 729531,
+      "alphaChanged": 281075,
+      "outsideTyreChanged": 694500,
+      "rimSamples": [
+        {
+          "name": "rear-wheel",
+          "x": 174,
+          "y": 598,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        },
+        {
+          "name": "front-wheel",
+          "x": 798,
+          "y": 650,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        }
+      ],
+      "contactSamples": [
+        {
+          "name": "rear-contact",
+          "x": 207,
+          "y": 724,
+          "changes": 5,
+          "alphaChanges": 0,
+          "opaque": 20
+        },
+        {
+          "name": "front-contact",
+          "x": 849,
+          "y": 805,
+          "changes": 25,
+          "alphaChanges": 0,
+          "opaque": 25
+        }
+      ],
+      "garageChanged": 0,
+      "fingerprint": "05889e11141eee8b65718f0a24fcab5b2234efab76341acbaef6b82bd5ec6562"
+    },
+    {
+      "variant": "sti:red:oz:track:track:track",
+      "dimensionsMatch": true,
+      "changed": 728753,
+      "alphaChanged": 266030,
+      "outsideTyreChanged": 694182,
+      "rimSamples": [
+        {
+          "name": "rear-wheel",
+          "x": 174,
+          "y": 598,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        },
+        {
+          "name": "front-wheel",
+          "x": 798,
+          "y": 650,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        }
+      ],
+      "contactSamples": [
+        {
+          "name": "rear-contact",
+          "x": 207,
+          "y": 724,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 5
+        },
+        {
+          "name": "front-contact",
+          "x": 849,
+          "y": 805,
+          "changes": 21,
+          "alphaChanges": 0,
+          "opaque": 25
+        }
+      ],
+      "garageChanged": 0,
+      "fingerprint": "56fc5b2faefc4cffb0e7d86b65609e80721f0737b0712c8ea46440bed2ae663f"
+    },
+    {
+      "variant": "sti:yellow:rotiform:track:track:track",
+      "dimensionsMatch": true,
+      "changed": 730423,
+      "alphaChanged": 250788,
+      "outsideTyreChanged": 695229,
+      "rimSamples": [
+        {
+          "name": "rear-wheel",
+          "x": 174,
+          "y": 598,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        },
+        {
+          "name": "front-wheel",
+          "x": 798,
+          "y": 650,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        }
+      ],
+      "contactSamples": [
+        {
+          "name": "rear-contact",
+          "x": 207,
+          "y": 724,
+          "changes": 12,
+          "alphaChanges": 0,
+          "opaque": 23
+        },
+        {
+          "name": "front-contact",
+          "x": 850,
+          "y": 805,
+          "changes": 25,
+          "alphaChanges": 0,
+          "opaque": 25
+        }
+      ],
+      "garageChanged": 0,
+      "fingerprint": "55673d799e4695504ebe3e3991ee0c33e18254959a785c0328c67ec5e51fcbd8"
+    },
+    {
+      "variant": "sti:teal:work:track:track:track",
+      "dimensionsMatch": true,
+      "changed": 728868,
+      "alphaChanged": 254017,
+      "outsideTyreChanged": 693929,
+      "rimSamples": [
+        {
+          "name": "rear-wheel",
+          "x": 174,
+          "y": 598,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        },
+        {
+          "name": "front-wheel",
+          "x": 798,
+          "y": 650,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        }
+      ],
+      "contactSamples": [
+        {
+          "name": "rear-contact",
+          "x": 207,
+          "y": 724,
+          "changes": 12,
+          "alphaChanges": 0,
+          "opaque": 25
+        },
+        {
+          "name": "front-contact",
+          "x": 850,
+          "y": 805,
+          "changes": 24,
+          "alphaChanges": 0,
+          "opaque": 25
+        }
+      ],
+      "garageChanged": 0,
+      "fingerprint": "cc61e48a319c87b20c77ec5485bfc6e687ac6f2499de99b13f2f344b0b8089d6"
+    },
+    {
+      "variant": "porsche:black:sr-01:track:track:track",
+      "dimensionsMatch": true,
+      "changed": 660189,
+      "alphaChanged": 241886,
+      "outsideTyreChanged": 623087,
+      "rimSamples": [
+        {
+          "name": "rear-wheel",
+          "x": 180,
+          "y": 580,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        },
+        {
+          "name": "front-wheel",
+          "x": 855,
+          "y": 640,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        }
+      ],
+      "contactSamples": [
+        {
+          "name": "rear-contact",
+          "x": 190,
+          "y": 710,
+          "changes": 25,
+          "alphaChanges": 0,
+          "opaque": 25
+        },
+        {
+          "name": "front-contact",
+          "x": 860,
+          "y": 802,
+          "changes": 25,
+          "alphaChanges": 0,
+          "opaque": 25
+        }
+      ],
+      "garageChanged": 0,
+      "fingerprint": "886438e088a26a768b499425b99e502ed881541a831cedac4a8c456ed18c2404"
+    },
+    {
+      "variant": "porsche:mint:te37:track:track:track",
+      "dimensionsMatch": true,
+      "changed": 659278,
+      "alphaChanged": 224241,
+      "outsideTyreChanged": 621887,
+      "rimSamples": [
+        {
+          "name": "rear-wheel",
+          "x": 180,
+          "y": 580,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        },
+        {
+          "name": "front-wheel",
+          "x": 855,
+          "y": 640,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        }
+      ],
+      "contactSamples": [
+        {
+          "name": "rear-contact",
+          "x": 190,
+          "y": 710,
+          "changes": 25,
+          "alphaChanges": 0,
+          "opaque": 25
+        },
+        {
+          "name": "front-contact",
+          "x": 860,
+          "y": 802,
+          "changes": 25,
+          "alphaChanges": 0,
+          "opaque": 25
+        }
+      ],
+      "garageChanged": 0,
+      "fingerprint": "7adb832c30b1d7b5801b39c29fc934dfeab19b3249e95f0521e87e65baeffd46"
+    },
+    {
+      "variant": "porsche:white:bbs-lm:track:track:track",
+      "dimensionsMatch": true,
+      "changed": 659093,
+      "alphaChanged": 208589,
+      "outsideTyreChanged": 621772,
+      "rimSamples": [
+        {
+          "name": "rear-wheel",
+          "x": 180,
+          "y": 580,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        },
+        {
+          "name": "front-wheel",
+          "x": 855,
+          "y": 640,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        }
+      ],
+      "contactSamples": [
+        {
+          "name": "rear-contact",
+          "x": 190,
+          "y": 710,
+          "changes": 25,
+          "alphaChanges": 0,
+          "opaque": 25
+        },
+        {
+          "name": "front-contact",
+          "x": 860,
+          "y": 802,
+          "changes": 25,
+          "alphaChanges": 0,
+          "opaque": 25
+        }
+      ],
+      "garageChanged": 0,
+      "fingerprint": "fe5d5fda145633e436fd5f818cd19e9e2b447fff8a851b7f362c513ddc87b377"
+    },
+    {
+      "variant": "porsche:red:oz:track:track:track",
+      "dimensionsMatch": true,
+      "changed": 657701,
+      "alphaChanged": 223639,
+      "outsideTyreChanged": 620406,
+      "rimSamples": [
+        {
+          "name": "rear-wheel",
+          "x": 180,
+          "y": 580,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        },
+        {
+          "name": "front-wheel",
+          "x": 854,
+          "y": 640,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        }
+      ],
+      "contactSamples": [
+        {
+          "name": "rear-contact",
+          "x": 190,
+          "y": 710,
+          "changes": 24,
+          "alphaChanges": 0,
+          "opaque": 25
+        },
+        {
+          "name": "front-contact",
+          "x": 859,
+          "y": 802,
+          "changes": 25,
+          "alphaChanges": 0,
+          "opaque": 25
+        }
+      ],
+      "garageChanged": 0,
+      "fingerprint": "2907bd4a6ca59b8dcd4272786ae14ca156c293e045e2483574c20c6bb9f06271"
+    },
+    {
+      "variant": "porsche:yellow:rotiform:track:track:track",
+      "dimensionsMatch": true,
+      "changed": 658141,
+      "alphaChanged": 217843,
+      "outsideTyreChanged": 620798,
+      "rimSamples": [
+        {
+          "name": "rear-wheel",
+          "x": 180,
+          "y": 580,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        },
+        {
+          "name": "front-wheel",
+          "x": 854,
+          "y": 640,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        }
+      ],
+      "contactSamples": [
+        {
+          "name": "rear-contact",
+          "x": 190,
+          "y": 710,
+          "changes": 25,
+          "alphaChanges": 0,
+          "opaque": 25
+        },
+        {
+          "name": "front-contact",
+          "x": 859,
+          "y": 802,
+          "changes": 25,
+          "alphaChanges": 0,
+          "opaque": 25
+        }
+      ],
+      "garageChanged": 0,
+      "fingerprint": "095fad2d556cb61777808883cfdfc88f341f53fa3eee1360d5530dbad628314f"
+    },
+    {
+      "variant": "porsche:teal:work:track:track:track",
+      "dimensionsMatch": true,
+      "changed": 660474,
+      "alphaChanged": 222760,
+      "outsideTyreChanged": 622996,
+      "rimSamples": [
+        {
+          "name": "rear-wheel",
+          "x": 180,
+          "y": 580,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        },
+        {
+          "name": "front-wheel",
+          "x": 855,
+          "y": 640,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        }
+      ],
+      "contactSamples": [
+        {
+          "name": "rear-contact",
+          "x": 190,
+          "y": 710,
+          "changes": 25,
+          "alphaChanges": 0,
+          "opaque": 25
+        },
+        {
+          "name": "front-contact",
+          "x": 860,
+          "y": 802,
+          "changes": 25,
+          "alphaChanges": 0,
+          "opaque": 25
+        }
+      ],
+      "garageChanged": 0,
+      "fingerprint": "77dd0bcb911eefe18896029a4be0247d48935a056a7bf80a7d47d1cb93368fb2"
+    },
+    {
+      "variant": "gt86:black:sr-01:track:track:track",
+      "dimensionsMatch": true,
+      "changed": 695482,
+      "alphaChanged": 257313,
+      "outsideTyreChanged": 660925,
+      "rimSamples": [
+        {
+          "name": "rear-wheel",
+          "x": 176,
+          "y": 596,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        },
+        {
+          "name": "front-wheel",
+          "x": 851,
+          "y": 667,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        }
+      ],
+      "contactSamples": [
+        {
+          "name": "rear-contact",
+          "x": 185,
+          "y": 733,
+          "changes": 25,
+          "alphaChanges": 0,
+          "opaque": 25
+        },
+        {
+          "name": "front-contact",
+          "x": 851,
+          "y": 821,
+          "changes": 25,
+          "alphaChanges": 0,
+          "opaque": 25
+        }
+      ],
+      "garageChanged": 0,
+      "fingerprint": "75c6d9c5f35aa0caf6b68c9ba52302f8843fe64f3e9af3471bd281fb302cdbae"
+    },
+    {
+      "variant": "gt86:mint:te37:track:track:track",
+      "dimensionsMatch": true,
+      "changed": 699575,
+      "alphaChanged": 222205,
+      "outsideTyreChanged": 664637,
+      "rimSamples": [
+        {
+          "name": "rear-wheel",
+          "x": 176,
+          "y": 596,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        },
+        {
+          "name": "front-wheel",
+          "x": 851,
+          "y": 667,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        }
+      ],
+      "contactSamples": [
+        {
+          "name": "rear-contact",
+          "x": 185,
+          "y": 733,
+          "changes": 25,
+          "alphaChanges": 0,
+          "opaque": 25
+        },
+        {
+          "name": "front-contact",
+          "x": 851,
+          "y": 821,
+          "changes": 25,
+          "alphaChanges": 0,
+          "opaque": 25
+        }
+      ],
+      "garageChanged": 0,
+      "fingerprint": "6de03618ed725beb5e619ed301c864a65db00a0ebff6f3d620a960e2aff5ad52"
+    },
+    {
+      "variant": "gt86:white:bbs-lm:track:track:track",
+      "dimensionsMatch": true,
+      "changed": 703389,
+      "alphaChanged": 210155,
+      "outsideTyreChanged": 668373,
+      "rimSamples": [
+        {
+          "name": "rear-wheel",
+          "x": 176,
+          "y": 596,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        },
+        {
+          "name": "front-wheel",
+          "x": 851,
+          "y": 667,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        }
+      ],
+      "contactSamples": [
+        {
+          "name": "rear-contact",
+          "x": 185,
+          "y": 733,
+          "changes": 25,
+          "alphaChanges": 0,
+          "opaque": 25
+        },
+        {
+          "name": "front-contact",
+          "x": 851,
+          "y": 821,
+          "changes": 25,
+          "alphaChanges": 0,
+          "opaque": 25
+        }
+      ],
+      "garageChanged": 0,
+      "fingerprint": "ccbea57f05de895a03b409dc39a8cb019556d208e4937d36495c66f1e3944d35"
+    },
+    {
+      "variant": "gt86:red:oz:track:track:track",
+      "dimensionsMatch": true,
+      "changed": 698879,
+      "alphaChanged": 245456,
+      "outsideTyreChanged": 664014,
+      "rimSamples": [
+        {
+          "name": "rear-wheel",
+          "x": 176,
+          "y": 596,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        },
+        {
+          "name": "front-wheel",
+          "x": 851,
+          "y": 667,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        }
+      ],
+      "contactSamples": [
+        {
+          "name": "rear-contact",
+          "x": 185,
+          "y": 733,
+          "changes": 25,
+          "alphaChanges": 0,
+          "opaque": 25
+        },
+        {
+          "name": "front-contact",
+          "x": 851,
+          "y": 821,
+          "changes": 25,
+          "alphaChanges": 0,
+          "opaque": 25
+        }
+      ],
+      "garageChanged": 0,
+      "fingerprint": "358e77f7d58f520587ec41b55f3c5ad38790966c58748d25af91ac933bca0cce"
+    },
+    {
+      "variant": "gt86:yellow:rotiform:track:track:track",
+      "dimensionsMatch": true,
+      "changed": 698562,
+      "alphaChanged": 239017,
+      "outsideTyreChanged": 663750,
+      "rimSamples": [
+        {
+          "name": "rear-wheel",
+          "x": 176,
+          "y": 596,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        },
+        {
+          "name": "front-wheel",
+          "x": 851,
+          "y": 667,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        }
+      ],
+      "contactSamples": [
+        {
+          "name": "rear-contact",
+          "x": 185,
+          "y": 733,
+          "changes": 25,
+          "alphaChanges": 0,
+          "opaque": 25
+        },
+        {
+          "name": "front-contact",
+          "x": 851,
+          "y": 821,
+          "changes": 25,
+          "alphaChanges": 0,
+          "opaque": 25
+        }
+      ],
+      "garageChanged": 0,
+      "fingerprint": "68f056a252007a7aab4b08920e31e96b62c7d07c54dc05d1139a2c5a68b59241"
+    },
+    {
+      "variant": "gt86:teal:work:track:track:track",
+      "dimensionsMatch": true,
+      "changed": 697988,
+      "alphaChanged": 206224,
+      "outsideTyreChanged": 663143,
+      "rimSamples": [
+        {
+          "name": "rear-wheel",
+          "x": 176,
+          "y": 596,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        },
+        {
+          "name": "front-wheel",
+          "x": 851,
+          "y": 667,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        }
+      ],
+      "contactSamples": [
+        {
+          "name": "rear-contact",
+          "x": 185,
+          "y": 733,
+          "changes": 25,
+          "alphaChanges": 0,
+          "opaque": 25
+        },
+        {
+          "name": "front-contact",
+          "x": 851,
+          "y": 821,
+          "changes": 25,
+          "alphaChanges": 0,
+          "opaque": 25
+        }
+      ],
+      "garageChanged": 0,
+      "fingerprint": "67532d68748620789864962a9e2e5ede51bc0f87f6046dadb7825fc625a0be8d"
+    }
+  ],
+  "matrix_vehicle_scope": [
+    "sti",
+    "porsche",
+    "gt86"
+  ],
+  "coverage_counts": {
+    "baseline_paint": 0,
+    "blue_mechanical": 0,
+    "painted_maximum_upgrades": 18
+  },
+  "screenshots": [
+    "sti-painted-maximum-upgrades.jpg",
+    "porsche-painted-maximum-upgrades.jpg",
+    "gt86-painted-maximum-upgrades.jpg"
+  ],
+  "browser_observations": [
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "page_errors": [],
+      "http_errors": [],
+      "failed_requests": [],
+      "console_errors": [],
+      "expected_network_failures": false
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "page_errors": [],
+      "http_errors": [],
+      "failed_requests": [],
+      "console_errors": [],
+      "expected_network_failures": false
+    },
+    {
+      "case": "painted-maximum-upgrade-builds",
+      "page_errors": [],
+      "http_errors": [],
+      "failed_requests": [],
+      "console_errors": [],
+      "expected_network_failures": false
+    }
+  ],
+  "visual_acceptance": "Contact sheets require independent visual review; passing tests do not prove artistic fidelity."
+}

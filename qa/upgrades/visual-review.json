@@ -1,0 +1,25 @@
+{
+  "renderer_sha256": "8cdb92ad8bb388e9d5944f152870bf17d0e140adc781e55c58b831bf4caad690",
+  "artifact_sha256": "25a1ca01d84f4ce2f2d9b4e8be6acf52d8f3aa454c9d8ac2ee46b3509559eb53",
+  "status": "accepted within illustrated concept scope",
+  "root_reviewed": [
+    "sti-painted-maximum-upgrades.jpg",
+    "porsche-painted-maximum-upgrades.jpg",
+    "gt86-painted-maximum-upgrades.jpg",
+    "gt86-oz-27-mechanical-builds.jpg",
+    "sti-body-track-1672.jpg",
+    "sti-body-track-390.jpg",
+    "suspension-gt86-white-all-rims-maxdrop.jpg",
+    "suspension-porsche-black-all-rims-maxdrop.jpg",
+    "suspension-sti-white-all-rims-maxdrop.jpg",
+    "suspension-ui-gt86-white-track.jpg",
+    "suspension-ui-porsche-white-track.jpg"
+  ],
+  "independent_review": "All six STI mechanical overview sheets; all six native white/black lowering sheets and six real-interface lowering screenshots. See suspension-summary.json.",
+  "findings": "No visible detached tread/kit pieces, doubled rims, opaque repaint rectangles or platform/footer collisions in the reviewed proofs. Carbon additions remain attached; body lowering keeps the visible wheels planted.",
+  "limits": [
+    "Small original STI lower-sidewall glyph fragments remain inside conservative rim guards.",
+    "Concept illustrations retain minor source detail/reflection variance and unverified physical product fitment."
+  ],
+  "coverage_note": "Visual review is representative; exact automated coverage is recorded separately."
+}
