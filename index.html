@@ -1,100 +1,349 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="theme-color" content="#161513" />
-  <title>Sundae Run Garage — STI Customisation</title>
-  <link rel="stylesheet" href="./style.css" />
-</head>
-<body>
-<div id="app" class="app">
-  <div id="stage" class="stage" aria-label="Sundae Run Garage interactive STI customisation scene">
-    <img class="approved-image" src="./assets/approved-scene-fixed.jpg" alt="Sunset-lit Sundae Run workshop featuring a blue Subaru STI on a gold-rimmed turntable." draggable="false" />
-    <div id="ui-wheel-reset" class="ui-reset ui-wheel-reset" aria-hidden="true"></div>
-    <div id="ui-paint-reset" class="ui-reset ui-paint-reset" aria-hidden="true"></div>
-    <img id="paint-layer" class="car-layer" alt="" draggable="false" />
-    <img id="wheel-layer" class="car-layer" alt="" draggable="false" />
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#171b18" />
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <meta
+      name="description"
+      content="Build your look in the Sundae Run Garage. Preview wheels and paint on your STI, then fit your favourite combination."
+    />
+    <title>Sundae Run Garage — STI Customisation</title>
+  </head>
+  <body>
+    <main id="game-shell" class="game-shell" aria-label="Sundae Run Garage">
+      <div id="stage" class="stage">
+        <div
+          id="scene"
+          class="scene"
+          aria-label="STI on the Sundae Run turntable"
+        >
+          <img
+            id="garage-image"
+            class="garage-image"
+            src="./assets/scene/garage-plate.png"
+            alt="A warm Sundae Run workshop with a gold-rimmed turntable."
+            draggable="false"
+          />
+          <img
+            id="car-image"
+            class="car-image"
+            src="./assets/scene/blue-sr-01.png"
+            alt="Blue Subaru WRX STI with bronze wheels."
+            draggable="false"
+          />
+          <div id="scene-notice" class="scene-notice" role="status" hidden>
+            <span id="scene-error-text">The preview could not load.</span
+            ><button id="scene-retry" class="primary-button">
+              Retry preview
+            </button>
+          </div>
+          <div class="vehicle-caption">
+            <span class="live-dot" aria-hidden="true"></span> SUBARU WRX STI
+            <span class="vehicle-caption-divider" aria-hidden="true">/</span>
+            <span>YOUR GARAGE</span>
+          </div>
+        </div>
 
-    <div class="money-readout" id="money-readout" aria-live="polite">$ 48,320</div>
+        <header class="hud" aria-label="Garage overview">
+          <div class="brand-lockup">
+            <img
+              id="brand-logo"
+              class="brand-logo"
+              src="./assets/scene/garage-logo.png"
+              alt="Sundae Run Garage"
+              draggable="false"
+            />
+            <div id="brand-fallback" class="brand-fallback" hidden>
+              <span>Sundae Run</span><small>GARAGE</small>
+            </div>
+          </div>
+          <div
+            class="level-box hud-box"
+            aria-label="Demo garage level 12, 1820 out of 2500 experience points"
+          >
+            <strong>Lv. 12</strong>
+            <div class="xp-track" aria-hidden="true"><span></span></div>
+            <small>1,820 / 2,500 XP</small>
+          </div>
+          <div class="balance-box hud-box">
+            <span class="credit-icon" aria-hidden="true">$</span>
+            <div>
+              <span class="hud-label">GARAGE CREDITS</span
+              ><strong id="balance" aria-live="polite">$ 48,320</strong>
+            </div>
+          </div>
+          <div
+            class="clock-box hud-box"
+            aria-label="Demo workshop time Tuesday 9:20 AM"
+          >
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="12" cy="12" r="4" />
+              <path
+                d="M12 1v2m0 18v2M1 12h2m18 0h2M4.2 4.2l1.4 1.4m12.8 12.8 1.4 1.4M4.2 19.8l1.4-1.4M18.4 5.6l1.4-1.4"
+              />
+            </svg>
+            <div><span>Tue</span><strong>9:20 AM</strong></div>
+          </div>
+          <button
+            id="settings-open"
+            class="settings-button hud-box icon-button"
+            aria-label="Open garage settings"
+            title="Garage settings"
+          >
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="m9.5 3-.6 2.3-2 .9-2.1-.6-2.5 4.3 1.6 1.7v2.3l-1.6 1.7 2.5 4.3 2.1-.6 2 .9.6 2.3h5l.6-2.3 2-.9 2.1.6 2.5-4.3-1.6-1.7v-2.3l1.6-1.7-2.5-4.3-2.1.6-2-.9-.6-2.3z"
+              />
+              <circle cx="12" cy="12.1" r="3.1" />
+            </svg>
+          </button>
+        </header>
 
-    <nav class="category-menu" aria-label="Customisation categories">
-      <button class="category category-tyres current" data-category="tyres" aria-label="Tyres">Tyres</button>
-      <button class="category category-wheels" data-category="wheels" aria-label="Wheels">Wheels</button>
-      <button class="category category-paint" data-category="paint" aria-label="Paint">Paint</button>
-      <button class="category category-suspension" data-category="suspension" aria-label="Suspension">Suspension</button>
-      <button class="category category-body" data-category="body" aria-label="Body Kit">Body Kit</button>
-    </nav>
+        <nav
+          class="category-menu glass-panel"
+          aria-label="Customisation categories"
+        >
+          <div class="menu-heading">
+            <span class="back-chevron" aria-hidden="true">‹</span> CUSTOMISATION
+          </div>
+          <button class="category" data-category="tyres" disabled>
+            <svg viewBox="0 0 28 28" aria-hidden="true">
+              <ellipse cx="14" cy="14" rx="9" ry="11" />
+              <ellipse cx="14" cy="14" rx="4" ry="7" />
+              <path
+                d="m8 5 3 3m-5 3 4 2m-4 5 4 1m8-13-3 3m7 3-4 2m3 5-4 1"
+              /></svg
+            ><span>Tyres</span><small>Soon</small>
+          </button>
+          <button
+            class="category current"
+            data-category="wheels"
+            aria-pressed="true"
+          >
+            <svg viewBox="0 0 28 28" aria-hidden="true">
+              <circle cx="14" cy="14" r="11" />
+              <circle cx="14" cy="14" r="3" />
+              <path d="m14 3 0 8m3 2 8-2m-9 6 4 7m-8-7-4 7m3-11-8-2" /></svg
+            ><span>Wheels</span>
+          </button>
+          <button class="category" data-category="paint" aria-pressed="false">
+            <svg viewBox="0 0 28 28" aria-hidden="true">
+              <path
+                d="m12 5 8 4-5 10-8-4zM10 3l5 2-2 4-5-2zM18 12l6 3-2 4-6-3M9 16 5 24m-1-1 4 2"
+              /></svg
+            ><span>Paint</span>
+          </button>
+          <button class="category" data-category="suspension" disabled>
+            <svg viewBox="0 0 28 28" aria-hidden="true">
+              <path
+                d="m8 24 12-20m-3 0 6 3M5 21l6 4M10 18l7 2-3-7 7 2-3-7"
+              /></svg
+            ><span>Suspension</span><small>Soon</small>
+          </button>
+          <button class="category" data-category="body" disabled>
+            <svg viewBox="0 0 28 28" aria-hidden="true">
+              <path
+                d="m3 17 2-5 5-4h9l4 5 2 1v6h-3m-15 0H3v-3m4-4h14M10 8l-2 5m9-5 3 5"
+              />
+              <circle cx="8" cy="20" r="3" />
+              <circle cx="21" cy="20" r="3" /></svg
+            ><span>Body kit</span><small>Soon</small>
+          </button>
+        </nav>
 
-    <div class="wheel-mode" role="tablist" aria-label="Wheel and tyre mode">
-      <button class="mode-wheels" data-mode="wheels" aria-label="Wheels tab" aria-selected="true"></button>
-      <button class="mode-tyres" data-mode="tyres" aria-label="Tyres tab" aria-selected="false"></button>
-    </div>
+        <div class="customisation-panels">
+          <section
+            id="wheels-panel"
+            class="wheels-panel glass-panel"
+            aria-labelledby="wheels-title"
+          >
+            <div class="panel-heading wheel-panel-heading">
+              <h1 id="wheels-title">
+                <svg viewBox="0 0 28 28" aria-hidden="true">
+                  <circle cx="14" cy="14" r="11" />
+                  <circle cx="14" cy="14" r="3" />
+                  <path d="M14 3v8m3 2 8-2m-9 6 4 7m-8-7-4 7m3-11-8-2" /></svg
+                >Wheels &amp; tyres
+              </h1>
+              <div class="wheel-tabs" aria-label="Wheel and tyre category">
+                <button
+                  class="current"
+                  data-category="wheels"
+                  aria-pressed="true"
+                >
+                  Wheels</button
+                ><button data-category="tyres" disabled>
+                  Tyres <small>Soon</small>
+                </button>
+              </div>
+              <div class="rail-arrows">
+                <button
+                  class="icon-button"
+                  data-wheel-step="-1"
+                  aria-label="Previous wheel"
+                >
+                  ‹</button
+                ><button
+                  class="icon-button"
+                  data-wheel-step="1"
+                  aria-label="Next wheel"
+                >
+                  ›
+                </button>
+              </div>
+            </div>
+            <div
+              id="wheel-products"
+              class="wheel-products"
+              aria-label="Wheel designs"
+            ></div>
+            <p class="panel-footnote">
+              Preview your look. Product details are available on each card.
+            </p>
+          </section>
 
-    <div class="wheel-products" role="group" aria-label="Select wheel design">
-      <button class="wheel-product" data-wheel="sr-01" aria-label="Sundae Run SR-01 wheel, 2500 credits" aria-pressed="true"></button>
-      <button class="wheel-product" data-wheel="te37" aria-label="Rays TE37 wheel, 2800 credits" aria-pressed="false"></button>
-      <button class="wheel-product" data-wheel="bbs-lm" aria-label="BBS LM wheel, 2800 credits" aria-pressed="false"></button>
-      <button class="wheel-product" data-wheel="oz" aria-label="OZ Ultraleggera wheel, 2800 credits" aria-pressed="false"></button>
-      <button class="wheel-product" data-wheel="rotiform" aria-label="Rotiform TUF-R wheel, 2400 credits" aria-pressed="false"></button>
-      <button class="wheel-product" data-wheel="work" aria-label="Work Meister S1 wheel, 2600 credits" aria-pressed="false"></button>
-    </div>
-    <div id="wheel-check" class="dynamic-check wheel-check" aria-hidden="true">✓</div>
-    <div id="wheel-outline" class="selection-outline wheel-outline" aria-hidden="true"></div>
-    <button class="wheel-arrow wheel-arrow-left" aria-label="Previous wheel">‹</button>
-    <button class="wheel-arrow wheel-arrow-right" aria-label="Next wheel">›</button>
+          <section
+            id="paint-panel"
+            class="paint-panel glass-panel"
+            aria-labelledby="paint-title"
+          >
+            <div class="panel-heading">
+              <h2 id="paint-title">
+                <svg viewBox="0 0 28 28" aria-hidden="true">
+                  <path
+                    d="m12 5 8 4-5 10-8-4zM10 3l5 2-2 4-5-2zM18 12l6 3-2 4-6-3M9 16 5 24m-1-1 4 2"
+                  /></svg
+                >Paint colour
+              </h2>
+              <span class="finish-pill">Metallic</span>
+            </div>
+            <p class="panel-intro">A fresh finish. Same unmistakable STI.</p>
+            <div
+              id="paint-options"
+              class="paint-options"
+              aria-label="Paint colours"
+            ></div>
+            <div class="paint-detail">
+              <strong id="paint-name">WR Blue Pearl</strong
+              ><span id="paint-finish">Metallic finish</span>
+            </div>
+            <p class="paint-hint">More colours will join the garage.</p>
+          </section>
 
-    <div class="paint-finishes" role="tablist" aria-label="Paint finish">
-      <button data-finish="solid" aria-label="Solid finish" aria-selected="true"></button>
-      <button data-finish="metallic" aria-label="Metallic finish" aria-selected="false"></button>
-      <button data-finish="special" aria-label="Special finish" aria-selected="false"></button>
-    </div>
-    <div class="swatches" role="group" aria-label="Paint colours">
-      <button data-paint="white" aria-label="Pearl white paint" aria-pressed="false"></button>
-      <button data-paint="silver" aria-label="Silver paint" aria-pressed="false"></button>
-      <button data-paint="grey" aria-label="Graphite grey paint" aria-pressed="false"></button>
-      <button data-paint="black" aria-label="Onyx black paint" aria-pressed="false"></button>
-      <button data-paint="red" aria-label="Cherry red paint" aria-pressed="false"></button>
-      <button data-paint="orange" aria-label="Sunset orange paint" aria-pressed="false"></button>
-      <button data-paint="white" aria-label="Glacier white paint" aria-pressed="false"></button>
-      <button data-paint="blue" aria-label="WR blue pearl paint" aria-pressed="true"></button>
-      <button data-paint="purple" aria-label="Violet paint" aria-pressed="false"></button>
-      <button data-paint="pink" aria-label="Cherry blossom pink paint" aria-pressed="false"></button>
-      <button data-paint="yellow" aria-label="Sunshine yellow paint" aria-pressed="false"></button>
-      <button data-paint="mint" aria-label="Mint coast paint" aria-pressed="false"></button>
-    </div>
-    <div id="paint-check" class="dynamic-check paint-check" aria-hidden="true">✓</div>
-    <div id="swatch-outline" class="selection-outline swatch-outline" aria-hidden="true"></div>
-    <div class="paint-detail" aria-live="polite">
-      <div id="paint-name">WR Blue Pearl</div>
-      <div id="finish-label">Solid Finish</div>
-      <div id="paint-price">$ 1,200</div>
-    </div>
-
-    <section class="checkout" aria-label="Purchase selected customisation">
-      <div class="summary-card">
-        <span class="cart-symbol" aria-hidden="true">🛒</span>
-        <div class="summary-text"><span>Total Cost</span><strong id="total-price" aria-live="polite">$ 3,700</strong></div>
+          <section
+            class="checkout-panel glass-panel"
+            aria-labelledby="build-title"
+          >
+            <h2 id="build-title">
+              Your build <span class="credit-tag">GAME CREDITS</span>
+            </h2>
+            <ul
+              id="quote-items"
+              class="quote-items"
+              aria-label="Selected upgrades"
+            ></ul>
+            <div class="total-row">
+              <span>Total</span
+              ><strong id="total-price" aria-live="polite">$ 3,700</strong>
+            </div>
+            <button id="apply-button" class="apply-button">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="m14 5 5-2-1 5-4 3-3-1-7 9-2-2 9-7-1-3z" /></svg
+              ><span>Apply changes</span
+              ><span class="button-arrow" aria-hidden="true">›</span>
+            </button>
+            <button id="cancel-preview" class="cancel-preview" disabled>
+              Cancel preview
+            </button>
+            <p id="preview-status" class="preview-status" aria-live="polite">
+              Preview changes for free.
+            </p>
+          </section>
+        </div>
+        <div
+          id="toast"
+          class="toast"
+          role="status"
+          aria-live="polite"
+          aria-atomic="true"
+        ></div>
+        <p id="storage-notice" class="storage-notice" hidden>
+          Browser storage is unavailable. Your progress will last for this
+          visit.
+        </p>
       </div>
-      <button id="apply-button" class="apply-button" aria-label="Apply selected wheel and paint customisations">
-        <span aria-hidden="true">🔧</span> <strong id="apply-label">Apply Changes</strong> <span aria-hidden="true">›</span>
+    </main>
+
+    <dialog id="settings-dialog" class="modal" aria-labelledby="settings-title">
+      <div class="modal-heading">
+        <div>
+          <span class="eyebrow">SUNDAE RUN GARAGE</span>
+          <h2 id="settings-title">Garage settings</h2>
+        </div>
+        <button
+          class="dialog-close icon-button"
+          data-close-dialog
+          aria-label="Close settings"
+        >
+          ×
+        </button>
+      </div>
+      <p class="dialog-copy">
+        Your fitted look and garage credits are saved in this browser. Previews
+        are free until you apply them.
+      </p>
+      <div class="settings-info">
+        <span class="settings-info-mark" aria-hidden="true">✓</span>
+        <div>
+          <strong>Your garage, your pace</strong>
+          <p>
+            Game credits are fictional. Applying an upgrade does not place a
+            real order.
+          </p>
+        </div>
+      </div>
+      <button id="reset-request" class="secondary-button reset-request">
+        Reset demo progress
       </button>
-    </section>
-
-    <button class="top-settings" id="settings-button" aria-label="Open settings"></button>
-    <button class="money-plus" id="money-plus" aria-label="How to earn more garage credits"></button>
-    <div id="toast" class="toast" role="status" aria-live="polite"></div>
-    <div id="dialog" class="dialog" hidden>
-      <div class="dialog-card" role="dialog" aria-modal="true" aria-labelledby="dialog-title">
-        <div class="dialog-logo"><img src="./assets/sundae-logo.png" alt="" /></div>
-        <h2 id="dialog-title">Sundae Run Garage</h2>
-        <p id="dialog-message"></p>
-        <button id="dialog-close">Got it</button>
-        <button id="reset-button" class="reset-button" hidden>Reset Progress</button>
+      <div id="reset-confirmation" class="reset-confirmation" hidden>
+        <h3>Start fresh?</h3>
+        <p>
+          This restores the blue STI, original wheels and $48,320 garage
+          credits.
+        </p>
+        <div class="dialog-actions">
+          <button id="reset-cancel" class="secondary-button">
+            Keep my garage</button
+          ><button id="reset-confirm" class="primary-button">
+            Reset progress
+          </button>
+        </div>
       </div>
-    </div>
-  </div>
-</div>
-<script src="./app.js" defer></script>
-</body>
+    </dialog>
+
+    <dialog
+      id="product-dialog"
+      class="modal product-modal"
+      aria-labelledby="product-title"
+    >
+      <div class="modal-heading">
+        <div>
+          <span class="eyebrow">BUILD DETAILS</span>
+          <h2 id="product-dialog-title">Product details</h2>
+        </div>
+        <button
+          class="dialog-close icon-button"
+          data-close-dialog
+          aria-label="Close product details"
+        >
+          ×
+        </button>
+      </div>
+      <div id="product-content"></div>
+    </dialog>
+
+    <script type="module" src="./app.js"></script>
+  </body>
 </html>

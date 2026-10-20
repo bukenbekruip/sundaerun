@@ -1,0 +1,266 @@
+{
+  "started_at_utc": "2026-10-20T20:09:15.306944+00:00",
+  "target": "http://127.0.0.1:4173/OPEN-SUNDAE-RUN.html",
+  "fresh_browser_context": true,
+  "proof_scope": "HTTP-served portable HTML with every other network request blocked",
+  "file_protocol": "Not tested: file:// navigation is blocked by managed Chromium policy.",
+  "checks": [
+    {
+      "name": "Portable artifact navigation responds HTTP 200",
+      "status": "passed"
+    },
+    {
+      "name": "Loaded portable artifact is below 32 MiB",
+      "status": "passed"
+    },
+    {
+      "name": "Portable game has the intended page title",
+      "status": "passed"
+    },
+    {
+      "name": "blue:sr-01 car and garage load from embedded image data",
+      "status": "passed"
+    },
+    {
+      "name": "Fresh context starts with 48320 credits",
+      "status": "passed"
+    },
+    {
+      "name": "Default build quote is 3700 credits",
+      "status": "passed"
+    },
+    {
+      "name": "Bundled Inter font is loaded and used",
+      "status": "passed"
+    },
+    {
+      "name": "Scene, brand and all six wheel thumbnails load as embedded data images",
+      "status": "passed"
+    },
+    {
+      "name": "Runtime lookup map contains all scene and wheel thumbnail families",
+      "status": "passed"
+    },
+    {
+      "name": "blue:te37 car and garage load from embedded image data",
+      "status": "passed"
+    },
+    {
+      "name": "TE37 selection updates the native wheel control",
+      "status": "passed"
+    },
+    {
+      "name": "TE37 plus paint quote is 4000 credits",
+      "status": "passed"
+    },
+    {
+      "name": "black:te37 car and garage load from embedded image data",
+      "status": "passed"
+    },
+    {
+      "name": "black paint selection updates its native control",
+      "status": "passed"
+    },
+    {
+      "name": "mint:te37 car and garage load from embedded image data",
+      "status": "passed"
+    },
+    {
+      "name": "mint paint selection updates its native control",
+      "status": "passed"
+    },
+    {
+      "name": "blue:te37 car and garage load from embedded image data",
+      "status": "passed"
+    },
+    {
+      "name": "blue paint selection updates its native control",
+      "status": "passed"
+    },
+    {
+      "name": "blue:sr-01 car and garage load from embedded image data",
+      "status": "passed"
+    },
+    {
+      "name": "Returning to the original blue build restores its 3700 quote",
+      "status": "passed"
+    },
+    {
+      "name": "Double-clicking Apply debits the default build exactly once",
+      "status": "passed"
+    },
+    {
+      "name": "Fitted default parts have no remaining charge",
+      "status": "passed"
+    },
+    {
+      "name": "Already fitted build disables repeated Apply",
+      "status": "passed"
+    },
+    {
+      "name": "Artifact reload navigation is permitted by the network guard",
+      "status": "passed"
+    },
+    {
+      "name": "blue:sr-01 car and garage load from embedded image data",
+      "status": "passed"
+    },
+    {
+      "name": "Purchase balance persists after reload",
+      "status": "passed"
+    },
+    {
+      "name": "Owned-parts pricing persists after reload",
+      "status": "passed"
+    },
+    {
+      "name": "Reload preserves the already-fitted Apply state",
+      "status": "passed"
+    },
+    {
+      "name": "Only initial and reload artifact navigations were allowed",
+      "status": "passed"
+    },
+    {
+      "name": "Zero additional network requests were attempted",
+      "status": "passed",
+      "details": []
+    },
+    {
+      "name": "Zero network requests failed",
+      "status": "passed",
+      "details": []
+    },
+    {
+      "name": "Zero HTTP error responses",
+      "status": "passed",
+      "details": []
+    },
+    {
+      "name": "Zero uncaught browser exceptions",
+      "status": "passed",
+      "details": []
+    },
+    {
+      "name": "Zero browser console errors",
+      "status": "passed",
+      "details": []
+    }
+  ],
+  "navigation_requests": [
+    {
+      "url": "http://127.0.0.1:4173/OPEN-SUNDAE-RUN.html",
+      "type": "document"
+    },
+    {
+      "url": "http://127.0.0.1:4173/OPEN-SUNDAE-RUN.html",
+      "type": "document"
+    }
+  ],
+  "unexpected_requests": [],
+  "failed_requests": [],
+  "http_errors": [],
+  "page_errors": [],
+  "console_errors": [],
+  "screenshots": [
+    "portable-default.jpg"
+  ],
+  "artifact_bytes": 29609765,
+  "local_artifact_sha256": "9ff463bcb6e435bfde204fc2b32883f8b44d2e80a03ac628f0f3da4fbdb8e718",
+  "local_artifact_bytes": 29609765,
+  "fonts": {
+    "family": "\"Inter Variable\", Inter, \"Segoe UI\", sans-serif",
+    "faces": [
+      {
+        "family": "Inter Variable",
+        "status": "unloaded"
+      },
+      {
+        "family": "Inter Variable",
+        "status": "unloaded"
+      },
+      {
+        "family": "Inter Variable",
+        "status": "unloaded"
+      },
+      {
+        "family": "Inter Variable",
+        "status": "unloaded"
+      },
+      {
+        "family": "Inter Variable",
+        "status": "unloaded"
+      },
+      {
+        "family": "Inter Variable",
+        "status": "unloaded"
+      },
+      {
+        "family": "Inter Variable",
+        "status": "loaded"
+      }
+    ],
+    "ready": true
+  },
+  "default_images": [
+    {
+      "id": "garage-image",
+      "embedded": true,
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "id": "car-image",
+      "embedded": true,
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "id": "brand-logo",
+      "embedded": true,
+      "width": 2048,
+      "height": 768
+    },
+    {
+      "id": null,
+      "embedded": true,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": null,
+      "embedded": true,
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "id": null,
+      "embedded": true,
+      "width": 108,
+      "height": 108
+    },
+    {
+      "id": null,
+      "embedded": true,
+      "width": 112,
+      "height": 112
+    },
+    {
+      "id": null,
+      "embedded": true,
+      "width": 110,
+      "height": 110
+    },
+    {
+      "id": null,
+      "embedded": true,
+      "width": 112,
+      "height": 112
+    }
+  ],
+  "embedded_image_map_count": 16,
+  "status": "passed",
+  "finished_at_utc": "2026-10-20T20:09:20.302053+00:00",
+  "passed_checks": 34,
+  "failed_checks": 0
+}

@@ -1,0 +1,121 @@
+{
+  "provenance": "Generated with image_gen edits from approved reference, original preserved. Whole-car paint/wheel concept variants, not licensed or verified physical product renders.",
+  "logicalCanvas": {
+    "width": 1672,
+    "height": 941
+  },
+  "sharedCarTransform": {
+    "scale": 0.5454545454545454,
+    "left": 418.27272727272725,
+    "top": 169.63636363636363,
+    "canvasWidth": 912,
+    "canvasHeight": 513.2727272727273
+  },
+  "sourceBlueCarOpaqueBounds": [
+    38,
+    177,
+    1666,
+    811
+  ],
+  "registrationNote": "All car variants share one fixed transform, never subject-fit individually. Tool output has minor one-pixel width variation and opaque edges differ up to a few source pixels; visual browser QA required.",
+  "assets": {
+    "black-sr-01": {
+      "file": "black-sr-01.png",
+      "width": 1672,
+      "height": 941,
+      "mode": "RGBA",
+      "sha256": "5fe9dffb14ac1505a10fa99f2955cd8963f7446d8f059405718f970e2bc1a310",
+      "opaqueBoundsAlpha128": [
+        38,
+        174,
+        1666,
+        812
+      ]
+    },
+    "black-te37": {
+      "file": "black-te37.png",
+      "width": 1670,
+      "height": 941,
+      "mode": "RGBA",
+      "sha256": "2f40a5e5041ec9bf03beba2607cd3e06e2499aa868cde282749062b2e4897371",
+      "opaqueBoundsAlpha128": [
+        37,
+        172,
+        1668,
+        813
+      ]
+    },
+    "blue-sr-01": {
+      "file": "blue-sr-01.png",
+      "width": 1672,
+      "height": 941,
+      "mode": "RGBA",
+      "sha256": "d8239e1d966a268b4f40cde67f83a3707b603268c1fe57bd309fad52088e3add",
+      "opaqueBoundsAlpha128": [
+        38,
+        177,
+        1666,
+        811
+      ]
+    },
+    "blue-te37": {
+      "file": "blue-te37.png",
+      "width": 1671,
+      "height": 941,
+      "mode": "RGBA",
+      "sha256": "d390f2bf1c97f1cf6b246bf0da5f53b3e035b868b532f297488be9ec32cc8bd4",
+      "opaqueBoundsAlpha128": [
+        37,
+        174,
+        1667,
+        813
+      ]
+    },
+    "garage-logo": {
+      "file": "garage-logo.png",
+      "width": 2048,
+      "height": 768,
+      "mode": "RGBA",
+      "sha256": "8bbd466a374e883fb0114ca0384c7dca336f773b4d2a7b40f792b4f972e16809",
+      "opaqueBoundsAlpha128": [
+        57,
+        21,
+        2002,
+        754
+      ]
+    },
+    "garage-plate": {
+      "file": "garage-plate.png",
+      "width": 1672,
+      "height": 941,
+      "mode": "RGB",
+      "sha256": "2470245833997a35b21cfe0319736221c9733c91a0d4dc548ee988a340ac60fb"
+    },
+    "mint-sr-01": {
+      "file": "mint-sr-01.png",
+      "width": 1671,
+      "height": 941,
+      "mode": "RGBA",
+      "sha256": "c34072f4f785aebdda289015160d2c01ae7bec3a3dfa1b1032f7a118e7a40536",
+      "opaqueBoundsAlpha128": [
+        37,
+        173,
+        1666,
+        811
+      ]
+    },
+    "mint-te37": {
+      "file": "mint-te37.png",
+      "width": 1670,
+      "height": 942,
+      "mode": "RGBA",
+      "sha256": "f43dee98b72dd552d24eb538d0acfd7b472c50f80f05574a49e46908b06d813e",
+      "opaqueBoundsAlpha128": [
+        38,
+        172,
+        1667,
+        814
+      ]
+    }
+  }
+}

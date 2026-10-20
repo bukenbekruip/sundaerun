@@ -1,0 +1,17 @@
+{
+  "portable_html": {
+    "file": "OPEN-SUNDAE-RUN.html",
+    "bytes": 29609765,
+    "sha256": "9ff463bcb6e435bfde204fc2b32883f8b44d2e80a03ac628f0f3da4fbdb8e718"
+  },
+  "download_zip": {
+    "file": "Sundae-Run-Playable.zip",
+    "bytes": 22056551,
+    "sha256": "7c787b8af0f3a98f0ea7f4dac9937e90460304d09dd8b4d28e1015ed74a6ae82"
+  },
+  "archive_integrity": "verified",
+  "portable_checks_passed": 34,
+  "production_browser_cases_passed": 12,
+  "production_browser_checks_passed": 244,
+  "node_tests_passed": 13
+}

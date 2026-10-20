@@ -1,117 +1,459 @@
-(() => {
-  'use strict';
-  // Coordinates are locked to the approved 1672x941 scene; no image resizing or guessed axle positions.
-  const WIDTH = 1672, HEIGHT = 941;
-  const wheels = [
-    {id:'sr-01', name:'Sundae Run SR-01', cost:2500},
-    {id:'te37', name:'Rays TE37', cost:2800},
-    {id:'bbs-lm', name:'BBS LM', cost:2800},
-    {id:'oz', name:'OZ Ultraleggera', cost:2800},
-    {id:'rotiform', name:'Rotiform TUF-R', cost:2400},
-    {id:'work', name:'Work Meister S1', cost:2600},
-  ];
-  const paints = [
-    {id:'white',name:'Pearl White'},{id:'silver',name:'Glacier Silver'},
-    {id:'grey',name:'Graphite Grey'},{id:'black',name:'Onyx Black'},
-    {id:'red',name:'Cherry Red'},{id:'orange',name:'Sunset Orange'},
-    {id:'white',name:'Glacier White'},{id:'blue',name:'WR Blue Pearl'},
-    {id:'purple',name:'Midnight Violet'},{id:'pink',name:'Cherry Blossom'},
-    {id:'yellow',name:'Sundae Yellow'},{id:'mint',name:'Mint Coast'}
-  ];
-  const finishes = {solid:{label:'Solid Finish',cost:1200},metallic:{label:'Metallic Finish',cost:1750},special:{label:'Special Finish',cost:2600}};
-  const initial = {balance:48320, wheel:'sr-01', paint:'blue', paintSlot:7, finish:'solid', purchased:[], category:'tyres', xp:1820};
-  let stored;
-  try {stored=JSON.parse(localStorage.getItem('sundae-run-sti-v1')||'null');} catch {stored=null;}
-  let state={...initial,...(stored&&typeof stored==='object'?stored:{})};
-  if (!Array.isArray(state.purchased)) state.purchased=[];
-  if (!wheels.some(w=>w.id===state.wheel))state.wheel='sr-01';
-  if (!paints.some(p=>p.id===state.paint))state.paint='blue';
-  if (!finishes[state.finish])state.finish='solid';
-  const assetUrl=(path)=>window.__SUNDAE_ASSETS__?.[path]||path;
-  const $=(q)=>document.querySelector(q), $$=(q)=>Array.from(document.querySelectorAll(q));
-  const stage=$('#stage');
-  let toastTimer;
-  const money=n=>'$ '+Math.round(n).toLocaleString('en-US');
-  const save=()=>{try{localStorage.setItem('sundae-run-sti-v1',JSON.stringify(state));}catch{}};
-  function fit(){const s=Math.min(innerWidth/WIDTH, innerHeight/HEIGHT);stage.style.transform=`scale(${s})`;stage.style.left=`${(innerWidth-WIDTH*s)/2}px`;stage.style.top=`${(innerHeight-HEIGHT*s)/2}px`;}
-  addEventListener('resize',fit);fit();
-  const productIndex=()=>wheels.findIndex(w=>w.id===state.wheel);
-  const paintIndex=()=>Number.isInteger(state.paintSlot)&&paints[state.paintSlot]?.id===state.paint?state.paintSlot:paints.findIndex(p=>p.id===state.paint);
-  const wheelCost=()=>wheels[productIndex()].cost;
-  const paintCost=()=>finishes[state.finish].cost;
-  const keyWheel=()=>`w:${state.wheel}`;
-  const keyPaint=()=>`p:${state.paint}:${state.finish}`;
-  function total(){return (state.purchased.includes(keyWheel())?0:wheelCost())+(state.purchased.includes(keyPaint())?0:paintCost());}
-  function announce(text){const el=$('#toast');el.textContent=text;el.classList.add('show');clearTimeout(toastTimer);toastTimer=setTimeout(()=>el.classList.remove('show'),2700);}
-  function render(){
-    const paint=$('#paint-layer');
-    if(state.paint==='blue'){paint.removeAttribute('src');paint.style.display='none';}
-    else {paint.src=assetUrl(`./assets/paint-${state.paint}.webp`);paint.style.display='block';}
-    const wheel=$('#wheel-layer');
-    if(state.wheel==='sr-01'){wheel.removeAttribute('src');wheel.style.display='none';}
-    else {wheel.src=assetUrl(`./assets/wheels-${state.wheel}.webp`);wheel.style.display='block';}
-    $$('.wheel-product').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.wheel===state.wheel)));
-    const idx=productIndex();
-    const outline=$('#wheel-outline');
-    outline.style.left=`${74+idx*149.5}px`;
-    $('#wheel-check').style.left=`${175+idx*149.5}px`;
-    $('#wheel-check').style.zIndex=14;
-    outline.classList.toggle('active',idx!==0);
-    $('#ui-wheel-reset').classList.toggle('visible',idx!==0);
-    $$('.swatches button').forEach((b,i)=>b.setAttribute('aria-pressed',String(i===paintIndex())));
-    const pi=paintIndex(), swatch=$('#swatch-outline');
-    swatch.style.left=`${1006+(pi%6)*59}px`;swatch.style.top=`${728+Math.floor(pi/6)*51}px`;
-    $('#paint-check').style.left=`${1038+(pi%6)*59}px`;
-    $('#paint-check').style.top=`${779+Math.floor(pi/6)*51}px`;
-    swatch.classList.toggle('active',pi!==7);
-    $('#ui-paint-reset').classList.toggle('visible',pi!==7);
-    $$('.paint-finishes button').forEach(b=>b.setAttribute('aria-selected',String(b.dataset.finish===state.finish)));
-    $('.paint-detail').classList.toggle('modified',state.paint!=='blue'||state.finish!=='solid');
-    $('#paint-name').textContent=paints[pi].name;
-    $('#finish-label').textContent=finishes[state.finish].label;
-    $('#paint-price').textContent=money(state.purchased.includes(keyPaint())?0:paintCost());
-    $('#total-price').textContent=money(total());
-    $('.summary-card').classList.toggle('modified',total()!==3700);
-    $('#apply-label').textContent=total()===0?'Already Fitted':'Apply Changes';
-    $('#money-readout').textContent=money(state.balance);
-    $('#money-readout').classList.toggle('modified',state.balance!==48320);
-    $('#apply-button').classList.toggle('purchased',total()===0);
-    $$('.category').forEach(b=>b.classList.toggle('current',b.dataset.category===state.category));
-    save();
+import "@fontsource-variable/inter";
+import "./src/ui.css";
+import {
+  wheels,
+  paints,
+  VEHICLE,
+  getProduct,
+  getVariantKey,
+  isPreviewAvailable,
+  getMerchantLink,
+} from "./src/catalogue.js";
+import {
+  STORAGE_KEY,
+  createInitialState,
+  selectPreview,
+  cancelPreview,
+  getQuote,
+  applyChanges,
+  resetState,
+  serializeState,
+  loadState,
+} from "./src/state.js";
+import { STAGE, CAR_TRANSFORM, variants, assetUrl } from "./src/scene.js";
+
+const $ = (selector) => document.querySelector(selector);
+const $$ = (selector) => [...document.querySelectorAll(selector)];
+const credits = (value) => `$ ${new Intl.NumberFormat("en-US").format(value)}`;
+let state;
+let storageAvailable = true;
+try {
+  state = loadState(localStorage.getItem(STORAGE_KEY));
+} catch {
+  state = createInitialState();
+  storageAvailable = false;
+}
+if (!isPreviewAvailable(state.applied, variants))
+  state = {
+    ...state,
+    applied: { wheel: "sr-01", paint: "blue" },
+    preview: { wheel: "sr-01", paint: "blue" },
+  };
+let toastTimer,
+  artRequest = 0,
+  artLoading = false,
+  currentArt = "",
+  garageReady = false;
+let lastDisplayed = { ...state.preview };
+const imageCache = new Map();
+
+function element(tag, className, text) {
+  const node = document.createElement(tag);
+  if (className) node.className = className;
+  if (text !== undefined) node.textContent = text;
+  return node;
+}
+function notify(message) {
+  $("#toast").textContent = message;
+  $("#toast").classList.add("show");
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(() => $("#toast").classList.remove("show"), 2800);
+}
+function save() {
+  try {
+    localStorage.setItem(STORAGE_KEY, serializeState(state));
+    storageAvailable = true;
+  } catch {
+    storageAvailable = false;
   }
-  $$('.wheel-product').forEach(btn=>btn.addEventListener('click',()=>{state.wheel=btn.dataset.wheel;state.category='wheels';render();announce(`${wheels[productIndex()].name} · ${money(wheelCost())}`);}));
-  $$('.swatches button').forEach((btn,i)=>btn.addEventListener('click',()=>{state.paint=paints[i].id;state.paintSlot=i;state.category='paint';render();announce(`${paints[i].name} preview selected`);}));
-  $$('.paint-finishes button').forEach(btn=>btn.addEventListener('click',()=>{state.finish=btn.dataset.finish;state.category='paint';render();announce(`${finishes[state.finish].label} · preview finish is illustrative`);}));
-  $$('.category').forEach(btn=>btn.addEventListener('click',()=>{
-    state.category=btn.dataset.category;render();
-    if(state.category==='wheels')announce('Choose your wheels from the bottom menu');
-    else if(state.category==='paint')announce('Choose a paint colour from the bottom menu');
-    else if(state.category==='tyres')announce('Tyre customisation needs separate sidewall artwork — coming later');
-    else if(state.category==='suspension')announce('Suspension animation needs separated car artwork — coming later');
-    else announce('Body kits need alternate car renders — coming later');
-  }));
-  $$('.wheel-arrow').forEach(btn=>btn.addEventListener('click',()=>{const move=btn.classList.contains('wheel-arrow-left')?-1:1;state.wheel=wheels[(productIndex()+move+wheels.length)%wheels.length].id;state.category='wheels';render();}));
-  $$('[data-mode]').forEach(btn=>btn.addEventListener('click',()=>{
-    const mode=btn.dataset.mode;
-    $$('[data-mode]').forEach(other=>other.setAttribute('aria-selected',String(other.dataset.mode===mode)));
-    if(mode==='tyres')announce('Tyre visual swaps are not available in this first page');
-    else announce('Choose a rim to preview it on the STI');
-  }));
-  $('#apply-button').addEventListener('click',()=>{
-    const charge=total();
-    if(!charge){announce('Those upgrades are already fitted. Try a new colour or wheel!');return;}
-    if(charge>state.balance){announce('Not enough garage credits for those upgrades');return;}
-    state.balance-=charge;
-    if(!state.purchased.includes(keyWheel()))state.purchased.push(keyWheel());
-    if(!state.purchased.includes(keyPaint()))state.purchased.push(keyPaint());
-    render();announce(`Upgrades fitted! ${money(charge)} spent`);
-  });
-  function showDialog(title,message,reset=false){$('#dialog-title').textContent=title;$('#dialog-message').textContent=message;$('#reset-button').hidden=!reset;$('#dialog').hidden=false;$('#dialog-close').focus();}
-  $('#settings-button').addEventListener('click',()=>showDialog('Garage Settings','This is the first playable STI customisation screen. Changes save automatically in your browser. To start over, use the Reset Progress button below.',true));
-  $('#money-plus').addEventListener('click',()=>showDialog('Garage Credits','Credits will be earned through customer jobs in the garage game. This page demonstrates customisation and checkout using fictional starting credits.'));
-  $('#dialog-close').addEventListener('click',()=>{$('#dialog').hidden=true;});
-  $('#reset-button').addEventListener('click',()=>{state={...initial,purchased:[]};render();$('#dialog').hidden=true;announce('Garage customisation reset');});
-  $('#dialog').addEventListener('click',e=>{if(e.target.id==='dialog')$('#dialog').hidden=true;});
-  document.addEventListener('keydown',e=>{if(e.key==='Escape')$('#dialog').hidden=true;});
+  $("#storage-notice").hidden = storageAvailable;
+}
+function resize() {
+  const narrow = matchMedia("(max-width: 1099px)").matches;
+  $("#stage").style.setProperty(
+    "--stage-scale",
+    String(
+      narrow
+        ? 1
+        : Math.min(innerWidth / STAGE.width, innerHeight / STAGE.height),
+    ),
+  );
+}
+addEventListener("resize", resize);
+resize();
+function loadImage(src) {
+  if (!imageCache.has(src)) {
+    const task = new Promise((resolve, reject) => {
+      const image = new Image();
+      image.onload = () => resolve(image);
+      image.onerror = () =>
+        reject(new Error("Scene image could not be loaded."));
+      image.src = src;
+    });
+    imageCache.set(src, task);
+    task.catch(() => imageCache.delete(src));
+  }
+  return imageCache.get(src);
+}
+async function showCar(selection) {
+  const key = getVariantKey(selection);
+  if (key === currentArt) {
+    if (artLoading) {
+      ++artRequest;
+      artLoading = false;
+      $("#scene").setAttribute("aria-busy", "false");
+      updateCheckout();
+    }
+    return;
+  }
+  const request = ++artRequest;
+  artLoading = true;
+  $("#scene").setAttribute("aria-busy", "true");
+  updateCheckout();
+  try {
+    const source = assetUrl(variants[key].src);
+    await loadImage(source);
+    if (request !== artRequest) return;
+    $("#car-image").src = source;
+    $("#car-image").alt =
+      `${getProduct("paint", selection.paint).name} ${VEHICLE.name} with ${getProduct("wheel", selection.wheel).name} concept wheels`;
+    $("#car-image").dataset.variant = key;
+    currentArt = key;
+    lastDisplayed = { ...selection };
+    if (garageReady) $("#scene-notice").hidden = true;
+  } catch {
+    if (request !== artRequest) return;
+    state = selectPreview(state, lastDisplayed);
+    if (currentArt)
+      notify("That preview could not load. Your previous look has been kept.");
+    else {
+      $("#scene-error-text").textContent =
+        "Your car preview could not load. Please retry.";
+      $("#scene-notice").hidden = false;
+    }
+    updateControls();
+  } finally {
+    if (request === artRequest) {
+      artLoading = false;
+      $("#scene").setAttribute("aria-busy", "false");
+      updateCheckout();
+    }
+  }
+}
+async function showGarage() {
+  try {
+    const source = assetUrl("assets/scene/garage-plate.png");
+    await loadImage(source);
+    $("#garage-image").src = source;
+    garageReady = true;
+    if (currentArt) $("#scene-notice").hidden = true;
+  } catch {
+    garageReady = false;
+    $("#scene-error-text").textContent =
+      "The garage scene could not load. Please retry.";
+    $("#scene-notice").hidden = false;
+  }
+  updateCheckout();
+}
+function makeControls() {
+  for (const product of wheels) {
+    const card = element("article", "wheel-card");
+    const select = element("button", "wheel-select");
+    select.type = "button";
+    select.dataset.wheel = product.id;
+    select.setAttribute(
+      "aria-label",
+      `${product.name}, ${product.gamePrice.toLocaleString("en-US")} garage credits`,
+    );
+    const image = element("img", "wheel-thumbnail");
+    image.src = assetUrl(product.thumbnail);
+    image.alt = "";
+    image.width = 96;
+    image.height = 96;
+    image.draggable = false;
+    const check = element("span", "selection-check", "✓");
+    check.setAttribute("aria-hidden", "true");
+    select.append(
+      check,
+      image,
+      element("span", "wheel-name", product.name),
+      element("span", "wheel-price", credits(product.gamePrice)),
+      element("span", "availability-label"),
+    );
+    const details = element("button", "product-details", "Product details");
+    details.type = "button";
+    details.dataset.product = product.id;
+    details.setAttribute("aria-label", `Product details for ${product.name}`);
+    card.append(select, details);
+    $("#wheel-products").append(card);
+  }
+  for (const paint of paints) {
+    const button = element("button", "paint-option");
+    button.type = "button";
+    button.dataset.paint = paint.id;
+    button.style.setProperty("--swatch", paint.colour);
+    button.setAttribute("aria-label", `${paint.name} paint`);
+    button.append(
+      element("span", "paint-chip"),
+      element("span", "paint-label", paint.name),
+    );
+    $("#paint-options").append(button);
+  }
+}
+function updateControls() {
+  for (const button of $$(".wheel-select")) {
+    const available = isPreviewAvailable(
+      { ...state.preview, wheel: button.dataset.wheel },
+      variants,
+    );
+    button.disabled = !available;
+    button.setAttribute(
+      "aria-pressed",
+      String(button.dataset.wheel === state.preview.wheel),
+    );
+    button.querySelector(".availability-label").textContent = available
+      ? "Concept preview"
+      : "Preview coming soon";
+  }
+  for (const button of $$(".paint-option")) {
+    button.disabled = !isPreviewAvailable(
+      { ...state.preview, paint: button.dataset.paint },
+      variants,
+    );
+    button.setAttribute(
+      "aria-pressed",
+      String(button.dataset.paint === state.preview.paint),
+    );
+  }
+  for (const button of $$("[data-category]")) {
+    const active = button.dataset.category === state.category;
+    button.setAttribute("aria-pressed", String(active));
+    button.classList.toggle("current", active);
+  }
+  const paint = getProduct("paint", state.preview.paint);
+  $("#paint-name").textContent = paint.name;
+  $("#paint-finish").textContent =
+    `${paint.finish} concept · ${credits(paint.gamePrice)} credits`;
+  $("#balance").textContent = credits(state.balance);
+  $("#balance").setAttribute(
+    "aria-label",
+    `${state.balance.toLocaleString("en-US")} garage credits`,
+  );
+  const altered =
+    state.preview.wheel !== state.applied.wheel ||
+    state.preview.paint !== state.applied.paint;
+  $("#cancel-preview").disabled = !altered;
+  $("#preview-status").textContent = altered
+    ? "Preview · not applied"
+    : getQuote(state).total
+      ? "Preview · apply to fit"
+      : "Your fitted build";
+  $("#preview-status").classList.toggle("is-preview", altered);
+}
+function updateCheckout() {
+  const quote = getQuote(state);
+  $("#quote-items").replaceChildren(
+    ...quote.items.map((item) => {
+      const row = element("li", "quote-line");
+      row.append(
+        element("span", "", item.kind === "wheel" ? "Wheels" : "Paint"),
+        element("strong", "", item.owned ? "Owned" : credits(item.charge)),
+      );
+      return row;
+    }),
+  );
+  $("#total-price").textContent = credits(quote.total);
+  const same =
+    state.preview.wheel === state.applied.wheel &&
+    state.preview.paint === state.applied.paint;
+  const button = $("#apply-button");
+  const sceneReady = garageReady && Boolean(currentArt);
+  button.disabled =
+    !sceneReady ||
+    artLoading ||
+    (quote.total === 0 && same) ||
+    quote.total > state.balance;
+  button.textContent = artLoading
+    ? "Loading preview…"
+    : !sceneReady
+      ? "Preview unavailable"
+      : quote.total > state.balance
+        ? "Not enough credits"
+        : quote.total === 0
+          ? same
+            ? "Fitted ✓"
+            : "Fit owned parts"
+          : "Apply Changes";
+}
+function render() {
+  updateControls();
+  updateCheckout();
+  showCar({ ...state.preview });
+  save();
+}
+function preview(changes) {
+  const next = selectPreview(state, changes);
+  if (!isPreviewAvailable(next.preview, variants)) {
+    notify("A matching car render is still being prepared for that option.");
+    return;
+  }
+  state = next;
   render();
-})();
+}
+function showProduct(id) {
+  const product = getProduct("wheel", id);
+  if (!product) return;
+  const content = $("#product-content");
+  content.replaceChildren();
+  const title = element("h2", "", product.name);
+  title.id = "product-title";
+  content.append(element("p", "eyebrow", "Wheel details"), title);
+  const image = element("img", "detail-wheel");
+  image.src = assetUrl(product.thumbnail);
+  image.alt = `${product.name} design reference`;
+  content.append(
+    image,
+    element(
+      "p",
+      "detail-caption",
+      "Concept appearance · fictional garage credits",
+    ),
+    element(
+      "p",
+      "",
+      "This preview shows an in-game wheel design. Physical vehicle fitment has not been verified.",
+    ),
+  );
+  const link = getMerchantLink(product);
+  if (link) {
+    if (link.price !== null && link.currency)
+      content.append(
+        element(
+          "p",
+          "retailer-price",
+          `Retailer price: ${new Intl.NumberFormat("en-ZA", { style: "currency", currency: link.currency }).format(link.price)}`,
+        ),
+      );
+    content.append(
+      element(
+        "p",
+        "muted",
+        "Check vehicle compatibility, diameter, width, offset, and bolt pattern with the retailer.",
+      ),
+    );
+    const anchor = element("a", "primary-link", "View at retailer ↗");
+    anchor.href = link.url;
+    anchor.target = "_blank";
+    anchor.rel = link.rel;
+    content.append(anchor);
+    if (link.disclosure)
+      content.append(element("p", "affiliate-disclosure", link.disclosure));
+  } else
+    content.append(
+      element(
+        "p",
+        "retailer-pending",
+        "Real product and retailer details are coming later.",
+      ),
+    );
+  $("#product-dialog").showModal();
+}
+
+makeControls();
+showGarage();
+$("#brand-logo").src = assetUrl("assets/scene/garage-logo.png");
+$("#brand-logo").addEventListener("error", () => {
+  $("#brand-logo").hidden = true;
+});
+for (const [key, value] of Object.entries(CAR_TRANSFORM))
+  $("#car-image").style.setProperty(`--car-${key}`, `${value}px`);
+$("#wheel-products").addEventListener("click", (event) => {
+  const select = event.target.closest(".wheel-select[data-wheel]");
+  const details = event.target.closest(".product-details[data-product]");
+  if (select && !select.disabled)
+    preview({ wheel: select.dataset.wheel, category: "wheels" });
+  else if (details) showProduct(details.dataset.product);
+});
+$("#paint-options").addEventListener("click", (event) => {
+  const button = event.target.closest("[data-paint]");
+  if (button && !button.disabled)
+    preview({ paint: button.dataset.paint, category: "paint" });
+});
+for (const button of $$("[data-category]"))
+  button.addEventListener("click", () => {
+    if (button.disabled) return;
+    state = selectPreview(state, { category: button.dataset.category });
+    render();
+    const target =
+      button.dataset.category === "paint"
+        ? $("#paint-options button:not(:disabled)")
+        : $(".wheel-select:not(:disabled)");
+    target?.focus({
+      preventScroll: !matchMedia("(max-width: 1099px)").matches,
+    });
+  });
+for (const button of $$("[data-wheel-step]"))
+  button.addEventListener("click", () => {
+    const available = wheels.filter((wheel) =>
+      isPreviewAvailable({ ...state.preview, wheel: wheel.id }, variants),
+    );
+    const index = available.findIndex(
+      (wheel) => wheel.id === state.preview.wheel,
+    );
+    const next =
+      available[
+        (index + Number(button.dataset.wheelStep) + available.length) %
+          available.length
+      ];
+    if (next) preview({ wheel: next.id, category: "wheels" });
+  });
+$("#cancel-preview").addEventListener("click", () => {
+  state = cancelPreview(state);
+  render();
+  notify("Preview cancelled. Your fitted build is restored.");
+});
+$("#apply-button").addEventListener("click", () => {
+  if (artLoading || !garageReady || !currentArt) return;
+  const result = applyChanges(state);
+  state = result.state;
+  render();
+  notify(
+    result.status === "insufficient-funds"
+      ? "Not enough garage credits."
+      : result.status === "already-fitted"
+        ? "These parts are already fitted."
+        : result.charged
+          ? `Build applied · ${credits(result.charged)} garage credits used`
+          : "Owned parts fitted. No credits used.",
+  );
+});
+$("#settings-open").addEventListener("click", () => {
+  $("#reset-confirmation").hidden = true;
+  $("#settings-dialog").showModal();
+});
+for (const button of $$("[data-close-dialog]"))
+  button.addEventListener("click", () => button.closest("dialog").close());
+for (const dialog of $$("dialog"))
+  dialog.addEventListener("click", (event) => {
+    if (event.target === dialog) dialog.close();
+  });
+$("#reset-request").addEventListener("click", () => {
+  $("#reset-confirmation").hidden = false;
+  $("#reset-confirm").focus();
+});
+$("#reset-cancel").addEventListener("click", () => {
+  $("#reset-confirmation").hidden = true;
+  $("#reset-request").focus();
+});
+$("#reset-confirm").addEventListener("click", () => {
+  state = resetState();
+  $("#settings-dialog").close();
+  render();
+  notify("Garage progress reset.");
+});
+$("#scene-retry").addEventListener("click", () => {
+  $("#scene-notice").hidden = true;
+  showGarage();
+  showCar({ ...state.preview });
+});
+render();

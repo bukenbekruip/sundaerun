@@ -1,0 +1,1455 @@
+{
+  "generated_at_utc": "2026-10-20T20:09:16.794823+00:00",
+  "base_url": "http://127.0.0.1:4173",
+  "case_count": 12,
+  "passed": 12,
+  "failed": 0,
+  "assertions_passed": 244,
+  "cases": [
+    {
+      "name": "six-variants-and-controls",
+      "status": "passed",
+      "assertions_passed": 87
+    },
+    {
+      "name": "purchases-cancel-reload-reset",
+      "status": "passed",
+      "assertions_passed": 34
+    },
+    {
+      "name": "product-details-accessibility",
+      "status": "passed",
+      "assertions_passed": 10
+    },
+    {
+      "name": "viewport-1366",
+      "status": "passed",
+      "assertions_passed": 12
+    },
+    {
+      "name": "viewport-1920",
+      "status": "passed",
+      "assertions_passed": 12
+    },
+    {
+      "name": "viewport-phone",
+      "status": "passed",
+      "assertions_passed": 15
+    },
+    {
+      "name": "wheel-arches-2x",
+      "status": "passed",
+      "assertions_passed": 6
+    },
+    {
+      "name": "out-of-order-black-then-mint",
+      "status": "passed",
+      "assertions_passed": 19
+    },
+    {
+      "name": "cancel-delayed-black",
+      "status": "passed",
+      "assertions_passed": 19
+    },
+    {
+      "name": "initial-car-failure-and-retry",
+      "status": "passed",
+      "assertions_passed": 8
+    },
+    {
+      "name": "initial-garage-failure-and-retry",
+      "status": "passed",
+      "assertions_passed": 8
+    },
+    {
+      "name": "alternate-image-failure-fallback",
+      "status": "passed",
+      "assertions_passed": 14
+    }
+  ],
+  "assertions": [
+    {
+      "case": "six-variants-and-controls",
+      "assertion": "Built page responds successfully",
+      "status": "passed"
+    },
+    {
+      "case": "six-variants-and-controls",
+      "assertion": "Built page has the intended title",
+      "status": "passed"
+    },
+    {
+      "case": "six-variants-and-controls",
+      "assertion": "Starting balance is 48320 credits",
+      "status": "passed"
+    },
+    {
+      "case": "six-variants-and-controls",
+      "assertion": "Initial wheel and paint quote is 3700 credits",
+      "status": "passed"
+    },
+    {
+      "case": "six-variants-and-controls",
+      "assertion": "Exactly one wheel is selected",
+      "status": "passed"
+    },
+    {
+      "case": "six-variants-and-controls",
+      "assertion": "Exactly one paint is selected",
+      "status": "passed"
+    },
+    {
+      "case": "six-variants-and-controls",
+      "assertion": "Selected wheel agrees with rendered variant",
+      "status": "passed"
+    },
+    {
+      "case": "six-variants-and-controls",
+      "assertion": "Selected paint agrees with rendered variant",
+      "status": "passed"
+    },
+    {
+      "case": "six-variants-and-controls",
+      "assertion": "Exactly one native wheel checkmark is visible",
+      "status": "passed"
+    },
+    {
+      "case": "six-variants-and-controls",
+      "assertion": "Exactly one native paint checkmark is rendered",
+      "status": "passed"
+    },
+    {
+      "case": "six-variants-and-controls",
+      "assertion": "Category highlights agree with the last interaction",
+      "status": "passed"
+    },
+    {
+      "case": "six-variants-and-controls",
+      "assertion": "Document has no horizontal overflow",
+      "status": "passed"
+    },
+    {
+      "case": "six-variants-and-controls",
+      "assertion": "The complete opaque car fits inside the scene (transparent canvas padding excluded)",
+      "status": "passed"
+    },
+    {
+      "case": "six-variants-and-controls",
+      "assertion": "Car width is fully within the viewport",
+      "status": "passed"
+    },
+    {
+      "case": "six-variants-and-controls",
+      "assertion": "Checkout width is not clipped",
+      "status": "passed"
+    },
+    {
+      "case": "six-variants-and-controls",
+      "assertion": "Entire checkout is visible after scrolling when needed",
+      "status": "passed"
+    },
+    {
+      "case": "six-variants-and-controls",
+      "assertion": "Apply button is reachable in the viewport",
+      "status": "passed"
+    },
+    {
+      "case": "six-variants-and-controls",
+      "assertion": "blue:te37 keeps the same complete-car transform",
+      "status": "passed"
+    },
+    {
+      "case": "six-variants-and-controls",
+      "assertion": "blue:te37 loads its own full-resolution car image",
+      "status": "passed"
+    },
+    {
+      "case": "six-variants-and-controls",
+      "assertion": "Exactly one wheel is selected",
+      "status": "passed"
+    },
+    {
+      "case": "six-variants-and-controls",
+      "assertion": "Exactly one paint is selected",
+      "status": "passed"
+    },
+    {
+      "case": "six-variants-and-controls",
+      "assertion": "Selected wheel agrees with rendered variant",
+      "status": "passed"
+    },
+    {
+      "case": "six-variants-and-controls",
+      "assertion": "Selected paint agrees with rendered variant",
+      "status": "passed"
+    },
+    {
+      "case": "six-variants-and-controls",
+      "assertion": "Exactly one native wheel checkmark is visible",
+      "status": "passed"
+    },
+    {
+      "case": "six-variants-and-controls",
+      "assertion": "Exactly one native paint checkmark is rendered",
+      "status": "passed"
+    },
+    {
+      "case": "six-variants-and-controls",
+      "assertion": "Category highlights agree with the last interaction",
+      "status": "passed"
+    },
+    {
+      "case": "six-variants-and-controls",
+      "assertion": "Changing previews never spends credits",
+      "status": "passed"
+    },
+    {
+      "case": "six-variants-and-controls",
+      "assertion": "Quote follows the selected wheel and paint",
+      "status": "passed"
+    },
+    {
+      "case": "six-variants-and-controls",
+      "assertion": "black:te37 keeps the same complete-car transform",
+      "status": "passed"
+    },
+    {
+      "case": "six-variants-and-controls",
+      "assertion": "black:te37 loads its own full-resolution car image",
+      "status": "passed"
+    },
+    {
+      "case": "six-variants-and-controls",
+      "assertion": "Exactly one wheel is selected",
+      "status": "passed"
+    },
+    {
+      "case": "six-variants-and-controls",
+      "assertion": "Exactly one paint is selected",
+      "status": "passed"
+    },
+    {
+      "case": "six-variants-and-controls",
+      "assertion": "Selected wheel agrees with rendered variant",
+      "status": "passed"
+    },
+    {
+      "case": "six-variants-and-controls",
+      "assertion": "Selected paint agrees with rendered variant",
+      "status": "passed"
+    },
+    {
+      "case": "six-variants-and-controls",
+      "assertion": "Exactly one native wheel checkmark is visible",
+      "status": "passed"
+    },
+    {
+      "case": "six-variants-and-controls",
+      "assertion": "Exactly one native paint checkmark is rendered",
+      "status": "passed"
+    },
+    {
+      "case": "six-variants-and-controls",
+      "assertion": "Category highlights agree with the last interaction",
+      "status": "passed"
+    },
+    {
+      "case": "six-variants-and-controls",
+      "assertion": "Changing previews never spends credits",
+      "status": "passed"
+    },
+    {
+      "case": "six-variants-and-controls",
+      "assertion": "Quote follows the selected wheel and paint",
+      "status": "passed"
+    },
+    {
+      "case": "six-variants-and-controls",
+      "assertion": "mint:te37 keeps the same complete-car transform",
+      "status": "passed"
+    },
+    {
+      "case": "six-variants-and-controls",
+      "assertion": "mint:te37 loads its own full-resolution car image",
+      "status": "passed"
+    },
+    {
+      "case": "six-variants-and-controls",
+      "assertion": "Exactly one wheel is selected",
+      "status": "passed"
+    },
+    {
+      "case": "six-variants-and-controls",
+      "assertion": "Exactly one paint is selected",
+      "status": "passed"
+    },
+    {
+      "case": "six-variants-and-controls",
+      "assertion": "Selected wheel agrees with rendered variant",
+      "status": "passed"
+    },
+    {
+      "case": "six-variants-and-controls",
+      "assertion": "Selected paint agrees with rendered variant",
+      "status": "passed"
+    },
+    {
+      "case": "six-variants-and-controls",
+      "assertion": "Exactly one native wheel checkmark is visible",
+      "status": "passed"
+    },
+    {
+      "case": "six-variants-and-controls",
+      "assertion": "Exactly one native paint checkmark is rendered",
+      "status": "passed"
+    },
+    {
+      "case": "six-variants-and-controls",
+      "assertion": "Category highlights agree with the last interaction",
+      "status": "passed"
+    },
+    {
+      "case": "six-variants-and-controls",
+      "assertion": "Changing previews never spends credits",
+      "status": "passed"
+    },
+    {
+      "case": "six-variants-and-controls",
+      "assertion": "Quote follows the selected wheel and paint",
+      "status": "passed"
+    },
+    {
+      "case": "six-variants-and-controls",
+      "assertion": "mint:sr-01 keeps the same complete-car transform",
+      "status": "passed"
+    },
+    {
+      "case": "six-variants-and-controls",
+      "assertion": "mint:sr-01 loads its own full-resolution car image",
+      "status": "passed"
+    },
+    {
+      "case": "six-variants-and-controls",
+      "assertion": "Exactly one wheel is selected",
+      "status": "passed"
+    },
+    {
+      "case": "six-variants-and-controls",
+      "assertion": "Exactly one paint is selected",
+      "status": "passed"
+    },
+    {
+      "case": "six-variants-and-controls",
+      "assertion": "Selected wheel agrees with rendered variant",
+      "status": "passed"
+    },
+    {
+      "case": "six-variants-and-controls",
+      "assertion": "Selected paint agrees with rendered variant",
+      "status": "passed"
+    },
+    {
+      "case": "six-variants-and-controls",
+      "assertion": "Exactly one native wheel checkmark is visible",
+      "status": "passed"
+    },
+    {
+      "case": "six-variants-and-controls",
+      "assertion": "Exactly one native paint checkmark is rendered",
+      "status": "passed"
+    },
+    {
+      "case": "six-variants-and-controls",
+      "assertion": "Category highlights agree with the last interaction",
+      "status": "passed"
+    },
+    {
+      "case": "six-variants-and-controls",
+      "assertion": "Changing previews never spends credits",
+      "status": "passed"
+    },
+    {
+      "case": "six-variants-and-controls",
+      "assertion": "Quote follows the selected wheel and paint",
+      "status": "passed"
+    },
+    {
+      "case": "six-variants-and-controls",
+      "assertion": "black:sr-01 keeps the same complete-car transform",
+      "status": "passed"
+    },
+    {
+      "case": "six-variants-and-controls",
+      "assertion": "black:sr-01 loads its own full-resolution car image",
+      "status": "passed"
+    },
+    {
+      "case": "six-variants-and-controls",
+      "assertion": "Exactly one wheel is selected",
+      "status": "passed"
+    },
+    {
+      "case": "six-variants-and-controls",
+      "assertion": "Exactly one paint is selected",
+      "status": "passed"
+    },
+    {
+      "case": "six-variants-and-controls",
+      "assertion": "Selected wheel agrees with rendered variant",
+      "status": "passed"
+    },
+    {
+      "case": "six-variants-and-controls",
+      "assertion": "Selected paint agrees with rendered variant",
+      "status": "passed"
+    },
+    {
+      "case": "six-variants-and-controls",
+      "assertion": "Exactly one native wheel checkmark is visible",
+      "status": "passed"
+    },
+    {
+      "case": "six-variants-and-controls",
+      "assertion": "Exactly one native paint checkmark is rendered",
+      "status": "passed"
+    },
+    {
+      "case": "six-variants-and-controls",
+      "assertion": "Category highlights agree with the last interaction",
+      "status": "passed"
+    },
+    {
+      "case": "six-variants-and-controls",
+      "assertion": "Changing previews never spends credits",
+      "status": "passed"
+    },
+    {
+      "case": "six-variants-and-controls",
+      "assertion": "Quote follows the selected wheel and paint",
+      "status": "passed"
+    },
+    {
+      "case": "six-variants-and-controls",
+      "assertion": "blue:sr-01 keeps the same complete-car transform",
+      "status": "passed"
+    },
+    {
+      "case": "six-variants-and-controls",
+      "assertion": "blue:sr-01 loads its own full-resolution car image",
+      "status": "passed"
+    },
+    {
+      "case": "six-variants-and-controls",
+      "assertion": "Exactly one wheel is selected",
+      "status": "passed"
+    },
+    {
+      "case": "six-variants-and-controls",
+      "assertion": "Exactly one paint is selected",
+      "status": "passed"
+    },
+    {
+      "case": "six-variants-and-controls",
+      "assertion": "Selected wheel agrees with rendered variant",
+      "status": "passed"
+    },
+    {
+      "case": "six-variants-and-controls",
+      "assertion": "Selected paint agrees with rendered variant",
+      "status": "passed"
+    },
+    {
+      "case": "six-variants-and-controls",
+      "assertion": "Exactly one native wheel checkmark is visible",
+      "status": "passed"
+    },
+    {
+      "case": "six-variants-and-controls",
+      "assertion": "Exactly one native paint checkmark is rendered",
+      "status": "passed"
+    },
+    {
+      "case": "six-variants-and-controls",
+      "assertion": "Category highlights agree with the last interaction",
+      "status": "passed"
+    },
+    {
+      "case": "six-variants-and-controls",
+      "assertion": "Changing previews never spends credits",
+      "status": "passed"
+    },
+    {
+      "case": "six-variants-and-controls",
+      "assertion": "Quote follows the selected wheel and paint",
+      "status": "passed"
+    },
+    {
+      "case": "six-variants-and-controls",
+      "assertion": "No uncaught browser exceptions",
+      "status": "passed"
+    },
+    {
+      "case": "six-variants-and-controls",
+      "assertion": "No HTTP error responses",
+      "status": "passed"
+    },
+    {
+      "case": "six-variants-and-controls",
+      "assertion": "No failed network requests",
+      "status": "passed"
+    },
+    {
+      "case": "six-variants-and-controls",
+      "assertion": "No browser console errors",
+      "status": "passed"
+    },
+    {
+      "case": "purchases-cancel-reload-reset",
+      "assertion": "Built page responds successfully",
+      "status": "passed"
+    },
+    {
+      "case": "purchases-cancel-reload-reset",
+      "assertion": "Built page has the intended title",
+      "status": "passed"
+    },
+    {
+      "case": "purchases-cancel-reload-reset",
+      "assertion": "First fitting charges exactly 3700 credits",
+      "status": "passed"
+    },
+    {
+      "case": "purchases-cancel-reload-reset",
+      "assertion": "Owned default build has a zero quote",
+      "status": "passed"
+    },
+    {
+      "case": "purchases-cancel-reload-reset",
+      "assertion": "An already-fitted build cannot be purchased again",
+      "status": "passed"
+    },
+    {
+      "case": "purchases-cancel-reload-reset",
+      "assertion": "Repeated Apply does not debit credits",
+      "status": "passed"
+    },
+    {
+      "case": "purchases-cancel-reload-reset",
+      "assertion": "Cancel preview does not debit credits",
+      "status": "passed"
+    },
+    {
+      "case": "purchases-cancel-reload-reset",
+      "assertion": "Exactly one wheel is selected",
+      "status": "passed"
+    },
+    {
+      "case": "purchases-cancel-reload-reset",
+      "assertion": "Exactly one paint is selected",
+      "status": "passed"
+    },
+    {
+      "case": "purchases-cancel-reload-reset",
+      "assertion": "Selected wheel agrees with rendered variant",
+      "status": "passed"
+    },
+    {
+      "case": "purchases-cancel-reload-reset",
+      "assertion": "Selected paint agrees with rendered variant",
+      "status": "passed"
+    },
+    {
+      "case": "purchases-cancel-reload-reset",
+      "assertion": "Exactly one native wheel checkmark is visible",
+      "status": "passed"
+    },
+    {
+      "case": "purchases-cancel-reload-reset",
+      "assertion": "Exactly one native paint checkmark is rendered",
+      "status": "passed"
+    },
+    {
+      "case": "purchases-cancel-reload-reset",
+      "assertion": "Category highlights agree with the last interaction",
+      "status": "passed"
+    },
+    {
+      "case": "purchases-cancel-reload-reset",
+      "assertion": "New wheel and paint charge only their 4000 credits",
+      "status": "passed"
+    },
+    {
+      "case": "purchases-cancel-reload-reset",
+      "assertion": "Reload preserves the applied purchase balance",
+      "status": "passed"
+    },
+    {
+      "case": "purchases-cancel-reload-reset",
+      "assertion": "Exactly one wheel is selected",
+      "status": "passed"
+    },
+    {
+      "case": "purchases-cancel-reload-reset",
+      "assertion": "Exactly one paint is selected",
+      "status": "passed"
+    },
+    {
+      "case": "purchases-cancel-reload-reset",
+      "assertion": "Selected wheel agrees with rendered variant",
+      "status": "passed"
+    },
+    {
+      "case": "purchases-cancel-reload-reset",
+      "assertion": "Selected paint agrees with rendered variant",
+      "status": "passed"
+    },
+    {
+      "case": "purchases-cancel-reload-reset",
+      "assertion": "Exactly one native wheel checkmark is visible",
+      "status": "passed"
+    },
+    {
+      "case": "purchases-cancel-reload-reset",
+      "assertion": "Exactly one native paint checkmark is rendered",
+      "status": "passed"
+    },
+    {
+      "case": "purchases-cancel-reload-reset",
+      "assertion": "Category highlights agree with the last interaction",
+      "status": "passed"
+    },
+    {
+      "case": "purchases-cancel-reload-reset",
+      "assertion": "Reload restores applied parts, not an uncommitted preview",
+      "status": "passed"
+    },
+    {
+      "case": "purchases-cancel-reload-reset",
+      "assertion": "Previously purchased parts can be fitted for free",
+      "status": "passed"
+    },
+    {
+      "case": "purchases-cancel-reload-reset",
+      "assertion": "Refitting owned parts costs no credits",
+      "status": "passed"
+    },
+    {
+      "case": "purchases-cancel-reload-reset",
+      "assertion": "Reset requires a visible confirmation",
+      "status": "passed"
+    },
+    {
+      "case": "purchases-cancel-reload-reset",
+      "assertion": "Cancelling reset preserves progress",
+      "status": "passed"
+    },
+    {
+      "case": "purchases-cancel-reload-reset",
+      "assertion": "Confirmed reset restores starting balance",
+      "status": "passed"
+    },
+    {
+      "case": "purchases-cancel-reload-reset",
+      "assertion": "Confirmed reset clears owned upgrades",
+      "status": "passed"
+    },
+    {
+      "case": "purchases-cancel-reload-reset",
+      "assertion": "No uncaught browser exceptions",
+      "status": "passed"
+    },
+    {
+      "case": "purchases-cancel-reload-reset",
+      "assertion": "No HTTP error responses",
+      "status": "passed"
+    },
+    {
+      "case": "purchases-cancel-reload-reset",
+      "assertion": "No failed network requests",
+      "status": "passed"
+    },
+    {
+      "case": "purchases-cancel-reload-reset",
+      "assertion": "No browser console errors",
+      "status": "passed"
+    },
+    {
+      "case": "product-details-accessibility",
+      "assertion": "Built page responds successfully",
+      "status": "passed"
+    },
+    {
+      "case": "product-details-accessibility",
+      "assertion": "Built page has the intended title",
+      "status": "passed"
+    },
+    {
+      "case": "product-details-accessibility",
+      "assertion": "Unavailable preview still has an accessible product-details dialog",
+      "status": "passed"
+    },
+    {
+      "case": "product-details-accessibility",
+      "assertion": "Concept details distinguish unverified fitment and pending retailer data",
+      "status": "passed"
+    },
+    {
+      "case": "product-details-accessibility",
+      "assertion": "No fabricated merchant or affiliate destination is shown",
+      "status": "passed"
+    },
+    {
+      "case": "product-details-accessibility",
+      "assertion": "Escape closes the modal and returns focus to its trigger",
+      "status": "passed"
+    },
+    {
+      "case": "product-details-accessibility",
+      "assertion": "No uncaught browser exceptions",
+      "status": "passed"
+    },
+    {
+      "case": "product-details-accessibility",
+      "assertion": "No HTTP error responses",
+      "status": "passed"
+    },
+    {
+      "case": "product-details-accessibility",
+      "assertion": "No failed network requests",
+      "status": "passed"
+    },
+    {
+      "case": "product-details-accessibility",
+      "assertion": "No browser console errors",
+      "status": "passed"
+    },
+    {
+      "case": "viewport-1366",
+      "assertion": "Built page responds successfully",
+      "status": "passed"
+    },
+    {
+      "case": "viewport-1366",
+      "assertion": "Built page has the intended title",
+      "status": "passed"
+    },
+    {
+      "case": "viewport-1366",
+      "assertion": "Document has no horizontal overflow",
+      "status": "passed"
+    },
+    {
+      "case": "viewport-1366",
+      "assertion": "The complete opaque car fits inside the scene (transparent canvas padding excluded)",
+      "status": "passed"
+    },
+    {
+      "case": "viewport-1366",
+      "assertion": "Car width is fully within the viewport",
+      "status": "passed"
+    },
+    {
+      "case": "viewport-1366",
+      "assertion": "Checkout width is not clipped",
+      "status": "passed"
+    },
+    {
+      "case": "viewport-1366",
+      "assertion": "Entire checkout is visible after scrolling when needed",
+      "status": "passed"
+    },
+    {
+      "case": "viewport-1366",
+      "assertion": "Apply button is reachable in the viewport",
+      "status": "passed"
+    },
+    {
+      "case": "viewport-1366",
+      "assertion": "No uncaught browser exceptions",
+      "status": "passed"
+    },
+    {
+      "case": "viewport-1366",
+      "assertion": "No HTTP error responses",
+      "status": "passed"
+    },
+    {
+      "case": "viewport-1366",
+      "assertion": "No failed network requests",
+      "status": "passed"
+    },
+    {
+      "case": "viewport-1366",
+      "assertion": "No browser console errors",
+      "status": "passed"
+    },
+    {
+      "case": "viewport-1920",
+      "assertion": "Built page responds successfully",
+      "status": "passed"
+    },
+    {
+      "case": "viewport-1920",
+      "assertion": "Built page has the intended title",
+      "status": "passed"
+    },
+    {
+      "case": "viewport-1920",
+      "assertion": "Document has no horizontal overflow",
+      "status": "passed"
+    },
+    {
+      "case": "viewport-1920",
+      "assertion": "The complete opaque car fits inside the scene (transparent canvas padding excluded)",
+      "status": "passed"
+    },
+    {
+      "case": "viewport-1920",
+      "assertion": "Car width is fully within the viewport",
+      "status": "passed"
+    },
+    {
+      "case": "viewport-1920",
+      "assertion": "Checkout width is not clipped",
+      "status": "passed"
+    },
+    {
+      "case": "viewport-1920",
+      "assertion": "Entire checkout is visible after scrolling when needed",
+      "status": "passed"
+    },
+    {
+      "case": "viewport-1920",
+      "assertion": "Apply button is reachable in the viewport",
+      "status": "passed"
+    },
+    {
+      "case": "viewport-1920",
+      "assertion": "No uncaught browser exceptions",
+      "status": "passed"
+    },
+    {
+      "case": "viewport-1920",
+      "assertion": "No HTTP error responses",
+      "status": "passed"
+    },
+    {
+      "case": "viewport-1920",
+      "assertion": "No failed network requests",
+      "status": "passed"
+    },
+    {
+      "case": "viewport-1920",
+      "assertion": "No browser console errors",
+      "status": "passed"
+    },
+    {
+      "case": "viewport-phone",
+      "assertion": "Built page responds successfully",
+      "status": "passed"
+    },
+    {
+      "case": "viewport-phone",
+      "assertion": "Built page has the intended title",
+      "status": "passed"
+    },
+    {
+      "case": "viewport-phone",
+      "assertion": "Document has no horizontal overflow",
+      "status": "passed"
+    },
+    {
+      "case": "viewport-phone",
+      "assertion": "The complete opaque car fits inside the scene (transparent canvas padding excluded)",
+      "status": "passed"
+    },
+    {
+      "case": "viewport-phone",
+      "assertion": "Car width is fully within the viewport",
+      "status": "passed"
+    },
+    {
+      "case": "viewport-phone",
+      "assertion": "Checkout width is not clipped",
+      "status": "passed"
+    },
+    {
+      "case": "viewport-phone",
+      "assertion": "Entire checkout is visible after scrolling when needed",
+      "status": "passed"
+    },
+    {
+      "case": "viewport-phone",
+      "assertion": "Apply button is reachable in the viewport",
+      "status": "passed"
+    },
+    {
+      "case": "viewport-phone",
+      "assertion": "Narrow layout uses readable vertical scrolling",
+      "status": "passed"
+    },
+    {
+      "case": "viewport-phone",
+      "assertion": "Narrow Paint navigation brings its controls into view",
+      "status": "passed"
+    },
+    {
+      "case": "viewport-phone",
+      "assertion": "Narrow Wheels navigation brings its controls into view",
+      "status": "passed"
+    },
+    {
+      "case": "viewport-phone",
+      "assertion": "No uncaught browser exceptions",
+      "status": "passed"
+    },
+    {
+      "case": "viewport-phone",
+      "assertion": "No HTTP error responses",
+      "status": "passed"
+    },
+    {
+      "case": "viewport-phone",
+      "assertion": "No failed network requests",
+      "status": "passed"
+    },
+    {
+      "case": "viewport-phone",
+      "assertion": "No browser console errors",
+      "status": "passed"
+    },
+    {
+      "case": "wheel-arches-2x",
+      "assertion": "Built page responds successfully",
+      "status": "passed"
+    },
+    {
+      "case": "wheel-arches-2x",
+      "assertion": "Built page has the intended title",
+      "status": "passed"
+    },
+    {
+      "case": "wheel-arches-2x",
+      "assertion": "No uncaught browser exceptions",
+      "status": "passed"
+    },
+    {
+      "case": "wheel-arches-2x",
+      "assertion": "No HTTP error responses",
+      "status": "passed"
+    },
+    {
+      "case": "wheel-arches-2x",
+      "assertion": "No failed network requests",
+      "status": "passed"
+    },
+    {
+      "case": "wheel-arches-2x",
+      "assertion": "No browser console errors",
+      "status": "passed"
+    },
+    {
+      "case": "out-of-order-black-then-mint",
+      "assertion": "Built page responds successfully",
+      "status": "passed"
+    },
+    {
+      "case": "out-of-order-black-then-mint",
+      "assertion": "Built page has the intended title",
+      "status": "passed"
+    },
+    {
+      "case": "out-of-order-black-then-mint",
+      "assertion": "Race test has a real black-car image response",
+      "status": "passed"
+    },
+    {
+      "case": "out-of-order-black-then-mint",
+      "assertion": "A delayed preview reports a loading state",
+      "status": "passed"
+    },
+    {
+      "case": "out-of-order-black-then-mint",
+      "assertion": "Apply is disabled while artwork is loading",
+      "status": "passed"
+    },
+    {
+      "case": "out-of-order-black-then-mint",
+      "assertion": "A loading preview cannot spend credits",
+      "status": "passed"
+    },
+    {
+      "case": "out-of-order-black-then-mint",
+      "assertion": "Exactly one wheel is selected",
+      "status": "passed"
+    },
+    {
+      "case": "out-of-order-black-then-mint",
+      "assertion": "Exactly one paint is selected",
+      "status": "passed"
+    },
+    {
+      "case": "out-of-order-black-then-mint",
+      "assertion": "Selected wheel agrees with rendered variant",
+      "status": "passed"
+    },
+    {
+      "case": "out-of-order-black-then-mint",
+      "assertion": "Selected paint agrees with rendered variant",
+      "status": "passed"
+    },
+    {
+      "case": "out-of-order-black-then-mint",
+      "assertion": "Exactly one native wheel checkmark is visible",
+      "status": "passed"
+    },
+    {
+      "case": "out-of-order-black-then-mint",
+      "assertion": "Exactly one native paint checkmark is rendered",
+      "status": "passed"
+    },
+    {
+      "case": "out-of-order-black-then-mint",
+      "assertion": "Category highlights agree with the last interaction",
+      "status": "passed"
+    },
+    {
+      "case": "out-of-order-black-then-mint",
+      "assertion": "An out-of-order image response does not charge credits",
+      "status": "passed"
+    },
+    {
+      "case": "out-of-order-black-then-mint",
+      "assertion": "A stale black image cannot replace the later selection or cancelled preview",
+      "status": "passed"
+    },
+    {
+      "case": "out-of-order-black-then-mint",
+      "assertion": "No uncaught browser exceptions",
+      "status": "passed"
+    },
+    {
+      "case": "out-of-order-black-then-mint",
+      "assertion": "No HTTP error responses",
+      "status": "passed"
+    },
+    {
+      "case": "out-of-order-black-then-mint",
+      "assertion": "No failed network requests",
+      "status": "passed"
+    },
+    {
+      "case": "out-of-order-black-then-mint",
+      "assertion": "No browser console errors",
+      "status": "passed"
+    },
+    {
+      "case": "cancel-delayed-black",
+      "assertion": "Built page responds successfully",
+      "status": "passed"
+    },
+    {
+      "case": "cancel-delayed-black",
+      "assertion": "Built page has the intended title",
+      "status": "passed"
+    },
+    {
+      "case": "cancel-delayed-black",
+      "assertion": "Race test has a real black-car image response",
+      "status": "passed"
+    },
+    {
+      "case": "cancel-delayed-black",
+      "assertion": "A delayed preview reports a loading state",
+      "status": "passed"
+    },
+    {
+      "case": "cancel-delayed-black",
+      "assertion": "Apply is disabled while artwork is loading",
+      "status": "passed"
+    },
+    {
+      "case": "cancel-delayed-black",
+      "assertion": "A loading preview cannot spend credits",
+      "status": "passed"
+    },
+    {
+      "case": "cancel-delayed-black",
+      "assertion": "Exactly one wheel is selected",
+      "status": "passed"
+    },
+    {
+      "case": "cancel-delayed-black",
+      "assertion": "Exactly one paint is selected",
+      "status": "passed"
+    },
+    {
+      "case": "cancel-delayed-black",
+      "assertion": "Selected wheel agrees with rendered variant",
+      "status": "passed"
+    },
+    {
+      "case": "cancel-delayed-black",
+      "assertion": "Selected paint agrees with rendered variant",
+      "status": "passed"
+    },
+    {
+      "case": "cancel-delayed-black",
+      "assertion": "Exactly one native wheel checkmark is visible",
+      "status": "passed"
+    },
+    {
+      "case": "cancel-delayed-black",
+      "assertion": "Exactly one native paint checkmark is rendered",
+      "status": "passed"
+    },
+    {
+      "case": "cancel-delayed-black",
+      "assertion": "Category highlights agree with the last interaction",
+      "status": "passed"
+    },
+    {
+      "case": "cancel-delayed-black",
+      "assertion": "An out-of-order image response does not charge credits",
+      "status": "passed"
+    },
+    {
+      "case": "cancel-delayed-black",
+      "assertion": "A stale black image cannot replace the later selection or cancelled preview",
+      "status": "passed"
+    },
+    {
+      "case": "cancel-delayed-black",
+      "assertion": "No uncaught browser exceptions",
+      "status": "passed"
+    },
+    {
+      "case": "cancel-delayed-black",
+      "assertion": "No HTTP error responses",
+      "status": "passed"
+    },
+    {
+      "case": "cancel-delayed-black",
+      "assertion": "No failed network requests",
+      "status": "passed"
+    },
+    {
+      "case": "cancel-delayed-black",
+      "assertion": "No browser console errors",
+      "status": "passed"
+    },
+    {
+      "case": "initial-car-failure-and-retry",
+      "assertion": "Built page responds successfully",
+      "status": "passed"
+    },
+    {
+      "case": "initial-car-failure-and-retry",
+      "assertion": "Built page has the intended title",
+      "status": "passed"
+    },
+    {
+      "case": "initial-car-failure-and-retry",
+      "assertion": "Missing initial scene artwork visibly blocks purchases",
+      "status": "passed"
+    },
+    {
+      "case": "initial-car-failure-and-retry",
+      "assertion": "A missing initial asset cannot debit credits",
+      "status": "passed"
+    },
+    {
+      "case": "initial-car-failure-and-retry",
+      "assertion": "The test actually blocked its target image",
+      "status": "passed"
+    },
+    {
+      "case": "initial-car-failure-and-retry",
+      "assertion": "Retry recovers after the failed asset becomes available",
+      "status": "passed"
+    },
+    {
+      "case": "initial-car-failure-and-retry",
+      "assertion": "No uncaught browser exceptions",
+      "status": "passed"
+    },
+    {
+      "case": "initial-car-failure-and-retry",
+      "assertion": "No HTTP error responses",
+      "status": "passed"
+    },
+    {
+      "case": "initial-garage-failure-and-retry",
+      "assertion": "Built page responds successfully",
+      "status": "passed"
+    },
+    {
+      "case": "initial-garage-failure-and-retry",
+      "assertion": "Built page has the intended title",
+      "status": "passed"
+    },
+    {
+      "case": "initial-garage-failure-and-retry",
+      "assertion": "Missing initial scene artwork visibly blocks purchases",
+      "status": "passed"
+    },
+    {
+      "case": "initial-garage-failure-and-retry",
+      "assertion": "A missing initial asset cannot debit credits",
+      "status": "passed"
+    },
+    {
+      "case": "initial-garage-failure-and-retry",
+      "assertion": "The test actually blocked its target image",
+      "status": "passed"
+    },
+    {
+      "case": "initial-garage-failure-and-retry",
+      "assertion": "Retry recovers after the failed asset becomes available",
+      "status": "passed"
+    },
+    {
+      "case": "initial-garage-failure-and-retry",
+      "assertion": "No uncaught browser exceptions",
+      "status": "passed"
+    },
+    {
+      "case": "initial-garage-failure-and-retry",
+      "assertion": "No HTTP error responses",
+      "status": "passed"
+    },
+    {
+      "case": "alternate-image-failure-fallback",
+      "assertion": "Built page responds successfully",
+      "status": "passed"
+    },
+    {
+      "case": "alternate-image-failure-fallback",
+      "assertion": "Built page has the intended title",
+      "status": "passed"
+    },
+    {
+      "case": "alternate-image-failure-fallback",
+      "assertion": "Exactly one wheel is selected",
+      "status": "passed"
+    },
+    {
+      "case": "alternate-image-failure-fallback",
+      "assertion": "Exactly one paint is selected",
+      "status": "passed"
+    },
+    {
+      "case": "alternate-image-failure-fallback",
+      "assertion": "Selected wheel agrees with rendered variant",
+      "status": "passed"
+    },
+    {
+      "case": "alternate-image-failure-fallback",
+      "assertion": "Selected paint agrees with rendered variant",
+      "status": "passed"
+    },
+    {
+      "case": "alternate-image-failure-fallback",
+      "assertion": "Exactly one native wheel checkmark is visible",
+      "status": "passed"
+    },
+    {
+      "case": "alternate-image-failure-fallback",
+      "assertion": "Exactly one native paint checkmark is rendered",
+      "status": "passed"
+    },
+    {
+      "case": "alternate-image-failure-fallback",
+      "assertion": "Category highlights agree with the last interaction",
+      "status": "passed"
+    },
+    {
+      "case": "alternate-image-failure-fallback",
+      "assertion": "Failed alternative preview restores the prior quote",
+      "status": "passed"
+    },
+    {
+      "case": "alternate-image-failure-fallback",
+      "assertion": "Failed alternative preview preserves credits",
+      "status": "passed"
+    },
+    {
+      "case": "alternate-image-failure-fallback",
+      "assertion": "The test actually aborted the alternative image",
+      "status": "passed"
+    },
+    {
+      "case": "alternate-image-failure-fallback",
+      "assertion": "No uncaught browser exceptions",
+      "status": "passed"
+    },
+    {
+      "case": "alternate-image-failure-fallback",
+      "assertion": "No HTTP error responses",
+      "status": "passed"
+    }
+  ],
+  "screenshots": [
+    "default-1672.jpg",
+    "blue-alternate-wheels.jpg",
+    "black-alternate-wheels.jpg",
+    "mint-alternate-wheels.jpg",
+    "mint-paint.jpg",
+    "black-paint.jpg",
+    "back-to-blue.jpg",
+    "default-1366.jpg",
+    "default-1920.jpg",
+    "phone-full-page.jpg",
+    "sr-01-rear-arch-2x.jpg",
+    "sr-01-front-arch-2x.jpg",
+    "te37-rear-arch-2x.jpg",
+    "te37-front-arch-2x.jpg",
+    "error-blue-sr-01.jpg",
+    "error-garage-plate.jpg"
+  ],
+  "browser_observations": [
+    {
+      "case": "six-variants-and-controls",
+      "page_errors": [],
+      "http_errors": [],
+      "failed_requests": [],
+      "console_errors": [],
+      "expected_network_failures": false
+    },
+    {
+      "case": "purchases-cancel-reload-reset",
+      "page_errors": [],
+      "http_errors": [],
+      "failed_requests": [],
+      "console_errors": [],
+      "expected_network_failures": false
+    },
+    {
+      "case": "product-details-accessibility",
+      "page_errors": [],
+      "http_errors": [],
+      "failed_requests": [],
+      "console_errors": [],
+      "expected_network_failures": false
+    },
+    {
+      "case": "viewport-1366",
+      "page_errors": [],
+      "http_errors": [],
+      "failed_requests": [],
+      "console_errors": [],
+      "expected_network_failures": false
+    },
+    {
+      "case": "viewport-1920",
+      "page_errors": [],
+      "http_errors": [],
+      "failed_requests": [],
+      "console_errors": [],
+      "expected_network_failures": false
+    },
+    {
+      "case": "viewport-phone",
+      "page_errors": [],
+      "http_errors": [],
+      "failed_requests": [],
+      "console_errors": [],
+      "expected_network_failures": false
+    },
+    {
+      "case": "wheel-arches-2x",
+      "page_errors": [],
+      "http_errors": [],
+      "failed_requests": [],
+      "console_errors": [],
+      "expected_network_failures": false
+    },
+    {
+      "case": "out-of-order-black-then-mint",
+      "page_errors": [],
+      "http_errors": [],
+      "failed_requests": [],
+      "console_errors": [],
+      "expected_network_failures": false
+    },
+    {
+      "case": "cancel-delayed-black",
+      "page_errors": [],
+      "http_errors": [],
+      "failed_requests": [],
+      "console_errors": [],
+      "expected_network_failures": false
+    },
+    {
+      "case": "initial-car-failure-and-retry",
+      "page_errors": [],
+      "http_errors": [],
+      "failed_requests": [
+        {
+          "url": "http://127.0.0.1:4173/assets/scene/blue-sr-01.png",
+          "failure": "net::ERR_FAILED"
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/scene/blue-sr-01.png",
+          "failure": "net::ERR_FAILED"
+        }
+      ],
+      "console_errors": [
+        {
+          "text": "Failed to load resource: net::ERR_FAILED",
+          "url": "http://127.0.0.1:4173/assets/scene/blue-sr-01.png"
+        },
+        {
+          "text": "Failed to load resource: net::ERR_FAILED",
+          "url": "http://127.0.0.1:4173/assets/scene/blue-sr-01.png"
+        }
+      ],
+      "expected_network_failures": true
+    },
+    {
+      "case": "initial-garage-failure-and-retry",
+      "page_errors": [],
+      "http_errors": [],
+      "failed_requests": [
+        {
+          "url": "http://127.0.0.1:4173/assets/scene/garage-plate.png",
+          "failure": "net::ERR_FAILED"
+        },
+        {
+          "url": "http://127.0.0.1:4173/assets/scene/garage-plate.png",
+          "failure": "net::ERR_FAILED"
+        }
+      ],
+      "console_errors": [
+        {
+          "text": "Failed to load resource: net::ERR_FAILED",
+          "url": "http://127.0.0.1:4173/assets/scene/garage-plate.png"
+        },
+        {
+          "text": "Failed to load resource: net::ERR_FAILED",
+          "url": "http://127.0.0.1:4173/assets/scene/garage-plate.png"
+        }
+      ],
+      "expected_network_failures": true
+    },
+    {
+      "case": "alternate-image-failure-fallback",
+      "page_errors": [],
+      "http_errors": [],
+      "failed_requests": [
+        {
+          "url": "http://127.0.0.1:4173/assets/scene/black-sr-01.png",
+          "failure": "net::ERR_FAILED"
+        }
+      ],
+      "console_errors": [
+        {
+          "text": "Failed to load resource: net::ERR_FAILED",
+          "url": "http://127.0.0.1:4173/assets/scene/black-sr-01.png"
+        }
+      ],
+      "expected_network_failures": true
+    }
+  ],
+  "visual_acceptance": "Screenshots require independent visual review; passing behavior tests do not prove artwork fidelity."
+}
