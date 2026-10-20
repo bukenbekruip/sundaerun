@@ -2,19 +2,31 @@ import test from "node:test";
 import assert from "node:assert/strict";
 import { readFile } from "node:fs/promises";
 import { createHash } from "node:crypto";
-import { STAGE, CAR_TRANSFORM, variants } from "../src/scene.js";
+import { STAGE, CAR_TRANSFORMS, variants } from "../src/scene.js";
+import {
+  vehicles,
+  wheels,
+  paints,
+  isPreviewAvailable,
+} from "../src/catalogue.js";
 
 const root = new URL("../", import.meta.url);
 const digest = (bytes) => createHash("sha256").update(bytes).digest("hex");
 
 test("enabled car variants resolve to the reviewed transparent artwork", async () => {
   const manifest = JSON.parse(
-    await readFile(new URL("public/assets/scene/manifest.json", root), "utf8"),
+    await readFile(new URL("public/assets/cars/manifest.json", root), "utf8"),
+  );
+  assert.equal(Object.keys(variants).length, 18);
+  assert.equal(
+    new Set(Object.values(manifest.assets).map(({ sha256 }) => sha256)).size,
+    18,
+    "Each vehicle/wheel combination needs its own artwork",
   );
   for (const [key, variant] of Object.entries(variants)) {
     if (!variant.ready) continue;
     const bytes = await readFile(new URL("public/" + variant.src, root));
-    const entry = manifest.assets[key.replace(":", "-")];
+    const entry = manifest.assets[key];
     assert.ok(entry, "Missing artwork provenance for " + key);
     assert.equal(
       digest(bytes),
@@ -29,25 +41,41 @@ test("enabled car variants resolve to the reviewed transparent artwork", async (
       6,
       "A complete transparent RGBA car is required: " + key,
     );
-    assert.ok(Math.abs(entry.width - STAGE.width) <= 2);
-    assert.ok(Math.abs(entry.height - STAGE.height) <= 1);
+    assert.ok(Math.abs(entry.width - STAGE.width) <= 3);
+    assert.ok(Math.abs(entry.height - STAGE.height) <= 2);
+    const transform = CAR_TRANSFORMS[key.split(":")[0]];
     const [left, top, right, bottom] = entry.opaqueBoundsAlpha128;
-    const scale = CAR_TRANSFORM.width / STAGE.width;
-    assert.ok(CAR_TRANSFORM.left + left * scale >= 430);
-    assert.ok(CAR_TRANSFORM.left + right * scale <= 1340);
-    assert.ok(CAR_TRANSFORM.top + top * scale >= 260);
-    assert.ok(CAR_TRANSFORM.top + bottom * scale <= 618);
+    const scale = transform.width / STAGE.width;
+    assert.ok(transform.left + left * scale >= 420, key + " left edge");
+    assert.ok(transform.left + right * scale <= 1350, key + " right edge");
+    assert.ok(transform.top + top * scale >= 245, key + " roof clearance");
+    assert.ok(
+      transform.top + bottom * scale <= 625,
+      key + " platform clearance",
+    );
   }
 });
 
-test("one uniform car canvas fits within the stage without clipping", () => {
-  assert.equal(
-    CAR_TRANSFORM.width / STAGE.width,
-    CAR_TRANSFORM.height / STAGE.height,
-  );
-  assert.ok(CAR_TRANSFORM.left >= 0 && CAR_TRANSFORM.top >= 0);
-  assert.ok(CAR_TRANSFORM.left + CAR_TRANSFORM.width < STAGE.width);
-  assert.ok(CAR_TRANSFORM.top + CAR_TRANSFORM.height < STAGE.height);
+test("each complete car has one uniform transform and all 216 combinations have artwork", () => {
+  for (const vehicle of vehicles) {
+    const transform = CAR_TRANSFORMS[vehicle.id];
+    assert.equal(
+      transform.width / STAGE.width,
+      transform.height / STAGE.height,
+    );
+    assert.ok(transform.left >= 0 && transform.top >= 0);
+    assert.ok(transform.left + transform.width < STAGE.width);
+    assert.ok(transform.top + transform.height < STAGE.height);
+    for (const wheel of wheels)
+      for (const paint of paints)
+        assert.ok(
+          isPreviewAvailable(
+            { vehicle: vehicle.id, wheel: wheel.id, paint: paint.id },
+            variants,
+          ),
+          `${vehicle.id}/${wheel.id}/${paint.id}`,
+        );
+  }
 });
 
 test("original reference and source artwork remains byte-identical to the handover", async () => {

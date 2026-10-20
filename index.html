@@ -7,9 +7,9 @@
     <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
     <meta
       name="description"
-      content="Build your look in the Sundae Run Garage. Preview wheels and paint on your STI, then fit your favourite combination."
+      content="Build your look in the Sundae Run Garage. Customise an STI, Porsche 911 GT3 RS or Toyota 86 with your favourite wheels and paint."
     />
-    <title>Sundae Run Garage — STI Customisation</title>
+    <title>Sundae Run Garage — Customisation</title>
   </head>
   <body>
     <main id="game-shell" class="game-shell" aria-label="Sundae Run Garage">
@@ -17,7 +17,7 @@
         <div
           id="scene"
           class="scene"
-          aria-label="STI on the Sundae Run turntable"
+          aria-label="Your selected car on the Sundae Run turntable"
         >
           <img
             id="garage-image"
@@ -40,7 +40,8 @@
             </button>
           </div>
           <div class="vehicle-caption">
-            <span class="live-dot" aria-hidden="true"></span> SUBARU WRX STI
+            <span class="live-dot" aria-hidden="true"></span>
+            <span id="vehicle-name">SUBARU WRX STI</span>
             <span class="vehicle-caption-divider" aria-hidden="true">/</span>
             <span>YOUR GARAGE</span>
           </div>
@@ -66,6 +67,14 @@
             <strong>Lv. 12</strong>
             <div class="xp-track" aria-hidden="true"><span></span></div>
             <small>1,820 / 2,500 XP</small>
+          </div>
+          <div
+            class="vehicle-picker hud-box"
+            role="group"
+            aria-label="Choose your vehicle"
+          >
+            <span class="vehicle-picker-label">YOUR GARAGE</span>
+            <div id="vehicle-options" class="vehicle-options"></div>
           </div>
           <div class="balance-box hud-box">
             <span class="credit-icon" aria-hidden="true">$</span>
@@ -217,9 +226,9 @@
                   /></svg
                 >Paint colour
               </h2>
-              <span class="finish-pill">Metallic</span>
+              <span class="finish-pill">12 colours</span>
             </div>
-            <p class="panel-intro">A fresh finish. Same unmistakable STI.</p>
+            <p class="panel-intro">A fresh finish. Your signature look.</p>
             <div
               id="paint-options"
               class="paint-options"
@@ -229,7 +238,7 @@
               <strong id="paint-name">WR Blue Pearl</strong
               ><span id="paint-finish">Metallic finish</span>
             </div>
-            <p class="paint-hint">More colours will join the garage.</p>
+            <p class="paint-hint">Paint previews are free until you apply.</p>
           </section>
 
           <section
@@ -291,8 +300,9 @@
         </button>
       </div>
       <p class="dialog-copy">
-        Your fitted look and garage credits are saved in this browser. Previews
-        are free until you apply them.
+        Keep a fitted build for the STI, Porsche 911 GT3 RS and Toyota 86. Your
+        progress is saved in this browser. Previews are free until you apply
+        them.
       </p>
       <div class="settings-info">
         <span class="settings-info-mark" aria-hidden="true">✓</span>
@@ -310,8 +320,8 @@
       <div id="reset-confirmation" class="reset-confirmation" hidden>
         <h3>Start fresh?</h3>
         <p>
-          This restores the blue STI, original wheels and $48,320 garage
-          credits.
+          This clears the saved builds for all three cars and restores the
+          starting garage credits.
         </p>
         <div class="dialog-actions">
           <button id="reset-cancel" class="secondary-button">

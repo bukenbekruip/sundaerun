@@ -11,11 +11,36 @@ const freeze = (value) => {
   return value;
 };
 
-export const VEHICLE = freeze({
-  id: "subaru-wrx-sti-demo",
-  name: "Subaru WRX STI",
-  fitmentStatus: "unverified",
-});
+export const vehicles = freeze([
+  {
+    id: "sti",
+    name: "Subaru WRX STI",
+    shortName: "WRX STI",
+    brand: "Subaru",
+    fitmentStatus: "unverified",
+  },
+  {
+    id: "porsche",
+    name: "Porsche 911 GT3 RS",
+    shortName: "911 GT3 RS",
+    brand: "Porsche",
+    fitmentStatus: "unverified",
+  },
+  {
+    id: "gt86",
+    name: "Toyota 86",
+    shortName: "Toyota 86",
+    brand: "Toyota",
+    fitmentStatus: "unverified",
+  },
+]);
+
+// Retained for callers that need the default vehicle rather than the active one.
+export const VEHICLE = vehicles[0];
+
+export function getVehicle(id = VEHICLE.id) {
+  return vehicles.find((vehicle) => vehicle.id === id) ?? null;
+}
 
 const pendingFitment = () => ({
   vehicleIds: [],
@@ -34,12 +59,9 @@ const wheel = (id, name, brand, gamePrice, image) => ({
   brand,
   gamePrice,
   gameCurrency: "credits",
-  thumbnail:
-    id === "sr-01" || id === "te37"
-      ? `./assets/products/wheel-${id}.png`
-      : `./assets/wheel-card-${image}.webp`,
+  thumbnail: `./assets/products/wheel-${id}.png`,
   productStatus: "concept-reference",
-  previewVehicleId: VEHICLE.id,
+  previewVehicleIds: vehicles.map(({ id: vehicleId }) => vehicleId),
   previewReady: false,
   merchant: null,
   fitment: pendingFitment(),
@@ -56,32 +78,25 @@ export const wheels = freeze([
 
 export const paints = freeze(
   [
-    {
-      id: "blue",
-      name: "WR Blue Pearl",
-      colour: "#195cc8",
-      gamePrice: 1200,
-      finish: "Metallic",
-      previewReady: false,
-    },
-    {
-      id: "black",
-      name: "Onyx Black",
-      colour: "#24282e",
-      gamePrice: 1200,
-      finish: "Metallic",
-      previewReady: false,
-    },
-    {
-      id: "mint",
-      name: "Mint Coast",
-      colour: "#9ed7c6",
-      gamePrice: 1200,
-      finish: "Metallic",
-      previewReady: false,
-    },
-  ].map((paint) => ({
-    ...paint,
+    ["blue", "Rally Blue", "#195cc8", "Metallic"],
+    ["black", "Onyx Black", "#24282e", "Metallic"],
+    ["mint", "Mint Coast", "#9ed7c6", "Pearl"],
+    ["white", "Glacier White", "#e5e7e4", "Pearl"],
+    ["silver", "Liquid Silver", "#aeb7be", "Metallic"],
+    ["graphite", "Graphite Grey", "#555d66", "Metallic"],
+    ["red", "Cherry Red", "#b81e32", "Gloss"],
+    ["orange", "Sunset Orange", "#e27a2c", "Gloss"],
+    ["purple", "Midnight Violet", "#69468c", "Metallic"],
+    ["pink", "Cherry Blossom", "#d88baa", "Pearl"],
+    ["yellow", "Sunbeam Yellow", "#eacb48", "Gloss"],
+    ["teal", "Coastal Teal", "#298b8b", "Metallic"],
+  ].map(([id, name, colour, finish]) => ({
+    id,
+    name,
+    colour,
+    finish,
+    gamePrice: 1200,
+    previewReady: false,
     type: "paint",
     gameCurrency: "credits",
     productStatus: "concept-reference",
@@ -91,7 +106,13 @@ export const paints = freeze(
 
 // Tyres can use the same product/merchant/fitment shape when verified assets exist.
 export const tyres = freeze([]);
-export const catalogue = freeze({ vehicle: VEHICLE, wheels, paints, tyres });
+export const catalogue = freeze({
+  vehicle: VEHICLE,
+  vehicles,
+  wheels,
+  paints,
+  tyres,
+});
 
 export function getProduct(kind, id) {
   const collections = {
@@ -109,17 +130,19 @@ export function getProduct(kind, id) {
 }
 
 export function getVariantKey(selection) {
-  return `${selection?.paint}:${selection?.wheel}`;
+  return `${selection?.vehicle ?? VEHICLE.id}:${selection?.paint}:${selection?.wheel}`;
 }
 
-/** Only a deliberately verified whole-car variant makes a combination available. */
+/** A registered vehicle/wheel render supports the catalogue's paint renderer. */
 export function isPreviewAvailable(selection, variants = {}) {
+  const vehicle = selection?.vehicle ?? VEHICLE.id;
   if (
+    !getVehicle(vehicle) ||
     !getProduct("wheel", selection?.wheel) ||
     !getProduct("paint", selection?.paint)
   )
     return false;
-  const key = getVariantKey(selection);
+  const key = `${vehicle}:${selection.wheel}`;
   const variant = variants instanceof Map ? variants.get(key) : variants?.[key];
   return (
     variant?.ready === true &&

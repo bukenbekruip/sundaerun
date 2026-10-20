@@ -1,0 +1,133 @@
+{
+  "vehicle": "gt86",
+  "name": "Toyota 86 ZN6",
+  "logicalCanvas": {
+    "width": 1672,
+    "height": 941
+  },
+  "provenance": "Generated with image_gen from the existing blue STI cutout as camera/framing reference, then wheel-only edits from the generated Toyota86 SR-01 base. Each published PNG is an unchanged byte copy of its generated original. Original source files remain in /workspace/generated_images.",
+  "review": "All six inspected at native scale. Two-door Toyota86 face/body; complete car and paired wheels. Initial TE37 glass transparency defect was rejected and regenerated; published TE37 preserves detailed continuous glass. Minor reflection/detail and native-dimension differences remain; concept previews, not licensed manufacturer renders or verified fitment.",
+  "registration": "One whole-car transform per vehicle; never fit body and wheels independently. Toyota base opaque y193..830 is below STI by about19sourcepx; verify placement on platform in full browser scene.",
+  "assets": {
+    "sr-01": {
+      "file": "sr-01.png",
+      "width": 1671,
+      "height": 941,
+      "mode": "RGBA",
+      "bytes": 1573900,
+      "sha256": "76f093736699b89f6d97c6b3b6a540fe03f11d94a59ad50e34e2b0ab3ce2a37b",
+      "opaqueBoundsAlpha128": [
+        31,
+        193,
+        1667,
+        830
+      ],
+      "sourceOriginal": "exec-c61e3c74-3dc9-4b0d-a73a-cbfeb110fdb9.png",
+      "windshieldAlphaSamples": {
+        "1000,300": 253,
+        "1050,325": 252,
+        "1100,350": 252
+      }
+    },
+    "te37": {
+      "file": "te37.png",
+      "width": 1670,
+      "height": 942,
+      "mode": "RGBA",
+      "bytes": 1526967,
+      "sha256": "376f020b16a193b964b287dee63bba5ef44f13651f5c657bca2c6c16709d3f7b",
+      "opaqueBoundsAlpha128": [
+        31,
+        188,
+        1669,
+        832
+      ],
+      "sourceOriginal": "exec-98b06660-a2d4-4085-9042-918683bc01ab.png",
+      "windshieldAlphaSamples": {
+        "1000,300": 253,
+        "1050,325": 253,
+        "1100,350": 253
+      }
+    },
+    "bbs-lm": {
+      "file": "bbs-lm.png",
+      "width": 1670,
+      "height": 942,
+      "mode": "RGBA",
+      "bytes": 1574569,
+      "sha256": "e1c27e75144d0210111d7d743bd21efe0a520ba4604f8ad8313378eb120669fc",
+      "opaqueBoundsAlpha128": [
+        31,
+        190,
+        1667,
+        832
+      ],
+      "sourceOriginal": "exec-0f5b56ef-3e4f-45c4-99e6-e4518aa155b3.png",
+      "windshieldAlphaSamples": {
+        "1000,300": 253,
+        "1050,325": 253,
+        "1100,350": 253
+      }
+    },
+    "oz": {
+      "file": "oz.png",
+      "width": 1670,
+      "height": 942,
+      "mode": "RGBA",
+      "bytes": 1551544,
+      "sha256": "41639f55f2dda72e607240a6c22da10cef1f593e8d0e4afc59d77a144d57bc0c",
+      "opaqueBoundsAlpha128": [
+        31,
+        190,
+        1668,
+        832
+      ],
+      "sourceOriginal": "exec-c0d2d82c-a590-434c-b8ce-ffd4ed43f11c.png",
+      "windshieldAlphaSamples": {
+        "1000,300": 251,
+        "1050,325": 250,
+        "1100,350": 252
+      }
+    },
+    "rotiform": {
+      "file": "rotiform.png",
+      "width": 1670,
+      "height": 941,
+      "mode": "RGBA",
+      "bytes": 1532839,
+      "sha256": "8d35d36058f50eb093f57f0c05b0db48aabeba25eaec0ded9c3375fce16786b2",
+      "opaqueBoundsAlpha128": [
+        31,
+        190,
+        1666,
+        831
+      ],
+      "sourceOriginal": "exec-fbd07edd-8d6e-42b1-9822-f9c784bedeb1.png",
+      "windshieldAlphaSamples": {
+        "1000,300": 252,
+        "1050,325": 252,
+        "1100,350": 252
+      }
+    },
+    "work": {
+      "file": "work.png",
+      "width": 1670,
+      "height": 941,
+      "mode": "RGBA",
+      "bytes": 1553616,
+      "sha256": "0ab525a7053b2bf4139802c45b00f2f784bac5aa553086a0b0fad542131d42ab",
+      "opaqueBoundsAlpha128": [
+        31,
+        190,
+        1667,
+        831
+      ],
+      "sourceOriginal": "exec-f882cce2-00ae-4b05-bb2b-ba74753ba40e.png",
+      "windshieldAlphaSamples": {
+        "1000,300": 253,
+        "1050,325": 253,
+        "1100,350": 253
+      }
+    }
+  }
+}

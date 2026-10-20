@@ -8,7 +8,7 @@
 - **No claim that wheels or paint are fixed.**
 - **No new game build or browser visual validation was performed as part of this transfer**; this is a documentation/source handoff.
 
-## Current implementation — 2026-10-20
+## First playable release — 2026-10-20
 
 The V2 source was replaced after the user requested a working design and sizing, with a catalogue boundary for later real products and affiliate links. The first supported set is **three paints × two wheel concepts** on one STI screen. Other visual options stay unavailable.
 
@@ -51,4 +51,31 @@ Workspace file links did not start a download in the user's chat. The verified Z
 
 ## Remaining scope
 
-Tyres, suspension, body kits and four further wheel previews are unavailable. Real retailer URLs, affiliate accounts, live prices, verified vehicle fitment, a product CMS and click reporting have not been added. The catalogue and product dialog support optional merchant information independently of game credits; see `docs/PRODUCT_CATALOGUE.md`.
+Tyres, suspension and body kits are unavailable. Real retailer URLs, affiliate accounts, live prices, verified vehicle fitment, a product CMS and click reporting have not been added. The catalogue and product dialog support optional merchant information independently of game credits; see `docs/PRODUCT_CATALOGUE.md`.
+
+## Expanded three-car release — 2026-10-20
+
+The user requested the other cars, more paint colours and all rims, then explicitly confirmed **STI, Porsche and Toyota 86**. This supersedes the historical STI-only scope in the handover. The same customisation screen now supports **3 cars × 6 wheel concepts × 12 paints = 216 appearances**.
+
+### Artwork and paint acceptance
+
+Eighteen complete transparent blue-car renders provide distinct paired wheel designs without independent wheel overlays. All six products now have clean thumbnails. The Porsche and Toyota share the approved garage/camera; Toyota has one whole-car vertical offset to align its tyre contacts. Original reference and source artwork remains byte-identical.
+
+Twelve colours use authored body-panel masks with hard exclusions for wheels, glass, lights, badges and trim, plus material transfer that retains shading and reflected workshop light. White/red diagnostic review caught leftover blue sill, wing and intake borders; the masks were refined before acceptance. Root inspected all **18 twelve-colour browser sheets** and all **three six-wheel contact proof sheets**, including the STI OZ roof variation and regenerated Toyota TE37 glass. All body/wheel combinations remain coherent and fit on the platform. These remain concept illustrations with minor source reflection/detail variation and unverified physical fitment.
+
+### Saved builds and interface
+
+The native vehicle selector restores each car's own applied appearance. Ownership belongs to that car and the credit balance is shared. Free previews are discarded on vehicle switch or reload. Version-2 progress migrates into the STI garage without a debit or loss of valid credits/purchases. Repeated Apply cannot charge twice. Image races, unavailable images and cross-car failure rollback keep checkout guarded. Mobile vehicle controls, twelve paint swatches and wheel navigation stay reachable with no document-level horizontal overflow.
+
+### Verified production build
+
+- `npm test`: **19 passed, 0 failed**.
+- `npm run build:standalone`: passed; **26 runtime images**, portable HTML **58,295,674 bytes (55.60 MiB)**, within the expanded 64 MiB budget. Initial HTML images reuse the inline map rather than duplicating the car, garage and logo data.
+- `python3 tests/browser-smoke.py`: **15/15 cases, 4,732 assertions passed**. All 216 appearances were selected through the real UI. **234 pixel comparisons** preserved every alpha value, every RGB pixel outside the authored paint mask, independent protected-object probes and the unchanged garage. Twelve paints and six wheel bases have distinct raster fingerprints.
+- Browser cases also passed per-car purchases, switching, cancel/reload/reset, version-2 migration, product dialogs, delayed image races, image failure/retry and rollback. Normal runs had no unexpected browser/console/network/HTTP errors; deliberately aborted-image cases are separate evidence.
+- Desktop **1672×941, 1366×768 and 1920×1080** and narrow **390×844** layouts passed for all three cars. Independent UI review also checked 360px and 320px widths and corrected the mobile HUD row placement.
+- `python3 tests/portable-smoke.py`: **944 checks passed**, including all 216 combinations and per-car purchases/reload, with **zero additional network requests** and no unexpected console/page/HTTP errors.
+
+Current results, screenshots and source/build hashes are in `qa/expanded/`. Root formatted the source before the tested production build; `build-provenance.json` records the final hashes. `qa/current/` remains historical first-release evidence. No tests were disabled or replaced by zero-test runs.
+
+The rebuilt `downloads/Sundae-Run-Playable.zip` contains exactly the tested portable HTML, opening instructions and the Inter license. Its ZIP integrity and embedded HTML hash were verified; `qa/expanded/release.json` records both hashes. Portable proof used HTTP delivery with every additional request blocked. Direct `file://` opening remains untested because managed Chromium blocks that protocol. A publicly hosted site and restoration in a new cloud task are not claimed.

@@ -1,0 +1,103 @@
+{
+  "vehicleId": "porsche",
+  "vehicleName": "Porsche 911 GT3 RS concept",
+  "provenance": "Generated with image_gen from the preserved STI cutout framing and historical Porsche design reference; five wheel-only edits use the generated Porsche base and catalogue wheel references. Published PNGs are byte-identical copies of generated originals.",
+  "logicalCanvas": {
+    "width": 1672,
+    "height": 941
+  },
+  "registration": "All six renders use the same world transform as STI. Do not crop-to-content or fit individual wheel/body regions. Native width differs by at most one pixel; opaque edges and contact bottoms vary by up to three source pixels (under two stage pixels).",
+  "visualReview": "All six full-car PNGs inspected. Both visible rims are coherently fitted and distinct across styles; car, glass, lights, blue body, carbon, shadows and transparent background remain coherent. Minor generated reflection/detail changes remain; these are concept illustrations, not verified physical fitment or manufacturer product renders.",
+  "assets": {
+    "sr-01": {
+      "file": "sr-01.png",
+      "sourceGeneratedOriginal": "/workspace/generated_images/exec-5b98e215-acd3-43fa-9569-8855215867aa.png",
+      "width": 1672,
+      "height": 941,
+      "mode": "RGBA",
+      "bytes": 1562213,
+      "sha256": "3ef6df6590b4d86724fe4693e1b6c7053b0c6c2ab76c2a3370c38f32bbad16dc",
+      "opaqueBoundsAlpha128": [
+        36,
+        204,
+        1656,
+        809
+      ]
+    },
+    "te37": {
+      "file": "te37.png",
+      "sourceGeneratedOriginal": "/workspace/generated_images/exec-5a6adbff-efde-4dc6-8b03-9614adbbf06d.png",
+      "width": 1672,
+      "height": 941,
+      "mode": "RGBA",
+      "bytes": 1488662,
+      "sha256": "e88c3631497501be3d32bf7eb801c503cce7827e47e885338861e7a12acdf219",
+      "opaqueBoundsAlpha128": [
+        35,
+        201,
+        1657,
+        811
+      ]
+    },
+    "bbs-lm": {
+      "file": "bbs-lm.png",
+      "sourceGeneratedOriginal": "/workspace/generated_images/exec-b9671278-d18d-4d41-8ef4-718538ba4821.png",
+      "width": 1672,
+      "height": 941,
+      "mode": "RGBA",
+      "bytes": 1534868,
+      "sha256": "e415dccfcb40068ad69fa2b515ddd0ecf87e8ad0ad45893b319788d227c4cccc",
+      "opaqueBoundsAlpha128": [
+        35,
+        202,
+        1657,
+        811
+      ]
+    },
+    "oz": {
+      "file": "oz.png",
+      "sourceGeneratedOriginal": "/workspace/generated_images/exec-afc80300-7594-428f-ac4a-0c3e6c2b7a99.png",
+      "width": 1671,
+      "height": 941,
+      "mode": "RGBA",
+      "bytes": 1498340,
+      "sha256": "505622043fc5cec83cf115c5ff3dd622415988850fbb74cab89d982393ab929c",
+      "opaqueBoundsAlpha128": [
+        35,
+        202,
+        1657,
+        810
+      ]
+    },
+    "rotiform": {
+      "file": "rotiform.png",
+      "sourceGeneratedOriginal": "/workspace/generated_images/exec-bbc9a6a3-fb54-415d-9cdc-143a5a35fcf4.png",
+      "width": 1671,
+      "height": 941,
+      "mode": "RGBA",
+      "bytes": 1502591,
+      "sha256": "74d8b850dcf6847d28f2022079460945b7fed60611601ee5f36c437b94702b7c",
+      "opaqueBoundsAlpha128": [
+        35,
+        202,
+        1658,
+        811
+      ]
+    },
+    "work": {
+      "file": "work.png",
+      "sourceGeneratedOriginal": "/workspace/generated_images/exec-b1fcf542-d3a0-4033-a843-99413fd1b90e.png",
+      "width": 1672,
+      "height": 941,
+      "mode": "RGBA",
+      "bytes": 1507739,
+      "sha256": "b1fcaa2af135d0c37df5e16e56a1a37afebfeca6b2b27d1e25df7394837b0397",
+      "opaqueBoundsAlpha128": [
+        35,
+        201,
+        1658,
+        812
+      ]
+    }
+  }
+}

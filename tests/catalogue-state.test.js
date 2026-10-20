@@ -4,8 +4,12 @@ import {
   catalogue,
   getMerchantLink,
   getProduct,
+  getVehicle,
   getVariantKey,
   isPreviewAvailable,
+  paints,
+  vehicles,
+  VEHICLE,
 } from "../src/catalogue.js";
 import {
   applyChanges,
@@ -15,6 +19,7 @@ import {
   loadState,
   resetState,
   selectPreview,
+  selectVehicle,
   serializeState,
   STARTING_BALANCE,
 } from "../src/state.js";
@@ -121,24 +126,25 @@ test("malformed or unsupported stored data recovers to a usable initial state", 
   assert.equal(loadState({ ...base, balance: 0 }).balance, 0);
   const restored = loadState({
     ...base,
-    applied: { wheel: "missing", paint: "black" },
+    garage: {
+      ...base.garage,
+      sti: {
+        applied: { wheel: "missing", paint: "black" },
+        purchased: [
+          "wheel:sr-01", "wheel:sr-01", "paint:unknown", null, {}, 3, "paint:black",
+        ],
+      },
+    },
     preview: { wheel: "te37", paint: "mint" },
     category: "<script>",
-    purchased: [
-      "wheel:sr-01",
-      "wheel:sr-01",
-      "paint:unknown",
-      null,
-      {},
-      3,
-      "paint:black",
-    ],
   });
   assert.deepEqual(restored.applied, { wheel: "sr-01", paint: "black" });
   assert.deepEqual(restored.preview, restored.applied);
   assert.deepEqual(restored.purchased, ["wheel:sr-01", "paint:black"]);
   assert.equal(restored.category, "wheels");
-  assert.deepEqual(loadState({ ...base, purchased: {} }).purchased, []);
+  assert.deepEqual(loadState({ ...base, garage: { sti: { purchased: {} } } }).purchased, []);
+  assert.equal(loadState({ version: 3 }).vehicle, "sti");
+  assert.equal(loadState({ ...base, vehicle: "constructor" }).vehicle, "sti");
 });
 
 test("unknown product IDs and categories cannot enter preview state", () => {
@@ -150,6 +156,11 @@ test("unknown product IDs and categories cannot enter preview state", () => {
     RangeError,
   );
   assert.throws(() => selectPreview(state, null), TypeError);
+  assert.throws(() => selectVehicle(state, "unknown"), RangeError);
+  assert.throws(() => selectVehicle(state, "__proto__"), RangeError);
+  assert.throws(() => selectVehicle(state, undefined), RangeError);
+  assert.throws(() => selectVehicle(state, null), RangeError);
+  assert.equal(getVehicle("unknown"), null);
   assert.equal(getProduct("wheel", "unknown"), null);
   assert.equal(getProduct("unknown", "sr-01"), null);
   assert.equal(getProduct("__proto__", "sr-01"), null);
@@ -207,38 +218,166 @@ test("merchant links require HTTPS, expose sponsorship, and keep real prices sep
   assert.equal(getQuote(createInitialState()).total, 3700);
 });
 
-test("only an explicit verified whole-car artwork variant enables a preview", () => {
+test("only a registered vehicle/wheel render enables the supported paint renderer", () => {
   const selection = { wheel: "te37", paint: "black" };
-  assert.equal(getVariantKey(selection), "black:te37");
+  assert.equal(getVariantKey(selection), "sti:black:te37");
+  assert.equal(getVariantKey({ vehicle: "porsche", wheel: "bbs-lm", paint: "red" }), "porsche:red:bbs-lm");
   assert.equal(isPreviewAvailable(selection), false);
   assert.equal(
     isPreviewAvailable(selection, {
-      "black:te37": { src: "./old-overlay.webp" },
+      "sti:te37": { src: "./old-overlay.webp" },
     }),
     false,
   );
   assert.equal(
-    isPreviewAvailable(selection, { "black:te37": { src: "", ready: true } }),
+    isPreviewAvailable(selection, { "sti:te37": { src: "", ready: true } }),
     false,
   );
   assert.equal(
     isPreviewAvailable(selection, {
-      "black:te37": { src: "./verified-car.webp", ready: true },
+      "sti:te37": { src: "./verified-car.webp", ready: true },
     }),
     true,
   );
   assert.equal(
     isPreviewAvailable(
       selection,
-      new Map([["black:te37", { src: "./verified-car.webp", ready: true }]]),
+      new Map([["sti:te37", { src: "./verified-car.webp", ready: true }]]),
     ),
     true,
   );
   assert.equal(
     isPreviewAvailable(
       { wheel: "unknown", paint: "black" },
-      { "black:unknown": { src: "./verified-car.webp", ready: true } },
+      { "sti:unknown": { src: "./verified-car.webp", ready: true } },
     ),
     false,
   );
+  const porsche = { "porsche:bbs-lm": { src: "./porsche-bbs.webp", ready: true } };
+  for (const paint of paints) {
+    assert.equal(isPreviewAvailable({ vehicle: "porsche", wheel: "bbs-lm", paint: paint.id }, porsche), true);
+    assert.equal(isPreviewAvailable({ vehicle: "gt86", wheel: "bbs-lm", paint: paint.id }, porsche), false);
+  }
+  assert.equal(isPreviewAvailable({ vehicle: "missing", wheel: "bbs-lm", paint: "red" }, porsche), false);
+  assert.equal(isPreviewAvailable({ vehicle: "porsche", wheel: "bbs-lm", paint: "missing" }, porsche), false);
+});
+
+test("catalogue exposes the three requested vehicles, six concepts and twelve paints", () => {
+  assert.deepEqual(vehicles.map(({ id }) => id), ["sti", "porsche", "gt86"]);
+  assert.deepEqual(vehicles.map(({ name }) => name), ["Subaru WRX STI", "Porsche 911 GT3 RS", "Toyota 86"]);
+  assert.equal(VEHICLE, vehicles[0]);
+  assert.equal(getVehicle(), VEHICLE);
+  assert.equal(catalogue.wheels.length, 6);
+  assert.deepEqual(paints.map(({ id }) => id), ["blue", "black", "mint", "white", "silver", "graphite", "red", "orange", "purple", "pink", "yellow", "teal"]);
+  for (const paint of paints) {
+    assert.equal(paint.gamePrice, 1200);
+    assert.match(paint.colour, /^#[0-9a-f]{6}$/i);
+    assert.ok(paint.finish.length > 0);
+  }
+});
+
+test("each car remembers its own fitted build and discards unfinished previews when switching", () => {
+  const initial = createInitialState();
+  const before = structuredClone(initial);
+  const unfinishedSti = selectPreview(initial, { wheel: "te37", paint: "black" });
+  let state = selectVehicle(unfinishedSti, "porsche");
+  assert.deepEqual(state.preview, { wheel: "sr-01", paint: "blue" });
+  assert.deepEqual(state.garage.sti.applied, initial.applied);
+  assert.equal(state.balance, STARTING_BALANCE);
+  state = applyChanges(selectPreview(state, { wheel: "bbs-lm", paint: "red" })).state;
+  assert.equal(state.balance, 44320);
+  assert.deepEqual(state.garage.porsche.applied, { wheel: "bbs-lm", paint: "red" });
+  state = selectVehicle(state, "gt86");
+  state = applyChanges(selectPreview(state, { wheel: "rotiform", paint: "orange" })).state;
+  assert.equal(state.balance, 40720);
+  state = selectVehicle(state, "sti");
+  assert.deepEqual(state.applied, { wheel: "sr-01", paint: "blue" });
+  assert.equal(getQuote(state).total, 3700);
+  state = selectVehicle(state, "porsche");
+  assert.deepEqual(state.preview, { wheel: "bbs-lm", paint: "red" });
+  assert.equal(getQuote(state).total, 0);
+  const preview = selectPreview(state, { wheel: "work", paint: "yellow" });
+  assert.deepEqual(cancelPreview(preview).preview, state.applied);
+  assert.equal(cancelPreview(preview).balance, 40720);
+  assert.deepEqual(selectVehicle(preview, "porsche").preview, state.applied);
+  assert.deepEqual(initial, before);
+});
+
+test("ownership belongs to each vehicle while the credit balance is shared", () => {
+  let state = applyChanges(createInitialState()).state;
+  assert.equal(state.balance, 44620);
+  state = selectVehicle(state, "porsche");
+  assert.equal(getQuote(state).total, 3700);
+  state = applyChanges(state).state;
+  assert.equal(state.balance, 40920);
+  state = selectVehicle(state, "gt86");
+  assert.equal(getQuote(state).total, 3700);
+  state = applyChanges(state).state;
+  assert.equal(state.balance, 37220);
+  for (const vehicle of vehicles) {
+    const active = selectVehicle(state, vehicle.id);
+    assert.equal(getQuote(active).total, 0);
+    assert.equal(applyChanges(active).charged, 0);
+    assert.equal(active.balance, 37220);
+    assert.deepEqual(active.garage[vehicle.id].purchased, ["wheel:sr-01", "paint:blue"]);
+  }
+});
+
+test("canonical garage persistence restores all fitted cars without saving a free preview", () => {
+  let state = applyChanges(selectPreview(createInitialState(), { wheel: "work", paint: "purple" })).state;
+  state = selectVehicle(state, "gt86");
+  state = applyChanges(selectPreview(state, { wheel: "oz", paint: "teal" })).state;
+  state = selectPreview(state, { paint: "pink" });
+  const persisted = JSON.parse(serializeState(state));
+  assert.equal(persisted.version, 3);
+  for (const transient of ["preview", "applied", "purchased"]) assert.equal(Object.hasOwn(persisted, transient), false);
+  const restored = loadState(persisted);
+  assert.equal(restored.vehicle, "gt86");
+  assert.equal(restored.balance, state.balance);
+  assert.deepEqual(restored.preview, { wheel: "oz", paint: "teal" });
+  assert.deepEqual(selectVehicle(restored, "sti").applied, { wheel: "work", paint: "purple" });
+  assert.deepEqual(selectVehicle(restored, "porsche").applied, { wheel: "sr-01", paint: "blue" });
+  assert.deepEqual(resetState(), createInitialState());
+});
+
+test("v2 migration keeps old credits, STI purchases and fitted parts without transferring ownership to new cars", () => {
+  const old = {
+    version: 2,
+    balance: 40620,
+    applied: { wheel: "te37", paint: "black" },
+    preview: { wheel: "te37", paint: "mint" },
+    purchased: ["wheel:sr-01", "paint:blue", "wheel:te37", "paint:black", "paint:black", "invalid"],
+    category: "paint",
+  };
+  const migrated = loadState(JSON.stringify(old));
+  assert.equal(migrated.version, 3);
+  assert.equal(migrated.vehicle, "sti");
+  assert.equal(migrated.balance, 40620);
+  assert.deepEqual(migrated.preview, old.applied);
+  assert.deepEqual(migrated.applied, old.applied);
+  assert.deepEqual(migrated.purchased, ["wheel:sr-01", "paint:blue", "wheel:te37", "paint:black"]);
+  assert.equal(getQuote(migrated).total, 0);
+  assert.equal(migrated.category, "paint");
+  for (const id of ["porsche", "gt86"]) {
+    const other = selectVehicle(migrated, id);
+    assert.equal(other.balance, 40620);
+    assert.deepEqual(other.applied, { wheel: "sr-01", paint: "blue" });
+    assert.deepEqual(other.purchased, []);
+    assert.equal(getQuote(other).total, 3700);
+  }
+  assert.deepEqual(loadState(serializeState(migrated)), migrated);
+  assert.equal(loadState({ ...old, balance: 0 }).balance, 0);
+});
+
+test("derived active-car aliases cannot overwrite the garage's saved source of truth", () => {
+  const state = applyChanges(createInitialState()).state;
+  const modifiedAliases = {
+    ...state,
+    applied: { wheel: "work", paint: "red" },
+    purchased: ["wheel:work", "paint:red"],
+  };
+  const restored = loadState(serializeState(modifiedAliases));
+  assert.deepEqual(restored.applied, { wheel: "sr-01", paint: "blue" });
+  assert.deepEqual(restored.purchased, ["wheel:sr-01", "paint:blue"]);
+  assert.equal(restored.balance, 44620);
 });

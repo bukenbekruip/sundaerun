@@ -23,6 +23,10 @@ from playwright.sync_api import sync_playwright, expect
 
 PROJECT = Path(__file__).resolve().parents[1]
 DEFAULT_URL = 'http://127.0.0.1:4173/OPEN-SUNDAE-RUN.html'
+VEHICLES = ('sti', 'porsche', 'gt86')
+WHEELS = ('sr-01', 'te37', 'bbs-lm', 'oz', 'rotiform', 'work')
+PAINTS = ('blue', 'black', 'mint', 'white', 'silver', 'graphite', 'red', 'orange', 'purple', 'pink', 'yellow', 'teal')
+PRICES = dict(zip(WHEELS, (2500, 2800, 2800, 2800, 2400, 2600)))
 
 
 def summary_url(url):
@@ -44,7 +48,7 @@ def portable_url(value):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--base-url', default=DEFAULT_URL, help='Preview origin or complete portable HTML URL')
-    parser.add_argument('--output', type=Path, default=PROJECT / 'qa/current')
+    parser.add_argument('--output', type=Path, default=PROJECT / 'qa/expanded')
     parser.add_argument('--chromium', default=shutil.which('chromium') or '/usr/bin/chromium')
     args = parser.parse_args()
     target = portable_url(args.base_url)
@@ -57,7 +61,7 @@ def main():
         'file_protocol': 'Not tested: file:// navigation is blocked by managed Chromium policy.',
         'checks': [], 'navigation_requests': [], 'unexpected_requests': [],
         'failed_requests': [], 'http_errors': [], 'page_errors': [], 'console_errors': [],
-        'screenshots': [],
+        'screenshots': [], 'combinations': [],
     }
 
     def check(condition, label, details=None):
@@ -114,14 +118,14 @@ def main():
             # Chromium may evict a 25+ MiB response body from its inspector cache.
             # Navigation Timing records its decoded size without another request.
             result['artifact_bytes'] = page.evaluate("performance.getEntriesByType('navigation')[0].decodedBodySize")
-            check(0 < result['artifact_bytes'] < 32 * 1024 * 1024, 'Loaded portable artifact is below 32 MiB')
+            check(0 < result['artifact_bytes'] < 64 * 1024 * 1024, 'Loaded portable artifact is below the 64 MiB build budget')
             local_artifact = PROJECT / 'dist/OPEN-SUNDAE-RUN.html'
             if local_artifact.is_file():
                 result['local_artifact_sha256'] = hashlib.sha256(local_artifact.read_bytes()).hexdigest()
                 result['local_artifact_bytes'] = local_artifact.stat().st_size
-            expect(page).to_have_title('Sundae Run Garage — STI Customisation')
+            expect(page).to_have_title('Sundae Run Garage — Customisation')
             check(True, 'Portable game has the intended page title')
-            ready(page, 'blue:sr-01')
+            ready(page, 'sti:blue:sr-01')
             text(page, '#balance', '$ 48,320', 'Fresh context starts with 48320 credits')
             text(page, '#total-price', '$ 3,700', 'Default build quote is 3700 credits')
 
@@ -144,41 +148,78 @@ def main():
             result['default_images'] = images
             check(len(images) >= 9 and all(image['embedded'] for image in images), 'Scene, brand and all six wheel thumbnails load as embedded data images')
             result['embedded_image_map_count'] = page.evaluate('Object.keys(globalThis.__SUNDAE_INLINE_ASSETS__ ?? {}).length')
-            check(result['embedded_image_map_count'] >= 14, 'Runtime lookup map contains all scene and wheel thumbnail families')
+            check(result['embedded_image_map_count'] == 26, 'Runtime lookup map contains all 18 base cars, two garage images, and six wheel thumbnails')
+            manifest = json.loads((PROJECT / 'public/assets/cars/manifest.json').read_text())
+            expected_keys = {row['src'].removeprefix('./') for row in manifest['assets'].values()} | {'assets/scene/garage-plate.png', 'assets/scene/garage-logo.png'} | {f'assets/products/wheel-{wheel}.png' for wheel in WHEELS}
+            actual_keys = set(page.evaluate('Object.keys(globalThis.__SUNDAE_INLINE_ASSETS__)'))
+            check(actual_keys == expected_keys, 'Every required base image is embedded under its actual runtime key', sorted(actual_keys ^ expected_keys))
             page.mouse.move(1, 1)
             page.screenshot(path=str(args.output / 'portable-default.jpg'), type='jpeg', quality=88)
             result['screenshots'].append('portable-default.jpg')
 
-            page.locator('.wheel-select[data-wheel="te37"]').click()
-            ready(page, 'blue:te37')
-            expect(page.locator('.wheel-select[data-wheel="te37"]')).to_have_attribute('aria-pressed', 'true')
-            check(True, 'TE37 selection updates the native wheel control')
-            text(page, '#total-price', '$ 4,000', 'TE37 plus paint quote is 4000 credits')
-            for paint in ('black', 'mint', 'blue'):
-                page.locator(f'.paint-option[data-paint="{paint}"]').click()
-                ready(page, f'{paint}:te37')
-                expect(page.locator(f'.paint-option[data-paint="{paint}"]')).to_have_attribute('aria-pressed', 'true')
-                check(True, f'{paint} paint selection updates its native control')
+            # Exercise every real UI combination with networking still blocked.
+            # No synthetic variant keys or forced disabled controls count as proof.
+            for vehicle in VEHICLES:
+                page.locator(f'#vehicle-options [data-vehicle="{vehicle}"]').click()
+                ready(page, f'{vehicle}:blue:sr-01')
+                check(page.locator('.wheel-select:not(:disabled)').count() == 6, f'{vehicle}: all six wheel previews are enabled offline')
+                check(page.locator('.paint-option:not(:disabled)').count() == 12, f'{vehicle}: all twelve paints are enabled offline')
+                for wheel in WHEELS:
+                    page.locator(f'.wheel-select[data-wheel="{wheel}"]').click()
+                    for paint in PAINTS:
+                        page.locator(f'.paint-option[data-paint="{paint}"]').click()
+                        key = f'{vehicle}:{paint}:{wheel}'
+                        ready(page, key)
+                        expect(page.locator(f'.wheel-select[data-wheel="{wheel}"]')).to_have_attribute('aria-pressed', 'true')
+                        expect(page.locator(f'.paint-option[data-paint="{paint}"]')).to_have_attribute('aria-pressed', 'true')
+                        expect(page.locator(f'#vehicle-options [data-vehicle="{vehicle}"]')).to_have_attribute('aria-pressed', 'true')
+                        check(True, key + ': all three native selections agree with embedded artwork')
+                        text(page, '#balance', '$ 48,320', 'Offline previews never spend credits')
+                        text(page, '#total-price', f'$ {PRICES[wheel] + 1200:,}', key + ': quote is correct')
+                        result['combinations'].append(key)
+                page.locator('.wheel-select[data-wheel="sr-01"]').click()
+                page.locator('.paint-option[data-paint="blue"]').click()
+                ready(page, f'{vehicle}:blue:sr-01')
+                page.mouse.move(1, 1)
+                name = f'portable-{vehicle}-default.jpg'
+                page.screenshot(path=str(args.output / name), type='jpeg', quality=88)
+                result['screenshots'].append(name)
+            check(len(result['combinations']) == 216 and len(set(result['combinations'])) == 216, 'All 216 requested combinations work without external resources')
 
-            page.locator('.wheel-select[data-wheel="sr-01"]').click()
-            ready(page, 'blue:sr-01')
-            text(page, '#total-price', '$ 3,700', 'Returning to the original blue build restores its 3700 quote')
-            expect(page.locator('#apply-button')).to_be_enabled()
-            page.locator('#apply-button').dblclick()
-            text(page, '#balance', '$ 44,620', 'Double-clicking Apply debits the default build exactly once')
-            text(page, '#total-price', '$ 0', 'Fitted default parts have no remaining charge')
-            expect(page.locator('#apply-button')).to_be_disabled()
-            check(True, 'Already fitted build disables repeated Apply')
-
-            reload_response = page.reload(wait_until='networkidle')
-            check(reload_response is not None and reload_response.status == 200, 'Artifact reload navigation is permitted by the network guard')
-            ready(page, 'blue:sr-01')
-            text(page, '#balance', '$ 44,620', 'Purchase balance persists after reload')
-            text(page, '#total-price', '$ 0', 'Owned-parts pricing persists after reload')
-            expect(page.locator('#apply-button')).to_be_disabled()
-            check(True, 'Reload preserves the already-fitted Apply state')
-
-            check(len(result['navigation_requests']) == 2, 'Only initial and reload artifact navigations were allowed')
+            balance = 48320
+            for vehicle in VEHICLES:
+                page.locator(f'#vehicle-options [data-vehicle="{vehicle}"]').click()
+                ready(page, f'{vehicle}:blue:sr-01')
+                text(page, '#total-price', '$ 3,700', f'{vehicle}: purchases on other vehicles do not supply owned parts')
+                expect(page.locator('#apply-button')).to_be_enabled()
+                page.locator('#apply-button').dblclick()
+                balance -= 3700
+                text(page, '#balance', f'$ {balance:,}', f'{vehicle}: default build charges exactly once on double-click')
+                text(page, '#total-price', '$ 0', f'{vehicle}: fitted default parts have no remaining charge')
+                expect(page.locator('#apply-button')).to_be_disabled()
+                check(True, f'{vehicle}: already fitted build disables repeated Apply')
+                page.locator('.wheel-select[data-wheel="work"]').click()
+                page.locator('.paint-option[data-paint="teal"]').click()
+                ready(page, f'{vehicle}:teal:work')
+                text(page, '#total-price', '$ 3,800', f'{vehicle}: new wheel and paint keep independent ownership')
+                page.locator('#apply-button').click()
+                balance -= 3800
+                text(page, '#balance', f'$ {balance:,}', f'{vehicle}: new parts are purchased once')
+                page.locator('.paint-option[data-paint="pink"]').click()
+                ready(page, f'{vehicle}:pink:work')
+                reload_response = page.reload(wait_until='networkidle')
+                check(reload_response is not None and reload_response.status == 200, 'Portable reload navigation is permitted by the network guard')
+                ready(page, f'{vehicle}:teal:work')
+                text(page, '#balance', f'$ {balance:,}', f'{vehicle}: balance survives reload')
+                text(page, '#total-price', '$ 0', f'{vehicle}: reload restores fitted parts, not free preview')
+                expect(page.locator('#apply-button')).to_be_disabled()
+                check(True, f'{vehicle}: fitted status survives portable reload')
+            for vehicle in VEHICLES:
+                page.locator(f'#vehicle-options [data-vehicle="{vehicle}"]').click()
+                ready(page, f'{vehicle}:teal:work')
+                text(page, '#total-price', '$ 0', f'{vehicle}: switching restores its own fitted build')
+                text(page, '#balance', f'$ {balance:,}', 'Car switching never changes the shared balance')
+            check(len(result['navigation_requests']) == 4, 'Only initial and three explicit reload document navigations were allowed')
             check(not result['unexpected_requests'], 'Zero additional network requests were attempted', result['unexpected_requests'])
             check(not result['failed_requests'], 'Zero network requests failed', result['failed_requests'])
             check(not result['http_errors'], 'Zero HTTP error responses', result['http_errors'])

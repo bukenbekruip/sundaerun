@@ -3,7 +3,8 @@ import "./src/ui.css";
 import {
   wheels,
   paints,
-  VEHICLE,
+  vehicles,
+  getVehicle,
   getProduct,
   getVariantKey,
   isPreviewAvailable,
@@ -13,6 +14,7 @@ import {
   STORAGE_KEY,
   createInitialState,
   selectPreview,
+  selectVehicle,
   cancelPreview,
   getQuote,
   applyChanges,
@@ -20,7 +22,14 @@ import {
   serializeState,
   loadState,
 } from "./src/state.js";
-import { STAGE, CAR_TRANSFORM, variants, assetUrl } from "./src/scene.js";
+import {
+  STAGE,
+  CAR_TRANSFORMS,
+  variants,
+  getSceneVariant,
+  assetUrl,
+} from "./src/scene.js";
+import { renderCar } from "./src/paint-renderer.js";
 
 const $ = (selector) => document.querySelector(selector);
 const $$ = (selector) => [...document.querySelectorAll(selector)];
@@ -33,19 +42,36 @@ try {
   state = createInitialState();
   storageAvailable = false;
 }
-if (!isPreviewAvailable(state.applied, variants))
-  state = {
-    ...state,
-    applied: { wheel: "sr-01", paint: "blue" },
-    preview: { wheel: "sr-01", paint: "blue" },
-  };
+const selectionFor = (preview = state.preview) => ({
+  ...preview,
+  vehicle: state.vehicle,
+});
 let toastTimer,
   artRequest = 0,
   artLoading = false,
   currentArt = "",
   garageReady = false;
-let lastDisplayed = { ...state.preview };
+let lastDisplayed = selectionFor();
 const imageCache = new Map();
+const renderCache = new Map();
+
+function positionCar(vehicle) {
+  const transform = CAR_TRANSFORMS[vehicle];
+  for (const [key, value] of Object.entries(transform))
+    $("#car-image").style.setProperty(`--car-${key}`, `${value}px`);
+  $("#car-image").style.setProperty(
+    "--car-left-percent",
+    `${(transform.left / STAGE.width) * 100}%`,
+  );
+  $("#car-image").style.setProperty(
+    "--car-top-percent",
+    `${(transform.top / 660) * 100}%`,
+  );
+  $("#car-image").style.setProperty(
+    "--car-width-percent",
+    `${(transform.width / STAGE.width) * 100}%`,
+  );
+}
 
 function element(tag, className, text) {
   const node = document.createElement(tag);
@@ -81,7 +107,15 @@ function resize() {
 }
 addEventListener("resize", resize);
 resize();
-function loadImage(src) {
+function loadImage(src, cache = true) {
+  if (!cache)
+    return new Promise((resolve, reject) => {
+      const image = new Image();
+      image.onload = () => resolve(image);
+      image.onerror = () =>
+        reject(new Error("Scene image could not be loaded."));
+      image.src = src;
+    });
   if (!imageCache.has(src)) {
     const task = new Promise((resolve, reject) => {
       const image = new Image();
@@ -111,18 +145,37 @@ async function showCar(selection) {
   $("#scene").setAttribute("aria-busy", "true");
   updateCheckout();
   try {
-    const source = assetUrl(variants[key].src);
-    await loadImage(source);
+    const source = assetUrl(getSceneVariant(selection).src);
+    const original = await loadImage(source);
     if (request !== artRequest) return;
-    $("#car-image").src = source;
+    let rendered;
+    if (renderCache.has(key)) {
+      rendered = renderCache.get(key);
+      renderCache.delete(key);
+    } else {
+      rendered = await renderCar(
+        original,
+        selection.vehicle,
+        getProduct("paint", selection.paint),
+      );
+    }
+    renderCache.set(key, rendered);
+    while (renderCache.size > 8)
+      renderCache.delete(renderCache.keys().next().value);
+    if (rendered !== source) await loadImage(rendered, false);
+    if (request !== artRequest) return;
+    positionCar(selection.vehicle);
+    $("#car-image").src = rendered;
     $("#car-image").alt =
-      `${getProduct("paint", selection.paint).name} ${VEHICLE.name} with ${getProduct("wheel", selection.wheel).name} concept wheels`;
+      `${getProduct("paint", selection.paint).name} ${getVehicle(selection.vehicle).name} with ${getProduct("wheel", selection.wheel).name} concept wheels`;
     $("#car-image").dataset.variant = key;
     currentArt = key;
     lastDisplayed = { ...selection };
     if (garageReady) $("#scene-notice").hidden = true;
   } catch {
     if (request !== artRequest) return;
+    if (state.vehicle !== lastDisplayed.vehicle)
+      state = selectVehicle(state, lastDisplayed.vehicle);
     state = selectPreview(state, lastDisplayed);
     if (currentArt)
       notify("That preview could not load. Your previous look has been kept.");
@@ -132,6 +185,7 @@ async function showCar(selection) {
       $("#scene-notice").hidden = false;
     }
     updateControls();
+    save();
   } finally {
     if (request === artRequest) {
       artLoading = false;
@@ -156,6 +210,17 @@ async function showGarage() {
   updateCheckout();
 }
 function makeControls() {
+  for (const vehicle of vehicles) {
+    const button = element(
+      "button",
+      "vehicle-option",
+      vehicle.shortName ?? vehicle.name,
+    );
+    button.type = "button";
+    button.dataset.vehicle = vehicle.id;
+    button.setAttribute("aria-label", `Customise ${vehicle.name}`);
+    $("#vehicle-options").append(button);
+  }
   for (const product of wheels) {
     const card = element("article", "wheel-card");
     const select = element("button", "wheel-select");
@@ -193,6 +258,7 @@ function makeControls() {
     button.dataset.paint = paint.id;
     button.style.setProperty("--swatch", paint.colour);
     button.setAttribute("aria-label", `${paint.name} paint`);
+    button.title = paint.name;
     button.append(
       element("span", "paint-chip"),
       element("span", "paint-label", paint.name),
@@ -201,9 +267,20 @@ function makeControls() {
   }
 }
 function updateControls() {
+  const vehicle = getVehicle(state.vehicle);
+  $("#vehicle-name").textContent = vehicle.name.toUpperCase();
+  $("#scene").setAttribute(
+    "aria-label",
+    `${vehicle.name} on the Sundae Run turntable`,
+  );
+  for (const button of $$("[data-vehicle]")) {
+    const active = button.dataset.vehicle === state.vehicle;
+    button.setAttribute("aria-pressed", String(active));
+    button.classList.toggle("current", active);
+  }
   for (const button of $$(".wheel-select")) {
     const available = isPreviewAvailable(
-      { ...state.preview, wheel: button.dataset.wheel },
+      { ...selectionFor(), wheel: button.dataset.wheel },
       variants,
     );
     button.disabled = !available;
@@ -217,7 +294,7 @@ function updateControls() {
   }
   for (const button of $$(".paint-option")) {
     button.disabled = !isPreviewAvailable(
-      { ...state.preview, paint: button.dataset.paint },
+      { ...selectionFor(), paint: button.dataset.paint },
       variants,
     );
     button.setAttribute(
@@ -231,6 +308,7 @@ function updateControls() {
     button.classList.toggle("current", active);
   }
   const paint = getProduct("paint", state.preview.paint);
+  $(".finish-pill").textContent = paint.finish;
   $("#paint-name").textContent = paint.name;
   $("#paint-finish").textContent =
     `${paint.finish} concept · ${credits(paint.gamePrice)} credits`;
@@ -267,7 +345,8 @@ function updateCheckout() {
     state.preview.wheel === state.applied.wheel &&
     state.preview.paint === state.applied.paint;
   const button = $("#apply-button");
-  const sceneReady = garageReady && Boolean(currentArt);
+  const sceneReady =
+    garageReady && currentArt === getVariantKey(selectionFor());
   button.disabled =
     !sceneReady ||
     artLoading ||
@@ -288,12 +367,14 @@ function updateCheckout() {
 function render() {
   updateControls();
   updateCheckout();
-  showCar({ ...state.preview });
+  showCar(selectionFor());
   save();
 }
 function preview(changes) {
   const next = selectPreview(state, changes);
-  if (!isPreviewAvailable(next.preview, variants)) {
+  if (
+    !isPreviewAvailable({ ...next.preview, vehicle: next.vehicle }, variants)
+  ) {
     notify("A matching car render is still being prepared for that option.");
     return;
   }
@@ -365,8 +446,13 @@ $("#brand-logo").src = assetUrl("assets/scene/garage-logo.png");
 $("#brand-logo").addEventListener("error", () => {
   $("#brand-logo").hidden = true;
 });
-for (const [key, value] of Object.entries(CAR_TRANSFORM))
-  $("#car-image").style.setProperty(`--car-${key}`, `${value}px`);
+positionCar(state.vehicle);
+$("#vehicle-options").addEventListener("click", (event) => {
+  const button = event.target.closest("button[data-vehicle]");
+  if (!button || button.dataset.vehicle === state.vehicle) return;
+  state = selectVehicle(state, button.dataset.vehicle);
+  render();
+});
 $("#wheel-products").addEventListener("click", (event) => {
   const select = event.target.closest(".wheel-select[data-wheel]");
   const details = event.target.closest(".product-details[data-product]");
@@ -386,8 +472,8 @@ for (const button of $$("[data-category]"))
     render();
     const target =
       button.dataset.category === "paint"
-        ? $("#paint-options button:not(:disabled)")
-        : $(".wheel-select:not(:disabled)");
+        ? $(".paint-option[aria-pressed='true']")
+        : $(".wheel-select[aria-pressed='true']");
     target?.focus({
       preventScroll: !matchMedia("(max-width: 1099px)").matches,
     });
@@ -395,7 +481,7 @@ for (const button of $$("[data-category]"))
 for (const button of $$("[data-wheel-step]"))
   button.addEventListener("click", () => {
     const available = wheels.filter((wheel) =>
-      isPreviewAvailable({ ...state.preview, wheel: wheel.id }, variants),
+      isPreviewAvailable({ ...selectionFor(), wheel: wheel.id }, variants),
     );
     const index = available.findIndex(
       (wheel) => wheel.id === state.preview.wheel,
@@ -405,7 +491,15 @@ for (const button of $$("[data-wheel-step]"))
         (index + Number(button.dataset.wheelStep) + available.length) %
           available.length
       ];
-    if (next) preview({ wheel: next.id, category: "wheels" });
+    if (next) {
+      preview({ wheel: next.id, category: "wheels" });
+      if (matchMedia("(max-width: 1099px)").matches)
+        $(".wheel-select[aria-pressed='true']")?.scrollIntoView({
+          block: "nearest",
+          inline: "center",
+          behavior: "instant",
+        });
+    }
   });
 $("#cancel-preview").addEventListener("click", () => {
   state = cancelPreview(state);
@@ -413,7 +507,12 @@ $("#cancel-preview").addEventListener("click", () => {
   notify("Preview cancelled. Your fitted build is restored.");
 });
 $("#apply-button").addEventListener("click", () => {
-  if (artLoading || !garageReady || !currentArt) return;
+  if (
+    artLoading ||
+    !garageReady ||
+    currentArt !== getVariantKey(selectionFor())
+  )
+    return;
   const result = applyChanges(state);
   state = result.state;
   render();
@@ -454,6 +553,6 @@ $("#reset-confirm").addEventListener("click", () => {
 $("#scene-retry").addEventListener("click", () => {
   $("#scene-notice").hidden = true;
   showGarage();
-  showCar({ ...state.preview });
+  showCar(selectionFor());
 });
 render();

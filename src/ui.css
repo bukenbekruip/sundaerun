@@ -2129,3 +2129,242 @@ p {
     display: none;
   }
 }
+/* Three-car garage and full paint palette. */
+.vehicle-picker {
+  left: 768px;
+  width: 340px;
+  height: 52px;
+  padding: 6px;
+}
+.vehicle-picker-label {
+  position: absolute;
+  left: 10px;
+  top: -13px;
+  font-size: 7px;
+  line-height: 10px;
+  letter-spacing: 1.4px;
+  font-weight: 650;
+  color: #e4ead8;
+  text-shadow: 0 1px 3px #000;
+}
+.vehicle-options {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  height: 100%;
+  gap: 4px;
+}
+.vehicle-option {
+  min-width: 0;
+  padding: 4px 5px;
+  border: 1px solid #c1d6b52e;
+  border-radius: 7px;
+  background: #d8ebc70a;
+  color: #dbe7d1;
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: 650;
+  text-align: center;
+  transition:
+    background 0.16s,
+    border-color 0.16s,
+    color 0.16s;
+}
+.vehicle-option[aria-pressed="true"],
+.vehicle-option.current {
+  background: linear-gradient(115deg, #c0ffd4, #9cf0be);
+  border-color: #ccffdc;
+  color: #193823;
+  box-shadow: 0 1px 7px #0003;
+}
+.vehicle-option:not(:disabled):hover {
+  border-color: #c4ffd4;
+  background: #a5f8c62b;
+}
+.vehicle-option[aria-pressed="true"]:hover,
+.vehicle-option.current:hover {
+  background: #c4ffda;
+}
+.vehicle-option:disabled {
+  opacity: 0.5;
+}
+.vehicle-option:focus-visible {
+  outline-offset: 2px;
+}
+#vehicle-name {
+  text-transform: uppercase;
+}
+.paint-options {
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 7px;
+}
+.paint-option {
+  min-height: 44px;
+  padding: 5px 3px;
+  gap: 0;
+  border-radius: 9px;
+}
+.paint-option::before {
+  width: 36px;
+  height: 29px;
+  border-radius: 6px;
+}
+.paint-option[aria-pressed="true"] {
+  padding: 4px 2px;
+}
+.paint-option[aria-pressed="true"]::after {
+  top: 1px;
+  right: 1px;
+  width: 17px;
+  height: 17px;
+  font-size: 12px;
+}
+.paint-label {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+.paint-detail {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+  margin-top: 12px;
+  padding-top: 10px;
+}
+.paint-detail strong {
+  font-size: 16px;
+  line-height: 20px;
+}
+.paint-detail > span {
+  font-size: 12px;
+  line-height: 16px;
+}
+.paint-hint {
+  font-size: 10px;
+  line-height: 14px;
+  margin-top: 10px;
+}
+@media (min-width: 1100px) {
+  .paint-panel .panel-intro {
+    display: none;
+  }
+  .paint-panel .panel-heading {
+    margin-bottom: 8px;
+  }
+}
+@media (max-width: 1099px) {
+  .vehicle-picker {
+    position: relative;
+    left: auto;
+    top: auto;
+    grid-column: 1/-1;
+    width: 100%;
+    height: auto;
+    min-height: 78px;
+    margin-top: 5px;
+    padding: 8px;
+  }
+  .vehicle-picker-label {
+    position: static;
+    display: block;
+    font-size: 9px;
+    line-height: 12px;
+    letter-spacing: 1.2px;
+    margin: 0 0 6px 3px;
+    color: #b7c8aa;
+    text-shadow: none;
+  }
+  .vehicle-options {
+    height: auto;
+    min-height: 44px;
+    gap: 6px;
+  }
+  .vehicle-option {
+    min-height: 44px;
+    padding: 5px 7px;
+    font-size: 13px;
+    line-height: 15px;
+    border-radius: 8px;
+  }
+  .paint-options {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+    gap: 7px;
+  }
+  .paint-option {
+    min-height: 50px;
+    padding: 5px 3px;
+  }
+  .paint-option[aria-pressed="true"] {
+    padding: 4px 2px;
+  }
+  .paint-option::before {
+    width: 36px;
+    height: 31px;
+  }
+  .paint-option[aria-pressed="true"]::after {
+    top: 2px;
+    right: 2px;
+    width: 18px;
+    height: 18px;
+    font-size: 12px;
+  }
+  .paint-detail {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+  .paint-detail strong {
+    font-size: 17px;
+    line-height: 22px;
+  }
+  .paint-detail > span {
+    font-size: 12px;
+    line-height: 17px;
+  }
+  .paint-hint {
+    font-size: 11px;
+    line-height: 16px;
+  }
+}
+@media (max-width: 359px) {
+  .paint-options {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+  .brand-lockup {
+    width: 45vw;
+  }
+  .vehicle-option {
+    font-size: 12px;
+    line-height: 14px;
+  }
+}
+@media (max-width: 1099px) {
+  .car-image {
+    left: var(--car-left-percent, 25.01632775%);
+    top: var(--car-top-percent, 25.70248485%);
+    width: var(--car-width-percent, 54.54545455%);
+    height: auto;
+  }
+}
+/* Keep the narrow HUD compact despite the chooser's full-width DOM row. */
+@media (max-width: 1099px) {
+  .brand-lockup {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  .balance-box {
+    grid-column: 2;
+    grid-row: 1;
+    justify-self: end;
+  }
+  .vehicle-picker {
+    grid-column: 1/-1;
+    grid-row: 2;
+  }
+}

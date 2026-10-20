@@ -1,0 +1,28 @@
+{
+  "edition": "three-car expansion",
+  "vehicles": [
+    "Subaru WRX STI",
+    "Porsche 911 GT3 RS",
+    "Toyota 86"
+  ],
+  "wheel_concepts": 6,
+  "paint_colours": 12,
+  "combinations": 216,
+  "portable_html": {
+    "file": "OPEN-SUNDAE-RUN.html",
+    "bytes": 58295674,
+    "sha256": "038e88638bb1a7eebbdc93f183f4d93ef53ccd034237a0fe4a07f74df415f92a"
+  },
+  "download_zip": {
+    "file": "Sundae-Run-Playable.zip",
+    "bytes": 43363512,
+    "sha256": "873bb03baca24505898391f480614f7370327346dc11de380bda60653cf3fe0a"
+  },
+  "renderer_source_sha256": "e9701f34ca7d9b61539a1742ced9b1d794df39680e9abe09d92c7a815688caf0",
+  "archive_integrity": "verified",
+  "node_tests_passed": 19,
+  "production_browser_cases_passed": 15,
+  "production_browser_checks_passed": 4732,
+  "portable_checks_passed": 944,
+  "file_protocol_scope": "Not tested: file:// navigation is blocked by managed Chromium policy."
+}

@@ -1,0 +1,283 @@
+{
+  "provenance": "Complete transparent concept-car artwork generated with image_gen using the approved STI camera and per-car base references. Wheel variants are whole-car edits, never independent wheel overlays. Original handover images are preserved.",
+  "logicalCanvas": {
+    "width": 1672,
+    "height": 941
+  },
+  "vehicleTransforms": {
+    "sti": {
+      "left": 418.27272727272725,
+      "top": 169.63636363636363,
+      "width": 912,
+      "height": 513.2727272727273
+    },
+    "porsche": {
+      "left": 418.27272727272725,
+      "top": 169.63636363636363,
+      "width": 912,
+      "height": 513.2727272727273
+    },
+    "gt86": {
+      "left": 418.27272727272725,
+      "top": 159.27272727272725,
+      "width": 912,
+      "height": 513.2727272727273
+    }
+  },
+  "paintMethod": "Runtime material transfer within authored per-vehicle panel masks, with protected glass, lamps, trim and complete wheel assemblies. Colour previews and wheel names do not establish real-world product fitment.",
+  "registrationNote": "Each vehicle uses one uniform transform for its body and wheels. Toyota has a single whole-car vertical offset to align its tyre contact with the platform. Minor illustration/reflection differences remain between wheel variants; metadata auditing does not replace visual review.",
+  "assets": {
+    "sti:sr-01": {
+      "src": "assets/scene/blue-sr-01.png",
+      "width": 1672,
+      "height": 941,
+      "mode": "RGBA",
+      "bytes": 1687563,
+      "sha256": "d8239e1d966a268b4f40cde67f83a3707b603268c1fe57bd309fad52088e3add",
+      "opaqueBoundsAlpha128": [
+        38,
+        177,
+        1666,
+        811
+      ]
+    },
+    "sti:te37": {
+      "src": "assets/scene/blue-te37.png",
+      "width": 1671,
+      "height": 941,
+      "mode": "RGBA",
+      "bytes": 1619807,
+      "sha256": "d390f2bf1c97f1cf6b246bf0da5f53b3e035b868b532f297488be9ec32cc8bd4",
+      "opaqueBoundsAlpha128": [
+        37,
+        174,
+        1667,
+        813
+      ]
+    },
+    "sti:bbs-lm": {
+      "src": "assets/cars/sti/bbs-lm.png",
+      "width": 1671,
+      "height": 941,
+      "mode": "RGBA",
+      "bytes": 1601774,
+      "sha256": "af815ef8375c8ce1333e799fd03ab6f65e12092a93398cd5d37dc5dbfe2ffff5",
+      "opaqueBoundsAlpha128": [
+        37,
+        174,
+        1666,
+        811
+      ]
+    },
+    "sti:oz": {
+      "src": "assets/cars/sti/oz.png",
+      "width": 1671,
+      "height": 941,
+      "mode": "RGBA",
+      "bytes": 1571931,
+      "sha256": "2c6ae17674312d703b4b634bce7adb170fba339628fedc0f7366c622a835922f",
+      "opaqueBoundsAlpha128": [
+        38,
+        169,
+        1667,
+        808
+      ]
+    },
+    "sti:rotiform": {
+      "src": "assets/cars/sti/rotiform.png",
+      "width": 1672,
+      "height": 941,
+      "mode": "RGBA",
+      "bytes": 1565975,
+      "sha256": "47562a5cff8d798d53e530f068960f8915f7a443923c685958f5c25c633e4e42",
+      "opaqueBoundsAlpha128": [
+        38,
+        173,
+        1666,
+        812
+      ]
+    },
+    "sti:work": {
+      "src": "assets/cars/sti/work.png",
+      "width": 1672,
+      "height": 941,
+      "mode": "RGBA",
+      "bytes": 1580756,
+      "sha256": "6b3b90307504704dce8bfd5118ee66ec9eb5ba3ae08839d5700f622443880696",
+      "opaqueBoundsAlpha128": [
+        38,
+        174,
+        1667,
+        810
+      ]
+    },
+    "porsche:sr-01": {
+      "src": "assets/cars/porsche/sr-01.png",
+      "width": 1672,
+      "height": 941,
+      "mode": "RGBA",
+      "bytes": 1562213,
+      "sha256": "3ef6df6590b4d86724fe4693e1b6c7053b0c6c2ab76c2a3370c38f32bbad16dc",
+      "opaqueBoundsAlpha128": [
+        36,
+        204,
+        1656,
+        809
+      ]
+    },
+    "porsche:te37": {
+      "src": "assets/cars/porsche/te37.png",
+      "width": 1672,
+      "height": 941,
+      "mode": "RGBA",
+      "bytes": 1488662,
+      "sha256": "e88c3631497501be3d32bf7eb801c503cce7827e47e885338861e7a12acdf219",
+      "opaqueBoundsAlpha128": [
+        35,
+        201,
+        1657,
+        811
+      ]
+    },
+    "porsche:bbs-lm": {
+      "src": "assets/cars/porsche/bbs-lm.png",
+      "width": 1672,
+      "height": 941,
+      "mode": "RGBA",
+      "bytes": 1534868,
+      "sha256": "e415dccfcb40068ad69fa2b515ddd0ecf87e8ad0ad45893b319788d227c4cccc",
+      "opaqueBoundsAlpha128": [
+        35,
+        202,
+        1657,
+        811
+      ]
+    },
+    "porsche:oz": {
+      "src": "assets/cars/porsche/oz.png",
+      "width": 1671,
+      "height": 941,
+      "mode": "RGBA",
+      "bytes": 1498340,
+      "sha256": "505622043fc5cec83cf115c5ff3dd622415988850fbb74cab89d982393ab929c",
+      "opaqueBoundsAlpha128": [
+        35,
+        202,
+        1657,
+        810
+      ]
+    },
+    "porsche:rotiform": {
+      "src": "assets/cars/porsche/rotiform.png",
+      "width": 1671,
+      "height": 941,
+      "mode": "RGBA",
+      "bytes": 1502591,
+      "sha256": "74d8b850dcf6847d28f2022079460945b7fed60611601ee5f36c437b94702b7c",
+      "opaqueBoundsAlpha128": [
+        35,
+        202,
+        1658,
+        811
+      ]
+    },
+    "porsche:work": {
+      "src": "assets/cars/porsche/work.png",
+      "width": 1672,
+      "height": 941,
+      "mode": "RGBA",
+      "bytes": 1507739,
+      "sha256": "b1fcaa2af135d0c37df5e16e56a1a37afebfeca6b2b27d1e25df7394837b0397",
+      "opaqueBoundsAlpha128": [
+        35,
+        201,
+        1658,
+        812
+      ]
+    },
+    "gt86:sr-01": {
+      "src": "assets/cars/gt86/sr-01.png",
+      "width": 1671,
+      "height": 941,
+      "mode": "RGBA",
+      "bytes": 1573900,
+      "sha256": "76f093736699b89f6d97c6b3b6a540fe03f11d94a59ad50e34e2b0ab3ce2a37b",
+      "opaqueBoundsAlpha128": [
+        31,
+        193,
+        1667,
+        830
+      ]
+    },
+    "gt86:te37": {
+      "src": "assets/cars/gt86/te37.png",
+      "width": 1670,
+      "height": 942,
+      "mode": "RGBA",
+      "bytes": 1526967,
+      "sha256": "376f020b16a193b964b287dee63bba5ef44f13651f5c657bca2c6c16709d3f7b",
+      "opaqueBoundsAlpha128": [
+        31,
+        188,
+        1669,
+        832
+      ]
+    },
+    "gt86:bbs-lm": {
+      "src": "assets/cars/gt86/bbs-lm.png",
+      "width": 1670,
+      "height": 942,
+      "mode": "RGBA",
+      "bytes": 1574569,
+      "sha256": "e1c27e75144d0210111d7d743bd21efe0a520ba4604f8ad8313378eb120669fc",
+      "opaqueBoundsAlpha128": [
+        31,
+        190,
+        1667,
+        832
+      ]
+    },
+    "gt86:oz": {
+      "src": "assets/cars/gt86/oz.png",
+      "width": 1670,
+      "height": 942,
+      "mode": "RGBA",
+      "bytes": 1551544,
+      "sha256": "41639f55f2dda72e607240a6c22da10cef1f593e8d0e4afc59d77a144d57bc0c",
+      "opaqueBoundsAlpha128": [
+        31,
+        190,
+        1668,
+        832
+      ]
+    },
+    "gt86:rotiform": {
+      "src": "assets/cars/gt86/rotiform.png",
+      "width": 1670,
+      "height": 941,
+      "mode": "RGBA",
+      "bytes": 1532839,
+      "sha256": "8d35d36058f50eb093f57f0c05b0db48aabeba25eaec0ded9c3375fce16786b2",
+      "opaqueBoundsAlpha128": [
+        31,
+        190,
+        1666,
+        831
+      ]
+    },
+    "gt86:work": {
+      "src": "assets/cars/gt86/work.png",
+      "width": 1670,
+      "height": 941,
+      "mode": "RGBA",
+      "bytes": 1553616,
+      "sha256": "0ab525a7053b2bf4139802c45b00f2f784bac5aa553086a0b0fad542131d42ab",
+      "opaqueBoundsAlpha128": [
+        31,
+        190,
+        1667,
+        831
+      ]
+    }
+  }
+}

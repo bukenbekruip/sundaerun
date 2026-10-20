@@ -8,6 +8,7 @@ import {
   sep,
 } from "node:path";
 import { fileURLToPath } from "node:url";
+import { variants } from "../src/scene.js";
 
 // Run after the Vite build. No original artwork or legacy demo is modified.
 const projectRoot = resolve(dirname(fileURLToPath(import.meta.url)), "..");
@@ -15,7 +16,7 @@ const dist = await realpath(
   resolve(process.argv[2] ?? resolve(projectRoot, "dist")),
 );
 const output = resolve(dist, "OPEN-SUNDAE-RUN.html");
-const maximumBytes = 32 * 1024 * 1024;
+const maximumBytes = 64 * 1024 * 1024;
 const mimeTypes = {
   ".png": "image/png",
   ".webp": "image/webp",
@@ -241,19 +242,8 @@ function inspectJavaScript(source, label) {
 }
 
 async function collectRuntimeImages() {
-  // Only these runtime families belong in the inline lookup map.
-  const sceneDirectory = resolve(dist, "assets", "scene");
-  let sceneFiles;
-  try {
-    sceneFiles = await readdir(sceneDirectory);
-  } catch {
-    fail(
-      "assets/scene/ is missing; build the new scene before creating a standalone game",
-    );
-  }
-  const wheelFiles = (await readdir(resolve(dist, "assets"))).filter((name) =>
-    /^wheel-card[^/]*\.webp$/i.test(name),
-  );
+  // The registry is the complete runtime car set. Historical paint renders stay
+  // in the repository without adding unused data to the portable download.
   let productFiles = [];
   try {
     productFiles = await readdir(resolve(dist, "assets", "products"));
@@ -262,10 +252,13 @@ async function collectRuntimeImages() {
       fail(`cannot read product thumbnails: ${error.message}`);
   }
   const paths = [
-    ...sceneFiles
-      .filter((name) => name.toLowerCase().endsWith(".png"))
-      .map((name) => `assets/scene/${name}`),
-    ...wheelFiles.map((name) => `assets/${name}`),
+    "assets/scene/garage-plate.png",
+    "assets/scene/garage-logo.png",
+    ...new Set(
+      Object.values(variants)
+        .filter(({ ready }) => ready)
+        .map(({ src }) => src),
+    ),
     ...productFiles
       .filter((name) => /\.(?:png|webp)$/i.test(name))
       .map((name) => `assets/products/${name}`),
@@ -279,7 +272,10 @@ async function collectRuntimeImages() {
 }
 
 let html = await readFile(await localFile("index.html"), "utf8");
-const fontLicense = await readFile(await localFile("licenses/Inter-OFL.txt"), "utf8");
+const fontLicense = await readFile(
+  await localFile("licenses/Inter-OFL.txt"),
+  "utf8",
+);
 html = html.replace(
   "</head>",
   `<script type="text/plain" id="inter-font-license">${fontLicense.replace(/<\/script/gi, "<\\/script")}</script>\n</head>`,
@@ -339,7 +335,9 @@ html = await replaceAsync(
       fail(`HTML image is outside the runtime scene/thumbnail map: ${key}`);
     return tag.replace(
       /\bsrc\s*=\s*(?:"[^"]*"|'[^']*'|[^\s>]+)/i,
-      `src="${assetMap[key]}"`,
+      // The controller loads these images through the same inline lookup map.
+      // Avoid embedding the initial car, logo and garage twice in one HTML file.
+      `data-inline-asset="${key}"`,
     );
   },
 );
@@ -375,7 +373,7 @@ if (entryCount !== 1) fail(`expected one module entry, found ${entryCount}`);
 const bytes = Buffer.byteLength(html);
 if (bytes >= maximumBytes)
   fail(
-    `artifact is ${(bytes / 1024 / 1024).toFixed(2)} MiB; reduce unused scene/font payloads below 32 MiB`,
+    `artifact is ${(bytes / 1024 / 1024).toFixed(2)} MiB; reduce unused scene/font payloads below 64 MiB`,
   );
 await writeFile(output, html);
 console.log(`Portable game written: ${output}`);

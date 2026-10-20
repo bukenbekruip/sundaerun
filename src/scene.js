@@ -1,4 +1,4 @@
-// Full-car renders share a canvas and transform; bodies and wheels never scale separately.
+// Each vehicle is a complete render. Body and wheels always move and scale together.
 export const STAGE = Object.freeze({ width: 1672, height: 941 });
 export const CAR_TRANSFORM = Object.freeze({
   left: 418.27272727272725,
@@ -6,14 +6,33 @@ export const CAR_TRANSFORM = Object.freeze({
   width: 912,
   height: 941 * (6 / 11),
 });
-export const variants = Object.freeze({
-  "blue:sr-01": { src: "assets/scene/blue-sr-01.png", ready: true },
-  "black:sr-01": { src: "assets/scene/black-sr-01.png", ready: true },
-  "mint:sr-01": { src: "assets/scene/mint-sr-01.png", ready: true },
-  "blue:te37": { src: "assets/scene/blue-te37.png", ready: true },
-  "black:te37": { src: "assets/scene/black-te37.png", ready: true },
-  "mint:te37": { src: "assets/scene/mint-te37.png", ready: true },
+export const CAR_TRANSFORMS = Object.freeze({
+  sti: CAR_TRANSFORM,
+  porsche: CAR_TRANSFORM,
+  gt86: Object.freeze({
+    ...CAR_TRANSFORM,
+    top: CAR_TRANSFORM.top - 19 * (6 / 11),
+  }),
 });
+const wheelIds = ["sr-01", "te37", "bbs-lm", "oz", "rotiform", "work"];
+export const variants = Object.freeze(
+  Object.fromEntries(
+    ["sti", "porsche", "gt86"].flatMap((vehicle) =>
+      wheelIds.map((wheel) => [
+        `${vehicle}:${wheel}`,
+        Object.freeze({
+          src:
+            vehicle === "sti" && (wheel === "sr-01" || wheel === "te37")
+              ? `assets/scene/blue-${wheel}.png`
+              : `assets/cars/${vehicle}/${wheel}.png`,
+          ready: true,
+        }),
+      ]),
+    ),
+  ),
+);
+export const getSceneVariant = (selection) =>
+  variants[`${selection.vehicle ?? "sti"}:${selection.wheel}`];
 export function assetUrl(path) {
   const key = path.replace(/^\.\//, "");
   return (

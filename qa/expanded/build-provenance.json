@@ -1,0 +1,90 @@
+{
+  "recorded_at_utc": "2026-10-20T20:53:02.665956+00:00",
+  "scope": "Current local production build and browser evidence; no publication, deployment, or fresh-cloud restoration claimed.",
+  "browser": {
+    "cases_passed": 15,
+    "cases_failed": 0,
+    "assertions_passed": 4732,
+    "combinations": 216,
+    "pixel_comparisons": 234,
+    "outside_mask_rgb_changes": 0,
+    "alpha_changes": 0,
+    "garage_changes": 0
+  },
+  "portable": {
+    "status": "passed",
+    "checks_passed": 944,
+    "combinations": 216,
+    "unexpected_requests": 0,
+    "artifact_bytes": 58295674,
+    "file_protocol": "Not tested: file:// navigation is blocked by managed Chromium policy."
+  },
+  "renderer_note": "Final source was formatted before the build. Renderer author independently re-read masks/probes/material logic and confirmed accepted implementation; final observed source SHA is recorded below.",
+  "files": {
+    "src/paint-renderer.js": {
+      "bytes": 14795,
+      "sha256": "e9701f34ca7d9b61539a1742ced9b1d794df39680e9abe09d92c7a815688caf0",
+      "modified_at_utc": "2026-10-20T20:43:03.448576+00:00"
+    },
+    "src/scene.js": {
+      "bytes": 1306,
+      "sha256": "860c0970221ce0e0adcaf306ad6f7c130ecef87554e3c81e33524ac5ef5ad309",
+      "modified_at_utc": "2026-10-20T20:43:03.416575+00:00"
+    },
+    "src/catalogue.js": {
+      "bytes": 5368,
+      "sha256": "4be03be58d08269cfbfdbe80ef03cc63cf4f390d1ff9da4b451594e5109f7c77",
+      "modified_at_utc": "2026-10-20T20:43:03.396574+00:00"
+    },
+    "src/state.js": {
+      "bytes": 6266,
+      "sha256": "ebffa23c879b4cd5ac03a790249f1bc0924f93e94b615dc64f64e31c1741f8fb",
+      "modified_at_utc": "2026-10-20T20:42:24.023256+00:00"
+    },
+    "app.js": {
+      "bytes": 17439,
+      "sha256": "a66edd15c33369c13ab7d735ff4e8f9a6a0b5f947a5247166c559f467a31e81a",
+      "modified_at_utc": "2026-10-20T20:43:03.364573+00:00"
+    },
+    "index.html": {
+      "bytes": 13023,
+      "sha256": "7bcc27be6a53ad33f2e6734bc90aebe1d092ffe8d6397664172202940e7d26a9",
+      "modified_at_utc": "2026-10-20T20:43:03.702975+00:00"
+    },
+    "src/ui.css": {
+      "bytes": 43471,
+      "sha256": "8a3671ff41b6ad16094d4d28c6b7bde851140d84cbbff18555cce1781ac907ef",
+      "modified_at_utc": "2026-10-20T20:43:03.636583+00:00"
+    },
+    "public/assets/cars/manifest.json": {
+      "bytes": 7344,
+      "sha256": "a3f8adfc0edd5ad26f4f6ce962b742222883caeee32092cd8195ac9e4354fe2f",
+      "modified_at_utc": "2026-10-20T20:34:34.060388+00:00"
+    },
+    "tests/browser-smoke.py": {
+      "bytes": 36439,
+      "sha256": "da5418a5b950b7064bd2994a72e4003612ab31030397a8e062ba99f4759b6c3d",
+      "modified_at_utc": "2026-10-20T20:41:03.804548+00:00"
+    },
+    "tests/portable-smoke.py": {
+      "bytes": 16070,
+      "sha256": "e5f5981f602944a5f6d8b800b00c92314ecff3db6e305fec1af514acfad49855",
+      "modified_at_utc": "2026-10-20T20:36:40.249190+00:00"
+    },
+    "dist/index.html": {
+      "bytes": 13128,
+      "sha256": "807bf835678a6d1604b8b7e1b19eb42cb21f38727122f15a4b9c43b0f8201205",
+      "modified_at_utc": "2026-10-20T20:46:03.594695+00:00"
+    },
+    "dist/OPEN-SUNDAE-RUN.html": {
+      "bytes": 58295674,
+      "sha256": "038e88638bb1a7eebbdc93f183f4d93ef53ccd034237a0fe4a07f74df415f92a",
+      "modified_at_utc": "2026-10-20T20:46:04.085131+00:00"
+    },
+    "dist/assets/index-CXX3PHkm.js": {
+      "bytes": 26428,
+      "sha256": "6c506abe712ae24c653a7c8c706f643673da115ba9dd2130bb7b93455de3fa8e",
+      "modified_at_utc": "2026-10-20T20:46:03.589121+00:00"
+    }
+  }
+}
