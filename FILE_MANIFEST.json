@@ -1,0 +1,552 @@
+{
+  "generated": "2026-10-20",
+  "purpose": "editable Codex handoff, known-broken baseline",
+  "file_count": 63,
+  "files": [
+    {
+      "file": "AGENTS.md",
+      "bytes": 3645,
+      "sha256": "11c4b28a9c9ce65bee858b78d1acaf418aa8b44077ddbf0a694895216e8438b5"
+    },
+    {
+      "file": "CODEX_HANDOFF.md",
+      "bytes": 13731,
+      "sha256": "7b6da31227e481cb579ddf4663ea1ccc825ec7acf46f49bab256cc70150c87a2"
+    },
+    {
+      "file": "CODEX_PROMPT.txt",
+      "bytes": 1717,
+      "sha256": "35b3114772ca12546602d34c44f618ff06763a4cd66fa1115d4c95dcd168511f"
+    },
+    {
+      "file": "OPEN-THIS-GAME.html",
+      "bytes": 7691700,
+      "sha256": "1162508427699ccd854cbfdd8d528335130b27a14a1897d99edf33dd01281f82"
+    },
+    {
+      "file": "README.txt",
+      "bytes": 169,
+      "sha256": "173077fd29d62d9da2e2aa27df04d398e91164dde3941e6a3d2186be6c7be0b8"
+    },
+    {
+      "file": "README_START_HERE.md",
+      "bytes": 2345,
+      "sha256": "0923b3dcb041e638264312c357df522f5c47d20e8ab0f6f48c84057e2eb0062a"
+    },
+    {
+      "file": "app.js",
+      "bytes": 8808,
+      "sha256": "674c32093d2754d5dc417ce0cb77fd3744db2c3d1d1a2b984ba57b8e54051d37"
+    },
+    {
+      "file": "assets/approved-scene-fixed.jpg",
+      "bytes": 757576,
+      "sha256": "065cf03e75c59adaa014b3cac1b05c7123cae687ae82cd1a6e68966b8d7911bd",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "mode": "RGB"
+    },
+    {
+      "file": "assets/approved-scene.jpg",
+      "bytes": 954697,
+      "sha256": "9910e52f4eb3541ffcdfdba5a3aa144837d6722fe71380902461c9a2b532e217",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "mode": "RGB"
+    },
+    {
+      "file": "assets/paint-black.webp",
+      "bytes": 89042,
+      "sha256": "ae01757cb293f05465a18c53bbafe0736b3dc174a1f7960dcb003684df1afbd7",
+      "dimensions": [
+        920,
+        365
+      ],
+      "mode": "RGBA"
+    },
+    {
+      "file": "assets/paint-grey.webp",
+      "bytes": 92884,
+      "sha256": "2e0ad77ad884f0fda2b14fea6240e2698fcadd14df7eb5ad6962e2d8465f14cb",
+      "dimensions": [
+        920,
+        365
+      ],
+      "mode": "RGBA"
+    },
+    {
+      "file": "assets/paint-mint.webp",
+      "bytes": 139966,
+      "sha256": "f199e7045ec5d035c45bb7bfe2fbeef048a41936c005d525c963c61c1c5a18fc",
+      "dimensions": [
+        920,
+        365
+      ],
+      "mode": "RGBA"
+    },
+    {
+      "file": "assets/paint-orange.webp",
+      "bytes": 145616,
+      "sha256": "e027717c3aebe70aba9f045d23ad77f7af3d719c8b27b4929c94b8a71e00d02f",
+      "dimensions": [
+        920,
+        365
+      ],
+      "mode": "RGBA"
+    },
+    {
+      "file": "assets/paint-pink.webp",
+      "bytes": 140652,
+      "sha256": "9f0e27855d4518047938c21a59727b172b1439901f1c69edfb3c9df5438b86da",
+      "dimensions": [
+        920,
+        365
+      ],
+      "mode": "RGBA"
+    },
+    {
+      "file": "assets/paint-purple.webp",
+      "bytes": 140424,
+      "sha256": "e7ebfa10af6b54920e6a6b7e5e34e6eecdf76d2fa74ca2df2683bdeee601ca75",
+      "dimensions": [
+        920,
+        365
+      ],
+      "mode": "RGBA"
+    },
+    {
+      "file": "assets/paint-red.webp",
+      "bytes": 130072,
+      "sha256": "0851e18b1f20c51073925a99d40bdc4d941eb49a8c52a97a6afaabf69ac81e6b",
+      "dimensions": [
+        920,
+        365
+      ],
+      "mode": "RGBA"
+    },
+    {
+      "file": "assets/paint-silver.webp",
+      "bytes": 105668,
+      "sha256": "2479ffcef4f99b98a2930d9d19643787e313f1bfe0d3d049200234399515b64a",
+      "dimensions": [
+        920,
+        365
+      ],
+      "mode": "RGBA"
+    },
+    {
+      "file": "assets/paint-turquoise.webp",
+      "bytes": 134048,
+      "sha256": "71dd1ee81849a691fea4388b2162bea5f0d6025c02573f10e8779418bd7809f6",
+      "dimensions": [
+        920,
+        365
+      ],
+      "mode": "RGBA"
+    },
+    {
+      "file": "assets/paint-white.webp",
+      "bytes": 98080,
+      "sha256": "dbe0f392788d938cbf6af518297a818c0d872d08adc49e79832f92303ef039bf",
+      "dimensions": [
+        920,
+        365
+      ],
+      "mode": "RGBA"
+    },
+    {
+      "file": "assets/paint-yellow.webp",
+      "bytes": 147780,
+      "sha256": "51e354927a461e2ba90881320d348d71122b2a7c303a32f7eba8d760ecf091d7",
+      "dimensions": [
+        920,
+        365
+      ],
+      "mode": "RGBA"
+    },
+    {
+      "file": "assets/sundae-logo.png",
+      "bytes": 816022,
+      "sha256": "39f98bfb45be88d8d4c6d4d08eb38a0d53fa8fe3959e8104faae92f269651e03",
+      "dimensions": [
+        1226,
+        1283
+      ],
+      "mode": "RGBA"
+    },
+    {
+      "file": "assets/ui-reset-paint.webp",
+      "bytes": 1558,
+      "sha256": "9ac3a2a590e8e60d507bae9544c7bc063c4bee57b24bc2ec8be6643a3a54abf0",
+      "dimensions": [
+        75,
+        51
+      ],
+      "mode": "RGBA"
+    },
+    {
+      "file": "assets/ui-reset-wheel.webp",
+      "bytes": 3990,
+      "sha256": "14abbf112c8575f623502afca9b9d80bd62c2327cae9c439b9258668bc7bd8d4",
+      "dimensions": [
+        150,
+        205
+      ],
+      "mode": "RGBA"
+    },
+    {
+      "file": "assets/wheel-card-bbs-lm.webp",
+      "bytes": 18560,
+      "sha256": "f3e96f3f345dfc5da6ede4a1da4f44ef161b6b0dabf606601afbfd9e802549d0",
+      "dimensions": [
+        108,
+        108
+      ],
+      "mode": "RGBA"
+    },
+    {
+      "file": "assets/wheel-card-oz.webp",
+      "bytes": 17324,
+      "sha256": "b42ebe27ab48ffed9e9d46acf436c6db4d3d347b13b0e856577a09ac5633d8b1",
+      "dimensions": [
+        112,
+        112
+      ],
+      "mode": "RGBA"
+    },
+    {
+      "file": "assets/wheel-card-rotiform.webp",
+      "bytes": 17076,
+      "sha256": "df6a3114c490c732ee7ac7947bc69c1295c6098bfa6b98dd3f8b78ca76d64db9",
+      "dimensions": [
+        110,
+        110
+      ],
+      "mode": "RGBA"
+    },
+    {
+      "file": "assets/wheel-card-sr-01.webp",
+      "bytes": 20834,
+      "sha256": "237f8ed4c1f0edd5e8d558218399876eb764e3eebdbf71b7c4b12fbfa254123b",
+      "dimensions": [
+        116,
+        116
+      ],
+      "mode": "RGBA"
+    },
+    {
+      "file": "assets/wheel-card-te37.webp",
+      "bytes": 20326,
+      "sha256": "f34f15d82646291223c505fbd8096e9b44ba6a3e7ff88335b2125f09a49f97b3",
+      "dimensions": [
+        116,
+        116
+      ],
+      "mode": "RGBA"
+    },
+    {
+      "file": "assets/wheel-card-work.webp",
+      "bytes": 18234,
+      "sha256": "9d1a7f2b12d4d3cfd4c02d0ade6010e8fbec7a9d13f67c8271af2b3ebbd98283",
+      "dimensions": [
+        112,
+        112
+      ],
+      "mode": "RGBA"
+    },
+    {
+      "file": "assets/wheels-bbs-lm.webp",
+      "bytes": 28156,
+      "sha256": "f51055ef6ea3cc8dc3056303608f2a0faeda6fc42ab36aecdb15cdb70e339581",
+      "dimensions": [
+        920,
+        365
+      ],
+      "mode": "RGBA"
+    },
+    {
+      "file": "assets/wheels-oz.webp",
+      "bytes": 25622,
+      "sha256": "c38d6b3f33b0b9e50c37ac0c00f0c899f21e2637dcb6ba7cc31a37f5ecdbcfdb",
+      "dimensions": [
+        920,
+        365
+      ],
+      "mode": "RGBA"
+    },
+    {
+      "file": "assets/wheels-rotiform.webp",
+      "bytes": 25656,
+      "sha256": "59440ab0031bda42f415e94bcbdb6c0990451b1f89acd5e5f44ed87fd61936d5",
+      "dimensions": [
+        920,
+        365
+      ],
+      "mode": "RGBA"
+    },
+    {
+      "file": "assets/wheels-sr-01.webp",
+      "bytes": 29214,
+      "sha256": "085cebf05395ec955fd241e6b213d072b623bd7ccda92e294e65d759cf604892",
+      "dimensions": [
+        920,
+        365
+      ],
+      "mode": "RGBA"
+    },
+    {
+      "file": "assets/wheels-te37.webp",
+      "bytes": 28582,
+      "sha256": "2125221c48d16b9abb4e228a22e423ba59529f0d9114fdaf305b00e9b507fd5e",
+      "dimensions": [
+        920,
+        365
+      ],
+      "mode": "RGBA"
+    },
+    {
+      "file": "assets/wheels-work.webp",
+      "bytes": 26632,
+      "sha256": "95fb061a2958aa0a77f475149f18ec787f4019958be40b806958f62e7be31db3",
+      "dimensions": [
+        920,
+        365
+      ],
+      "mode": "RGBA"
+    },
+    {
+      "file": "copy-assets.mjs",
+      "bytes": 81,
+      "sha256": "17857441fe57c044c553cd0c1e79c8fa010c71971834bc27034b4c00496a2a44"
+    },
+    {
+      "file": "docs/FULL_SCREEN_SPECIFICATION.md",
+      "bytes": 14680,
+      "sha256": "e3b7b0937c8ef48b72780f6555ee813d7e671803c7e203dd861c4169f18639fb"
+    },
+    {
+      "file": "docs/KNOWN_DEFECTS_AND_ASSETS.md",
+      "bytes": 4264,
+      "sha256": "7354ab619301a6d36e3a92ecff8f772b1c6d48429a9c19845c458ff52da8d6d5"
+    },
+    {
+      "file": "docs/LAYOUT.json",
+      "bytes": 1977,
+      "sha256": "b66a101fa64a5c0d51e9adaa9335c0d735b8ba1049d30bea47a44a7400b61591"
+    },
+    {
+      "file": "docs/PROGRESS_AND_TEST_RESULTS.md",
+      "bytes": 1145,
+      "sha256": "e0d7971cbe9eef805f412b2238cbe63afc120d0db94de091f12063002e64fdf2"
+    },
+    {
+      "file": "docs/PROJECT_HISTORY.md",
+      "bytes": 3775,
+      "sha256": "8fd1fa385adeb1cc6796576c0c9e2e054c709e8adc0929e0aab8b76a9d90194a"
+    },
+    {
+      "file": "index.html",
+      "bytes": 6571,
+      "sha256": "aa5c9557eacf659d782391f446211d1e6699f1ee21b9f5a16730f72f1e4fa0a1"
+    },
+    {
+      "file": "package.json",
+      "bytes": 256,
+      "sha256": "dbe771eeca976824d4e7e14f8a06930566ac934ccfd485a02e3843473dab8d77"
+    },
+    {
+      "file": "qa/BROKEN_BLACK_PAINT.png",
+      "bytes": 2516882,
+      "sha256": "f751171374d70700ae789f8e2d384911a724602d8d3f22869d726674688dacd9",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "mode": "RGB"
+    },
+    {
+      "file": "qa/BROKEN_MINT_PAINT.png",
+      "bytes": 2516365,
+      "sha256": "270c8ffd900dd9d99475bcd4ea4ea6f26544b147534f1a28e01ce6ef65ec7f21",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "mode": "RGB"
+    },
+    {
+      "file": "qa/BROKEN_PAINT_AND_WHEELS_V2.png",
+      "bytes": 2431313,
+      "sha256": "f1f9395ec192b5bb4833cb244d9378b5ab1d36f1fa79d851a499174a566ddda6",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "mode": "RGB"
+    },
+    {
+      "file": "qa/EARLIER_MISALIGNED_WHEELS.png",
+      "bytes": 2668600,
+      "sha256": "ba4be92bd691a70412bd43d6e853e460eb29d786235146bace7dc4b580d43f69",
+      "dimensions": [
+        1862,
+        832
+      ],
+      "mode": "RGBA"
+    },
+    {
+      "file": "qa/EARLIER_OVERSIZED_CAR.png",
+      "bytes": 2516276,
+      "sha256": "738a7b2508b88dd1cb5cebf07dbf8f6adb396ae55aa9067903e12e7ffc9be3cc",
+      "dimensions": [
+        1895,
+        952
+      ],
+      "mode": "RGBA"
+    },
+    {
+      "file": "qa/ORIGINAL_V2_CAPTURE.png",
+      "bytes": 2568256,
+      "sha256": "f015ee725872545647e7d02c493235851d04453ed83efc8c2b3cdf911ed13fd3",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "mode": "RGB"
+    },
+    {
+      "file": "reference/ANNOTATED_LAYOUT.jpg",
+      "bytes": 618497,
+      "sha256": "a5f988444af3fd2e3f7250b758d50fdc689f2226b95a0da033879b88e81b0211",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "mode": "RGB"
+    },
+    {
+      "file": "reference/APPROVED_BLUE_STI_SCREEN.png",
+      "bytes": 2516817,
+      "sha256": "14423f19c6344dbbd1040143dbca59ef2631e07135f2fde4ae3e78ed698695ec",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "mode": "RGB"
+    },
+    {
+      "file": "reference/GARAGE_MANAGEMENT_REFERENCE.png",
+      "bytes": 2452425,
+      "sha256": "843e12b78364e85752d523d3f92630d21b95b9b101b1a6b7382aa8e9ae988a57",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "mode": "RGB"
+    },
+    {
+      "file": "reference/SECOND_DESIGN_REFERENCE_PORSCHE.png",
+      "bytes": 2335718,
+      "sha256": "62fe1fc9e3e7ab6d7e9899a8bb198c3ec86148f116f23a6aa36ded2e4e77fca0",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "mode": "RGB"
+    },
+    {
+      "file": "source-art/ALTERNATE_WORKSHOP_NOT_APPROVED_BACKGROUND.png",
+      "bytes": 2390819,
+      "sha256": "661f977d2416b83a1827fb55c8925ba9fff615606eb879bcbc1422295fe5cc7d",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "mode": "RGB"
+    },
+    {
+      "file": "source-art/APPROVED_APPAREL_LOGO.png",
+      "bytes": 816022,
+      "sha256": "39f98bfb45be88d8d4c6d4d08eb38a0d53fa8fe3959e8104faae92f269651e03",
+      "dimensions": [
+        1226,
+        1283
+      ],
+      "mode": "RGBA"
+    },
+    {
+      "file": "source-art/WHEEL_GOLD_FRONT_ON_2D.png",
+      "bytes": 2185781,
+      "sha256": "3293b0cbf741559869e7fd7eaf76e2910adae0dfa316816857bf8b2f692422ac",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "mode": "RGBA"
+    },
+    {
+      "file": "source-art/WHEEL_PINK_FRONT_ON_2D.png",
+      "bytes": 1753674,
+      "sha256": "999e73434840a38fafc188a373817041137f671a1add5fcaf35c9a1c878f09fc",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "mode": "RGBA"
+    },
+    {
+      "file": "source-art/WHEEL_SILVER_FRONT_ON_2D.png",
+      "bytes": 2226241,
+      "sha256": "14f1cf258ab4dd1b458e7b3cbbc9d49f1e7901d5cdc0cc11ab549c0a42f260e1",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "mode": "RGBA"
+    },
+    {
+      "file": "source-art/WHEEL_WHITE_FRONT_ON_2D.png",
+      "bytes": 2026310,
+      "sha256": "a8f0b5df49618cc6ccf11c4d757f1748d822a883b9d1ba63c283352db1bbf6f0",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "mode": "RGBA"
+    },
+    {
+      "file": "source-art/WHITE_STI_2D_SHELL_NOT_SAME_CAMERA.png",
+      "bytes": 1352492,
+      "sha256": "3594ae0e6cb562d3d99020685d0cbc78d09526d3e10fad72c90cf3771607ecb7",
+      "dimensions": [
+        1448,
+        1086
+      ],
+      "mode": "RGBA"
+    },
+    {
+      "file": "source-art/WHITE_STI_ARCH_CROP_NOT_PRODUCTION_READY.png",
+      "bytes": 427038,
+      "sha256": "f044e8e738d44646bc6e90515ed1b99375b86c047ddc9961d26f0d87ffd85ae7",
+      "dimensions": [
+        760,
+        450
+      ],
+      "mode": "RGBA"
+    },
+    {
+      "file": "style.css",
+      "bytes": 10875,
+      "sha256": "0ed8a7310483d8ea57a71624b5fb4aa2d1d404137c796291ecd7ca6b928f865e"
+    },
+    {
+      "file": "vite.config.js",
+      "bytes": 28,
+      "sha256": "b674c141bd1cda960efd4847e320b79e25de68fbb0ad977de90e9486f0d33f5d"
+    }
+  ]
+}

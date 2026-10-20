@@ -1,0 +1,9 @@
+Take over this Sundae Run Garage project from the enclosed handoff. Read AGENTS.md, CODEX_HANDOFF.md, docs/FULL_SCREEN_SPECIFICATION.md, docs/KNOWN_DEFECTS_AND_ASSETS.md, and inspect reference/APPROVED_BLUE_STI_SCREEN.png first.
+
+The user approved that blue STI screen EXACTLY, including workshop, brand identity, golden circular turntable, left menu and bottom customization menu. We need THIS PAGE ONLY.
+
+The V2 editable code is at repository root but is NOT ACCEPTED. Its replacement wheels don't fit front/rear arches; original bronze rims are baked into the screenshot and show through. Paint overlays create a pasted-on/floating image or spill outside the body. Baked-in static selection checks can conflict with moved DOM checkmarks. These flaws have repeatedly been sent to the user and caused understandable frustration.
+
+Do NOT return another cosmetic patch, low-poly car, or unverified ZIP. Begin with an asset audit and a credible plan for true, matching-angle separated art or fixed-camera whole-car variants; don't pretend this flattened screenshot can be edited perfectly by CSS masks. Produce and visually inspect a clean default scene and a properly fitted alternative wheel and black/mint paint variant BEFORE offering a working build. Preserve approved visual design. Use Vite with HTML/CSS and any useful PixiJS/GSAP effects, but correct assets matter more than packages.
+
+Deliver screenshot evidence for default, changed wheels, black, mint, back to blue; verify checkmarks, pricing, persistence and browser rendering. State any actual asset blocker honestly. Do not ask user to find basic defects for you. Read instructions and work through acceptance gates. Only ship when visually acceptable.

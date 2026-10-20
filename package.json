@@ -1,0 +1,8 @@
+{
+  "name":"sundae-run-sti-customisation",
+  "version":"1.0.0",
+  "private":true,
+  "type":"module",
+  "scripts":{"dev":"vite --host 127.0.0.1","build":"vite build && node copy-assets.mjs","preview":"vite preview"},
+  "devDependencies":{"vite":"^8.3.4"}
+}

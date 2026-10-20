@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#161513" />
+  <title>Sundae Run Garage — STI Customisation</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+<div id="app" class="app">
+  <div id="stage" class="stage" aria-label="Sundae Run Garage interactive STI customisation scene">
+    <img class="approved-image" src="./assets/approved-scene-fixed.jpg" alt="Sunset-lit Sundae Run workshop featuring a blue Subaru STI on a gold-rimmed turntable." draggable="false" />
+    <div id="ui-wheel-reset" class="ui-reset ui-wheel-reset" aria-hidden="true"></div>
+    <div id="ui-paint-reset" class="ui-reset ui-paint-reset" aria-hidden="true"></div>
+    <img id="paint-layer" class="car-layer" alt="" draggable="false" />
+    <img id="wheel-layer" class="car-layer" alt="" draggable="false" />
+
+    <div class="money-readout" id="money-readout" aria-live="polite">$ 48,320</div>
+
+    <nav class="category-menu" aria-label="Customisation categories">
+      <button class="category category-tyres current" data-category="tyres" aria-label="Tyres">Tyres</button>
+      <button class="category category-wheels" data-category="wheels" aria-label="Wheels">Wheels</button>
+      <button class="category category-paint" data-category="paint" aria-label="Paint">Paint</button>
+      <button class="category category-suspension" data-category="suspension" aria-label="Suspension">Suspension</button>
+      <button class="category category-body" data-category="body" aria-label="Body Kit">Body Kit</button>
+    </nav>
+
+    <div class="wheel-mode" role="tablist" aria-label="Wheel and tyre mode">
+      <button class="mode-wheels" data-mode="wheels" aria-label="Wheels tab" aria-selected="true"></button>
+      <button class="mode-tyres" data-mode="tyres" aria-label="Tyres tab" aria-selected="false"></button>
+    </div>
+
+    <div class="wheel-products" role="group" aria-label="Select wheel design">
+      <button class="wheel-product" data-wheel="sr-01" aria-label="Sundae Run SR-01 wheel, 2500 credits" aria-pressed="true"></button>
+      <button class="wheel-product" data-wheel="te37" aria-label="Rays TE37 wheel, 2800 credits" aria-pressed="false"></button>
+      <button class="wheel-product" data-wheel="bbs-lm" aria-label="BBS LM wheel, 2800 credits" aria-pressed="false"></button>
+      <button class="wheel-product" data-wheel="oz" aria-label="OZ Ultraleggera wheel, 2800 credits" aria-pressed="false"></button>
+      <button class="wheel-product" data-wheel="rotiform" aria-label="Rotiform TUF-R wheel, 2400 credits" aria-pressed="false"></button>
+      <button class="wheel-product" data-wheel="work" aria-label="Work Meister S1 wheel, 2600 credits" aria-pressed="false"></button>
+    </div>
+    <div id="wheel-check" class="dynamic-check wheel-check" aria-hidden="true">✓</div>
+    <div id="wheel-outline" class="selection-outline wheel-outline" aria-hidden="true"></div>
+    <button class="wheel-arrow wheel-arrow-left" aria-label="Previous wheel">‹</button>
+    <button class="wheel-arrow wheel-arrow-right" aria-label="Next wheel">›</button>
+
+    <div class="paint-finishes" role="tablist" aria-label="Paint finish">
+      <button data-finish="solid" aria-label="Solid finish" aria-selected="true"></button>
+      <button data-finish="metallic" aria-label="Metallic finish" aria-selected="false"></button>
+      <button data-finish="special" aria-label="Special finish" aria-selected="false"></button>
+    </div>
+    <div class="swatches" role="group" aria-label="Paint colours">
+      <button data-paint="white" aria-label="Pearl white paint" aria-pressed="false"></button>
+      <button data-paint="silver" aria-label="Silver paint" aria-pressed="false"></button>
+      <button data-paint="grey" aria-label="Graphite grey paint" aria-pressed="false"></button>
+      <button data-paint="black" aria-label="Onyx black paint" aria-pressed="false"></button>
+      <button data-paint="red" aria-label="Cherry red paint" aria-pressed="false"></button>
+      <button data-paint="orange" aria-label="Sunset orange paint" aria-pressed="false"></button>
+      <button data-paint="white" aria-label="Glacier white paint" aria-pressed="false"></button>
+      <button data-paint="blue" aria-label="WR blue pearl paint" aria-pressed="true"></button>
+      <button data-paint="purple" aria-label="Violet paint" aria-pressed="false"></button>
+      <button data-paint="pink" aria-label="Cherry blossom pink paint" aria-pressed="false"></button>
+      <button data-paint="yellow" aria-label="Sunshine yellow paint" aria-pressed="false"></button>
+      <button data-paint="mint" aria-label="Mint coast paint" aria-pressed="false"></button>
+    </div>
+    <div id="paint-check" class="dynamic-check paint-check" aria-hidden="true">✓</div>
+    <div id="swatch-outline" class="selection-outline swatch-outline" aria-hidden="true"></div>
+    <div class="paint-detail" aria-live="polite">
+      <div id="paint-name">WR Blue Pearl</div>
+      <div id="finish-label">Solid Finish</div>
+      <div id="paint-price">$ 1,200</div>
+    </div>
+
+    <section class="checkout" aria-label="Purchase selected customisation">
+      <div class="summary-card">
+        <span class="cart-symbol" aria-hidden="true">🛒</span>
+        <div class="summary-text"><span>Total Cost</span><strong id="total-price" aria-live="polite">$ 3,700</strong></div>
+      </div>
+      <button id="apply-button" class="apply-button" aria-label="Apply selected wheel and paint customisations">
+        <span aria-hidden="true">🔧</span> <strong id="apply-label">Apply Changes</strong> <span aria-hidden="true">›</span>
+      </button>
+    </section>
+
+    <button class="top-settings" id="settings-button" aria-label="Open settings"></button>
+    <button class="money-plus" id="money-plus" aria-label="How to earn more garage credits"></button>
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+    <div id="dialog" class="dialog" hidden>
+      <div class="dialog-card" role="dialog" aria-modal="true" aria-labelledby="dialog-title">
+        <div class="dialog-logo"><img src="./assets/sundae-logo.png" alt="" /></div>
+        <h2 id="dialog-title">Sundae Run Garage</h2>
+        <p id="dialog-message"></p>
+        <button id="dialog-close">Got it</button>
+        <button id="reset-button" class="reset-button" hidden>Reset Progress</button>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="./app.js" defer></script>
+</body>
+</html>
