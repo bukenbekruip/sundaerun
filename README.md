@@ -31,6 +31,12 @@ The current portable game is `dist/OPEN-SUNDAE-RUN.html`. It embeds the code, fo
 
 For a normal web deployment, publish the contents of `dist/` after `npm run build`. Preview that build with `npm run preview`. The application is built as a real JavaScript module; no manual script-copy workaround is required.
 
+## GitHub Pages deployment
+
+In the repository's **Settings → Pages**, select **GitHub Actions** as the build source. `.github/workflows/deploy-pages.yml` tests and builds the game with Node 24, then deploys `dist/` on pushes to `main` or a manual workflow run. The expected project address is `https://bukenbekruip.github.io/sundaerun/` once deployment succeeds.
+
+Keep `base: './'` in `vite.config.js`: scripts, styles, fonts and runtime artwork then resolve within the `/sundaerun/` project directory. No backend, external image host or application secrets are required. The portable ZIP is independent of Pages and does not need rebuilding for deployment-only changes.
+
 The cloud onboarding chat does not expose its internal server as a public preview. A localhost address printed there belongs to the cloud machine. Use the portable game to try this build on your computer, or deploy the normal `dist/` build to a static host for a shareable web address.
 
 ## Game behaviour
