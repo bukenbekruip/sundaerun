@@ -1,5 +1,13 @@
 # Codex QA progress log
 
+## GitHub Pages deployment preparation — 2026-10-21
+
+Added `.github/workflows/deploy-pages.yml`: Node 24, frozen `npm ci`, existing unit tests, production build, Pages artifact upload and deployment on `main` pushes or manual dispatch. The existing relative Vite base is retained for `/sundaerun/`; game source, artwork, design and behaviour are unchanged. This deployment-only change does not rebuild the independent portable download.
+
+Current-instance checks: `npm ci --cache /tmp/sundaerun-npm-cache`, all **27 unit tests**, and `npm run build` passed. Served `dist/` under `http://127.0.0.1:4173/sundaerun/` to reproduce the project path. All **87 production files** returned HTTP 200 with matching byte lengths. Existing browser cases for five-part purchase/persistence/reset and all three cars at desktop 1366/1920 and mobile 390/360/320 widths passed: **6 cases, 544 assertions**, no page/console/HTTP/request errors. Visually inspected STI desktop 1366 and mobile 390 screenshots. Evidence is in `/tmp/sundaerun-pages-qa/` in this instance.
+
+Public deployment remains unverified: the running environment's proxy returns CONNECT 403 for `api.github.com` and `bukenbekruip.github.io`. Required domains and reusable installation/startup instructions were saved to the environment draft; saving does not apply or publish them. Git push works. Once network changes take effect, check/enable the repository's Pages source as GitHub Actions, inspect the deployment run, and rerun browser checks against the public URL. No successful public deployment or public-site desktop/mobile test is claimed yet.
+
 ## Handoff baseline — 2026-10-20
 
 - Current root source extracted from `Sundae-Run-STI-Playable-V2.zip`, zip integrity verified.
