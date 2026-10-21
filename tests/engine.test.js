@@ -9,7 +9,7 @@ import {
   advanceRPM,
 } from "../src/engine-voices.js";
 
-test("all five voices produce distinct bounded, centred and repeatable engine loops", () => {
+test("all six voices produce distinct bounded, centred and repeatable engine loops", () => {
   for (const rpm of ANCHOR_RPM) {
     const hashes = new Set();
     for (const vehicle of Object.keys(ENGINE_PROFILES)) {
@@ -36,7 +36,7 @@ test("all five voices produce distinct bounded, centred and repeatable engine lo
       );
       hashes.add(hash);
     }
-    assert.equal(hashes.size, 5, `all five waveforms differ at ${rpm} RPM`);
+    assert.equal(hashes.size, 6, `all six waveforms differ at ${rpm} RPM`);
   }
 });
 

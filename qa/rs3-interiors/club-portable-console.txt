@@ -1,0 +1,35 @@
+PASS Fresh XP starts at a real level 1
+PASS alternate-wheels: exterior preview remains free
+PASS black-paint: exterior preview remains free
+PASS mint-paint: exterior preview remains free
+PASS back-to-blue: exterior preview remains free
+PASS Unfitted default cannot be saved as a purchased build
+PASS Saving a named build preserves credits and fitted parts
+PASS First brief adds exactly 1500 credits in the same save
+PASS Claimed brief updates the real XP HUD
+PASS Panel filter costs 450 credits and fits only the STI
+PASS Refitting included or owned performance parts is free
+PASS Exhaust and tune use separate exact game prices
+PASS A different performance recipe creates a second immutable saved snapshot
+PASS Changing performance does not mutate an earlier saved build
+PASS Saved snapshot renders a full 1600×980 show card
+PASS Native download produces an actual PNG show card
+PASS Share flow exposes a portable SR1 code
+PASS Shared build excludes wallet, purchases, rewards and local identity
+PASS International shopping preference is saved without fabricating offers
+PASS Reload retains builds, performance, exact wallet and one-time reward
+PASS Other cars retain their original performance parts
+PASS Invalid import gives a readable error and changes no credits
+PASS Imported exterior previews for free without granting ownership or rewards
+PASS Imported performance recipe does not grant unpurchased upgrades
+PASS Preference and club data survive normal exterior preview/cancel transactions
+PASS porsche: painted/upgraded saved build exports a PNG through native controls
+PASS gt86: painted/upgraded saved build exports a PNG through native controls
+PASS No uncaught browser exceptions
+PASS No console errors in the main feature flow
+PASS No HTTP failures in the main feature flow
+PASS Portable mode requests no additional resources
+{
+  "status": "passed",
+  "passed_checks": 31
+}

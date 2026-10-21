@@ -1,0 +1,27 @@
+
+> sundae-run-sti-customisation@1.0.0 build:standalone
+> npm run build && node scripts/build-standalone.mjs
+
+
+> sundae-run-sti-customisation@1.0.0 build
+> vite build && node copy-assets.mjs
+
+vite v8.3.4 building client environment for production...
+transforming...
+✓ 22 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/assets/inter-vietnamese-wght-normal-CBcvBZtf.woff2     10.25 kB
+dist/assets/inter-greek-ext-wght-normal-DlzME5K_.woff2      11.23 kB
+dist/index.html                                             17.27 kB │ gzip:  4.21 kB
+dist/assets/inter-cyrillic-wght-normal-DqGufNeO.woff2       18.74 kB
+dist/assets/inter-greek-wght-normal-CkhJZR-_.woff2          18.99 kB
+dist/assets/inter-cyrillic-ext-wght-normal-BOeWTOD4.woff2   25.96 kB
+dist/assets/inter-latin-wght-normal-Dx4kXJAl.woff2          48.25 kB
+dist/assets/inter-latin-ext-wght-normal-DO1Apj_S.woff2      85.06 kB
+dist/assets/index-CF9DYc2Y.css                              49.53 kB │ gzip: 11.16 kB
+dist/assets/index-CzOKweY9.js                              146.53 kB │ gzip: 75.31 kB
+
+✓ built in 501ms
+Portable game written: /workspace/sundae-run/dist/OPEN-SUNDAE-RUN.html
+92 runtime images, 100 embedded files, 87.91 MiB; no unresolved module/CSS imports.

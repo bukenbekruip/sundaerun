@@ -248,5 +248,193 @@
     "portableSrc": "assets/portable/golf-body-track.webp",
     "portableSha256": "bda14f69f1b4a591d43e242c1af591e34ccb27328502ee30370b5c21839b1495",
     "production": "image_gen artwork; FFmpeg WebP distribution encoding at quality 92, no geometry or material editing"
+  },
+  "rs3:sr-01": {
+    "sourceGeneratedOriginal": "exec-9193f9fc-7978-4735-9f33-08ca75fa782e.png",
+    "sourceSha256": "8af964d852424b86741b7e86ee29367ecfdacdf057ac5fec6c27a245103a56ce",
+    "src": "assets/cars/rs3/sr-01.png",
+    "sha256": "8af964d852424b86741b7e86ee29367ecfdacdf057ac5fec6c27a245103a56ce",
+    "portableSrc": "assets/portable/rs3-sr-01.webp",
+    "portableSha256": "00c3d303b5900428b4b9462cb2d3b9b1533970fa9064ae5b77a2ed60cb5390a8",
+    "production": "image_gen artwork; FFmpeg WebP distribution encoding at quality 92, no geometry or material editing"
+  },
+  "rs3:te37": {
+    "sourceGeneratedOriginal": "exec-d9b63778-7b18-4ae9-bacf-240309c604c9.png",
+    "sourceSha256": "e4452cd38280f1b35d5ead6373b00499b296ac6e6aea8d5f1ffa742bc303b598",
+    "src": "assets/cars/rs3/te37.png",
+    "sha256": "e4452cd38280f1b35d5ead6373b00499b296ac6e6aea8d5f1ffa742bc303b598",
+    "portableSrc": "assets/portable/rs3-te37.webp",
+    "portableSha256": "47b00bfd1b5bbef936a78c200c09dad4a1576ba6a27c6f5b1e9e398237836555",
+    "production": "image_gen artwork; FFmpeg WebP distribution encoding at quality 92, no geometry or material editing"
+  },
+  "rs3:bbs-lm": {
+    "sourceGeneratedOriginal": "exec-b4408b94-f2b0-4ef4-8ae4-c24dbe9019e5.png",
+    "sourceSha256": "5cf37a772f5963394c51e29b1333ff010092f522ecf5eae02d4e5dffa9be39ea",
+    "src": "assets/cars/rs3/bbs-lm.png",
+    "sha256": "5cf37a772f5963394c51e29b1333ff010092f522ecf5eae02d4e5dffa9be39ea",
+    "portableSrc": "assets/portable/rs3-bbs-lm.webp",
+    "portableSha256": "9f2a1c16afb26a2c8e4ab37db8f8796628f09546d3d74886418753beaaed40ac",
+    "production": "image_gen artwork; FFmpeg WebP distribution encoding at quality 92, no geometry or material editing"
+  },
+  "rs3:oz": {
+    "sourceGeneratedOriginal": "exec-e07a8eee-b9d2-453a-9869-fbaf6c108874.png",
+    "sourceSha256": "c8415139e7e8e03b6b870c46836302dfd89618ecece58114a029fc70a6fe2822",
+    "src": "assets/cars/rs3/oz.png",
+    "sha256": "c8415139e7e8e03b6b870c46836302dfd89618ecece58114a029fc70a6fe2822",
+    "portableSrc": "assets/portable/rs3-oz.webp",
+    "portableSha256": "b5396af98b7256fad7c1fdfb0e31e8d48813268d1efb15dbb7c804d16adef7d0",
+    "production": "image_gen artwork; FFmpeg WebP distribution encoding at quality 92, no geometry or material editing"
+  },
+  "rs3:rotiform": {
+    "sourceGeneratedOriginal": "exec-77f16594-811b-4ded-9ae1-4ac5f71c64f8.png",
+    "sourceSha256": "c475bd3095d32532db4a5c8ced7f95285c5d990e4575fad38377cf885519430d",
+    "src": "assets/cars/rs3/rotiform.png",
+    "sha256": "c475bd3095d32532db4a5c8ced7f95285c5d990e4575fad38377cf885519430d",
+    "portableSrc": "assets/portable/rs3-rotiform.webp",
+    "portableSha256": "30030292af99399d8e5d75cc557c73258f55346e278b7aed9bd27033f0aeaf4e",
+    "production": "image_gen artwork; FFmpeg WebP distribution encoding at quality 92, no geometry or material editing"
+  },
+  "rs3:work": {
+    "sourceGeneratedOriginal": "exec-a572e58c-5805-4f80-bebf-373dabdaa45f.png",
+    "sourceSha256": "c2af9aed3e77d658e18aebaa6e2906aa89a467bd10edf83557852434372a9ced",
+    "src": "assets/cars/rs3/work.png",
+    "sha256": "c2af9aed3e77d658e18aebaa6e2906aa89a467bd10edf83557852434372a9ced",
+    "portableSrc": "assets/portable/rs3-work.webp",
+    "portableSha256": "456998089004860446bfddd5b09c134897bd09f928a98e85a287364a9953af93",
+    "production": "image_gen artwork; FFmpeg WebP distribution encoding at quality 92, no geometry or material editing"
+  },
+  "rs3:tyre:sport": {
+    "sourceGeneratedOriginal": "exec-634fd2a2-9956-4aee-954d-1aec4ba030b7.png",
+    "sourceSha256": "54a6f56e637069e18b1257c114154e79dce5726be3193b54886f585012819972",
+    "src": "assets/upgrades/rs3/tyre-sport.png",
+    "sha256": "54a6f56e637069e18b1257c114154e79dce5726be3193b54886f585012819972",
+    "portableSrc": "assets/portable/rs3-tyre-sport.webp",
+    "portableSha256": "567ee343a91fe839c5651ed8c53535e1fe791123a8283ed99e1e8024b08574d1",
+    "production": "image_gen artwork; FFmpeg WebP distribution encoding at quality 92, no geometry or material editing"
+  },
+  "rs3:tyre:track": {
+    "sourceGeneratedOriginal": "exec-581c4073-0a4e-45aa-8613-6550e31bddf6.png",
+    "sourceSha256": "d6965ec4d8feb778f9739600c8ed49fc5f7de8165c34ccebd58d1fa6cf15e942",
+    "src": "assets/upgrades/rs3/tyre-track.png",
+    "sha256": "d6965ec4d8feb778f9739600c8ed49fc5f7de8165c34ccebd58d1fa6cf15e942",
+    "portableSrc": "assets/portable/rs3-tyre-track.webp",
+    "portableSha256": "dc96e2400b18c939aaa7fa501e97e11832c993e296db0b381896bf6f6770ee06",
+    "production": "image_gen artwork; FFmpeg WebP distribution encoding at quality 92, no geometry or material editing"
+  },
+  "rs3:body:street": {
+    "sourceGeneratedOriginal": "exec-80db9e5d-2195-4041-aafb-06908fcc9fdd.png",
+    "sourceSha256": "8284a774de577fd707b5ea2105b8fe8e5f0d6ff0a593be720094f415e43960af",
+    "src": "assets/upgrades/rs3/body-street.png",
+    "sha256": "8284a774de577fd707b5ea2105b8fe8e5f0d6ff0a593be720094f415e43960af",
+    "portableSrc": "assets/portable/rs3-body-street.webp",
+    "portableSha256": "91faba5cdfe804d6ec01a71f2cc7c6344a0028404e76cf2b48f62686406a989f",
+    "production": "image_gen artwork; FFmpeg WebP distribution encoding at quality 92, no geometry or material editing"
+  },
+  "rs3:body:track": {
+    "sourceGeneratedOriginal": "exec-64dd0b34-c3a0-4b76-b442-ce97809ec620.png",
+    "sourceSha256": "bdca451a99e0833b0119a63e22d05f0bd8f95f4d7f6a62b329713bc7bacc346c",
+    "src": "assets/upgrades/rs3/body-track.png",
+    "sha256": "bdca451a99e0833b0119a63e22d05f0bd8f95f4d7f6a62b329713bc7bacc346c",
+    "portableSrc": "assets/portable/rs3-body-track.webp",
+    "portableSha256": "3203edb70425746d28149d3683ef0022817178170f66b7b25b994b26a1122297",
+    "production": "image_gen artwork; FFmpeg WebP distribution encoding at quality 92, no geometry or material editing"
+  },
+  "sti:cabin:heritage": {
+    "sourceGeneratedOriginal": "exec-9008c370-25be-4197-9920-b2dbd8101e9a.png",
+    "sourceSha256": "b3150271fa975dcd2aed935473f011fedfefcee991e9684fbcf6d50d9bf89bce",
+    "src": "assets/interiors/sti/heritage.webp",
+    "sha256": "83d72459a4bee9b12eeb7116956ba7fe3ff96439bcfbba1c6a52ade9c69710a9",
+    "production": "image_gen artwork; FFmpeg WebP distribution encoding at quality 92, no geometry or material editing"
+  },
+  "sti:cabin:track": {
+    "sourceGeneratedOriginal": "exec-ad8d3fee-a19b-4619-8b3b-94274a1172c9.png",
+    "sourceSha256": "6594507f82852b18dd640e79be47c3834ae51b34c3b9795e0bdb26fc8a3c1797",
+    "src": "assets/interiors/sti/track.webp",
+    "sha256": "4b2557c00cbf4b2add36a01d6efb5c1c656411cd812b175552f083485c602660",
+    "production": "image_gen artwork; FFmpeg WebP distribution encoding at quality 92, no geometry or material editing"
+  },
+  "porsche:cabin:heritage": {
+    "sourceGeneratedOriginal": "exec-085b1364-d28a-4ea0-8f1d-f46be07bf52d.png",
+    "sourceSha256": "e35681d5033cd5450a8da06130ef28d88b7256da9f78519c57045a89ac53ebc5",
+    "src": "assets/interiors/porsche/heritage.webp",
+    "sha256": "dbf0483f9caed275d74f595c5a749038c0575dfb4d2233d52cbe76e2ba94aebd",
+    "production": "image_gen artwork; FFmpeg WebP distribution encoding at quality 92, no geometry or material editing"
+  },
+  "porsche:cabin:track": {
+    "sourceGeneratedOriginal": "exec-1cee6d13-8a77-4c89-95e6-c1a2457a52c6.png",
+    "sourceSha256": "591db3bd06f7dfaa1ccd5fd4df5436c8a2c4264837d1d42deb72292601755164",
+    "src": "assets/interiors/porsche/track.webp",
+    "sha256": "1a3f6f40aa6147de4cbfc78bb255a2f4fe22576776723116a7565820d3e87c3e",
+    "production": "image_gen artwork; FFmpeg WebP distribution encoding at quality 92, no geometry or material editing"
+  },
+  "gt86:cabin:heritage": {
+    "sourceGeneratedOriginal": "exec-e884d151-1043-4822-9734-04d4f48f144b.png",
+    "sourceSha256": "60f52ae51ed2611f585366f8cf610abc375e50707ba6cbf2ac978a70cae28156",
+    "src": "assets/interiors/gt86/heritage.webp",
+    "sha256": "3a6dcdb92a8810e56ffff43211d30f7f2691ce0709ca117c0d82f348e97bb898",
+    "production": "image_gen artwork; FFmpeg WebP distribution encoding at quality 92, no geometry or material editing"
+  },
+  "gt86:cabin:track": {
+    "sourceGeneratedOriginal": "exec-8ccea972-ac51-4352-8bc5-d943881cf133.png",
+    "sourceSha256": "eed488c7bea4316b4aae75b3cf66f5e31a1606e73d078e2566ad84ad6c0448ec",
+    "src": "assets/interiors/gt86/track.webp",
+    "sha256": "31648e18ba6123c31f9feb04d409c5d7b6505e693a15c4e158ca71be4542b7a9",
+    "production": "image_gen artwork; FFmpeg WebP distribution encoding at quality 92, no geometry or material editing"
+  },
+  "m3:cabin:heritage": {
+    "sourceGeneratedOriginal": "exec-3b288a8c-f697-4865-8bda-5da7ccbf0d29.png",
+    "sourceSha256": "3aa2ad432cda833d5fd266af12acc830f261a90b99c26e7aa280e1e36b92670c",
+    "src": "assets/interiors/m3/heritage.webp",
+    "sha256": "25f599b846c099b03992504e14159db434c8bf4a93183ac44691f410bb4fd81d",
+    "production": "image_gen artwork; FFmpeg WebP distribution encoding at quality 92, no geometry or material editing"
+  },
+  "m3:cabin:track": {
+    "sourceGeneratedOriginal": "exec-5c826490-34e4-4160-9217-1471262829ea.png",
+    "sourceSha256": "4c00b3403d9b392ae235e45cf8dcde79d6d6e1d5d96b18de67b47038731767e3",
+    "src": "assets/interiors/m3/track.webp",
+    "sha256": "4cf5382d6cc9337370585c0f3ba19916e9bd7936be231e100b9977902d5536fe",
+    "production": "image_gen artwork; FFmpeg WebP distribution encoding at quality 92, no geometry or material editing"
+  },
+  "golf:cabin:heritage": {
+    "sourceGeneratedOriginal": "exec-7f9c72a0-5aa3-470e-bdc3-47d67f8f5179.png",
+    "sourceSha256": "56c1caeb300379118c624a4919bcb854d5114c77d345e1a2b8d3b638d241a093",
+    "src": "assets/interiors/golf/heritage.webp",
+    "sha256": "97ed6b234ec4b4f7344e6ad9d339557955eb1c0b2975d3083fcede6baddeccd2",
+    "production": "image_gen artwork; FFmpeg WebP distribution encoding at quality 92, no geometry or material editing"
+  },
+  "golf:cabin:track": {
+    "sourceGeneratedOriginal": "exec-0c8f372e-9853-4c05-8528-e5649030ea20.png",
+    "sourceSha256": "e436185a95e3a7c92bf7314fbda3b6bf6a5f93aa1e261b31601ce5188495026b",
+    "src": "assets/interiors/golf/track.webp",
+    "sha256": "819128ed4ca48c16830f7a62af11b22fa8676d0e6e3cc100c1183150ee3ab023",
+    "production": "image_gen artwork; FFmpeg WebP distribution encoding at quality 92, no geometry or material editing"
+  },
+  "rs3:cabin:stock": {
+    "sourceGeneratedOriginal": "exec-070f4826-8345-4bc7-a245-c3b1a0a6680e.png",
+    "sourceSha256": "5e20f8db69f7541efead364d575889fdfb9cad065456e2c302534d07862770ae",
+    "src": "assets/interiors/rs3/stock.webp",
+    "sha256": "4e3db034d506f8cfbf12099d4026633684e6811ec2527060bae1b9e0d9ed5f53",
+    "production": "image_gen artwork; FFmpeg WebP distribution encoding at quality 92, no geometry or material editing"
+  },
+  "rs3:cabin:club": {
+    "sourceGeneratedOriginal": "exec-d1c75fae-7434-4c61-b1da-a9b80fae99cf.png",
+    "sourceSha256": "7e3320bf49f6191d4e230895a7a9e917a11ce1541da65bf965da2cbffe44579e",
+    "src": "assets/interiors/rs3/club.webp",
+    "sha256": "4bd750f083dbeb97b87ce0f89c5451ac811d0a1fb3bad11241e2721cb49134ad",
+    "production": "image_gen artwork; FFmpeg WebP distribution encoding at quality 92, no geometry or material editing"
+  },
+  "rs3:cabin:heritage": {
+    "sourceGeneratedOriginal": "exec-745e080e-881c-48ab-9130-bc8c3094bd5c.png",
+    "sourceSha256": "b09b7a46b6239d120588ce55fa4d01c62c0d966f51287bb27e39b9f8192cbed8",
+    "src": "assets/interiors/rs3/heritage.webp",
+    "sha256": "fbc43989b7131e64cbdcd5b54a018b3855323254ae694f445b0908bdeb7f38bc",
+    "production": "image_gen artwork; FFmpeg WebP distribution encoding at quality 92, no geometry or material editing"
+  },
+  "rs3:cabin:track": {
+    "sourceGeneratedOriginal": "exec-3f0b5578-487b-45d3-ba47-c3bdf6bb3f1c.png",
+    "sourceSha256": "b24ec1fb9e1ad61e06e2a2f716465851413d9f913b3b30e4242b5a082c17238a",
+    "src": "assets/interiors/rs3/track.webp",
+    "sha256": "ca19a00ec88a7dd64038a5c57747d5b84b04e94d1504cf965406edd44a45c3c3",
+    "production": "image_gen artwork; FFmpeg WebP distribution encoding at quality 92, no geometry or material editing"
   }
 }

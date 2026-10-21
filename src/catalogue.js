@@ -47,6 +47,13 @@ export const vehicles = freeze([
     brand: "Volkswagen",
     fitmentStatus: "unverified",
   },
+  {
+    id: "rs3",
+    name: "Audi RS3 8Y Sportback",
+    shortName: "RS3",
+    brand: "Audi",
+    fitmentStatus: "unverified",
+  },
 ]);
 
 // Retained for callers that need the default vehicle rather than the active one.

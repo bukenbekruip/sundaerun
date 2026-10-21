@@ -1,0 +1,15 @@
+{
+  "source": "https://github.com/buntine/CarEngines/blob/master/sounds/engine.wav",
+  "repository": "https://github.com/buntine/CarEngines",
+  "author": "buntine (repository author)",
+  "license": "CC0-1.0",
+  "license_file": "public/licenses/CarEngines-CC0.txt",
+  "original_sha256": "8299d3d595fe4c6b2ed9cf73f7d4ead854e7f97470e59178e8ff9a0b15a41645",
+  "usage": "High-frequency mechanical texture residual mixed with per-car combustion synthesis. This shared sample is not an authenticated recording of any of the six featured models.",
+  "processing": "Mono 22050 Hz; high-pass residual, boundary crossfade, DC removal and Uint8 PCM normalization; embedded in engine-texture.js.",
+  "pcm_samples": 39441,
+  "pcm_sha256": "2e2b7f1fdb438aef7c4249fb37116196fae44d14cecb27da97cf9c6509cc1ff6",
+  "rejected_sources": "Unclear-licence VDrift and unlicensed sound-library repos were inspected but not downloaded or used.",
+  "authoring_script": "scripts/prepare-engine-texture.py",
+  "original_file": "reference/audio/cc0-engine.wav"
+}

@@ -1,0 +1,106 @@
+{
+  "status": "passed",
+  "scope": "All ten Audi PNG/WebP distribution pairs. RGB is intentionally lossy; dimensions and every alpha byte are exact.",
+  "assets": [
+    {
+      "key": "rs3:sr-01",
+      "size": [
+        1671,
+        941
+      ],
+      "alpha_identical": true,
+      "png_sha256": "8af964d852424b86741b7e86ee29367ecfdacdf057ac5fec6c27a245103a56ce",
+      "webp_sha256": "00c3d303b5900428b4b9462cb2d3b9b1533970fa9064ae5b77a2ed60cb5390a8"
+    },
+    {
+      "key": "rs3:te37",
+      "size": [
+        1672,
+        941
+      ],
+      "alpha_identical": true,
+      "png_sha256": "e4452cd38280f1b35d5ead6373b00499b296ac6e6aea8d5f1ffa742bc303b598",
+      "webp_sha256": "47b00bfd1b5bbef936a78c200c09dad4a1576ba6a27c6f5b1e9e398237836555"
+    },
+    {
+      "key": "rs3:bbs-lm",
+      "size": [
+        1671,
+        941
+      ],
+      "alpha_identical": true,
+      "png_sha256": "5cf37a772f5963394c51e29b1333ff010092f522ecf5eae02d4e5dffa9be39ea",
+      "webp_sha256": "9f2a1c16afb26a2c8e4ab37db8f8796628f09546d3d74886418753beaaed40ac"
+    },
+    {
+      "key": "rs3:oz",
+      "size": [
+        1671,
+        941
+      ],
+      "alpha_identical": true,
+      "png_sha256": "c8415139e7e8e03b6b870c46836302dfd89618ecece58114a029fc70a6fe2822",
+      "webp_sha256": "b5396af98b7256fad7c1fdfb0e31e8d48813268d1efb15dbb7c804d16adef7d0"
+    },
+    {
+      "key": "rs3:rotiform",
+      "size": [
+        1671,
+        941
+      ],
+      "alpha_identical": true,
+      "png_sha256": "c475bd3095d32532db4a5c8ced7f95285c5d990e4575fad38377cf885519430d",
+      "webp_sha256": "30030292af99399d8e5d75cc557c73258f55346e278b7aed9bd27033f0aeaf4e"
+    },
+    {
+      "key": "rs3:work",
+      "size": [
+        1671,
+        941
+      ],
+      "alpha_identical": true,
+      "png_sha256": "c2af9aed3e77d658e18aebaa6e2906aa89a467bd10edf83557852434372a9ced",
+      "webp_sha256": "456998089004860446bfddd5b09c134897bd09f928a98e85a287364a9953af93"
+    },
+    {
+      "key": "rs3:tyre:sport",
+      "size": [
+        1670,
+        942
+      ],
+      "alpha_identical": true,
+      "png_sha256": "54a6f56e637069e18b1257c114154e79dce5726be3193b54886f585012819972",
+      "webp_sha256": "567ee343a91fe839c5651ed8c53535e1fe791123a8283ed99e1e8024b08574d1"
+    },
+    {
+      "key": "rs3:tyre:track",
+      "size": [
+        1671,
+        941
+      ],
+      "alpha_identical": true,
+      "png_sha256": "d6965ec4d8feb778f9739600c8ed49fc5f7de8165c34ccebd58d1fa6cf15e942",
+      "webp_sha256": "dc96e2400b18c939aaa7fa501e97e11832c993e296db0b381896bf6f6770ee06"
+    },
+    {
+      "key": "rs3:body:street",
+      "size": [
+        1672,
+        941
+      ],
+      "alpha_identical": true,
+      "png_sha256": "8284a774de577fd707b5ea2105b8fe8e5f0d6ff0a593be720094f415e43960af",
+      "webp_sha256": "91faba5cdfe804d6ec01a71f2cc7c6344a0028404e76cf2b48f62686406a989f"
+    },
+    {
+      "key": "rs3:body:track",
+      "size": [
+        1671,
+        941
+      ],
+      "alpha_identical": true,
+      "png_sha256": "bdca451a99e0833b0119a63e22d05f0bd8f95f4d7f6a62b329713bc7bacc346c",
+      "webp_sha256": "3203edb70425746d28149d3683ef0022817178170f66b7b25b994b26a1122297"
+    }
+  ]
+}

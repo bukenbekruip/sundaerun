@@ -29,6 +29,12 @@
       "width": 912,
       "height": 513.2727272727273
     },
+    "rs3": {
+      "left": 422.8327272727272,
+      "top": 174.3,
+      "width": 902.8800000000001,
+      "height": 508.14000000000004
+    },
     "golf": {
       "left": 422.8327272727272,
       "top": 174.3,
@@ -498,6 +504,98 @@
       "rendering": "sparse_registered_additive_carbon_layer",
       "sourceCar": "assets/cars/golf/sr-01.png",
       "sourceGeneratedOriginal": "exec-a10fb0f9-6bed-4410-93a5-54faa3b7d69f.png",
+      "generationMethod": "image_gen sparse, camera-registered additive carbon parts; no original car, painted bumper, glass, wheel or wing layer."
+    },
+    "rs3:tyre:sport": {
+      "src": "assets/upgrades/rs3/tyre-sport.png",
+      "width": 1670,
+      "height": 942,
+      "mode": "RGBA",
+      "bytes": 1603751,
+      "sha256": "54a6f56e637069e18b1257c114154e79dce5726be3193b54886f585012819972",
+      "opaqueBoundsAlpha128": [
+        22,
+        132,
+        1659,
+        835
+      ],
+      "alphaStatistics": {
+        "transparentPixels": 736320,
+        "opaquePixelsAlpha128": 819639,
+        "totalPixels": 1573140
+      },
+      "rendering": "fullcar_source_clipped_to_rubber",
+      "sourceCar": "assets/cars/rs3/sr-01.png",
+      "sourceGeneratedOriginal": "exec-634fd2a2-9956-4aee-954d-1aec4ba030b7.png",
+      "generationMethod": "image_gen registered full-car rubber-material edit; runtime draws only authored rubber annuli and preserves the active rim, painted body and original silhouette alpha."
+    },
+    "rs3:tyre:track": {
+      "src": "assets/upgrades/rs3/tyre-track.png",
+      "width": 1671,
+      "height": 941,
+      "mode": "RGBA",
+      "bytes": 1597276,
+      "sha256": "d6965ec4d8feb778f9739600c8ed49fc5f7de8165c34ccebd58d1fa6cf15e942",
+      "opaqueBoundsAlpha128": [
+        21,
+        132,
+        1658,
+        833
+      ],
+      "alphaStatistics": {
+        "transparentPixels": 737068,
+        "opaquePixelsAlpha128": 820716,
+        "totalPixels": 1572411
+      },
+      "rendering": "fullcar_source_clipped_to_rubber",
+      "sourceCar": "assets/cars/rs3/sr-01.png",
+      "sourceGeneratedOriginal": "exec-581c4073-0a4e-45aa-8613-6550e31bddf6.png",
+      "generationMethod": "image_gen registered full-car rubber-material edit; runtime draws only authored rubber annuli and preserves the active rim, painted body and original silhouette alpha."
+    },
+    "rs3:body:street": {
+      "src": "assets/upgrades/rs3/body-street.png",
+      "width": 1672,
+      "height": 941,
+      "mode": "RGBA",
+      "bytes": 144607,
+      "sha256": "8284a774de577fd707b5ea2105b8fe8e5f0d6ff0a593be720094f415e43960af",
+      "opaqueBoundsAlpha128": [
+        215,
+        635,
+        1659,
+        800
+      ],
+      "alphaStatistics": {
+        "transparentPixels": 1530141,
+        "opaquePixelsAlpha128": 34022,
+        "totalPixels": 1573352
+      },
+      "rendering": "sparse_registered_additive_carbon_layer",
+      "sourceCar": "assets/cars/rs3/sr-01.png",
+      "sourceGeneratedOriginal": "exec-80db9e5d-2195-4041-aafb-06908fcc9fdd.png",
+      "generationMethod": "image_gen sparse, camera-registered additive carbon parts; no original car, painted bumper, glass, wheel or wing layer."
+    },
+    "rs3:body:track": {
+      "src": "assets/upgrades/rs3/body-track.png",
+      "width": 1671,
+      "height": 941,
+      "mode": "RGBA",
+      "bytes": 194429,
+      "sha256": "bdca451a99e0833b0119a63e22d05f0bd8f95f4d7f6a62b329713bc7bacc346c",
+      "opaqueBoundsAlpha128": [
+        201,
+        621,
+        1653,
+        799
+      ],
+      "alphaStatistics": {
+        "transparentPixels": 1513733,
+        "opaquePixelsAlpha128": 48710,
+        "totalPixels": 1572411
+      },
+      "rendering": "sparse_registered_additive_carbon_layer",
+      "sourceCar": "assets/cars/rs3/sr-01.png",
+      "sourceGeneratedOriginal": "exec-64dd0b34-c3a0-4b76-b442-ce97809ec620.png",
       "generationMethod": "image_gen sparse, camera-registered additive carbon parts; no original car, painted bumper, glass, wheel or wing layer."
     }
   }

@@ -29,6 +29,12 @@
       "width": 912,
       "height": 513.2727272727273
     },
+    "rs3": {
+      "left": 422.8327272727272,
+      "top": 174.3,
+      "width": 902.8800000000001,
+      "height": 508.14000000000004
+    },
     "golf": {
       "left": 422.8327272727272,
       "top": 174.3,
@@ -457,6 +463,90 @@
         133,
         1636,
         831
+      ]
+    },
+    "rs3:sr-01": {
+      "src": "assets/cars/rs3/sr-01.png",
+      "width": 1671,
+      "height": 941,
+      "mode": "RGBA",
+      "bytes": 1714200,
+      "sha256": "8af964d852424b86741b7e86ee29367ecfdacdf057ac5fec6c27a245103a56ce",
+      "opaqueBoundsAlpha128": [
+        22,
+        135,
+        1658,
+        833
+      ]
+    },
+    "rs3:te37": {
+      "src": "assets/cars/rs3/te37.png",
+      "width": 1672,
+      "height": 941,
+      "mode": "RGBA",
+      "bytes": 1598783,
+      "sha256": "e4452cd38280f1b35d5ead6373b00499b296ac6e6aea8d5f1ffa742bc303b598",
+      "opaqueBoundsAlpha128": [
+        21,
+        133,
+        1658,
+        833
+      ]
+    },
+    "rs3:bbs-lm": {
+      "src": "assets/cars/rs3/bbs-lm.png",
+      "width": 1671,
+      "height": 941,
+      "mode": "RGBA",
+      "bytes": 1629643,
+      "sha256": "5cf37a772f5963394c51e29b1333ff010092f522ecf5eae02d4e5dffa9be39ea",
+      "opaqueBoundsAlpha128": [
+        21,
+        132,
+        1658,
+        834
+      ]
+    },
+    "rs3:oz": {
+      "src": "assets/cars/rs3/oz.png",
+      "width": 1671,
+      "height": 941,
+      "mode": "RGBA",
+      "bytes": 1604177,
+      "sha256": "c8415139e7e8e03b6b870c46836302dfd89618ecece58114a029fc70a6fe2822",
+      "opaqueBoundsAlpha128": [
+        22,
+        133,
+        1658,
+        832
+      ]
+    },
+    "rs3:rotiform": {
+      "src": "assets/cars/rs3/rotiform.png",
+      "width": 1671,
+      "height": 941,
+      "mode": "RGBA",
+      "bytes": 1588726,
+      "sha256": "c475bd3095d32532db4a5c8ced7f95285c5d990e4575fad38377cf885519430d",
+      "opaqueBoundsAlpha128": [
+        21,
+        132,
+        1658,
+        833
+      ]
+    },
+    "rs3:work": {
+      "src": "assets/cars/rs3/work.png",
+      "width": 1671,
+      "height": 941,
+      "mode": "RGBA",
+      "bytes": 1602872,
+      "sha256": "c2af9aed3e77d658e18aebaa6e2906aa89a467bd10edf83557852434372a9ced",
+      "opaqueBoundsAlpha128": [
+        21,
+        132,
+        1658,
+        833
       ]
     }
   }

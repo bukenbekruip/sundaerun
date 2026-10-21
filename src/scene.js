@@ -19,6 +19,12 @@ export const CAR_TRANSFORMS = Object.freeze({
     ...CAR_TRANSFORM,
     top: CAR_TRANSFORM.top - 12 * (6 / 11),
   }),
+  rs3: Object.freeze({
+    left: CAR_TRANSFORM.left + (CAR_TRANSFORM.width - STAGE.width * 0.54) / 2,
+    top: 174.3,
+    width: STAGE.width * 0.54,
+    height: STAGE.height * 0.54,
+  }),
   golf: Object.freeze({
     left: CAR_TRANSFORM.left + (CAR_TRANSFORM.width - STAGE.width * 0.54) / 2,
     top: 174.3,
@@ -41,7 +47,7 @@ export const variants = Object.freeze(
                 : `assets/cars/${vehicle}/${wheel}.png`,
             ready: true,
             suspensionReady: true,
-            ...(["m3", "golf"].includes(vehicle)
+            ...(["m3", "golf", "rs3"].includes(vehicle)
               ? { portableSrc: `assets/portable/${vehicle}-${wheel}.webp` }
               : {}),
           }),
@@ -61,7 +67,7 @@ export const upgradeVariants = Object.freeze(
           Object.freeze({
             src: `assets/upgrades/${vehicle}/tyre-${id}.png`,
             ready: true,
-            ...(["m3", "golf"].includes(vehicle)
+            ...(["m3", "golf", "rs3"].includes(vehicle)
               ? { portableSrc: `assets/portable/${vehicle}-tyre-${id}.webp` }
               : {}),
           }),
@@ -71,7 +77,7 @@ export const upgradeVariants = Object.freeze(
           Object.freeze({
             src: `assets/upgrades/${vehicle}/body-${id}.png`,
             ready: true,
-            ...(["m3", "golf"].includes(vehicle)
+            ...(["m3", "golf", "rs3"].includes(vehicle)
               ? { portableSrc: `assets/portable/${vehicle}-body-${id}.webp` }
               : {}),
           }),

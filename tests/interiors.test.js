@@ -17,9 +17,13 @@ import {
   encodeBuild,
   claimChallenge,
 } from "../src/club.js";
-import { getInteriorVariant, normaliseInteriors } from "../src/interiors.js";
+import {
+  getInteriorVariant,
+  normaliseInteriors,
+  interiorPackages,
+} from "../src/interiors.js";
 
-test("every model has two distinct, real, checksummed cabin assets", async () => {
+test("every model has four distinct, real, checksummed cabin assets", async () => {
   const sources = JSON.parse(
     await readFile(
       new URL("../public/assets/expansion-sources.json", import.meta.url),
@@ -28,7 +32,7 @@ test("every model has two distinct, real, checksummed cabin assets", async () =>
   );
   const hashes = new Set();
   for (const vehicle of vehicles)
-    for (const id of ["stock", "club"]) {
+    for (const id of interiorPackages.map((p) => p.id)) {
       const v = getInteriorVariant(vehicle.id, id);
       assert.equal(v.ready, true);
       const bytes = await readFile(
@@ -44,7 +48,7 @@ test("every model has two distinct, real, checksummed cabin assets", async () =>
       );
       hashes.add(sha);
     }
-  assert.equal(hashes.size, 10);
+  assert.equal(hashes.size, 24);
 });
 
 test("legacy three-car saves retain credits, builds and earned rewards while new cars/cabins start unowned", () => {

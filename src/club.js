@@ -4,7 +4,12 @@ import {
   selectionKinds,
   vehicles,
 } from "./catalogue.js";
-import { getInteriorPackage, normaliseInteriors } from "./interiors.js";
+import {
+  getInteriorPackage,
+  normaliseInteriors,
+  getSteeringOption,
+  normaliseSteering,
+} from "./interiors.js";
 
 export const MAX_SAVED_BUILDS = 24;
 export const STOCK_SPEC = Object.freeze({
@@ -137,7 +142,8 @@ export function validateSharedBuild(value) {
     Object.keys(STOCK_SPEC).some(
       (k) => !getPerformancePart(k, value.spec[k]),
     ) ||
-    (value.interior !== undefined && !getInteriorPackage(value.interior))
+    (value.interior !== undefined && !getInteriorPackage(value.interior)) ||
+    (value.steering !== undefined && !getSteeringOption(value.steering))
   ) {
     throw new RangeError("This is not a supported Sundae Run build.");
   }
@@ -149,6 +155,7 @@ export function validateSharedBuild(value) {
     selection: cleanSelection(value.selection),
     spec: cleanSpec(value.spec),
     interior: value.interior ?? "stock",
+    steering: value.steering ?? "stock",
   };
 }
 
@@ -263,6 +270,7 @@ export function normaliseClub(input) {
   return {
     builds,
     interiors: normaliseInteriors(v.interiors),
+    steering: normaliseSteering(v.steering),
     completed: [
       ...new Set(
         Array.isArray(v.completed)
@@ -371,6 +379,27 @@ export function fitInterior(state, packageId) {
   };
 }
 
+/** Independent steering purchase; changing cabins never changes its ownership. */
+export function fitSteering(state, optionId) {
+  const product = getSteeringOption(optionId);
+  if (!product) throw new RangeError("Unknown steering wheel option.");
+  const club = normaliseClub(state.club),
+    car = club.steering[state.vehicle];
+  if (!car) throw new RangeError("Unknown vehicle.");
+  if (car.fitted === optionId)
+    return { state, status: "already-fitted", charged: 0 };
+  const charge = car.owned.includes(optionId) ? 0 : product.price;
+  if (charge > state.balance)
+    return { state, status: "insufficient-funds", charged: 0 };
+  car.fitted = optionId;
+  if (product.price && !car.owned.includes(optionId)) car.owned.push(optionId);
+  return {
+    state: { ...state, balance: state.balance - charge, club },
+    status: "applied",
+    charged: charge,
+  };
+}
+
 export function saveShowBuild(state, name, id = crypto.randomUUID()) {
   const club = normaliseClub(state.club);
   const car = state.garage[state.vehicle];
@@ -392,9 +421,10 @@ export function saveShowBuild(state, name, id = crypto.randomUUID()) {
     selection: car.applied,
     spec: club.performance[state.vehicle].fitted,
     interior: club.interiors[state.vehicle].fitted,
+    steering: club.steering[state.vehicle].fitted,
   });
   const fingerprint = (b) =>
-    JSON.stringify([b.vehicle, b.selection, b.spec, b.interior]);
+    JSON.stringify([b.vehicle, b.selection, b.spec, b.interior, b.steering]);
   const existing = club.builds.find(
     (b) => fingerprint(b) === fingerprint(snapshot),
   );

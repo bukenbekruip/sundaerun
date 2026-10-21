@@ -12,6 +12,7 @@ import {
   encodeBuild,
   fitPerformance,
   fitInterior,
+  fitSteering,
   getPerformancePart,
   MAX_SAVED_BUILDS,
   normaliseClub,
@@ -25,8 +26,11 @@ import {
   getInteriorPackage,
   getInteriorVariant,
   interiorPackages,
+  steeringOptions,
+  getSteeringOption,
 } from "./interiors.js";
 import { assetUrl } from "./scene.js";
+import { renderSteering, steeringGeometry } from "./interior-renderer.js";
 
 const el = (tag, cls, text) => {
   const node = document.createElement(tag);
@@ -58,6 +62,8 @@ export function mountClub({ getState, setState, notify, sceneReady, engine }) {
     deleted = null,
     imported = null;
   let interiorPreview = null;
+  let steeringPreview = null;
+  let interiorSection = "cabin";
   let disposeSoundControls = () => {};
   const photoCache = new Map();
   const status = (text) => {
@@ -386,22 +392,62 @@ export function mountClub({ getState, setState, notify, sceneReady, engine }) {
 
   function renderInterior() {
     const state = getState(),
-      cabin = normaliseClub(state.club).interiors[state.vehicle];
+      cabin = normaliseClub(state.club).interiors[state.vehicle],
+      steering = normaliseClub(state.club).steering[state.vehicle];
     const selected = getInteriorPackage(interiorPreview)
       ? interiorPreview
       : cabin.fitted;
     interiorPreview = selected;
+    const wheel = getSteeringOption(steeringPreview)?.id ?? steering.fitted;
+    steeringPreview = wheel;
     content.append(
       el(
         "div",
         "club-intro",
-        "Step inside your car. Preview either cabin for free, then fit a complete interior package using garage credits. Each model keeps its own cabin and purchases.",
+        "Choose a cabin package and a steering wheel finish independently. Previews are free; Fit uses garage credits. Each model keeps its own purchases.",
       ),
     );
+    const sectionNav = el("nav", "interior-section-nav");
+    sectionNav.setAttribute("aria-label", "Interior modification types");
+    for (const [id, label] of [
+      ["cabin", "Cabin packages"],
+      ["steering", "Steering wheel"],
+    ]) {
+      const choice = button(label, () => {
+        interiorSection = id;
+        render();
+        dialog.scrollTop = 0;
+        dialog
+          .querySelector(`[data-interior-section="${id}"]`)
+          .focus({ preventScroll: true });
+      });
+      choice.dataset.interiorSection = id;
+      choice.setAttribute("aria-pressed", String(interiorSection === id));
+      sectionNav.append(choice);
+    }
+    content.append(sectionNav);
     const preview = el("div", "interior-preview"),
       image = el("img");
-    image.src = assetUrl(getInteriorVariant(state.vehicle, selected).src);
-    image.alt = `${getVehicle(state.vehicle).name} — ${getInteriorPackage(selected).name}, left-hand-drive cabin concept`;
+    const baseImage = new Image();
+    const request = photoRequest;
+    baseImage.addEventListener("load", () => {
+      if (request !== photoRequest || !dialog.open) return;
+      try {
+        image.src =
+          wheel === "stock"
+            ? baseImage.src
+            : renderSteering(baseImage, state.vehicle, wheel).toDataURL(
+                "image/png",
+              );
+      } catch {
+        image.dispatchEvent(new Event("error"));
+      }
+    });
+    baseImage.addEventListener("error", () =>
+      image.dispatchEvent(new Event("error")),
+    );
+    baseImage.src = assetUrl(getInteriorVariant(state.vehicle, selected).src);
+    image.alt = `${getVehicle(state.vehicle).name} — ${getInteriorPackage(selected).name}, left-hand-drive cabin concept, ${getSteeringOption(wheel).name}`;
     const notice = el("p", "interior-loading", "Loading cabin…");
     let ready = false;
     const controls = el("div", "interior-options");
@@ -459,6 +505,72 @@ export function mountClub({ getState, setState, notify, sceneReady, engine }) {
       choice.setAttribute("aria-pressed", String(product.id === selected));
       controls.append(choice);
     }
+    const wheelSection = el("section", "steering-options");
+    wheelSection.setAttribute("aria-label", "Steering wheel options");
+    wheelSection.append(
+      el("h3", "", "Steering wheel"),
+      el(
+        "p",
+        "club-fineprint",
+        "Choose a separate rim retrim. The original hub, controls and airbag illustration are retained.",
+      ),
+    );
+    const closeup = el("div", "steering-closeup"),
+      closeImage = el("img");
+    closeImage.alt = `${getVehicle(state.vehicle).name} — ${getSteeringOption(wheel).name}, detail`;
+    const centre = steeringGeometry[state.vehicle];
+    closeImage.style.left = `${(-(centre.cx - 240) / 480) * 100}%`;
+    closeImage.style.top = `${(-(centre.cy - 240) / 480) * 100}%`;
+    image.addEventListener("load", () => {
+      closeImage.src = image.src;
+    });
+    closeup.append(closeImage);
+    wheelSection.append(closeup);
+    const wheelChoices = el("div", "interior-options");
+    for (const option of steeringOptions) {
+      const choice = button(option.name, () => {
+        steeringPreview = option.id;
+        render();
+      });
+      choice.dataset.steering = option.id;
+      choice.setAttribute("aria-pressed", String(wheel === option.id));
+      wheelChoices.append(choice);
+    }
+    const wheelProduct = getSteeringOption(wheel),
+      wheelOwned = wheel === "stock" || steering.owned.includes(wheel),
+      wheelCharge = wheelOwned ? 0 : wheelProduct.price;
+    const fitWheel = button(
+      wheel === steering.fitted
+        ? "Fitted ✓"
+        : wheelCharge > state.balance
+          ? "Not enough credits"
+          : wheelCharge
+            ? `Fit steering · ${money(wheelCharge)}`
+            : "Fit owned steering",
+      () => {
+        if (!ready) return;
+        const result = fitSteering(getState(), wheel);
+        commit(result.state);
+        status(
+          `${wheelProduct.name} fitted. ${result.charged ? money(result.charged) + " used." : "No credits used."}`,
+        );
+      },
+      "primary-button",
+    );
+    fitWheel.dataset.fitSteering = wheel;
+    fitWheel.disabled = true;
+    image.addEventListener("load", () => {
+      fitWheel.disabled =
+        !ready || wheel === steering.fitted || wheelCharge > state.balance;
+    });
+    image.addEventListener("error", () => {
+      fitWheel.disabled = true;
+    });
+    wheelSection.append(
+      wheelChoices,
+      el("p", "", wheelProduct.description),
+      fitWheel,
+    );
     preview.append(image, notice);
     const details = el("div", "interior-details");
     details.append(
@@ -475,6 +587,7 @@ export function mountClub({ getState, setState, notify, sceneReady, engine }) {
       fit,
       button("Restore fitted preview", () => {
         interiorPreview = cabin.fitted;
+        steeringPreview = steering.fitted;
         render();
       }),
       button("Create cabin show card", async () => {
@@ -485,6 +598,7 @@ export function mountClub({ getState, setState, notify, sceneReady, engine }) {
             vehicle: state.vehicle,
             name: getVehicle(state.vehicle).shortName + " / my cabin",
             interior: cabin.fitted,
+            steering: steering.fitted,
           });
           if (request !== photoRequest || !dialog.open) return;
           const img = el("img", "club-show-card");
@@ -507,7 +621,12 @@ export function mountClub({ getState, setState, notify, sceneReady, engine }) {
         }
       }),
     );
-    content.append(preview, controls, details, actions);
+    content.append(preview);
+    if (interiorSection === "cabin") content.append(controls, details, actions);
+    else {
+      fit.remove();
+      content.append(wheelSection, actions);
+    }
   }
 
   function previewBuild(build) {
@@ -677,6 +796,7 @@ export function mountClub({ getState, setState, notify, sceneReady, engine }) {
       parts.append(el("li", "", getPerformancePart(kind, id).name));
     parts.append(
       el("li", "", getInteriorPackage(build.interior ?? "stock").name),
+      el("li", "", getSteeringOption(build.steering ?? "stock").name),
     );
     content.replaceChildren(
       el("span", "eyebrow", getVehicle(build.vehicle).name),
@@ -685,7 +805,7 @@ export function mountClub({ getState, setState, notify, sceneReady, engine }) {
       el(
         "p",
         "club-intro",
-        "Exterior parts will be previewed for free. Fit them using your own garage credits. Performance and cabin choices are listed as a build recipe; fit those separately in their sections.",
+        "Exterior parts will be previewed for free. Fit them using your own garage credits. Performance, cabin and steering choices are listed as a build recipe; fit those separately in their sections.",
       ),
       button(
         "Preview this exterior",
@@ -720,6 +840,8 @@ export function mountClub({ getState, setState, notify, sceneReady, engine }) {
       tab = b.dataset.clubTab;
       deleted = null;
       interiorPreview = null;
+      steeringPreview = null;
+      interiorSection = "cabin";
       status("");
       render();
       dialog.scrollTop = 0;
@@ -749,6 +871,8 @@ export function mountClub({ getState, setState, notify, sceneReady, engine }) {
       engine.cancelPreview();
       tab = nextTab;
       interiorPreview = null;
+      steeringPreview = null;
+      interiorSection = "cabin";
       region.value = normaliseClub(getState().club).region;
       status("");
       render();

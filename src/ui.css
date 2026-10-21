@@ -2689,3 +2689,21 @@ p {
     font-size: 7px;
   }
 }
+
+/* Six models stay visible; phones use two comfortable rows rather than tiny tabs. */
+.vehicle-options {
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+}
+.vehicle-option {
+  font-size: 10px;
+  padding-inline: 2px;
+}
+@media (max-width: 1099px) {
+  .vehicle-options {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .vehicle-option {
+    font-size: 12px;
+    padding-inline: 6px;
+  }
+}

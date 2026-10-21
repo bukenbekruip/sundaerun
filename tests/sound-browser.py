@@ -61,12 +61,12 @@ async def main(args):
    await p.evaluate("window.dispatchEvent(new Event('blur'))");await p.wait_for_timeout(1800)
    check(await rpm()<1500,'Window blur releases held and sustained throttle')
    await shot('sound-desktop.jpg');await close()
-   for car in ['sti','porsche','gt86','m3','golf']:
+   for car in ['sti','porsche','gt86','m3','golf','rs3']:
     await click(f'[data-vehicle={car}]');await ready();await click('[data-garage-section=sound]')
     await expect(p.locator('.engine-panel')).to_have_attribute('data-engine-vehicle',car);await running(True);await audio()
     check(True,car+': changing cars updates the running voice without autoplay or a second AudioContext')
     await close()
-   check(await p.evaluate('__contexts.length')==1,'All five cars share one AudioContext')
+   check(await p.evaluate('__contexts.length')==1,'All six cars share one AudioContext')
    await click('[data-vehicle=sti]');await ready();await click('[data-garage-section=performance]')
    check(await p.locator('.club-performance-family').count()==3,'Performance opens directly with Intake, Exhaust and Calibration groups')
    check(not await p.locator('.performance-sound-details').evaluate('(e)=>e.open'),'Audio controls are expandable so parts are easy to find')

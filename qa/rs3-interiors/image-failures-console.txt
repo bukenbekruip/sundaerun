@@ -1,0 +1,18 @@
+RUN cabin-failure-retry-and-late-load
+PASS Failed cabin image disables purchase without spending
+PASS Cabin retry restores preview and purchase availability
+PASS Late cabin load cannot replace a newer original selection or charge credits
+PASS No uncaught page errors
+PASS No HTTP errors
+PASS No extra portable network requests
+PASS No unexpected console errors
+{
+  "status": "passed",
+  "passed_checks": 7,
+  "cases": [
+    {
+      "name": "cabin-failure-retry-and-late-load",
+      "status": "passed"
+    }
+  ]
+}

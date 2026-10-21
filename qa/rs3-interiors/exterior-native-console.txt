@@ -1,0 +1,27 @@
+RUN new-model-paint-native-matrix
+PASS new-model-paint-native-matrix
+RUN 54-blue-mechanical-builds
+PASS 54-blue-mechanical-builds
+RUN 24-white-black-maximum-builds
+PASS 24-white-black-maximum-builds
+{
+  "status": "passed",
+  "checks": 2853,
+  "cases": [
+    {
+      "name": "new-model-paint-native-matrix",
+      "status": "passed",
+      "assertions_passed": 1992
+    },
+    {
+      "name": "54-blue-mechanical-builds",
+      "status": "passed",
+      "assertions_passed": 674
+    },
+    {
+      "name": "24-white-black-maximum-builds",
+      "status": "passed",
+      "assertions_passed": 186
+    }
+  ]
+}

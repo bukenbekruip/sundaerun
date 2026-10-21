@@ -298,6 +298,14 @@ html = html.replace(
   "</head>",
   `<script type="text/plain" id="inter-font-license">${fontLicense.replace(/<\/script/gi, "<\\/script")}</script>\n</head>`,
 );
+const audioLicense = await readFile(
+  await localFile("licenses/CarEngines-CC0.txt"),
+  "utf8",
+);
+html = html.replace(
+  "</head>",
+  `<script type="text/plain" id="engine-texture-license">Mechanical texture source: buntine/CarEngines (CC0); model-specific sounds are sample-assisted concepts.\n${audioLicense.replace(/<\/script/gi, "<\\/script")}</script>\n</head>`,
+);
 await collectRuntimeImages();
 html = await replaceAsync(html, /<link\b[^>]*>/gi, async ([tag]) => {
   const attributes = readAttributes(tag);

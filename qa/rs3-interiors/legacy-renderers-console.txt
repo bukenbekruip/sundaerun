@@ -1,0 +1,24 @@
+RUN legacy-renderer-nine-pixel-identities
+PASS sti/blue: legacy maximum-upgrade pixels match published renderers exactly
+PASS sti/white: legacy maximum-upgrade pixels match published renderers exactly
+PASS sti/black: legacy maximum-upgrade pixels match published renderers exactly
+PASS porsche/blue: legacy maximum-upgrade pixels match published renderers exactly
+PASS porsche/white: legacy maximum-upgrade pixels match published renderers exactly
+PASS porsche/black: legacy maximum-upgrade pixels match published renderers exactly
+PASS gt86/blue: legacy maximum-upgrade pixels match published renderers exactly
+PASS gt86/white: legacy maximum-upgrade pixels match published renderers exactly
+PASS gt86/black: legacy maximum-upgrade pixels match published renderers exactly
+PASS No uncaught page errors
+PASS No HTTP errors
+PASS No extra portable network requests
+PASS No unexpected console errors
+{
+  "status": "passed",
+  "passed_checks": 13,
+  "cases": [
+    {
+      "name": "legacy-renderer-nine-pixel-identities",
+      "status": "passed"
+    }
+  ]
+}

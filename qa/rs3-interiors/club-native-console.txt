@@ -1,0 +1,89 @@
+PASS Fresh XP starts at a real level 1
+PASS alternate-wheels: exterior preview remains free
+PASS black-paint: exterior preview remains free
+PASS mint-paint: exterior preview remains free
+PASS back-to-blue: exterior preview remains free
+PASS Unfitted default cannot be saved as a purchased build
+PASS Saving a named build preserves credits and fitted parts
+PASS First brief adds exactly 1500 credits in the same save
+PASS Claimed brief updates the real XP HUD
+PASS Panel filter costs 450 credits and fits only the STI
+PASS Refitting included or owned performance parts is free
+PASS Exhaust and tune use separate exact game prices
+PASS A different performance recipe creates a second immutable saved snapshot
+PASS Changing performance does not mutate an earlier saved build
+PASS Saved snapshot renders a full 1600×980 show card
+PASS Native download produces an actual PNG show card
+PASS Share flow exposes a portable SR1 code
+PASS Shared build excludes wallet, purchases, rewards and local identity
+PASS International shopping preference is saved without fabricating offers
+PASS Reload retains builds, performance, exact wallet and one-time reward
+PASS Other cars retain their original performance parts
+PASS Invalid import gives a readable error and changes no credits
+PASS Imported exterior previews for free without granting ownership or rewards
+PASS Imported performance recipe does not grant unpurchased upgrades
+PASS Preference and club data survive normal exterior preview/cancel transactions
+PASS porsche: painted/upgraded saved build exports a PNG through native controls
+PASS gt86: painted/upgraded saved build exports a PNG through native controls
+PASS 1920px builds: dialog stays within viewport
+PASS 1920px builds: no horizontal content overflow
+PASS 1920px briefs: dialog stays within viewport
+PASS 1920px briefs: no horizontal content overflow
+PASS 1920px performance: dialog stays within viewport
+PASS 1920px performance: no horizontal content overflow
+PASS 1920px import: dialog stays within viewport
+PASS 1920px import: no horizontal content overflow
+PASS 1920px garage remains free of horizontal overflow
+PASS 1366px builds: dialog stays within viewport
+PASS 1366px builds: no horizontal content overflow
+PASS 1366px briefs: dialog stays within viewport
+PASS 1366px briefs: no horizontal content overflow
+PASS 1366px performance: dialog stays within viewport
+PASS 1366px performance: no horizontal content overflow
+PASS 1366px import: dialog stays within viewport
+PASS 1366px import: no horizontal content overflow
+PASS 1366px garage remains free of horizontal overflow
+PASS 768px builds: dialog stays within viewport
+PASS 768px builds: no horizontal content overflow
+PASS 768px briefs: dialog stays within viewport
+PASS 768px briefs: no horizontal content overflow
+PASS 768px performance: dialog stays within viewport
+PASS 768px performance: no horizontal content overflow
+PASS 768px import: dialog stays within viewport
+PASS 768px import: no horizontal content overflow
+PASS 768px garage remains free of horizontal overflow
+PASS 390px builds: dialog stays within viewport
+PASS 390px builds: no horizontal content overflow
+PASS 390px briefs: dialog stays within viewport
+PASS 390px briefs: no horizontal content overflow
+PASS 390px performance: dialog stays within viewport
+PASS 390px performance: no horizontal content overflow
+PASS 390px import: dialog stays within viewport
+PASS 390px import: no horizontal content overflow
+PASS 390px garage remains free of horizontal overflow
+PASS 360px builds: dialog stays within viewport
+PASS 360px builds: no horizontal content overflow
+PASS 360px briefs: dialog stays within viewport
+PASS 360px briefs: no horizontal content overflow
+PASS 360px performance: dialog stays within viewport
+PASS 360px performance: no horizontal content overflow
+PASS 360px import: dialog stays within viewport
+PASS 360px import: no horizontal content overflow
+PASS 360px garage remains free of horizontal overflow
+PASS 320px builds: dialog stays within viewport
+PASS 320px builds: no horizontal content overflow
+PASS 320px briefs: dialog stays within viewport
+PASS 320px briefs: no horizontal content overflow
+PASS 320px performance: dialog stays within viewport
+PASS 320px performance: no horizontal content overflow
+PASS 320px import: dialog stays within viewport
+PASS 320px import: no horizontal content overflow
+PASS 320px garage remains free of horizontal overflow
+PASS No uncaught browser exceptions
+PASS No console errors in the main feature flow
+PASS No HTTP failures in the main feature flow
+PASS Normal build does not use the offline interception path
+{
+  "status": "passed",
+  "passed_checks": 85
+}

@@ -1,0 +1,81 @@
+
+> sundae-run-sti-customisation@1.0.0 test
+> node --test tests/*.test.js
+
+✔ default quote is itemised game credits and previewing is free (7.594475ms)
+✔ Apply charges the default 3700 once and repeats cannot charge again (1.755752ms)
+✔ owned parts can be fitted again for free while only new parts are charged (4.450583ms)
+✔ insufficient funds leave the applied look, purchases and balance unchanged (1.585252ms)
+✔ cancel restores applied look and reload does not fit an uncommitted preview (3.950731ms)
+✔ malformed or unsupported stored data recovers to a usable initial state (4.981585ms)
+✔ unknown product IDs and categories cannot enter preview state (1.828218ms)
+✔ concept products have no fabricated merchant destinations or fitment claims (0.462722ms)
+✔ merchant links require HTTPS, expose sponsorship, and keep real prices separate (1.220721ms)
+✔ only a registered vehicle/wheel render enables the supported paint renderer (1.28231ms)
+✔ catalogue exposes the six requested vehicles, six concepts and twelve paints (0.712051ms)
+✔ each car remembers its own fitted build and discards unfinished previews when switching (4.11011ms)
+✔ ownership belongs to each vehicle while the credit balance is shared (10.139952ms)
+✔ canonical garage persistence restores all fitted cars without saving a free preview (1.879456ms)
+✔ v2 migration keeps old credits, STI purchases and fitted parts without transferring ownership to new cars (1.459692ms)
+✔ derived active-car aliases cannot overwrite the garage's saved source of truth (0.806665ms)
+✔ upgrade catalogue provides three options per category with included baselines (0.62352ms)
+✔ all five parts charge once, while returning to included parts is free and changes the fitted build (1.751597ms)
+✔ upgrade ownership is typed and per car; insufficient funds never partially apply a build (3.355564ms)
+✔ v3 migration retains every car and credit balance and supplies free included upgrades (3.683443ms)
+✔ five-part previews cancel, switch and reload without changing fitted upgrades or credits (2.646875ms)
+✔ upgrade previews require the correct vehicle assets and verified suspension support (0.90159ms)
+✔ a named build snapshots fitted appearance and performance, never an unpaid preview (12.56678ms)
+✔ repeat saves rename a build without farming collection entries; removal is independent of rewards (3.736507ms)
+✔ brief rewards are atomic, one-time per car and persist above the starting balance (5.979927ms)
+✔ performance parts charge once per vehicle, refit free, reject insufficient funds and preserve exterior previews (2.946568ms)
+✔ a daily build needs fitted performance and matching saved exterior, not current previews (3.626663ms)
+✔ build codes round-trip Unicode safely and transfer neither ownership nor reward state (1.897458ms)
+✔ club normalisation safely migrates older saves and excludes unknown receipts, malformed builds and duplicate rewards (1.834238ms)
+✔ all six voices produce distinct bounded, centred and repeatable engine loops (528.217472ms)
+✔ every performance recipe changes its audible parameters without changing its car voice (1.078931ms)
+✔ tunes change the rev envelope; RPM stays bounded and settles back to idle (1.083737ms)
+✔ unknown sound recipes safely recover to an included voice and stock components (0.90619ms)
+✔ every model has four distinct, real, checksummed cabin assets (39.239681ms)
+✔ legacy three-car saves retain credits, builds and earned rewards while new cars/cabins start unowned (5.866111ms)
+✔ cabin fitting is an atomic per-car purchase and owned/stock refits are free (3.094419ms)
+✔ saved cabins are immutable recipes, count for briefs and survive serialisation (5.572331ms)
+✔ old SR1 recipes default to stock; new codes list a cabin without granting ownership (2.599986ms)
+✔ enabled car variants resolve to the reviewed transparent artwork (173.889846ms)
+✔ each complete car has one uniform transform and all 432 baseline appearances have artwork (6.551957ms)
+✔ all twenty-four upgrades retain reviewed bytes, actual transparency and registered camera bounds (1546.05396ms)
+✔ all 11,664 six-car exterior configurations have explicit preview support (114.420431ms)
+✔ original reference and source artwork remains byte-identical to the handover (38.401891ms)
+✔ portable scanner accepts import property names while rejecting every actual module-loading syntax (17.124389ms)
+✖ steering purchases are atomic, per-car and independent of all four cabin packages (11.77973ms)
+✔ legacy saves retain every purchase and migrate steering to free factory defaults (2.646955ms)
+✔ saved builds and sharing snapshot the steering wheel without granting ownership on import (3.882419ms)
+✔ the embedded mechanical texture has a retained CC0 source and reproducible PCM fingerprint (1.697ms)
+ℹ tests 48
+ℹ suites 0
+ℹ pass 47
+ℹ fail 1
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 2150.862507
+
+✖ failing tests:
+
+test at tests/steering.test.js:11:1
+✖ steering purchases are atomic, per-car and independent of all four cabin packages (11.77973ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  0 !== 1600
+  
+      at TestContext.<anonymous> (file:///workspace/sundae-run/tests/steering.test.js:20:44)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.start (node:internal/test_runner/test:1242:17)
+      at startSubtestAfterBootstrap (node:internal/test_runner/harness:387:17) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 0,
+    expected: 1600,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }

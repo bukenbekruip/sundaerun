@@ -1,0 +1,13 @@
+RUN new-model-paint-native-matrix
+PASS new-model-paint-native-matrix
+{
+  "status": "passed",
+  "checks": 1993,
+  "cases": [
+    {
+      "name": "new-model-paint-native-matrix",
+      "status": "passed",
+      "assertions_passed": 1992
+    }
+  ]
+}

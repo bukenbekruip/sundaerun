@@ -19,7 +19,7 @@ from playwright.async_api import async_playwright, expect
 
 PROJECT = Path(__file__).resolve().parents[1]
 VEHICLES = ('sti', 'porsche', 'gt86')
-ALL_VEHICLES = (*VEHICLES, 'm3', 'golf')
+ALL_VEHICLES = (*VEHICLES, 'm3', 'golf', 'rs3')
 WHEELS = ('sr-01', 'te37', 'bbs-lm', 'oz', 'rotiform', 'work')
 PAINTS = ('blue', 'black', 'mint', 'white', 'silver', 'graphite', 'red', 'orange', 'purple', 'pink', 'yellow', 'teal')
 PRICES = dict(zip(WHEELS, (2500, 2800, 2800, 2800, 2400, 2600)))
@@ -297,7 +297,7 @@ class BrowserSuite:
     async def variants_and_controls(self):
         async with self.page() as (_,page,events):
             await self.open(page);await self.ready(page,'sti:blue:sr-01');await self.install_pixel_probe(page)
-            self.check(await page.locator('#vehicle-options button').count()==5,'Five vehicle controls present')
+            self.check(await page.locator('#vehicle-options button').count()==6,'Six vehicle controls present')
             self.check(await page.locator('.wheel-select:not(:disabled)').count()==6,'Six wheel designs enabled')
             self.check(await page.locator('.paint-option:not(:disabled)').count()==12,'Twelve paint choices enabled')
             for vehicle in self.matrix_vehicles:

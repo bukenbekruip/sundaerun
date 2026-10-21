@@ -1,3 +1,4 @@
+import { ENGINE_TEXTURE_PCM } from "./engine-texture.js";
 import { normaliseClub, getPerformancePart } from "./club.js";
 import {
   engineCharacter,
@@ -30,7 +31,16 @@ export function createEngineVoice(context, destination, character) {
   saturation.oversample = "2x";
   const output = node(context.createGain());
   output.gain.value = 0;
-  bus.connect(saturation).connect(filter).connect(output).connect(destination);
+  const highpass = node(context.createBiquadFilter());
+  highpass.type = "highpass";
+  highpass.frequency.value = 38;
+  highpass.Q.value = 0.5;
+  bus
+    .connect(saturation)
+    .connect(filter)
+    .connect(highpass)
+    .connect(output)
+    .connect(destination);
   const anchors = ANCHOR_RPM.map((rpm) => {
     const source = node(context.createBufferSource()),
       mix = node(context.createGain());
@@ -61,12 +71,29 @@ export function createEngineVoice(context, destination, character) {
   noiseGain.gain.value = 0;
   noiseSource.connect(noiseFilter).connect(noiseGain).connect(output);
   sources.push(noiseSource);
-  const turbo = node(context.createOscillator()),
+  // A filtered recording residual supplies mechanical texture; a narrow noise
+  // band supplies boost rush instead of the former continuous sine whistle.
+  const texture = node(context.createBufferSource()),
+    textureGain = node(context.createGain());
+  const pcm = atob(ENGINE_TEXTURE_PCM),
+    textureBuffer = context.createBuffer(1, pcm.length, 22050);
+  const textureSamples = textureBuffer.getChannelData(0);
+  for (let i = 0; i < pcm.length; i++)
+    textureSamples[i] = (pcm.charCodeAt(i) - 128) / 128;
+  texture.buffer = textureBuffer;
+  texture.loop = true;
+  textureGain.gain.value = 0;
+  const textureFilter = node(context.createBiquadFilter());
+  textureFilter.type = "lowpass";
+  textureFilter.frequency.value = 5500;
+  texture.connect(textureFilter).connect(textureGain).connect(output);
+  sources.push(texture);
+  const turbo = node(context.createBiquadFilter()),
     turboGain = node(context.createGain());
-  turbo.type = "sine";
+  turbo.type = "bandpass";
+  turbo.Q.value = 2;
   turboGain.gain.value = 0;
-  turbo.connect(turboGain).connect(output);
-  sources.push(turbo);
+  noiseSource.connect(turbo).connect(turboGain).connect(output);
   const startTime = context.currentTime;
   sources.forEach((s) => s.start(startTime));
   let stopped = false;
@@ -111,7 +138,17 @@ export function createEngineVoice(context, destination, character) {
       context,
     );
     ramp(turbo.frequency, 700 + t * 1700, context);
-    ramp(turboGain.gain, character.profile.turbo * t * load * 0.025, context);
+    ramp(turboGain.gain, character.profile.turbo * t * load * 0.12, context);
+    ramp(
+      texture.playbackRate,
+      0.7 + t * 0.65 + character.profile.seed * 0.001,
+      context,
+    );
+    ramp(
+      textureGain.gain,
+      0.025 + load * 0.075 + character.grit * 0.025,
+      context,
+    );
   }
   update(character.idle, 0);
   return {

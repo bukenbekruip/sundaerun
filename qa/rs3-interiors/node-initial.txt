@@ -1,0 +1,199 @@
+
+> sundae-run-sti-customisation@1.0.0 test
+> node --test tests/*.test.js
+
+✔ default quote is itemised game credits and previewing is free (7.649313ms)
+✔ Apply charges the default 3700 once and repeats cannot charge again (1.650551ms)
+✔ owned parts can be fitted again for free while only new parts are charged (3.639957ms)
+✔ insufficient funds leave the applied look, purchases and balance unchanged (1.378785ms)
+✔ cancel restores applied look and reload does not fit an uncommitted preview (2.982089ms)
+✔ malformed or unsupported stored data recovers to a usable initial state (5.325147ms)
+✔ unknown product IDs and categories cannot enter preview state (1.827036ms)
+✔ concept products have no fabricated merchant destinations or fitment claims (0.481702ms)
+✔ merchant links require HTTPS, expose sponsorship, and keep real prices separate (1.347428ms)
+✔ only a registered vehicle/wheel render enables the supported paint renderer (1.551273ms)
+✖ catalogue exposes the five requested vehicles, six concepts and twelve paints (2.311795ms)
+✔ each car remembers its own fitted build and discards unfinished previews when switching (3.728299ms)
+✖ ownership belongs to each vehicle while the credit balance is shared (8.799495ms)
+✔ canonical garage persistence restores all fitted cars without saving a free preview (3.389063ms)
+✔ v2 migration keeps old credits, STI purchases and fitted parts without transferring ownership to new cars (1.866202ms)
+✔ derived active-car aliases cannot overwrite the garage's saved source of truth (0.887642ms)
+✔ upgrade catalogue provides three options per category with included baselines (0.592093ms)
+✔ all five parts charge once, while returning to included parts is free and changes the fitted build (1.622658ms)
+✔ upgrade ownership is typed and per car; insufficient funds never partially apply a build (2.343355ms)
+✔ v3 migration retains every car and credit balance and supplies free included upgrades (2.89391ms)
+✔ five-part previews cancel, switch and reload without changing fitted upgrades or credits (2.347844ms)
+✔ upgrade previews require the correct vehicle assets and verified suspension support (0.616313ms)
+✔ a named build snapshots fitted appearance and performance, never an unpaid preview (11.624698ms)
+✔ repeat saves rename a build without farming collection entries; removal is independent of rewards (3.402831ms)
+✔ brief rewards are atomic, one-time per car and persist above the starting balance (5.054355ms)
+✔ performance parts charge once per vehicle, refit free, reject insufficient funds and preserve exterior previews (2.603058ms)
+✔ a daily build needs fitted performance and matching saved exterior, not current previews (4.143225ms)
+✔ build codes round-trip Unicode safely and transfer neither ownership nor reward state (1.840776ms)
+✔ club normalisation safely migrates older saves and excludes unknown receipts, malformed builds and duplicate rewards (1.638509ms)
+✖ all five voices produce distinct bounded, centred and repeatable engine loops (214.911565ms)
+✔ every performance recipe changes its audible parameters without changing its car voice (1.801164ms)
+✔ tunes change the rev envelope; RPM stays bounded and settles back to idle (1.341007ms)
+✔ unknown sound recipes safely recover to an included voice and stock components (1.173681ms)
+✖ every model has two distinct, real, checksummed cabin assets (29.3398ms)
+✔ legacy three-car saves retain credits, builds and earned rewards while new cars/cabins start unowned (6.240817ms)
+✔ cabin fitting is an atomic per-car purchase and owned/stock refits are free (1.961749ms)
+✔ saved cabins are immutable recipes, count for briefs and survive serialisation (3.920616ms)
+✔ old SR1 recipes default to stock; new codes list a cabin without granting ownership (1.759072ms)
+✖ enabled car variants resolve to the reviewed transparent artwork (5.960367ms)
+✔ each complete car has one uniform transform and all 360 baseline appearances have artwork (5.506263ms)
+✖ all twenty upgrades retain reviewed bytes, actual transparency and registered camera bounds (3.929895ms)
+✖ all 9,720 five-car exterior configurations have explicit preview support (82.362676ms)
+✔ original reference and source artwork remains byte-identical to the handover (54.836087ms)
+✔ portable scanner accepts import property names while rejecting every actual module-loading syntax (11.042102ms)
+ℹ tests 44
+ℹ suites 0
+ℹ pass 37
+ℹ fail 7
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 375.612554
+
+✖ failing tests:
+
+test at tests/catalogue-state.test.js:322:1
+✖ catalogue exposes the five requested vehicles, six concepts and twelve paints (2.311795ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly deep-equal:
+  + actual - expected
+  
+    [
+      'sti',
+      'porsche',
+      'gt86',
+      'm3',
+      'golf',
+  +   'rs3'
+    ]
+  
+      at TestContext.<anonymous> (file:///workspace/sundae-run/tests/catalogue-state.test.js:323:10)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: [ 'sti', 'porsche', 'gt86', 'm3', 'golf', 'rs3' ],
+    expected: [ 'sti', 'porsche', 'gt86', 'm3', 'golf' ],
+    operator: 'deepStrictEqual',
+    diff: 'simple'
+  }
+
+test at tests/catalogue-state.test.js:410:1
+✖ ownership belongs to each vehicle while the credit balance is shared (8.799495ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  3700 !== 0
+  
+      at TestContext.<anonymous> (file:///workspace/sundae-run/tests/catalogue-state.test.js:433:12)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 3700,
+    expected: 0,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests/engine.test.js:12:1
+✖ all five voices produce distinct bounded, centred and repeatable engine loops (214.911565ms)
+  AssertionError [ERR_ASSERTION]: all five waveforms differ at 1500 RPM
+  
+  6 !== 5
+  
+      at TestContext.<anonymous> (file:///workspace/sundae-run/tests/engine.test.js:39:12)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.start (node:internal/test_runner/test:1242:17)
+      at startSubtestAfterBootstrap (node:internal/test_runner/harness:387:17) {
+    generatedMessage: false,
+    code: 'ERR_ASSERTION',
+    actual: 6,
+    expected: 5,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests/interiors.test.js:22:1
+✖ every model has two distinct, real, checksummed cabin assets (29.3398ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  12 !== 10
+  
+      at TestContext.<anonymous> (file:///workspace/sundae-run/tests/interiors.test.js:47:10)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:387:3) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 12,
+    expected: 10,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests/scene-assets.test.js:114:1
+✖ enabled car variants resolve to the reviewed transparent artwork (5.960367ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  36 !== 30
+  
+      at TestContext.<anonymous> (file:///workspace/sundae-run/tests/scene-assets.test.js:118:10)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async startSubtestAfterBootstrap (node:internal/test_runner/harness:387:3) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 36,
+    expected: 30,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests/scene-assets.test.js:179:1
+✖ all twenty upgrades retain reviewed bytes, actual transparency and registered camera bounds (3.929895ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  24 !== 20
+  
+      at TestContext.<anonymous> (file:///workspace/sundae-run/tests/scene-assets.test.js:191:10)
+      at async Test.run (node:internal/test_runner/test:1389:7)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 24,
+    expected: 20,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }
+
+test at tests/scene-assets.test.js:278:1
+✖ all 9,720 five-car exterior configurations have explicit preview support (82.362676ms)
+  AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+  
+  11664 !== 9720
+  
+      at TestContext.<anonymous> (file:///workspace/sundae-run/tests/scene-assets.test.js:318:10)
+      at Test.runInAsyncScope (node:async_hooks:227:14)
+      at Test.run (node:internal/test_runner/test:1382:25)
+      at Test.processPendingSubtests (node:internal/test_runner/test:960:18)
+      at Test.postRun (node:internal/test_runner/test:1522:19)
+      at Test.run (node:internal/test_runner/test:1447:12)
+      at async Test.processPendingSubtests (node:internal/test_runner/test:960:7) {
+    generatedMessage: true,
+    code: 'ERR_ASSERTION',
+    actual: 11664,
+    expected: 9720,
+    operator: 'strictEqual',
+    diff: 'simple'
+  }

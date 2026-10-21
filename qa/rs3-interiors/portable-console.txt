@@ -1,0 +1,157 @@
+PASS Six car controls include the Audi RS3 hatchback
+PASS Portable artifact contains all 92 runtime images
+PASS sti: four cabin packages are available
+PASS sti:stock:stock: complete preview; changes stay on the rim and preserve hub/cabin/alpha
+PASS sti:stock:alcantara: complete preview; changes stay on the rim and preserve hub/cabin/alpha
+PASS sti:stock:carbon: complete preview; changes stay on the rim and preserve hub/cabin/alpha
+PASS sti:stock: all three steering auditions remain free and do not install parts
+PASS sti:club:stock: complete preview; changes stay on the rim and preserve hub/cabin/alpha
+PASS sti:club:alcantara: complete preview; changes stay on the rim and preserve hub/cabin/alpha
+PASS sti:club:carbon: complete preview; changes stay on the rim and preserve hub/cabin/alpha
+PASS sti:club: all three steering auditions remain free and do not install parts
+PASS sti:heritage:stock: complete preview; changes stay on the rim and preserve hub/cabin/alpha
+PASS sti:heritage:alcantara: complete preview; changes stay on the rim and preserve hub/cabin/alpha
+PASS sti:heritage:carbon: complete preview; changes stay on the rim and preserve hub/cabin/alpha
+PASS sti:heritage: all three steering auditions remain free and do not install parts
+PASS sti:track:stock: complete preview; changes stay on the rim and preserve hub/cabin/alpha
+PASS sti:track:alcantara: complete preview; changes stay on the rim and preserve hub/cabin/alpha
+PASS sti:track:carbon: complete preview; changes stay on the rim and preserve hub/cabin/alpha
+PASS sti:track: all three steering auditions remain free and do not install parts
+PASS sti: carbon steering costs exactly 1600 once
+PASS sti: repeated steering Fit cannot double-charge
+PASS sti: cabin purchase costs 2600 and retains independent fitted steering
+PASS sti: included and owned steering refits are free
+PASS sti: named build records the fitted cabin and steering without extra charge
+PASS porsche: four cabin packages are available
+PASS porsche:stock:stock: complete preview; changes stay on the rim and preserve hub/cabin/alpha
+PASS porsche:stock:alcantara: complete preview; changes stay on the rim and preserve hub/cabin/alpha
+PASS porsche:stock:carbon: complete preview; changes stay on the rim and preserve hub/cabin/alpha
+PASS porsche:stock: all three steering auditions remain free and do not install parts
+PASS porsche:club:stock: complete preview; changes stay on the rim and preserve hub/cabin/alpha
+PASS porsche:club:alcantara: complete preview; changes stay on the rim and preserve hub/cabin/alpha
+PASS porsche:club:carbon: complete preview; changes stay on the rim and preserve hub/cabin/alpha
+PASS porsche:club: all three steering auditions remain free and do not install parts
+PASS porsche:heritage:stock: complete preview; changes stay on the rim and preserve hub/cabin/alpha
+PASS porsche:heritage:alcantara: complete preview; changes stay on the rim and preserve hub/cabin/alpha
+PASS porsche:heritage:carbon: complete preview; changes stay on the rim and preserve hub/cabin/alpha
+PASS porsche:heritage: all three steering auditions remain free and do not install parts
+PASS porsche:track:stock: complete preview; changes stay on the rim and preserve hub/cabin/alpha
+PASS porsche:track:alcantara: complete preview; changes stay on the rim and preserve hub/cabin/alpha
+PASS porsche:track:carbon: complete preview; changes stay on the rim and preserve hub/cabin/alpha
+PASS porsche:track: all three steering auditions remain free and do not install parts
+PASS porsche: carbon steering costs exactly 1600 once
+PASS porsche: repeated steering Fit cannot double-charge
+PASS porsche: cabin purchase costs 2600 and retains independent fitted steering
+PASS porsche: included and owned steering refits are free
+PASS porsche: named build records the fitted cabin and steering without extra charge
+PASS gt86: four cabin packages are available
+PASS gt86:stock:stock: complete preview; changes stay on the rim and preserve hub/cabin/alpha
+PASS gt86:stock:alcantara: complete preview; changes stay on the rim and preserve hub/cabin/alpha
+PASS gt86:stock:carbon: complete preview; changes stay on the rim and preserve hub/cabin/alpha
+PASS gt86:stock: all three steering auditions remain free and do not install parts
+PASS gt86:club:stock: complete preview; changes stay on the rim and preserve hub/cabin/alpha
+PASS gt86:club:alcantara: complete preview; changes stay on the rim and preserve hub/cabin/alpha
+PASS gt86:club:carbon: complete preview; changes stay on the rim and preserve hub/cabin/alpha
+PASS gt86:club: all three steering auditions remain free and do not install parts
+PASS gt86:heritage:stock: complete preview; changes stay on the rim and preserve hub/cabin/alpha
+PASS gt86:heritage:alcantara: complete preview; changes stay on the rim and preserve hub/cabin/alpha
+PASS gt86:heritage:carbon: complete preview; changes stay on the rim and preserve hub/cabin/alpha
+PASS gt86:heritage: all three steering auditions remain free and do not install parts
+PASS gt86:track:stock: complete preview; changes stay on the rim and preserve hub/cabin/alpha
+PASS gt86:track:alcantara: complete preview; changes stay on the rim and preserve hub/cabin/alpha
+PASS gt86:track:carbon: complete preview; changes stay on the rim and preserve hub/cabin/alpha
+PASS gt86:track: all three steering auditions remain free and do not install parts
+PASS gt86: carbon steering costs exactly 1600 once
+PASS gt86: repeated steering Fit cannot double-charge
+PASS gt86: cabin purchase costs 2600 and retains independent fitted steering
+PASS gt86: included and owned steering refits are free
+PASS gt86: named build records the fitted cabin and steering without extra charge
+PASS m3: four cabin packages are available
+PASS m3:stock:stock: complete preview; changes stay on the rim and preserve hub/cabin/alpha
+PASS m3:stock:alcantara: complete preview; changes stay on the rim and preserve hub/cabin/alpha
+PASS m3:stock:carbon: complete preview; changes stay on the rim and preserve hub/cabin/alpha
+PASS m3:stock: all three steering auditions remain free and do not install parts
+PASS m3:club:stock: complete preview; changes stay on the rim and preserve hub/cabin/alpha
+PASS m3:club:alcantara: complete preview; changes stay on the rim and preserve hub/cabin/alpha
+PASS m3:club:carbon: complete preview; changes stay on the rim and preserve hub/cabin/alpha
+PASS m3:club: all three steering auditions remain free and do not install parts
+PASS m3:heritage:stock: complete preview; changes stay on the rim and preserve hub/cabin/alpha
+PASS m3:heritage:alcantara: complete preview; changes stay on the rim and preserve hub/cabin/alpha
+PASS m3:heritage:carbon: complete preview; changes stay on the rim and preserve hub/cabin/alpha
+PASS m3:heritage: all three steering auditions remain free and do not install parts
+PASS m3:track:stock: complete preview; changes stay on the rim and preserve hub/cabin/alpha
+PASS m3:track:alcantara: complete preview; changes stay on the rim and preserve hub/cabin/alpha
+PASS m3:track:carbon: complete preview; changes stay on the rim and preserve hub/cabin/alpha
+PASS m3:track: all three steering auditions remain free and do not install parts
+PASS m3: carbon steering costs exactly 1600 once
+PASS m3: repeated steering Fit cannot double-charge
+PASS m3: cabin purchase costs 2600 and retains independent fitted steering
+PASS m3: included and owned steering refits are free
+PASS m3: named build records the fitted cabin and steering without extra charge
+PASS golf: four cabin packages are available
+PASS golf:stock:stock: complete preview; changes stay on the rim and preserve hub/cabin/alpha
+PASS golf:stock:alcantara: complete preview; changes stay on the rim and preserve hub/cabin/alpha
+PASS golf:stock:carbon: complete preview; changes stay on the rim and preserve hub/cabin/alpha
+PASS golf:stock: all three steering auditions remain free and do not install parts
+PASS golf:club:stock: complete preview; changes stay on the rim and preserve hub/cabin/alpha
+PASS golf:club:alcantara: complete preview; changes stay on the rim and preserve hub/cabin/alpha
+PASS golf:club:carbon: complete preview; changes stay on the rim and preserve hub/cabin/alpha
+PASS golf:club: all three steering auditions remain free and do not install parts
+PASS golf:heritage:stock: complete preview; changes stay on the rim and preserve hub/cabin/alpha
+PASS golf:heritage:alcantara: complete preview; changes stay on the rim and preserve hub/cabin/alpha
+PASS golf:heritage:carbon: complete preview; changes stay on the rim and preserve hub/cabin/alpha
+PASS golf:heritage: all three steering auditions remain free and do not install parts
+PASS golf:track:stock: complete preview; changes stay on the rim and preserve hub/cabin/alpha
+PASS golf:track:alcantara: complete preview; changes stay on the rim and preserve hub/cabin/alpha
+PASS golf:track:carbon: complete preview; changes stay on the rim and preserve hub/cabin/alpha
+PASS golf:track: all three steering auditions remain free and do not install parts
+PASS golf: carbon steering costs exactly 1600 once
+PASS golf: repeated steering Fit cannot double-charge
+PASS golf: cabin purchase costs 2600 and retains independent fitted steering
+PASS golf: included and owned steering refits are free
+PASS golf: named build records the fitted cabin and steering without extra charge
+PASS rs3: four cabin packages are available
+PASS rs3:stock:stock: complete preview; changes stay on the rim and preserve hub/cabin/alpha
+PASS rs3:stock:alcantara: complete preview; changes stay on the rim and preserve hub/cabin/alpha
+PASS rs3:stock:carbon: complete preview; changes stay on the rim and preserve hub/cabin/alpha
+PASS rs3:stock: all three steering auditions remain free and do not install parts
+PASS rs3:club:stock: complete preview; changes stay on the rim and preserve hub/cabin/alpha
+PASS rs3:club:alcantara: complete preview; changes stay on the rim and preserve hub/cabin/alpha
+PASS rs3:club:carbon: complete preview; changes stay on the rim and preserve hub/cabin/alpha
+PASS rs3:club: all three steering auditions remain free and do not install parts
+PASS rs3:heritage:stock: complete preview; changes stay on the rim and preserve hub/cabin/alpha
+PASS rs3:heritage:alcantara: complete preview; changes stay on the rim and preserve hub/cabin/alpha
+PASS rs3:heritage:carbon: complete preview; changes stay on the rim and preserve hub/cabin/alpha
+PASS rs3:heritage: all three steering auditions remain free and do not install parts
+PASS rs3:track:stock: complete preview; changes stay on the rim and preserve hub/cabin/alpha
+PASS rs3:track:alcantara: complete preview; changes stay on the rim and preserve hub/cabin/alpha
+PASS rs3:track:carbon: complete preview; changes stay on the rim and preserve hub/cabin/alpha
+PASS rs3:track: all three steering auditions remain free and do not install parts
+PASS rs3: carbon steering costs exactly 1600 once
+PASS rs3: repeated steering Fit cannot double-charge
+PASS rs3: cabin purchase costs 2600 and retains independent fitted steering
+PASS rs3: included and owned steering refits are free
+PASS rs3: named build records the fitted cabin and steering without extra charge
+PASS All six real UI purchases leave the exact 920-credit shared balance
+PASS A newly earned brief funds Heritage exactly; existing steering remains fitted
+PASS Cabin show card contains the fitted Heritage/carbon image, even while Club is previewed
+PASS Earlier snapshots remain immutable after changing the fitted cabin
+PASS Share code contains both the cabin and independent steering recipe
+PASS Reload retains every fitted cabin/steering, receipts, saved builds and exact balance
+PASS 320px: all six models remain visible without page overflow
+PASS 320px: Steering wheel is directly reachable inside Interior
+PASS 320px: cabin and steering controls fit the dialog
+PASS 390px: all six models remain visible without page overflow
+PASS 390px: Steering wheel is directly reachable inside Interior
+PASS 390px: cabin and steering controls fit the dialog
+PASS 768px: all six models remain visible without page overflow
+PASS 768px: Steering wheel is directly reachable inside Interior
+PASS 768px: cabin and steering controls fit the dialog
+PASS 1366px: all six models remain visible without page overflow
+PASS 1366px: Steering wheel is directly reachable inside Interior
+PASS 1366px: cabin and steering controls fit the dialog
+PASS 1920px: all six models remain visible without page overflow
+PASS 1920px: Steering wheel is directly reachable inside Interior
+PASS 1920px: cabin and steering controls fit the dialog
+PASS No page, console or HTTP errors in normal cabin flows
+PASS Portable game makes no additional network requests

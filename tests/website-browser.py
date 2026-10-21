@@ -1,5 +1,5 @@
 """Check the supplied brand site and game roundtrip under a GitHub Pages project path."""
-import asyncio,json
+import argparse,asyncio,json
 from pathlib import Path
 from playwright.async_api import async_playwright,expect
 ROOT=Path(__file__).resolve().parents[1];OUT=ROOT/'qa/expansion/website';BASE='http://127.0.0.1:4183/sundaerun/'
@@ -28,7 +28,7 @@ async def main():
      if name in ('index','garage','shop','play'):await p.screenshot(path=str(OUT/f'{name}-{w}.jpg'),full_page=True,type='jpeg',quality=85)
     await p.get_by_role('link',name='Open Sundae Run Garage',exact=False).click()
     await p.wait_for_function("()=>{let e=document.querySelector('#car-image');return e.complete&&e.naturalWidth>0&&document.querySelector('#scene').getAttribute('aria-busy')==='false'}",polling=100)
-    check(await p.locator('[data-vehicle]').count()==5,f'{w}: website Play launches the five-car game')
+    check(await p.locator('[data-vehicle]').count()==6,f'{w}: website Play launches the six-car game')
     await p.locator('[data-vehicle="m3"]').click(no_wait_after=True)
     await p.wait_for_function("()=>document.querySelector('#car-image').dataset.variant==='m3:blue:sr-01'&&document.querySelector('#scene').getAttribute('aria-busy')==='false'",polling=100)
     await p.locator('#club-open').click();await p.locator('#brand-website').click()
@@ -40,4 +40,5 @@ async def main():
    r['status']='failed';raise
   finally:
    r['passed_checks']=len(r['checks']);(OUT/'website-results.json').write_text(json.dumps(r,indent=2)+'\n');await b.close()
-asyncio.run(main())
+if __name__=='__main__':
+ parser=argparse.ArgumentParser(description=__doc__);parser.add_argument('--base-url',default=BASE);parser.add_argument('--output',type=Path,default=ROOT/'qa/rs3-interiors/website');args=parser.parse_args();BASE=args.base_url.rstrip('/')+'/';OUT=args.output;asyncio.run(main())

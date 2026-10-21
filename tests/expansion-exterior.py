@@ -49,4 +49,4 @@ async def main(args):
   try:return await Expansion(b,args).execute(args)
   finally:await b.close()
 if __name__=='__main__':
- p=argparse.ArgumentParser(description=__doc__);p.add_argument('--base-url',default='http://127.0.0.1:4173');p.add_argument('--output',type=Path,default=ROOT/'qa/expansion/exterior');p.add_argument('--portable',action='store_true');p.add_argument('--mode',choices=['paint','mechanical','maximum','all'],default='all');p.add_argument('--vehicle',action='append',choices=['m3','golf']);raise SystemExit(asyncio.run(main(p.parse_args())))
+ p=argparse.ArgumentParser(description=__doc__);p.add_argument('--base-url',default='http://127.0.0.1:4173');p.add_argument('--output',type=Path,default=ROOT/'qa/expansion/exterior');p.add_argument('--portable',action='store_true');p.add_argument('--mode',choices=['paint','mechanical','maximum','all'],default='all');p.add_argument('--vehicle',action='append',choices=['m3','golf','rs3']);raise SystemExit(asyncio.run(main(p.parse_args())))

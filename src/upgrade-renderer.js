@@ -15,6 +15,7 @@ export const suspensionOffsets = Object.freeze({
   gt86: Object.freeze({ original: 0, sport: 7, track: 12 }),
   m3: Object.freeze({ original: 0, sport: 6, track: 11 }),
   golf: Object.freeze({ original: 0, sport: 6, track: 11 }),
+  rs3: Object.freeze({ original: 0, sport: 6, track: 11 }),
 });
 
 const STI = {
@@ -85,12 +86,38 @@ const GOLF = {
     "M30 686 L108 687 L180 730 L258 710 L711 742 L752 786 L812 824 L924 821 L988 780 L1651 760 L1672 843 L1560 877 L925 891 L651 840 L252 788 L37 753 Z",
   ],
 };
-const geometry = { sti: STI, porsche: PORSCHE, gt86: GT86, m3: M3, golf: GOLF };
+const RS3 = {
+  wheels: [
+    "M53 544 C62 491 88 457 125 449 C167 440 207 469 234 517 C261 565 270 628 254 681 C239 725 209 752 173 747 C131 743 94 713 74 673 C52 632 46 586 53 544 Z",
+    "M726 606 C736 547 769 503 815 492 C867 478 917 502 950 550 C982 599 995 665 984 727 C974 788 944 830 900 844 C849 858 798 837 765 793 C732 747 718 674 726 606 Z",
+  ],
+  rims: [
+    "M75 549 C85 510 108 483 136 480 C170 476 199 506 215 551 C233 598 234 645 216 679 C200 711 175 723 147 709 C117 694 94 661 83 621 C72 589 70 568 75 549 Z",
+    "M750 612 C762 566 788 534 824 529 C867 522 904 547 926 592 C952 640 954 694 936 741 C917 786 889 810 854 811 C813 809 781 783 762 740 C741 695 737 653 750 612 Z",
+  ],
+  ground: [
+    "M27 680 L101 679 L170 727 L251 706 L730 743 L777 795 L901 820 L986 777 L1655 759 L1672 849 L1574 880 L933 892 L650 842 L254 790 L32 750 Z",
+  ],
+};
+const geometry = {
+  sti: STI,
+  porsche: PORSCHE,
+  gt86: GT86,
+  m3: M3,
+  golf: GOLF,
+  rs3: RS3,
+};
 
 // New sparse kit sources contain alpha-1 noise away from their carbon pieces.
 // Draw only the authored part envelopes, preserving complete wheel assemblies.
 // The original PNGs remain unchanged and legacy car compositing is untouched.
 const kitZones = {
+  rs3: [
+    "M197 609 L752 679 L761 776 L198 728 Z",
+    "M948 627 L1115 658 L1136 780 L948 782 Z",
+    "M940 735 L1672 702 L1672 840 L940 842 Z",
+    "M1570 625 L1672 625 L1672 777 L1570 777 Z",
+  ],
   m3: [
     "M210 610 L775 700 L780 790 L220 725 Z",
     "M940 590 L1115 650 L1120 735 L940 715 Z",
@@ -105,6 +132,12 @@ const kitZones = {
 };
 
 export const protectedWheelSamples = Object.freeze({
+  rs3: Object.freeze([
+    { name: "rear-wheel", x: 149, y: 598 },
+    { name: "front-wheel", x: 850, y: 668 },
+    { name: "rear-contact", x: 168, y: 728 },
+    { name: "front-contact", x: 873, y: 823 },
+  ]),
   m3: Object.freeze([
     { name: "rear-wheel", x: 167, y: 599 },
     { name: "front-wheel", x: 848, y: 668 },

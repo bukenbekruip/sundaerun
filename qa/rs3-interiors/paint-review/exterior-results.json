@@ -1,0 +1,6040 @@
+{
+  "generated_at_utc": "2026-10-21T15:38:20.201354+00:00",
+  "portable": false,
+  "status": "passed",
+  "cases": [
+    {
+      "name": "new-model-paint-native-matrix",
+      "status": "passed",
+      "assertions_passed": 1992
+    }
+  ],
+  "checks": 1993,
+  "paint_combinations": [
+    "rs3:blue:sr-01",
+    "rs3:black:sr-01",
+    "rs3:mint:sr-01",
+    "rs3:white:sr-01",
+    "rs3:silver:sr-01",
+    "rs3:graphite:sr-01",
+    "rs3:red:sr-01",
+    "rs3:orange:sr-01",
+    "rs3:purple:sr-01",
+    "rs3:pink:sr-01",
+    "rs3:yellow:sr-01",
+    "rs3:teal:sr-01",
+    "rs3:blue:te37",
+    "rs3:black:te37",
+    "rs3:mint:te37",
+    "rs3:white:te37",
+    "rs3:silver:te37",
+    "rs3:graphite:te37",
+    "rs3:red:te37",
+    "rs3:orange:te37",
+    "rs3:purple:te37",
+    "rs3:pink:te37",
+    "rs3:yellow:te37",
+    "rs3:teal:te37",
+    "rs3:blue:bbs-lm",
+    "rs3:black:bbs-lm",
+    "rs3:mint:bbs-lm",
+    "rs3:white:bbs-lm",
+    "rs3:silver:bbs-lm",
+    "rs3:graphite:bbs-lm",
+    "rs3:red:bbs-lm",
+    "rs3:orange:bbs-lm",
+    "rs3:purple:bbs-lm",
+    "rs3:pink:bbs-lm",
+    "rs3:yellow:bbs-lm",
+    "rs3:teal:bbs-lm",
+    "rs3:blue:oz",
+    "rs3:black:oz",
+    "rs3:mint:oz",
+    "rs3:white:oz",
+    "rs3:silver:oz",
+    "rs3:graphite:oz",
+    "rs3:red:oz",
+    "rs3:orange:oz",
+    "rs3:purple:oz",
+    "rs3:pink:oz",
+    "rs3:yellow:oz",
+    "rs3:teal:oz",
+    "rs3:blue:rotiform",
+    "rs3:black:rotiform",
+    "rs3:mint:rotiform",
+    "rs3:white:rotiform",
+    "rs3:silver:rotiform",
+    "rs3:graphite:rotiform",
+    "rs3:red:rotiform",
+    "rs3:orange:rotiform",
+    "rs3:purple:rotiform",
+    "rs3:pink:rotiform",
+    "rs3:yellow:rotiform",
+    "rs3:teal:rotiform",
+    "rs3:blue:work",
+    "rs3:black:work",
+    "rs3:mint:work",
+    "rs3:white:work",
+    "rs3:silver:work",
+    "rs3:graphite:work",
+    "rs3:red:work",
+    "rs3:orange:work",
+    "rs3:purple:work",
+    "rs3:pink:work",
+    "rs3:yellow:work",
+    "rs3:teal:work"
+  ],
+  "mechanical_combinations": [],
+  "maximum_combinations": [],
+  "paint_pixels": [
+    {
+      "variant": "rs3:blue:sr-01",
+      "dimensionsMatch": true,
+      "alphaChanged": 0,
+      "outsideMaskChanged": 0,
+      "bodyChanged": 0,
+      "protectedOpaque": 338686,
+      "garageChanged": 0,
+      "protectedSamples": [
+        {
+          "name": "rear-wheel",
+          "x": 149,
+          "y": 598,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "front-wheel",
+          "x": 849,
+          "y": 668,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "side-glass",
+          "x": 510,
+          "y": 280,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "windscreen",
+          "x": 919,
+          "y": 290,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "mirror",
+          "x": 599,
+          "y": 350,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "headlight",
+          "x": 1114,
+          "y": 530,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "grille-badge",
+          "x": 1439,
+          "y": 567,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "lower-intake",
+          "x": 1104,
+          "y": 685,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        }
+      ],
+      "fingerprint": "d23dff3733c6a1e5e1916d0e51c216cb8b1e15fe7151daa64dc15c37b5316528"
+    },
+    {
+      "variant": "rs3:black:sr-01",
+      "dimensionsMatch": true,
+      "alphaChanged": 0,
+      "outsideMaskChanged": 0,
+      "bodyChanged": 369305,
+      "protectedOpaque": 338686,
+      "garageChanged": 0,
+      "protectedSamples": [
+        {
+          "name": "rear-wheel",
+          "x": 149,
+          "y": 598,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "front-wheel",
+          "x": 849,
+          "y": 668,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "side-glass",
+          "x": 510,
+          "y": 280,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "windscreen",
+          "x": 919,
+          "y": 290,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "mirror",
+          "x": 599,
+          "y": 350,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "headlight",
+          "x": 1114,
+          "y": 530,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "grille-badge",
+          "x": 1439,
+          "y": 567,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "lower-intake",
+          "x": 1104,
+          "y": 685,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        }
+      ],
+      "fingerprint": "eba9246441212032b0639e57fc13721c4755e5c329c5d05aad7cbb5086a6b8fe"
+    },
+    {
+      "variant": "rs3:mint:sr-01",
+      "dimensionsMatch": true,
+      "alphaChanged": 0,
+      "outsideMaskChanged": 0,
+      "bodyChanged": 369452,
+      "protectedOpaque": 338686,
+      "garageChanged": 0,
+      "protectedSamples": [
+        {
+          "name": "rear-wheel",
+          "x": 149,
+          "y": 598,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "front-wheel",
+          "x": 849,
+          "y": 668,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "side-glass",
+          "x": 510,
+          "y": 280,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "windscreen",
+          "x": 919,
+          "y": 290,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "mirror",
+          "x": 599,
+          "y": 350,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "headlight",
+          "x": 1114,
+          "y": 530,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "grille-badge",
+          "x": 1439,
+          "y": 567,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "lower-intake",
+          "x": 1104,
+          "y": 685,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        }
+      ],
+      "fingerprint": "8bc6e6dc09dfd7e484b1729be1d89d2c3a8de7e2b31a2b18037afe4d62a86716"
+    },
+    {
+      "variant": "rs3:white:sr-01",
+      "dimensionsMatch": true,
+      "alphaChanged": 0,
+      "outsideMaskChanged": 0,
+      "bodyChanged": 369662,
+      "protectedOpaque": 338686,
+      "garageChanged": 0,
+      "protectedSamples": [
+        {
+          "name": "rear-wheel",
+          "x": 149,
+          "y": 598,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "front-wheel",
+          "x": 849,
+          "y": 668,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "side-glass",
+          "x": 510,
+          "y": 280,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "windscreen",
+          "x": 919,
+          "y": 290,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "mirror",
+          "x": 599,
+          "y": 350,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "headlight",
+          "x": 1114,
+          "y": 530,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "grille-badge",
+          "x": 1439,
+          "y": 567,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "lower-intake",
+          "x": 1104,
+          "y": 685,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        }
+      ],
+      "fingerprint": "7d8a806296140ef170739af8f1e8a67d78466596eb8c6e3b602a574a80aac6d2"
+    },
+    {
+      "variant": "rs3:silver:sr-01",
+      "dimensionsMatch": true,
+      "alphaChanged": 0,
+      "outsideMaskChanged": 0,
+      "bodyChanged": 369321,
+      "protectedOpaque": 338686,
+      "garageChanged": 0,
+      "protectedSamples": [
+        {
+          "name": "rear-wheel",
+          "x": 149,
+          "y": 598,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "front-wheel",
+          "x": 849,
+          "y": 668,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "side-glass",
+          "x": 510,
+          "y": 280,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "windscreen",
+          "x": 919,
+          "y": 290,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "mirror",
+          "x": 599,
+          "y": 350,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "headlight",
+          "x": 1114,
+          "y": 530,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "grille-badge",
+          "x": 1439,
+          "y": 567,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "lower-intake",
+          "x": 1104,
+          "y": 685,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        }
+      ],
+      "fingerprint": "cf546247f3bf13284add35acd5f7a1769a799ea40507248783d837a918fbeab9"
+    },
+    {
+      "variant": "rs3:graphite:sr-01",
+      "dimensionsMatch": true,
+      "alphaChanged": 0,
+      "outsideMaskChanged": 0,
+      "bodyChanged": 368613,
+      "protectedOpaque": 338686,
+      "garageChanged": 0,
+      "protectedSamples": [
+        {
+          "name": "rear-wheel",
+          "x": 149,
+          "y": 598,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "front-wheel",
+          "x": 849,
+          "y": 668,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "side-glass",
+          "x": 510,
+          "y": 280,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "windscreen",
+          "x": 919,
+          "y": 290,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "mirror",
+          "x": 599,
+          "y": 350,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "headlight",
+          "x": 1114,
+          "y": 530,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "grille-badge",
+          "x": 1439,
+          "y": 567,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "lower-intake",
+          "x": 1104,
+          "y": 685,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        }
+      ],
+      "fingerprint": "c561b222bf16ca4fd58d56373db616622dfe2848dafa4ee4bb940eb0ec35e2a2"
+    },
+    {
+      "variant": "rs3:red:sr-01",
+      "dimensionsMatch": true,
+      "alphaChanged": 0,
+      "outsideMaskChanged": 0,
+      "bodyChanged": 368658,
+      "protectedOpaque": 338686,
+      "garageChanged": 0,
+      "protectedSamples": [
+        {
+          "name": "rear-wheel",
+          "x": 149,
+          "y": 598,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "front-wheel",
+          "x": 849,
+          "y": 668,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "side-glass",
+          "x": 510,
+          "y": 280,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "windscreen",
+          "x": 919,
+          "y": 290,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "mirror",
+          "x": 599,
+          "y": 350,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "headlight",
+          "x": 1114,
+          "y": 530,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "grille-badge",
+          "x": 1439,
+          "y": 567,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "lower-intake",
+          "x": 1104,
+          "y": 685,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        }
+      ],
+      "fingerprint": "c5649f61b47b627e25346920ab28a93f6b9f44e6b7d5d7743ee857cb58f12cd9"
+    },
+    {
+      "variant": "rs3:orange:sr-01",
+      "dimensionsMatch": true,
+      "alphaChanged": 0,
+      "outsideMaskChanged": 0,
+      "bodyChanged": 368979,
+      "protectedOpaque": 338686,
+      "garageChanged": 0,
+      "protectedSamples": [
+        {
+          "name": "rear-wheel",
+          "x": 149,
+          "y": 598,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "front-wheel",
+          "x": 849,
+          "y": 668,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "side-glass",
+          "x": 510,
+          "y": 280,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "windscreen",
+          "x": 919,
+          "y": 290,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "mirror",
+          "x": 599,
+          "y": 350,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "headlight",
+          "x": 1114,
+          "y": 530,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "grille-badge",
+          "x": 1439,
+          "y": 567,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "lower-intake",
+          "x": 1104,
+          "y": 685,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        }
+      ],
+      "fingerprint": "5e1c968293c5c9f528caf9d10e4525bfdd695ba800de6a60df27ed99aa7b9731"
+    },
+    {
+      "variant": "rs3:purple:sr-01",
+      "dimensionsMatch": true,
+      "alphaChanged": 0,
+      "outsideMaskChanged": 0,
+      "bodyChanged": 365668,
+      "protectedOpaque": 338686,
+      "garageChanged": 0,
+      "protectedSamples": [
+        {
+          "name": "rear-wheel",
+          "x": 149,
+          "y": 598,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "front-wheel",
+          "x": 849,
+          "y": 668,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "side-glass",
+          "x": 510,
+          "y": 280,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "windscreen",
+          "x": 919,
+          "y": 290,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "mirror",
+          "x": 599,
+          "y": 350,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "headlight",
+          "x": 1114,
+          "y": 530,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "grille-badge",
+          "x": 1439,
+          "y": 567,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "lower-intake",
+          "x": 1104,
+          "y": 685,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        }
+      ],
+      "fingerprint": "1e0051ee74ac2fec5881677ba71aac72a27690cb04e8e11d1bbf89bf089b1628"
+    },
+    {
+      "variant": "rs3:pink:sr-01",
+      "dimensionsMatch": true,
+      "alphaChanged": 0,
+      "outsideMaskChanged": 0,
+      "bodyChanged": 369445,
+      "protectedOpaque": 338686,
+      "garageChanged": 0,
+      "protectedSamples": [
+        {
+          "name": "rear-wheel",
+          "x": 149,
+          "y": 598,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "front-wheel",
+          "x": 849,
+          "y": 668,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "side-glass",
+          "x": 510,
+          "y": 280,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "windscreen",
+          "x": 919,
+          "y": 290,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "mirror",
+          "x": 599,
+          "y": 350,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "headlight",
+          "x": 1114,
+          "y": 530,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "grille-badge",
+          "x": 1439,
+          "y": 567,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "lower-intake",
+          "x": 1104,
+          "y": 685,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        }
+      ],
+      "fingerprint": "d04de8737bdf0e88ac67de2f7b8018ae8dc20cb513f5d74eefe42b088a5595b5"
+    },
+    {
+      "variant": "rs3:yellow:sr-01",
+      "dimensionsMatch": true,
+      "alphaChanged": 0,
+      "outsideMaskChanged": 0,
+      "bodyChanged": 369362,
+      "protectedOpaque": 338686,
+      "garageChanged": 0,
+      "protectedSamples": [
+        {
+          "name": "rear-wheel",
+          "x": 149,
+          "y": 598,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "front-wheel",
+          "x": 849,
+          "y": 668,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "side-glass",
+          "x": 510,
+          "y": 280,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "windscreen",
+          "x": 919,
+          "y": 290,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "mirror",
+          "x": 599,
+          "y": 350,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "headlight",
+          "x": 1114,
+          "y": 530,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "grille-badge",
+          "x": 1439,
+          "y": 567,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "lower-intake",
+          "x": 1104,
+          "y": 685,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        }
+      ],
+      "fingerprint": "488dd3a907aec2ffb7e183718c7cf5d6b1c42220e56659b9f0a18c663207735c"
+    },
+    {
+      "variant": "rs3:teal:sr-01",
+      "dimensionsMatch": true,
+      "alphaChanged": 0,
+      "outsideMaskChanged": 0,
+      "bodyChanged": 368591,
+      "protectedOpaque": 338686,
+      "garageChanged": 0,
+      "protectedSamples": [
+        {
+          "name": "rear-wheel",
+          "x": 149,
+          "y": 598,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "front-wheel",
+          "x": 849,
+          "y": 668,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "side-glass",
+          "x": 510,
+          "y": 280,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "windscreen",
+          "x": 919,
+          "y": 290,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "mirror",
+          "x": 599,
+          "y": 350,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "headlight",
+          "x": 1114,
+          "y": 530,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "grille-badge",
+          "x": 1439,
+          "y": 567,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "lower-intake",
+          "x": 1104,
+          "y": 685,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        }
+      ],
+      "fingerprint": "a027888f2cea5bb8d250a30fca49e6fc2c515aad753792378958e88876f267fb"
+    },
+    {
+      "variant": "rs3:blue:sr-01:restored",
+      "dimensionsMatch": true,
+      "alphaChanged": 0,
+      "outsideMaskChanged": 0,
+      "bodyChanged": 0,
+      "protectedOpaque": 338686,
+      "garageChanged": 0,
+      "protectedSamples": [
+        {
+          "name": "rear-wheel",
+          "x": 149,
+          "y": 598,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "front-wheel",
+          "x": 849,
+          "y": 668,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "side-glass",
+          "x": 510,
+          "y": 280,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "windscreen",
+          "x": 919,
+          "y": 290,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "mirror",
+          "x": 599,
+          "y": 350,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "headlight",
+          "x": 1114,
+          "y": 530,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "grille-badge",
+          "x": 1439,
+          "y": 567,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "lower-intake",
+          "x": 1104,
+          "y": 685,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        }
+      ],
+      "fingerprint": "d23dff3733c6a1e5e1916d0e51c216cb8b1e15fe7151daa64dc15c37b5316528"
+    },
+    {
+      "variant": "rs3:blue:te37",
+      "dimensionsMatch": true,
+      "alphaChanged": 0,
+      "outsideMaskChanged": 0,
+      "bodyChanged": 0,
+      "protectedOpaque": 319960,
+      "garageChanged": 0,
+      "protectedSamples": [
+        {
+          "name": "rear-wheel",
+          "x": 149,
+          "y": 598,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "front-wheel",
+          "x": 850,
+          "y": 668,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "side-glass",
+          "x": 510,
+          "y": 280,
+          "maskAlpha": 0,
+          "sourceAlpha": 251,
+          "unchanged": true
+        },
+        {
+          "name": "windscreen",
+          "x": 920,
+          "y": 290,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "mirror",
+          "x": 599,
+          "y": 350,
+          "maskAlpha": 0,
+          "sourceAlpha": 254,
+          "unchanged": true
+        },
+        {
+          "name": "headlight",
+          "x": 1115,
+          "y": 530,
+          "maskAlpha": 0,
+          "sourceAlpha": 254,
+          "unchanged": true
+        },
+        {
+          "name": "grille-badge",
+          "x": 1440,
+          "y": 567,
+          "maskAlpha": 0,
+          "sourceAlpha": 254,
+          "unchanged": true
+        },
+        {
+          "name": "lower-intake",
+          "x": 1105,
+          "y": 685,
+          "maskAlpha": 0,
+          "sourceAlpha": 254,
+          "unchanged": true
+        }
+      ],
+      "fingerprint": "d26c7ade22d68d7c7889c0e207bd18e9152691e9fe2490f09de597e18ed98b99"
+    },
+    {
+      "variant": "rs3:black:te37",
+      "dimensionsMatch": true,
+      "alphaChanged": 0,
+      "outsideMaskChanged": 0,
+      "bodyChanged": 371806,
+      "protectedOpaque": 319960,
+      "garageChanged": 0,
+      "protectedSamples": [
+        {
+          "name": "rear-wheel",
+          "x": 149,
+          "y": 598,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "front-wheel",
+          "x": 850,
+          "y": 668,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "side-glass",
+          "x": 510,
+          "y": 280,
+          "maskAlpha": 0,
+          "sourceAlpha": 251,
+          "unchanged": true
+        },
+        {
+          "name": "windscreen",
+          "x": 920,
+          "y": 290,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "mirror",
+          "x": 599,
+          "y": 350,
+          "maskAlpha": 0,
+          "sourceAlpha": 254,
+          "unchanged": true
+        },
+        {
+          "name": "headlight",
+          "x": 1115,
+          "y": 530,
+          "maskAlpha": 0,
+          "sourceAlpha": 254,
+          "unchanged": true
+        },
+        {
+          "name": "grille-badge",
+          "x": 1440,
+          "y": 567,
+          "maskAlpha": 0,
+          "sourceAlpha": 254,
+          "unchanged": true
+        },
+        {
+          "name": "lower-intake",
+          "x": 1105,
+          "y": 685,
+          "maskAlpha": 0,
+          "sourceAlpha": 254,
+          "unchanged": true
+        }
+      ],
+      "fingerprint": "a5d74861b25ea70a20d13490c425698ca6580d2753cbc68a68f07a56888f2054"
+    },
+    {
+      "variant": "rs3:mint:te37",
+      "dimensionsMatch": true,
+      "alphaChanged": 0,
+      "outsideMaskChanged": 0,
+      "bodyChanged": 371932,
+      "protectedOpaque": 319960,
+      "garageChanged": 0,
+      "protectedSamples": [
+        {
+          "name": "rear-wheel",
+          "x": 149,
+          "y": 598,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "front-wheel",
+          "x": 850,
+          "y": 668,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "side-glass",
+          "x": 510,
+          "y": 280,
+          "maskAlpha": 0,
+          "sourceAlpha": 251,
+          "unchanged": true
+        },
+        {
+          "name": "windscreen",
+          "x": 920,
+          "y": 290,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "mirror",
+          "x": 599,
+          "y": 350,
+          "maskAlpha": 0,
+          "sourceAlpha": 254,
+          "unchanged": true
+        },
+        {
+          "name": "headlight",
+          "x": 1115,
+          "y": 530,
+          "maskAlpha": 0,
+          "sourceAlpha": 254,
+          "unchanged": true
+        },
+        {
+          "name": "grille-badge",
+          "x": 1440,
+          "y": 567,
+          "maskAlpha": 0,
+          "sourceAlpha": 254,
+          "unchanged": true
+        },
+        {
+          "name": "lower-intake",
+          "x": 1105,
+          "y": 685,
+          "maskAlpha": 0,
+          "sourceAlpha": 254,
+          "unchanged": true
+        }
+      ],
+      "fingerprint": "9a8bd4a74b6e91dee4eb1cc48781fe96aca16c6c25cc982392fc093a487a160a"
+    },
+    {
+      "variant": "rs3:white:te37",
+      "dimensionsMatch": true,
+      "alphaChanged": 0,
+      "outsideMaskChanged": 0,
+      "bodyChanged": 372136,
+      "protectedOpaque": 319960,
+      "garageChanged": 0,
+      "protectedSamples": [
+        {
+          "name": "rear-wheel",
+          "x": 149,
+          "y": 598,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "front-wheel",
+          "x": 850,
+          "y": 668,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "side-glass",
+          "x": 510,
+          "y": 280,
+          "maskAlpha": 0,
+          "sourceAlpha": 251,
+          "unchanged": true
+        },
+        {
+          "name": "windscreen",
+          "x": 920,
+          "y": 290,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "mirror",
+          "x": 599,
+          "y": 350,
+          "maskAlpha": 0,
+          "sourceAlpha": 254,
+          "unchanged": true
+        },
+        {
+          "name": "headlight",
+          "x": 1115,
+          "y": 530,
+          "maskAlpha": 0,
+          "sourceAlpha": 254,
+          "unchanged": true
+        },
+        {
+          "name": "grille-badge",
+          "x": 1440,
+          "y": 567,
+          "maskAlpha": 0,
+          "sourceAlpha": 254,
+          "unchanged": true
+        },
+        {
+          "name": "lower-intake",
+          "x": 1105,
+          "y": 685,
+          "maskAlpha": 0,
+          "sourceAlpha": 254,
+          "unchanged": true
+        }
+      ],
+      "fingerprint": "d4b396969f31d55548a0ff1eb7e41cf41fef01cd4ad30152e316065a2d3fc145"
+    },
+    {
+      "variant": "rs3:silver:te37",
+      "dimensionsMatch": true,
+      "alphaChanged": 0,
+      "outsideMaskChanged": 0,
+      "bodyChanged": 371842,
+      "protectedOpaque": 319960,
+      "garageChanged": 0,
+      "protectedSamples": [
+        {
+          "name": "rear-wheel",
+          "x": 149,
+          "y": 598,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "front-wheel",
+          "x": 850,
+          "y": 668,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "side-glass",
+          "x": 510,
+          "y": 280,
+          "maskAlpha": 0,
+          "sourceAlpha": 251,
+          "unchanged": true
+        },
+        {
+          "name": "windscreen",
+          "x": 920,
+          "y": 290,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "mirror",
+          "x": 599,
+          "y": 350,
+          "maskAlpha": 0,
+          "sourceAlpha": 254,
+          "unchanged": true
+        },
+        {
+          "name": "headlight",
+          "x": 1115,
+          "y": 530,
+          "maskAlpha": 0,
+          "sourceAlpha": 254,
+          "unchanged": true
+        },
+        {
+          "name": "grille-badge",
+          "x": 1440,
+          "y": 567,
+          "maskAlpha": 0,
+          "sourceAlpha": 254,
+          "unchanged": true
+        },
+        {
+          "name": "lower-intake",
+          "x": 1105,
+          "y": 685,
+          "maskAlpha": 0,
+          "sourceAlpha": 254,
+          "unchanged": true
+        }
+      ],
+      "fingerprint": "bcdb40a72ff0849240122bf7fae75ee58e8f1fcac5b7ff409884e36f57511d57"
+    },
+    {
+      "variant": "rs3:graphite:te37",
+      "dimensionsMatch": true,
+      "alphaChanged": 0,
+      "outsideMaskChanged": 0,
+      "bodyChanged": 371114,
+      "protectedOpaque": 319960,
+      "garageChanged": 0,
+      "protectedSamples": [
+        {
+          "name": "rear-wheel",
+          "x": 149,
+          "y": 598,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "front-wheel",
+          "x": 850,
+          "y": 668,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "side-glass",
+          "x": 510,
+          "y": 280,
+          "maskAlpha": 0,
+          "sourceAlpha": 251,
+          "unchanged": true
+        },
+        {
+          "name": "windscreen",
+          "x": 920,
+          "y": 290,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "mirror",
+          "x": 599,
+          "y": 350,
+          "maskAlpha": 0,
+          "sourceAlpha": 254,
+          "unchanged": true
+        },
+        {
+          "name": "headlight",
+          "x": 1115,
+          "y": 530,
+          "maskAlpha": 0,
+          "sourceAlpha": 254,
+          "unchanged": true
+        },
+        {
+          "name": "grille-badge",
+          "x": 1440,
+          "y": 567,
+          "maskAlpha": 0,
+          "sourceAlpha": 254,
+          "unchanged": true
+        },
+        {
+          "name": "lower-intake",
+          "x": 1105,
+          "y": 685,
+          "maskAlpha": 0,
+          "sourceAlpha": 254,
+          "unchanged": true
+        }
+      ],
+      "fingerprint": "b0101311c1042bbe7b0c954b669e9d02d021ad4b39785fcb9368ca00e66d8a24"
+    },
+    {
+      "variant": "rs3:red:te37",
+      "dimensionsMatch": true,
+      "alphaChanged": 0,
+      "outsideMaskChanged": 0,
+      "bodyChanged": 371132,
+      "protectedOpaque": 319960,
+      "garageChanged": 0,
+      "protectedSamples": [
+        {
+          "name": "rear-wheel",
+          "x": 149,
+          "y": 598,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "front-wheel",
+          "x": 850,
+          "y": 668,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "side-glass",
+          "x": 510,
+          "y": 280,
+          "maskAlpha": 0,
+          "sourceAlpha": 251,
+          "unchanged": true
+        },
+        {
+          "name": "windscreen",
+          "x": 920,
+          "y": 290,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "mirror",
+          "x": 599,
+          "y": 350,
+          "maskAlpha": 0,
+          "sourceAlpha": 254,
+          "unchanged": true
+        },
+        {
+          "name": "headlight",
+          "x": 1115,
+          "y": 530,
+          "maskAlpha": 0,
+          "sourceAlpha": 254,
+          "unchanged": true
+        },
+        {
+          "name": "grille-badge",
+          "x": 1440,
+          "y": 567,
+          "maskAlpha": 0,
+          "sourceAlpha": 254,
+          "unchanged": true
+        },
+        {
+          "name": "lower-intake",
+          "x": 1105,
+          "y": 685,
+          "maskAlpha": 0,
+          "sourceAlpha": 254,
+          "unchanged": true
+        }
+      ],
+      "fingerprint": "ae9478ea0ba7ece0f9ee772c2f963cff1f6568165388384930830c0b9a1bcf7d"
+    },
+    {
+      "variant": "rs3:orange:te37",
+      "dimensionsMatch": true,
+      "alphaChanged": 0,
+      "outsideMaskChanged": 0,
+      "bodyChanged": 371465,
+      "protectedOpaque": 319960,
+      "garageChanged": 0,
+      "protectedSamples": [
+        {
+          "name": "rear-wheel",
+          "x": 149,
+          "y": 598,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "front-wheel",
+          "x": 850,
+          "y": 668,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "side-glass",
+          "x": 510,
+          "y": 280,
+          "maskAlpha": 0,
+          "sourceAlpha": 251,
+          "unchanged": true
+        },
+        {
+          "name": "windscreen",
+          "x": 920,
+          "y": 290,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "mirror",
+          "x": 599,
+          "y": 350,
+          "maskAlpha": 0,
+          "sourceAlpha": 254,
+          "unchanged": true
+        },
+        {
+          "name": "headlight",
+          "x": 1115,
+          "y": 530,
+          "maskAlpha": 0,
+          "sourceAlpha": 254,
+          "unchanged": true
+        },
+        {
+          "name": "grille-badge",
+          "x": 1440,
+          "y": 567,
+          "maskAlpha": 0,
+          "sourceAlpha": 254,
+          "unchanged": true
+        },
+        {
+          "name": "lower-intake",
+          "x": 1105,
+          "y": 685,
+          "maskAlpha": 0,
+          "sourceAlpha": 254,
+          "unchanged": true
+        }
+      ],
+      "fingerprint": "db91f5036cefcedbd1144f4e58b22f2175481701a212101ca40b5a70e36c2ac7"
+    },
+    {
+      "variant": "rs3:purple:te37",
+      "dimensionsMatch": true,
+      "alphaChanged": 0,
+      "outsideMaskChanged": 0,
+      "bodyChanged": 368099,
+      "protectedOpaque": 319960,
+      "garageChanged": 0,
+      "protectedSamples": [
+        {
+          "name": "rear-wheel",
+          "x": 149,
+          "y": 598,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "front-wheel",
+          "x": 850,
+          "y": 668,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "side-glass",
+          "x": 510,
+          "y": 280,
+          "maskAlpha": 0,
+          "sourceAlpha": 251,
+          "unchanged": true
+        },
+        {
+          "name": "windscreen",
+          "x": 920,
+          "y": 290,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "mirror",
+          "x": 599,
+          "y": 350,
+          "maskAlpha": 0,
+          "sourceAlpha": 254,
+          "unchanged": true
+        },
+        {
+          "name": "headlight",
+          "x": 1115,
+          "y": 530,
+          "maskAlpha": 0,
+          "sourceAlpha": 254,
+          "unchanged": true
+        },
+        {
+          "name": "grille-badge",
+          "x": 1440,
+          "y": 567,
+          "maskAlpha": 0,
+          "sourceAlpha": 254,
+          "unchanged": true
+        },
+        {
+          "name": "lower-intake",
+          "x": 1105,
+          "y": 685,
+          "maskAlpha": 0,
+          "sourceAlpha": 254,
+          "unchanged": true
+        }
+      ],
+      "fingerprint": "42a3c41e9288be0f4859bced97a14569d3bdf1f38a5453b70a80008933cccee5"
+    },
+    {
+      "variant": "rs3:pink:te37",
+      "dimensionsMatch": true,
+      "alphaChanged": 0,
+      "outsideMaskChanged": 0,
+      "bodyChanged": 371923,
+      "protectedOpaque": 319960,
+      "garageChanged": 0,
+      "protectedSamples": [
+        {
+          "name": "rear-wheel",
+          "x": 149,
+          "y": 598,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "front-wheel",
+          "x": 850,
+          "y": 668,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "side-glass",
+          "x": 510,
+          "y": 280,
+          "maskAlpha": 0,
+          "sourceAlpha": 251,
+          "unchanged": true
+        },
+        {
+          "name": "windscreen",
+          "x": 920,
+          "y": 290,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "mirror",
+          "x": 599,
+          "y": 350,
+          "maskAlpha": 0,
+          "sourceAlpha": 254,
+          "unchanged": true
+        },
+        {
+          "name": "headlight",
+          "x": 1115,
+          "y": 530,
+          "maskAlpha": 0,
+          "sourceAlpha": 254,
+          "unchanged": true
+        },
+        {
+          "name": "grille-badge",
+          "x": 1440,
+          "y": 567,
+          "maskAlpha": 0,
+          "sourceAlpha": 254,
+          "unchanged": true
+        },
+        {
+          "name": "lower-intake",
+          "x": 1105,
+          "y": 685,
+          "maskAlpha": 0,
+          "sourceAlpha": 254,
+          "unchanged": true
+        }
+      ],
+      "fingerprint": "4caf2ff765c37dfc3e23e11aac8a376075b74d7b58a81fdb706f9d33a95e03f2"
+    },
+    {
+      "variant": "rs3:yellow:te37",
+      "dimensionsMatch": true,
+      "alphaChanged": 0,
+      "outsideMaskChanged": 0,
+      "bodyChanged": 371858,
+      "protectedOpaque": 319960,
+      "garageChanged": 0,
+      "protectedSamples": [
+        {
+          "name": "rear-wheel",
+          "x": 149,
+          "y": 598,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "front-wheel",
+          "x": 850,
+          "y": 668,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "side-glass",
+          "x": 510,
+          "y": 280,
+          "maskAlpha": 0,
+          "sourceAlpha": 251,
+          "unchanged": true
+        },
+        {
+          "name": "windscreen",
+          "x": 920,
+          "y": 290,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "mirror",
+          "x": 599,
+          "y": 350,
+          "maskAlpha": 0,
+          "sourceAlpha": 254,
+          "unchanged": true
+        },
+        {
+          "name": "headlight",
+          "x": 1115,
+          "y": 530,
+          "maskAlpha": 0,
+          "sourceAlpha": 254,
+          "unchanged": true
+        },
+        {
+          "name": "grille-badge",
+          "x": 1440,
+          "y": 567,
+          "maskAlpha": 0,
+          "sourceAlpha": 254,
+          "unchanged": true
+        },
+        {
+          "name": "lower-intake",
+          "x": 1105,
+          "y": 685,
+          "maskAlpha": 0,
+          "sourceAlpha": 254,
+          "unchanged": true
+        }
+      ],
+      "fingerprint": "6b1c601b5e3b7aefc100dd026611db3e7f1dd84d1877f409d2a8c3a4b2003d76"
+    },
+    {
+      "variant": "rs3:teal:te37",
+      "dimensionsMatch": true,
+      "alphaChanged": 0,
+      "outsideMaskChanged": 0,
+      "bodyChanged": 371106,
+      "protectedOpaque": 319960,
+      "garageChanged": 0,
+      "protectedSamples": [
+        {
+          "name": "rear-wheel",
+          "x": 149,
+          "y": 598,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "front-wheel",
+          "x": 850,
+          "y": 668,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "side-glass",
+          "x": 510,
+          "y": 280,
+          "maskAlpha": 0,
+          "sourceAlpha": 251,
+          "unchanged": true
+        },
+        {
+          "name": "windscreen",
+          "x": 920,
+          "y": 290,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "mirror",
+          "x": 599,
+          "y": 350,
+          "maskAlpha": 0,
+          "sourceAlpha": 254,
+          "unchanged": true
+        },
+        {
+          "name": "headlight",
+          "x": 1115,
+          "y": 530,
+          "maskAlpha": 0,
+          "sourceAlpha": 254,
+          "unchanged": true
+        },
+        {
+          "name": "grille-badge",
+          "x": 1440,
+          "y": 567,
+          "maskAlpha": 0,
+          "sourceAlpha": 254,
+          "unchanged": true
+        },
+        {
+          "name": "lower-intake",
+          "x": 1105,
+          "y": 685,
+          "maskAlpha": 0,
+          "sourceAlpha": 254,
+          "unchanged": true
+        }
+      ],
+      "fingerprint": "f4a786a35db81473c8d4d9d8570cdea10eb8474b2fe56cb57cc0f12ccf7a12cb"
+    },
+    {
+      "variant": "rs3:blue:te37:restored",
+      "dimensionsMatch": true,
+      "alphaChanged": 0,
+      "outsideMaskChanged": 0,
+      "bodyChanged": 0,
+      "protectedOpaque": 319960,
+      "garageChanged": 0,
+      "protectedSamples": [
+        {
+          "name": "rear-wheel",
+          "x": 149,
+          "y": 598,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "front-wheel",
+          "x": 850,
+          "y": 668,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "side-glass",
+          "x": 510,
+          "y": 280,
+          "maskAlpha": 0,
+          "sourceAlpha": 251,
+          "unchanged": true
+        },
+        {
+          "name": "windscreen",
+          "x": 920,
+          "y": 290,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "mirror",
+          "x": 599,
+          "y": 350,
+          "maskAlpha": 0,
+          "sourceAlpha": 254,
+          "unchanged": true
+        },
+        {
+          "name": "headlight",
+          "x": 1115,
+          "y": 530,
+          "maskAlpha": 0,
+          "sourceAlpha": 254,
+          "unchanged": true
+        },
+        {
+          "name": "grille-badge",
+          "x": 1440,
+          "y": 567,
+          "maskAlpha": 0,
+          "sourceAlpha": 254,
+          "unchanged": true
+        },
+        {
+          "name": "lower-intake",
+          "x": 1105,
+          "y": 685,
+          "maskAlpha": 0,
+          "sourceAlpha": 254,
+          "unchanged": true
+        }
+      ],
+      "fingerprint": "d26c7ade22d68d7c7889c0e207bd18e9152691e9fe2490f09de597e18ed98b99"
+    },
+    {
+      "variant": "rs3:blue:bbs-lm",
+      "dimensionsMatch": true,
+      "alphaChanged": 0,
+      "outsideMaskChanged": 0,
+      "bodyChanged": 0,
+      "protectedOpaque": 340843,
+      "garageChanged": 0,
+      "protectedSamples": [
+        {
+          "name": "rear-wheel",
+          "x": 149,
+          "y": 598,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "front-wheel",
+          "x": 849,
+          "y": 668,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "side-glass",
+          "x": 510,
+          "y": 280,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "windscreen",
+          "x": 919,
+          "y": 290,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "mirror",
+          "x": 599,
+          "y": 350,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "headlight",
+          "x": 1114,
+          "y": 530,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "grille-badge",
+          "x": 1439,
+          "y": 567,
+          "maskAlpha": 0,
+          "sourceAlpha": 254,
+          "unchanged": true
+        },
+        {
+          "name": "lower-intake",
+          "x": 1104,
+          "y": 685,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        }
+      ],
+      "fingerprint": "85fef1ec0ef573fb4c9003976a8de17a6640e1b8ba3fc3d50ca5ce3e7f9dca69"
+    },
+    {
+      "variant": "rs3:black:bbs-lm",
+      "dimensionsMatch": true,
+      "alphaChanged": 0,
+      "outsideMaskChanged": 0,
+      "bodyChanged": 371818,
+      "protectedOpaque": 340843,
+      "garageChanged": 0,
+      "protectedSamples": [
+        {
+          "name": "rear-wheel",
+          "x": 149,
+          "y": 598,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "front-wheel",
+          "x": 849,
+          "y": 668,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "side-glass",
+          "x": 510,
+          "y": 280,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "windscreen",
+          "x": 919,
+          "y": 290,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "mirror",
+          "x": 599,
+          "y": 350,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "headlight",
+          "x": 1114,
+          "y": 530,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "grille-badge",
+          "x": 1439,
+          "y": 567,
+          "maskAlpha": 0,
+          "sourceAlpha": 254,
+          "unchanged": true
+        },
+        {
+          "name": "lower-intake",
+          "x": 1104,
+          "y": 685,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        }
+      ],
+      "fingerprint": "ed4111dadbb28b2a1aa238ada4fb952f15e2388d3cbf9cda680762d8352fc971"
+    },
+    {
+      "variant": "rs3:mint:bbs-lm",
+      "dimensionsMatch": true,
+      "alphaChanged": 0,
+      "outsideMaskChanged": 0,
+      "bodyChanged": 371942,
+      "protectedOpaque": 340843,
+      "garageChanged": 0,
+      "protectedSamples": [
+        {
+          "name": "rear-wheel",
+          "x": 149,
+          "y": 598,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "front-wheel",
+          "x": 849,
+          "y": 668,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "side-glass",
+          "x": 510,
+          "y": 280,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "windscreen",
+          "x": 919,
+          "y": 290,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "mirror",
+          "x": 599,
+          "y": 350,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "headlight",
+          "x": 1114,
+          "y": 530,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "grille-badge",
+          "x": 1439,
+          "y": 567,
+          "maskAlpha": 0,
+          "sourceAlpha": 254,
+          "unchanged": true
+        },
+        {
+          "name": "lower-intake",
+          "x": 1104,
+          "y": 685,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        }
+      ],
+      "fingerprint": "bb399c005237668db0eb2f4174fe2d568ee439649e56d53ff1bbad5c29815e89"
+    },
+    {
+      "variant": "rs3:white:bbs-lm",
+      "dimensionsMatch": true,
+      "alphaChanged": 0,
+      "outsideMaskChanged": 0,
+      "bodyChanged": 372143,
+      "protectedOpaque": 340843,
+      "garageChanged": 0,
+      "protectedSamples": [
+        {
+          "name": "rear-wheel",
+          "x": 149,
+          "y": 598,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "front-wheel",
+          "x": 849,
+          "y": 668,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "side-glass",
+          "x": 510,
+          "y": 280,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "windscreen",
+          "x": 919,
+          "y": 290,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "mirror",
+          "x": 599,
+          "y": 350,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "headlight",
+          "x": 1114,
+          "y": 530,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "grille-badge",
+          "x": 1439,
+          "y": 567,
+          "maskAlpha": 0,
+          "sourceAlpha": 254,
+          "unchanged": true
+        },
+        {
+          "name": "lower-intake",
+          "x": 1104,
+          "y": 685,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        }
+      ],
+      "fingerprint": "d64f4eb9da3f2a391b7414ea76b61047219bd87dce403c3b48906bd8911ea597"
+    },
+    {
+      "variant": "rs3:silver:bbs-lm",
+      "dimensionsMatch": true,
+      "alphaChanged": 0,
+      "outsideMaskChanged": 0,
+      "bodyChanged": 371854,
+      "protectedOpaque": 340843,
+      "garageChanged": 0,
+      "protectedSamples": [
+        {
+          "name": "rear-wheel",
+          "x": 149,
+          "y": 598,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "front-wheel",
+          "x": 849,
+          "y": 668,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "side-glass",
+          "x": 510,
+          "y": 280,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "windscreen",
+          "x": 919,
+          "y": 290,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "mirror",
+          "x": 599,
+          "y": 350,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "headlight",
+          "x": 1114,
+          "y": 530,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "grille-badge",
+          "x": 1439,
+          "y": 567,
+          "maskAlpha": 0,
+          "sourceAlpha": 254,
+          "unchanged": true
+        },
+        {
+          "name": "lower-intake",
+          "x": 1104,
+          "y": 685,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        }
+      ],
+      "fingerprint": "52dbbb458a40af81ed0050f858a2ba8e7f7f6d5fb7c0c0a01bc3639a729a0210"
+    },
+    {
+      "variant": "rs3:graphite:bbs-lm",
+      "dimensionsMatch": true,
+      "alphaChanged": 0,
+      "outsideMaskChanged": 0,
+      "bodyChanged": 371078,
+      "protectedOpaque": 340843,
+      "garageChanged": 0,
+      "protectedSamples": [
+        {
+          "name": "rear-wheel",
+          "x": 149,
+          "y": 598,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "front-wheel",
+          "x": 849,
+          "y": 668,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "side-glass",
+          "x": 510,
+          "y": 280,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "windscreen",
+          "x": 919,
+          "y": 290,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "mirror",
+          "x": 599,
+          "y": 350,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "headlight",
+          "x": 1114,
+          "y": 530,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "grille-badge",
+          "x": 1439,
+          "y": 567,
+          "maskAlpha": 0,
+          "sourceAlpha": 254,
+          "unchanged": true
+        },
+        {
+          "name": "lower-intake",
+          "x": 1104,
+          "y": 685,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        }
+      ],
+      "fingerprint": "765a6088c72f045af5b4f863bee5a6772d68d3f47384c85bdf05f293270ac56e"
+    },
+    {
+      "variant": "rs3:red:bbs-lm",
+      "dimensionsMatch": true,
+      "alphaChanged": 0,
+      "outsideMaskChanged": 0,
+      "bodyChanged": 371078,
+      "protectedOpaque": 340843,
+      "garageChanged": 0,
+      "protectedSamples": [
+        {
+          "name": "rear-wheel",
+          "x": 149,
+          "y": 598,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "front-wheel",
+          "x": 849,
+          "y": 668,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "side-glass",
+          "x": 510,
+          "y": 280,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "windscreen",
+          "x": 919,
+          "y": 290,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "mirror",
+          "x": 599,
+          "y": 350,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "headlight",
+          "x": 1114,
+          "y": 530,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "grille-badge",
+          "x": 1439,
+          "y": 567,
+          "maskAlpha": 0,
+          "sourceAlpha": 254,
+          "unchanged": true
+        },
+        {
+          "name": "lower-intake",
+          "x": 1104,
+          "y": 685,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        }
+      ],
+      "fingerprint": "32ecd3625d8d09ed1947cc2e57a3579685109c0434fb03c3a6325bc7f483b2ec"
+    },
+    {
+      "variant": "rs3:orange:bbs-lm",
+      "dimensionsMatch": true,
+      "alphaChanged": 0,
+      "outsideMaskChanged": 0,
+      "bodyChanged": 371464,
+      "protectedOpaque": 340843,
+      "garageChanged": 0,
+      "protectedSamples": [
+        {
+          "name": "rear-wheel",
+          "x": 149,
+          "y": 598,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "front-wheel",
+          "x": 849,
+          "y": 668,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "side-glass",
+          "x": 510,
+          "y": 280,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "windscreen",
+          "x": 919,
+          "y": 290,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "mirror",
+          "x": 599,
+          "y": 350,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "headlight",
+          "x": 1114,
+          "y": 530,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "grille-badge",
+          "x": 1439,
+          "y": 567,
+          "maskAlpha": 0,
+          "sourceAlpha": 254,
+          "unchanged": true
+        },
+        {
+          "name": "lower-intake",
+          "x": 1104,
+          "y": 685,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        }
+      ],
+      "fingerprint": "c5573f033a3780f6c5ffa999aa00e23f588559a29f67da72da645e8c4f8304b9"
+    },
+    {
+      "variant": "rs3:purple:bbs-lm",
+      "dimensionsMatch": true,
+      "alphaChanged": 0,
+      "outsideMaskChanged": 0,
+      "bodyChanged": 368121,
+      "protectedOpaque": 340843,
+      "garageChanged": 0,
+      "protectedSamples": [
+        {
+          "name": "rear-wheel",
+          "x": 149,
+          "y": 598,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "front-wheel",
+          "x": 849,
+          "y": 668,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "side-glass",
+          "x": 510,
+          "y": 280,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "windscreen",
+          "x": 919,
+          "y": 290,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "mirror",
+          "x": 599,
+          "y": 350,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "headlight",
+          "x": 1114,
+          "y": 530,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "grille-badge",
+          "x": 1439,
+          "y": 567,
+          "maskAlpha": 0,
+          "sourceAlpha": 254,
+          "unchanged": true
+        },
+        {
+          "name": "lower-intake",
+          "x": 1104,
+          "y": 685,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        }
+      ],
+      "fingerprint": "fefd71608450cc10c58626f8d7618509cfb288eaf044057258eac8b802921296"
+    },
+    {
+      "variant": "rs3:pink:bbs-lm",
+      "dimensionsMatch": true,
+      "alphaChanged": 0,
+      "outsideMaskChanged": 0,
+      "bodyChanged": 371922,
+      "protectedOpaque": 340843,
+      "garageChanged": 0,
+      "protectedSamples": [
+        {
+          "name": "rear-wheel",
+          "x": 149,
+          "y": 598,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "front-wheel",
+          "x": 849,
+          "y": 668,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "side-glass",
+          "x": 510,
+          "y": 280,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "windscreen",
+          "x": 919,
+          "y": 290,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "mirror",
+          "x": 599,
+          "y": 350,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "headlight",
+          "x": 1114,
+          "y": 530,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "grille-badge",
+          "x": 1439,
+          "y": 567,
+          "maskAlpha": 0,
+          "sourceAlpha": 254,
+          "unchanged": true
+        },
+        {
+          "name": "lower-intake",
+          "x": 1104,
+          "y": 685,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        }
+      ],
+      "fingerprint": "61ca54492b9cb27ebae430e5422d3d6c129a88d1522856f0aac516d682526b35"
+    },
+    {
+      "variant": "rs3:yellow:bbs-lm",
+      "dimensionsMatch": true,
+      "alphaChanged": 0,
+      "outsideMaskChanged": 0,
+      "bodyChanged": 371843,
+      "protectedOpaque": 340843,
+      "garageChanged": 0,
+      "protectedSamples": [
+        {
+          "name": "rear-wheel",
+          "x": 149,
+          "y": 598,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "front-wheel",
+          "x": 849,
+          "y": 668,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "side-glass",
+          "x": 510,
+          "y": 280,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "windscreen",
+          "x": 919,
+          "y": 290,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "mirror",
+          "x": 599,
+          "y": 350,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "headlight",
+          "x": 1114,
+          "y": 530,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "grille-badge",
+          "x": 1439,
+          "y": 567,
+          "maskAlpha": 0,
+          "sourceAlpha": 254,
+          "unchanged": true
+        },
+        {
+          "name": "lower-intake",
+          "x": 1104,
+          "y": 685,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        }
+      ],
+      "fingerprint": "cec42041b2cd211638838b6a12a0fc647fd1311d7f9a9f2161de0b666be9ed14"
+    },
+    {
+      "variant": "rs3:teal:bbs-lm",
+      "dimensionsMatch": true,
+      "alphaChanged": 0,
+      "outsideMaskChanged": 0,
+      "bodyChanged": 371059,
+      "protectedOpaque": 340843,
+      "garageChanged": 0,
+      "protectedSamples": [
+        {
+          "name": "rear-wheel",
+          "x": 149,
+          "y": 598,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "front-wheel",
+          "x": 849,
+          "y": 668,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "side-glass",
+          "x": 510,
+          "y": 280,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "windscreen",
+          "x": 919,
+          "y": 290,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "mirror",
+          "x": 599,
+          "y": 350,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "headlight",
+          "x": 1114,
+          "y": 530,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "grille-badge",
+          "x": 1439,
+          "y": 567,
+          "maskAlpha": 0,
+          "sourceAlpha": 254,
+          "unchanged": true
+        },
+        {
+          "name": "lower-intake",
+          "x": 1104,
+          "y": 685,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        }
+      ],
+      "fingerprint": "597d1eebfffe45e240462e3518852d3c32050e885a0f2c06eabd887830b9adc4"
+    },
+    {
+      "variant": "rs3:blue:bbs-lm:restored",
+      "dimensionsMatch": true,
+      "alphaChanged": 0,
+      "outsideMaskChanged": 0,
+      "bodyChanged": 0,
+      "protectedOpaque": 340843,
+      "garageChanged": 0,
+      "protectedSamples": [
+        {
+          "name": "rear-wheel",
+          "x": 149,
+          "y": 598,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "front-wheel",
+          "x": 849,
+          "y": 668,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "side-glass",
+          "x": 510,
+          "y": 280,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "windscreen",
+          "x": 919,
+          "y": 290,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "mirror",
+          "x": 599,
+          "y": 350,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "headlight",
+          "x": 1114,
+          "y": 530,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "grille-badge",
+          "x": 1439,
+          "y": 567,
+          "maskAlpha": 0,
+          "sourceAlpha": 254,
+          "unchanged": true
+        },
+        {
+          "name": "lower-intake",
+          "x": 1104,
+          "y": 685,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        }
+      ],
+      "fingerprint": "85fef1ec0ef573fb4c9003976a8de17a6640e1b8ba3fc3d50ca5ce3e7f9dca69"
+    },
+    {
+      "variant": "rs3:blue:oz",
+      "dimensionsMatch": true,
+      "alphaChanged": 0,
+      "outsideMaskChanged": 0,
+      "bodyChanged": 0,
+      "protectedOpaque": 340580,
+      "garageChanged": 0,
+      "protectedSamples": [
+        {
+          "name": "rear-wheel",
+          "x": 149,
+          "y": 598,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "front-wheel",
+          "x": 849,
+          "y": 668,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "side-glass",
+          "x": 510,
+          "y": 280,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "windscreen",
+          "x": 919,
+          "y": 290,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "mirror",
+          "x": 599,
+          "y": 350,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "headlight",
+          "x": 1114,
+          "y": 530,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "grille-badge",
+          "x": 1439,
+          "y": 567,
+          "maskAlpha": 0,
+          "sourceAlpha": 254,
+          "unchanged": true
+        },
+        {
+          "name": "lower-intake",
+          "x": 1104,
+          "y": 685,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        }
+      ],
+      "fingerprint": "2211f1cf316da6e441f4a369bfee39ab1dce7ba24409bbf23ee78e3844abb452"
+    },
+    {
+      "variant": "rs3:black:oz",
+      "dimensionsMatch": true,
+      "alphaChanged": 0,
+      "outsideMaskChanged": 0,
+      "bodyChanged": 372236,
+      "protectedOpaque": 340580,
+      "garageChanged": 0,
+      "protectedSamples": [
+        {
+          "name": "rear-wheel",
+          "x": 149,
+          "y": 598,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "front-wheel",
+          "x": 849,
+          "y": 668,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "side-glass",
+          "x": 510,
+          "y": 280,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "windscreen",
+          "x": 919,
+          "y": 290,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "mirror",
+          "x": 599,
+          "y": 350,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "headlight",
+          "x": 1114,
+          "y": 530,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "grille-badge",
+          "x": 1439,
+          "y": 567,
+          "maskAlpha": 0,
+          "sourceAlpha": 254,
+          "unchanged": true
+        },
+        {
+          "name": "lower-intake",
+          "x": 1104,
+          "y": 685,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        }
+      ],
+      "fingerprint": "459a8a0e6026d854d3633c2852bde03f18a9950100cae281ea8af2f2f57a76af"
+    },
+    {
+      "variant": "rs3:mint:oz",
+      "dimensionsMatch": true,
+      "alphaChanged": 0,
+      "outsideMaskChanged": 0,
+      "bodyChanged": 372381,
+      "protectedOpaque": 340580,
+      "garageChanged": 0,
+      "protectedSamples": [
+        {
+          "name": "rear-wheel",
+          "x": 149,
+          "y": 598,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "front-wheel",
+          "x": 849,
+          "y": 668,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "side-glass",
+          "x": 510,
+          "y": 280,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "windscreen",
+          "x": 919,
+          "y": 290,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "mirror",
+          "x": 599,
+          "y": 350,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "headlight",
+          "x": 1114,
+          "y": 530,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "grille-badge",
+          "x": 1439,
+          "y": 567,
+          "maskAlpha": 0,
+          "sourceAlpha": 254,
+          "unchanged": true
+        },
+        {
+          "name": "lower-intake",
+          "x": 1104,
+          "y": 685,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        }
+      ],
+      "fingerprint": "83b1b63db59e09425bb3816071caebb8eddbfeef17ed2267150ba9f2faf74cdf"
+    },
+    {
+      "variant": "rs3:white:oz",
+      "dimensionsMatch": true,
+      "alphaChanged": 0,
+      "outsideMaskChanged": 0,
+      "bodyChanged": 372588,
+      "protectedOpaque": 340580,
+      "garageChanged": 0,
+      "protectedSamples": [
+        {
+          "name": "rear-wheel",
+          "x": 149,
+          "y": 598,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "front-wheel",
+          "x": 849,
+          "y": 668,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "side-glass",
+          "x": 510,
+          "y": 280,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "windscreen",
+          "x": 919,
+          "y": 290,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "mirror",
+          "x": 599,
+          "y": 350,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "headlight",
+          "x": 1114,
+          "y": 530,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "grille-badge",
+          "x": 1439,
+          "y": 567,
+          "maskAlpha": 0,
+          "sourceAlpha": 254,
+          "unchanged": true
+        },
+        {
+          "name": "lower-intake",
+          "x": 1104,
+          "y": 685,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        }
+      ],
+      "fingerprint": "4ad1c56def3988673d41857babec0994748b78f8063f6fef275890dd6d222480"
+    },
+    {
+      "variant": "rs3:silver:oz",
+      "dimensionsMatch": true,
+      "alphaChanged": 0,
+      "outsideMaskChanged": 0,
+      "bodyChanged": 372282,
+      "protectedOpaque": 340580,
+      "garageChanged": 0,
+      "protectedSamples": [
+        {
+          "name": "rear-wheel",
+          "x": 149,
+          "y": 598,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "front-wheel",
+          "x": 849,
+          "y": 668,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "side-glass",
+          "x": 510,
+          "y": 280,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "windscreen",
+          "x": 919,
+          "y": 290,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "mirror",
+          "x": 599,
+          "y": 350,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "headlight",
+          "x": 1114,
+          "y": 530,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "grille-badge",
+          "x": 1439,
+          "y": 567,
+          "maskAlpha": 0,
+          "sourceAlpha": 254,
+          "unchanged": true
+        },
+        {
+          "name": "lower-intake",
+          "x": 1104,
+          "y": 685,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        }
+      ],
+      "fingerprint": "5025672ec1904f660407c41f356a9411bf6198c3e4507b2f2acf3cc248ffcea4"
+    },
+    {
+      "variant": "rs3:graphite:oz",
+      "dimensionsMatch": true,
+      "alphaChanged": 0,
+      "outsideMaskChanged": 0,
+      "bodyChanged": 371491,
+      "protectedOpaque": 340580,
+      "garageChanged": 0,
+      "protectedSamples": [
+        {
+          "name": "rear-wheel",
+          "x": 149,
+          "y": 598,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "front-wheel",
+          "x": 849,
+          "y": 668,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "side-glass",
+          "x": 510,
+          "y": 280,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "windscreen",
+          "x": 919,
+          "y": 290,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "mirror",
+          "x": 599,
+          "y": 350,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "headlight",
+          "x": 1114,
+          "y": 530,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "grille-badge",
+          "x": 1439,
+          "y": 567,
+          "maskAlpha": 0,
+          "sourceAlpha": 254,
+          "unchanged": true
+        },
+        {
+          "name": "lower-intake",
+          "x": 1104,
+          "y": 685,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        }
+      ],
+      "fingerprint": "9eee215877aba750fe88c9d1c0794b5d8669c2dfe5ae95ff92f1c2bbdc19101a"
+    },
+    {
+      "variant": "rs3:red:oz",
+      "dimensionsMatch": true,
+      "alphaChanged": 0,
+      "outsideMaskChanged": 0,
+      "bodyChanged": 371529,
+      "protectedOpaque": 340580,
+      "garageChanged": 0,
+      "protectedSamples": [
+        {
+          "name": "rear-wheel",
+          "x": 149,
+          "y": 598,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "front-wheel",
+          "x": 849,
+          "y": 668,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "side-glass",
+          "x": 510,
+          "y": 280,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "windscreen",
+          "x": 919,
+          "y": 290,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "mirror",
+          "x": 599,
+          "y": 350,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "headlight",
+          "x": 1114,
+          "y": 530,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "grille-badge",
+          "x": 1439,
+          "y": 567,
+          "maskAlpha": 0,
+          "sourceAlpha": 254,
+          "unchanged": true
+        },
+        {
+          "name": "lower-intake",
+          "x": 1104,
+          "y": 685,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        }
+      ],
+      "fingerprint": "c049e8f6d78c50657c5b6bca14d4b5ec57f8240430d09812ce3910053b1ada78"
+    },
+    {
+      "variant": "rs3:orange:oz",
+      "dimensionsMatch": true,
+      "alphaChanged": 0,
+      "outsideMaskChanged": 0,
+      "bodyChanged": 371893,
+      "protectedOpaque": 340580,
+      "garageChanged": 0,
+      "protectedSamples": [
+        {
+          "name": "rear-wheel",
+          "x": 149,
+          "y": 598,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "front-wheel",
+          "x": 849,
+          "y": 668,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "side-glass",
+          "x": 510,
+          "y": 280,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "windscreen",
+          "x": 919,
+          "y": 290,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "mirror",
+          "x": 599,
+          "y": 350,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "headlight",
+          "x": 1114,
+          "y": 530,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "grille-badge",
+          "x": 1439,
+          "y": 567,
+          "maskAlpha": 0,
+          "sourceAlpha": 254,
+          "unchanged": true
+        },
+        {
+          "name": "lower-intake",
+          "x": 1104,
+          "y": 685,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        }
+      ],
+      "fingerprint": "c64423bed0f9390cb0d00af2b956442b2e8b451f5d2ce4f921002cbf7268f651"
+    },
+    {
+      "variant": "rs3:purple:oz",
+      "dimensionsMatch": true,
+      "alphaChanged": 0,
+      "outsideMaskChanged": 0,
+      "bodyChanged": 368477,
+      "protectedOpaque": 340580,
+      "garageChanged": 0,
+      "protectedSamples": [
+        {
+          "name": "rear-wheel",
+          "x": 149,
+          "y": 598,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "front-wheel",
+          "x": 849,
+          "y": 668,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "side-glass",
+          "x": 510,
+          "y": 280,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "windscreen",
+          "x": 919,
+          "y": 290,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "mirror",
+          "x": 599,
+          "y": 350,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "headlight",
+          "x": 1114,
+          "y": 530,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "grille-badge",
+          "x": 1439,
+          "y": 567,
+          "maskAlpha": 0,
+          "sourceAlpha": 254,
+          "unchanged": true
+        },
+        {
+          "name": "lower-intake",
+          "x": 1104,
+          "y": 685,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        }
+      ],
+      "fingerprint": "84a2d5e45fed5874c66b25582b07316cad6ff39aa422171b8fa92d3488a8a19a"
+    },
+    {
+      "variant": "rs3:pink:oz",
+      "dimensionsMatch": true,
+      "alphaChanged": 0,
+      "outsideMaskChanged": 0,
+      "bodyChanged": 372360,
+      "protectedOpaque": 340580,
+      "garageChanged": 0,
+      "protectedSamples": [
+        {
+          "name": "rear-wheel",
+          "x": 149,
+          "y": 598,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "front-wheel",
+          "x": 849,
+          "y": 668,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "side-glass",
+          "x": 510,
+          "y": 280,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "windscreen",
+          "x": 919,
+          "y": 290,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "mirror",
+          "x": 599,
+          "y": 350,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "headlight",
+          "x": 1114,
+          "y": 530,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "grille-badge",
+          "x": 1439,
+          "y": 567,
+          "maskAlpha": 0,
+          "sourceAlpha": 254,
+          "unchanged": true
+        },
+        {
+          "name": "lower-intake",
+          "x": 1104,
+          "y": 685,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        }
+      ],
+      "fingerprint": "ab3b134617f54251562da4990b6bbf15ad5805002f42e199040d18158671877e"
+    },
+    {
+      "variant": "rs3:yellow:oz",
+      "dimensionsMatch": true,
+      "alphaChanged": 0,
+      "outsideMaskChanged": 0,
+      "bodyChanged": 372281,
+      "protectedOpaque": 340580,
+      "garageChanged": 0,
+      "protectedSamples": [
+        {
+          "name": "rear-wheel",
+          "x": 149,
+          "y": 598,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "front-wheel",
+          "x": 849,
+          "y": 668,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "side-glass",
+          "x": 510,
+          "y": 280,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "windscreen",
+          "x": 919,
+          "y": 290,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "mirror",
+          "x": 599,
+          "y": 350,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "headlight",
+          "x": 1114,
+          "y": 530,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "grille-badge",
+          "x": 1439,
+          "y": 567,
+          "maskAlpha": 0,
+          "sourceAlpha": 254,
+          "unchanged": true
+        },
+        {
+          "name": "lower-intake",
+          "x": 1104,
+          "y": 685,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        }
+      ],
+      "fingerprint": "cda04ce642bf016f6ce16166e9144cd462974951a9bddfaf9030db91280c304f"
+    },
+    {
+      "variant": "rs3:teal:oz",
+      "dimensionsMatch": true,
+      "alphaChanged": 0,
+      "outsideMaskChanged": 0,
+      "bodyChanged": 371452,
+      "protectedOpaque": 340580,
+      "garageChanged": 0,
+      "protectedSamples": [
+        {
+          "name": "rear-wheel",
+          "x": 149,
+          "y": 598,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "front-wheel",
+          "x": 849,
+          "y": 668,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "side-glass",
+          "x": 510,
+          "y": 280,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "windscreen",
+          "x": 919,
+          "y": 290,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "mirror",
+          "x": 599,
+          "y": 350,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "headlight",
+          "x": 1114,
+          "y": 530,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "grille-badge",
+          "x": 1439,
+          "y": 567,
+          "maskAlpha": 0,
+          "sourceAlpha": 254,
+          "unchanged": true
+        },
+        {
+          "name": "lower-intake",
+          "x": 1104,
+          "y": 685,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        }
+      ],
+      "fingerprint": "4cccc14c69289ed7daa7eff4db552f7d4746ee42768f410768fc7871d2fe5a5d"
+    },
+    {
+      "variant": "rs3:blue:oz:restored",
+      "dimensionsMatch": true,
+      "alphaChanged": 0,
+      "outsideMaskChanged": 0,
+      "bodyChanged": 0,
+      "protectedOpaque": 340580,
+      "garageChanged": 0,
+      "protectedSamples": [
+        {
+          "name": "rear-wheel",
+          "x": 149,
+          "y": 598,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "front-wheel",
+          "x": 849,
+          "y": 668,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "side-glass",
+          "x": 510,
+          "y": 280,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "windscreen",
+          "x": 919,
+          "y": 290,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "mirror",
+          "x": 599,
+          "y": 350,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "headlight",
+          "x": 1114,
+          "y": 530,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "grille-badge",
+          "x": 1439,
+          "y": 567,
+          "maskAlpha": 0,
+          "sourceAlpha": 254,
+          "unchanged": true
+        },
+        {
+          "name": "lower-intake",
+          "x": 1104,
+          "y": 685,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        }
+      ],
+      "fingerprint": "2211f1cf316da6e441f4a369bfee39ab1dce7ba24409bbf23ee78e3844abb452"
+    },
+    {
+      "variant": "rs3:blue:rotiform",
+      "dimensionsMatch": true,
+      "alphaChanged": 0,
+      "outsideMaskChanged": 0,
+      "bodyChanged": 0,
+      "protectedOpaque": 341414,
+      "garageChanged": 0,
+      "protectedSamples": [
+        {
+          "name": "rear-wheel",
+          "x": 149,
+          "y": 598,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "front-wheel",
+          "x": 849,
+          "y": 668,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "side-glass",
+          "x": 510,
+          "y": 280,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "windscreen",
+          "x": 919,
+          "y": 290,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "mirror",
+          "x": 599,
+          "y": 350,
+          "maskAlpha": 0,
+          "sourceAlpha": 254,
+          "unchanged": true
+        },
+        {
+          "name": "headlight",
+          "x": 1114,
+          "y": 530,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "grille-badge",
+          "x": 1439,
+          "y": 567,
+          "maskAlpha": 0,
+          "sourceAlpha": 254,
+          "unchanged": true
+        },
+        {
+          "name": "lower-intake",
+          "x": 1104,
+          "y": 685,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        }
+      ],
+      "fingerprint": "06cfef9cc3872d552e1d4a67937447048635b56b10f4979855b847142aa78dbe"
+    },
+    {
+      "variant": "rs3:black:rotiform",
+      "dimensionsMatch": true,
+      "alphaChanged": 0,
+      "outsideMaskChanged": 0,
+      "bodyChanged": 371960,
+      "protectedOpaque": 341414,
+      "garageChanged": 0,
+      "protectedSamples": [
+        {
+          "name": "rear-wheel",
+          "x": 149,
+          "y": 598,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "front-wheel",
+          "x": 849,
+          "y": 668,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "side-glass",
+          "x": 510,
+          "y": 280,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "windscreen",
+          "x": 919,
+          "y": 290,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "mirror",
+          "x": 599,
+          "y": 350,
+          "maskAlpha": 0,
+          "sourceAlpha": 254,
+          "unchanged": true
+        },
+        {
+          "name": "headlight",
+          "x": 1114,
+          "y": 530,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "grille-badge",
+          "x": 1439,
+          "y": 567,
+          "maskAlpha": 0,
+          "sourceAlpha": 254,
+          "unchanged": true
+        },
+        {
+          "name": "lower-intake",
+          "x": 1104,
+          "y": 685,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        }
+      ],
+      "fingerprint": "e185e3787eb7b8acbe1013a172242ea526fd2f6815f37aac216871d06266f0b6"
+    },
+    {
+      "variant": "rs3:mint:rotiform",
+      "dimensionsMatch": true,
+      "alphaChanged": 0,
+      "outsideMaskChanged": 0,
+      "bodyChanged": 372076,
+      "protectedOpaque": 341414,
+      "garageChanged": 0,
+      "protectedSamples": [
+        {
+          "name": "rear-wheel",
+          "x": 149,
+          "y": 598,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "front-wheel",
+          "x": 849,
+          "y": 668,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "side-glass",
+          "x": 510,
+          "y": 280,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "windscreen",
+          "x": 919,
+          "y": 290,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "mirror",
+          "x": 599,
+          "y": 350,
+          "maskAlpha": 0,
+          "sourceAlpha": 254,
+          "unchanged": true
+        },
+        {
+          "name": "headlight",
+          "x": 1114,
+          "y": 530,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "grille-badge",
+          "x": 1439,
+          "y": 567,
+          "maskAlpha": 0,
+          "sourceAlpha": 254,
+          "unchanged": true
+        },
+        {
+          "name": "lower-intake",
+          "x": 1104,
+          "y": 685,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        }
+      ],
+      "fingerprint": "00b43f62f7de7d77f2f8bc59ac60bfb53f23ae0f756df68ccbc60311385dbbee"
+    },
+    {
+      "variant": "rs3:white:rotiform",
+      "dimensionsMatch": true,
+      "alphaChanged": 0,
+      "outsideMaskChanged": 0,
+      "bodyChanged": 372287,
+      "protectedOpaque": 341414,
+      "garageChanged": 0,
+      "protectedSamples": [
+        {
+          "name": "rear-wheel",
+          "x": 149,
+          "y": 598,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "front-wheel",
+          "x": 849,
+          "y": 668,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "side-glass",
+          "x": 510,
+          "y": 280,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "windscreen",
+          "x": 919,
+          "y": 290,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "mirror",
+          "x": 599,
+          "y": 350,
+          "maskAlpha": 0,
+          "sourceAlpha": 254,
+          "unchanged": true
+        },
+        {
+          "name": "headlight",
+          "x": 1114,
+          "y": 530,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "grille-badge",
+          "x": 1439,
+          "y": 567,
+          "maskAlpha": 0,
+          "sourceAlpha": 254,
+          "unchanged": true
+        },
+        {
+          "name": "lower-intake",
+          "x": 1104,
+          "y": 685,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        }
+      ],
+      "fingerprint": "9a8137c006763d67014f6ba7122be6fece7d050879147ff4c52dddecc90d1583"
+    },
+    {
+      "variant": "rs3:silver:rotiform",
+      "dimensionsMatch": true,
+      "alphaChanged": 0,
+      "outsideMaskChanged": 0,
+      "bodyChanged": 372012,
+      "protectedOpaque": 341414,
+      "garageChanged": 0,
+      "protectedSamples": [
+        {
+          "name": "rear-wheel",
+          "x": 149,
+          "y": 598,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "front-wheel",
+          "x": 849,
+          "y": 668,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "side-glass",
+          "x": 510,
+          "y": 280,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "windscreen",
+          "x": 919,
+          "y": 290,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "mirror",
+          "x": 599,
+          "y": 350,
+          "maskAlpha": 0,
+          "sourceAlpha": 254,
+          "unchanged": true
+        },
+        {
+          "name": "headlight",
+          "x": 1114,
+          "y": 530,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "grille-badge",
+          "x": 1439,
+          "y": 567,
+          "maskAlpha": 0,
+          "sourceAlpha": 254,
+          "unchanged": true
+        },
+        {
+          "name": "lower-intake",
+          "x": 1104,
+          "y": 685,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        }
+      ],
+      "fingerprint": "00ce364447cbc24d73ed0217c7f07fcf7e20ab3fbf2962b66d31981be8603039"
+    },
+    {
+      "variant": "rs3:graphite:rotiform",
+      "dimensionsMatch": true,
+      "alphaChanged": 0,
+      "outsideMaskChanged": 0,
+      "bodyChanged": 371217,
+      "protectedOpaque": 341414,
+      "garageChanged": 0,
+      "protectedSamples": [
+        {
+          "name": "rear-wheel",
+          "x": 149,
+          "y": 598,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "front-wheel",
+          "x": 849,
+          "y": 668,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "side-glass",
+          "x": 510,
+          "y": 280,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "windscreen",
+          "x": 919,
+          "y": 290,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "mirror",
+          "x": 599,
+          "y": 350,
+          "maskAlpha": 0,
+          "sourceAlpha": 254,
+          "unchanged": true
+        },
+        {
+          "name": "headlight",
+          "x": 1114,
+          "y": 530,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "grille-badge",
+          "x": 1439,
+          "y": 567,
+          "maskAlpha": 0,
+          "sourceAlpha": 254,
+          "unchanged": true
+        },
+        {
+          "name": "lower-intake",
+          "x": 1104,
+          "y": 685,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        }
+      ],
+      "fingerprint": "984e9688eff57ca9dbabc41f63bed700255522a09bb6cfa3cbc7d225b9544337"
+    },
+    {
+      "variant": "rs3:red:rotiform",
+      "dimensionsMatch": true,
+      "alphaChanged": 0,
+      "outsideMaskChanged": 0,
+      "bodyChanged": 371242,
+      "protectedOpaque": 341414,
+      "garageChanged": 0,
+      "protectedSamples": [
+        {
+          "name": "rear-wheel",
+          "x": 149,
+          "y": 598,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "front-wheel",
+          "x": 849,
+          "y": 668,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "side-glass",
+          "x": 510,
+          "y": 280,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "windscreen",
+          "x": 919,
+          "y": 290,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "mirror",
+          "x": 599,
+          "y": 350,
+          "maskAlpha": 0,
+          "sourceAlpha": 254,
+          "unchanged": true
+        },
+        {
+          "name": "headlight",
+          "x": 1114,
+          "y": 530,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "grille-badge",
+          "x": 1439,
+          "y": 567,
+          "maskAlpha": 0,
+          "sourceAlpha": 254,
+          "unchanged": true
+        },
+        {
+          "name": "lower-intake",
+          "x": 1104,
+          "y": 685,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        }
+      ],
+      "fingerprint": "b08752ba1e461aad6206bc82d36b3b3ed0733de02ce815ae2cc41e3751db60b7"
+    },
+    {
+      "variant": "rs3:orange:rotiform",
+      "dimensionsMatch": true,
+      "alphaChanged": 0,
+      "outsideMaskChanged": 0,
+      "bodyChanged": 371626,
+      "protectedOpaque": 341414,
+      "garageChanged": 0,
+      "protectedSamples": [
+        {
+          "name": "rear-wheel",
+          "x": 149,
+          "y": 598,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "front-wheel",
+          "x": 849,
+          "y": 668,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "side-glass",
+          "x": 510,
+          "y": 280,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "windscreen",
+          "x": 919,
+          "y": 290,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "mirror",
+          "x": 599,
+          "y": 350,
+          "maskAlpha": 0,
+          "sourceAlpha": 254,
+          "unchanged": true
+        },
+        {
+          "name": "headlight",
+          "x": 1114,
+          "y": 530,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "grille-badge",
+          "x": 1439,
+          "y": 567,
+          "maskAlpha": 0,
+          "sourceAlpha": 254,
+          "unchanged": true
+        },
+        {
+          "name": "lower-intake",
+          "x": 1104,
+          "y": 685,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        }
+      ],
+      "fingerprint": "5565c7a3c4baedfe1b579eac706733c7a798138ddc9625ad15716625e66d03b3"
+    },
+    {
+      "variant": "rs3:purple:rotiform",
+      "dimensionsMatch": true,
+      "alphaChanged": 0,
+      "outsideMaskChanged": 0,
+      "bodyChanged": 368200,
+      "protectedOpaque": 341414,
+      "garageChanged": 0,
+      "protectedSamples": [
+        {
+          "name": "rear-wheel",
+          "x": 149,
+          "y": 598,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "front-wheel",
+          "x": 849,
+          "y": 668,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "side-glass",
+          "x": 510,
+          "y": 280,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "windscreen",
+          "x": 919,
+          "y": 290,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "mirror",
+          "x": 599,
+          "y": 350,
+          "maskAlpha": 0,
+          "sourceAlpha": 254,
+          "unchanged": true
+        },
+        {
+          "name": "headlight",
+          "x": 1114,
+          "y": 530,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "grille-badge",
+          "x": 1439,
+          "y": 567,
+          "maskAlpha": 0,
+          "sourceAlpha": 254,
+          "unchanged": true
+        },
+        {
+          "name": "lower-intake",
+          "x": 1104,
+          "y": 685,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        }
+      ],
+      "fingerprint": "7bd69836b9d7b0180e799a2e16364180d3629ee4d7734de7d627c2191a83d80e"
+    },
+    {
+      "variant": "rs3:pink:rotiform",
+      "dimensionsMatch": true,
+      "alphaChanged": 0,
+      "outsideMaskChanged": 0,
+      "bodyChanged": 372053,
+      "protectedOpaque": 341414,
+      "garageChanged": 0,
+      "protectedSamples": [
+        {
+          "name": "rear-wheel",
+          "x": 149,
+          "y": 598,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "front-wheel",
+          "x": 849,
+          "y": 668,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "side-glass",
+          "x": 510,
+          "y": 280,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "windscreen",
+          "x": 919,
+          "y": 290,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "mirror",
+          "x": 599,
+          "y": 350,
+          "maskAlpha": 0,
+          "sourceAlpha": 254,
+          "unchanged": true
+        },
+        {
+          "name": "headlight",
+          "x": 1114,
+          "y": 530,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "grille-badge",
+          "x": 1439,
+          "y": 567,
+          "maskAlpha": 0,
+          "sourceAlpha": 254,
+          "unchanged": true
+        },
+        {
+          "name": "lower-intake",
+          "x": 1104,
+          "y": 685,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        }
+      ],
+      "fingerprint": "094be040a9c0e7efcf43cc8463950162cf6466094b0b42f4ae173f0787d133ff"
+    },
+    {
+      "variant": "rs3:yellow:rotiform",
+      "dimensionsMatch": true,
+      "alphaChanged": 0,
+      "outsideMaskChanged": 0,
+      "bodyChanged": 371991,
+      "protectedOpaque": 341414,
+      "garageChanged": 0,
+      "protectedSamples": [
+        {
+          "name": "rear-wheel",
+          "x": 149,
+          "y": 598,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "front-wheel",
+          "x": 849,
+          "y": 668,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "side-glass",
+          "x": 510,
+          "y": 280,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "windscreen",
+          "x": 919,
+          "y": 290,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "mirror",
+          "x": 599,
+          "y": 350,
+          "maskAlpha": 0,
+          "sourceAlpha": 254,
+          "unchanged": true
+        },
+        {
+          "name": "headlight",
+          "x": 1114,
+          "y": 530,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "grille-badge",
+          "x": 1439,
+          "y": 567,
+          "maskAlpha": 0,
+          "sourceAlpha": 254,
+          "unchanged": true
+        },
+        {
+          "name": "lower-intake",
+          "x": 1104,
+          "y": 685,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        }
+      ],
+      "fingerprint": "18856099537b7bffff762102191a40b02c5d1694056706f5242bbe462a2a97e0"
+    },
+    {
+      "variant": "rs3:teal:rotiform",
+      "dimensionsMatch": true,
+      "alphaChanged": 0,
+      "outsideMaskChanged": 0,
+      "bodyChanged": 371191,
+      "protectedOpaque": 341414,
+      "garageChanged": 0,
+      "protectedSamples": [
+        {
+          "name": "rear-wheel",
+          "x": 149,
+          "y": 598,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "front-wheel",
+          "x": 849,
+          "y": 668,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "side-glass",
+          "x": 510,
+          "y": 280,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "windscreen",
+          "x": 919,
+          "y": 290,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "mirror",
+          "x": 599,
+          "y": 350,
+          "maskAlpha": 0,
+          "sourceAlpha": 254,
+          "unchanged": true
+        },
+        {
+          "name": "headlight",
+          "x": 1114,
+          "y": 530,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "grille-badge",
+          "x": 1439,
+          "y": 567,
+          "maskAlpha": 0,
+          "sourceAlpha": 254,
+          "unchanged": true
+        },
+        {
+          "name": "lower-intake",
+          "x": 1104,
+          "y": 685,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        }
+      ],
+      "fingerprint": "3a468c4ed17261fe439324fa72e74f369b68acfd59c22af752f17a5d4c452a62"
+    },
+    {
+      "variant": "rs3:blue:rotiform:restored",
+      "dimensionsMatch": true,
+      "alphaChanged": 0,
+      "outsideMaskChanged": 0,
+      "bodyChanged": 0,
+      "protectedOpaque": 341414,
+      "garageChanged": 0,
+      "protectedSamples": [
+        {
+          "name": "rear-wheel",
+          "x": 149,
+          "y": 598,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "front-wheel",
+          "x": 849,
+          "y": 668,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "side-glass",
+          "x": 510,
+          "y": 280,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "windscreen",
+          "x": 919,
+          "y": 290,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "mirror",
+          "x": 599,
+          "y": 350,
+          "maskAlpha": 0,
+          "sourceAlpha": 254,
+          "unchanged": true
+        },
+        {
+          "name": "headlight",
+          "x": 1114,
+          "y": 530,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "grille-badge",
+          "x": 1439,
+          "y": 567,
+          "maskAlpha": 0,
+          "sourceAlpha": 254,
+          "unchanged": true
+        },
+        {
+          "name": "lower-intake",
+          "x": 1104,
+          "y": 685,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        }
+      ],
+      "fingerprint": "06cfef9cc3872d552e1d4a67937447048635b56b10f4979855b847142aa78dbe"
+    },
+    {
+      "variant": "rs3:blue:work",
+      "dimensionsMatch": true,
+      "alphaChanged": 0,
+      "outsideMaskChanged": 0,
+      "bodyChanged": 0,
+      "protectedOpaque": 341477,
+      "garageChanged": 0,
+      "protectedSamples": [
+        {
+          "name": "rear-wheel",
+          "x": 149,
+          "y": 598,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "front-wheel",
+          "x": 849,
+          "y": 668,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "side-glass",
+          "x": 510,
+          "y": 280,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "windscreen",
+          "x": 919,
+          "y": 290,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "mirror",
+          "x": 599,
+          "y": 350,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "headlight",
+          "x": 1114,
+          "y": 530,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "grille-badge",
+          "x": 1439,
+          "y": 567,
+          "maskAlpha": 0,
+          "sourceAlpha": 254,
+          "unchanged": true
+        },
+        {
+          "name": "lower-intake",
+          "x": 1104,
+          "y": 685,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        }
+      ],
+      "fingerprint": "bd9c3588847aae329715d7a1c62113f68a281d0009e98e435056335a49dcef96"
+    },
+    {
+      "variant": "rs3:black:work",
+      "dimensionsMatch": true,
+      "alphaChanged": 0,
+      "outsideMaskChanged": 0,
+      "bodyChanged": 371792,
+      "protectedOpaque": 341477,
+      "garageChanged": 0,
+      "protectedSamples": [
+        {
+          "name": "rear-wheel",
+          "x": 149,
+          "y": 598,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "front-wheel",
+          "x": 849,
+          "y": 668,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "side-glass",
+          "x": 510,
+          "y": 280,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "windscreen",
+          "x": 919,
+          "y": 290,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "mirror",
+          "x": 599,
+          "y": 350,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "headlight",
+          "x": 1114,
+          "y": 530,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "grille-badge",
+          "x": 1439,
+          "y": 567,
+          "maskAlpha": 0,
+          "sourceAlpha": 254,
+          "unchanged": true
+        },
+        {
+          "name": "lower-intake",
+          "x": 1104,
+          "y": 685,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        }
+      ],
+      "fingerprint": "b68699f3ced0822c6b8623fbedcd3c13881eacbec049642d9c2dae45a9c66441"
+    },
+    {
+      "variant": "rs3:mint:work",
+      "dimensionsMatch": true,
+      "alphaChanged": 0,
+      "outsideMaskChanged": 0,
+      "bodyChanged": 371935,
+      "protectedOpaque": 341477,
+      "garageChanged": 0,
+      "protectedSamples": [
+        {
+          "name": "rear-wheel",
+          "x": 149,
+          "y": 598,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "front-wheel",
+          "x": 849,
+          "y": 668,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "side-glass",
+          "x": 510,
+          "y": 280,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "windscreen",
+          "x": 919,
+          "y": 290,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "mirror",
+          "x": 599,
+          "y": 350,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "headlight",
+          "x": 1114,
+          "y": 530,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "grille-badge",
+          "x": 1439,
+          "y": 567,
+          "maskAlpha": 0,
+          "sourceAlpha": 254,
+          "unchanged": true
+        },
+        {
+          "name": "lower-intake",
+          "x": 1104,
+          "y": 685,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        }
+      ],
+      "fingerprint": "12dbafae67fa10c3d48fd8f56fce3e21c95e49bb4d048bf4aef20f639cbf6bad"
+    },
+    {
+      "variant": "rs3:white:work",
+      "dimensionsMatch": true,
+      "alphaChanged": 0,
+      "outsideMaskChanged": 0,
+      "bodyChanged": 372154,
+      "protectedOpaque": 341477,
+      "garageChanged": 0,
+      "protectedSamples": [
+        {
+          "name": "rear-wheel",
+          "x": 149,
+          "y": 598,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "front-wheel",
+          "x": 849,
+          "y": 668,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "side-glass",
+          "x": 510,
+          "y": 280,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "windscreen",
+          "x": 919,
+          "y": 290,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "mirror",
+          "x": 599,
+          "y": 350,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "headlight",
+          "x": 1114,
+          "y": 530,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "grille-badge",
+          "x": 1439,
+          "y": 567,
+          "maskAlpha": 0,
+          "sourceAlpha": 254,
+          "unchanged": true
+        },
+        {
+          "name": "lower-intake",
+          "x": 1104,
+          "y": 685,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        }
+      ],
+      "fingerprint": "6be6fe6fcfc59aea9e16a0e57cf31f892d5027206d7822a08ec8f014897f0d0f"
+    },
+    {
+      "variant": "rs3:silver:work",
+      "dimensionsMatch": true,
+      "alphaChanged": 0,
+      "outsideMaskChanged": 0,
+      "bodyChanged": 371834,
+      "protectedOpaque": 341477,
+      "garageChanged": 0,
+      "protectedSamples": [
+        {
+          "name": "rear-wheel",
+          "x": 149,
+          "y": 598,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "front-wheel",
+          "x": 849,
+          "y": 668,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "side-glass",
+          "x": 510,
+          "y": 280,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "windscreen",
+          "x": 919,
+          "y": 290,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "mirror",
+          "x": 599,
+          "y": 350,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "headlight",
+          "x": 1114,
+          "y": 530,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "grille-badge",
+          "x": 1439,
+          "y": 567,
+          "maskAlpha": 0,
+          "sourceAlpha": 254,
+          "unchanged": true
+        },
+        {
+          "name": "lower-intake",
+          "x": 1104,
+          "y": 685,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        }
+      ],
+      "fingerprint": "d31269dc952362913a4834d06cfb164e1b2f2e034e50fc7a4798109bec37736a"
+    },
+    {
+      "variant": "rs3:graphite:work",
+      "dimensionsMatch": true,
+      "alphaChanged": 0,
+      "outsideMaskChanged": 0,
+      "bodyChanged": 371056,
+      "protectedOpaque": 341477,
+      "garageChanged": 0,
+      "protectedSamples": [
+        {
+          "name": "rear-wheel",
+          "x": 149,
+          "y": 598,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "front-wheel",
+          "x": 849,
+          "y": 668,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "side-glass",
+          "x": 510,
+          "y": 280,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "windscreen",
+          "x": 919,
+          "y": 290,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "mirror",
+          "x": 599,
+          "y": 350,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "headlight",
+          "x": 1114,
+          "y": 530,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "grille-badge",
+          "x": 1439,
+          "y": 567,
+          "maskAlpha": 0,
+          "sourceAlpha": 254,
+          "unchanged": true
+        },
+        {
+          "name": "lower-intake",
+          "x": 1104,
+          "y": 685,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        }
+      ],
+      "fingerprint": "8be3dffed3994f797759a4baa48c1fa4eed896f619457692f4118f11c655e3fd"
+    },
+    {
+      "variant": "rs3:red:work",
+      "dimensionsMatch": true,
+      "alphaChanged": 0,
+      "outsideMaskChanged": 0,
+      "bodyChanged": 371073,
+      "protectedOpaque": 341477,
+      "garageChanged": 0,
+      "protectedSamples": [
+        {
+          "name": "rear-wheel",
+          "x": 149,
+          "y": 598,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "front-wheel",
+          "x": 849,
+          "y": 668,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "side-glass",
+          "x": 510,
+          "y": 280,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "windscreen",
+          "x": 919,
+          "y": 290,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "mirror",
+          "x": 599,
+          "y": 350,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "headlight",
+          "x": 1114,
+          "y": 530,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "grille-badge",
+          "x": 1439,
+          "y": 567,
+          "maskAlpha": 0,
+          "sourceAlpha": 254,
+          "unchanged": true
+        },
+        {
+          "name": "lower-intake",
+          "x": 1104,
+          "y": 685,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        }
+      ],
+      "fingerprint": "f4d1dc3644003f2f6690802481f5f8878082100b1b58f6c2f9a0d98ccb49d5ac"
+    },
+    {
+      "variant": "rs3:orange:work",
+      "dimensionsMatch": true,
+      "alphaChanged": 0,
+      "outsideMaskChanged": 0,
+      "bodyChanged": 371438,
+      "protectedOpaque": 341477,
+      "garageChanged": 0,
+      "protectedSamples": [
+        {
+          "name": "rear-wheel",
+          "x": 149,
+          "y": 598,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "front-wheel",
+          "x": 849,
+          "y": 668,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "side-glass",
+          "x": 510,
+          "y": 280,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "windscreen",
+          "x": 919,
+          "y": 290,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "mirror",
+          "x": 599,
+          "y": 350,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "headlight",
+          "x": 1114,
+          "y": 530,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "grille-badge",
+          "x": 1439,
+          "y": 567,
+          "maskAlpha": 0,
+          "sourceAlpha": 254,
+          "unchanged": true
+        },
+        {
+          "name": "lower-intake",
+          "x": 1104,
+          "y": 685,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        }
+      ],
+      "fingerprint": "b2b1577451c8933b855e4b57207386e900077e851189e56cb1877c392336e139"
+    },
+    {
+      "variant": "rs3:purple:work",
+      "dimensionsMatch": true,
+      "alphaChanged": 0,
+      "outsideMaskChanged": 0,
+      "bodyChanged": 368035,
+      "protectedOpaque": 341477,
+      "garageChanged": 0,
+      "protectedSamples": [
+        {
+          "name": "rear-wheel",
+          "x": 149,
+          "y": 598,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "front-wheel",
+          "x": 849,
+          "y": 668,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "side-glass",
+          "x": 510,
+          "y": 280,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "windscreen",
+          "x": 919,
+          "y": 290,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "mirror",
+          "x": 599,
+          "y": 350,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "headlight",
+          "x": 1114,
+          "y": 530,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "grille-badge",
+          "x": 1439,
+          "y": 567,
+          "maskAlpha": 0,
+          "sourceAlpha": 254,
+          "unchanged": true
+        },
+        {
+          "name": "lower-intake",
+          "x": 1104,
+          "y": 685,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        }
+      ],
+      "fingerprint": "41d6df8701a21e24c8f376842898d9719b52dfc4fd5fed155d50d4e6af4e6ae7"
+    },
+    {
+      "variant": "rs3:pink:work",
+      "dimensionsMatch": true,
+      "alphaChanged": 0,
+      "outsideMaskChanged": 0,
+      "bodyChanged": 371906,
+      "protectedOpaque": 341477,
+      "garageChanged": 0,
+      "protectedSamples": [
+        {
+          "name": "rear-wheel",
+          "x": 149,
+          "y": 598,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "front-wheel",
+          "x": 849,
+          "y": 668,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "side-glass",
+          "x": 510,
+          "y": 280,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "windscreen",
+          "x": 919,
+          "y": 290,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "mirror",
+          "x": 599,
+          "y": 350,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "headlight",
+          "x": 1114,
+          "y": 530,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "grille-badge",
+          "x": 1439,
+          "y": 567,
+          "maskAlpha": 0,
+          "sourceAlpha": 254,
+          "unchanged": true
+        },
+        {
+          "name": "lower-intake",
+          "x": 1104,
+          "y": 685,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        }
+      ],
+      "fingerprint": "79e780ddce4554db708d674b618982643341d9eff8c9220b8ca011bd879d2faf"
+    },
+    {
+      "variant": "rs3:yellow:work",
+      "dimensionsMatch": true,
+      "alphaChanged": 0,
+      "outsideMaskChanged": 0,
+      "bodyChanged": 371814,
+      "protectedOpaque": 341477,
+      "garageChanged": 0,
+      "protectedSamples": [
+        {
+          "name": "rear-wheel",
+          "x": 149,
+          "y": 598,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "front-wheel",
+          "x": 849,
+          "y": 668,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "side-glass",
+          "x": 510,
+          "y": 280,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "windscreen",
+          "x": 919,
+          "y": 290,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "mirror",
+          "x": 599,
+          "y": 350,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "headlight",
+          "x": 1114,
+          "y": 530,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "grille-badge",
+          "x": 1439,
+          "y": 567,
+          "maskAlpha": 0,
+          "sourceAlpha": 254,
+          "unchanged": true
+        },
+        {
+          "name": "lower-intake",
+          "x": 1104,
+          "y": 685,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        }
+      ],
+      "fingerprint": "b92455c0f8b1fbb1385ed6fba3100f6577a943585185d9223d04e90378680338"
+    },
+    {
+      "variant": "rs3:teal:work",
+      "dimensionsMatch": true,
+      "alphaChanged": 0,
+      "outsideMaskChanged": 0,
+      "bodyChanged": 371037,
+      "protectedOpaque": 341477,
+      "garageChanged": 0,
+      "protectedSamples": [
+        {
+          "name": "rear-wheel",
+          "x": 149,
+          "y": 598,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "front-wheel",
+          "x": 849,
+          "y": 668,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "side-glass",
+          "x": 510,
+          "y": 280,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "windscreen",
+          "x": 919,
+          "y": 290,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "mirror",
+          "x": 599,
+          "y": 350,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "headlight",
+          "x": 1114,
+          "y": 530,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "grille-badge",
+          "x": 1439,
+          "y": 567,
+          "maskAlpha": 0,
+          "sourceAlpha": 254,
+          "unchanged": true
+        },
+        {
+          "name": "lower-intake",
+          "x": 1104,
+          "y": 685,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        }
+      ],
+      "fingerprint": "30ecafd43e796e0a353acf5f7b203293ae77b93de14f7b7d9dc0f6444d635f77"
+    },
+    {
+      "variant": "rs3:blue:work:restored",
+      "dimensionsMatch": true,
+      "alphaChanged": 0,
+      "outsideMaskChanged": 0,
+      "bodyChanged": 0,
+      "protectedOpaque": 341477,
+      "garageChanged": 0,
+      "protectedSamples": [
+        {
+          "name": "rear-wheel",
+          "x": 149,
+          "y": 598,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "front-wheel",
+          "x": 849,
+          "y": 668,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "side-glass",
+          "x": 510,
+          "y": 280,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "windscreen",
+          "x": 919,
+          "y": 290,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "mirror",
+          "x": 599,
+          "y": 350,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "headlight",
+          "x": 1114,
+          "y": 530,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        },
+        {
+          "name": "grille-badge",
+          "x": 1439,
+          "y": 567,
+          "maskAlpha": 0,
+          "sourceAlpha": 254,
+          "unchanged": true
+        },
+        {
+          "name": "lower-intake",
+          "x": 1104,
+          "y": 685,
+          "maskAlpha": 0,
+          "sourceAlpha": 253,
+          "unchanged": true
+        }
+      ],
+      "fingerprint": "bd9c3588847aae329715d7a1c62113f68a281d0009e98e435056335a49dcef96"
+    }
+  ],
+  "upgrade_pixels": [],
+  "observations": [
+    {
+      "case": "new-model-paint-native-matrix",
+      "page_errors": [],
+      "http_errors": [],
+      "failed_requests": [],
+      "console_errors": [],
+      "expected_network_failures": false
+    }
+  ],
+  "extra_requests": [],
+  "screenshots": [
+    "rs3-default-1672.jpg",
+    "rs3-sr-01-12-paints.jpg",
+    "rs3-te37-12-paints.jpg",
+    "rs3-bbs-lm-12-paints.jpg",
+    "rs3-oz-12-paints.jpg",
+    "rs3-rotiform-12-paints.jpg",
+    "rs3-work-12-paints.jpg"
+  ]
+}

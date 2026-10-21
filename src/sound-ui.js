@@ -21,7 +21,7 @@ export function mountSoundControls(parent, engine, { compact = false } = {}) {
   const notice = el(
     "p",
     "engine-note",
-    "Synthesised engine concepts, not recordings of the real cars. Intake and exhaust change the tone; tunes change rev response. Start sound when you want to listen.",
+    "Sample-assisted engine concepts with per-car firing patterns. These are not authenticated recordings of the real models. Intake and exhaust change the tone; tunes change rev response.",
   );
   const status = el("p", "engine-status");
   status.setAttribute("role", "status");

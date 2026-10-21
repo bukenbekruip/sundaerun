@@ -1,5 +1,13 @@
 # Sundae Run artwork production
 
+## Current RS3 and interior expansion
+
+The new user-approved roster has six cars. Audi RS3 8Y Sportback adds six complete rim renders, two tyre sources and two sparse carbon-kit layers. Four cabins per model now total 24 images: Original, Sundae Club, Heritage tan and Track Alcantara. The 24 new creative assets (ten Audi exterior assets and fourteen cabins) come from image_gen; their originals and source hashes are mapped in `docs/RS3_ART_INPUTS.json` and the appended `public/assets/expansion-sources.json`. `scripts/publish-rs3-art.mjs` makes unchanged PNG copies and quality-92 WebP distribution encodings without cropping, resizing or creative pixel editing. It preserves earlier provenance entries. Normal builds need only the committed assets, not image generation or FFmpeg.
+
+Steering options are independent **rim material retrims**, not complete aftermarket wheel replacements. `src/interior-renderer.js` transfers Alcantara/carbon finishes and centre markers within authored model-specific OEM rim contours. It retains the original wheel perspective, hub, airbag illustration, spokes, dashboard, seats and controls. A close-up in Interior helps inspect the finish. Runtime selection, fitting, saved recipes and cabin PNG export use the same material renderer. These are illustrated concepts, not physical fitment claims.
+
+All 60 prior distributed car/upgrade/cabin assets remain byte-identical. Fresh paint/upgrade pixel checks are targeted at the new Audi; nine old-model render comparisons guard the existing renderers. `qa/rs3-interiors/` holds the latest native/portable previews and review. Historical sections below retain their original milestone scope and counts.
+
 ## Current five-car expansion
 
 The live registry now has 30 complete car/rim PNGs, 20 tyre/kit PNGs and ten model-specific cabin WebPs. New M3/Golf assets retain the existing scene camera and gold platform. BMW uses the original uniform scale with a whole-car vertical adjustment of `-12 × 6/11`; Golf uses one uniform 0.54 scale and stage origin `(422.8327, 174.3)` for its taller roof. No wheel/body scaling is performed independently.

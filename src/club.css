@@ -466,3 +466,47 @@
     padding: 18px;
   }
 }
+.steering-options {
+  border-top: 1px solid var(--warm-border);
+  margin-top: 25px;
+  padding-top: 22px;
+}
+.steering-options > p {
+  font-size: 13px;
+  color: var(--muted);
+  line-height: 1.65;
+  margin-block: 12px;
+}
+.interior-options {
+  flex-wrap: wrap;
+}
+.interior-section-nav {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 18px;
+}
+.interior-section-nav button {
+  flex: 1;
+  min-height: 46px;
+}
+.interior-section-nav button[aria-pressed="true"] {
+  background: var(--mint);
+  color: #17321f;
+  border-color: var(--mint);
+  font-weight: 750;
+}
+.steering-closeup {
+  position: relative;
+  width: min(320px, 100%);
+  aspect-ratio: 1;
+  border: 1px solid var(--warm-border);
+  border-radius: 14px;
+  overflow: hidden;
+  margin: 16px 0;
+}
+.steering-closeup img {
+  position: absolute;
+  width: 348.3333%;
+  height: auto;
+  max-width: none;
+}

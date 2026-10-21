@@ -1,6 +1,11 @@
 import { getProduct, getVehicle } from "./catalogue.js";
 import { getPerformancePart } from "./club.js";
-import { getInteriorPackage, getInteriorVariant } from "./interiors.js";
+import {
+  getInteriorPackage,
+  getInteriorVariant,
+  getSteeringOption,
+} from "./interiors.js";
+import { renderSteering } from "./interior-renderer.js";
 import {
   assetUrl,
   CAR_TRANSFORMS,
@@ -98,7 +103,10 @@ export async function createShowCard(build) {
   ctx.fillText(
     Object.entries(build.spec)
       .map(([kind, id]) => getPerformancePart(kind, id).name)
-      .concat(getInteriorPackage(build.interior ?? "stock").name)
+      .concat(
+        getInteriorPackage(build.interior ?? "stock").name,
+        getSteeringOption(build.steering ?? "stock").name,
+      )
       .join("  ·  "),
     52,
     920,
@@ -126,7 +134,8 @@ export async function createInteriorCard(build) {
   canvas.width = 1600;
   canvas.height = 1060;
   const ctx = canvas.getContext("2d");
-  ctx.drawImage(image, 0, 0, 1600, 900);
+  const cabin = renderSteering(image, build.vehicle, build.steering ?? "stock");
+  ctx.drawImage(cabin, 0, 0, 1600, 900);
   ctx.fillStyle = "#fff8eb";
   ctx.fillRect(0, 900, 1600, 160);
   ctx.fillStyle = "#203629";
@@ -134,7 +143,7 @@ export async function createInteriorCard(build) {
   ctx.fillText(build.name, 40, 951, 1520);
   ctx.font = '500 23px "Inter Variable", sans-serif';
   ctx.fillText(
-    `${getVehicle(build.vehicle).name} · ${product.name} · SUNDAE RUN`,
+    `${getVehicle(build.vehicle).name} · ${product.name} · ${getSteeringOption(build.steering ?? "stock").name}`,
     40,
     995,
     1520,

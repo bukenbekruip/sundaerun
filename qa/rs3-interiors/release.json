@@ -1,0 +1,145 @@
+{
+  "edition": "Audi RS3 Sportback, four cabin packages, independent steering and sample-assisted sound",
+  "release_date": "2026-10-21",
+  "portable_html": {
+    "file": "dist/OPEN-SUNDAE-RUN.html",
+    "bytes": 92175723,
+    "sha256": "2eaf8cda99f664e4dbebccb3aee7afa84879bd5ae2974ee36fc714a0a53f42b8"
+  },
+  "download_zip": {
+    "file": "downloads/Sundae-Run-Playable.zip",
+    "bytes": 68522414,
+    "sha256": "b2b05f6da117c1e6ed95d4162eb83e19d1753d2e8c48835f077842fa25000db3"
+  },
+  "archive_integrity": "CRC and exact embedded HTML verified",
+  "runtime_images": 92,
+  "vehicles": [
+    "sti",
+    "porsche",
+    "gt86",
+    "m3",
+    "golf",
+    "rs3"
+  ],
+  "cabin_prices": {
+    "stock": 0,
+    "club": 1800,
+    "heritage": 2300,
+    "track": 2600
+  },
+  "steering_prices": {
+    "stock": 0,
+    "alcantara": 900,
+    "carbon": 1600
+  },
+  "pending": [
+    "authenticated model-specific engine recordings",
+    "full aftermarket steering wheel shapes",
+    "independent seat/knob/mat options and right-hand-drive cabins",
+    "real retailer and affiliate offers with verified fitment"
+  ],
+  "node_tests_passed": 48,
+  "audio": "Sample-assisted Web Audio concepts, including CC0 mechanical residual; no authenticated model recordings, measured engine specs or autoplay.",
+  "audio_renders": 48,
+  "reports": {
+    "interiors_native": {
+      "file": "native/interior-results.json",
+      "sha256": "9a0eb0ba13c5a36cfb949ff48720b29ebf342db7a68d11155c3c41b1d81f7079",
+      "checks": 156
+    },
+    "interiors_portable": {
+      "file": "portable/interior-results.json",
+      "sha256": "91161983ef6dd846b4ca7b92a6cdf80e736680a62254793c02bc31ea46ad3dac",
+      "checks": 157
+    },
+    "sound_native": {
+      "file": "sound-native/sound-results.json",
+      "sha256": "8ae06b36f848c06323a818e670316d7db69000250df61179bc7bf68040d89d24",
+      "checks": 62
+    },
+    "sound_portable": {
+      "file": "sound-portable/sound-results.json",
+      "sha256": "dd8795c7a8eb040f916a21161abd95fb9ea26bc1e4ddbd42f822688136c6d4b7",
+      "checks": 62
+    },
+    "exterior_native": {
+      "file": "exterior-native/exterior-results.json",
+      "sha256": "ebd5bab312eac011628a264aa325a5f6aa012c0bb7a3f8233b0f086b078fb5e5",
+      "checks": 2853
+    },
+    "exterior_portable": {
+      "file": "exterior-portable/exterior-results.json",
+      "sha256": "326b0eea5207ee923e70ef9bc1179557d45dea70a521f7f7b1a3575b035ea27b",
+      "checks": 1605
+    },
+    "club_native": {
+      "file": "club-native/club-results.json",
+      "sha256": "c7831322d340fa13ae4c527a42015d04a762160cb8b78e43b948790a385ab223",
+      "checks": 85
+    },
+    "club_portable": {
+      "file": "club-portable/club-results.json",
+      "sha256": "e3a7b29c6d5d235343a3b78b0007f5f22746ff8a70a73336bbe33b558a7579ea",
+      "checks": 31
+    },
+    "legacy_renderers": {
+      "file": "legacy-renderers/expansion-results.json",
+      "sha256": "cc1a1dadc22920b5a27a06e51eb68a1066f611e9bdd98c67e11624ca4b484a60",
+      "checks": 13
+    },
+    "website": {
+      "file": "website/website-results.json",
+      "sha256": "4cfdf92e4889bd0cd84db2c3e074af531712eaff0183b173ed7abd868d0d0adc",
+      "checks": 70
+    },
+    "offline_audio": {
+      "file": "audio/offline-results.json",
+      "sha256": "9b0d1a37080e1f5aa9e29afbf65959d80e609176caede9cc78e2a4efadee7eab",
+      "checks": 48
+    },
+    "image_failures": {
+      "file": "image-failures/expansion-results.json",
+      "sha256": "58d3a241af1534f6479e23455500bea62601380456c7fa18ddd65a872d172430",
+      "checks": 7
+    }
+  },
+  "previous_release": {
+    "file": "qa/sound-navigation/release.json",
+    "bytes": 4713,
+    "sha256": "d53acc9bce35bbdd46444cd2e781f62da84bc899f4a4073465c2aff8caecc3a9"
+  },
+  "preserved_artwork_assets": 60,
+  "cabin_steering_previews_per_artifact": 72,
+  "source_sha256": {
+    "app.js": "c8218aeaee1bdbb1c3728ec290a047a78640a8e803d5097e3334a05ef4b3296c",
+    "index.html": "feebe2ccf24227cf2bc1e59c95c4f198d75c24fe7e20f83001c6c3c57e8b416b",
+    "src/catalogue.js": "1b1bd34abb7bc354fb4e036eb75354452d84ba14c243ef18c290224f4c98226d",
+    "src/club-ui.js": "cfdf183e3061ded36b2aa3bfe7bd7aec56dd116b54970270440d6aae3eb81452",
+    "src/club.css": "fb875e1cdaf7c8ffb9d13a786dfe66be6d5fb86608716af605595f51824d2001",
+    "src/club.js": "715c24ff0a4955f7775ab375a6a0d24ed1ad0e49fcb1b600366820a06df97606",
+    "src/engine-audio.js": "bb1b3c66fbd6760217c59ed3f4f377b06395f724799ea4b7dc85fdf90f2206cd",
+    "src/engine-texture.js": "5eb8267952b819723f2fd35517ad314ca3e8c457ad4dad079194145fad289fa7",
+    "src/engine-voices.js": "8b96fb89a0dbc0271bc3685b8a0a7ebceb4216e3be2d0e99182a92ae1be657fa",
+    "src/interior-renderer.js": "a88fbd38d89a0e7c6dc045db41df4cb0cf941e3d29d044088a73ef174141e9b2",
+    "src/interiors.js": "5422d707e51e1eae06a63729511ad42c9e32353ef94bcab448d7f607bbeed719",
+    "src/paint-renderer.js": "90e7a76a58cea9a91317977c9b59bd44923394389c10c49437cbeed821bb9982",
+    "src/photography.js": "670f7ab7ddb3b8a06ca738b6e27ef0b91db2aaa34a0f84079822a82e465a8f41",
+    "src/scene.js": "ed3b54e3111ce1938d95b3d52da6ab0600d008c022945793974fb8546cbabafa",
+    "src/sound-ui.js": "09fd2e4723fdc7968027962a205bd9925477a3e567981846e88d044e6586a29e",
+    "src/sound.css": "c239b3dca70aa72bc5704455c3f7aeafeb2ffd5fcd08bc11a7c8c15f37b30ac0",
+    "src/state.js": "e87b1d7ef89dd54661cd04745d5bfa963e93a9c45c6550453b4625abfe55ab53",
+    "src/ui.css": "955ab6366f015c4825f303b47f9a2be99b271dd26fb6ffcbaea4d1f995aaac1a",
+    "src/upgrade-renderer.js": "40e461115355b35ce6d264087b19c3e5ee1a684fb63ce5d2dc8b09fb6896afd5",
+    "scripts/build-standalone.mjs": "5bc711dd85730bfc145ac6f1fec7c36092068b5f81668e918a957cf158fe561f",
+    "tests/sound-browser.py": "fab8cafd48a94db5240f15e9ed59d8a0b5094a8d58a7d565ea61162da6f54490",
+    "tests/engine-offline.py": "9c33701e2b53d0d5350a2d26981f21a3482483435e5a4666a4eed6640f3e3b53",
+    "tests/engine.test.js": "5823916dd6f0b5e42290ee23085688e1bba288330dad47b6fac14db7fc9765b8",
+    "tests/standalone-scanner.test.js": "9f596565739d11c267756d86a767cb1bc7b3770cab1382bc3c8c6d1c45ae8a90",
+    "tests/rs3-interior-browser.py": "29da98e834a9481bbb8db01dcd4ad0326ff56bd35a4f905ca2eb2ededa90848b",
+    "tests/steering.test.js": "b629a3d92b5455a54350f2b121baf1b0dd64cff72189514bb16ddbc10d1a4849",
+    "docs/ENGINE_AUDIO_SOURCES.json": "7b19aea241b8bc6e04670636ac950d1423da2c259e240114c6d2381b70550e04",
+    "scripts/package-playable.py": "8f5cc0900b238ba5387c2420abb93bf0bff673e2c779bbf77f8898b4b8c4def8"
+  },
+  "file_protocol": "Not tested: managed Chromium blocks file://; portable proof uses HTTP with all extra requests blocked.",
+  "public_deployment": "Automatic Pages workflow retained. Latest live deployment could not be verified from this environment."
+}

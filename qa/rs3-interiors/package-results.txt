@@ -1,0 +1,15 @@
+{
+  "edition": "Audi RS3 Sportback, four cabin packages, independent steering and sample-assisted sound",
+  "portable_html": {
+    "file": "dist/OPEN-SUNDAE-RUN.html",
+    "bytes": 92175723,
+    "sha256": "2eaf8cda99f664e4dbebccb3aee7afa84879bd5ae2974ee36fc714a0a53f42b8"
+  },
+  "download_zip": {
+    "file": "downloads/Sundae-Run-Playable.zip",
+    "bytes": 68522414,
+    "sha256": "b2b05f6da117c1e6ed95d4162eb83e19d1753d2e8c48835f077842fa25000db3"
+  },
+  "node_tests_passed": 48,
+  "audio_renders": 48
+}

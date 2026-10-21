@@ -319,10 +319,10 @@ test("only a registered vehicle/wheel render enables the supported paint rendere
   );
 });
 
-test("catalogue exposes the five requested vehicles, six concepts and twelve paints", () => {
+test("catalogue exposes the six requested vehicles, six concepts and twelve paints", () => {
   assert.deepEqual(
     vehicles.map(({ id }) => id),
-    ["sti", "porsche", "gt86", "m3", "golf"],
+    ["sti", "porsche", "gt86", "m3", "golf", "rs3"],
   );
   assert.deepEqual(
     vehicles.map(({ name }) => name),
@@ -332,6 +332,7 @@ test("catalogue exposes the five requested vehicles, six concepts and twelve pai
       "Toyota 86",
       "BMW M3 E46",
       "Volkswagen Golf Mk7 GTI",
+      "Audi RS3 8Y Sportback",
     ],
   );
   assert.equal(VEHICLE, vehicles[0]);
@@ -418,7 +419,7 @@ test("ownership belongs to each vehicle while the credit balance is shared", () 
   assert.equal(getQuote(state).total, 3700);
   state = applyChanges(state).state;
   assert.equal(state.balance, 37220);
-  for (const id of ["m3", "golf"]) {
+  for (const id of ["m3", "golf", "rs3"]) {
     state = selectVehicle(state, id);
     assert.equal(
       getQuote(state).total,
@@ -427,12 +428,12 @@ test("ownership belongs to each vehicle while the credit balance is shared", () 
     );
     state = applyChanges(state).state;
   }
-  assert.equal(state.balance, 29820);
+  assert.equal(state.balance, 26120);
   for (const vehicle of vehicles) {
     const active = selectVehicle(state, vehicle.id);
     assert.equal(getQuote(active).total, 0);
     assert.equal(applyChanges(active).charged, 0);
-    assert.equal(active.balance, 29820);
+    assert.equal(active.balance, 26120);
     assert.deepEqual(active.garage[vehicle.id].purchased, [
       "wheel:sr-01",
       "paint:blue",

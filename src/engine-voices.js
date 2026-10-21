@@ -44,6 +44,17 @@ export const ENGINE_PROFILES = Object.freeze({
     turbo: 0,
     seed: 71,
   },
+  rs3: {
+    name: "Inline-five · turbo",
+    pulses: [0, 0.2, 0.4, 0.6, 0.8],
+    idle: 850,
+    limit: 7000,
+    body: 92,
+    ring: 680,
+    rasp: 0.23,
+    turbo: 0.17,
+    seed: 113,
+  },
   golf: {
     name: "Inline-four · turbo",
     pulses: [0, 0.25, 0.5, 0.75],
@@ -83,7 +94,7 @@ export function engineCharacter(vehicle, spec = {}) {
     limit: profile.limit + tune * 150,
     response: 2.1 + tune * 0.9 + intake * 0.12,
     cutoff: [1250, 2400, 4100][exhaust],
-    grit: [0.15, 0.35, 0.65][exhaust] + tune * 0.025,
+    grit: [0.05, 0.16, 0.3][exhaust] + tune * 0.015,
     induction: [0.018, 0.05, 0.15][intake],
     exhaustLevel: [0.68, 0.75, 0.8][exhaust],
   };
@@ -92,51 +103,66 @@ export function engineCharacter(vehicle, spec = {}) {
 // 1.2 seconds contains whole engine cycles at every anchor RPM. All oscillations
 // and the seeded noise repeat at the buffer boundary, avoiding a loop click.
 export function makeEngineLoop(vehicle, rpm, sampleRate = 22050) {
-  const p = ENGINE_PROFILES[vehicle] || ENGINE_PROFILES.sti;
+  const p = Object.hasOwn(ENGINE_PROFILES, vehicle)
+    ? ENGINE_PROFILES[vehicle]
+    : ENGINE_PROFILES.sti;
   const size = Math.round(sampleRate * 1.2),
     samples = new Float32Array(size);
   const cycles = Math.round((rpm / 120) * 1.2),
     cycleSeconds = 1.2 / cycles;
   let seed = p.seed,
-    noise = 0,
-    mean = 0,
-    peak = 0;
-  const random = new Float32Array(size);
+    noise = 0;
+  const random = new Float32Array(size),
+    strengths = new Float32Array(cycles * p.pulses.length);
   for (let i = 0; i < size; i++) {
     seed = (Math.imul(seed, 1664525) + 1013904223) >>> 0;
     random[i] = seed / 2147483648 - 1;
   }
-  // Warm the noise filter across its circular boundary.
-  for (let i = size - 128; i < size; i++)
-    noise = noise * 0.65 + random[i] * 0.35;
+  for (let i = 0; i < strengths.length; i++)
+    strengths[i] = 0.92 + (random[i] + 1) * 0.08;
+  for (let i = size - 64; i < size; i++) noise = noise * 0.5 + random[i] * 0.5;
   for (let i = 0; i < size; i++) {
-    const phase = ((i / size) * cycles) % 1;
-    noise = noise * 0.65 + random[i] * 0.35;
-    let value = 0,
-      envelope = 0;
-    for (const offset of p.pulses) {
-      const age = ((phase - offset + 1) % 1) * cycleSeconds;
-      const env = Math.exp(-age * 190);
-      // A pressure thump plus damped pipe resonances, with a little combustion texture.
-      value +=
-        env *
-        (Math.sin(age * 2 * Math.PI * p.body) * 0.78 +
-          Math.sin(age * 2 * Math.PI * p.ring) * p.rasp);
-      envelope += env;
+    const position = (i / size) * cycles,
+      phase = position % 1,
+      cycle = Math.floor(position);
+    noise = noise * 0.5 + random[i] * 0.5;
+    let value = 0;
+    for (let cylinder = 0; cylinder < p.pulses.length; cylinder++) {
+      const offset = p.pulses[cylinder],
+        age = ((phase - offset + 1) % 1) * cycleSeconds;
+      const firingCycle = (cycle - (phase < offset ? 1 : 0) + cycles) % cycles;
+      const strength = strengths[firingCycle * p.pulses.length + cylinder];
+      // Fast pressure rise and exhaust decay replace the previous musical sine
+      // pulse. Slight combustion variation avoids a rigid organ-like drone.
+      const pressure = Math.exp(-age / 0.0025) - Math.exp(-age / 0.00012);
+      const pipe =
+        Math.sin(age * Math.PI * 2 * p.ring) * Math.exp(-age / 0.0038);
+      const texture = noise * Math.exp(-age / 0.003) * (0.08 + p.rasp * 0.25);
+      const bank = vehicle === "rs3" ? [1, 0.86, 1.06, 0.9, 0.96][cylinder] : 1;
+      value += strength * bank * (pressure + pipe * p.rasp * 0.75 + texture);
     }
-    value += Math.sin(phase * Math.PI * 2 * p.pulses.length) * 0.12;
-    value += noise * envelope * 0.16;
-    value = Math.tanh(value * 1.65);
     samples[i] = value;
-    mean += value;
+  }
+  const delay = Math.round(sampleRate / (p.body * 3));
+  const shaped = new Float32Array(size);
+  let mean = 0,
+    peak = 0;
+  for (let i = 0; i < size; i++) {
+    // Finite pipe reflections; circular taps preserve the loop boundary.
+    const v =
+      samples[i] * 0.76 +
+      samples[(i - delay + size) % size] * 0.2 -
+      samples[(i - delay * 2 + size) % size] * 0.14;
+    shaped[i] = v;
+    mean += v;
   }
   mean /= size;
   for (let i = 0; i < size; i++) {
-    samples[i] -= mean;
-    peak = Math.max(peak, Math.abs(samples[i]));
+    shaped[i] -= mean;
+    peak = Math.max(peak, Math.abs(shaped[i]));
   }
-  for (let i = 0; i < size; i++) samples[i] *= 0.8 / (peak || 1);
-  return samples;
+  for (let i = 0; i < size; i++) shaped[i] *= 0.8 / (peak || 1);
+  return shaped;
 }
 export function advanceRPM(rpm, throttle, character, dt) {
   const target =
