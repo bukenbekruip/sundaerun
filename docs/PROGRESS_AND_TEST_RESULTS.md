@@ -1,5 +1,13 @@
 # Codex QA progress log
 
+## GitHub Pages deployment preparation — 2026-10-21
+
+Added `.github/workflows/deploy-pages.yml`: Node 24, frozen `npm ci`, existing unit tests, production build, Pages artifact upload and deployment on `main` pushes or manual dispatch. The existing relative Vite base is retained for `/sundaerun/`; game source, artwork, design and behaviour are unchanged. This deployment-only change does not rebuild the independent portable download.
+
+Current-instance checks: `npm ci --cache /tmp/sundaerun-npm-cache`, all **27 unit tests**, and `npm run build` passed. Served `dist/` under `http://127.0.0.1:4173/sundaerun/` to reproduce the project path. All **87 production files** returned HTTP 200 with matching byte lengths. Existing browser cases for five-part purchase/persistence/reset and all three cars at desktop 1366/1920 and mobile 390/360/320 widths passed: **6 cases, 544 assertions**, no page/console/HTTP/request errors. Visually inspected STI desktop 1366 and mobile 390 screenshots. Evidence is in `/tmp/sundaerun-pages-qa/` in this instance.
+
+Public deployment remains unverified: the running environment's proxy returns CONNECT 403 for `api.github.com` and `bukenbekruip.github.io`. Required domains and reusable installation/startup instructions were saved to the environment draft; saving does not apply or publish them. Git push works. Once network changes take effect, check/enable the repository's Pages source as GitHub Actions, inspect the deployment run, and rerun browser checks against the public URL. No successful public deployment or public-site desktop/mobile test is claimed yet.
+
 ## Handoff baseline — 2026-10-20
 
 - Current root source extracted from `Sundae-Run-STI-Playable-V2.zip`, zip integrity verified.
@@ -106,6 +114,18 @@ The functional cases also passed five-part purchases/ownership, per-car persiste
 
 Root inspected all three six-car painted maximum-upgrade sheets, the final desktop/phone track-kit screenshots and representative mechanical grids. Independent review also covered all six STI mechanical overviews and the six white/black all-rim lowering sheets. Small documented lettering/illustration limits remain. The download contains the exact independently passed portable artifact; archive CRC and its embedded HTML SHA-256 match the tested file. The ZIP is 53,825,039 bytes, SHA-256 `6809b71e02b3baad0ff656444bf64e74a72004b215cf722468e726e1460a5755`. Direct file-protocol navigation remains untested under the managed browser policy.
 
+### Pages enablement diagnosis
+
+GitHub API access now works, but the Pages site endpoint returns 404. Creating it through the integration returns 403 Resource not accessible by integration. Official configure-pages input documentation confirms auto-enablement needs a separate token with administration/write and Pages/write; the built-in GITHUB_TOKEN cannot enable it. Repository owner must select GitHub Actions in Settings → Pages. Updated workflow actions to their current release versions to address Node 20 runner deprecation warnings; this does not resolve missing site enablement. No successful public deployment is claimed.
+
+### Public GitHub Pages deployment verified — 2026-10-21
+
+After the owner selected GitHub Actions in Pages settings, the API confirmed `build_type: workflow` and a public site. Manually dispatched run https://github.com/bukenbekruip/sundaerun/actions/runs/39581517877 succeeded (build and deploy) for commit `28de666`. Playable public URL: https://bukenbekruip.github.io/sundaerun/ . All 87 deployed files returned HTTP 200 and matched the local production build SHA-256 hashes.
+
+Live-site Chromium verification passed all six selected cases and 544 assertions: five-part purchase/persistence/reset plus all three cars at desktop 1366/1920 and mobile viewport widths 390/360/320. No console errors, page errors, failed requests or bad HTTP responses occurred. Screenshots of STI desktop 1366, Porsche desktop 1920 and STI mobile 390 were independently inspected. These are automated mobile viewport checks, not physical-device testing. Evidence: `/tmp/sundaerun-public-qa/` and `/tmp/sundaerun-public-assets.json` in this instance.
+
+The first live browser attempt failed before checks because Chromium did not trust the environment HTTPS proxy CA. Imported the supplied CA into an isolated NSS database under `/tmp/sundaerun-browser-home/.pki/nssdb` and reran with that browser HOME. TLS verification remained enabled; the rerun passed. No game source, assets, design or functionality changed. Earlier missing-site and network blockers are resolved for this instance.
+
 ## Build Club: first build-and-show milestone — 2026-10-21
 
 The user clarified that the game belongs inside the Sundae Run website and should focus on building and showing cars, with at least five models, model-specific interiors, performance upgrades and international affiliate shopping. The user confirmed **BMW M3 E46 and VW Golf Mk7 GTI** as the next two models, and asked to start finishing the game before connecting it to the supplied website. The delivery order and remaining scope are recorded in `docs/BUILD_AND_SHOW_PLAN.md`.
@@ -130,4 +150,4 @@ Root inspected desktop collection/performance captures, the approved exterior co
 
 ### Still pending
 
-This is a complete first gameplay loop, **not completion of the full five-car/interior roadmap**. M3 E46/Golf Mk7 GTI artwork and preview support, model-specific interior artwork/customisation, real regional retailer offers and verified fitment, online profiles/gallery/voting, and connection to the supplied Sundae Run website remain pending. No new car or interior artwork was generated or accepted here. The current website's management-game marketing is untouched until integration; store checkout and community signup remain demonstrations. No live affiliate revenue, production deployment or independent fresh-task restoration is claimed.
+This is a complete first gameplay loop, **not completion of the full five-car/interior roadmap**. M3 E46/Golf Mk7 GTI artwork and preview support, model-specific interior artwork/customisation, real regional retailer offers and verified fitment, online profiles/gallery/voting, and connection to the supplied Sundae Run website remain pending. No new car or interior artwork was generated or accepted here. The current website's management-game marketing is untouched until integration; store checkout and community signup remain demonstrations. No live affiliate revenue or independent fresh-task restoration is claimed. The previously established Pages workflow is retained; public delivery of this milestone is checked separately.
