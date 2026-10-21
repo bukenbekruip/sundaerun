@@ -115,10 +115,10 @@ test("enabled car variants resolve to the reviewed transparent artwork", async (
   const manifest = JSON.parse(
     await readFile(new URL("public/assets/cars/manifest.json", root), "utf8"),
   );
-  assert.equal(Object.keys(variants).length, 18);
+  assert.equal(Object.keys(variants).length, 30);
   assert.equal(
     new Set(Object.values(manifest.assets).map(({ sha256 }) => sha256)).size,
-    18,
+    30,
     "Each vehicle/wheel combination needs its own artwork",
   );
   for (const [key, variant] of Object.entries(variants)) {
@@ -154,7 +154,7 @@ test("enabled car variants resolve to the reviewed transparent artwork", async (
   }
 });
 
-test("each complete car has one uniform transform and all 216 combinations have artwork", () => {
+test("each complete car has one uniform transform and all 360 baseline appearances have artwork", () => {
   for (const vehicle of vehicles) {
     const transform = CAR_TRANSFORMS[vehicle.id];
     assert.equal(
@@ -176,7 +176,7 @@ test("each complete car has one uniform transform and all 216 combinations have 
   }
 });
 
-test("all twelve upgrades retain reviewed bytes, actual transparency and registered camera bounds", async () => {
+test("all twenty upgrades retain reviewed bytes, actual transparency and registered camera bounds", async () => {
   const manifest = JSON.parse(
     await readFile(
       new URL("public/assets/upgrades/manifest.json", root),
@@ -188,11 +188,11 @@ test("all twelve upgrades retain reviewed bytes, actual transparency and registe
   );
   assert.deepEqual(manifest.logicalCanvas, STAGE);
   assert.deepEqual(manifest.vehicleTransforms, CAR_TRANSFORMS);
-  assert.equal(Object.keys(upgradeVariants).length, 12);
-  assert.equal(Object.keys(manifest.assets).length, 12);
+  assert.equal(Object.keys(upgradeVariants).length, 20);
+  assert.equal(Object.keys(manifest.assets).length, 20);
   assert.equal(
     new Set(Object.values(manifest.assets).map(({ sha256 }) => sha256)).size,
-    12,
+    20,
   );
   for (const [key, variant] of Object.entries(upgradeVariants)) {
     assert.equal(
@@ -275,7 +275,7 @@ test("all twelve upgrades retain reviewed bytes, actual transparency and registe
   }
 });
 
-test("all 5,832 car, rim, paint, tyre, suspension and body configurations have explicit preview support", () => {
+test("all 9,720 five-car exterior configurations have explicit preview support", () => {
   const keys = new Set();
   let count = 0;
   for (const vehicle of vehicles)
@@ -315,8 +315,8 @@ test("all 5,832 car, rim, paint, tyre, suspension and body configurations have e
               }
               count++;
             }
-  assert.equal(count, 5832);
-  assert.equal(keys.size, 5832);
+  assert.equal(count, 9720);
+  assert.equal(keys.size, 9720);
 });
 
 test("original reference and source artwork remains byte-identical to the handover", async () => {

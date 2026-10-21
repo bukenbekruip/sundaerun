@@ -1,0 +1,346 @@
+{
+  "status": "passed",
+  "assets": [
+    {
+      "asset": "m3:sr-01",
+      "size": [
+        1671,
+        941
+      ],
+      "published_sha256": "a1da53c3649e1f4599e0375968b1e8f8e3a24696eb0e10f94133388fe0daa0d0",
+      "generated_original_verified": true,
+      "portable_bytes": 323296,
+      "portable_sha256": "5db5365143b9d83821a35a2a3f680ffbeb23775d32179608648d70e2718fe4d2",
+      "every_alpha_value_identical": true
+    },
+    {
+      "asset": "golf:sr-01",
+      "size": [
+        1671,
+        941
+      ],
+      "published_sha256": "05424ce280def4a84c698f13f927c519afde3acfc56acfdf5c8aaf8ea0912ec8",
+      "generated_original_verified": true,
+      "portable_bytes": 334910,
+      "portable_sha256": "8e517da35a09fb8f539da4913d3e7a20c3c0730b33f3eae76a419f8f9e8590a6",
+      "every_alpha_value_identical": true
+    },
+    {
+      "asset": "sti:cabin:stock",
+      "size": [
+        1672,
+        941
+      ],
+      "published_sha256": "4b2659bf3c0d67ff8109e265a273273e40154f39c0652a0bd83bdb95a5536c69",
+      "generated_original_verified": true,
+      "cabin_bytes": 290210
+    },
+    {
+      "asset": "sti:cabin:club",
+      "size": [
+        1672,
+        941
+      ],
+      "published_sha256": "dec3cc0a0ae742cab25b5c9e3e8d3be479afa527acdf5993df21e5ca79530090",
+      "generated_original_verified": true,
+      "cabin_bytes": 300912
+    },
+    {
+      "asset": "porsche:cabin:stock",
+      "size": [
+        1672,
+        941
+      ],
+      "published_sha256": "ac5accf5c3bf2efb89c589ff9a48cef8cea3f62546a3d3ff7d91ee803fd10cfb",
+      "generated_original_verified": true,
+      "cabin_bytes": 355458
+    },
+    {
+      "asset": "porsche:cabin:club",
+      "size": [
+        1672,
+        941
+      ],
+      "published_sha256": "74e6ea8ebf7ab9696dee4ef897007e6c3b36585d2fb805d8e0412dcb3e3be3b0",
+      "generated_original_verified": true,
+      "cabin_bytes": 348388
+    },
+    {
+      "asset": "gt86:cabin:stock",
+      "size": [
+        1672,
+        941
+      ],
+      "published_sha256": "bffcd0387a74f022bdf333077bcf254db60b3e139c22646cc2e044f0e131ff8b",
+      "generated_original_verified": true,
+      "cabin_bytes": 277410
+    },
+    {
+      "asset": "gt86:cabin:club",
+      "size": [
+        1672,
+        941
+      ],
+      "published_sha256": "3e3e2b9488df789fd75e83f163b9e2c36a98c88171e36bbfcebf7b6bbe0476e8",
+      "generated_original_verified": true,
+      "cabin_bytes": 301206
+    },
+    {
+      "asset": "m3:cabin:stock",
+      "size": [
+        1672,
+        941
+      ],
+      "published_sha256": "52b8153ca72a97e71185b5a4ee6d4508d1a9b15fbc960b0154df8138560659d9",
+      "generated_original_verified": true,
+      "cabin_bytes": 334174
+    },
+    {
+      "asset": "m3:cabin:club",
+      "size": [
+        1672,
+        941
+      ],
+      "published_sha256": "3b0b3fee3157cc9dfd0ba9e9c45678e7e0cd780120b65db0566a9b75d8aaf762",
+      "generated_original_verified": true,
+      "cabin_bytes": 295604
+    },
+    {
+      "asset": "golf:cabin:stock",
+      "size": [
+        1672,
+        941
+      ],
+      "published_sha256": "ac2879b27fb752870824e3ae9de8da8b3a925cd27e414dcef8ee39ea1eaea67c",
+      "generated_original_verified": true,
+      "cabin_bytes": 335998
+    },
+    {
+      "asset": "golf:cabin:club",
+      "size": [
+        1672,
+        941
+      ],
+      "published_sha256": "f5ded366e53fcd5144443b6ac10491b55e1ff9db43a10dfa7a1b0ac7483ad840",
+      "generated_original_verified": true,
+      "cabin_bytes": 311854
+    },
+    {
+      "asset": "m3:te37",
+      "size": [
+        1671,
+        941
+      ],
+      "published_sha256": "7a4d95bd60ddbfc51c8a515362566ae17a8fef2f6a1bc24a849985318376b30b",
+      "generated_original_verified": true,
+      "portable_bytes": 263058,
+      "portable_sha256": "deaf2c97082406108babfd0fe9e591fb156665da2e44ce21e7ff304705c2f462",
+      "every_alpha_value_identical": true
+    },
+    {
+      "asset": "m3:bbs-lm",
+      "size": [
+        1671,
+        941
+      ],
+      "published_sha256": "71bd5c7b229b0836d275d823fbf014a898b020b30b53c491e2533bd86f796b17",
+      "generated_original_verified": true,
+      "portable_bytes": 265452,
+      "portable_sha256": "60e5bf8caa0e8c077f22f74dffdb1d74ae3152b5acf1bd4bfb704efc76ee1785",
+      "every_alpha_value_identical": true
+    },
+    {
+      "asset": "m3:oz",
+      "size": [
+        1671,
+        941
+      ],
+      "published_sha256": "c49f90778b94c17fbe1b354700f1c367e6e465cef9780d73aaba4ce0cdac6416",
+      "generated_original_verified": true,
+      "portable_bytes": 257536,
+      "portable_sha256": "87442842ee48ecf448062fcc10479e48536e9de5160c19222a517d5e1d812e23",
+      "every_alpha_value_identical": true
+    },
+    {
+      "asset": "m3:rotiform",
+      "size": [
+        1670,
+        941
+      ],
+      "published_sha256": "fcbecb4c8d82b173a6691b4439add6ea4e83d11ec26d421aae0e431249bd0443",
+      "generated_original_verified": true,
+      "portable_bytes": 260396,
+      "portable_sha256": "00aee809d5ab79cff3fdc29bdc07ef2737a2fa5f5af01b81b840a177307d2e15",
+      "every_alpha_value_identical": true
+    },
+    {
+      "asset": "m3:work",
+      "size": [
+        1671,
+        941
+      ],
+      "published_sha256": "aa43c51df1be60bcc53f3deaac8b2ad1ccf325a170184533b996084d03cae8c6",
+      "generated_original_verified": true,
+      "portable_bytes": 260130,
+      "portable_sha256": "e920f109bc64058d613f57946b8f466ddb6cf4b38255aaecf300bfbc03497cfd",
+      "every_alpha_value_identical": true
+    },
+    {
+      "asset": "m3:tyre:sport",
+      "size": [
+        1672,
+        941
+      ],
+      "published_sha256": "2c57f2db6e523cad5511e43d59c595d36361113faf45612f8f16a16dfbca2077",
+      "generated_original_verified": true,
+      "portable_bytes": 274824,
+      "portable_sha256": "ac5ec7f17a225337ebc4a30c529a9e901033e4e4eda75b7a978b1c4c80e34f5f",
+      "every_alpha_value_identical": true
+    },
+    {
+      "asset": "m3:tyre:track",
+      "size": [
+        1671,
+        941
+      ],
+      "published_sha256": "a4a22bae5c369ba4078f5c697a7f79fccc9bb33239de3a4ac20aefcb7eae8c5c",
+      "generated_original_verified": true,
+      "portable_bytes": 273140,
+      "portable_sha256": "4cb4f775080ed5025d363b3df55a0689e245d4728702fa01ab64562583738834",
+      "every_alpha_value_identical": true
+    },
+    {
+      "asset": "m3:body:street",
+      "size": [
+        1671,
+        941
+      ],
+      "published_sha256": "485cedda678d652c64f53b4546c2677b079bfa93d0ee147ab2f78ac4bf0e8ed0",
+      "generated_original_verified": true,
+      "portable_bytes": 52562,
+      "portable_sha256": "242b67276a93674cc9c952affccfe4120c2a2465a02d9877b035816d41c7d9d8",
+      "every_alpha_value_identical": true
+    },
+    {
+      "asset": "m3:body:track",
+      "size": [
+        1672,
+        941
+      ],
+      "published_sha256": "510ddcaf21619608c1ded956a47a76bee1c43542303721469984a1b3f1e89337",
+      "generated_original_verified": true,
+      "portable_bytes": 58796,
+      "portable_sha256": "5e66dfa0903f17d4e97b58e25acc9b02f899bf6950445e774dd18f6a849e7b29",
+      "every_alpha_value_identical": true
+    },
+    {
+      "asset": "golf:te37",
+      "size": [
+        1670,
+        941
+      ],
+      "published_sha256": "7f016b627c6637a74e1fc876f58bad116e18eaebfc059ab4e492449105058346",
+      "generated_original_verified": true,
+      "portable_bytes": 258806,
+      "portable_sha256": "6f139d01aa3404ca880c49797fb4dd23656deb27cde3745f21fcffc50b648fa4",
+      "every_alpha_value_identical": true
+    },
+    {
+      "asset": "golf:bbs-lm",
+      "size": [
+        1670,
+        942
+      ],
+      "published_sha256": "b1fbcf198f2abde343092724892bb9ff0b83f7a7fcb766aebe473d19254ec985",
+      "generated_original_verified": true,
+      "portable_bytes": 277554,
+      "portable_sha256": "ad974a0aafb07f7f7df77a0b3a36ae29d4a5eb404b0a9bfc4a4c696c6798adfa",
+      "every_alpha_value_identical": true
+    },
+    {
+      "asset": "golf:oz",
+      "size": [
+        1670,
+        941
+      ],
+      "published_sha256": "d3b7b2824b90dcf33f8fc7f5f59c93018eda0ee214f0426838d8779270470637",
+      "generated_original_verified": true,
+      "portable_bytes": 265576,
+      "portable_sha256": "0fc507932f2e4a597db09ecc025e4d78e862eb535db5256d52e57fce82e6c797",
+      "every_alpha_value_identical": true
+    },
+    {
+      "asset": "golf:rotiform",
+      "size": [
+        1671,
+        941
+      ],
+      "published_sha256": "eac854e8581621f0a887caedc6899e165811c311d5a38182d4170c6998ea7464",
+      "generated_original_verified": true,
+      "portable_bytes": 272160,
+      "portable_sha256": "dcbf6dddd686d29d3ceb71574c91a275870aecf3fc351507d1f791c8680f17db",
+      "every_alpha_value_identical": true
+    },
+    {
+      "asset": "golf:work",
+      "size": [
+        1671,
+        941
+      ],
+      "published_sha256": "449fb47b68419193ab52bb970cd896f9f048c4c7b2abd2712432d36f4013f02d",
+      "generated_original_verified": true,
+      "portable_bytes": 260592,
+      "portable_sha256": "ac7b72cbf24c4f56dcf9944f50d2a5ad5a11af6fe26d371b9e6688434fac32b3",
+      "every_alpha_value_identical": true
+    },
+    {
+      "asset": "golf:tyre:sport",
+      "size": [
+        1671,
+        941
+      ],
+      "published_sha256": "4df7de79f854d5bfd9e9d22b48070b01d9f08e26acbc8062e58014dd96708eaa",
+      "generated_original_verified": true,
+      "portable_bytes": 270368,
+      "portable_sha256": "22cad589b90dca0356ed621797a94575f2e1cf4f42d1b60bd1e8fec7dddd0350",
+      "every_alpha_value_identical": true
+    },
+    {
+      "asset": "golf:tyre:track",
+      "size": [
+        1671,
+        941
+      ],
+      "published_sha256": "c8c2952d5e14725522a981e5a6bff5ee9984b23a0cecf15b0333a4d8eda73b9f",
+      "generated_original_verified": true,
+      "portable_bytes": 259200,
+      "portable_sha256": "92d2184adeb1a5ec2fc452420c2ec5957b9a9139da87591058102691601943a0",
+      "every_alpha_value_identical": true
+    },
+    {
+      "asset": "golf:body:street",
+      "size": [
+        1671,
+        941
+      ],
+      "published_sha256": "7e818fcd430c107af370d0535ba8f741818158fddf23994d41bd66e818b7aa00",
+      "generated_original_verified": true,
+      "portable_bytes": 52650,
+      "portable_sha256": "622ce0ef9088ed0630d1a3b860e3a9fbeba0b8f2840f11579dc7ed5b2f8c01b9",
+      "every_alpha_value_identical": true
+    },
+    {
+      "asset": "golf:body:track",
+      "size": [
+        1671,
+        941
+      ],
+      "published_sha256": "fdd08f2ea612e0585749d89c1e9623844368d51c513cf6d5cf79bce52902e0ad",
+      "generated_original_verified": true,
+      "portable_bytes": 47144,
+      "portable_sha256": "bda14f69f1b4a591d43e242c1af591e34ccb27328502ee30370b5c21839b1495",
+      "every_alpha_value_identical": true
+    }
+  ],
+  "total_new_webp_bytes": 7739364
+}

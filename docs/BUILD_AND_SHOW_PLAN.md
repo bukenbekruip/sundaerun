@@ -4,6 +4,10 @@ Agreed with the user on 21 October 2026. The game belongs inside the Sundae Run 
 
 The player chooses a car, customises it, saves a named build, completes a themed brief, earns fictional credits and creates a show card. Purchases from real retailers remain optional and separate from game progression.
 
+## Current delivery
+
+The local build-and-show loop, all five confirmed cars, model-specific Original/Club cabins and static brand-website integration are now implemented. The game remains at the existing root URL; `website/play.html` launches it. Real retailer offers, clothing checkout, online profiles and public galleries remain future work. Interiors currently use two coordinated packages per car; independent accessory selections and right-hand-drive artwork are not implemented.
+
 ## Model roster
 
 Keep the existing Subaru WRX STI, Porsche 911 GT3 RS and Toyota 86. The user confirmed BMW M3 E46 and Volkswagen Golf Mk7 GTI as the next two cars. Each needs its own camera-matched exterior assets, paint exclusions, wheel/contact geometry and interior. Do not label an unsupported preview ready or substitute another vehicle's artwork.

@@ -40,7 +40,7 @@ manifest = {
     'logicalCanvas': registry['STAGE'],
     'vehicleTransforms': registry['CAR_TRANSFORMS'],
     'paintMethod': 'Runtime material transfer within authored per-vehicle panel masks, with protected glass, lamps, trim and complete wheel assemblies. Colour previews and wheel names do not establish real-world product fitment.',
-    'registrationNote': 'Each vehicle uses one uniform transform for its body and wheels. Toyota has a single whole-car vertical offset to align its tyre contact with the platform. Minor illustration/reflection differences remain between wheel variants; metadata auditing does not replace visual review.',
+    'registrationNote': 'Each vehicle uses one uniform transform for its body and wheels. Toyota and BMW have single whole-car vertical offsets; Golf uses a uniform 0.54 scale and whole-car placement to fit its taller roof while retaining platform contact. Minor illustration/reflection differences remain between wheel variants; metadata auditing does not replace visual review.',
     'assets': assets,
 }
 target = ROOT / 'public/assets/cars/manifest.json'
@@ -64,6 +64,11 @@ UPGRADE_ORIGINALS = {
     'gt86:tyre:sport': 'exec-1a52b462-0957-40bf-b156-45c05df25f3e.png',
     'gt86:tyre:track': 'exec-bb239627-3acb-4c49-abb5-af24f431e376.png',
 }
+expansion_source_path = ROOT / 'public/assets/expansion-sources.json'
+expansion_sources = json.loads(expansion_source_path.read_text()) if expansion_source_path.exists() else {}
+for key, entry in expansion_sources.items():
+    if ':tyre:' in key or ':body:' in key:
+        UPGRADE_ORIGINALS[key] = entry['sourceGeneratedOriginal']
 
 upgrades = {}
 for key, variant in registry['upgradeVariants'].items():
@@ -115,7 +120,7 @@ for key, variant in registry['upgradeVariants'].items():
 
 upgrade_manifest = {
     'provenance': (
-        'Twelve image_gen concept upgrade assets, published as unchanged byte '
+        'Twenty image_gen concept upgrade assets, published as unchanged byte '
         'copies of the recorded generated originals. Original handover '
         'references and complete-car renders remain unchanged.'
     ),

@@ -319,14 +319,20 @@ test("only a registered vehicle/wheel render enables the supported paint rendere
   );
 });
 
-test("catalogue exposes the three requested vehicles, six concepts and twelve paints", () => {
+test("catalogue exposes the five requested vehicles, six concepts and twelve paints", () => {
   assert.deepEqual(
     vehicles.map(({ id }) => id),
-    ["sti", "porsche", "gt86"],
+    ["sti", "porsche", "gt86", "m3", "golf"],
   );
   assert.deepEqual(
     vehicles.map(({ name }) => name),
-    ["Subaru WRX STI", "Porsche 911 GT3 RS", "Toyota 86"],
+    [
+      "Subaru WRX STI",
+      "Porsche 911 GT3 RS",
+      "Toyota 86",
+      "BMW M3 E46",
+      "Volkswagen Golf Mk7 GTI",
+    ],
   );
   assert.equal(VEHICLE, vehicles[0]);
   assert.equal(getVehicle(), VEHICLE);
@@ -412,11 +418,21 @@ test("ownership belongs to each vehicle while the credit balance is shared", () 
   assert.equal(getQuote(state).total, 3700);
   state = applyChanges(state).state;
   assert.equal(state.balance, 37220);
+  for (const id of ["m3", "golf"]) {
+    state = selectVehicle(state, id);
+    assert.equal(
+      getQuote(state).total,
+      3700,
+      "New models do not borrow another car's purchases",
+    );
+    state = applyChanges(state).state;
+  }
+  assert.equal(state.balance, 29820);
   for (const vehicle of vehicles) {
     const active = selectVehicle(state, vehicle.id);
     assert.equal(getQuote(active).total, 0);
     assert.equal(applyChanges(active).charged, 0);
-    assert.equal(active.balance, 37220);
+    assert.equal(active.balance, 29820);
     assert.deepEqual(active.garage[vehicle.id].purchased, [
       "wheel:sr-01",
       "paint:blue",
@@ -675,12 +691,13 @@ test("v3 migration retains every car and credit balance and supplies free includ
   assert.equal(migrated.balance, 39520);
   for (const vehicle of vehicles) {
     const active = selectVehicle(migrated, vehicle.id);
+    const previous = old.garage[vehicle.id];
     assert.deepEqual(
       active.applied,
-      fittedChoice(old.garage[vehicle.id].applied),
+      previous ? fittedChoice(previous.applied) : createInitialState().applied,
     );
-    assert.deepEqual(active.purchased, old.garage[vehicle.id].purchased);
-    assert.equal(getQuote(active).total, 0);
+    assert.deepEqual(active.purchased, previous?.purchased ?? []);
+    assert.equal(getQuote(active).total, previous ? 0 : 3700);
     assert.equal(active.balance, 39520);
   }
   assert.deepEqual(loadState(serializeState(migrated)), migrated);

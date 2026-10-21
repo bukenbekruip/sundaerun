@@ -1,97 +1,68 @@
 # Sundae Run Garage
 
-A fixed-camera customisation screen with a warm Sundae Run workshop, a gold turntable, live HTML controls, and separate car artwork. Choose a Subaru WRX STI, Porsche 911 GT3 RS or Toyota 86, six wheel concepts and twelve paint colours. Add road, semi-slick or slick tyres, three suspension settings and three carbon body-kit choices. These are concept previews with fictional credits.
+Build and show five enthusiast cars in the warm Sundae Run workshop: **Subaru WRX STI, Porsche 911 GT3 RS, Toyota 86, BMW M3 E46 and Volkswagen Golf Mk7 GTI**. Each has six rim concepts, twelve paints, road/semi-slick/slick tyres, three suspension settings and original/street/track carbon body packages.
 
-![Sundae Run Garage](qa/club/garage-desktop.jpg)
+![Sundae Run Garage](qa/expansion/paint/golf-default-1672.jpg)
+
+## Play and download
+
+- [Garage game](https://bukenbekruip.github.io/sundaerun/)
+- [Sundae Run website, culture and clothing](https://bukenbekruip.github.io/sundaerun/website/)
+- **[Download the offline game ZIP](https://github.com/bukenbekruip/sundaerun/raw/refs/heads/main/downloads/Sundae-Run-Playable.zip)**
+
+Extract the ZIP completely, then open `OPEN-SUNDAE-RUN.html` in Chrome or Edge. No Node.js installation is needed. If clicking the download does nothing, open [the GitHub file page](https://github.com/bukenbekruip/sundaerun/blob/main/downloads/Sundae-Run-Playable.zip) and choose **Download raw file**. Sign in with repository access if prompted. The exact verified download and its hashes are recorded in `qa/expansion/release.json`.
+
+The Pages workflow deploys pushes to `main`; a push alone does not prove the deployment finished. This cloud environment cannot reach the public Pages host, so local production browser verification is separate from live deployment status.
 
 ## Build Club
 
-Open **BUILD CLUB · Build / Show / Earn** in the garage header. Save up to 24 named fitted builds, complete six one-time briefs per car to earn credits and XP, and fit panel filters/intakes, exhausts and tunes. Each car owns its performance parts separately. Game ratings describe fictional progression, not measured horsepower, audio or verified physical fitment.
+Open **BUILD CLUB · Build / Show / Earn** in the garage header:
 
-Create a PNG show card from a saved snapshot, share an `SR1` build code or export its JSON recipe. Friends can import an exterior preview for free; imports grant no purchases, wallet balance or rewards. Your collection and progression save in this browser with the existing exterior save. Real retailer destinations are not configured; the international region selector records a shopping preference only.
+- **Interior:** preview the model-specific Original cabin or Sundae Club cabin. Club costs 1,800 fictional credits per car; owned cabin refits are free. Download a PNG of the fitted cabin.
+- **My builds:** save up to 24 named fitted snapshots, make exterior PNG show cards and share SR1 codes or JSON recipes.
+- **Build briefs:** complete seven one-time briefs per car for credits and XP, including a fitted Club cabin build. Save the fitted build before collecting its reward.
+- **Performance:** fit a panel filter/intake, exhaust and tune using game credits. Ratings are fictional progression values, not measured physical gains or engine audio.
+- **Import:** inspect a friend's build code and preview its exterior. Imports do not grant purchases, money, rewards, cabin ownership or performance parts.
 
-This is the first build-and-show milestone. **The BMW M3 E46, VW Golf Mk7 GTI, model-specific interiors, live community features and connection to the supplied website are still pending.** See [the agreed plan](docs/BUILD_AND_SHOW_PLAN.md). The existing three cars and all their exterior options are retained.
+Every car keeps its own exterior parts, cabin and performance purchases. The wallet is shared. Previews are free; Apply charges only unowned selected exterior parts. The first default wheel-and-paint purchase is 3,700 credits from the initial 48,320. Switching cars cancels unfinished exterior previews. Existing version 2/3/4 saves retain valid purchases, credits and progress; newly added cars start unowned with included baseline parts and an Original cabin.
 
-## Download and play
+Cabins are left-hand-drive illustrated views with two coordinated packages per model. Individual seats, knobs, mats, lighting and right-hand-drive options are future additions. Exterior paint does not recolour cabin artwork. Saved builds and progression stay in this browser; there are no online accounts or public gallery yet. Settings offers a confirmed reset of the whole local garage.
 
-**[Download Sundae Run ZIP](https://github.com/bukenbekruip/sundaerun/raw/refs/heads/main/downloads/Sundae-Run-Playable.zip)** (about 54 MB). Sign in to GitHub with access to this repository if prompted. Extract the ZIP, then open `OPEN-SUNDAE-RUN.html` in Chrome or Edge. No Node.js installation is needed for this download.
+## Website
 
-If the download does not start, [open the ZIP's GitHub file page](https://github.com/bukenbekruip/sundaerun/blob/main/downloads/Sundae-Run-Playable.zip) and choose **Download raw file**. The file is a copy of the verified upgrade build recorded in `qa/upgrades/release.json`.
+The supplied website is integrated under `public/website/`, retaining its brand design and apparel artwork. Its Play page launches the existing root game, and Build Club links back to the website. Old jobs/staff/lifts descriptions have been replaced with the actual build-and-show loop and current game images. The original website intake and original game/reference art were preserved.
 
-## Run the source
+The clothing collection is a preview without checkout. Community signup is a local demonstration; it sends no email or personal details to a service. The offline ZIP contains the game; its website link opens the hosted brand site when internet is available.
 
-Use Node.js 22.12 or newer; the cloud setup uses Node 24. Open a terminal in the folder containing `package.json`:
+## Run and build
+
+Use Node.js 22.12 or newer; cloud setup and deployment use Node 24:
 
 ```sh
 npm ci
 npm run dev
 ```
 
-Open the URL Vite prints. On Windows, use `npm.cmd` if PowerShell blocks `npm.ps1`.
-
-## Build a portable game
-
-```sh
-npm run build:standalone
-```
-
-The current portable game is `dist/OPEN-SUNDAE-RUN.html`. It embeds the code, fonts and runtime images in one file. Save that file to your computer and open it in Chrome or Edge. The legacy `OPEN-THIS-GAME.html` is the old V2 diagnostic demo and is kept as handover history.
-
-For a normal web deployment, publish the contents of `dist/` after `npm run build`. Preview that build with `npm run preview`. The application is built as a real JavaScript module; no manual script-copy workaround is required.
-
-## GitHub Pages deployment
-
-In the repository's **Settings → Pages**, select **GitHub Actions** as the build source. `.github/workflows/deploy-pages.yml` tests and builds the game with Node 24, then deploys `dist/` on pushes to `main` or a manual workflow run. The expected project address is `https://bukenbekruip.github.io/sundaerun/` once deployment succeeds.
-
-Keep `base: './'` in `vite.config.js`: scripts, styles, fonts and runtime artwork then resolve within the `/sundaerun/` project directory. No backend, external image host or application secrets are required. The portable ZIP is independent of Pages and does not need rebuilding for deployment-only changes.
-
-The cloud onboarding chat does not expose its internal server as a public preview. A localhost address printed there belongs to the cloud machine. Use the portable game to try this build on your computer, or deploy the normal `dist/` build to a static host for a shareable web address.
-
-## Game behaviour
-
-- Previewing is free. Cancel restores the last applied appearance.
-- Applying the default wheel and paint combination costs 3,700 fictional credits, taking the initial balance from 48,320 to 44,620. Owned parts can be fitted again without another charge.
-- Applied choices and balance save in the current browser. Uncommitted previews do not become applied changes after a reload.
-- Each car remembers its applied build and owned parts. Switching cars discards an unfinished free preview and restores that car's saved build; the credit balance is shared. Existing STI and three-car saves migrate automatically, keeping valid credits and purchases.
-- Tyre changes preserve size and rim geometry. Suspension lowers the rigid body while the wheels stay planted. Street and track kits add carbon splitters, canards and sill details.
-- The original tyre, suspension and body options are included; upgraded parts are purchased once per car.
-- Settings includes a confirmed reset. Missing scene images keep Apply disabled and offer Retry.
-- Desktop artwork and controls scale together. Narrow screens retain the whole car and use readable scrolling controls.
-
-## Real products and affiliate links
-
-`src/catalogue.js` holds product data independently of artwork and game state. It supports a retailer URL, real price and currency, affiliate disclosure and fitment metadata. No retailer URLs or verified physical-product fitment are configured yet. See [the catalogue guide](docs/PRODUCT_CATALOGUE.md) before adding a merchant.
-
-The current car/wheel images are concept illustrations. Adding a real product requires its own product data and a matching preview if it will alter the car. A product photograph alone is not a calibrated wheel render.
-
-## Validation
+Open Vite's printed URL. On Windows, use `npm.cmd` if PowerShell blocks `npm.ps1`.
 
 ```sh
 npm test
 npm run build:standalone
+npm run preview -- --host 127.0.0.1 --port 4173
 ```
 
-The cloud's Chromium checks use Python Playwright, `/usr/bin/chromium`, and a running production preview:
+Normal web output is `dist/` after `npm run build`. `npm run build:standalone` also creates the single-file `dist/OPEN-SUNDAE-RUN.html`, embedding 68 runtime images and the game font. New portable artwork uses compact WebP distribution copies to stay within the unchanged 96 MiB budget. Source PNGs and original reference images are preserved. The legacy `OPEN-THIS-GAME.html` is historical diagnostic material.
 
-```sh
-python3 tests/browser-smoke.py
-python3 tests/portable-smoke.py
-python3 tests/club-browser.py
-python3 tests/club-browser.py --portable --output qa/club/portable
-```
+`.github/workflows/deploy-pages.yml` tests, builds and deploys `dist/` on `main` pushes or manual workflow runs. Select **GitHub Actions** in repository **Settings → Pages**. Keep `base: './'` in `vite.config.js` so the game and website work inside the `/sundaerun/` project path. No backend, app secrets or external fonts are required.
 
-Those scripts cover five-part transactions, per-car persistence, save migration, image-load races and failures, the 216 baseline paint combinations, 486 blue mechanical combinations and representative painted upgrades, viewport sizing, protected paint/tyre pixels and wheel contacts, and the portable build's resource independence. Current upgrade screenshots and results are in `qa/upgrades/`; the earlier three-car release remains in `qa/expanded/`; the first release's evidence remains in `qa/current/`. The visual review and known limits are recorded in [the progress log](docs/PROGRESS_AND_TEST_RESULTS.md).
+## Verification and artwork
 
-Current Build Club evidence is in `qa/club/`; the older release folders remain historical. After a passing production and portable Club run, `python3 scripts/package-playable.py` packages the exact tested HTML and writes current release hashes. The previous full exterior matrix is not automatically revalidated by a Club-only test run.
+Node tests cover catalogue/state, save migration, ownership, cabin recipes/rewards and asset geometry. Browser scripts cover native controls, body-only paint pixels, planted wheel/contact probes, cabin transactions and PNG downloads, responsive layouts, missing-image recovery, offline networking and the website/game roundtrip. Current evidence is in `qa/expansion/`; historical evidence remains in `qa/current/`, `qa/expanded/`, `qa/upgrades/` and `qa/club/`.
 
-## Project map
+Read [the progress record](docs/PROGRESS_AND_TEST_RESULTS.md), [art pipeline](docs/ART_PIPELINE.md) and [agreed expansion plan](docs/BUILD_AND_SHOW_PLAN.md). Browser evidence for the portable artifact uses HTTP delivery with every additional request blocked. Managed Chromium blocks direct `file://` navigation, so that protocol is not claimed as tested here.
 
-- `app.js`, `index.html`, `src/ui.css`: live interface and scene controller.
-- `src/state.js`: per-car builds and ownership, shared balance, previews, purchases and save migration.
-- `src/catalogue.js`: catalogue and optional merchant data.
-- `src/scene.js`, `public/assets/scene/`, `public/assets/cars/`: registered full-car wheel variants and vehicle placement.
-- `src/paint-renderer.js`: authored paint regions, protected trim/glass/light/wheel regions and runtime paint rendering.
-- `src/upgrade-renderer.js`, `public/assets/upgrades/`: authored rubber clipping, fixed wheel extraction, rigid body lowering and registered carbon additions.
-- `public/assets/products/`: clean product thumbnails.
-- `reference/`, `source-art/`: original artwork preserved from the handover.
-- `CODEX_HANDOFF.md`, `README_START_HERE.md`, `FILE_MANIFEST.json`: historical transfer context and original checksums.
+## Real products and affiliate links
+
+The catalogue keeps fictional game prices separate from optional real retailer offers and vehicle compatibility. No live retailer destinations, affiliate accounts, real prices or verified physical fitment are configured. The shopping-region selector records an international preference only. See [the catalogue guide](docs/PRODUCT_CATALOGUE.md) before adding real merchants.
+
+Real accessories need supplied affiliate destinations, regional availability and verified fitment. Concept illustrations do not establish that a wheel, tyre, seat or engine part fits a real car. Buying a game upgrade never places an order or spends real money.

@@ -1,6 +1,6 @@
 # Instructions for Codex — Sundae Run Garage
 
-The user has now authorized the **build-and-show game expansion**, then integration into the supplied Sundae Run website. Read `docs/BUILD_AND_SHOW_PLAN.md` for the current agreed direction and delivery order. The next two approved models are BMW M3 E46 and VW Golf Mk7 GTI; they are not implemented until their artwork and preview capabilities are ready. The older one-screen restrictions below protect the exterior composition, but do not prohibit the newly requested saved builds, credit challenges, performance upgrades, interiors or subsequent website integration. Do not restore the old workshop jobs/staff concept.
+The user has now authorized the **build-and-show game expansion**, then integration into the supplied Sundae Run website. Read `docs/BUILD_AND_SHOW_PLAN.md` for the current agreed direction and delivery order. The implemented roster now includes BMW M3 E46 and VW Golf Mk7 GTI alongside the original three, with model-specific Original/Club cabins. Current expansion evidence belongs in `qa/expansion/`. The supplied brand website is in `public/website/`; its Play page opens the retained root game. Keep original reference and apparel artwork intact. The older one-screen restrictions below protect the exterior composition, but do not prohibit the newly requested saved builds, credit challenges, performance upgrades, interiors or subsequent website integration. Do not restore the old workshop jobs/staff concept.
 
 The user approved the original STI customisation screen and then explicitly requested **the STI, Porsche 911 GT3 RS and Toyota 86, more paint colours and all six rims, then tyres, suspension and body kits**. That request supersedes the historical STI-only scope. Read the current `README.md` and `docs/PROGRESS_AND_TEST_RESULTS.md`, then the historical `CODEX_HANDOFF.md`, `docs/FULL_SCREEN_SPECIFICATION.md`, `docs/KNOWN_DEFECTS_AND_ASSETS.md`, and examine `reference/APPROVED_BLUE_STI_SCREEN.png` **before editing**.
 
@@ -8,7 +8,7 @@ The current source uses the clean branded garage plate, registered complete-car 
 
 ## Non-negotiable rules
 
-- **One customisation screen:** support the three requested cars using its vehicle selector. Do not work on the larger Sundae Run website, garage management, staff, jobs or other expansion without a new request.
+- **One customisation screen:** support the five approved cars using its vehicle selector. Do not work on the larger Sundae Run website, garage management, staff, jobs or other expansion without a new request.
 - Preserve the approved warm branded workshop, circular gold-rimmed platform, blue STI, 3/4 front camera, top HUD, left menu, and bottom wheel/paint/checkout panels. The reference image is the visual truth for the _default appearance_, not an acceptable final flattened-background implementation.
 - The original V2 baseline was **BROKEN for actual customisations** even though it could display the approved default image. Keep its defect evidence separate from current results. Scripts running alone do not demonstrate visual correctness.
 - **Do not fake art corrections** with circles, CSS distortions, oversized face-on rims, rectangles of tinted pixels, independently scaling the body and wheels, or low-poly 3D primitives.

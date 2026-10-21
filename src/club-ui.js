@@ -10,6 +10,7 @@ import {
   eligibleChallenges,
   encodeBuild,
   fitPerformance,
+  fitInterior,
   getPerformancePart,
   MAX_SAVED_BUILDS,
   normaliseClub,
@@ -18,7 +19,13 @@ import {
   saveShowBuild,
   SHOPPING_REGIONS,
 } from "./club.js";
-import { createShowCard } from "./photography.js";
+import { createShowCard, createInteriorCard } from "./photography.js";
+import {
+  getInteriorPackage,
+  getInteriorVariant,
+  interiorPackages,
+} from "./interiors.js";
+import { assetUrl } from "./scene.js";
 
 const el = (tag, cls, text) => {
   const node = document.createElement(tag);
@@ -49,6 +56,7 @@ export function mountClub({ getState, setState, notify, sceneReady }) {
     photoRequest = 0,
     deleted = null,
     imported = null;
+  let interiorPreview = null;
   const photoCache = new Map();
   const status = (text) => {
     document.querySelector("#club-status").textContent = text;
@@ -139,7 +147,7 @@ export function mountClub({ getState, setState, notify, sceneReady }) {
         el(
           "p",
           "",
-          "Fit your favourite parts in the garage, then give the build a name. Your first completed brief earns 1,500 credits.",
+          "Fit your favourite parts in the garage, then give the build a name. The Make it yours brief earns 1,500 credits.",
         ),
       );
       content.append(empty);
@@ -349,6 +357,132 @@ export function mountClub({ getState, setState, notify, sceneReady }) {
     content.append(grid);
   }
 
+  function renderInterior() {
+    const state = getState(),
+      cabin = normaliseClub(state.club).interiors[state.vehicle];
+    const selected = getInteriorPackage(interiorPreview)
+      ? interiorPreview
+      : cabin.fitted;
+    interiorPreview = selected;
+    content.append(
+      el(
+        "div",
+        "club-intro",
+        "Step inside your car. Preview either cabin for free, then fit a complete interior package using garage credits. Each model keeps its own cabin and purchases.",
+      ),
+    );
+    const preview = el("div", "interior-preview"),
+      image = el("img");
+    image.src = assetUrl(getInteriorVariant(state.vehicle, selected).src);
+    image.alt = `${getVehicle(state.vehicle).name} — ${getInteriorPackage(selected).name}, left-hand-drive cabin concept`;
+    const notice = el("p", "interior-loading", "Loading cabin…");
+    let ready = false;
+    const controls = el("div", "interior-options");
+    const fit = button(
+      "Loading cabin…",
+      () => {
+        if (!ready) return;
+        const result = fitInterior(getState(), selected);
+        commit(result.state);
+        status(
+          result.status === "insufficient-funds"
+            ? "Complete a build brief to earn more credits."
+            : `${getInteriorPackage(selected).name} fitted. ${result.charged ? money(result.charged) + " used." : "No credits used."} Save a new build to keep this cabin in its recipe.`,
+        );
+      },
+      "primary-button",
+    );
+    const own = selected === "stock" || cabin.owned.includes(selected),
+      charge = own ? 0 : getInteriorPackage(selected).price;
+    const refreshFit = () => {
+      fit.disabled =
+        !ready || selected === cabin.fitted || charge > state.balance;
+      fit.textContent = !ready
+        ? "Cabin unavailable"
+        : selected === cabin.fitted
+          ? "Fitted ✓"
+          : charge > state.balance
+            ? "Not enough credits"
+            : charge
+              ? `Fit cabin · ${money(charge)}`
+              : "Fit owned cabin";
+    };
+    fit.disabled = true;
+    fit.dataset.fitInterior = selected;
+    image.addEventListener("load", () => {
+      ready = image.naturalWidth > 0;
+      notice.hidden = ready;
+      refreshFit();
+    });
+    image.addEventListener("error", () => {
+      ready = false;
+      notice.textContent =
+        "This cabin could not load. No credits have been used.";
+      notice.hidden = false;
+      refreshFit();
+      const retry = button("Retry cabin", () => render());
+      notice.append(retry);
+    });
+    for (const product of interiorPackages) {
+      const choice = button(product.name, () => {
+        interiorPreview = product.id;
+        render();
+      });
+      choice.dataset.interior = product.id;
+      choice.setAttribute("aria-pressed", String(product.id === selected));
+      controls.append(choice);
+    }
+    preview.append(image, notice);
+    const details = el("div", "interior-details");
+    details.append(
+      el("h3", "", getInteriorPackage(selected).name),
+      el("p", "", getInteriorPackage(selected).description),
+      el(
+        "p",
+        "club-fineprint",
+        "Left-hand-drive illustrated cabin. Interior packages are coordinated concepts; exterior paint and individual physical accessory fitment are separate.",
+      ),
+    );
+    const actions = el("div", "club-card-actions");
+    actions.append(
+      fit,
+      button("Restore fitted preview", () => {
+        interiorPreview = cabin.fitted;
+        render();
+      }),
+      button("Create cabin show card", async () => {
+        const request = ++photoRequest;
+        status("Preparing your fitted cabin card…");
+        try {
+          const result = await createInteriorCard({
+            vehicle: state.vehicle,
+            name: getVehicle(state.vehicle).shortName + " / my cabin",
+            interior: cabin.fitted,
+          });
+          if (request !== photoRequest || !dialog.open) return;
+          const img = el("img", "club-show-card");
+          img.src = result;
+          img.alt = `${getVehicle(state.vehicle).name} fitted cabin show card`;
+          content.replaceChildren(
+            img,
+            button(
+              "Download cabin image",
+              () => download(result, `${state.vehicle}-sundae-cabin.png`),
+              "primary-button",
+            ),
+            button("Back to interior", () => render()),
+          );
+          status(
+            "This card shows your fitted cabin, including when a different package was being previewed.",
+          );
+        } catch (e) {
+          status(e.message);
+        }
+      }),
+    );
+    content.append(preview, controls, details, actions);
+  }
+
   function previewBuild(build) {
     let next = selectVehicle(getState(), build.vehicle);
     next = selectPreview(next, build.selection);
@@ -514,6 +648,9 @@ export function mountClub({ getState, setState, notify, sceneReady }) {
       parts.append(el("li", "", getProduct(kind, id).name));
     for (const [kind, id] of Object.entries(build.spec))
       parts.append(el("li", "", getPerformancePart(kind, id).name));
+    parts.append(
+      el("li", "", getInteriorPackage(build.interior ?? "stock").name),
+    );
     content.replaceChildren(
       el("span", "eyebrow", getVehicle(build.vehicle).name),
       el("h3", "", build.name),
@@ -521,7 +658,7 @@ export function mountClub({ getState, setState, notify, sceneReady }) {
       el(
         "p",
         "club-intro",
-        "Exterior parts will be previewed for free. Fit them using your own garage credits. Performance selections are listed here as a build recipe; fit those separately in Performance.",
+        "Exterior parts will be previewed for free. Fit them using your own garage credits. Performance and cabin choices are listed as a build recipe; fit those separately in their sections.",
       ),
       button(
         "Preview this exterior",
@@ -543,12 +680,14 @@ export function mountClub({ getState, setState, notify, sceneReady }) {
     if (tab === "builds") renderBuilds();
     else if (tab === "briefs") renderChallenges();
     else if (tab === "performance") renderPerformance();
+    else if (tab === "interior") renderInterior();
     else renderImport();
   }
   for (const b of dialog.querySelectorAll("[data-club-tab]"))
     b.addEventListener("click", () => {
       tab = b.dataset.clubTab;
       deleted = null;
+      interiorPreview = null;
       status("");
       render();
     });
@@ -573,6 +712,7 @@ export function mountClub({ getState, setState, notify, sceneReady }) {
   return {
     open(nextTab = "builds") {
       tab = nextTab;
+      interiorPreview = null;
       region.value = normaliseClub(getState().club).region;
       status("");
       render();

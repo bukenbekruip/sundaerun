@@ -1,0 +1,142 @@
+{
+  "edition": "Five-car Build Club with model-specific cabins and brand website",
+  "release_date": "2026-10-21",
+  "implemented_vehicles": [
+    "Subaru WRX STI",
+    "Porsche 911 GT3 RS",
+    "Toyota 86",
+    "BMW M3 E46",
+    "Volkswagen Golf Mk7 GTI"
+  ],
+  "cabin_packages": {
+    "stock": 0,
+    "club": 1800
+  },
+  "briefs_per_car": 7,
+  "pending": [
+    "independent interior accessories/right-hand-drive artwork",
+    "real retailer/affiliate offers and verified fitment",
+    "clothing checkout",
+    "online accounts/gallery/voting"
+  ],
+  "portable_html": {
+    "file": "OPEN-SUNDAE-RUN.html",
+    "bytes": 83032635,
+    "sha256": "891ed9c23a865c56589d38432b25f0976a40ee93fe76b9c02d82de460f1ba190"
+  },
+  "download_zip": {
+    "file": "Sundae-Run-Playable.zip",
+    "bytes": 61622068,
+    "sha256": "dc4a1711538844a949e98e4c14c1eb38648e2b22c4798a08bb819484940c23a1"
+  },
+  "archive_integrity": "CRC and exact embedded HTML verified",
+  "runtime_images": 68,
+  "portable_copy_proof": {
+    "file": "portable-copy-proof.json",
+    "bytes": 975,
+    "sha256": "c74a8b430182b62586da7ade49d2cd393a720cd6b09c5ce8e1dee31ea6b6be0c"
+  },
+  "node_tests_passed": 39,
+  "reports": {
+    "cabins": {
+      "file": "native-initial/expansion-results.json",
+      "sha256": "aafe543542e1295a579f76c7b87860e8757d26a1ac8753af0054711f93dce155",
+      "checks": 72
+    },
+    "layouts": {
+      "file": "layout/expansion-results.json",
+      "sha256": "0bccfa323e0139ef7e869a93505ce2aa1f01f2e833e42396b6e84bd1515f032c",
+      "checks": 87
+    },
+    "legacy_renderers": {
+      "file": "legacy-renderers-final/expansion-results.json",
+      "sha256": "137bafde83e8c4c1ab22d15d4a79335df8aaba995f91ba17c0a479c15c5dc8c5",
+      "checks": 13
+    },
+    "image_failures": {
+      "file": "failures/expansion-results.json",
+      "sha256": "aea380191c2fd10934c2d6882e9c85fc5dcb831ae071332c3469a23764a34a31",
+      "checks": 6
+    },
+    "initial_paint": {
+      "file": "paint/browser-results.json",
+      "sha256": "1732740e0670e6ef8725356250e22c2edb31ec6b4f4a52b185f6d0b3aef77882",
+      "checks": 3976
+    },
+    "final_m3_paint": {
+      "file": "final-m3-paint/exterior-results.json",
+      "sha256": "1fa9f5cde1432b47162f37cfcd57ed32e015fb8387a9ecd85c7d7a6a363d3bf4",
+      "checks": 1993
+    },
+    "mechanical": {
+      "file": "mechanical-corrected/exterior-results.json",
+      "sha256": "3a80e1a1c64c9a80fd91f564ed327c6a0db97d3edeb05fd731aa1757a2fdc466",
+      "checks": 1348
+    },
+    "maximum": {
+      "file": "maximum/exterior-results.json",
+      "sha256": "0bd03946c9bbf6a92edfc9bf80d60a2e4d232bf891f644430e4eff79951e2094",
+      "checks": 373
+    },
+    "golf_street_final": {
+      "file": "final-golf-street/exterior-results.json",
+      "sha256": "6ab02d868c7c732be417ef6372e9a37ec3fac14d931d57bdc88515702a95ccc2",
+      "checks": 675
+    },
+    "portable_exterior": {
+      "file": "portable-exterior/exterior-results.json",
+      "sha256": "734a2c0f0f76428b8b7ea47b9c40ad36a68ed7503a0bd0d95ba617f435dd814e",
+      "checks": 3199
+    },
+    "portable_cabins": {
+      "file": "portable-cabins/expansion-results.json",
+      "sha256": "f0c92307943364ba06ee52f5941e10bbfe54ffc53d10e5822edde4624ecfcab7",
+      "checks": 74
+    },
+    "club_regression": {
+      "file": "club-regression/club-results.json",
+      "sha256": "782533cf83e71db604dc707c40b873af5d4372d16cb03e9c0a05c432fecd55b7",
+      "checks": 85
+    },
+    "portable_club_regression": {
+      "file": "portable-club-regression/club-results.json",
+      "sha256": "59d0da256ceaccb628a66616c9847bd40985743392084efa7693ecc9dd0f2c8b",
+      "checks": 31
+    },
+    "website": {
+      "file": "website/website-results.json",
+      "sha256": "1f302a782a6e7c8eb910a09c0a93d05f76241cbce26a925850ec26f228d9a0b9",
+      "checks": 70
+    }
+  },
+  "coverage_counts": {
+    "native_final_paint": 144,
+    "native_mechanical": 54,
+    "native_maximum": 24,
+    "portable_paint": 48,
+    "portable_mechanical": 54,
+    "portable_maximum": 24
+  },
+  "source_sha256": {
+    "app.js": "4bd6cc19874b3479d1f4218ac7c094aafe7aad1c4100f3c9c742b87ecb0540b7",
+    "index.html": "4e77d5049033ea3134f4a42e6a41d9cab2501aaa0e4be692f086b0f00d6a9c74",
+    "src/catalogue.js": "1b1aa3db4ebdd24a886c93b77a23e5e0dd38781f3845b3c88cce4fadfbb24552",
+    "src/club-ui.js": "c8a2787133a8ad4e8056c97995bde62addff2cad9fe578551f1b1f04859df5b5",
+    "src/club.css": "acde3109262a620bae579db0b838d0ccc7fd424f707bcbb1be803d9bc65079c2",
+    "src/club.js": "c843ee473de4c926ce8de96a16ff0caeda8298e07f0e9c21850df2af62234ece",
+    "src/interiors.js": "d4b81568b53c4e1c67f625539b275f4652c709cc32522b6ea779a25b46e7afbb",
+    "src/paint-renderer.js": "25cb41ec347395675167221d70c5fba816dad81343615282a20de49b8a38cfd9",
+    "src/photography.js": "c428a4e647df5ff73d0f2c387e4df20f107f0ee4500c0543c4917d9b29b9265d",
+    "src/scene.js": "fece506074a508c99d400d0129ced8ebec6a0f6ce7db6aa176c1db93acc00fb5",
+    "src/state.js": "e87b1d7ef89dd54661cd04745d5bfa963e93a9c45c6550453b4625abfe55ab53",
+    "src/ui.css": "b1366443b3abb88ddaca38f987fcc99aec84ef642138f8f1ede2bb9155ae8181",
+    "src/upgrade-renderer.js": "b40c5b0f0ea12d37224b375d28f85dda934f0896fc7c0afa61bed06cb3a90a52",
+    "scripts/build-standalone.mjs": "d068724d862350386abab90d7683a7dae154b386d2262441c7ce5544b9ec13d1",
+    "tests/expansion-browser.py": "b486b4c77ebc707e136284df1527cdfa3c766b72e67c7966470aa71f315083b9",
+    "tests/expansion-exterior.py": "0c2ccc2cf49f718fe4f76b08e395451cb8cd13235bdb4d4975cf9f468d76631f",
+    "tests/website-browser.py": "3ef4d0fffe78f7efa41530589e47381ba5d1c8b4e79ae4f6479af9d45274561b",
+    "tests/interiors.test.js": "ae0facdb9eb05cef3cfc0d3e29eb6f89854bd4492036c9b51def3aabb6d1bed6"
+  },
+  "file_protocol": "Not tested: managed Chromium blocks file://; portable proof uses HTTP with all extra requests blocked.",
+  "public_deployment": "Automatic Pages workflow retained. Latest live deployment could not be verified from this environment."
+}

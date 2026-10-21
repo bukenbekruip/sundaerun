@@ -1,0 +1,51 @@
+
+> sundae-run-sti-customisation@1.0.0 test
+> node --test tests/*.test.js
+
+✔ default quote is itemised game credits and previewing is free (37.491889ms)
+✔ Apply charges the default 3700 once and repeats cannot charge again (3.010501ms)
+✔ owned parts can be fitted again for free while only new parts are charged (18.178731ms)
+✔ insufficient funds leave the applied look, purchases and balance unchanged (5.521569ms)
+✔ cancel restores applied look and reload does not fit an uncommitted preview (20.763878ms)
+✔ malformed or unsupported stored data recovers to a usable initial state (24.334449ms)
+✔ unknown product IDs and categories cannot enter preview state (12.986081ms)
+✔ concept products have no fabricated merchant destinations or fitment claims (0.889057ms)
+✔ merchant links require HTTPS, expose sponsorship, and keep real prices separate (6.248757ms)
+✔ only a registered vehicle/wheel render enables the supported paint renderer (1.828157ms)
+✔ catalogue exposes the five requested vehicles, six concepts and twelve paints (5.15032ms)
+✔ each car remembers its own fitted build and discards unfinished previews when switching (7.956088ms)
+✔ ownership belongs to each vehicle while the credit balance is shared (15.584417ms)
+✔ canonical garage persistence restores all fitted cars without saving a free preview (8.434785ms)
+✔ v2 migration keeps old credits, STI purchases and fitted parts without transferring ownership to new cars (5.061654ms)
+✔ derived active-car aliases cannot overwrite the garage's saved source of truth (6.708348ms)
+✔ upgrade catalogue provides three options per category with included baselines (1.287523ms)
+✔ all five parts charge once, while returning to included parts is free and changes the fitted build (3.736914ms)
+✔ upgrade ownership is typed and per car; insufficient funds never partially apply a build (6.69708ms)
+✔ v3 migration retains every car and credit balance and supplies free included upgrades (5.400734ms)
+✔ five-part previews cancel, switch and reload without changing fitted upgrades or credits (4.338332ms)
+✔ upgrade previews require the correct vehicle assets and verified suspension support (3.219731ms)
+✔ a named build snapshots fitted appearance and performance, never an unpaid preview (44.227553ms)
+✔ repeat saves rename a build without farming collection entries; removal is independent of rewards (5.057477ms)
+✔ brief rewards are atomic, one-time per car and persist above the starting balance (25.792608ms)
+✔ performance parts charge once per vehicle, refit free, reject insufficient funds and preserve exterior previews (3.576231ms)
+✔ a daily build needs fitted performance and matching saved exterior, not current previews (5.457876ms)
+✔ build codes round-trip Unicode safely and transfer neither ownership nor reward state (4.241218ms)
+✔ club normalisation safely migrates older saves and excludes unknown receipts, malformed builds and duplicate rewards (5.721267ms)
+✔ every model has two distinct, real, checksummed cabin assets (240.190376ms)
+✔ legacy three-car saves retain credits, builds and earned rewards while new cars/cabins start unowned (26.240538ms)
+✔ cabin fitting is an atomic per-car purchase and owned/stock refits are free (6.119952ms)
+✔ saved cabins are immutable recipes, count for briefs and survive serialisation (19.11735ms)
+✔ old SR1 recipes default to stock; new codes list a cabin without granting ownership (5.169602ms)
+✔ enabled car variants resolve to the reviewed transparent artwork (495.883667ms)
+✔ each complete car has one uniform transform and all 360 baseline appearances have artwork (15.234497ms)
+✔ all twenty upgrades retain reviewed bytes, actual transparency and registered camera bounds (5910.142926ms)
+✔ all 9,720 five-car exterior configurations have explicit preview support (183.506568ms)
+✔ original reference and source artwork remains byte-identical to the handover (196.728575ms)
+ℹ tests 39
+ℹ suites 0
+ℹ pass 39
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 7851.753637

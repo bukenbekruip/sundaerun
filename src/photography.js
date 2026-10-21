@@ -1,5 +1,6 @@
 import { getProduct, getVehicle } from "./catalogue.js";
 import { getPerformancePart } from "./club.js";
+import { getInteriorPackage, getInteriorVariant } from "./interiors.js";
 import {
   assetUrl,
   CAR_TRANSFORMS,
@@ -97,6 +98,7 @@ export async function createShowCard(build) {
   ctx.fillText(
     Object.entries(build.spec)
       .map(([kind, id]) => getPerformancePart(kind, id).name)
+      .concat(getInteriorPackage(build.interior ?? "stock").name)
       .join("  ·  "),
     52,
     920,
@@ -108,6 +110,40 @@ export async function createShowCard(build) {
     "A Sundae Run concept build. Real product compatibility has not been verified.",
     52,
     954,
+  );
+  const result = canvas.toDataURL("image/png");
+  canvas.width = 0;
+  canvas.height = 0;
+  return result;
+}
+
+export async function createInteriorCard(build) {
+  const product = getInteriorPackage(build.interior ?? "stock"),
+    variant = getInteriorVariant(build.vehicle, product?.id);
+  if (!variant?.ready) throw new Error("The cabin artwork is not ready.");
+  const image = await load(assetUrl(variant.src));
+  const canvas = document.createElement("canvas");
+  canvas.width = 1600;
+  canvas.height = 1060;
+  const ctx = canvas.getContext("2d");
+  ctx.drawImage(image, 0, 0, 1600, 900);
+  ctx.fillStyle = "#fff8eb";
+  ctx.fillRect(0, 900, 1600, 160);
+  ctx.fillStyle = "#203629";
+  ctx.font = '800 36px "Inter Variable", sans-serif';
+  ctx.fillText(build.name, 40, 951, 1520);
+  ctx.font = '500 23px "Inter Variable", sans-serif';
+  ctx.fillText(
+    `${getVehicle(build.vehicle).name} · ${product.name} · SUNDAE RUN`,
+    40,
+    995,
+    1520,
+  );
+  ctx.font = '400 15px "Inter Variable", sans-serif';
+  ctx.fillText(
+    "Illustrated left-hand-drive cabin concept. Physical accessory fitment is unverified.",
+    40,
+    1031,
   );
   const result = canvas.toDataURL("image/png");
   canvas.width = 0;

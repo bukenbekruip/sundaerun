@@ -4,6 +4,7 @@ import {
   selectionKinds,
   vehicles,
 } from "./catalogue.js";
+import { getInteriorPackage, normaliseInteriors } from "./interiors.js";
 
 export const MAX_SAVED_BUILDS = 24;
 export const STOCK_SPEC = Object.freeze({
@@ -133,7 +134,10 @@ export function validateSharedBuild(value) {
     !cleanName(value.name) ||
     !cleanSelection(value.selection) ||
     !record(value.spec) ||
-    Object.keys(STOCK_SPEC).some((k) => !getPerformancePart(k, value.spec[k]))
+    Object.keys(STOCK_SPEC).some(
+      (k) => !getPerformancePart(k, value.spec[k]),
+    ) ||
+    (value.interior !== undefined && !getInteriorPackage(value.interior))
   ) {
     throw new RangeError("This is not a supported Sundae Run build.");
   }
@@ -144,10 +148,19 @@ export function validateSharedBuild(value) {
     vehicle: value.vehicle,
     selection: cleanSelection(value.selection),
     spec: cleanSpec(value.spec),
+    interior: value.interior ?? "stock",
   };
 }
 
 const briefs = Object.freeze([
+  {
+    id: "inside-counts",
+    title: "Inside counts too",
+    reward: 1000,
+    xp: 100,
+    description: "Fit the Sundae Club cabin and save it in a named build.",
+    matches: (build) => build.interior === "club",
+  },
   {
     id: "first-build",
     title: "Make it yours",
@@ -249,6 +262,7 @@ export function normaliseClub(input) {
   const valid = challengeMap();
   return {
     builds,
+    interiors: normaliseInteriors(v.interiors),
     completed: [
       ...new Set(
         Array.isArray(v.completed)
@@ -335,6 +349,28 @@ export function fitPerformance(state, kind, id) {
   };
 }
 
+/** Cabin purchase and fitting share the same wallet/save transaction. */
+export function fitInterior(state, packageId) {
+  const product = getInteriorPackage(packageId);
+  if (!product) throw new RangeError("Unknown interior package.");
+  const club = normaliseClub(state.club),
+    car = club.interiors[state.vehicle];
+  if (!car) throw new RangeError("Unknown vehicle.");
+  if (car.fitted === packageId)
+    return { state, status: "already-fitted", charged: 0 };
+  const charge = car.owned.includes(packageId) ? 0 : product.price;
+  if (charge > state.balance)
+    return { state, status: "insufficient-funds", charged: 0 };
+  car.fitted = packageId;
+  if (product.price && !car.owned.includes(packageId))
+    car.owned.push(packageId);
+  return {
+    state: { ...state, balance: state.balance - charge, club },
+    status: "applied",
+    charged: charge,
+  };
+}
+
 export function saveShowBuild(state, name, id = crypto.randomUUID()) {
   const club = normaliseClub(state.club);
   const car = state.garage[state.vehicle];
@@ -355,8 +391,10 @@ export function saveShowBuild(state, name, id = crypto.randomUUID()) {
     vehicle: state.vehicle,
     selection: car.applied,
     spec: club.performance[state.vehicle].fitted,
+    interior: club.interiors[state.vehicle].fitted,
   });
-  const fingerprint = (b) => JSON.stringify([b.vehicle, b.selection, b.spec]);
+  const fingerprint = (b) =>
+    JSON.stringify([b.vehicle, b.selection, b.spec, b.interior]);
   const existing = club.builds.find(
     (b) => fingerprint(b) === fingerprint(snapshot),
   );

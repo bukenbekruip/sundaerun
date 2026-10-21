@@ -1,0 +1,17 @@
+{
+  "status": "passed",
+  "before_sha256": "6f0c4c08351e237b99a0d552eeb8866c4ba46bf0ed0ae296128011629ce580d2",
+  "after_sha256": "891ed9c23a865c56589d38432b25f0976a40ee93fe76b9c02d82de460f1ba190",
+  "only_changes": [
+    {
+      "before": "Fit your favourite parts in the garage, then give the build a name. Your first completed brief earns 1,500 credits.",
+      "after": "Fit your favourite parts in the garage, then give the build a name. The Make it yours brief earns 1,500 credits."
+    },
+    {
+      "before": "Explore Sundae Run \u00b7 culture &amp; clothing \u2197",
+      "after": "Explore Sundae Run \u00b7 culture &amp; clothing"
+    }
+  ],
+  "normalised_portable_bytes_identical": true,
+  "note": "The complete exterior portable matrix used the before artifact. Its entire byte difference from the final game is exactly these two UI text replacements; rendering/assets/masks are identical. Final five-car cabin and Club suites require the after artifact SHA."
+}

@@ -1,5 +1,5 @@
 {
-  "provenance": "Twelve image_gen concept upgrade assets, published as unchanged byte copies of the recorded generated originals. Original handover references and complete-car renders remain unchanged.",
+  "provenance": "Twenty image_gen concept upgrade assets, published as unchanged byte copies of the recorded generated originals. Original handover references and complete-car renders remain unchanged.",
   "logicalCanvas": {
     "width": 1672,
     "height": 941
@@ -22,6 +22,18 @@
       "top": 159.27272727272725,
       "width": 912,
       "height": 513.2727272727273
+    },
+    "m3": {
+      "left": 418.27272727272725,
+      "top": 163.0909090909091,
+      "width": 912,
+      "height": 513.2727272727273
+    },
+    "golf": {
+      "left": 422.8327272727272,
+      "top": 174.3,
+      "width": 902.8800000000001,
+      "height": 508.14000000000004
     }
   },
   "registrationNote": "Upgrade images retain the same full canvas, camera and contact coordinates as their vehicle source. Native width may vary by up to two pixels; the compositor registers the whole canvas uniformly. Never subject-fit a tyre pair or draw a full-car tyre source unmasked.",
@@ -302,6 +314,190 @@
       "rendering": "sparse_registered_additive_carbon_layer",
       "sourceCar": "assets/cars/gt86/sr-01.png",
       "sourceGeneratedOriginal": "exec-f6cd0e0e-0d28-4ac4-b2e8-5507686d74c8.png",
+      "generationMethod": "image_gen sparse, camera-registered additive carbon parts; no original car, painted bumper, glass, wheel or wing layer."
+    },
+    "m3:tyre:sport": {
+      "src": "assets/upgrades/m3/tyre-sport.png",
+      "width": 1672,
+      "height": 941,
+      "mode": "RGBA",
+      "bytes": 1516247,
+      "sha256": "2c57f2db6e523cad5511e43d59c595d36361113faf45612f8f16a16dfbca2077",
+      "opaqueBoundsAlpha128": [
+        45,
+        161,
+        1646,
+        833
+      ],
+      "alphaStatistics": {
+        "transparentPixels": 795069,
+        "opaquePixelsAlpha128": 762696,
+        "totalPixels": 1573352
+      },
+      "rendering": "fullcar_source_clipped_to_rubber",
+      "sourceCar": "assets/cars/m3/sr-01.png",
+      "sourceGeneratedOriginal": "exec-cc1608d2-4b4e-494c-84c5-78a64c7cb2f6.png",
+      "generationMethod": "image_gen registered full-car rubber-material edit; runtime draws only authored rubber annuli and preserves the active rim, painted body and original silhouette alpha."
+    },
+    "m3:tyre:track": {
+      "src": "assets/upgrades/m3/tyre-track.png",
+      "width": 1671,
+      "height": 941,
+      "mode": "RGBA",
+      "bytes": 1536447,
+      "sha256": "a4a22bae5c369ba4078f5c697a7f79fccc9bb33239de3a4ac20aefcb7eae8c5c",
+      "opaqueBoundsAlpha128": [
+        45,
+        161,
+        1645,
+        834
+      ],
+      "alphaStatistics": {
+        "transparentPixels": 758973,
+        "opaquePixelsAlpha128": 765101,
+        "totalPixels": 1572411
+      },
+      "rendering": "fullcar_source_clipped_to_rubber",
+      "sourceCar": "assets/cars/m3/sr-01.png",
+      "sourceGeneratedOriginal": "exec-5e1e723d-63ff-4e8c-bec6-6295543b53ef.png",
+      "generationMethod": "image_gen registered full-car rubber-material edit; runtime draws only authored rubber annuli and preserves the active rim, painted body and original silhouette alpha."
+    },
+    "m3:body:street": {
+      "src": "assets/upgrades/m3/body-street.png",
+      "width": 1671,
+      "height": 941,
+      "mode": "RGBA",
+      "bytes": 215034,
+      "sha256": "485cedda678d652c64f53b4546c2677b079bfa93d0ee147ab2f78ac4bf0e8ed0",
+      "opaqueBoundsAlpha128": [
+        251,
+        615,
+        1650,
+        812
+      ],
+      "alphaStatistics": {
+        "transparentPixels": 1509693,
+        "opaquePixelsAlpha128": 47798,
+        "totalPixels": 1572411
+      },
+      "rendering": "sparse_registered_additive_carbon_layer",
+      "sourceCar": "assets/cars/m3/sr-01.png",
+      "sourceGeneratedOriginal": "exec-a7cf1f60-924d-429d-ae7d-40b6bd43db58.png",
+      "generationMethod": "image_gen sparse, camera-registered additive carbon parts; no original car, painted bumper, glass, wheel or wing layer."
+    },
+    "m3:body:track": {
+      "src": "assets/upgrades/m3/body-track.png",
+      "width": 1672,
+      "height": 941,
+      "mode": "RGBA",
+      "bytes": 242049,
+      "sha256": "510ddcaf21619608c1ded956a47a76bee1c43542303721469984a1b3f1e89337",
+      "opaqueBoundsAlpha128": [
+        220,
+        604,
+        1651,
+        811
+      ],
+      "alphaStatistics": {
+        "transparentPixels": 1503056,
+        "opaquePixelsAlpha128": 55899,
+        "totalPixels": 1573352
+      },
+      "rendering": "sparse_registered_additive_carbon_layer",
+      "sourceCar": "assets/cars/m3/sr-01.png",
+      "sourceGeneratedOriginal": "exec-954a8fdb-9677-44bb-bd65-e52a2e4ab3c6.png",
+      "generationMethod": "image_gen sparse, camera-registered additive carbon parts; no original car, painted bumper, glass, wheel or wing layer."
+    },
+    "golf:tyre:sport": {
+      "src": "assets/upgrades/golf/tyre-sport.png",
+      "width": 1671,
+      "height": 941,
+      "mode": "RGBA",
+      "bytes": 1556879,
+      "sha256": "4df7de79f854d5bfd9e9d22b48070b01d9f08e26acbc8062e58014dd96708eaa",
+      "opaqueBoundsAlpha128": [
+        46,
+        132,
+        1636,
+        832
+      ],
+      "alphaStatistics": {
+        "transparentPixels": 753885,
+        "opaquePixelsAlpha128": 804691,
+        "totalPixels": 1572411
+      },
+      "rendering": "fullcar_source_clipped_to_rubber",
+      "sourceCar": "assets/cars/golf/sr-01.png",
+      "sourceGeneratedOriginal": "exec-975adc76-a617-4ff7-a86c-a4f9e87e8c55.png",
+      "generationMethod": "image_gen registered full-car rubber-material edit; runtime draws only authored rubber annuli and preserves the active rim, painted body and original silhouette alpha."
+    },
+    "golf:tyre:track": {
+      "src": "assets/upgrades/golf/tyre-track.png",
+      "width": 1671,
+      "height": 941,
+      "mode": "RGBA",
+      "bytes": 1545236,
+      "sha256": "c8c2952d5e14725522a981e5a6bff5ee9984b23a0cecf15b0333a4d8eda73b9f",
+      "opaqueBoundsAlpha128": [
+        48,
+        131,
+        1636,
+        831
+      ],
+      "alphaStatistics": {
+        "transparentPixels": 754354,
+        "opaquePixelsAlpha128": 805639,
+        "totalPixels": 1572411
+      },
+      "rendering": "fullcar_source_clipped_to_rubber",
+      "sourceCar": "assets/cars/golf/sr-01.png",
+      "sourceGeneratedOriginal": "exec-2d0c9113-fe58-4d90-af25-8f79b2f6cd60.png",
+      "generationMethod": "image_gen registered full-car rubber-material edit; runtime draws only authored rubber annuli and preserves the active rim, painted body and original silhouette alpha."
+    },
+    "golf:body:street": {
+      "src": "assets/upgrades/golf/body-street.png",
+      "width": 1671,
+      "height": 941,
+      "mode": "RGBA",
+      "bytes": 200559,
+      "sha256": "7e818fcd430c107af370d0535ba8f741818158fddf23994d41bd66e818b7aa00",
+      "opaqueBoundsAlpha128": [
+        227,
+        645,
+        1635,
+        801
+      ],
+      "alphaStatistics": {
+        "transparentPixels": 1515369,
+        "opaquePixelsAlpha128": 41931,
+        "totalPixels": 1572411
+      },
+      "rendering": "sparse_registered_additive_carbon_layer",
+      "sourceCar": "assets/cars/golf/sr-01.png",
+      "sourceGeneratedOriginal": "exec-5523f953-2c59-4799-ae0c-5789ebb08271.png",
+      "generationMethod": "image_gen sparse, camera-registered additive carbon parts; no original car, painted bumper, glass, wheel or wing layer."
+    },
+    "golf:body:track": {
+      "src": "assets/upgrades/golf/body-track.png",
+      "width": 1671,
+      "height": 941,
+      "mode": "RGBA",
+      "bytes": 187094,
+      "sha256": "fdd08f2ea612e0585749d89c1e9623844368d51c513cf6d5cf79bce52902e0ad",
+      "opaqueBoundsAlpha128": [
+        235,
+        633,
+        1634,
+        803
+      ],
+      "alphaStatistics": {
+        "transparentPixels": 1519223,
+        "opaquePixelsAlpha128": 38874,
+        "totalPixels": 1572411
+      },
+      "rendering": "sparse_registered_additive_carbon_layer",
+      "sourceCar": "assets/cars/golf/sr-01.png",
+      "sourceGeneratedOriginal": "exec-a10fb0f9-6bed-4410-93a5-54faa3b7d69f.png",
       "generationMethod": "image_gen sparse, camera-registered additive carbon parts; no original car, painted bumper, glass, wheel or wing layer."
     }
   }

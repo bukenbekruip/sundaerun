@@ -1,0 +1,12 @@
+[
+  {
+    "package": "@fontsource-variable/dm-sans",
+    "version": "5.3.0",
+    "archive_sha256": "cea46ee690c31efea45c0fbee790c6fefefc979656e8515b12f5bdb7c5bc1876"
+  },
+  {
+    "package": "@fontsource-variable/space-grotesk",
+    "version": "5.3.0",
+    "archive_sha256": "47d1b51d64ed541b7e74f38e9e682a8ff1bbfd1b68bfd7fff74ac9175058e73c"
+  }
+]

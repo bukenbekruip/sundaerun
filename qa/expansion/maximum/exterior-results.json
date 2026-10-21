@@ -1,0 +1,1147 @@
+{
+  "generated_at_utc": "2026-10-21T11:27:32.947036+00:00",
+  "portable": false,
+  "status": "passed",
+  "cases": [
+    {
+      "name": "24-white-black-maximum-builds",
+      "status": "passed",
+      "assertions_passed": 372
+    }
+  ],
+  "checks": 373,
+  "paint_combinations": [],
+  "mechanical_combinations": [],
+  "maximum_combinations": [
+    "m3:white:sr-01:track:track:track",
+    "m3:black:sr-01:track:track:track",
+    "m3:white:te37:track:track:track",
+    "m3:black:te37:track:track:track",
+    "m3:white:bbs-lm:track:track:track",
+    "m3:black:bbs-lm:track:track:track",
+    "m3:white:oz:track:track:track",
+    "m3:black:oz:track:track:track",
+    "m3:white:rotiform:track:track:track",
+    "m3:black:rotiform:track:track:track",
+    "m3:white:work:track:track:track",
+    "m3:black:work:track:track:track",
+    "golf:white:sr-01:track:track:track",
+    "golf:black:sr-01:track:track:track",
+    "golf:white:te37:track:track:track",
+    "golf:black:te37:track:track:track",
+    "golf:white:bbs-lm:track:track:track",
+    "golf:black:bbs-lm:track:track:track",
+    "golf:white:oz:track:track:track",
+    "golf:black:oz:track:track:track",
+    "golf:white:rotiform:track:track:track",
+    "golf:black:rotiform:track:track:track",
+    "golf:white:work:track:track:track",
+    "golf:black:work:track:track:track"
+  ],
+  "paint_pixels": [],
+  "upgrade_pixels": [
+    {
+      "variant": "m3:white:sr-01:track:track:track",
+      "dimensionsMatch": true,
+      "changed": 724316,
+      "alphaChanged": 289398,
+      "outsideTyreChanged": 679571,
+      "rimSamples": [
+        {
+          "name": "rear-wheel",
+          "x": 167,
+          "y": 599,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        },
+        {
+          "name": "front-wheel",
+          "x": 847,
+          "y": 668,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        }
+      ],
+      "contactSamples": [
+        {
+          "name": "rear-contact",
+          "x": 177,
+          "y": 729,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        },
+        {
+          "name": "front-contact",
+          "x": 862,
+          "y": 829,
+          "changes": 25,
+          "alphaChanges": 0,
+          "opaque": 25
+        }
+      ],
+      "garageChanged": 0,
+      "fingerprint": "fc9aea6e151c4af81009f860e710995900de9acd4cda281270456f7192a3c61e"
+    },
+    {
+      "variant": "m3:black:sr-01:track:track:track",
+      "dimensionsMatch": true,
+      "changed": 724197,
+      "alphaChanged": 289398,
+      "outsideTyreChanged": 679451,
+      "rimSamples": [
+        {
+          "name": "rear-wheel",
+          "x": 167,
+          "y": 599,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        },
+        {
+          "name": "front-wheel",
+          "x": 847,
+          "y": 668,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        }
+      ],
+      "contactSamples": [
+        {
+          "name": "rear-contact",
+          "x": 177,
+          "y": 729,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        },
+        {
+          "name": "front-contact",
+          "x": 862,
+          "y": 829,
+          "changes": 25,
+          "alphaChanges": 0,
+          "opaque": 25
+        }
+      ],
+      "garageChanged": 0,
+      "fingerprint": "0ae83d3e3bfa30d30f9f2b3ef8a8914628d87ee91110297641e49a444712ae2e"
+    },
+    {
+      "variant": "m3:white:te37:track:track:track",
+      "dimensionsMatch": true,
+      "changed": 723632,
+      "alphaChanged": 213821,
+      "outsideTyreChanged": 680166,
+      "rimSamples": [
+        {
+          "name": "rear-wheel",
+          "x": 167,
+          "y": 599,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        },
+        {
+          "name": "front-wheel",
+          "x": 847,
+          "y": 668,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        }
+      ],
+      "contactSamples": [
+        {
+          "name": "rear-contact",
+          "x": 177,
+          "y": 729,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 0
+        },
+        {
+          "name": "front-contact",
+          "x": 862,
+          "y": 829,
+          "changes": 20,
+          "alphaChanges": 0,
+          "opaque": 20
+        }
+      ],
+      "garageChanged": 0,
+      "fingerprint": "6d2eb57626c933696785925b65c5e059493cc14a73f7f920f5b14e9f2ffc1df5"
+    },
+    {
+      "variant": "m3:black:te37:track:track:track",
+      "dimensionsMatch": true,
+      "changed": 723475,
+      "alphaChanged": 213821,
+      "outsideTyreChanged": 680008,
+      "rimSamples": [
+        {
+          "name": "rear-wheel",
+          "x": 167,
+          "y": 599,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        },
+        {
+          "name": "front-wheel",
+          "x": 847,
+          "y": 668,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        }
+      ],
+      "contactSamples": [
+        {
+          "name": "rear-contact",
+          "x": 177,
+          "y": 729,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 0
+        },
+        {
+          "name": "front-contact",
+          "x": 862,
+          "y": 829,
+          "changes": 20,
+          "alphaChanges": 0,
+          "opaque": 20
+        }
+      ],
+      "garageChanged": 0,
+      "fingerprint": "893a02664c36fedd74ab8a6cb50060ee46ff6ca670d2a6459045fb80cdbf7cdc"
+    },
+    {
+      "variant": "m3:white:bbs-lm:track:track:track",
+      "dimensionsMatch": true,
+      "changed": 723844,
+      "alphaChanged": 213260,
+      "outsideTyreChanged": 680259,
+      "rimSamples": [
+        {
+          "name": "rear-wheel",
+          "x": 167,
+          "y": 599,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        },
+        {
+          "name": "front-wheel",
+          "x": 847,
+          "y": 668,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        }
+      ],
+      "contactSamples": [
+        {
+          "name": "rear-contact",
+          "x": 177,
+          "y": 729,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 0
+        },
+        {
+          "name": "front-contact",
+          "x": 862,
+          "y": 829,
+          "changes": 24,
+          "alphaChanges": 0,
+          "opaque": 25
+        }
+      ],
+      "garageChanged": 0,
+      "fingerprint": "c378c16e8df7baa5d517481d2c360deb0838f38fb9a82386d526d9927735d6e2"
+    },
+    {
+      "variant": "m3:black:bbs-lm:track:track:track",
+      "dimensionsMatch": true,
+      "changed": 723660,
+      "alphaChanged": 213260,
+      "outsideTyreChanged": 680079,
+      "rimSamples": [
+        {
+          "name": "rear-wheel",
+          "x": 167,
+          "y": 599,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        },
+        {
+          "name": "front-wheel",
+          "x": 847,
+          "y": 668,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        }
+      ],
+      "contactSamples": [
+        {
+          "name": "rear-contact",
+          "x": 177,
+          "y": 729,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 0
+        },
+        {
+          "name": "front-contact",
+          "x": 862,
+          "y": 829,
+          "changes": 24,
+          "alphaChanges": 0,
+          "opaque": 25
+        }
+      ],
+      "garageChanged": 0,
+      "fingerprint": "8702b98021649e373b83d955c33a70e2c7452b736383dfbbf07855007692628a"
+    },
+    {
+      "variant": "m3:white:oz:track:track:track",
+      "dimensionsMatch": true,
+      "changed": 724270,
+      "alphaChanged": 209184,
+      "outsideTyreChanged": 680843,
+      "rimSamples": [
+        {
+          "name": "rear-wheel",
+          "x": 167,
+          "y": 599,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        },
+        {
+          "name": "front-wheel",
+          "x": 847,
+          "y": 668,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        }
+      ],
+      "contactSamples": [
+        {
+          "name": "rear-contact",
+          "x": 177,
+          "y": 729,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 0
+        },
+        {
+          "name": "front-contact",
+          "x": 862,
+          "y": 829,
+          "changes": 13,
+          "alphaChanges": 0,
+          "opaque": 20
+        }
+      ],
+      "garageChanged": 0,
+      "fingerprint": "f72d1f4b7a90696e19e2515de76019eceff65eaa80ade304049acdafffb0c210"
+    },
+    {
+      "variant": "m3:black:oz:track:track:track",
+      "dimensionsMatch": true,
+      "changed": 724067,
+      "alphaChanged": 209184,
+      "outsideTyreChanged": 680638,
+      "rimSamples": [
+        {
+          "name": "rear-wheel",
+          "x": 167,
+          "y": 599,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        },
+        {
+          "name": "front-wheel",
+          "x": 847,
+          "y": 668,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        }
+      ],
+      "contactSamples": [
+        {
+          "name": "rear-contact",
+          "x": 177,
+          "y": 729,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 0
+        },
+        {
+          "name": "front-contact",
+          "x": 862,
+          "y": 829,
+          "changes": 13,
+          "alphaChanges": 0,
+          "opaque": 20
+        }
+      ],
+      "garageChanged": 0,
+      "fingerprint": "41769f74b86ebe8a8bd3d120887309590a131309a7ffeecaef4e31a42e2ff4db"
+    },
+    {
+      "variant": "m3:white:rotiform:track:track:track",
+      "dimensionsMatch": true,
+      "changed": 729594,
+      "alphaChanged": 199739,
+      "outsideTyreChanged": 686011,
+      "rimSamples": [
+        {
+          "name": "rear-wheel",
+          "x": 167,
+          "y": 599,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        },
+        {
+          "name": "front-wheel",
+          "x": 847,
+          "y": 668,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        }
+      ],
+      "contactSamples": [
+        {
+          "name": "rear-contact",
+          "x": 177,
+          "y": 729,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 0
+        },
+        {
+          "name": "front-contact",
+          "x": 862,
+          "y": 829,
+          "changes": 23,
+          "alphaChanges": 0,
+          "opaque": 25
+        }
+      ],
+      "garageChanged": 0,
+      "fingerprint": "e68f3e1d40409e4557303f8f1ef01e25597fdedc0b840a55d8145377d761c188"
+    },
+    {
+      "variant": "m3:black:rotiform:track:track:track",
+      "dimensionsMatch": true,
+      "changed": 729372,
+      "alphaChanged": 199739,
+      "outsideTyreChanged": 685790,
+      "rimSamples": [
+        {
+          "name": "rear-wheel",
+          "x": 167,
+          "y": 599,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        },
+        {
+          "name": "front-wheel",
+          "x": 847,
+          "y": 668,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        }
+      ],
+      "contactSamples": [
+        {
+          "name": "rear-contact",
+          "x": 177,
+          "y": 729,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 0
+        },
+        {
+          "name": "front-contact",
+          "x": 862,
+          "y": 829,
+          "changes": 23,
+          "alphaChanges": 0,
+          "opaque": 25
+        }
+      ],
+      "garageChanged": 0,
+      "fingerprint": "415dd34ab5418cc27ffb7866be2226f90b428e1c3b88dbd8c9a28238b4702c3d"
+    },
+    {
+      "variant": "m3:white:work:track:track:track",
+      "dimensionsMatch": true,
+      "changed": 729158,
+      "alphaChanged": 174803,
+      "outsideTyreChanged": 685656,
+      "rimSamples": [
+        {
+          "name": "rear-wheel",
+          "x": 167,
+          "y": 599,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        },
+        {
+          "name": "front-wheel",
+          "x": 847,
+          "y": 668,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        }
+      ],
+      "contactSamples": [
+        {
+          "name": "rear-contact",
+          "x": 177,
+          "y": 729,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 0
+        },
+        {
+          "name": "front-contact",
+          "x": 862,
+          "y": 829,
+          "changes": 24,
+          "alphaChanges": 0,
+          "opaque": 25
+        }
+      ],
+      "garageChanged": 0,
+      "fingerprint": "3c909c60de61d267945e271f9dcce7561686c37be35065ed69cc311ad3aef8b8"
+    },
+    {
+      "variant": "m3:black:work:track:track:track",
+      "dimensionsMatch": true,
+      "changed": 728946,
+      "alphaChanged": 174803,
+      "outsideTyreChanged": 685445,
+      "rimSamples": [
+        {
+          "name": "rear-wheel",
+          "x": 167,
+          "y": 599,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        },
+        {
+          "name": "front-wheel",
+          "x": 847,
+          "y": 668,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        }
+      ],
+      "contactSamples": [
+        {
+          "name": "rear-contact",
+          "x": 177,
+          "y": 729,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 0
+        },
+        {
+          "name": "front-contact",
+          "x": 862,
+          "y": 829,
+          "changes": 24,
+          "alphaChanges": 0,
+          "opaque": 25
+        }
+      ],
+      "garageChanged": 0,
+      "fingerprint": "6a0de81ae3dd6bff79d2f0aaab691fed18175a838b39463dd88d7f5c0d262131"
+    },
+    {
+      "variant": "golf:white:sr-01:track:track:track",
+      "dimensionsMatch": true,
+      "changed": 766326,
+      "alphaChanged": 306292,
+      "outsideTyreChanged": 726893,
+      "rimSamples": [
+        {
+          "name": "rear-wheel",
+          "x": 157,
+          "y": 603,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        },
+        {
+          "name": "front-wheel",
+          "x": 824,
+          "y": 679,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        }
+      ],
+      "contactSamples": [
+        {
+          "name": "rear-contact",
+          "x": 178,
+          "y": 734,
+          "changes": 16,
+          "alphaChanges": 0,
+          "opaque": 25
+        },
+        {
+          "name": "front-contact",
+          "x": 842,
+          "y": 829,
+          "changes": 19,
+          "alphaChanges": 0,
+          "opaque": 25
+        }
+      ],
+      "garageChanged": 0,
+      "fingerprint": "95b7c4f4034915f669f4cc0b944e1d7047826315d09f283887121387de05efd0"
+    },
+    {
+      "variant": "golf:black:sr-01:track:track:track",
+      "dimensionsMatch": true,
+      "changed": 766153,
+      "alphaChanged": 306292,
+      "outsideTyreChanged": 726725,
+      "rimSamples": [
+        {
+          "name": "rear-wheel",
+          "x": 157,
+          "y": 603,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        },
+        {
+          "name": "front-wheel",
+          "x": 824,
+          "y": 679,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        }
+      ],
+      "contactSamples": [
+        {
+          "name": "rear-contact",
+          "x": 178,
+          "y": 734,
+          "changes": 16,
+          "alphaChanges": 0,
+          "opaque": 25
+        },
+        {
+          "name": "front-contact",
+          "x": 842,
+          "y": 829,
+          "changes": 19,
+          "alphaChanges": 0,
+          "opaque": 25
+        }
+      ],
+      "garageChanged": 0,
+      "fingerprint": "32fc671d66603cf83011c928431180810ff50743ef3ed09ba1f86efad86cb66a"
+    },
+    {
+      "variant": "golf:white:te37:track:track:track",
+      "dimensionsMatch": true,
+      "changed": 763713,
+      "alphaChanged": 182863,
+      "outsideTyreChanged": 724640,
+      "rimSamples": [
+        {
+          "name": "rear-wheel",
+          "x": 157,
+          "y": 603,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        },
+        {
+          "name": "front-wheel",
+          "x": 823,
+          "y": 679,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        }
+      ],
+      "contactSamples": [
+        {
+          "name": "rear-contact",
+          "x": 178,
+          "y": 734,
+          "changes": 9,
+          "alphaChanges": 0,
+          "opaque": 25
+        },
+        {
+          "name": "front-contact",
+          "x": 842,
+          "y": 829,
+          "changes": 13,
+          "alphaChanges": 0,
+          "opaque": 25
+        }
+      ],
+      "garageChanged": 0,
+      "fingerprint": "b0c680dd691063534e5989a4d8eb4941a28baf93808ae0fcc76da1dbe0428d8a"
+    },
+    {
+      "variant": "golf:black:te37:track:track:track",
+      "dimensionsMatch": true,
+      "changed": 763491,
+      "alphaChanged": 182863,
+      "outsideTyreChanged": 724421,
+      "rimSamples": [
+        {
+          "name": "rear-wheel",
+          "x": 157,
+          "y": 603,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        },
+        {
+          "name": "front-wheel",
+          "x": 823,
+          "y": 679,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        }
+      ],
+      "contactSamples": [
+        {
+          "name": "rear-contact",
+          "x": 178,
+          "y": 734,
+          "changes": 9,
+          "alphaChanges": 0,
+          "opaque": 25
+        },
+        {
+          "name": "front-contact",
+          "x": 842,
+          "y": 829,
+          "changes": 13,
+          "alphaChanges": 0,
+          "opaque": 25
+        }
+      ],
+      "garageChanged": 0,
+      "fingerprint": "8e46bee5a41ff4ae6cd537461b1cfb9525a1842628aa670bf91f4967e37894e3"
+    },
+    {
+      "variant": "golf:white:bbs-lm:track:track:track",
+      "dimensionsMatch": true,
+      "changed": 765476,
+      "alphaChanged": 224952,
+      "outsideTyreChanged": 726335,
+      "rimSamples": [
+        {
+          "name": "rear-wheel",
+          "x": 157,
+          "y": 603,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        },
+        {
+          "name": "front-wheel",
+          "x": 823,
+          "y": 679,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        }
+      ],
+      "contactSamples": [
+        {
+          "name": "rear-contact",
+          "x": 178,
+          "y": 734,
+          "changes": 18,
+          "alphaChanges": 0,
+          "opaque": 25
+        },
+        {
+          "name": "front-contact",
+          "x": 842,
+          "y": 829,
+          "changes": 19,
+          "alphaChanges": 0,
+          "opaque": 25
+        }
+      ],
+      "garageChanged": 0,
+      "fingerprint": "a35a6006c9e235363c8f580814d98f5efbf7880c928a74954e9e210140239cfb"
+    },
+    {
+      "variant": "golf:black:bbs-lm:track:track:track",
+      "dimensionsMatch": true,
+      "changed": 765310,
+      "alphaChanged": 224952,
+      "outsideTyreChanged": 726169,
+      "rimSamples": [
+        {
+          "name": "rear-wheel",
+          "x": 157,
+          "y": 603,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        },
+        {
+          "name": "front-wheel",
+          "x": 823,
+          "y": 679,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        }
+      ],
+      "contactSamples": [
+        {
+          "name": "rear-contact",
+          "x": 178,
+          "y": 734,
+          "changes": 18,
+          "alphaChanges": 0,
+          "opaque": 25
+        },
+        {
+          "name": "front-contact",
+          "x": 842,
+          "y": 829,
+          "changes": 19,
+          "alphaChanges": 0,
+          "opaque": 25
+        }
+      ],
+      "garageChanged": 0,
+      "fingerprint": "fa7eb1fd762391e42842706a60ea2163a6c063fc56e64109536f30337a8502d8"
+    },
+    {
+      "variant": "golf:white:oz:track:track:track",
+      "dimensionsMatch": true,
+      "changed": 761915,
+      "alphaChanged": 213885,
+      "outsideTyreChanged": 722794,
+      "rimSamples": [
+        {
+          "name": "rear-wheel",
+          "x": 157,
+          "y": 603,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        },
+        {
+          "name": "front-wheel",
+          "x": 823,
+          "y": 679,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        }
+      ],
+      "contactSamples": [
+        {
+          "name": "rear-contact",
+          "x": 178,
+          "y": 734,
+          "changes": 14,
+          "alphaChanges": 0,
+          "opaque": 25
+        },
+        {
+          "name": "front-contact",
+          "x": 842,
+          "y": 829,
+          "changes": 17,
+          "alphaChanges": 0,
+          "opaque": 25
+        }
+      ],
+      "garageChanged": 0,
+      "fingerprint": "750d37c4c7557b53615e876954f6551e03f5d921e37a613a57bb3a8ff913c200"
+    },
+    {
+      "variant": "golf:black:oz:track:track:track",
+      "dimensionsMatch": true,
+      "changed": 761678,
+      "alphaChanged": 213885,
+      "outsideTyreChanged": 722562,
+      "rimSamples": [
+        {
+          "name": "rear-wheel",
+          "x": 157,
+          "y": 603,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        },
+        {
+          "name": "front-wheel",
+          "x": 823,
+          "y": 679,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        }
+      ],
+      "contactSamples": [
+        {
+          "name": "rear-contact",
+          "x": 178,
+          "y": 734,
+          "changes": 14,
+          "alphaChanges": 0,
+          "opaque": 25
+        },
+        {
+          "name": "front-contact",
+          "x": 842,
+          "y": 829,
+          "changes": 17,
+          "alphaChanges": 0,
+          "opaque": 25
+        }
+      ],
+      "garageChanged": 0,
+      "fingerprint": "d37b6ff67e1d4e0a79492e95e08f741f707da55ab03bb1fa8a8cb9739da2c3a8"
+    },
+    {
+      "variant": "golf:white:rotiform:track:track:track",
+      "dimensionsMatch": true,
+      "changed": 768121,
+      "alphaChanged": 162564,
+      "outsideTyreChanged": 728744,
+      "rimSamples": [
+        {
+          "name": "rear-wheel",
+          "x": 157,
+          "y": 603,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        },
+        {
+          "name": "front-wheel",
+          "x": 824,
+          "y": 679,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        }
+      ],
+      "contactSamples": [
+        {
+          "name": "rear-contact",
+          "x": 178,
+          "y": 734,
+          "changes": 14,
+          "alphaChanges": 0,
+          "opaque": 25
+        },
+        {
+          "name": "front-contact",
+          "x": 842,
+          "y": 829,
+          "changes": 21,
+          "alphaChanges": 0,
+          "opaque": 25
+        }
+      ],
+      "garageChanged": 0,
+      "fingerprint": "baf88cd74addb2788fd55869fbbc234a26e5dd3e2808b82ad0a585e5a25010ee"
+    },
+    {
+      "variant": "golf:black:rotiform:track:track:track",
+      "dimensionsMatch": true,
+      "changed": 767804,
+      "alphaChanged": 162564,
+      "outsideTyreChanged": 728430,
+      "rimSamples": [
+        {
+          "name": "rear-wheel",
+          "x": 157,
+          "y": 603,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        },
+        {
+          "name": "front-wheel",
+          "x": 824,
+          "y": 679,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        }
+      ],
+      "contactSamples": [
+        {
+          "name": "rear-contact",
+          "x": 178,
+          "y": 734,
+          "changes": 14,
+          "alphaChanges": 0,
+          "opaque": 25
+        },
+        {
+          "name": "front-contact",
+          "x": 842,
+          "y": 829,
+          "changes": 21,
+          "alphaChanges": 0,
+          "opaque": 25
+        }
+      ],
+      "garageChanged": 0,
+      "fingerprint": "83ad83643878cf895defbd1efd10a70b7315de60d2bd3852d9535054ea34b974"
+    },
+    {
+      "variant": "golf:white:work:track:track:track",
+      "dimensionsMatch": true,
+      "changed": 763733,
+      "alphaChanged": 173235,
+      "outsideTyreChanged": 724358,
+      "rimSamples": [
+        {
+          "name": "rear-wheel",
+          "x": 157,
+          "y": 603,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        },
+        {
+          "name": "front-wheel",
+          "x": 824,
+          "y": 679,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        }
+      ],
+      "contactSamples": [
+        {
+          "name": "rear-contact",
+          "x": 178,
+          "y": 734,
+          "changes": 21,
+          "alphaChanges": 0,
+          "opaque": 25
+        },
+        {
+          "name": "front-contact",
+          "x": 842,
+          "y": 829,
+          "changes": 18,
+          "alphaChanges": 0,
+          "opaque": 25
+        }
+      ],
+      "garageChanged": 0,
+      "fingerprint": "7460fa117cd6c0ed62eddd814046f92bd6656341d5d5e03c24956fa1df66497e"
+    },
+    {
+      "variant": "golf:black:work:track:track:track",
+      "dimensionsMatch": true,
+      "changed": 763495,
+      "alphaChanged": 173235,
+      "outsideTyreChanged": 724120,
+      "rimSamples": [
+        {
+          "name": "rear-wheel",
+          "x": 157,
+          "y": 603,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        },
+        {
+          "name": "front-wheel",
+          "x": 824,
+          "y": 679,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        }
+      ],
+      "contactSamples": [
+        {
+          "name": "rear-contact",
+          "x": 178,
+          "y": 734,
+          "changes": 21,
+          "alphaChanges": 0,
+          "opaque": 25
+        },
+        {
+          "name": "front-contact",
+          "x": 842,
+          "y": 829,
+          "changes": 18,
+          "alphaChanges": 0,
+          "opaque": 25
+        }
+      ],
+      "garageChanged": 0,
+      "fingerprint": "8470530a9b470cd4d51bec2d24170b7902f6c3b7f4f08a0eb6c314273e5aebfd"
+    }
+  ],
+  "observations": [
+    {
+      "case": "24-white-black-maximum-builds",
+      "page_errors": [],
+      "http_errors": [],
+      "failed_requests": [],
+      "console_errors": [],
+      "expected_network_failures": false
+    },
+    {
+      "case": "24-white-black-maximum-builds",
+      "page_errors": [],
+      "http_errors": [],
+      "failed_requests": [],
+      "console_errors": [],
+      "expected_network_failures": false
+    }
+  ],
+  "extra_requests": [],
+  "screenshots": [
+    "m3-white-black-maximum.jpg",
+    "golf-white-black-maximum.jpg"
+  ]
+}

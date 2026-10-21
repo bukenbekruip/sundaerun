@@ -33,6 +33,20 @@ export const vehicles = freeze([
     brand: "Toyota",
     fitmentStatus: "unverified",
   },
+  {
+    id: "m3",
+    name: "BMW M3 E46",
+    shortName: "M3 E46",
+    brand: "BMW",
+    fitmentStatus: "unverified",
+  },
+  {
+    id: "golf",
+    name: "Volkswagen Golf Mk7 GTI",
+    shortName: "Golf GTI",
+    brand: "Volkswagen",
+    fitmentStatus: "unverified",
+  },
 ]);
 
 // Retained for callers that need the default vehicle rather than the active one.

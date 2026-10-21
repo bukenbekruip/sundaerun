@@ -1,0 +1,252 @@
+{
+  "m3:sr-01": {
+    "sourceGeneratedOriginal": "exec-da42b368-c0bc-4cee-bd14-e813e256254e.png",
+    "sourceSha256": "a1da53c3649e1f4599e0375968b1e8f8e3a24696eb0e10f94133388fe0daa0d0",
+    "src": "assets/cars/m3/sr-01.png",
+    "sha256": "a1da53c3649e1f4599e0375968b1e8f8e3a24696eb0e10f94133388fe0daa0d0",
+    "portableSrc": "assets/portable/m3-sr-01.webp",
+    "portableSha256": "5db5365143b9d83821a35a2a3f680ffbeb23775d32179608648d70e2718fe4d2",
+    "production": "image_gen artwork; FFmpeg WebP distribution encoding at quality 92, no geometry or material editing"
+  },
+  "golf:sr-01": {
+    "sourceGeneratedOriginal": "exec-2c5f895d-c141-4fab-bde3-8d54680df42f.png",
+    "sourceSha256": "05424ce280def4a84c698f13f927c519afde3acfc56acfdf5c8aaf8ea0912ec8",
+    "src": "assets/cars/golf/sr-01.png",
+    "sha256": "05424ce280def4a84c698f13f927c519afde3acfc56acfdf5c8aaf8ea0912ec8",
+    "portableSrc": "assets/portable/golf-sr-01.webp",
+    "portableSha256": "8e517da35a09fb8f539da4913d3e7a20c3c0730b33f3eae76a419f8f9e8590a6",
+    "production": "image_gen artwork; FFmpeg WebP distribution encoding at quality 92, no geometry or material editing"
+  },
+  "sti:cabin:stock": {
+    "sourceGeneratedOriginal": "exec-11efd226-6f3f-4251-944d-7c08f62c35a7.png",
+    "sourceSha256": "1ad17338f6183253ffc515c3e38b860acb0ddc5dfa95db27c89b9386486a7394",
+    "src": "assets/interiors/sti/stock.webp",
+    "sha256": "4b2659bf3c0d67ff8109e265a273273e40154f39c0652a0bd83bdb95a5536c69",
+    "production": "image_gen artwork; FFmpeg WebP distribution encoding at quality 92, no geometry or material editing"
+  },
+  "sti:cabin:club": {
+    "sourceGeneratedOriginal": "exec-45ef818b-55d3-4d9e-b6ed-ac6f702c16e5.png",
+    "sourceSha256": "744ee7541bd454e09a0e82ba3e44e5f5be46ed370361da87a9f12a3128abbf8a",
+    "src": "assets/interiors/sti/club.webp",
+    "sha256": "dec3cc0a0ae742cab25b5c9e3e8d3be479afa527acdf5993df21e5ca79530090",
+    "production": "image_gen artwork; FFmpeg WebP distribution encoding at quality 92, no geometry or material editing"
+  },
+  "porsche:cabin:stock": {
+    "sourceGeneratedOriginal": "exec-24b07fd1-4eba-415b-8a91-a818b9edf3ea.png",
+    "sourceSha256": "412ca9f71e743072fa74a309941920034a09f174f7181aa8f5ae5f0e4d4353a9",
+    "src": "assets/interiors/porsche/stock.webp",
+    "sha256": "ac5accf5c3bf2efb89c589ff9a48cef8cea3f62546a3d3ff7d91ee803fd10cfb",
+    "production": "image_gen artwork; FFmpeg WebP distribution encoding at quality 92, no geometry or material editing"
+  },
+  "porsche:cabin:club": {
+    "sourceGeneratedOriginal": "exec-084f0385-1bf5-4e7f-a3f4-e8ac50ad07bf.png",
+    "sourceSha256": "aa69b4339f7c08d8601a49db89a540666ada6238ff5b78e3cbd2b2a5525655bf",
+    "src": "assets/interiors/porsche/club.webp",
+    "sha256": "74e6ea8ebf7ab9696dee4ef897007e6c3b36585d2fb805d8e0412dcb3e3be3b0",
+    "production": "image_gen artwork; FFmpeg WebP distribution encoding at quality 92, no geometry or material editing"
+  },
+  "gt86:cabin:stock": {
+    "sourceGeneratedOriginal": "exec-487b74cf-3fde-4873-a993-199a59054034.png",
+    "sourceSha256": "f24517778e4758b6f1d046f0ba4fe6a9736222cef79a74a6cf7d7ffaff6ab16f",
+    "src": "assets/interiors/gt86/stock.webp",
+    "sha256": "bffcd0387a74f022bdf333077bcf254db60b3e139c22646cc2e044f0e131ff8b",
+    "production": "image_gen artwork; FFmpeg WebP distribution encoding at quality 92, no geometry or material editing"
+  },
+  "gt86:cabin:club": {
+    "sourceGeneratedOriginal": "exec-e1b5df7c-112b-4e7c-88c0-5703527b18c9.png",
+    "sourceSha256": "44306bbb38f884073d72bd89745774f912311357d7324e8d51ae7f0f2f7640a8",
+    "src": "assets/interiors/gt86/club.webp",
+    "sha256": "3e3e2b9488df789fd75e83f163b9e2c36a98c88171e36bbfcebf7b6bbe0476e8",
+    "production": "image_gen artwork; FFmpeg WebP distribution encoding at quality 92, no geometry or material editing"
+  },
+  "m3:cabin:stock": {
+    "sourceGeneratedOriginal": "exec-c78e748b-3290-40d7-81ce-e320d3a10eb0.png",
+    "sourceSha256": "648daeff7f3e6c7d4641ce86f37dcc67848670af8ddde253ae9da7a3e6d97f06",
+    "src": "assets/interiors/m3/stock.webp",
+    "sha256": "52b8153ca72a97e71185b5a4ee6d4508d1a9b15fbc960b0154df8138560659d9",
+    "production": "image_gen artwork; FFmpeg WebP distribution encoding at quality 92, no geometry or material editing"
+  },
+  "m3:cabin:club": {
+    "sourceGeneratedOriginal": "exec-e52e1ab6-9d49-4cd7-9b49-b52a5d749115.png",
+    "sourceSha256": "3b5d79ff3bd74637d2e7aacc2f7c6dbea72d0dff4051114706ddb17b46464233",
+    "src": "assets/interiors/m3/club.webp",
+    "sha256": "3b0b3fee3157cc9dfd0ba9e9c45678e7e0cd780120b65db0566a9b75d8aaf762",
+    "production": "image_gen artwork; FFmpeg WebP distribution encoding at quality 92, no geometry or material editing"
+  },
+  "golf:cabin:stock": {
+    "sourceGeneratedOriginal": "exec-8d655fd5-3f2d-401d-bf01-0e3fc55a9621.png",
+    "sourceSha256": "8df1a7a141560df9eea32b4952036beb9def5a3c82242591a42b1de02102b9f8",
+    "src": "assets/interiors/golf/stock.webp",
+    "sha256": "ac2879b27fb752870824e3ae9de8da8b3a925cd27e414dcef8ee39ea1eaea67c",
+    "production": "image_gen artwork; FFmpeg WebP distribution encoding at quality 92, no geometry or material editing"
+  },
+  "golf:cabin:club": {
+    "sourceGeneratedOriginal": "exec-0a56153c-cdbb-429a-8d1a-be743857a0dc.png",
+    "sourceSha256": "ff7901d8f4fc72ccfef3dabbfec3609075c35d7671a5cd1b55e77d81f9c7f6a7",
+    "src": "assets/interiors/golf/club.webp",
+    "sha256": "f5ded366e53fcd5144443b6ac10491b55e1ff9db43a10dfa7a1b0ac7483ad840",
+    "production": "image_gen artwork; FFmpeg WebP distribution encoding at quality 92, no geometry or material editing"
+  },
+  "m3:te37": {
+    "sourceGeneratedOriginal": "exec-6e211d35-7403-4401-8376-562a15e3c4be.png",
+    "sourceSha256": "7a4d95bd60ddbfc51c8a515362566ae17a8fef2f6a1bc24a849985318376b30b",
+    "src": "assets/cars/m3/te37.png",
+    "sha256": "7a4d95bd60ddbfc51c8a515362566ae17a8fef2f6a1bc24a849985318376b30b",
+    "portableSrc": "assets/portable/m3-te37.webp",
+    "portableSha256": "deaf2c97082406108babfd0fe9e591fb156665da2e44ce21e7ff304705c2f462",
+    "production": "image_gen artwork; FFmpeg WebP distribution encoding at quality 92, no geometry or material editing"
+  },
+  "m3:bbs-lm": {
+    "sourceGeneratedOriginal": "exec-66beab2d-793e-4e94-9063-4259f2983122.png",
+    "sourceSha256": "71bd5c7b229b0836d275d823fbf014a898b020b30b53c491e2533bd86f796b17",
+    "src": "assets/cars/m3/bbs-lm.png",
+    "sha256": "71bd5c7b229b0836d275d823fbf014a898b020b30b53c491e2533bd86f796b17",
+    "portableSrc": "assets/portable/m3-bbs-lm.webp",
+    "portableSha256": "60e5bf8caa0e8c077f22f74dffdb1d74ae3152b5acf1bd4bfb704efc76ee1785",
+    "production": "image_gen artwork; FFmpeg WebP distribution encoding at quality 92, no geometry or material editing"
+  },
+  "m3:oz": {
+    "sourceGeneratedOriginal": "exec-d3f428ec-5c66-4066-bd69-ea8e93c8e269.png",
+    "sourceSha256": "c49f90778b94c17fbe1b354700f1c367e6e465cef9780d73aaba4ce0cdac6416",
+    "src": "assets/cars/m3/oz.png",
+    "sha256": "c49f90778b94c17fbe1b354700f1c367e6e465cef9780d73aaba4ce0cdac6416",
+    "portableSrc": "assets/portable/m3-oz.webp",
+    "portableSha256": "87442842ee48ecf448062fcc10479e48536e9de5160c19222a517d5e1d812e23",
+    "production": "image_gen artwork; FFmpeg WebP distribution encoding at quality 92, no geometry or material editing"
+  },
+  "m3:rotiform": {
+    "sourceGeneratedOriginal": "exec-b1693f5e-2eae-420b-ad49-790747c9b721.png",
+    "sourceSha256": "fcbecb4c8d82b173a6691b4439add6ea4e83d11ec26d421aae0e431249bd0443",
+    "src": "assets/cars/m3/rotiform.png",
+    "sha256": "fcbecb4c8d82b173a6691b4439add6ea4e83d11ec26d421aae0e431249bd0443",
+    "portableSrc": "assets/portable/m3-rotiform.webp",
+    "portableSha256": "00aee809d5ab79cff3fdc29bdc07ef2737a2fa5f5af01b81b840a177307d2e15",
+    "production": "image_gen artwork; FFmpeg WebP distribution encoding at quality 92, no geometry or material editing"
+  },
+  "m3:work": {
+    "sourceGeneratedOriginal": "exec-97369144-93dd-4cfa-b086-fa2575914810.png",
+    "sourceSha256": "aa43c51df1be60bcc53f3deaac8b2ad1ccf325a170184533b996084d03cae8c6",
+    "src": "assets/cars/m3/work.png",
+    "sha256": "aa43c51df1be60bcc53f3deaac8b2ad1ccf325a170184533b996084d03cae8c6",
+    "portableSrc": "assets/portable/m3-work.webp",
+    "portableSha256": "e920f109bc64058d613f57946b8f466ddb6cf4b38255aaecf300bfbc03497cfd",
+    "production": "image_gen artwork; FFmpeg WebP distribution encoding at quality 92, no geometry or material editing"
+  },
+  "m3:tyre:sport": {
+    "sourceGeneratedOriginal": "exec-cc1608d2-4b4e-494c-84c5-78a64c7cb2f6.png",
+    "sourceSha256": "2c57f2db6e523cad5511e43d59c595d36361113faf45612f8f16a16dfbca2077",
+    "src": "assets/upgrades/m3/tyre-sport.png",
+    "sha256": "2c57f2db6e523cad5511e43d59c595d36361113faf45612f8f16a16dfbca2077",
+    "portableSrc": "assets/portable/m3-tyre-sport.webp",
+    "portableSha256": "ac5ec7f17a225337ebc4a30c529a9e901033e4e4eda75b7a978b1c4c80e34f5f",
+    "production": "image_gen artwork; FFmpeg WebP distribution encoding at quality 92, no geometry or material editing"
+  },
+  "m3:tyre:track": {
+    "sourceGeneratedOriginal": "exec-5e1e723d-63ff-4e8c-bec6-6295543b53ef.png",
+    "sourceSha256": "a4a22bae5c369ba4078f5c697a7f79fccc9bb33239de3a4ac20aefcb7eae8c5c",
+    "src": "assets/upgrades/m3/tyre-track.png",
+    "sha256": "a4a22bae5c369ba4078f5c697a7f79fccc9bb33239de3a4ac20aefcb7eae8c5c",
+    "portableSrc": "assets/portable/m3-tyre-track.webp",
+    "portableSha256": "4cb4f775080ed5025d363b3df55a0689e245d4728702fa01ab64562583738834",
+    "production": "image_gen artwork; FFmpeg WebP distribution encoding at quality 92, no geometry or material editing"
+  },
+  "m3:body:street": {
+    "sourceGeneratedOriginal": "exec-a7cf1f60-924d-429d-ae7d-40b6bd43db58.png",
+    "sourceSha256": "485cedda678d652c64f53b4546c2677b079bfa93d0ee147ab2f78ac4bf0e8ed0",
+    "src": "assets/upgrades/m3/body-street.png",
+    "sha256": "485cedda678d652c64f53b4546c2677b079bfa93d0ee147ab2f78ac4bf0e8ed0",
+    "portableSrc": "assets/portable/m3-body-street.webp",
+    "portableSha256": "242b67276a93674cc9c952affccfe4120c2a2465a02d9877b035816d41c7d9d8",
+    "production": "image_gen artwork; FFmpeg WebP distribution encoding at quality 92, no geometry or material editing"
+  },
+  "m3:body:track": {
+    "sourceGeneratedOriginal": "exec-954a8fdb-9677-44bb-bd65-e52a2e4ab3c6.png",
+    "sourceSha256": "510ddcaf21619608c1ded956a47a76bee1c43542303721469984a1b3f1e89337",
+    "src": "assets/upgrades/m3/body-track.png",
+    "sha256": "510ddcaf21619608c1ded956a47a76bee1c43542303721469984a1b3f1e89337",
+    "portableSrc": "assets/portable/m3-body-track.webp",
+    "portableSha256": "5e66dfa0903f17d4e97b58e25acc9b02f899bf6950445e774dd18f6a849e7b29",
+    "production": "image_gen artwork; FFmpeg WebP distribution encoding at quality 92, no geometry or material editing"
+  },
+  "golf:te37": {
+    "sourceGeneratedOriginal": "exec-a948a839-129d-4095-b4c1-460ff1b4403f.png",
+    "sourceSha256": "7f016b627c6637a74e1fc876f58bad116e18eaebfc059ab4e492449105058346",
+    "src": "assets/cars/golf/te37.png",
+    "sha256": "7f016b627c6637a74e1fc876f58bad116e18eaebfc059ab4e492449105058346",
+    "portableSrc": "assets/portable/golf-te37.webp",
+    "portableSha256": "6f139d01aa3404ca880c49797fb4dd23656deb27cde3745f21fcffc50b648fa4",
+    "production": "image_gen artwork; FFmpeg WebP distribution encoding at quality 92, no geometry or material editing"
+  },
+  "golf:bbs-lm": {
+    "sourceGeneratedOriginal": "exec-a1a67944-2c69-4e56-a872-e637a7e4df0e.png",
+    "sourceSha256": "b1fbcf198f2abde343092724892bb9ff0b83f7a7fcb766aebe473d19254ec985",
+    "src": "assets/cars/golf/bbs-lm.png",
+    "sha256": "b1fbcf198f2abde343092724892bb9ff0b83f7a7fcb766aebe473d19254ec985",
+    "portableSrc": "assets/portable/golf-bbs-lm.webp",
+    "portableSha256": "ad974a0aafb07f7f7df77a0b3a36ae29d4a5eb404b0a9bfc4a4c696c6798adfa",
+    "production": "image_gen artwork; FFmpeg WebP distribution encoding at quality 92, no geometry or material editing"
+  },
+  "golf:oz": {
+    "sourceGeneratedOriginal": "exec-83415542-742c-444d-bb1b-b901b0ef75ac.png",
+    "sourceSha256": "d3b7b2824b90dcf33f8fc7f5f59c93018eda0ee214f0426838d8779270470637",
+    "src": "assets/cars/golf/oz.png",
+    "sha256": "d3b7b2824b90dcf33f8fc7f5f59c93018eda0ee214f0426838d8779270470637",
+    "portableSrc": "assets/portable/golf-oz.webp",
+    "portableSha256": "0fc507932f2e4a597db09ecc025e4d78e862eb535db5256d52e57fce82e6c797",
+    "production": "image_gen artwork; FFmpeg WebP distribution encoding at quality 92, no geometry or material editing"
+  },
+  "golf:rotiform": {
+    "sourceGeneratedOriginal": "exec-136f0417-c277-4d6f-b6a8-3148a00873cc.png",
+    "sourceSha256": "eac854e8581621f0a887caedc6899e165811c311d5a38182d4170c6998ea7464",
+    "src": "assets/cars/golf/rotiform.png",
+    "sha256": "eac854e8581621f0a887caedc6899e165811c311d5a38182d4170c6998ea7464",
+    "portableSrc": "assets/portable/golf-rotiform.webp",
+    "portableSha256": "dcbf6dddd686d29d3ceb71574c91a275870aecf3fc351507d1f791c8680f17db",
+    "production": "image_gen artwork; FFmpeg WebP distribution encoding at quality 92, no geometry or material editing"
+  },
+  "golf:work": {
+    "sourceGeneratedOriginal": "exec-8cb3446c-9a8f-467c-955a-7f43f4b2f4db.png",
+    "sourceSha256": "449fb47b68419193ab52bb970cd896f9f048c4c7b2abd2712432d36f4013f02d",
+    "src": "assets/cars/golf/work.png",
+    "sha256": "449fb47b68419193ab52bb970cd896f9f048c4c7b2abd2712432d36f4013f02d",
+    "portableSrc": "assets/portable/golf-work.webp",
+    "portableSha256": "ac7b72cbf24c4f56dcf9944f50d2a5ad5a11af6fe26d371b9e6688434fac32b3",
+    "production": "image_gen artwork; FFmpeg WebP distribution encoding at quality 92, no geometry or material editing"
+  },
+  "golf:tyre:sport": {
+    "sourceGeneratedOriginal": "exec-975adc76-a617-4ff7-a86c-a4f9e87e8c55.png",
+    "sourceSha256": "4df7de79f854d5bfd9e9d22b48070b01d9f08e26acbc8062e58014dd96708eaa",
+    "src": "assets/upgrades/golf/tyre-sport.png",
+    "sha256": "4df7de79f854d5bfd9e9d22b48070b01d9f08e26acbc8062e58014dd96708eaa",
+    "portableSrc": "assets/portable/golf-tyre-sport.webp",
+    "portableSha256": "22cad589b90dca0356ed621797a94575f2e1cf4f42d1b60bd1e8fec7dddd0350",
+    "production": "image_gen artwork; FFmpeg WebP distribution encoding at quality 92, no geometry or material editing"
+  },
+  "golf:tyre:track": {
+    "sourceGeneratedOriginal": "exec-2d0c9113-fe58-4d90-af25-8f79b2f6cd60.png",
+    "sourceSha256": "c8c2952d5e14725522a981e5a6bff5ee9984b23a0cecf15b0333a4d8eda73b9f",
+    "src": "assets/upgrades/golf/tyre-track.png",
+    "sha256": "c8c2952d5e14725522a981e5a6bff5ee9984b23a0cecf15b0333a4d8eda73b9f",
+    "portableSrc": "assets/portable/golf-tyre-track.webp",
+    "portableSha256": "92d2184adeb1a5ec2fc452420c2ec5957b9a9139da87591058102691601943a0",
+    "production": "image_gen artwork; FFmpeg WebP distribution encoding at quality 92, no geometry or material editing"
+  },
+  "golf:body:street": {
+    "sourceGeneratedOriginal": "exec-5523f953-2c59-4799-ae0c-5789ebb08271.png",
+    "sourceSha256": "7e818fcd430c107af370d0535ba8f741818158fddf23994d41bd66e818b7aa00",
+    "src": "assets/upgrades/golf/body-street.png",
+    "sha256": "7e818fcd430c107af370d0535ba8f741818158fddf23994d41bd66e818b7aa00",
+    "portableSrc": "assets/portable/golf-body-street.webp",
+    "portableSha256": "622ce0ef9088ed0630d1a3b860e3a9fbeba0b8f2840f11579dc7ed5b2f8c01b9",
+    "production": "image_gen artwork; FFmpeg WebP distribution encoding at quality 92, no geometry or material editing"
+  },
+  "golf:body:track": {
+    "sourceGeneratedOriginal": "exec-a10fb0f9-6bed-4410-93a5-54faa3b7d69f.png",
+    "sourceSha256": "fdd08f2ea612e0585749d89c1e9623844368d51c513cf6d5cf79bce52902e0ad",
+    "src": "assets/upgrades/golf/body-track.png",
+    "sha256": "fdd08f2ea612e0585749d89c1e9623844368d51c513cf6d5cf79bce52902e0ad",
+    "portableSrc": "assets/portable/golf-body-track.webp",
+    "portableSha256": "bda14f69f1b4a591d43e242c1af591e34ccb27328502ee30370b5c21839b1495",
+    "production": "image_gen artwork; FFmpeg WebP distribution encoding at quality 92, no geometry or material editing"
+  }
+}

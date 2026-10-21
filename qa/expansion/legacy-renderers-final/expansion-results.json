@@ -1,0 +1,31 @@
+{
+  "started_at_utc": "2026-10-21T11:48:32.890731+00:00",
+  "portable": false,
+  "checks": [
+    "sti/blue: legacy maximum-upgrade pixels match published renderers exactly",
+    "sti/white: legacy maximum-upgrade pixels match published renderers exactly",
+    "sti/black: legacy maximum-upgrade pixels match published renderers exactly",
+    "porsche/blue: legacy maximum-upgrade pixels match published renderers exactly",
+    "porsche/white: legacy maximum-upgrade pixels match published renderers exactly",
+    "porsche/black: legacy maximum-upgrade pixels match published renderers exactly",
+    "gt86/blue: legacy maximum-upgrade pixels match published renderers exactly",
+    "gt86/white: legacy maximum-upgrade pixels match published renderers exactly",
+    "gt86/black: legacy maximum-upgrade pixels match published renderers exactly",
+    "No uncaught page errors",
+    "No HTTP errors",
+    "No extra portable network requests",
+    "No unexpected console errors"
+  ],
+  "cases": [
+    {
+      "name": "legacy-renderer-nine-pixel-identities",
+      "status": "passed"
+    }
+  ],
+  "page_errors": [],
+  "console_errors": [],
+  "http_errors": [],
+  "extra_requests": [],
+  "status": "passed",
+  "passed_checks": 13
+}

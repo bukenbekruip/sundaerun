@@ -2129,7 +2129,7 @@ p {
     display: none;
   }
 }
-/* Three-car garage and full paint palette. */
+/* Five-car garage and full paint palette. */
 .vehicle-picker {
   left: 768px;
   width: 340px;
@@ -2149,7 +2149,7 @@ p {
 }
 .vehicle-options {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(5, minmax(0, 1fr));
   height: 100%;
   gap: 4px;
 }

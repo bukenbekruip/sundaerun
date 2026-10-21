@@ -22,10 +22,22 @@
       "top": 159.27272727272725,
       "width": 912,
       "height": 513.2727272727273
+    },
+    "m3": {
+      "left": 418.27272727272725,
+      "top": 163.0909090909091,
+      "width": 912,
+      "height": 513.2727272727273
+    },
+    "golf": {
+      "left": 422.8327272727272,
+      "top": 174.3,
+      "width": 902.8800000000001,
+      "height": 508.14000000000004
     }
   },
   "paintMethod": "Runtime material transfer within authored per-vehicle panel masks, with protected glass, lamps, trim and complete wheel assemblies. Colour previews and wheel names do not establish real-world product fitment.",
-  "registrationNote": "Each vehicle uses one uniform transform for its body and wheels. Toyota has a single whole-car vertical offset to align its tyre contact with the platform. Minor illustration/reflection differences remain between wheel variants; metadata auditing does not replace visual review.",
+  "registrationNote": "Each vehicle uses one uniform transform for its body and wheels. Toyota and BMW have single whole-car vertical offsets; Golf uses a uniform 0.54 scale and whole-car placement to fit its taller roof while retaining platform contact. Minor illustration/reflection differences remain between wheel variants; metadata auditing does not replace visual review.",
   "assets": {
     "sti:sr-01": {
       "src": "assets/scene/blue-sr-01.png",
@@ -276,6 +288,174 @@
         31,
         190,
         1667,
+        831
+      ]
+    },
+    "m3:sr-01": {
+      "src": "assets/cars/m3/sr-01.png",
+      "width": 1671,
+      "height": 941,
+      "mode": "RGBA",
+      "bytes": 1624053,
+      "sha256": "a1da53c3649e1f4599e0375968b1e8f8e3a24696eb0e10f94133388fe0daa0d0",
+      "opaqueBoundsAlpha128": [
+        45,
+        164,
+        1644,
+        831
+      ]
+    },
+    "m3:te37": {
+      "src": "assets/cars/m3/te37.png",
+      "width": 1671,
+      "height": 941,
+      "mode": "RGBA",
+      "bytes": 1495585,
+      "sha256": "7a4d95bd60ddbfc51c8a515362566ae17a8fef2f6a1bc24a849985318376b30b",
+      "opaqueBoundsAlpha128": [
+        44,
+        162,
+        1646,
+        830
+      ]
+    },
+    "m3:bbs-lm": {
+      "src": "assets/cars/m3/bbs-lm.png",
+      "width": 1671,
+      "height": 941,
+      "mode": "RGBA",
+      "bytes": 1540460,
+      "sha256": "71bd5c7b229b0836d275d823fbf014a898b020b30b53c491e2533bd86f796b17",
+      "opaqueBoundsAlpha128": [
+        44,
+        162,
+        1646,
+        832
+      ]
+    },
+    "m3:oz": {
+      "src": "assets/cars/m3/oz.png",
+      "width": 1671,
+      "height": 941,
+      "mode": "RGBA",
+      "bytes": 1510073,
+      "sha256": "c49f90778b94c17fbe1b354700f1c367e6e465cef9780d73aaba4ce0cdac6416",
+      "opaqueBoundsAlpha128": [
+        44,
+        162,
+        1646,
+        829
+      ]
+    },
+    "m3:rotiform": {
+      "src": "assets/cars/m3/rotiform.png",
+      "width": 1670,
+      "height": 941,
+      "mode": "RGBA",
+      "bytes": 1508140,
+      "sha256": "fcbecb4c8d82b173a6691b4439add6ea4e83d11ec26d421aae0e431249bd0443",
+      "opaqueBoundsAlpha128": [
+        44,
+        162,
+        1646,
+        831
+      ]
+    },
+    "m3:work": {
+      "src": "assets/cars/m3/work.png",
+      "width": 1671,
+      "height": 941,
+      "mode": "RGBA",
+      "bytes": 1532138,
+      "sha256": "aa43c51df1be60bcc53f3deaac8b2ad1ccf325a170184533b996084d03cae8c6",
+      "opaqueBoundsAlpha128": [
+        44,
+        162,
+        1646,
+        831
+      ]
+    },
+    "golf:sr-01": {
+      "src": "assets/cars/golf/sr-01.png",
+      "width": 1671,
+      "height": 941,
+      "mode": "RGBA",
+      "bytes": 1660224,
+      "sha256": "05424ce280def4a84c698f13f927c519afde3acfc56acfdf5c8aaf8ea0912ec8",
+      "opaqueBoundsAlpha128": [
+        47,
+        134,
+        1633,
+        830
+      ]
+    },
+    "golf:te37": {
+      "src": "assets/cars/golf/te37.png",
+      "width": 1670,
+      "height": 941,
+      "mode": "RGBA",
+      "bytes": 1535956,
+      "sha256": "7f016b627c6637a74e1fc876f58bad116e18eaebfc059ab4e492449105058346",
+      "opaqueBoundsAlpha128": [
+        46,
+        132,
+        1636,
+        832
+      ]
+    },
+    "golf:bbs-lm": {
+      "src": "assets/cars/golf/bbs-lm.png",
+      "width": 1670,
+      "height": 942,
+      "mode": "RGBA",
+      "bytes": 1583486,
+      "sha256": "b1fbcf198f2abde343092724892bb9ff0b83f7a7fcb766aebe473d19254ec985",
+      "opaqueBoundsAlpha128": [
+        46,
+        133,
+        1636,
+        834
+      ]
+    },
+    "golf:oz": {
+      "src": "assets/cars/golf/oz.png",
+      "width": 1670,
+      "height": 941,
+      "mode": "RGBA",
+      "bytes": 1544235,
+      "sha256": "d3b7b2824b90dcf33f8fc7f5f59c93018eda0ee214f0426838d8779270470637",
+      "opaqueBoundsAlpha128": [
+        46,
+        133,
+        1634,
+        832
+      ]
+    },
+    "golf:rotiform": {
+      "src": "assets/cars/golf/rotiform.png",
+      "width": 1671,
+      "height": 941,
+      "mode": "RGBA",
+      "bytes": 1593899,
+      "sha256": "eac854e8581621f0a887caedc6899e165811c311d5a38182d4170c6998ea7464",
+      "opaqueBoundsAlpha128": [
+        47,
+        133,
+        1635,
+        832
+      ]
+    },
+    "golf:work": {
+      "src": "assets/cars/golf/work.png",
+      "width": 1671,
+      "height": 941,
+      "mode": "RGBA",
+      "bytes": 1561121,
+      "sha256": "449fb47b68419193ab52bb970cd896f9f048c4c7b2abd2712432d36f4013f02d",
+      "opaqueBoundsAlpha128": [
+        47,
+        133,
+        1636,
         831
       ]
     }

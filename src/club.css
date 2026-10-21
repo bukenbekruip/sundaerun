@@ -322,6 +322,48 @@
 .club-open:hover {
   border-color: var(--mint);
 }
+.interior-preview {
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #0c130f;
+  min-height: 150px;
+}
+.interior-preview > img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1672/941;
+  object-fit: contain;
+  display: block;
+}
+.interior-loading {
+  position: absolute;
+  inset: 20px;
+  padding: 20px;
+  background: #162219ee;
+  border-radius: 10px;
+  display: grid;
+  place-content: center;
+  text-align: center;
+}
+.interior-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 18px 0;
+}
+.interior-options button[aria-pressed="true"] {
+  background: var(--mint);
+  color: #17321f;
+}
+.interior-details {
+  margin-bottom: 18px;
+}
+.interior-details > p {
+  margin-top: 8px;
+  color: #c4cec3;
+  line-height: 1.6;
+}
 .clock-box.club-open > div {
   flex-direction: column;
   align-items: flex-start;
@@ -398,4 +440,12 @@
   .club-challenge {
     padding: 16px;
   }
+}
+
+.club-website {
+  display: block;
+  margin-top: 18px;
+  color: #b9ffcf;
+  font-size: 13px;
+  line-height: 1.5;
 }

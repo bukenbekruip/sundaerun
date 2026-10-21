@@ -197,9 +197,10 @@ def main():
             result['default_images'] = images
             check(len(images) >= 9 and all(image['embedded'] for image in images), 'Scene, brand and all six wheel thumbnails load as embedded data images')
             result['embedded_image_map_count'] = page.evaluate('Object.keys(globalThis.__SUNDAE_INLINE_ASSETS__ ?? {}).length')
-            check(result['embedded_image_map_count'] == 38, 'Runtime lookup map contains 18 base cars, two garage images, six wheel thumbnails, and twelve upgrade skins')
+            check(result['embedded_image_map_count'] == 68, 'Runtime lookup map contains 30 base cars, two garage images, six wheel thumbnails, twenty upgrade skins and ten cabins')
             manifest = json.loads((PROJECT / 'public/assets/cars/manifest.json').read_text())
-            expected_keys = {row['src'].removeprefix('./') for row in manifest['assets'].values()} | {'assets/scene/garage-plate.png', 'assets/scene/garage-logo.png'} | {f'assets/products/wheel-{wheel}.png' for wheel in WHEELS} | {f'assets/upgrades/{vehicle}/{kind}-{choice}.png' for vehicle in VEHICLES for kind, choices in (('tyre', ('sport', 'track')), ('body', ('street', 'track'))) for choice in choices}
+            expected_keys = {row['src'].removeprefix('./') for row in manifest['assets'].values()} | {'assets/scene/garage-plate.png', 'assets/scene/garage-logo.png'} | {f'assets/products/wheel-{wheel}.png' for wheel in WHEELS} | {f'assets/upgrades/{vehicle}/{kind}-{choice}.png' for vehicle in (*VEHICLES, 'm3', 'golf') for kind, choices in (('tyre', ('sport', 'track')), ('body', ('street', 'track'))) for choice in choices}
+            expected_keys |= {f'assets/interiors/{vehicle}/{package}.webp' for vehicle in (*VEHICLES, 'm3', 'golf') for package in ('stock', 'club')}
             actual_keys = set(page.evaluate('Object.keys(globalThis.__SUNDAE_INLINE_ASSETS__)'))
             check(actual_keys == expected_keys, 'Every required base and upgrade image is embedded under its actual runtime key', sorted(actual_keys ^ expected_keys))
             page.mouse.move(1, 1)

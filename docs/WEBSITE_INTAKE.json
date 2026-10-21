@@ -1,0 +1,31 @@
+{
+  "source_archive": "Sundae-Run-Website-and-Shop-Only-Codex.zip",
+  "source_archive_sha256": "a1e173a836ad3d45f8d8740a2525d1df68197306eadee9d45ea0ecfa1998c7c5",
+  "original_files": {
+    "README-FOR-CODEX.md": "222ac431f6d63265a86b6c7b97ec4fe093eb0b69850e5d9233fcab7b98401a66",
+    "website/about.html": "3b9a00ee661f4826f8ed7ce41daefa05cf9327c7c0066df85543c3d8c792e396",
+    "website/index.html": "d1d485ec168848b03accad6b5a7109ad84cb81ca728e3f57d13d032bc215e115",
+    "website/community.html": "4ecb5fa903a09330819ad4d7ebc86716b72c3ebe45a650410a7a680cf8a64169",
+    "website/play.html": "73fbfc93c9219d0f2961574629c6381973ad740566f9b3183a9da8becd8f6a90",
+    "website/site.js": "cfa848ead5003e5ce92a0d170c8a28f716fe24fb84759abd4fb5691097547ac0",
+    "website/shop.html": "1d05e635f198ceaac521829298571e62840fb4aa9769ffbf6b832d9f225b2c93",
+    "website/styles.css": "d503161260d3ff98ab8417ea517285592aeb94230e7a039eccdc3200f4b53d26",
+    "website/privacy.html": "4541ebc2f5b3dedfa011222b3afd333a447573f276e9cb410cc76f27fbebb8f8",
+    "website/garage.html": "9fef40cf2775b6f451f6f2fa4c1c49f3fab300682fefa9dabd8d679e26d27fc8",
+    "website/culture.html": "ccf4a3a8054168375dfd410c9791964c7b4fb017b05f21ea6b288204dffca8c9",
+    "shop-artwork-originals/kids-pit-stop.png": "6fe3c8544a5fe7acd968b5b59e757277bfa9a44435f53c244a810e91f6b7a850",
+    "shop-artwork-originals/adult-weekend-lineup.png": "93c26b421b8630f23767b787ead46bc1a6b087261781f55b5927e6a44165764b",
+    "shop-artwork-originals/adult-sunday-drive.png": "8732078dc8ac32ac7a2bf1841033e0f71e39e28c3105d9ba8045805d27a49906",
+    "shop-artwork-originals/kids-sundae-cruiser.png": "f99f3c83420d6e65d996bece6df1b5de672a91914bffd538d3f3ef3cb10593e5",
+    "shop-artwork-originals/sundae-run-apparel-logo.png": "39f98bfb45be88d8d4c6d4d08eb38a0d53fa8fe3959e8104faae92f269651e03",
+    "website/assets/game-customize.webp": "c9b5418cd43066287a4921bcca52fb3c439744b8935b5c77bc833fd483b04572",
+    "website/assets/shirt-sundae-cruiser.webp": "b8dd9d6c4ba7898e2c4cbe2e88a6033413113094c1100c8cd0f94463dcc80535",
+    "website/assets/game-dashboard.webp": "f27b9a41287cd6c714586230bf59ac73074f56be1347f9176147062ac6b420de",
+    "website/assets/logo.webp": "3bf9c4390f691f9662b78a4a45524ca2dc202f2e7098e47a9f051edba3ba5edd",
+    "website/assets/game-management.webp": "5ea322376933b3bbea4a5cf96962749418470a25f354f91e84b15dd79b5532b2",
+    "website/assets/shirt-sunday-drive.webp": "2a343d86607305d73540e2998d5e1167c775817a27c6802b287cb69bd75ff4b6",
+    "website/assets/shirt-pit-stop.webp": "59c5ee233f82212bbe3e8fb18e36f2c2ce8455819a59408d9545b9a50f48160d",
+    "website/assets/shirt-weekend-lineup.webp": "3040505ff6073a11805d0542c9029f0dd8da6b1b86fa010a6f79dacf33935bd4"
+  },
+  "integration": "Original website and apparel artwork retained. Play route opens existing root game. Workshop-management copy updated to actual build-and-show features. Current screenshots added separately. Store and signup remain previews."
+}

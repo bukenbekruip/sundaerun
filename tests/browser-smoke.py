@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Production browser checks for three cars, six wheels, twelve paints and upgrades.
+"""Production browser checks; defaults preserve the original three-car release.
 
 Build the app, start Vite preview on 4173, then run this file. Evidence defaults to
 qa/upgrades so earlier release evidence remains intact. Screenshots still require
@@ -19,6 +19,7 @@ from playwright.async_api import async_playwright, expect
 
 PROJECT = Path(__file__).resolve().parents[1]
 VEHICLES = ('sti', 'porsche', 'gt86')
+ALL_VEHICLES = (*VEHICLES, 'm3', 'golf')
 WHEELS = ('sr-01', 'te37', 'bbs-lm', 'oz', 'rotiform', 'work')
 PAINTS = ('blue', 'black', 'mint', 'white', 'silver', 'graphite', 'red', 'orange', 'purple', 'pink', 'yellow', 'teal')
 PRICES = dict(zip(WHEELS, (2500, 2800, 2800, 2800, 2400, 2600)))
@@ -53,6 +54,7 @@ class BrowserSuite:
         self.only_cases = set(only_cases or [])
         self.matrix_vehicles = tuple(dict.fromkeys(matrix_vehicles or VEHICLES))
         self.matrix_wheels = tuple(dict.fromkeys(matrix_wheels or WHEELS))
+        self.paint_scope = PAINTS
         self.readiness_failures = []
 
     def check(self, condition, label, details=None):
@@ -295,17 +297,17 @@ class BrowserSuite:
     async def variants_and_controls(self):
         async with self.page() as (_,page,events):
             await self.open(page);await self.ready(page,'sti:blue:sr-01');await self.install_pixel_probe(page)
-            self.check(await page.locator('#vehicle-options button').count()==3,'Three vehicle controls present')
+            self.check(await page.locator('#vehicle-options button').count()==5,'Five vehicle controls present')
             self.check(await page.locator('.wheel-select:not(:disabled)').count()==6,'Six wheel designs enabled')
             self.check(await page.locator('.paint-option:not(:disabled)').count()==12,'Twelve paint choices enabled')
-            for vehicle in VEHICLES:
+            for vehicle in self.matrix_vehicles:
                 await self.select(page,vehicle=vehicle);await self.ready(page,f'{vehicle}:blue:sr-01')
                 await self.layout(page);await self.screenshot(page,f'{vehicle}-default-1672.jpg')
                 original=await page.locator('#car-image').bounding_box();base_fingerprints=[]
-                for wheel in WHEELS:
+                for wheel in self.matrix_wheels:
                     await self.select(page,wheel=wheel,paint='blue');await self.ready(page,f'{vehicle}:blue:{wheel}')
                     await self.layout(page);await self.base_pixels(page,vehicle);tiles=[];paint_fingerprints=[]
-                    for paint in PAINTS:
+                    for paint in self.paint_scope:
                         await self.select(page,paint=paint);key=f'{vehicle}:{paint}:{wheel}';await self.ready(page,key)
                         await self.controls(page,vehicle,wheel,paint,'paint')
                         await self.text(page,'#balance','$ 48,320','Preview changes do not spend credits')
@@ -318,12 +320,13 @@ class BrowserSuite:
                         await page.mouse.move(1,1)
                         tiles.append((key,await page.locator('#scene').screenshot(type='jpeg',quality=84)))
                         self.combinations.append(key)
-                    self.check(len(set(paint_fingerprints))==12,f'{vehicle}:{wheel}: all twelve paint renderings differ')
+                    self.check(len(set(paint_fingerprints))==len(self.paint_scope),f'{vehicle}:{wheel}: all selected paint renderings differ')
                     await self.select(page,paint='blue');await self.ready(page,f'{vehicle}:blue:{wheel}')
                     await self.compare_pixels(page,f'{vehicle}:blue:{wheel}:restored','blue')
                     await self.contact_sheet(tiles,f'{vehicle}-{wheel}-12-paints.jpg')
-                self.check(len(set(base_fingerprints))==6,vehicle+': all six wheel-base renderings differ')
-            self.check(len(self.combinations)==216 and len(set(self.combinations))==216,'Every requested combination completed once')
+                self.check(len(set(base_fingerprints))==len(self.matrix_wheels),vehicle+': all selected wheel-base renderings differ')
+            expected=len(self.matrix_vehicles)*len(self.matrix_wheels)*len(self.paint_scope)
+            self.check(len(self.combinations)==expected and len(set(self.combinations))==expected,f'Every requested combination completed once ({expected})')
             self.clean(events)
 
     async def install_upgrade_probe(self, page):
@@ -545,7 +548,7 @@ class BrowserSuite:
                 await expect(page.locator('#apply-button')).to_be_enabled();await page.locator('#apply-button').click(no_wait_after=True)
                 await self.text(page,'#balance',f'$ {balance:,}','Refitting owned parts costs no credits')
             saved=await page.evaluate('(k)=>JSON.parse(localStorage.getItem(k))',STORAGE_KEY)
-            self.check(saved['version']==4 and set(saved['garage'])==set(VEHICLES),'Saved state contains all three canonical garages',saved)
+            self.check(saved['version']==4 and set(saved['garage'])==set(ALL_VEHICLES),'Saved state contains all three canonical garages',saved)
             self.check(all(len(saved['garage'][v]['purchased'])==4 for v in VEHICLES),'Each car retains its own four purchased items',saved)
             self.check(not any(k in saved for k in ('preview','applied','purchased')),'Transient previews and derived aliases are not persisted',saved)
             await page.locator('#settings-open').click(no_wait_after=True);await page.locator('#reset-request').click(no_wait_after=True)
@@ -721,7 +724,7 @@ class BrowserSuite:
 
 
 async def main():
-    parser=argparse.ArgumentParser(description=__doc__);parser.add_argument('--base-url',default='http://127.0.0.1:4173');parser.add_argument('--output',type=Path,default=PROJECT/'qa/upgrades');parser.add_argument('--case',action='append',help='Run one named case; repeat to select multiple cases');parser.add_argument('--matrix-vehicle',action='append',choices=VEHICLES,help='Restrict only mechanical-matrix cars; repeat to select several');parser.add_argument('--matrix-wheel',action='append',choices=WHEELS,help='Restrict only mechanical-matrix rims; repeat to select several');args=parser.parse_args()
+    parser=argparse.ArgumentParser(description=__doc__);parser.add_argument('--base-url',default='http://127.0.0.1:4173');parser.add_argument('--output',type=Path,default=PROJECT/'qa/upgrades');parser.add_argument('--case',action='append',help='Run one named case; repeat to select multiple cases');parser.add_argument('--matrix-vehicle',action='append',choices=ALL_VEHICLES,help='Restrict only mechanical-matrix cars; repeat to select several');parser.add_argument('--matrix-wheel',action='append',choices=WHEELS,help='Restrict only mechanical-matrix rims; repeat to select several');args=parser.parse_args()
     async with async_playwright() as playwright:
         browser=await playwright.chromium.launch(executable_path='/usr/bin/chromium',headless=True,args=['--no-sandbox'])
         try:failures=await BrowserSuite(browser,args.base_url,args.output,args.case,args.matrix_vehicle,args.matrix_wheel).run()

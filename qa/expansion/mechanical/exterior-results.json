@@ -1,0 +1,125 @@
+{
+  "generated_at_utc": "2026-10-21T11:11:28.299119+00:00",
+  "portable": false,
+  "status": "failed",
+  "cases": [
+    {
+      "name": "54-blue-mechanical-builds",
+      "status": "failed",
+      "assertions_passed": 51,
+      "error": "m3:blue:sr-01:road:original:street: both rim centres retain their position and original pixels: [{'name': 'rear-wheel', 'x': 167, 'y': 599, 'changes': 0, 'alphaChanges': 0, 'opaque': 25}, {'name': 'front-wheel', 'x': 847, 'y': 668, 'changes': 11, 'alphaChanges': 0, 'opaque': 25}]",
+      "traceback": "Traceback (most recent call last):\n  File \"/workspace/sundae-run/tests/browser-smoke.py\", line 705, in run_case\n    try:await action()\n        ^^^^^^^^^^^^^^\n  File \"/workspace/sundae-run/tests/browser-smoke.py\", line 409, in mechanical_matrix\n    pixels=await self.upgrade_pixels(page,key,**parts);fingerprints.append(pixels['fingerprint'])\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/sundae-run/tests/browser-smoke.py\", line 376, in upgrade_pixels\n    self.check(len(info['rimSamples'])==2 and all(sample['opaque']==25 and sample['changes']==0 for sample in info['rimSamples']), key+': both rim centres retain their position and original pixels', info['rimSamples'])\n  File \"/workspace/sundae-run/tests/browser-smoke.py\", line 62, in check\n    raise AssertionError(f'{label}: {details!r}')\nAssertionError: m3:blue:sr-01:road:original:street: both rim centres retain their position and original pixels: [{'name': 'rear-wheel', 'x': 167, 'y': 599, 'changes': 0, 'alphaChanges': 0, 'opaque': 25}, {'name': 'front-wheel', 'x': 847, 'y': 668, 'changes': 11, 'alphaChanges': 0, 'opaque': 25}]\n"
+    }
+  ],
+  "checks": 52,
+  "paint_combinations": [],
+  "mechanical_combinations": [
+    "m3:blue:sr-01"
+  ],
+  "maximum_combinations": [],
+  "paint_pixels": [],
+  "upgrade_pixels": [
+    {
+      "variant": "m3:blue:sr-01",
+      "dimensionsMatch": true,
+      "changed": 0,
+      "alphaChanged": 0,
+      "outsideTyreChanged": 0,
+      "rimSamples": [
+        {
+          "name": "rear-wheel",
+          "x": 167,
+          "y": 599,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        },
+        {
+          "name": "front-wheel",
+          "x": 847,
+          "y": 668,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        }
+      ],
+      "contactSamples": [
+        {
+          "name": "rear-contact",
+          "x": 177,
+          "y": 729,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        },
+        {
+          "name": "front-contact",
+          "x": 862,
+          "y": 829,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        }
+      ],
+      "garageChanged": 0,
+      "fingerprint": "2bb5cb5b6e3ed3473084e846240cd53791300f2862a2ab1658b29b6887dbe340"
+    },
+    {
+      "variant": "m3:blue:sr-01:road:original:street",
+      "dimensionsMatch": true,
+      "changed": 62229,
+      "alphaChanged": 51544,
+      "outsideTyreChanged": 58831,
+      "rimSamples": [
+        {
+          "name": "rear-wheel",
+          "x": 167,
+          "y": 599,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        },
+        {
+          "name": "front-wheel",
+          "x": 847,
+          "y": 668,
+          "changes": 11,
+          "alphaChanges": 0,
+          "opaque": 25
+        }
+      ],
+      "contactSamples": [
+        {
+          "name": "rear-contact",
+          "x": 177,
+          "y": 729,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        },
+        {
+          "name": "front-contact",
+          "x": 862,
+          "y": 829,
+          "changes": 0,
+          "alphaChanges": 0,
+          "opaque": 25
+        }
+      ],
+      "garageChanged": 0,
+      "fingerprint": "de2f2ab72b384bd995ceb1edc4a03ff86d19f9f51a1f74be518c5d18900ac321"
+    }
+  ],
+  "observations": [
+    {
+      "case": "54-blue-mechanical-builds",
+      "page_errors": [],
+      "http_errors": [],
+      "failed_requests": [],
+      "console_errors": [],
+      "expected_network_failures": false
+    }
+  ],
+  "extra_requests": [],
+  "screenshots": []
+}

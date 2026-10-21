@@ -1,5 +1,16 @@
 # Sundae Run artwork production
 
+## Current five-car expansion
+
+The live registry now has 30 complete car/rim PNGs, 20 tyre/kit PNGs and ten model-specific cabin WebPs. New M3/Golf assets retain the existing scene camera and gold platform. BMW uses the original uniform scale with a whole-car vertical adjustment of `-12 × 6/11`; Golf uses one uniform 0.54 scale and stage origin `(422.8327, 174.3)` for its taller roof. No wheel/body scaling is performed independently.
+
+`public/assets/expansion-sources.json` records original generated filenames and SHA-256 values for all 30 new creative assets, published paths/hashes and portable encodings. `docs/EXPANSION_ART_INPUTS.json` supplies the deterministic mapping to `scripts/publish-expansion-art.mjs`. Original image_gen PNGs remain under the workspace's `generated_images/`; existing reference artwork is untouched. The helper requires those originals and FFmpeg only when republishing art. Normal npm builds use committed published assets.
+
+The new exterior PNGs are unchanged generated originals. Portable copies use FFmpeg WebP distribution encoding at quality 92 with unchanged dimensions and exact alpha; no cropping, resizing, recolouring or creative pixel edits are performed by that helper. Cabin views are distributed as WebP. All new WebPs together are 7,739,364 bytes; this keeps the single-file game inside the unchanged 96 MiB budget. Portable RGB compression is intentionally lossy, so offline visual/pixel checks compare against each embedded base, rather than claiming PNG/WebP RGB identity.
+
+Cabins are original left-hand-drive illustrations: separate dashboards for each model and two coordinated Original/Club packages. These are not 360-degree interiors or independently configurable seat/knob/mat layers. Original Porsche PDK controls are retained. Exterior paint is independent of cabin artwork. Inspect `qa/expansion/` and its review record for current evidence; the three-car sections below describe earlier delivery history.
+
+
 Created with `image_gen` edits from the approved screenshot. The approved original remains unchanged at `reference/APPROVED_BLUE_STI_SCREEN.png`. All generated originals remain under `/workspace/generated_images`; published copies are byte-for-byte copies, with no Python image editing.
 
 ## Three-car expansion

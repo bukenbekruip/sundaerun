@@ -37,6 +37,11 @@ import { renderCar } from "./src/paint-renderer.js";
 import { renderUpgrades } from "./src/upgrade-renderer.js";
 import { mountClub } from "./src/club-ui.js";
 
+if (globalThis.__SUNDAE_INLINE_ASSETS__) {
+  document.querySelector("#brand-website").href =
+    "https://bukenbekruip.github.io/sundaerun/website/";
+}
+
 const $ = (selector) => document.querySelector(selector);
 const $$ = (selector) => [...document.querySelectorAll(selector)];
 const credits = (value) => `$ ${new Intl.NumberFormat("en-US").format(value)}`;

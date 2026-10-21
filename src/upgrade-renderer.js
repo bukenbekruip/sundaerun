@@ -13,6 +13,8 @@ export const suspensionOffsets = Object.freeze({
   sti: Object.freeze({ original: 0, sport: 7, track: 13 }),
   porsche: Object.freeze({ original: 0, sport: 5, track: 9 }),
   gt86: Object.freeze({ original: 0, sport: 7, track: 12 }),
+  m3: Object.freeze({ original: 0, sport: 6, track: 11 }),
+  golf: Object.freeze({ original: 0, sport: 6, track: 11 }),
 });
 
 const STI = {
@@ -57,9 +59,64 @@ const GT86 = {
   ],
 };
 
-const geometry = { sti: STI, porsche: PORSCHE, gt86: GT86 };
+const M3 = {
+  wheels: [
+    "M78 550 C86 500 113 461 149 454 C187 446 220 475 242 519 C265 564 270 626 256 673 C244 719 214 744 177 741 C139 738 108 710 92 672 C76 634 71 590 78 550 Z",
+    "M731 616 C738 550 771 502 821 488 C875 477 930 505 962 558 C994 611 1007 679 993 739 C981 793 953 828 910 840 C856 852 803 830 771 792 C737 749 724 680 731 616 Z",
+  ],
+  rims: [
+    "M101 548 C112 511 133 483 158 481 C187 475 213 504 227 548 C244 593 241 642 224 675 C208 709 181 721 155 709 C127 694 108 662 99 620 C91 589 93 567 101 548 Z",
+    "M758 618 C770 566 794 535 830 528 C871 517 908 544 930 586 C955 631 958 685 941 730 C924 774 895 802 863 802 C824 802 793 778 775 737 C752 690 750 654 758 618 Z",
+  ],
+  ground: [
+    "M36 685 L117 681 L189 721 L261 703 L728 744 L779 793 L918 816 L998 774 L1655 770 L1672 847 L1570 873 L926 880 L655 833 L260 780 L39 751 Z",
+  ],
+};
+const GOLF = {
+  wheels: [
+    "M76 547 C82 499 109 462 144 456 C183 448 217 475 240 521 C263 568 270 624 256 677 C244 723 213 749 175 746 C136 741 105 712 89 674 C73 635 69 591 76 547 Z",
+    "M713 614 C724 556 756 516 802 507 C852 497 901 520 931 565 C960 611 972 669 963 725 C954 782 929 822 888 837 C835 852 785 832 754 793 C725 751 708 680 713 614 Z",
+  ],
+  rims: [
+    "M99 550 C112 510 135 485 159 484 C190 481 215 513 229 555 C245 599 242 647 224 681 C208 714 181 725 154 711 C126 698 108 667 100 626 C92 595 92 573 99 550 Z",
+    "M738 614 C750 572 778 541 813 536 C851 530 885 553 906 594 C932 641 934 693 917 738 C901 780 875 806 841 808 C802 808 772 785 753 745 C730 700 726 657 738 614 Z",
+  ],
+  ground: [
+    "M30 686 L108 687 L180 730 L258 710 L711 742 L752 786 L812 824 L924 821 L988 780 L1651 760 L1672 843 L1560 877 L925 891 L651 840 L252 788 L37 753 Z",
+  ],
+};
+const geometry = { sti: STI, porsche: PORSCHE, gt86: GT86, m3: M3, golf: GOLF };
+
+// New sparse kit sources contain alpha-1 noise away from their carbon pieces.
+// Draw only the authored part envelopes, preserving complete wheel assemblies.
+// The original PNGs remain unchanged and legacy car compositing is untouched.
+const kitZones = {
+  m3: [
+    "M210 610 L775 700 L780 790 L220 725 Z",
+    "M940 590 L1115 650 L1120 735 L940 715 Z",
+    "M970 740 L1668 710 L1672 840 L970 835 Z",
+  ],
+  golf: [
+    "M210 625 L733 690 L742 795 L210 735 Z",
+    "M920 610 L1105 655 L1115 760 L920 750 Z",
+    "M930 740 L1668 710 L1672 835 L930 835 Z",
+    "M1555 630 L1668 630 L1668 760 L1555 760 Z",
+  ],
+};
 
 export const protectedWheelSamples = Object.freeze({
+  m3: Object.freeze([
+    { name: "rear-wheel", x: 167, y: 599 },
+    { name: "front-wheel", x: 848, y: 668 },
+    { name: "rear-contact", x: 177, y: 729 },
+    { name: "front-contact", x: 863, y: 829 },
+  ]),
+  golf: Object.freeze([
+    { name: "rear-wheel", x: 157, y: 603 },
+    { name: "front-wheel", x: 824, y: 679 },
+    { name: "rear-contact", x: 178, y: 734 },
+    { name: "front-contact", x: 843, y: 829 },
+  ]),
   sti: Object.freeze([
     { name: "rear-wheel", x: 174, y: 598 },
     { name: "front-wheel", x: 798, y: 650 },
@@ -89,21 +146,27 @@ function canvas(width, height) {
 
 function registration(width, height) {
   const scale = Math.min(width / WIDTH, height / HEIGHT);
-  return { scale, x: (width - WIDTH * scale) / 2, y: (height - HEIGHT * scale) / 2 };
+  return {
+    scale,
+    x: (width - WIDTH * scale) / 2,
+    y: (height - HEIGHT * scale) / 2,
+  };
 }
 
 function authoredMask(vehicle, family, width, height) {
   const key = `${vehicle}:${family}:${width}:${height}`;
   if (!masks.has(key)) {
     const paths = geometry[vehicle];
-    if (!paths) throw new RangeError(`Upgrade contours are unavailable for ${vehicle}`);
+    if (!paths)
+      throw new RangeError(`Upgrade contours are unavailable for ${vehicle}`);
     const result = canvas(width, height);
     const context = result.getContext("2d", { willReadFrequently: true });
     const { scale, x, y } = registration(width, height);
     context.translate(x, y);
     context.scale(scale, scale);
     context.fillStyle = "#fff";
-    for (const path of paths[family === "tyres" ? "wheels" : family]) context.fill(new Path2D(path));
+    for (const path of paths[family === "tyres" ? "wheels" : family])
+      context.fill(new Path2D(path));
     if (family === "tyres") {
       context.globalCompositeOperation = "destination-out";
       context.lineWidth = 6;
@@ -123,44 +186,78 @@ function authoredMask(vehicle, family, width, height) {
 function diagnosticMask(vehicle, family, width, height) {
   const result = canvas(width, height);
   const data = authoredMask(vehicle, family, width, height);
-  result.getContext("2d").putImageData(new ImageData(new Uint8ClampedArray(data.data), width, height), 0, 0);
+  result
+    .getContext("2d")
+    .putImageData(
+      new ImageData(new Uint8ClampedArray(data.data), width, height),
+      0,
+      0,
+    );
   return result;
 }
 
 /** Visible wheel/tyre extraction contours, distinct from paint exclusions. */
-export const createWheelMask = (vehicle, width = WIDTH, height = HEIGHT) => diagnosticMask(vehicle, "wheels", width, height);
+export const createWheelMask = (vehicle, width = WIDTH, height = HEIGHT) =>
+  diagnosticMask(vehicle, "wheels", width, height);
 /** Rubber only: complete rim lip, spokes and brake assembly are holes. */
-export const createTyreMask = (vehicle, width = WIDTH, height = HEIGHT) => diagnosticMask(vehicle, "tyres", width, height);
+export const createTyreMask = (vehicle, width = WIDTH, height = HEIGHT) =>
+  diagnosticMask(vehicle, "tyres", width, height);
 /** Ground envelope; actual extraction additionally requires source alpha < 230. */
-export const createGroundMask = (vehicle, width = WIDTH, height = HEIGHT) => diagnosticMask(vehicle, "ground", width, height);
-export const upgradeGeometry = Object.freeze({ width: WIDTH, height: HEIGHT, groundAlphaCeiling: 230 });
+export const createGroundMask = (vehicle, width = WIDTH, height = HEIGHT) =>
+  diagnosticMask(vehicle, "ground", width, height);
+export const upgradeGeometry = Object.freeze({
+  width: WIDTH,
+  height: HEIGHT,
+  groundAlphaCeiling: 230,
+});
 
 async function ready(image, label) {
   if (!image) throw new TypeError(`The selected ${label} artwork is missing.`);
   if (!image.complete || !image.naturalWidth) await image.decode();
-  if (!image.naturalWidth || !image.naturalHeight) throw new TypeError(`The selected ${label} artwork is empty.`);
+  if (!image.naturalWidth || !image.naturalHeight)
+    throw new TypeError(`The selected ${label} artwork is empty.`);
 }
 
 function drawRegistered(context, image, width, height, offsetY = 0) {
-  const scale = Math.min(width / image.naturalWidth, height / image.naturalHeight);
+  const scale = Math.min(
+    width / image.naturalWidth,
+    height / image.naturalHeight,
+  );
   const drawWidth = image.naturalWidth * scale;
   const drawHeight = image.naturalHeight * scale;
-  context.drawImage(image, (width - drawWidth) / 2, (height - drawHeight) / 2 + offsetY, drawWidth, drawHeight);
+  context.drawImage(
+    image,
+    (width - drawWidth) / 2,
+    (height - drawHeight) / 2 + offsetY,
+    drawWidth,
+    drawHeight,
+  );
 }
 
 /**
  * paintedImage is the loaded paint-renderer result. Optional skins are matching
  * camera PNGs, not product photographs. The application owns its bounded cache.
  */
-export async function renderUpgrades(paintedImage, vehicleId, selection, { baseImage, tyreImage, kitImage } = {}) {
+export async function renderUpgrades(
+  paintedImage,
+  vehicleId,
+  selection,
+  { baseImage, tyreImage, kitImage } = {},
+) {
   const tyre = selection.tyre ?? "road";
   const suspension = selection.suspension ?? "original";
   const body = selection.body ?? "original";
-  if (tyre === "road" && suspension === "original" && body === "original") return paintedImage.currentSrc || paintedImage.src;
+  if (tyre === "road" && suspension === "original" && body === "original")
+    return paintedImage.currentSrc || paintedImage.src;
   await ready(paintedImage, "car");
   const drop = suspensionOffsets[vehicleId]?.[suspension];
-  if (drop === undefined) throw new RangeError(`Unsupported suspension: ${vehicleId}/${suspension}`);
-  if (!["road", "sport", "track"].includes(tyre) || !["original", "street", "track"].includes(body)) throw new RangeError("Unsupported tyre or body upgrade.");
+  if (drop === undefined)
+    throw new RangeError(`Unsupported suspension: ${vehicleId}/${suspension}`);
+  if (
+    !["road", "sport", "track"].includes(tyre) ||
+    !["original", "street", "track"].includes(body)
+  )
+    throw new RangeError("Unsupported tyre or body upgrade.");
   if (tyre !== "road") await ready(tyreImage, "tyre");
   if (body !== "original") await ready(kitImage, "body kit");
   const width = paintedImage.naturalWidth;
@@ -173,15 +270,29 @@ export async function renderUpgrades(paintedImage, vehicleId, selection, { baseI
   if (baseImage) {
     await ready(baseImage, "original car");
     const original = canvas(width, height);
-    const originalContext = original.getContext("2d", { willReadFrequently: true });
+    const originalContext = original.getContext("2d", {
+      willReadFrequently: true,
+    });
     drawRegistered(originalContext, baseImage, width, height);
-    const originalPixels = originalContext.getImageData(0, 0, width, height).data;
-    const paint = createPaintMask(vehicleId, width, height).getContext("2d").getImageData(0, 0, width, height).data;
+    const originalPixels = originalContext.getImageData(
+      0,
+      0,
+      width,
+      height,
+    ).data;
+    const paint = createPaintMask(vehicleId, width, height)
+      .getContext("2d")
+      .getImageData(0, 0, width, height).data;
     bodyPaint = new Uint8Array(width * height);
     for (let i = 0; i < originalPixels.length; i += 4) {
       // This guard only refines the authored contour at painted arch edges.
       // It uses the original blue artwork, independent of the selected paint.
-      if (paint[i + 3] >= 128 && originalPixels[i + 2] > originalPixels[i] + 35 && originalPixels[i + 2] > originalPixels[i + 1] + 20) bodyPaint[i / 4] = 1;
+      if (
+        paint[i + 3] >= 128 &&
+        originalPixels[i + 2] > originalPixels[i] + 35 &&
+        originalPixels[i + 2] > originalPixels[i + 1] + 20
+      )
+        bodyPaint[i / 4] = 1;
     }
   }
   if (tyre !== "road") {
@@ -191,9 +302,18 @@ export async function renderUpgrades(paintedImage, vehicleId, selection, { baseI
     const pixels = skinContext.getImageData(0, 0, width, height).data;
     const rubber = authoredMask(vehicleId, "tyres", width, height).data;
     for (let i = 0; i < source.data.length; i += 4) {
-      if (!source.data[i + 3] || !rubber[i + 3] || !pixels[i + 3] || bodyPaint?.[i / 4]) continue;
-      const blend = rubber[i + 3] / 255 * pixels[i + 3] / 255;
-      for (let c = 0; c < 3; c += 1) source.data[i + c] = Math.round(source.data[i + c] * (1 - blend) + pixels[i + c] * blend);
+      if (
+        !source.data[i + 3] ||
+        !rubber[i + 3] ||
+        !pixels[i + 3] ||
+        bodyPaint?.[i / 4]
+      )
+        continue;
+      const blend = ((rubber[i + 3] / 255) * pixels[i + 3]) / 255;
+      for (let c = 0; c < 3; c += 1)
+        source.data[i + c] = Math.round(
+          source.data[i + c] * (1 - blend) + pixels[i + c] * blend,
+        );
       // Keep the original tyre silhouette and every source alpha byte.
     }
   }
@@ -204,7 +324,10 @@ export async function renderUpgrades(paintedImage, vehicleId, selection, { baseI
     const fixed = new ImageData(width, height);
     const moving = new ImageData(width, height);
     for (let i = 0; i < source.data.length; i += 4) {
-      const isFixed = (wheels[i + 3] >= 128 && !bodyPaint?.[i / 4]) || (ground[i + 3] >= 128 && source.data[i + 3] < upgradeGeometry.groundAlphaCeiling);
+      const isFixed =
+        (wheels[i + 3] >= 128 && !bodyPaint?.[i / 4]) ||
+        (ground[i + 3] >= 128 &&
+          source.data[i + 3] < upgradeGeometry.groundAlphaCeiling);
       const target = isFixed ? fixed.data : moving.data;
       for (let c = 0; c < 4; c += 1) target[i + c] = source.data[i + c];
     }
@@ -215,6 +338,18 @@ export async function renderUpgrades(paintedImage, vehicleId, selection, { baseI
     const offsetY = Math.round(drop * registration(width, height).scale);
     context.drawImage(rigidBody, 0, offsetY);
   }
-  if (body !== "original") drawRegistered(context, kitImage, width, height, Math.round(drop * registration(width, height).scale));
+  if (body !== "original") {
+    const { scale, x, y } = registration(width, height);
+    const offsetY = Math.round(drop * scale);
+    context.save();
+    if (kitZones[vehicleId]) {
+      context.translate(x, y + offsetY);
+      context.scale(scale, scale);
+      context.clip(new Path2D(kitZones[vehicleId].join(" ")));
+      context.setTransform(1, 0, 0, 1, 0, 0);
+    }
+    drawRegistered(context, kitImage, width, height, offsetY);
+    context.restore();
+  }
   return result.toDataURL("image/png");
 }

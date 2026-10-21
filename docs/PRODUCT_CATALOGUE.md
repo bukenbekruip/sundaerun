@@ -4,11 +4,11 @@ The garage separates three things: an in-game appearance, a fictional credit pri
 
 ## Vehicles and customisation categories
 
-`src/catalogue.js` exports three vehicles: `sti` (Subaru WRX STI), `porsche` (Porsche 911 GT3 RS), and `gt86` (Toyota 86). `VEHICLE` remains an alias for the default STI; use `getVehicle(state.vehicle)` when describing the currently selected car.
+`src/catalogue.js` exports five vehicles: `sti` (Subaru WRX STI), `porsche` (Porsche 911 GT3 RS), `gt86` (Toyota 86), `m3` (BMW M3 E46), and `golf` (Volkswagen Golf Mk7 GTI). `VEHICLE` remains an alias for the default STI; use `getVehicle(state.vehicle)` when describing the currently selected car.
 
 The six wheel concepts retain stable IDs: `sr-01`, `te37`, `bbs-lm`, `oz`, `rotiform`, and `work`. The twelve paint choices are `blue`, `black`, `mint`, `white`, `silver`, `graphite`, `red`, `orange`, `purple`, `pink`, `yellow`, and `teal`. Each paint costs 1,200 fictional garage credits. Display finish labels describe the illustration, not a real paint product or verified manufacturer specification.
 
-All three cars initially display blue paint and SR-01 wheels with `road` tyres, `original` suspension and `original` bodywork. The three baseline upgrades are included at no charge. The initial wheel and paint appearance is not an already-purchased upgrade: the first Apply still costs 3,700 credits (2,500 wheels + 1,200 paint) for that vehicle. All real merchant records remain empty until an actual product offer is supplied.
+All five cars initially display blue paint and SR-01 wheels with `road` tyres, `original` suspension and `original` bodywork. The three baseline upgrades are included at no charge. The initial wheel and paint appearance is not an already-purchased upgrade: the first Apply still costs 3,700 credits (2,500 wheels + 1,200 paint) for that vehicle. All real merchant records remain empty until an actual product offer is supplied.
 
 Each additional category has three stable choices:
 
@@ -42,7 +42,7 @@ The renderer uses one complete, registered blue-car image for each vehicle/wheel
 
 `getVariantKey` retains `vehicle:paint:wheel` for the baseline upgrades (for example, `porsche:red:bbs-lm`). If any upgrade differs from baseline, it appends all three choices: `porsche:red:bbs-lm:sport:sport:street`. This keeps existing baseline cache/test keys stable while distinguishing every upgraded build. An omitted vehicle defaults to `sti`.
 
-Three cars × six wheels require 18 registered base renders. Twelve paint choices give 216 possible appearances only after each base render and its body-only paint treatment have been visually checked. A shared availability flag does not prove paint-mask quality. Preserve camera, wheelbase, tyre contacts, and canvas registration between variants; never paste a merchant's face-on product photo over the car's wheels. Unavailable base renders stay disabled.
+Five cars × six wheels require 30 registered base renders. Twelve paint choices give 360 possible baseline appearances only after each base render and its body-only paint treatment have been visually checked. A shared availability flag does not prove paint-mask quality. Preserve camera, wheelbase, tyre contacts, and canvas registration between variants; never paste a merchant's face-on product photo over the car's wheels. Unavailable base renders stay disabled.
 
 ## Garage progress and migration
 
@@ -52,10 +52,18 @@ Saved version-4 data uses `garage[vehicleId].applied` and `garage[vehicleId].pur
 
 Top-level `applied` and `purchased` are derived compatibility views for the active car; they are not separately persisted. The transient `preview` is also omitted from storage, so reloading restores the last applied look rather than silently fitting an unfinished preview.
 
-The storage key remains `sundae-run-garage-v2` intentionally. `loadState` migrates version-2 progress to version 4, retaining the valid credit balance and assigning existing fitted parts and purchases to the STI. It also migrates version-3 multi-car garages without losing any car's applied wheel, paint or purchases. Both migrations supply the free baseline tyre/suspension/body choices. Migration never debits credits. Reset clears progress for all three cars and restores the shared 48,320-credit balance.
+The storage key remains `sundae-run-garage-v2` intentionally. `loadState` migrates version-2 progress to version 4, retaining the valid credit balance and assigning existing fitted parts and purchases to the STI. It also migrates version-3 multi-car garages without losing any car's applied wheel, paint or purchases. Both migrations supply the free baseline tyre/suspension/body choices. Migration never debits credits. Reset clears progress for all five cars and restores the shared 48,320-credit balance.
 
 ## Expand later
 
 The first Build Club milestone adds a separate fictional performance catalogue in `src/club.js`: filters/intakes, exhausts and tunes. Game-credit prices and game ratings do not assert real brands, horsepower gains or installed vehicle compatibility. Each vehicle has separate performance ownership and fitted choices under `club.performance`; old saves receive free stock options. Build codes carry a parts recipe only and never transfer ownership, rewards or a wallet balance. The selected international shopping region is a saved preference; no real offers have been configured for these parts yet.
 
 The data module can later be supplied by a CMS or database without tying merchant information to the drawing code. `getProducts` and `getProduct` accept singular and plural category aliases, and `selectionKinds` defines the five state/pricing fields. Add actual products through this boundary once their fitment records, retailer offers and visual assets are available. A backend for product editing, click reporting, feeds and price refresh is a separate future feature; no such service is needed to run this screen.
+
+## Model-specific cabins
+
+`src/interiors.js` registers ten model-specific views: Original (`stock`, included) and Sundae Club (`club`, 1,800 credits) for each of the five cars. These are complete illustrated cabin packages with coordinated seats, mats, trim and steering details, rather than separately selectable physical products. All views are left-hand drive. Cabin artwork does not change with exterior paint.
+
+Ownership and fitted package are stored per car in `club.interiors`; named builds and SR1 recipes record the cabin. Old saves and SR1 codes default to Original without receiving purchases. Import previews only the exterior and lists performance/cabin parts to fit separately. The cabin brief pays 1,000 credits and 100 XP once per car after saving a fitted Club build.
+
+Individual seat, knob, mat, filter and exhaust affiliate offers still require real supplied retailer destinations and verified fitment. Complete package artwork alone does not establish compatibility.

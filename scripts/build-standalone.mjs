@@ -9,6 +9,7 @@ import {
 } from "node:path";
 import { fileURLToPath } from "node:url";
 import { variants, upgradeVariants } from "../src/scene.js";
+import { interiorVariants } from "../src/interiors.js";
 
 // Run after the Vite build. No original artwork or legacy demo is modified.
 const projectRoot = resolve(dirname(fileURLToPath(import.meta.url)), "..");
@@ -264,6 +265,11 @@ async function collectRuntimeImages() {
         .filter(({ ready }) => ready)
         .map(({ src }) => src),
     ),
+    ...new Set(
+      Object.values(interiorVariants)
+        .filter(({ ready }) => ready)
+        .map(({ src }) => src),
+    ),
     ...productFiles
       .filter((name) => /\.(?:png|webp)$/i.test(name))
       .map((name) => `assets/products/${name}`),
@@ -273,7 +279,13 @@ async function collectRuntimeImages() {
     !paths.includes("assets/scene/blue-sr-01.png")
   )
     fail("the base garage plate and blue car render are required");
-  for (const key of paths) assetMap[key] = await dataUrl(await localFile(key));
+  const portable = new Map(
+    [...Object.values(variants), ...Object.values(upgradeVariants)]
+      .filter(({ portableSrc }) => portableSrc)
+      .map(({ src, portableSrc }) => [src, portableSrc]),
+  );
+  for (const key of paths)
+    assetMap[key] = await dataUrl(await localFile(portable.get(key) ?? key));
 }
 
 let html = await readFile(await localFile("index.html"), "utf8");
