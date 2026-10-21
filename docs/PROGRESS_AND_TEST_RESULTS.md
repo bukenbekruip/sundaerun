@@ -117,3 +117,11 @@ Root inspected all three six-car painted maximum-upgrade sheets, the final deskt
 ### Pages enablement diagnosis
 
 GitHub API access now works, but the Pages site endpoint returns 404. Creating it through the integration returns 403 Resource not accessible by integration. Official configure-pages input documentation confirms auto-enablement needs a separate token with administration/write and Pages/write; the built-in GITHUB_TOKEN cannot enable it. Repository owner must select GitHub Actions in Settings → Pages. Updated workflow actions to their current release versions to address Node 20 runner deprecation warnings; this does not resolve missing site enablement. No successful public deployment is claimed.
+
+### Public GitHub Pages deployment verified — 2026-10-21
+
+After the owner selected GitHub Actions in Pages settings, the API confirmed `build_type: workflow` and a public site. Manually dispatched run https://github.com/bukenbekruip/sundaerun/actions/runs/39581517877 succeeded (build and deploy) for commit `28de666`. Playable public URL: https://bukenbekruip.github.io/sundaerun/ . All 87 deployed files returned HTTP 200 and matched the local production build SHA-256 hashes.
+
+Live-site Chromium verification passed all six selected cases and 544 assertions: five-part purchase/persistence/reset plus all three cars at desktop 1366/1920 and mobile viewport widths 390/360/320. No console errors, page errors, failed requests or bad HTTP responses occurred. Screenshots of STI desktop 1366, Porsche desktop 1920 and STI mobile 390 were independently inspected. These are automated mobile viewport checks, not physical-device testing. Evidence: `/tmp/sundaerun-public-qa/` and `/tmp/sundaerun-public-assets.json` in this instance.
+
+The first live browser attempt failed before checks because Chromium did not trust the environment HTTPS proxy CA. Imported the supplied CA into an isolated NSS database under `/tmp/sundaerun-browser-home/.pki/nssdb` and reran with that browser HOME. TLS verification remained enabled; the rerun passed. No game source, assets, design or functionality changed. Earlier missing-site and network blockers are resolved for this instance.
