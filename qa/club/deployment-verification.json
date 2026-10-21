@@ -1,0 +1,14 @@
+{
+  "status": "latest public deployment unconfirmed from this environment",
+  "workflow_preserved": true,
+  "automatic_main_push_workflow": ".github/workflows/deploy-pages.yml",
+  "public_game_url": "https://bukenbekruip.github.io/sundaerun/",
+  "source_delivery_merge_commit": "ad6cf7c560aa46473b70f3b1c7961649220abc15",
+  "verification_failures": [
+    "gh api: Forbidden",
+    "curl to Pages: CONNECT tunnel failed, response 403; HTTP status 000"
+  ],
+  "application_changed_by_merge": false,
+  "portable_artifact_changed_by_merge": false,
+  "scope": "These network failures do not establish whether the GitHub workflow succeeded or failed. Main brand website integration remains pending."
+}
