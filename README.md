@@ -12,7 +12,7 @@ Build and show five enthusiast cars in the warm Sundae Run workshop: **Subaru WR
 
 Extract the ZIP completely, then open `OPEN-SUNDAE-RUN.html` in Chrome or Edge. No Node.js installation is needed. If clicking the download does nothing, open [the GitHub file page](https://github.com/bukenbekruip/sundaerun/blob/main/downloads/Sundae-Run-Playable.zip) and choose **Download raw file**. Sign in with repository access if prompted. The exact verified download and its hashes are recorded in `qa/expansion/release.json`.
 
-The Pages workflow deploys pushes to `main`; a push alone does not prove the deployment finished. This cloud environment cannot reach the public Pages host, so local production browser verification is separate from live deployment status.
+The Pages workflow deploys pushes to `main`; a push alone does not prove the deployment finished. Deployment run `39595381851` succeeded for the integrated website and five-car game. Live verification on 21 October 2026 passed 70 website/game checks at desktop and mobile viewport sizes; all website files and game entry/bundles matched the production build. See the progress record for scope and evidence.
 
 ## Build Club
 
