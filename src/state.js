@@ -7,6 +7,7 @@ import {
   vehicles,
   VEHICLE,
 } from "./catalogue.js";
+import { normaliseClub, earnedCredits } from "./club.js";
 
 // Keep the storage key so an existing two-wheel/three-paint garage is migrated.
 export const STORAGE_KEY = "sundae-run-garage-v2";
@@ -75,6 +76,7 @@ export function createInitialState() {
     garage: Object.fromEntries(vehicles.map(({ id }) => [id, build()])),
     preview: defaultSelection(),
     category: "wheels",
+    club: normaliseClub(),
   });
 }
 
@@ -99,16 +101,18 @@ function normalise(value, restoreApplied = false) {
       ? input.vehicle
       : VEHICLE.id;
   const applied = garage[vehicle].applied;
+  const club = normaliseClub(input.club);
   return activeViews({
     version: STATE_VERSION,
     balance:
       Number.isSafeInteger(input.balance) &&
       input.balance >= 0 &&
-      input.balance <= STARTING_BALANCE
+      input.balance <= STARTING_BALANCE + earnedCredits(club)
         ? input.balance
         : STARTING_BALANCE,
     vehicle,
     garage,
+    club,
     preview: restoreApplied
       ? { ...applied }
       : selection(input.preview, applied),

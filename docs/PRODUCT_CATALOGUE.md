@@ -56,4 +56,6 @@ The storage key remains `sundae-run-garage-v2` intentionally. `loadState` migrat
 
 ## Expand later
 
+The first Build Club milestone adds a separate fictional performance catalogue in `src/club.js`: filters/intakes, exhausts and tunes. Game-credit prices and game ratings do not assert real brands, horsepower gains or installed vehicle compatibility. Each vehicle has separate performance ownership and fitted choices under `club.performance`; old saves receive free stock options. Build codes carry a parts recipe only and never transfer ownership, rewards or a wallet balance. The selected international shopping region is a saved preference; no real offers have been configured for these parts yet.
+
 The data module can later be supplied by a CMS or database without tying merchant information to the drawing code. `getProducts` and `getProduct` accept singular and plural category aliases, and `selectionKinds` defines the five state/pricing fields. Add actual products through this boundary once their fitment records, retailer offers and visual assets are available. A backend for product editing, click reporting, feeds and price refresh is a separate future feature; no such service is needed to run this screen.

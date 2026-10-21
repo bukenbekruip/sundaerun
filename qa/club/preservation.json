@@ -1,0 +1,9 @@
+{
+  "existing_game_parent_commit": "0c72d4cb9acebe65086bb3af54a8fcf97ddc1a74",
+  "game_intake_policy": "The current game was extended in place. No website-intake file replaced its sources. The download is deliberately rebuilt for the new milestone; the previous release remains in Git history.",
+  "unchanged_exterior_asset_and_renderer_paths": true,
+  "changed_protected_paths": [],
+  "website_archive_sha256": "a1e173a836ad3d45f8d8740a2525d1df68197306eadee9d45ea0ecfa1998c7c5",
+  "website_files_preserved_byte_identical": 24,
+  "website_integrated": false
+}

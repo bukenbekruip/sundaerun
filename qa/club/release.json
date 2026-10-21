@@ -1,0 +1,49 @@
+{
+  "edition": "Build Club: first build-and-show milestone",
+  "release_date": "2026-10-21",
+  "implemented_vehicles": [
+    "Subaru WRX STI",
+    "Porsche 911 GT3 RS",
+    "Toyota 86"
+  ],
+  "pending": [
+    "BMW M3 E46",
+    "VW Golf Mk7 GTI",
+    "model-specific interiors",
+    "live retailer offers",
+    "online community",
+    "website integration"
+  ],
+  "portable_html": {
+    "file": "OPEN-SUNDAE-RUN.html",
+    "bytes": 72698576,
+    "sha256": "a66a6fe6428d562dc43006dcaa22b55a4fa3ddc250778bf9b8f997916c288c62"
+  },
+  "download_zip": {
+    "file": "Sundae-Run-Playable.zip",
+    "bytes": 53832462,
+    "sha256": "f087ecd46c53c713bc5e455222e4484b04a58251286931e5ae787c32790e0bd1"
+  },
+  "archive_integrity": "verified",
+  "node_tests_passed": 34,
+  "browser_checks_passed": 85,
+  "portable_checks_passed": 31,
+  "source_sha256": {
+    "app.js": "56651088ff2e505097323952bf9a4136c539cdec085d4fe2e884a25533a21b11",
+    "index.html": "a856c9b163c6723f151b014fef1c7b2276a588c9620ebc1912dab49422aab9a1",
+    "src/state.js": "e87b1d7ef89dd54661cd04745d5bfa963e93a9c45c6550453b4625abfe55ab53",
+    "src/catalogue.js": "6baf2f7731921039f29f85d4bea044a9550cb70d6b3b96528a8e3ae8d713481a",
+    "src/scene.js": "f85e0daec6778b10b8a75ac55e888471e239f90b69dd0d931c12f10f6773bc53",
+    "src/ui.css": "22b0f479999b37242326522a42ca38fd29d93e863a261972fcd1e1ac1941a1fe",
+    "src/paint-renderer.js": "e9701f34ca7d9b61539a1742ced9b1d794df39680e9abe09d92c7a815688caf0",
+    "src/upgrade-renderer.js": "8cdb92ad8bb388e9d5944f152870bf17d0e140adc781e55c58b831bf4caad690",
+    "src/club.js": "ca768405d6ada0c0127d9dfaf36258dc8b6eae827827a050d42f657a388f5dae",
+    "src/club-ui.js": "fac63cdde66ac2d47fdd363cd719f7ee69d55b2e579ded1d53dd0931f9c9db40",
+    "src/club.css": "555134631c09ed322d8ff447c5a9db99fc470e306ec5d75ea68c6014c65bd149",
+    "src/photography.js": "b37181f704fb69f6f1bda4bdf6376e94b30518b9a5de5770f2234e5674e51a32",
+    "tests/club.test.js": "d20ce1bbb8fd0be769aab6014d9d4c234980256d4104863161b160350422e143",
+    "tests/club-browser.py": "a3cc67f8422461f189681eaa13b1977785ddafbf99e3e9cdee9e7dbf0852032b"
+  },
+  "coverage": "Build Club transactions, persistence, first brief, real XP, performance purchases/refits, share/import isolation, PNG export for all three cars; desktop/tablet/phone layout down to 320px. Exterior renderers and assets are unchanged; previous exhaustive browser results remain historical.",
+  "file_protocol": "Not tested: managed Chromium blocks file://. Portable proof uses HTTP with all extra requests blocked."
+}

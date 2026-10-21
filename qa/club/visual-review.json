@@ -1,0 +1,29 @@
+{
+  "reviewer": "Root agent visual inspection; no user QA requested",
+  "scope": "First Build Club milestone; existing exterior art and compositors unchanged",
+  "screenshots_reviewed": [
+    "garage-desktop.jpg",
+    "club-empty-desktop.jpg",
+    "club-saved-builds-desktop.jpg",
+    "club-performance-desktop.jpg",
+    "club-builds-390.jpg",
+    "club-performance-320.jpg",
+    "coast-club-show-card.png",
+    "porsche-upgraded-show-card.png",
+    "gt86-upgraded-show-card.png"
+  ],
+  "findings": [
+    "Approved branded garage and original exterior controls retained",
+    "Named collection and performance cards are readable on reviewed desktop/phone captures",
+    "Three photo cards retain the garage/car registration and list saved exterior/performance choices",
+    "Names containing markup remain visible text",
+    "Native dialogs scroll vertically on small displays without horizontal overflow"
+  ],
+  "limits": [
+    "No new M3/Golf or interior artwork is accepted in this milestone",
+    "Known prior illustrated-art and conservative tyre-lettering limits remain",
+    "Ratings are fictional game values; no actual engine/audio/fitment validation",
+    "No public community, affiliate sales, website integration or fresh-task restoration claimed"
+  ],
+  "portable_html_sha256": "a66a6fe6428d562dc43006dcaa22b55a4fa3ddc250778bf9b8f997916c288c62"
+}

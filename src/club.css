@@ -1,0 +1,401 @@
+.club-modal {
+  width: min(1100px, calc(100vw - 32px));
+  max-width: 1100px;
+  max-height: calc(100svh - 32px);
+  padding: 28px;
+}
+.club-modal h3 {
+  font-size: 20px;
+  line-height: 1.3;
+}
+.club-subtitle {
+  color: var(--muted);
+  font-size: 13px;
+  margin-top: 6px;
+}
+.club-wallet {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 24px;
+  align-items: center;
+  margin: 20px 0 12px;
+}
+.club-wallet strong {
+  color: var(--mint);
+}
+.club-wallet span {
+  font-size: 13px;
+  color: var(--muted);
+}
+.club-tabs {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  border-block: 1px solid var(--warm-border);
+  padding: 12px 0;
+  margin-bottom: 20px;
+}
+.club-tabs button {
+  background: #ffffff0a;
+  color: #e2e8db;
+  border: 1px solid #ffffff18;
+  padding: 11px 15px;
+  border-radius: 8px;
+  font-size: 14px;
+}
+.club-tabs button[aria-pressed="true"] {
+  background: var(--mint);
+  color: #17321f;
+  border-color: var(--mint);
+  font-weight: 750;
+}
+.club-intro {
+  color: #c4cec3;
+  line-height: 1.65;
+  margin-bottom: 20px;
+  max-width: 850px;
+  font-size: 14px;
+}
+.club-intro h3 {
+  color: #fff8ed;
+  margin-bottom: 6px;
+}
+.club-save-form {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 10px;
+  background: #ffffff05;
+  border: 1px solid var(--warm-border);
+  padding: 18px;
+  border-radius: 12px;
+  margin-bottom: 24px;
+}
+.club-save-form label {
+  grid-column: 1/-1;
+  font-size: 13px;
+  color: var(--mint);
+  font-weight: 650;
+}
+.club-save-form input,
+.club-share-code,
+.club-region select {
+  font: inherit;
+  color: #fff8ed;
+  background: #111d16;
+  border: 1px solid #829a7766;
+  border-radius: 8px;
+  padding: 12px;
+  min-width: 0;
+}
+.club-save-form input:focus-visible,
+.club-share-code:focus-visible,
+.club-region select:focus-visible,
+.club-file-label input:focus-visible {
+  outline: 3px solid var(--mint);
+  outline-offset: 3px;
+}
+.club-form-note {
+  grid-column: 1/-1;
+  color: #d9c597;
+  font-size: 13px;
+  line-height: 1.6;
+}
+.club-build-grid,
+.club-challenge-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+.club-build-card,
+.club-challenge {
+  padding: 22px;
+  background: linear-gradient(145deg, #2c362b, #19241d);
+  border: 1px solid #9cb58a44;
+  border-radius: 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  min-width: 0;
+}
+.club-build-card h3,
+.club-challenge h3 {
+  overflow-wrap: anywhere;
+}
+.club-build-parts,
+.club-challenge p {
+  font-size: 13px;
+  color: #c6d0c3;
+  line-height: 1.65;
+}
+.club-build-badges span {
+  display: inline-block;
+  font-size: 11px;
+  padding: 5px 8px;
+  color: var(--mint);
+  border: 1px solid #a5f8c633;
+  border-radius: 5px;
+}
+.club-card-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: auto;
+  width: 100%;
+}
+.club-card-actions button {
+  font-size: 12px;
+  padding: 10px 12px;
+}
+.club-text-button {
+  background: transparent;
+  color: #c5c9be;
+  text-decoration: underline;
+}
+.club-challenge button {
+  margin-top: auto;
+  font-size: 12px;
+  line-height: 1.5;
+  white-space: normal;
+  text-align: left;
+}
+.club-modal button:disabled {
+  opacity: 0.5;
+}
+.club-challenge.completed {
+  background: #a5f8c608;
+  border-color: #a5f8c625;
+}
+.club-empty {
+  text-align: center;
+  padding: 40px 20px;
+  border: 1px dashed #91ab774f;
+  border-radius: 12px;
+  color: #bbc8b7;
+}
+.club-empty h3 {
+  color: #f8f5df;
+  margin: 12px 0 8px;
+}
+.club-empty p {
+  font-size: 14px;
+  line-height: 1.65;
+  max-width: 480px;
+  margin: auto;
+}
+.club-empty-mark {
+  font-size: 36px;
+  font-weight: 850;
+  color: var(--mint);
+}
+.club-ratings {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+}
+.club-ratings > div {
+  background: #baffcf09;
+  border-radius: 10px;
+  padding: 15px;
+}
+.club-ratings span {
+  display: block;
+  text-transform: capitalize;
+  color: #d0d9c7;
+  font-size: 12px;
+  margin-bottom: 8px;
+}
+.club-ratings strong {
+  font-size: 24px;
+  color: var(--mint);
+}
+.club-ratings meter {
+  display: block;
+  width: 100%;
+  margin-top: 8px;
+  accent-color: var(--mint);
+}
+.club-fineprint {
+  font-size: 11px;
+  color: #bac4b0;
+  line-height: 1.6;
+  margin: 12px 0 22px;
+}
+.club-performance-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+.club-performance-family {
+  min-width: 0;
+}
+.club-performance-family h3 {
+  font-size: 16px;
+  margin-bottom: 12px;
+}
+.club-performance-part {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 16px;
+  margin-bottom: 10px;
+  border: 1px solid #92a87f40;
+  border-radius: 10px;
+  background: #ffffff04;
+}
+.club-performance-part strong {
+  font-size: 13px;
+  line-height: 1.6;
+}
+.club-performance-part small {
+  font-size: 11px;
+  color: #c1ccb7;
+  line-height: 1.7;
+}
+.club-performance-part button {
+  font-size: 11px;
+  padding: 10px;
+  line-height: 1.6;
+  margin-top: auto;
+}
+.club-show-card {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 18px;
+}
+.club-share-code {
+  display: block;
+  width: 100%;
+  resize: vertical;
+  font-size: 12px;
+  line-height: 1.6;
+  overflow-wrap: anywhere;
+  margin: 16px 0;
+}
+.club-import-form {
+  margin-bottom: 24px;
+}
+.club-file-label {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+  font-size: 13px;
+}
+.club-file-label input {
+  font: inherit;
+  max-width: 100%;
+}
+.club-import-parts {
+  color: #d2dec7;
+  line-height: 2;
+  font-size: 14px;
+}
+.club-region {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  font-size: 12px;
+  color: #b9c5b1;
+  border-top: 1px solid var(--warm-border);
+  margin-top: 24px;
+  padding-top: 16px;
+}
+.club-region select {
+  font-size: 12px;
+  padding: 8px;
+  max-width: 100%;
+}
+.club-status {
+  font-size: 13px;
+  color: var(--mint);
+  line-height: 1.7;
+  margin-top: 16px;
+}
+.club-open {
+  text-align: left;
+  gap: 10px;
+}
+.club-open:hover {
+  border-color: var(--mint);
+}
+.clock-box.club-open > div {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+}
+.clock-box.club-open > div > span {
+  font-size: 9px;
+  letter-spacing: 1px;
+}
+.clock-box.club-open strong {
+  font-size: 13px;
+  white-space: nowrap;
+}
+@media (max-width: 1099px) {
+  .hud .clock-box.club-open {
+    display: flex;
+    position: relative;
+    left: auto;
+    top: auto;
+    width: 100%;
+    grid-column: 1/-1;
+    height: 48px;
+    padding: 8px 14px;
+  }
+  .clock-box.club-open > div {
+    flex-direction: row;
+    align-items: center;
+    gap: 14px;
+  }
+  .clock-box.club-open > svg {
+    width: 24px;
+    height: 24px;
+  }
+}
+@media (max-width: 700px) {
+  .club-modal {
+    padding: 18px;
+    width: calc(100vw - 20px);
+    max-height: calc(100svh - 20px);
+  }
+  .club-build-grid,
+  .club-challenge-grid,
+  .club-performance-grid {
+    grid-template-columns: 1fr;
+  }
+  .club-save-form {
+    grid-template-columns: 1fr;
+    padding: 14px;
+  }
+  .club-tabs {
+    gap: 5px;
+  }
+  .club-tabs button {
+    flex: 1 1 40%;
+    padding: 10px;
+    font-size: 12px;
+  }
+  .club-wallet {
+    gap: 8px;
+  }
+  .club-wallet span {
+    font-size: 11px;
+  }
+  .club-ratings {
+    gap: 6px;
+  }
+  .club-ratings > div {
+    padding: 10px;
+  }
+  .club-ratings strong {
+    font-size: 19px;
+  }
+  .club-build-card,
+  .club-challenge {
+    padding: 16px;
+  }
+}

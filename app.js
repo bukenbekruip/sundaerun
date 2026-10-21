@@ -35,11 +35,13 @@ import {
 } from "./src/scene.js";
 import { renderCar } from "./src/paint-renderer.js";
 import { renderUpgrades } from "./src/upgrade-renderer.js";
+import { mountClub } from "./src/club-ui.js";
 
 const $ = (selector) => document.querySelector(selector);
 const $$ = (selector) => [...document.querySelectorAll(selector)];
 const credits = (value) => `$ ${new Intl.NumberFormat("en-US").format(value)}`;
 let state;
+let clubUI;
 let storageAvailable = true;
 try {
   state = loadState(localStorage.getItem(STORAGE_KEY));
@@ -528,6 +530,7 @@ function updateCheckout() {
             ? "Fitted ✓"
             : "Fit owned parts"
           : "Apply Changes";
+  clubUI?.refresh();
 }
 function render() {
   updateControls();
@@ -745,4 +748,15 @@ $("#scene-retry").addEventListener("click", () => {
   showGarage();
   showCar(selectionFor());
 });
+clubUI = mountClub({
+  getState: () => state,
+  setState: (next) => {
+    state = next;
+    render();
+  },
+  notify,
+  sceneReady: () =>
+    !artLoading && garageReady && currentArt === getVariantKey(selectionFor()),
+});
+$("#club-open").addEventListener("click", () => clubUI.open());
 render();

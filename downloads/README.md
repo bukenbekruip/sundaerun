@@ -1,11 +1,13 @@
 # Playable download
 
-[Download Sundae Run ZIP](https://github.com/bukenbekruip/sundaerun/raw/refs/heads/main/downloads/Sundae-Run-Playable.zip), extract it, and open `OPEN-SUNDAE-RUN.html` in Chrome or Edge. If GitHub asks, sign in with an account that has access to this repository. From the ZIP’s file page, the **Download raw file** button also downloads it.
+[Download Sundae Run ZIP](https://github.com/bukenbekruip/sundaerun/raw/refs/heads/main/downloads/Sundae-Run-Playable.zip), extract it, and open `OPEN-SUNDAE-RUN.html` in Chrome or Edge. If GitHub asks, sign in with an account that has access to this repository. From the ZIP file page, **Download raw file** also downloads it.
 
-This upgrade edition contains the HTML game, opening instructions and the Inter font license (about 54 MB compressed). Choose the STI, Porsche 911 GT3 RS or Toyota 86, six wheel concepts and twelve paint colours, plus road/semi-slick/slick tyres, original/sport/track suspension and original/street/track carbon packages. Each car keeps its own fitted parts, with a shared fictional credit balance. Older saves migrate automatically.
+This first **Build Club** milestone adds named saved builds, six one-time credit/XP briefs per car, filters/intakes, exhausts and tunes, PNG show cards and shareable/importable build codes. Open **BUILD CLUB** in the garage header. The STI, Porsche 911 GT3 RS and Toyota 86 retain all six rims, twelve paints and existing tyre, suspension and carbon choices. Earlier credits and purchases are retained. Friends importing a code receive a free exterior preview, not ownership or rewards.
 
-The game embeds its code, fonts and images. It is the exact build recorded in `qa/upgrades/release.json`, with ZIP SHA-256 `6809b71e02b3baad0ff656444bf64e74a72004b215cf722468e726e1460a5755`.
+The BMW M3 E46, VW Golf Mk7 GTI, interiors, live retailer offers, online profiles and website connection are still pending. Performance ratings are game values. Shopping-region preferences do not imply that retailer listings have been configured.
 
-The portable checks exercise the baseline paint set and representative upgraded builds with every extra network request blocked. Exact coverage and results are recorded in `qa/upgrades/portable-results.json`. Direct `file://` opening could not be exercised in the cloud’s managed browser. The game uses fictional credits and concept artwork; no real merchant links or verified vehicle fitment are configured.
+The ZIP contains the exact tested portable HTML, opening instructions and Inter font license (about 54 MB compressed). Current hashes and exact coverage are in `qa/club/release.json`. ZIP SHA-256: `f087ecd46c53c713bc5e455222e4484b04a58251286931e5ae787c32790e0bd1`.
 
-The build process writes generated output to ignored `dist/`. This directory holds the explicit download copy; after changing the game, rebuild, validate, and replace this ZIP together with its release hashes so it stays current.
+The portable Club checks block every additional network request. Direct `file://` opening remains untested under the managed browser policy. Previous full exterior matrix evidence is retained under `qa/upgrades/`; that historical run is not a claim that this milestone reran every appearance. Exterior assets and both rendering modules are unchanged.
+
+`npm run build:standalone` writes ignored `dist/`. After passing production and portable Club checks, `python3 scripts/package-playable.py` updates this explicit download copy and release hashes.

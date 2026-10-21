@@ -2,7 +2,15 @@
 
 A fixed-camera customisation screen with a warm Sundae Run workshop, a gold turntable, live HTML controls, and separate car artwork. Choose a Subaru WRX STI, Porsche 911 GT3 RS or Toyota 86, six wheel concepts and twelve paint colours. Add road, semi-slick or slick tyres, three suspension settings and three carbon body-kit choices. These are concept previews with fictional credits.
 
-![Sundae Run Garage](qa/upgrades/sti-body-track-1672.jpg)
+![Sundae Run Garage](qa/club/garage-desktop.jpg)
+
+## Build Club
+
+Open **BUILD CLUB · Build / Show / Earn** in the garage header. Save up to 24 named fitted builds, complete six one-time briefs per car to earn credits and XP, and fit panel filters/intakes, exhausts and tunes. Each car owns its performance parts separately. Game ratings describe fictional progression, not measured horsepower, audio or verified physical fitment.
+
+Create a PNG show card from a saved snapshot, share an `SR1` build code or export its JSON recipe. Friends can import an exterior preview for free; imports grant no purchases, wallet balance or rewards. Your collection and progression save in this browser with the existing exterior save. Real retailer destinations are not configured; the international region selector records a shopping preference only.
+
+This is the first build-and-show milestone. **The BMW M3 E46, VW Golf Mk7 GTI, model-specific interiors, live community features and connection to the supplied website are still pending.** See [the agreed plan](docs/BUILD_AND_SHOW_PLAN.md). The existing three cars and all their exterior options are retained.
 
 ## Download and play
 
@@ -62,9 +70,13 @@ The cloud's Chromium checks use Python Playwright, `/usr/bin/chromium`, and a ru
 ```sh
 python3 tests/browser-smoke.py
 python3 tests/portable-smoke.py
+python3 tests/club-browser.py
+python3 tests/club-browser.py --portable --output qa/club/portable
 ```
 
 Those scripts cover five-part transactions, per-car persistence, save migration, image-load races and failures, the 216 baseline paint combinations, 486 blue mechanical combinations and representative painted upgrades, viewport sizing, protected paint/tyre pixels and wheel contacts, and the portable build's resource independence. Current upgrade screenshots and results are in `qa/upgrades/`; the earlier three-car release remains in `qa/expanded/`; the first release's evidence remains in `qa/current/`. The visual review and known limits are recorded in [the progress log](docs/PROGRESS_AND_TEST_RESULTS.md).
+
+Current Build Club evidence is in `qa/club/`; the older release folders remain historical. After a passing production and portable Club run, `python3 scripts/package-playable.py` packages the exact tested HTML and writes current release hashes. The previous full exterior matrix is not automatically revalidated by a Club-only test run.
 
 ## Project map
 

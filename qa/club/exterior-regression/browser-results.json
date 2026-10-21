@@ -1,0 +1,2421 @@
+{
+  "generated_at_utc": "2026-10-21T10:01:00.121909+00:00",
+  "base_url": "http://127.0.0.1:4173",
+  "case_count": 9,
+  "passed": 9,
+  "failed": 0,
+  "assertions_passed": 450,
+  "cases": [
+    {
+      "name": "all-five-parts-purchase-once-persist-reset",
+      "status": "passed",
+      "assertions_passed": 142
+    },
+    {
+      "name": "per-car-purchases-switch-cancel-reload-reset",
+      "status": "passed",
+      "assertions_passed": 99
+    },
+    {
+      "name": "existing-v2-state-migration",
+      "status": "passed",
+      "assertions_passed": 10
+    },
+    {
+      "name": "existing-v3-state-migration",
+      "status": "passed",
+      "assertions_passed": 67
+    },
+    {
+      "name": "tyre-failure-five-part-rollback",
+      "status": "passed",
+      "assertions_passed": 27
+    },
+    {
+      "name": "body-failure-five-part-rollback",
+      "status": "passed",
+      "assertions_passed": 27
+    },
+    {
+      "name": "out-of-order-wheel-image",
+      "status": "passed",
+      "assertions_passed": 26
+    },
+    {
+      "name": "cancel-delayed-wheel",
+      "status": "passed",
+      "assertions_passed": 26
+    },
+    {
+      "name": "out-of-order-vehicle-image",
+      "status": "passed",
+      "assertions_passed": 26
+    }
+  ],
+  "assertions": [
+    {
+      "case": "all-five-parts-purchase-once-persist-reset",
+      "assertion": "Built page responds HTTP 200",
+      "status": "passed"
+    },
+    {
+      "case": "all-five-parts-purchase-once-persist-reset",
+      "assertion": "Three-car page has its intended title",
+      "status": "passed"
+    },
+    {
+      "case": "all-five-parts-purchase-once-persist-reset",
+      "assertion": "All five quote lines reflect selected unowned parts",
+      "status": "passed"
+    },
+    {
+      "case": "all-five-parts-purchase-once-persist-reset",
+      "assertion": "Total includes each selected paid part exactly once",
+      "status": "passed"
+    },
+    {
+      "case": "all-five-parts-purchase-once-persist-reset",
+      "assertion": "sti: one transaction purchases all five selected parts exactly once",
+      "status": "passed"
+    },
+    {
+      "case": "all-five-parts-purchase-once-persist-reset",
+      "assertion": "Five owned parts produce no further charge",
+      "status": "passed"
+    },
+    {
+      "case": "all-five-parts-purchase-once-persist-reset",
+      "assertion": "All five paid selections become owned together",
+      "status": "passed"
+    },
+    {
+      "case": "all-five-parts-purchase-once-persist-reset",
+      "assertion": "Repeated Apply cannot purchase five parts twice",
+      "status": "passed"
+    },
+    {
+      "case": "all-five-parts-purchase-once-persist-reset",
+      "assertion": "Original tyres, suspension and body remain included",
+      "status": "passed"
+    },
+    {
+      "case": "all-five-parts-purchase-once-persist-reset",
+      "assertion": "Exactly one #vehicle-options button selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-five-parts-purchase-once-persist-reset",
+      "assertion": "Native selection agrees with rendered #vehicle-options [data-vehicle=\"sti\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-five-parts-purchase-once-persist-reset",
+      "assertion": "Exactly one .wheel-select selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-five-parts-purchase-once-persist-reset",
+      "assertion": "Native selection agrees with rendered .wheel-select[data-wheel=\"te37\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-five-parts-purchase-once-persist-reset",
+      "assertion": "Exactly one .paint-option selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-five-parts-purchase-once-persist-reset",
+      "assertion": "Native selection agrees with rendered .paint-option[data-paint=\"black\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-five-parts-purchase-once-persist-reset",
+      "assertion": "Exactly one .part-select[data-part-kind=\"tyre\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-five-parts-purchase-once-persist-reset",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"tyre\"][data-part=\"track\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-five-parts-purchase-once-persist-reset",
+      "assertion": "Exactly one .part-select[data-part-kind=\"suspension\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-five-parts-purchase-once-persist-reset",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"suspension\"][data-part=\"track\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-five-parts-purchase-once-persist-reset",
+      "assertion": "Exactly one .part-select[data-part-kind=\"body\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-five-parts-purchase-once-persist-reset",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"body\"][data-part=\"track\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-five-parts-purchase-once-persist-reset",
+      "assertion": "Exactly one active parts-panel checkmark is visible",
+      "status": "passed"
+    },
+    {
+      "case": "all-five-parts-purchase-once-persist-reset",
+      "assertion": "Exactly one paint checkmark is rendered",
+      "status": "passed"
+    },
+    {
+      "case": "all-five-parts-purchase-once-persist-reset",
+      "assertion": "Category highlights agree with the last interaction",
+      "status": "passed"
+    },
+    {
+      "case": "all-five-parts-purchase-once-persist-reset",
+      "assertion": "Checkout shows all five correctly labelled selections",
+      "status": "passed"
+    },
+    {
+      "case": "all-five-parts-purchase-once-persist-reset",
+      "assertion": "Reload preserves shared credits and fitted five-part build",
+      "status": "passed"
+    },
+    {
+      "case": "all-five-parts-purchase-once-persist-reset",
+      "assertion": "All five quote lines reflect selected unowned parts",
+      "status": "passed"
+    },
+    {
+      "case": "all-five-parts-purchase-once-persist-reset",
+      "assertion": "Total includes each selected paid part exactly once",
+      "status": "passed"
+    },
+    {
+      "case": "all-five-parts-purchase-once-persist-reset",
+      "assertion": "porsche: one transaction purchases all five selected parts exactly once",
+      "status": "passed"
+    },
+    {
+      "case": "all-five-parts-purchase-once-persist-reset",
+      "assertion": "Five owned parts produce no further charge",
+      "status": "passed"
+    },
+    {
+      "case": "all-five-parts-purchase-once-persist-reset",
+      "assertion": "All five paid selections become owned together",
+      "status": "passed"
+    },
+    {
+      "case": "all-five-parts-purchase-once-persist-reset",
+      "assertion": "Repeated Apply cannot purchase five parts twice",
+      "status": "passed"
+    },
+    {
+      "case": "all-five-parts-purchase-once-persist-reset",
+      "assertion": "Original tyres, suspension and body remain included",
+      "status": "passed"
+    },
+    {
+      "case": "all-five-parts-purchase-once-persist-reset",
+      "assertion": "Exactly one #vehicle-options button selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-five-parts-purchase-once-persist-reset",
+      "assertion": "Native selection agrees with rendered #vehicle-options [data-vehicle=\"porsche\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-five-parts-purchase-once-persist-reset",
+      "assertion": "Exactly one .wheel-select selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-five-parts-purchase-once-persist-reset",
+      "assertion": "Native selection agrees with rendered .wheel-select[data-wheel=\"bbs-lm\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-five-parts-purchase-once-persist-reset",
+      "assertion": "Exactly one .paint-option selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-five-parts-purchase-once-persist-reset",
+      "assertion": "Native selection agrees with rendered .paint-option[data-paint=\"mint\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-five-parts-purchase-once-persist-reset",
+      "assertion": "Exactly one .part-select[data-part-kind=\"tyre\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-five-parts-purchase-once-persist-reset",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"tyre\"][data-part=\"track\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-five-parts-purchase-once-persist-reset",
+      "assertion": "Exactly one .part-select[data-part-kind=\"suspension\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-five-parts-purchase-once-persist-reset",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"suspension\"][data-part=\"track\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-five-parts-purchase-once-persist-reset",
+      "assertion": "Exactly one .part-select[data-part-kind=\"body\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-five-parts-purchase-once-persist-reset",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"body\"][data-part=\"track\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-five-parts-purchase-once-persist-reset",
+      "assertion": "Exactly one active parts-panel checkmark is visible",
+      "status": "passed"
+    },
+    {
+      "case": "all-five-parts-purchase-once-persist-reset",
+      "assertion": "Exactly one paint checkmark is rendered",
+      "status": "passed"
+    },
+    {
+      "case": "all-five-parts-purchase-once-persist-reset",
+      "assertion": "Category highlights agree with the last interaction",
+      "status": "passed"
+    },
+    {
+      "case": "all-five-parts-purchase-once-persist-reset",
+      "assertion": "Checkout shows all five correctly labelled selections",
+      "status": "passed"
+    },
+    {
+      "case": "all-five-parts-purchase-once-persist-reset",
+      "assertion": "Reload preserves shared credits and fitted five-part build",
+      "status": "passed"
+    },
+    {
+      "case": "all-five-parts-purchase-once-persist-reset",
+      "assertion": "All five quote lines reflect selected unowned parts",
+      "status": "passed"
+    },
+    {
+      "case": "all-five-parts-purchase-once-persist-reset",
+      "assertion": "Total includes each selected paid part exactly once",
+      "status": "passed"
+    },
+    {
+      "case": "all-five-parts-purchase-once-persist-reset",
+      "assertion": "gt86: one transaction purchases all five selected parts exactly once",
+      "status": "passed"
+    },
+    {
+      "case": "all-five-parts-purchase-once-persist-reset",
+      "assertion": "Five owned parts produce no further charge",
+      "status": "passed"
+    },
+    {
+      "case": "all-five-parts-purchase-once-persist-reset",
+      "assertion": "All five paid selections become owned together",
+      "status": "passed"
+    },
+    {
+      "case": "all-five-parts-purchase-once-persist-reset",
+      "assertion": "Repeated Apply cannot purchase five parts twice",
+      "status": "passed"
+    },
+    {
+      "case": "all-five-parts-purchase-once-persist-reset",
+      "assertion": "Original tyres, suspension and body remain included",
+      "status": "passed"
+    },
+    {
+      "case": "all-five-parts-purchase-once-persist-reset",
+      "assertion": "Exactly one #vehicle-options button selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-five-parts-purchase-once-persist-reset",
+      "assertion": "Native selection agrees with rendered #vehicle-options [data-vehicle=\"gt86\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-five-parts-purchase-once-persist-reset",
+      "assertion": "Exactly one .wheel-select selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-five-parts-purchase-once-persist-reset",
+      "assertion": "Native selection agrees with rendered .wheel-select[data-wheel=\"oz\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-five-parts-purchase-once-persist-reset",
+      "assertion": "Exactly one .paint-option selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-five-parts-purchase-once-persist-reset",
+      "assertion": "Native selection agrees with rendered .paint-option[data-paint=\"red\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-five-parts-purchase-once-persist-reset",
+      "assertion": "Exactly one .part-select[data-part-kind=\"tyre\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-five-parts-purchase-once-persist-reset",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"tyre\"][data-part=\"track\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-five-parts-purchase-once-persist-reset",
+      "assertion": "Exactly one .part-select[data-part-kind=\"suspension\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-five-parts-purchase-once-persist-reset",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"suspension\"][data-part=\"track\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-five-parts-purchase-once-persist-reset",
+      "assertion": "Exactly one .part-select[data-part-kind=\"body\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-five-parts-purchase-once-persist-reset",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"body\"][data-part=\"track\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-five-parts-purchase-once-persist-reset",
+      "assertion": "Exactly one active parts-panel checkmark is visible",
+      "status": "passed"
+    },
+    {
+      "case": "all-five-parts-purchase-once-persist-reset",
+      "assertion": "Exactly one paint checkmark is rendered",
+      "status": "passed"
+    },
+    {
+      "case": "all-five-parts-purchase-once-persist-reset",
+      "assertion": "Category highlights agree with the last interaction",
+      "status": "passed"
+    },
+    {
+      "case": "all-five-parts-purchase-once-persist-reset",
+      "assertion": "Checkout shows all five correctly labelled selections",
+      "status": "passed"
+    },
+    {
+      "case": "all-five-parts-purchase-once-persist-reset",
+      "assertion": "Reload preserves shared credits and fitted five-part build",
+      "status": "passed"
+    },
+    {
+      "case": "all-five-parts-purchase-once-persist-reset",
+      "assertion": "Version 4 persists all three five-part purchases with exact shared balance",
+      "status": "passed"
+    },
+    {
+      "case": "all-five-parts-purchase-once-persist-reset",
+      "assertion": "sti: every fitted part persisted",
+      "status": "passed"
+    },
+    {
+      "case": "all-five-parts-purchase-once-persist-reset",
+      "assertion": "sti: exactly five purchased part keys persisted",
+      "status": "passed"
+    },
+    {
+      "case": "all-five-parts-purchase-once-persist-reset",
+      "assertion": "sti: five-part ownership is restored when switching cars",
+      "status": "passed"
+    },
+    {
+      "case": "all-five-parts-purchase-once-persist-reset",
+      "assertion": "porsche: every fitted part persisted",
+      "status": "passed"
+    },
+    {
+      "case": "all-five-parts-purchase-once-persist-reset",
+      "assertion": "porsche: exactly five purchased part keys persisted",
+      "status": "passed"
+    },
+    {
+      "case": "all-five-parts-purchase-once-persist-reset",
+      "assertion": "porsche: five-part ownership is restored when switching cars",
+      "status": "passed"
+    },
+    {
+      "case": "all-five-parts-purchase-once-persist-reset",
+      "assertion": "gt86: every fitted part persisted",
+      "status": "passed"
+    },
+    {
+      "case": "all-five-parts-purchase-once-persist-reset",
+      "assertion": "gt86: exactly five purchased part keys persisted",
+      "status": "passed"
+    },
+    {
+      "case": "all-five-parts-purchase-once-persist-reset",
+      "assertion": "gt86: five-part ownership is restored when switching cars",
+      "status": "passed"
+    },
+    {
+      "case": "all-five-parts-purchase-once-persist-reset",
+      "assertion": "Exactly one #vehicle-options button selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-five-parts-purchase-once-persist-reset",
+      "assertion": "Native selection agrees with rendered #vehicle-options [data-vehicle=\"sti\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-five-parts-purchase-once-persist-reset",
+      "assertion": "Exactly one .wheel-select selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-five-parts-purchase-once-persist-reset",
+      "assertion": "Native selection agrees with rendered .wheel-select[data-wheel=\"sr-01\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-five-parts-purchase-once-persist-reset",
+      "assertion": "Exactly one .paint-option selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-five-parts-purchase-once-persist-reset",
+      "assertion": "Native selection agrees with rendered .paint-option[data-paint=\"blue\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-five-parts-purchase-once-persist-reset",
+      "assertion": "Exactly one .part-select[data-part-kind=\"tyre\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-five-parts-purchase-once-persist-reset",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"tyre\"][data-part=\"road\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-five-parts-purchase-once-persist-reset",
+      "assertion": "Exactly one .part-select[data-part-kind=\"suspension\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-five-parts-purchase-once-persist-reset",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"suspension\"][data-part=\"original\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-five-parts-purchase-once-persist-reset",
+      "assertion": "Exactly one .part-select[data-part-kind=\"body\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-five-parts-purchase-once-persist-reset",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"body\"][data-part=\"original\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-five-parts-purchase-once-persist-reset",
+      "assertion": "Exactly one active parts-panel checkmark is visible",
+      "status": "passed"
+    },
+    {
+      "case": "all-five-parts-purchase-once-persist-reset",
+      "assertion": "Exactly one paint checkmark is rendered",
+      "status": "passed"
+    },
+    {
+      "case": "all-five-parts-purchase-once-persist-reset",
+      "assertion": "Category highlights agree with the last interaction",
+      "status": "passed"
+    },
+    {
+      "case": "all-five-parts-purchase-once-persist-reset",
+      "assertion": "Checkout shows all five correctly labelled selections",
+      "status": "passed"
+    },
+    {
+      "case": "all-five-parts-purchase-once-persist-reset",
+      "assertion": "All five quote lines reflect selected unowned parts",
+      "status": "passed"
+    },
+    {
+      "case": "all-five-parts-purchase-once-persist-reset",
+      "assertion": "Total includes each selected paid part exactly once",
+      "status": "passed"
+    },
+    {
+      "case": "all-five-parts-purchase-once-persist-reset",
+      "assertion": "Exactly one #vehicle-options button selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-five-parts-purchase-once-persist-reset",
+      "assertion": "Native selection agrees with rendered #vehicle-options [data-vehicle=\"porsche\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-five-parts-purchase-once-persist-reset",
+      "assertion": "Exactly one .wheel-select selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-five-parts-purchase-once-persist-reset",
+      "assertion": "Native selection agrees with rendered .wheel-select[data-wheel=\"sr-01\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-five-parts-purchase-once-persist-reset",
+      "assertion": "Exactly one .paint-option selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-five-parts-purchase-once-persist-reset",
+      "assertion": "Native selection agrees with rendered .paint-option[data-paint=\"blue\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-five-parts-purchase-once-persist-reset",
+      "assertion": "Exactly one .part-select[data-part-kind=\"tyre\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-five-parts-purchase-once-persist-reset",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"tyre\"][data-part=\"road\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-five-parts-purchase-once-persist-reset",
+      "assertion": "Exactly one .part-select[data-part-kind=\"suspension\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-five-parts-purchase-once-persist-reset",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"suspension\"][data-part=\"original\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-five-parts-purchase-once-persist-reset",
+      "assertion": "Exactly one .part-select[data-part-kind=\"body\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-five-parts-purchase-once-persist-reset",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"body\"][data-part=\"original\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-five-parts-purchase-once-persist-reset",
+      "assertion": "Exactly one active parts-panel checkmark is visible",
+      "status": "passed"
+    },
+    {
+      "case": "all-five-parts-purchase-once-persist-reset",
+      "assertion": "Exactly one paint checkmark is rendered",
+      "status": "passed"
+    },
+    {
+      "case": "all-five-parts-purchase-once-persist-reset",
+      "assertion": "Category highlights agree with the last interaction",
+      "status": "passed"
+    },
+    {
+      "case": "all-five-parts-purchase-once-persist-reset",
+      "assertion": "Checkout shows all five correctly labelled selections",
+      "status": "passed"
+    },
+    {
+      "case": "all-five-parts-purchase-once-persist-reset",
+      "assertion": "All five quote lines reflect selected unowned parts",
+      "status": "passed"
+    },
+    {
+      "case": "all-five-parts-purchase-once-persist-reset",
+      "assertion": "Total includes each selected paid part exactly once",
+      "status": "passed"
+    },
+    {
+      "case": "all-five-parts-purchase-once-persist-reset",
+      "assertion": "Exactly one #vehicle-options button selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-five-parts-purchase-once-persist-reset",
+      "assertion": "Native selection agrees with rendered #vehicle-options [data-vehicle=\"gt86\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-five-parts-purchase-once-persist-reset",
+      "assertion": "Exactly one .wheel-select selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-five-parts-purchase-once-persist-reset",
+      "assertion": "Native selection agrees with rendered .wheel-select[data-wheel=\"sr-01\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-five-parts-purchase-once-persist-reset",
+      "assertion": "Exactly one .paint-option selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-five-parts-purchase-once-persist-reset",
+      "assertion": "Native selection agrees with rendered .paint-option[data-paint=\"blue\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-five-parts-purchase-once-persist-reset",
+      "assertion": "Exactly one .part-select[data-part-kind=\"tyre\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-five-parts-purchase-once-persist-reset",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"tyre\"][data-part=\"road\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-five-parts-purchase-once-persist-reset",
+      "assertion": "Exactly one .part-select[data-part-kind=\"suspension\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-five-parts-purchase-once-persist-reset",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"suspension\"][data-part=\"original\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-five-parts-purchase-once-persist-reset",
+      "assertion": "Exactly one .part-select[data-part-kind=\"body\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "all-five-parts-purchase-once-persist-reset",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"body\"][data-part=\"original\"]",
+      "status": "passed"
+    },
+    {
+      "case": "all-five-parts-purchase-once-persist-reset",
+      "assertion": "Exactly one active parts-panel checkmark is visible",
+      "status": "passed"
+    },
+    {
+      "case": "all-five-parts-purchase-once-persist-reset",
+      "assertion": "Exactly one paint checkmark is rendered",
+      "status": "passed"
+    },
+    {
+      "case": "all-five-parts-purchase-once-persist-reset",
+      "assertion": "Category highlights agree with the last interaction",
+      "status": "passed"
+    },
+    {
+      "case": "all-five-parts-purchase-once-persist-reset",
+      "assertion": "Checkout shows all five correctly labelled selections",
+      "status": "passed"
+    },
+    {
+      "case": "all-five-parts-purchase-once-persist-reset",
+      "assertion": "All five quote lines reflect selected unowned parts",
+      "status": "passed"
+    },
+    {
+      "case": "all-five-parts-purchase-once-persist-reset",
+      "assertion": "Total includes each selected paid part exactly once",
+      "status": "passed"
+    },
+    {
+      "case": "all-five-parts-purchase-once-persist-reset",
+      "assertion": "No page_errors",
+      "status": "passed"
+    },
+    {
+      "case": "all-five-parts-purchase-once-persist-reset",
+      "assertion": "No http_errors",
+      "status": "passed"
+    },
+    {
+      "case": "all-five-parts-purchase-once-persist-reset",
+      "assertion": "No failed_requests",
+      "status": "passed"
+    },
+    {
+      "case": "all-five-parts-purchase-once-persist-reset",
+      "assertion": "No console_errors",
+      "status": "passed"
+    },
+    {
+      "case": "per-car-purchases-switch-cancel-reload-reset",
+      "assertion": "Built page responds HTTP 200",
+      "status": "passed"
+    },
+    {
+      "case": "per-car-purchases-switch-cancel-reload-reset",
+      "assertion": "Three-car page has its intended title",
+      "status": "passed"
+    },
+    {
+      "case": "per-car-purchases-switch-cancel-reload-reset",
+      "assertion": "sti: another car does not supply owned parts",
+      "status": "passed"
+    },
+    {
+      "case": "per-car-purchases-switch-cancel-reload-reset",
+      "assertion": "sti: default fitting charges exactly once",
+      "status": "passed"
+    },
+    {
+      "case": "per-car-purchases-switch-cancel-reload-reset",
+      "assertion": "Owned build has zero remaining charge",
+      "status": "passed"
+    },
+    {
+      "case": "per-car-purchases-switch-cancel-reload-reset",
+      "assertion": "Repeated Apply never charges again",
+      "status": "passed"
+    },
+    {
+      "case": "per-car-purchases-switch-cancel-reload-reset",
+      "assertion": "sti: new wheel and paint cost 4000 credits",
+      "status": "passed"
+    },
+    {
+      "case": "per-car-purchases-switch-cancel-reload-reset",
+      "assertion": "Cancel restores fitted build without charging",
+      "status": "passed"
+    },
+    {
+      "case": "per-car-purchases-switch-cancel-reload-reset",
+      "assertion": "sti: its own new parts charged once",
+      "status": "passed"
+    },
+    {
+      "case": "per-car-purchases-switch-cancel-reload-reset",
+      "assertion": "Exactly one #vehicle-options button selection",
+      "status": "passed"
+    },
+    {
+      "case": "per-car-purchases-switch-cancel-reload-reset",
+      "assertion": "Native selection agrees with rendered #vehicle-options [data-vehicle=\"sti\"]",
+      "status": "passed"
+    },
+    {
+      "case": "per-car-purchases-switch-cancel-reload-reset",
+      "assertion": "Exactly one .wheel-select selection",
+      "status": "passed"
+    },
+    {
+      "case": "per-car-purchases-switch-cancel-reload-reset",
+      "assertion": "Native selection agrees with rendered .wheel-select[data-wheel=\"te37\"]",
+      "status": "passed"
+    },
+    {
+      "case": "per-car-purchases-switch-cancel-reload-reset",
+      "assertion": "Exactly one .paint-option selection",
+      "status": "passed"
+    },
+    {
+      "case": "per-car-purchases-switch-cancel-reload-reset",
+      "assertion": "Native selection agrees with rendered .paint-option[data-paint=\"black\"]",
+      "status": "passed"
+    },
+    {
+      "case": "per-car-purchases-switch-cancel-reload-reset",
+      "assertion": "Exactly one .part-select[data-part-kind=\"tyre\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "per-car-purchases-switch-cancel-reload-reset",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"tyre\"][data-part=\"road\"]",
+      "status": "passed"
+    },
+    {
+      "case": "per-car-purchases-switch-cancel-reload-reset",
+      "assertion": "Exactly one .part-select[data-part-kind=\"suspension\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "per-car-purchases-switch-cancel-reload-reset",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"suspension\"][data-part=\"original\"]",
+      "status": "passed"
+    },
+    {
+      "case": "per-car-purchases-switch-cancel-reload-reset",
+      "assertion": "Exactly one .part-select[data-part-kind=\"body\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "per-car-purchases-switch-cancel-reload-reset",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"body\"][data-part=\"original\"]",
+      "status": "passed"
+    },
+    {
+      "case": "per-car-purchases-switch-cancel-reload-reset",
+      "assertion": "Exactly one active parts-panel checkmark is visible",
+      "status": "passed"
+    },
+    {
+      "case": "per-car-purchases-switch-cancel-reload-reset",
+      "assertion": "Exactly one paint checkmark is rendered",
+      "status": "passed"
+    },
+    {
+      "case": "per-car-purchases-switch-cancel-reload-reset",
+      "assertion": "Category highlights agree with the last interaction",
+      "status": "passed"
+    },
+    {
+      "case": "per-car-purchases-switch-cancel-reload-reset",
+      "assertion": "Checkout shows all five correctly labelled selections",
+      "status": "passed"
+    },
+    {
+      "case": "per-car-purchases-switch-cancel-reload-reset",
+      "assertion": "Reload preserves shared credit balance",
+      "status": "passed"
+    },
+    {
+      "case": "per-car-purchases-switch-cancel-reload-reset",
+      "assertion": "Reload restores applied build instead of an uncommitted preview",
+      "status": "passed"
+    },
+    {
+      "case": "per-car-purchases-switch-cancel-reload-reset",
+      "assertion": "porsche: another car does not supply owned parts",
+      "status": "passed"
+    },
+    {
+      "case": "per-car-purchases-switch-cancel-reload-reset",
+      "assertion": "porsche: default fitting charges exactly once",
+      "status": "passed"
+    },
+    {
+      "case": "per-car-purchases-switch-cancel-reload-reset",
+      "assertion": "Owned build has zero remaining charge",
+      "status": "passed"
+    },
+    {
+      "case": "per-car-purchases-switch-cancel-reload-reset",
+      "assertion": "Repeated Apply never charges again",
+      "status": "passed"
+    },
+    {
+      "case": "per-car-purchases-switch-cancel-reload-reset",
+      "assertion": "porsche: new wheel and paint cost 4000 credits",
+      "status": "passed"
+    },
+    {
+      "case": "per-car-purchases-switch-cancel-reload-reset",
+      "assertion": "Cancel restores fitted build without charging",
+      "status": "passed"
+    },
+    {
+      "case": "per-car-purchases-switch-cancel-reload-reset",
+      "assertion": "porsche: its own new parts charged once",
+      "status": "passed"
+    },
+    {
+      "case": "per-car-purchases-switch-cancel-reload-reset",
+      "assertion": "Exactly one #vehicle-options button selection",
+      "status": "passed"
+    },
+    {
+      "case": "per-car-purchases-switch-cancel-reload-reset",
+      "assertion": "Native selection agrees with rendered #vehicle-options [data-vehicle=\"porsche\"]",
+      "status": "passed"
+    },
+    {
+      "case": "per-car-purchases-switch-cancel-reload-reset",
+      "assertion": "Exactly one .wheel-select selection",
+      "status": "passed"
+    },
+    {
+      "case": "per-car-purchases-switch-cancel-reload-reset",
+      "assertion": "Native selection agrees with rendered .wheel-select[data-wheel=\"te37\"]",
+      "status": "passed"
+    },
+    {
+      "case": "per-car-purchases-switch-cancel-reload-reset",
+      "assertion": "Exactly one .paint-option selection",
+      "status": "passed"
+    },
+    {
+      "case": "per-car-purchases-switch-cancel-reload-reset",
+      "assertion": "Native selection agrees with rendered .paint-option[data-paint=\"black\"]",
+      "status": "passed"
+    },
+    {
+      "case": "per-car-purchases-switch-cancel-reload-reset",
+      "assertion": "Exactly one .part-select[data-part-kind=\"tyre\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "per-car-purchases-switch-cancel-reload-reset",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"tyre\"][data-part=\"road\"]",
+      "status": "passed"
+    },
+    {
+      "case": "per-car-purchases-switch-cancel-reload-reset",
+      "assertion": "Exactly one .part-select[data-part-kind=\"suspension\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "per-car-purchases-switch-cancel-reload-reset",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"suspension\"][data-part=\"original\"]",
+      "status": "passed"
+    },
+    {
+      "case": "per-car-purchases-switch-cancel-reload-reset",
+      "assertion": "Exactly one .part-select[data-part-kind=\"body\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "per-car-purchases-switch-cancel-reload-reset",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"body\"][data-part=\"original\"]",
+      "status": "passed"
+    },
+    {
+      "case": "per-car-purchases-switch-cancel-reload-reset",
+      "assertion": "Exactly one active parts-panel checkmark is visible",
+      "status": "passed"
+    },
+    {
+      "case": "per-car-purchases-switch-cancel-reload-reset",
+      "assertion": "Exactly one paint checkmark is rendered",
+      "status": "passed"
+    },
+    {
+      "case": "per-car-purchases-switch-cancel-reload-reset",
+      "assertion": "Category highlights agree with the last interaction",
+      "status": "passed"
+    },
+    {
+      "case": "per-car-purchases-switch-cancel-reload-reset",
+      "assertion": "Checkout shows all five correctly labelled selections",
+      "status": "passed"
+    },
+    {
+      "case": "per-car-purchases-switch-cancel-reload-reset",
+      "assertion": "Reload preserves shared credit balance",
+      "status": "passed"
+    },
+    {
+      "case": "per-car-purchases-switch-cancel-reload-reset",
+      "assertion": "Reload restores applied build instead of an uncommitted preview",
+      "status": "passed"
+    },
+    {
+      "case": "per-car-purchases-switch-cancel-reload-reset",
+      "assertion": "gt86: another car does not supply owned parts",
+      "status": "passed"
+    },
+    {
+      "case": "per-car-purchases-switch-cancel-reload-reset",
+      "assertion": "gt86: default fitting charges exactly once",
+      "status": "passed"
+    },
+    {
+      "case": "per-car-purchases-switch-cancel-reload-reset",
+      "assertion": "Owned build has zero remaining charge",
+      "status": "passed"
+    },
+    {
+      "case": "per-car-purchases-switch-cancel-reload-reset",
+      "assertion": "Repeated Apply never charges again",
+      "status": "passed"
+    },
+    {
+      "case": "per-car-purchases-switch-cancel-reload-reset",
+      "assertion": "gt86: new wheel and paint cost 4000 credits",
+      "status": "passed"
+    },
+    {
+      "case": "per-car-purchases-switch-cancel-reload-reset",
+      "assertion": "Cancel restores fitted build without charging",
+      "status": "passed"
+    },
+    {
+      "case": "per-car-purchases-switch-cancel-reload-reset",
+      "assertion": "gt86: its own new parts charged once",
+      "status": "passed"
+    },
+    {
+      "case": "per-car-purchases-switch-cancel-reload-reset",
+      "assertion": "Exactly one #vehicle-options button selection",
+      "status": "passed"
+    },
+    {
+      "case": "per-car-purchases-switch-cancel-reload-reset",
+      "assertion": "Native selection agrees with rendered #vehicle-options [data-vehicle=\"gt86\"]",
+      "status": "passed"
+    },
+    {
+      "case": "per-car-purchases-switch-cancel-reload-reset",
+      "assertion": "Exactly one .wheel-select selection",
+      "status": "passed"
+    },
+    {
+      "case": "per-car-purchases-switch-cancel-reload-reset",
+      "assertion": "Native selection agrees with rendered .wheel-select[data-wheel=\"te37\"]",
+      "status": "passed"
+    },
+    {
+      "case": "per-car-purchases-switch-cancel-reload-reset",
+      "assertion": "Exactly one .paint-option selection",
+      "status": "passed"
+    },
+    {
+      "case": "per-car-purchases-switch-cancel-reload-reset",
+      "assertion": "Native selection agrees with rendered .paint-option[data-paint=\"black\"]",
+      "status": "passed"
+    },
+    {
+      "case": "per-car-purchases-switch-cancel-reload-reset",
+      "assertion": "Exactly one .part-select[data-part-kind=\"tyre\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "per-car-purchases-switch-cancel-reload-reset",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"tyre\"][data-part=\"road\"]",
+      "status": "passed"
+    },
+    {
+      "case": "per-car-purchases-switch-cancel-reload-reset",
+      "assertion": "Exactly one .part-select[data-part-kind=\"suspension\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "per-car-purchases-switch-cancel-reload-reset",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"suspension\"][data-part=\"original\"]",
+      "status": "passed"
+    },
+    {
+      "case": "per-car-purchases-switch-cancel-reload-reset",
+      "assertion": "Exactly one .part-select[data-part-kind=\"body\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "per-car-purchases-switch-cancel-reload-reset",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"body\"][data-part=\"original\"]",
+      "status": "passed"
+    },
+    {
+      "case": "per-car-purchases-switch-cancel-reload-reset",
+      "assertion": "Exactly one active parts-panel checkmark is visible",
+      "status": "passed"
+    },
+    {
+      "case": "per-car-purchases-switch-cancel-reload-reset",
+      "assertion": "Exactly one paint checkmark is rendered",
+      "status": "passed"
+    },
+    {
+      "case": "per-car-purchases-switch-cancel-reload-reset",
+      "assertion": "Category highlights agree with the last interaction",
+      "status": "passed"
+    },
+    {
+      "case": "per-car-purchases-switch-cancel-reload-reset",
+      "assertion": "Checkout shows all five correctly labelled selections",
+      "status": "passed"
+    },
+    {
+      "case": "per-car-purchases-switch-cancel-reload-reset",
+      "assertion": "Reload preserves shared credit balance",
+      "status": "passed"
+    },
+    {
+      "case": "per-car-purchases-switch-cancel-reload-reset",
+      "assertion": "Reload restores applied build instead of an uncommitted preview",
+      "status": "passed"
+    },
+    {
+      "case": "per-car-purchases-switch-cancel-reload-reset",
+      "assertion": "sti: switching restores its own fitted build",
+      "status": "passed"
+    },
+    {
+      "case": "per-car-purchases-switch-cancel-reload-reset",
+      "assertion": "sti: previously purchased parts refit free",
+      "status": "passed"
+    },
+    {
+      "case": "per-car-purchases-switch-cancel-reload-reset",
+      "assertion": "Refitting owned parts costs no credits",
+      "status": "passed"
+    },
+    {
+      "case": "per-car-purchases-switch-cancel-reload-reset",
+      "assertion": "porsche: switching restores its own fitted build",
+      "status": "passed"
+    },
+    {
+      "case": "per-car-purchases-switch-cancel-reload-reset",
+      "assertion": "porsche: previously purchased parts refit free",
+      "status": "passed"
+    },
+    {
+      "case": "per-car-purchases-switch-cancel-reload-reset",
+      "assertion": "Refitting owned parts costs no credits",
+      "status": "passed"
+    },
+    {
+      "case": "per-car-purchases-switch-cancel-reload-reset",
+      "assertion": "gt86: switching restores its own fitted build",
+      "status": "passed"
+    },
+    {
+      "case": "per-car-purchases-switch-cancel-reload-reset",
+      "assertion": "gt86: previously purchased parts refit free",
+      "status": "passed"
+    },
+    {
+      "case": "per-car-purchases-switch-cancel-reload-reset",
+      "assertion": "Refitting owned parts costs no credits",
+      "status": "passed"
+    },
+    {
+      "case": "per-car-purchases-switch-cancel-reload-reset",
+      "assertion": "Saved state contains all three canonical garages",
+      "status": "passed"
+    },
+    {
+      "case": "per-car-purchases-switch-cancel-reload-reset",
+      "assertion": "Each car retains its own four purchased items",
+      "status": "passed"
+    },
+    {
+      "case": "per-car-purchases-switch-cancel-reload-reset",
+      "assertion": "Transient previews and derived aliases are not persisted",
+      "status": "passed"
+    },
+    {
+      "case": "per-car-purchases-switch-cancel-reload-reset",
+      "assertion": "Reset requires confirmation",
+      "status": "passed"
+    },
+    {
+      "case": "per-car-purchases-switch-cancel-reload-reset",
+      "assertion": "Cancelling reset preserves garage progress",
+      "status": "passed"
+    },
+    {
+      "case": "per-car-purchases-switch-cancel-reload-reset",
+      "assertion": "Confirmed reset restores original balance and STI",
+      "status": "passed"
+    },
+    {
+      "case": "per-car-purchases-switch-cancel-reload-reset",
+      "assertion": "sti: reset clears its owned upgrades",
+      "status": "passed"
+    },
+    {
+      "case": "per-car-purchases-switch-cancel-reload-reset",
+      "assertion": "porsche: reset clears its owned upgrades",
+      "status": "passed"
+    },
+    {
+      "case": "per-car-purchases-switch-cancel-reload-reset",
+      "assertion": "gt86: reset clears its owned upgrades",
+      "status": "passed"
+    },
+    {
+      "case": "per-car-purchases-switch-cancel-reload-reset",
+      "assertion": "No page_errors",
+      "status": "passed"
+    },
+    {
+      "case": "per-car-purchases-switch-cancel-reload-reset",
+      "assertion": "No http_errors",
+      "status": "passed"
+    },
+    {
+      "case": "per-car-purchases-switch-cancel-reload-reset",
+      "assertion": "No failed_requests",
+      "status": "passed"
+    },
+    {
+      "case": "per-car-purchases-switch-cancel-reload-reset",
+      "assertion": "No console_errors",
+      "status": "passed"
+    },
+    {
+      "case": "existing-v2-state-migration",
+      "assertion": "Built page responds HTTP 200",
+      "status": "passed"
+    },
+    {
+      "case": "existing-v2-state-migration",
+      "assertion": "Three-car page has its intended title",
+      "status": "passed"
+    },
+    {
+      "case": "existing-v2-state-migration",
+      "assertion": "V2 migration preserves existing balance",
+      "status": "passed"
+    },
+    {
+      "case": "existing-v2-state-migration",
+      "assertion": "V2 migration preserves purchased STI parts",
+      "status": "passed"
+    },
+    {
+      "case": "existing-v2-state-migration",
+      "assertion": "V2 ownership is not copied onto another car",
+      "status": "passed"
+    },
+    {
+      "case": "existing-v2-state-migration",
+      "assertion": "Migrated state is saved in schema 4",
+      "status": "passed"
+    },
+    {
+      "case": "existing-v2-state-migration",
+      "assertion": "No page_errors",
+      "status": "passed"
+    },
+    {
+      "case": "existing-v2-state-migration",
+      "assertion": "No http_errors",
+      "status": "passed"
+    },
+    {
+      "case": "existing-v2-state-migration",
+      "assertion": "No failed_requests",
+      "status": "passed"
+    },
+    {
+      "case": "existing-v2-state-migration",
+      "assertion": "No console_errors",
+      "status": "passed"
+    },
+    {
+      "case": "existing-v3-state-migration",
+      "assertion": "Built page responds HTTP 200",
+      "status": "passed"
+    },
+    {
+      "case": "existing-v3-state-migration",
+      "assertion": "Three-car page has its intended title",
+      "status": "passed"
+    },
+    {
+      "case": "existing-v3-state-migration",
+      "assertion": "Exactly one #vehicle-options button selection",
+      "status": "passed"
+    },
+    {
+      "case": "existing-v3-state-migration",
+      "assertion": "Native selection agrees with rendered #vehicle-options [data-vehicle=\"sti\"]",
+      "status": "passed"
+    },
+    {
+      "case": "existing-v3-state-migration",
+      "assertion": "Exactly one .wheel-select selection",
+      "status": "passed"
+    },
+    {
+      "case": "existing-v3-state-migration",
+      "assertion": "Native selection agrees with rendered .wheel-select[data-wheel=\"te37\"]",
+      "status": "passed"
+    },
+    {
+      "case": "existing-v3-state-migration",
+      "assertion": "Exactly one .paint-option selection",
+      "status": "passed"
+    },
+    {
+      "case": "existing-v3-state-migration",
+      "assertion": "Native selection agrees with rendered .paint-option[data-paint=\"black\"]",
+      "status": "passed"
+    },
+    {
+      "case": "existing-v3-state-migration",
+      "assertion": "Exactly one .part-select[data-part-kind=\"tyre\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "existing-v3-state-migration",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"tyre\"][data-part=\"road\"]",
+      "status": "passed"
+    },
+    {
+      "case": "existing-v3-state-migration",
+      "assertion": "Exactly one .part-select[data-part-kind=\"suspension\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "existing-v3-state-migration",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"suspension\"][data-part=\"original\"]",
+      "status": "passed"
+    },
+    {
+      "case": "existing-v3-state-migration",
+      "assertion": "Exactly one .part-select[data-part-kind=\"body\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "existing-v3-state-migration",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"body\"][data-part=\"original\"]",
+      "status": "passed"
+    },
+    {
+      "case": "existing-v3-state-migration",
+      "assertion": "Exactly one active parts-panel checkmark is visible",
+      "status": "passed"
+    },
+    {
+      "case": "existing-v3-state-migration",
+      "assertion": "Exactly one paint checkmark is rendered",
+      "status": "passed"
+    },
+    {
+      "case": "existing-v3-state-migration",
+      "assertion": "Category highlights agree with the last interaction",
+      "status": "passed"
+    },
+    {
+      "case": "existing-v3-state-migration",
+      "assertion": "Checkout shows all five correctly labelled selections",
+      "status": "passed"
+    },
+    {
+      "case": "existing-v3-state-migration",
+      "assertion": "V3 owned wheels and paint retain value; default new parts are included",
+      "status": "passed"
+    },
+    {
+      "case": "existing-v3-state-migration",
+      "assertion": "V3 migration preserves the shared balance",
+      "status": "passed"
+    },
+    {
+      "case": "existing-v3-state-migration",
+      "assertion": "Exactly one #vehicle-options button selection",
+      "status": "passed"
+    },
+    {
+      "case": "existing-v3-state-migration",
+      "assertion": "Native selection agrees with rendered #vehicle-options [data-vehicle=\"porsche\"]",
+      "status": "passed"
+    },
+    {
+      "case": "existing-v3-state-migration",
+      "assertion": "Exactly one .wheel-select selection",
+      "status": "passed"
+    },
+    {
+      "case": "existing-v3-state-migration",
+      "assertion": "Native selection agrees with rendered .wheel-select[data-wheel=\"work\"]",
+      "status": "passed"
+    },
+    {
+      "case": "existing-v3-state-migration",
+      "assertion": "Exactly one .paint-option selection",
+      "status": "passed"
+    },
+    {
+      "case": "existing-v3-state-migration",
+      "assertion": "Native selection agrees with rendered .paint-option[data-paint=\"teal\"]",
+      "status": "passed"
+    },
+    {
+      "case": "existing-v3-state-migration",
+      "assertion": "Exactly one .part-select[data-part-kind=\"tyre\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "existing-v3-state-migration",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"tyre\"][data-part=\"road\"]",
+      "status": "passed"
+    },
+    {
+      "case": "existing-v3-state-migration",
+      "assertion": "Exactly one .part-select[data-part-kind=\"suspension\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "existing-v3-state-migration",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"suspension\"][data-part=\"original\"]",
+      "status": "passed"
+    },
+    {
+      "case": "existing-v3-state-migration",
+      "assertion": "Exactly one .part-select[data-part-kind=\"body\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "existing-v3-state-migration",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"body\"][data-part=\"original\"]",
+      "status": "passed"
+    },
+    {
+      "case": "existing-v3-state-migration",
+      "assertion": "Exactly one active parts-panel checkmark is visible",
+      "status": "passed"
+    },
+    {
+      "case": "existing-v3-state-migration",
+      "assertion": "Exactly one paint checkmark is rendered",
+      "status": "passed"
+    },
+    {
+      "case": "existing-v3-state-migration",
+      "assertion": "Category highlights agree with the last interaction",
+      "status": "passed"
+    },
+    {
+      "case": "existing-v3-state-migration",
+      "assertion": "Checkout shows all five correctly labelled selections",
+      "status": "passed"
+    },
+    {
+      "case": "existing-v3-state-migration",
+      "assertion": "V3 owned wheels and paint retain value; default new parts are included",
+      "status": "passed"
+    },
+    {
+      "case": "existing-v3-state-migration",
+      "assertion": "V3 migration preserves the shared balance",
+      "status": "passed"
+    },
+    {
+      "case": "existing-v3-state-migration",
+      "assertion": "Exactly one #vehicle-options button selection",
+      "status": "passed"
+    },
+    {
+      "case": "existing-v3-state-migration",
+      "assertion": "Native selection agrees with rendered #vehicle-options [data-vehicle=\"gt86\"]",
+      "status": "passed"
+    },
+    {
+      "case": "existing-v3-state-migration",
+      "assertion": "Exactly one .wheel-select selection",
+      "status": "passed"
+    },
+    {
+      "case": "existing-v3-state-migration",
+      "assertion": "Native selection agrees with rendered .wheel-select[data-wheel=\"bbs-lm\"]",
+      "status": "passed"
+    },
+    {
+      "case": "existing-v3-state-migration",
+      "assertion": "Exactly one .paint-option selection",
+      "status": "passed"
+    },
+    {
+      "case": "existing-v3-state-migration",
+      "assertion": "Native selection agrees with rendered .paint-option[data-paint=\"mint\"]",
+      "status": "passed"
+    },
+    {
+      "case": "existing-v3-state-migration",
+      "assertion": "Exactly one .part-select[data-part-kind=\"tyre\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "existing-v3-state-migration",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"tyre\"][data-part=\"road\"]",
+      "status": "passed"
+    },
+    {
+      "case": "existing-v3-state-migration",
+      "assertion": "Exactly one .part-select[data-part-kind=\"suspension\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "existing-v3-state-migration",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"suspension\"][data-part=\"original\"]",
+      "status": "passed"
+    },
+    {
+      "case": "existing-v3-state-migration",
+      "assertion": "Exactly one .part-select[data-part-kind=\"body\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "existing-v3-state-migration",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"body\"][data-part=\"original\"]",
+      "status": "passed"
+    },
+    {
+      "case": "existing-v3-state-migration",
+      "assertion": "Exactly one active parts-panel checkmark is visible",
+      "status": "passed"
+    },
+    {
+      "case": "existing-v3-state-migration",
+      "assertion": "Exactly one paint checkmark is rendered",
+      "status": "passed"
+    },
+    {
+      "case": "existing-v3-state-migration",
+      "assertion": "Category highlights agree with the last interaction",
+      "status": "passed"
+    },
+    {
+      "case": "existing-v3-state-migration",
+      "assertion": "Checkout shows all five correctly labelled selections",
+      "status": "passed"
+    },
+    {
+      "case": "existing-v3-state-migration",
+      "assertion": "V3 owned wheels and paint retain value; default new parts are included",
+      "status": "passed"
+    },
+    {
+      "case": "existing-v3-state-migration",
+      "assertion": "V3 migration preserves the shared balance",
+      "status": "passed"
+    },
+    {
+      "case": "existing-v3-state-migration",
+      "assertion": "V3 state is rewritten as schema 4",
+      "status": "passed"
+    },
+    {
+      "case": "existing-v3-state-migration",
+      "assertion": "sti: migration adds three original upgrades without changing wheel or paint",
+      "status": "passed"
+    },
+    {
+      "case": "existing-v3-state-migration",
+      "assertion": "sti: migration does not grant paid upgrades",
+      "status": "passed"
+    },
+    {
+      "case": "existing-v3-state-migration",
+      "assertion": "porsche: migration adds three original upgrades without changing wheel or paint",
+      "status": "passed"
+    },
+    {
+      "case": "existing-v3-state-migration",
+      "assertion": "porsche: migration does not grant paid upgrades",
+      "status": "passed"
+    },
+    {
+      "case": "existing-v3-state-migration",
+      "assertion": "gt86: migration adds three original upgrades without changing wheel or paint",
+      "status": "passed"
+    },
+    {
+      "case": "existing-v3-state-migration",
+      "assertion": "gt86: migration does not grant paid upgrades",
+      "status": "passed"
+    },
+    {
+      "case": "existing-v3-state-migration",
+      "assertion": "No page_errors",
+      "status": "passed"
+    },
+    {
+      "case": "existing-v3-state-migration",
+      "assertion": "No http_errors",
+      "status": "passed"
+    },
+    {
+      "case": "existing-v3-state-migration",
+      "assertion": "No failed_requests",
+      "status": "passed"
+    },
+    {
+      "case": "existing-v3-state-migration",
+      "assertion": "No console_errors",
+      "status": "passed"
+    },
+    {
+      "case": "tyre-failure-five-part-rollback",
+      "assertion": "Built page responds HTTP 200",
+      "status": "passed"
+    },
+    {
+      "case": "tyre-failure-five-part-rollback",
+      "assertion": "Three-car page has its intended title",
+      "status": "passed"
+    },
+    {
+      "case": "tyre-failure-five-part-rollback",
+      "assertion": "Failure fixture fits and purchases all five parts",
+      "status": "passed"
+    },
+    {
+      "case": "tyre-failure-five-part-rollback",
+      "assertion": "Exactly one #vehicle-options button selection",
+      "status": "passed"
+    },
+    {
+      "case": "tyre-failure-five-part-rollback",
+      "assertion": "Native selection agrees with rendered #vehicle-options [data-vehicle=\"sti\"]",
+      "status": "passed"
+    },
+    {
+      "case": "tyre-failure-five-part-rollback",
+      "assertion": "Exactly one .wheel-select selection",
+      "status": "passed"
+    },
+    {
+      "case": "tyre-failure-five-part-rollback",
+      "assertion": "Native selection agrees with rendered .wheel-select[data-wheel=\"te37\"]",
+      "status": "passed"
+    },
+    {
+      "case": "tyre-failure-five-part-rollback",
+      "assertion": "Exactly one .paint-option selection",
+      "status": "passed"
+    },
+    {
+      "case": "tyre-failure-five-part-rollback",
+      "assertion": "Native selection agrees with rendered .paint-option[data-paint=\"mint\"]",
+      "status": "passed"
+    },
+    {
+      "case": "tyre-failure-five-part-rollback",
+      "assertion": "Exactly one .part-select[data-part-kind=\"tyre\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "tyre-failure-five-part-rollback",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"tyre\"][data-part=\"sport\"]",
+      "status": "passed"
+    },
+    {
+      "case": "tyre-failure-five-part-rollback",
+      "assertion": "Exactly one .part-select[data-part-kind=\"suspension\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "tyre-failure-five-part-rollback",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"suspension\"][data-part=\"sport\"]",
+      "status": "passed"
+    },
+    {
+      "case": "tyre-failure-five-part-rollback",
+      "assertion": "Exactly one .part-select[data-part-kind=\"body\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "tyre-failure-five-part-rollback",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"body\"][data-part=\"street\"]",
+      "status": "passed"
+    },
+    {
+      "case": "tyre-failure-five-part-rollback",
+      "assertion": "Exactly one active parts-panel checkmark is visible",
+      "status": "passed"
+    },
+    {
+      "case": "tyre-failure-five-part-rollback",
+      "assertion": "Exactly one paint checkmark is rendered",
+      "status": "passed"
+    },
+    {
+      "case": "tyre-failure-five-part-rollback",
+      "assertion": "Category highlights agree with the last interaction",
+      "status": "passed"
+    },
+    {
+      "case": "tyre-failure-five-part-rollback",
+      "assertion": "Checkout shows all five correctly labelled selections",
+      "status": "passed"
+    },
+    {
+      "case": "tyre-failure-five-part-rollback",
+      "assertion": "Failed tyre preview cannot spend credits",
+      "status": "passed"
+    },
+    {
+      "case": "tyre-failure-five-part-rollback",
+      "assertion": "Failed tyre preview restores all five quote selections",
+      "status": "passed"
+    },
+    {
+      "case": "tyre-failure-five-part-rollback",
+      "assertion": "Failed upgrade preserves canonical fitted garage and ownership",
+      "status": "passed"
+    },
+    {
+      "case": "tyre-failure-five-part-rollback",
+      "assertion": "Only intended upgrade artwork is aborted",
+      "status": "passed"
+    },
+    {
+      "case": "tyre-failure-five-part-rollback",
+      "assertion": "Retry loads artwork and quotes the new upgrade once",
+      "status": "passed"
+    },
+    {
+      "case": "tyre-failure-five-part-rollback",
+      "assertion": "No page_errors",
+      "status": "passed"
+    },
+    {
+      "case": "tyre-failure-five-part-rollback",
+      "assertion": "No http_errors",
+      "status": "passed"
+    },
+    {
+      "case": "tyre-failure-five-part-rollback",
+      "assertion": "No console errors beyond the deliberately aborted image request",
+      "status": "passed"
+    },
+    {
+      "case": "body-failure-five-part-rollback",
+      "assertion": "Built page responds HTTP 200",
+      "status": "passed"
+    },
+    {
+      "case": "body-failure-five-part-rollback",
+      "assertion": "Three-car page has its intended title",
+      "status": "passed"
+    },
+    {
+      "case": "body-failure-five-part-rollback",
+      "assertion": "Failure fixture fits and purchases all five parts",
+      "status": "passed"
+    },
+    {
+      "case": "body-failure-five-part-rollback",
+      "assertion": "Exactly one #vehicle-options button selection",
+      "status": "passed"
+    },
+    {
+      "case": "body-failure-five-part-rollback",
+      "assertion": "Native selection agrees with rendered #vehicle-options [data-vehicle=\"sti\"]",
+      "status": "passed"
+    },
+    {
+      "case": "body-failure-five-part-rollback",
+      "assertion": "Exactly one .wheel-select selection",
+      "status": "passed"
+    },
+    {
+      "case": "body-failure-five-part-rollback",
+      "assertion": "Native selection agrees with rendered .wheel-select[data-wheel=\"te37\"]",
+      "status": "passed"
+    },
+    {
+      "case": "body-failure-five-part-rollback",
+      "assertion": "Exactly one .paint-option selection",
+      "status": "passed"
+    },
+    {
+      "case": "body-failure-five-part-rollback",
+      "assertion": "Native selection agrees with rendered .paint-option[data-paint=\"mint\"]",
+      "status": "passed"
+    },
+    {
+      "case": "body-failure-five-part-rollback",
+      "assertion": "Exactly one .part-select[data-part-kind=\"tyre\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "body-failure-five-part-rollback",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"tyre\"][data-part=\"sport\"]",
+      "status": "passed"
+    },
+    {
+      "case": "body-failure-five-part-rollback",
+      "assertion": "Exactly one .part-select[data-part-kind=\"suspension\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "body-failure-five-part-rollback",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"suspension\"][data-part=\"sport\"]",
+      "status": "passed"
+    },
+    {
+      "case": "body-failure-five-part-rollback",
+      "assertion": "Exactly one .part-select[data-part-kind=\"body\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "body-failure-five-part-rollback",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"body\"][data-part=\"street\"]",
+      "status": "passed"
+    },
+    {
+      "case": "body-failure-five-part-rollback",
+      "assertion": "Exactly one active parts-panel checkmark is visible",
+      "status": "passed"
+    },
+    {
+      "case": "body-failure-five-part-rollback",
+      "assertion": "Exactly one paint checkmark is rendered",
+      "status": "passed"
+    },
+    {
+      "case": "body-failure-five-part-rollback",
+      "assertion": "Category highlights agree with the last interaction",
+      "status": "passed"
+    },
+    {
+      "case": "body-failure-five-part-rollback",
+      "assertion": "Checkout shows all five correctly labelled selections",
+      "status": "passed"
+    },
+    {
+      "case": "body-failure-five-part-rollback",
+      "assertion": "Failed body preview cannot spend credits",
+      "status": "passed"
+    },
+    {
+      "case": "body-failure-five-part-rollback",
+      "assertion": "Failed body preview restores all five quote selections",
+      "status": "passed"
+    },
+    {
+      "case": "body-failure-five-part-rollback",
+      "assertion": "Failed upgrade preserves canonical fitted garage and ownership",
+      "status": "passed"
+    },
+    {
+      "case": "body-failure-five-part-rollback",
+      "assertion": "Only intended upgrade artwork is aborted",
+      "status": "passed"
+    },
+    {
+      "case": "body-failure-five-part-rollback",
+      "assertion": "Retry loads artwork and quotes the new upgrade once",
+      "status": "passed"
+    },
+    {
+      "case": "body-failure-five-part-rollback",
+      "assertion": "No page_errors",
+      "status": "passed"
+    },
+    {
+      "case": "body-failure-five-part-rollback",
+      "assertion": "No http_errors",
+      "status": "passed"
+    },
+    {
+      "case": "body-failure-five-part-rollback",
+      "assertion": "No console errors beyond the deliberately aborted image request",
+      "status": "passed"
+    },
+    {
+      "case": "out-of-order-wheel-image",
+      "assertion": "Built page responds HTTP 200",
+      "status": "passed"
+    },
+    {
+      "case": "out-of-order-wheel-image",
+      "assertion": "Three-car page has its intended title",
+      "status": "passed"
+    },
+    {
+      "case": "out-of-order-wheel-image",
+      "assertion": "Race uses a real base-image response",
+      "status": "passed"
+    },
+    {
+      "case": "out-of-order-wheel-image",
+      "assertion": "Loading artwork cannot spend credits",
+      "status": "passed"
+    },
+    {
+      "case": "out-of-order-wheel-image",
+      "assertion": "Exactly one #vehicle-options button selection",
+      "status": "passed"
+    },
+    {
+      "case": "out-of-order-wheel-image",
+      "assertion": "Native selection agrees with rendered #vehicle-options [data-vehicle=\"sti\"]",
+      "status": "passed"
+    },
+    {
+      "case": "out-of-order-wheel-image",
+      "assertion": "Exactly one .wheel-select selection",
+      "status": "passed"
+    },
+    {
+      "case": "out-of-order-wheel-image",
+      "assertion": "Native selection agrees with rendered .wheel-select[data-wheel=\"bbs-lm\"]",
+      "status": "passed"
+    },
+    {
+      "case": "out-of-order-wheel-image",
+      "assertion": "Exactly one .paint-option selection",
+      "status": "passed"
+    },
+    {
+      "case": "out-of-order-wheel-image",
+      "assertion": "Native selection agrees with rendered .paint-option[data-paint=\"mint\"]",
+      "status": "passed"
+    },
+    {
+      "case": "out-of-order-wheel-image",
+      "assertion": "Exactly one .part-select[data-part-kind=\"tyre\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "out-of-order-wheel-image",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"tyre\"][data-part=\"road\"]",
+      "status": "passed"
+    },
+    {
+      "case": "out-of-order-wheel-image",
+      "assertion": "Exactly one .part-select[data-part-kind=\"suspension\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "out-of-order-wheel-image",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"suspension\"][data-part=\"original\"]",
+      "status": "passed"
+    },
+    {
+      "case": "out-of-order-wheel-image",
+      "assertion": "Exactly one .part-select[data-part-kind=\"body\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "out-of-order-wheel-image",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"body\"][data-part=\"original\"]",
+      "status": "passed"
+    },
+    {
+      "case": "out-of-order-wheel-image",
+      "assertion": "Exactly one active parts-panel checkmark is visible",
+      "status": "passed"
+    },
+    {
+      "case": "out-of-order-wheel-image",
+      "assertion": "Exactly one paint checkmark is rendered",
+      "status": "passed"
+    },
+    {
+      "case": "out-of-order-wheel-image",
+      "assertion": "Category highlights agree with the last interaction",
+      "status": "passed"
+    },
+    {
+      "case": "out-of-order-wheel-image",
+      "assertion": "Checkout shows all five correctly labelled selections",
+      "status": "passed"
+    },
+    {
+      "case": "out-of-order-wheel-image",
+      "assertion": "Stale response cannot spend credits",
+      "status": "passed"
+    },
+    {
+      "case": "out-of-order-wheel-image",
+      "assertion": "Stale base cannot replace the later car/wheel/paint or cancelled preview",
+      "status": "passed"
+    },
+    {
+      "case": "out-of-order-wheel-image",
+      "assertion": "No page_errors",
+      "status": "passed"
+    },
+    {
+      "case": "out-of-order-wheel-image",
+      "assertion": "No http_errors",
+      "status": "passed"
+    },
+    {
+      "case": "out-of-order-wheel-image",
+      "assertion": "No failed_requests",
+      "status": "passed"
+    },
+    {
+      "case": "out-of-order-wheel-image",
+      "assertion": "No console_errors",
+      "status": "passed"
+    },
+    {
+      "case": "cancel-delayed-wheel",
+      "assertion": "Built page responds HTTP 200",
+      "status": "passed"
+    },
+    {
+      "case": "cancel-delayed-wheel",
+      "assertion": "Three-car page has its intended title",
+      "status": "passed"
+    },
+    {
+      "case": "cancel-delayed-wheel",
+      "assertion": "Race uses a real base-image response",
+      "status": "passed"
+    },
+    {
+      "case": "cancel-delayed-wheel",
+      "assertion": "Loading artwork cannot spend credits",
+      "status": "passed"
+    },
+    {
+      "case": "cancel-delayed-wheel",
+      "assertion": "Exactly one #vehicle-options button selection",
+      "status": "passed"
+    },
+    {
+      "case": "cancel-delayed-wheel",
+      "assertion": "Native selection agrees with rendered #vehicle-options [data-vehicle=\"sti\"]",
+      "status": "passed"
+    },
+    {
+      "case": "cancel-delayed-wheel",
+      "assertion": "Exactly one .wheel-select selection",
+      "status": "passed"
+    },
+    {
+      "case": "cancel-delayed-wheel",
+      "assertion": "Native selection agrees with rendered .wheel-select[data-wheel=\"sr-01\"]",
+      "status": "passed"
+    },
+    {
+      "case": "cancel-delayed-wheel",
+      "assertion": "Exactly one .paint-option selection",
+      "status": "passed"
+    },
+    {
+      "case": "cancel-delayed-wheel",
+      "assertion": "Native selection agrees with rendered .paint-option[data-paint=\"blue\"]",
+      "status": "passed"
+    },
+    {
+      "case": "cancel-delayed-wheel",
+      "assertion": "Exactly one .part-select[data-part-kind=\"tyre\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "cancel-delayed-wheel",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"tyre\"][data-part=\"road\"]",
+      "status": "passed"
+    },
+    {
+      "case": "cancel-delayed-wheel",
+      "assertion": "Exactly one .part-select[data-part-kind=\"suspension\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "cancel-delayed-wheel",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"suspension\"][data-part=\"original\"]",
+      "status": "passed"
+    },
+    {
+      "case": "cancel-delayed-wheel",
+      "assertion": "Exactly one .part-select[data-part-kind=\"body\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "cancel-delayed-wheel",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"body\"][data-part=\"original\"]",
+      "status": "passed"
+    },
+    {
+      "case": "cancel-delayed-wheel",
+      "assertion": "Exactly one active parts-panel checkmark is visible",
+      "status": "passed"
+    },
+    {
+      "case": "cancel-delayed-wheel",
+      "assertion": "Exactly one paint checkmark is rendered",
+      "status": "passed"
+    },
+    {
+      "case": "cancel-delayed-wheel",
+      "assertion": "Category highlights agree with the last interaction",
+      "status": "passed"
+    },
+    {
+      "case": "cancel-delayed-wheel",
+      "assertion": "Checkout shows all five correctly labelled selections",
+      "status": "passed"
+    },
+    {
+      "case": "cancel-delayed-wheel",
+      "assertion": "Stale response cannot spend credits",
+      "status": "passed"
+    },
+    {
+      "case": "cancel-delayed-wheel",
+      "assertion": "Stale base cannot replace the later car/wheel/paint or cancelled preview",
+      "status": "passed"
+    },
+    {
+      "case": "cancel-delayed-wheel",
+      "assertion": "No page_errors",
+      "status": "passed"
+    },
+    {
+      "case": "cancel-delayed-wheel",
+      "assertion": "No http_errors",
+      "status": "passed"
+    },
+    {
+      "case": "cancel-delayed-wheel",
+      "assertion": "No failed_requests",
+      "status": "passed"
+    },
+    {
+      "case": "cancel-delayed-wheel",
+      "assertion": "No console_errors",
+      "status": "passed"
+    },
+    {
+      "case": "out-of-order-vehicle-image",
+      "assertion": "Built page responds HTTP 200",
+      "status": "passed"
+    },
+    {
+      "case": "out-of-order-vehicle-image",
+      "assertion": "Three-car page has its intended title",
+      "status": "passed"
+    },
+    {
+      "case": "out-of-order-vehicle-image",
+      "assertion": "Race uses a real base-image response",
+      "status": "passed"
+    },
+    {
+      "case": "out-of-order-vehicle-image",
+      "assertion": "Loading artwork cannot spend credits",
+      "status": "passed"
+    },
+    {
+      "case": "out-of-order-vehicle-image",
+      "assertion": "Exactly one #vehicle-options button selection",
+      "status": "passed"
+    },
+    {
+      "case": "out-of-order-vehicle-image",
+      "assertion": "Native selection agrees with rendered #vehicle-options [data-vehicle=\"gt86\"]",
+      "status": "passed"
+    },
+    {
+      "case": "out-of-order-vehicle-image",
+      "assertion": "Exactly one .wheel-select selection",
+      "status": "passed"
+    },
+    {
+      "case": "out-of-order-vehicle-image",
+      "assertion": "Native selection agrees with rendered .wheel-select[data-wheel=\"sr-01\"]",
+      "status": "passed"
+    },
+    {
+      "case": "out-of-order-vehicle-image",
+      "assertion": "Exactly one .paint-option selection",
+      "status": "passed"
+    },
+    {
+      "case": "out-of-order-vehicle-image",
+      "assertion": "Native selection agrees with rendered .paint-option[data-paint=\"blue\"]",
+      "status": "passed"
+    },
+    {
+      "case": "out-of-order-vehicle-image",
+      "assertion": "Exactly one .part-select[data-part-kind=\"tyre\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "out-of-order-vehicle-image",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"tyre\"][data-part=\"road\"]",
+      "status": "passed"
+    },
+    {
+      "case": "out-of-order-vehicle-image",
+      "assertion": "Exactly one .part-select[data-part-kind=\"suspension\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "out-of-order-vehicle-image",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"suspension\"][data-part=\"original\"]",
+      "status": "passed"
+    },
+    {
+      "case": "out-of-order-vehicle-image",
+      "assertion": "Exactly one .part-select[data-part-kind=\"body\"] selection",
+      "status": "passed"
+    },
+    {
+      "case": "out-of-order-vehicle-image",
+      "assertion": "Native selection agrees with rendered .part-select[data-part-kind=\"body\"][data-part=\"original\"]",
+      "status": "passed"
+    },
+    {
+      "case": "out-of-order-vehicle-image",
+      "assertion": "Exactly one active parts-panel checkmark is visible",
+      "status": "passed"
+    },
+    {
+      "case": "out-of-order-vehicle-image",
+      "assertion": "Exactly one paint checkmark is rendered",
+      "status": "passed"
+    },
+    {
+      "case": "out-of-order-vehicle-image",
+      "assertion": "Category highlights agree with the last interaction",
+      "status": "passed"
+    },
+    {
+      "case": "out-of-order-vehicle-image",
+      "assertion": "Checkout shows all five correctly labelled selections",
+      "status": "passed"
+    },
+    {
+      "case": "out-of-order-vehicle-image",
+      "assertion": "Stale response cannot spend credits",
+      "status": "passed"
+    },
+    {
+      "case": "out-of-order-vehicle-image",
+      "assertion": "Stale base cannot replace the later car/wheel/paint or cancelled preview",
+      "status": "passed"
+    },
+    {
+      "case": "out-of-order-vehicle-image",
+      "assertion": "No page_errors",
+      "status": "passed"
+    },
+    {
+      "case": "out-of-order-vehicle-image",
+      "assertion": "No http_errors",
+      "status": "passed"
+    },
+    {
+      "case": "out-of-order-vehicle-image",
+      "assertion": "No failed_requests",
+      "status": "passed"
+    },
+    {
+      "case": "out-of-order-vehicle-image",
+      "assertion": "No console_errors",
+      "status": "passed"
+    }
+  ],
+  "combinations": [],
+  "paint_pixel_comparisons": [],
+  "mechanical_combinations": [],
+  "painted_upgrade_combinations": [],
+  "upgrade_pixel_comparisons": [],
+  "readiness_failures": [],
+  "matrix_wheel_scope": [
+    "sr-01",
+    "te37",
+    "bbs-lm",
+    "oz",
+    "rotiform",
+    "work"
+  ],
+  "matrix_vehicle_scope": [
+    "sti",
+    "porsche",
+    "gt86"
+  ],
+  "coverage_counts": {
+    "baseline_paint": 0,
+    "blue_mechanical": 0,
+    "painted_maximum_upgrades": 0
+  },
+  "screenshots": [],
+  "browser_observations": [
+    {
+      "case": "all-five-parts-purchase-once-persist-reset",
+      "page_errors": [],
+      "http_errors": [],
+      "failed_requests": [],
+      "console_errors": [],
+      "expected_network_failures": false
+    },
+    {
+      "case": "per-car-purchases-switch-cancel-reload-reset",
+      "page_errors": [],
+      "http_errors": [],
+      "failed_requests": [],
+      "console_errors": [],
+      "expected_network_failures": false
+    },
+    {
+      "case": "existing-v2-state-migration",
+      "page_errors": [],
+      "http_errors": [],
+      "failed_requests": [],
+      "console_errors": [],
+      "expected_network_failures": false
+    },
+    {
+      "case": "existing-v3-state-migration",
+      "page_errors": [],
+      "http_errors": [],
+      "failed_requests": [],
+      "console_errors": [],
+      "expected_network_failures": false
+    },
+    {
+      "case": "tyre-failure-five-part-rollback",
+      "page_errors": [],
+      "http_errors": [],
+      "failed_requests": [
+        {
+          "url": "http://127.0.0.1:4173/assets/upgrades/sti/tyre-track.png",
+          "failure": "net::ERR_FAILED"
+        }
+      ],
+      "console_errors": [
+        "Failed to load resource: net::ERR_FAILED"
+      ],
+      "expected_network_failures": true
+    },
+    {
+      "case": "body-failure-five-part-rollback",
+      "page_errors": [],
+      "http_errors": [],
+      "failed_requests": [
+        {
+          "url": "http://127.0.0.1:4173/assets/upgrades/sti/body-track.png",
+          "failure": "net::ERR_FAILED"
+        }
+      ],
+      "console_errors": [
+        "Failed to load resource: net::ERR_FAILED"
+      ],
+      "expected_network_failures": true
+    },
+    {
+      "case": "out-of-order-wheel-image",
+      "page_errors": [],
+      "http_errors": [],
+      "failed_requests": [],
+      "console_errors": [],
+      "expected_network_failures": false
+    },
+    {
+      "case": "cancel-delayed-wheel",
+      "page_errors": [],
+      "http_errors": [],
+      "failed_requests": [],
+      "console_errors": [],
+      "expected_network_failures": false
+    },
+    {
+      "case": "out-of-order-vehicle-image",
+      "page_errors": [],
+      "http_errors": [],
+      "failed_requests": [],
+      "console_errors": [],
+      "expected_network_failures": false
+    }
+  ],
+  "visual_acceptance": "Contact sheets require independent visual review; passing tests do not prove artistic fidelity."
+}
