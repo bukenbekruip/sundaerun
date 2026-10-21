@@ -7,7 +7,7 @@
     <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
     <meta
       name="description"
-      content="Build your look in the Sundae Run Garage. Customise an STI, Porsche 911 GT3 RS or Toyota 86 with wheels, tyres, paint, suspension and body kits."
+      content="Build and show your car in Sundae Run Garage. Customise five models with wheels, paint, tyres, suspension, body kits, interiors, performance upgrades and engine sounds."
     />
     <title>Sundae Run Garage — Customisation</title>
   </head>
@@ -166,6 +166,42 @@
               <circle cx="8" cy="20" r="3" />
               <circle cx="21" cy="20" r="3" /></svg
             ><span>Body kit</span>
+          </button>
+          <button
+            type="button"
+            class="category"
+            data-garage-section="interior"
+            aria-haspopup="dialog"
+          >
+            <svg viewBox="0 0 28 28" aria-hidden="true">
+              <path
+                d="M9 4h5l2 11h6v5H8L6 7q0-3 3-3Zm0 16-2 5m12-5 2 5M5 24h18"
+              /></svg
+            ><span>Interior</span>
+          </button>
+          <button
+            type="button"
+            class="category"
+            data-garage-section="performance"
+            aria-haspopup="dialog"
+          >
+            <svg viewBox="0 0 28 28" aria-hidden="true">
+              <path
+                d="M5 10h4V6h10v4h5v12H8l-3-5Zm7-7h6M2 12v7m22-6h2v6h-2m-9-8-3 6h5l-3 6"
+              /></svg
+            ><span>Performance</span>
+          </button>
+          <button
+            type="button"
+            class="category"
+            data-garage-section="sound"
+            aria-haspopup="dialog"
+          >
+            <svg viewBox="0 0 28 28" aria-hidden="true">
+              <path
+                d="M3 10h5l6-5v18l-6-5H3Zm15-1q5 5 0 10m4-14q9 9 0 18"
+              /></svg
+            ><span>Sound</span><small data-engine-nav-status>Off</small>
           </button>
         </nav>
 
@@ -409,14 +445,17 @@
         <button type="button" data-club-tab="interior" aria-pressed="false">
           Interior
         </button>
+        <button type="button" data-club-tab="performance" aria-pressed="false">
+          Performance
+        </button>
+        <button type="button" data-club-tab="sound" aria-pressed="false">
+          Engine sound
+        </button>
         <button type="button" data-club-tab="builds" aria-pressed="true">
           My builds
         </button>
         <button type="button" data-club-tab="briefs" aria-pressed="false">
           Build briefs
-        </button>
-        <button type="button" data-club-tab="performance" aria-pressed="false">
-          Performance
         </button>
         <button type="button" data-club-tab="import" aria-pressed="false">
           Import a build

@@ -449,3 +449,20 @@
   font-size: 13px;
   line-height: 1.5;
 }
+
+/* Keep the section name and exit reachable while browsing long parts lists. */
+.club-modal > .modal-heading {
+  position: sticky;
+  top: -28px;
+  z-index: 4;
+  margin: -28px -28px 0;
+  padding: 28px;
+  background: #202b22;
+}
+@media (max-width: 700px) {
+  .club-modal > .modal-heading {
+    top: -18px;
+    margin: -18px -18px 0;
+    padding: 18px;
+  }
+}

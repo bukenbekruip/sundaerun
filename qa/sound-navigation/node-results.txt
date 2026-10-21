@@ -1,0 +1,56 @@
+
+> sundae-run-sti-customisation@1.0.0 test
+> node --test tests/*.test.js
+
+✔ default quote is itemised game credits and previewing is free (5.446259ms)
+✔ Apply charges the default 3700 once and repeats cannot charge again (1.031859ms)
+✔ owned parts can be fitted again for free while only new parts are charged (1.808488ms)
+✔ insufficient funds leave the applied look, purchases and balance unchanged (2.442437ms)
+✔ cancel restores applied look and reload does not fit an uncommitted preview (1.902439ms)
+✔ malformed or unsupported stored data recovers to a usable initial state (3.178732ms)
+✔ unknown product IDs and categories cannot enter preview state (1.04275ms)
+✔ concept products have no fabricated merchant destinations or fitment claims (0.279718ms)
+✔ merchant links require HTTPS, expose sponsorship, and keep real prices separate (0.881563ms)
+✔ only a registered vehicle/wheel render enables the supported paint renderer (0.888002ms)
+✔ catalogue exposes the five requested vehicles, six concepts and twelve paints (0.472827ms)
+✔ each car remembers its own fitted build and discards unfinished previews when switching (2.22392ms)
+✔ ownership belongs to each vehicle while the credit balance is shared (3.622ms)
+✔ canonical garage persistence restores all fitted cars without saving a free preview (2.621637ms)
+✔ v2 migration keeps old credits, STI purchases and fitted parts without transferring ownership to new cars (1.027579ms)
+✔ derived active-car aliases cannot overwrite the garage's saved source of truth (0.691273ms)
+✔ upgrade catalogue provides three options per category with included baselines (0.885356ms)
+✔ all five parts charge once, while returning to included parts is free and changes the fitted build (0.803983ms)
+✔ upgrade ownership is typed and per car; insufficient funds never partially apply a build (1.907806ms)
+✔ v3 migration retains every car and credit balance and supplies free included upgrades (2.145446ms)
+✔ five-part previews cancel, switch and reload without changing fitted upgrades or credits (0.896506ms)
+✔ upgrade previews require the correct vehicle assets and verified suspension support (0.368638ms)
+✔ a named build snapshots fitted appearance and performance, never an unpaid preview (10.578361ms)
+✔ repeat saves rename a build without farming collection entries; removal is independent of rewards (2.208448ms)
+✔ brief rewards are atomic, one-time per car and persist above the starting balance (3.568619ms)
+✔ performance parts charge once per vehicle, refit free, reject insufficient funds and preserve exterior previews (1.317883ms)
+✔ a daily build needs fitted performance and matching saved exterior, not current previews (2.643611ms)
+✔ build codes round-trip Unicode safely and transfer neither ownership nor reward state (1.931264ms)
+✔ club normalisation safely migrates older saves and excludes unknown receipts, malformed builds and duplicate rewards (1.82089ms)
+✔ all five voices produce distinct bounded, centred and repeatable engine loops (365.797635ms)
+✔ every performance recipe changes its audible parameters without changing its car voice (1.055176ms)
+✔ tunes change the rev envelope; RPM stays bounded and settles back to idle (0.974221ms)
+✔ unknown sound recipes safely recover to an included voice and stock components (0.829734ms)
+✔ every model has two distinct, real, checksummed cabin assets (18.97985ms)
+✔ legacy three-car saves retain credits, builds and earned rewards while new cars/cabins start unowned (5.549469ms)
+✔ cabin fitting is an atomic per-car purchase and owned/stock refits are free (1.820736ms)
+✔ saved cabins are immutable recipes, count for briefs and survive serialisation (4.226798ms)
+✔ old SR1 recipes default to stock; new codes list a cabin without granting ownership (1.522264ms)
+✔ enabled car variants resolve to the reviewed transparent artwork (94.792735ms)
+✔ each complete car has one uniform transform and all 360 baseline appearances have artwork (4.008881ms)
+✔ all twenty upgrades retain reviewed bytes, actual transparency and registered camera bounds (1165.37126ms)
+✔ all 9,720 five-car exterior configurations have explicit preview support (103.357035ms)
+✔ original reference and source artwork remains byte-identical to the handover (28.37094ms)
+✔ portable scanner accepts import property names while rejecting every actual module-loading syntax (11.406088ms)
+ℹ tests 44
+ℹ suites 0
+ℹ pass 44
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1631.998865

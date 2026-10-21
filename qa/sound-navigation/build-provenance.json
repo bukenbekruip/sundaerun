@@ -1,0 +1,24 @@
+{
+  "stage": "Source frozen before final native/portable browser suites",
+  "source_sha256": {
+    "app.js": "c8218aeaee1bdbb1c3728ec290a047a78640a8e803d5097e3334a05ef4b3296c",
+    "index.html": "eb451569f78d79bb1beb50f1ed670671e93cfec9ae8fba6c87da508f54ad490b",
+    "src/catalogue.js": "1b1aa3db4ebdd24a886c93b77a23e5e0dd38781f3845b3c88cce4fadfbb24552",
+    "src/club-ui.js": "5b07518d1bf4e0110ba452e52024239e28d253d64a1ad4a2aab5d5caa163e138",
+    "src/club.css": "52af7138fbfa7c3497af6ab6e042f4ec367c54602b161f143ed9564459b2b52d",
+    "src/club.js": "c843ee473de4c926ce8de96a16ff0caeda8298e07f0e9c21850df2af62234ece",
+    "src/engine-audio.js": "50e5ac63eac802a4e2a6691894345b9ac8a0e55f99959241b2962b2ed195fcc9",
+    "src/engine-voices.js": "38e0e64f533c3ef05cdcfcecdd60bcbe6c4b721bd617ce6d9f70c48db85bfb55",
+    "src/interiors.js": "d4b81568b53c4e1c67f625539b275f4652c709cc32522b6ea779a25b46e7afbb",
+    "src/paint-renderer.js": "25cb41ec347395675167221d70c5fba816dad81343615282a20de49b8a38cfd9",
+    "src/photography.js": "c428a4e647df5ff73d0f2c387e4df20f107f0ee4500c0543c4917d9b29b9265d",
+    "src/scene.js": "fece506074a508c99d400d0129ced8ebec6a0f6ce7db6aa176c1db93acc00fb5",
+    "src/sound-ui.js": "808c5236eb274f1b63cbaf34f54a94de939c17877b7db90658c0422df9c4fc8d",
+    "src/sound.css": "c239b3dca70aa72bc5704455c3f7aeafeb2ffd5fcd08bc11a7c8c15f37b30ac0",
+    "src/state.js": "e87b1d7ef89dd54661cd04745d5bfa963e93a9c45c6550453b4625abfe55ab53",
+    "src/ui.css": "2b7b3a55295e93116ce267ad9a041bc2d6982e2fb3df15a419f909fb78c8f290",
+    "src/upgrade-renderer.js": "b40c5b0f0ea12d37224b375d28f85dda934f0896fc7c0afa61bed06cb3a90a52",
+    "scripts/build-standalone.mjs": "b2229d325d504606e53f9ce901f5a3229cba85a507cce680ad8e6940a33254d5"
+  },
+  "portable_sha256": "c4c016e1ee5ffc61092dac9fa5f3cdb7c97537b0bf6649ce30a3d87e1752ce7a"
+}

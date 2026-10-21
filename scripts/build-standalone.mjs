@@ -230,7 +230,8 @@ function inspectJavaScript(source, label) {
     if (!/\s/.test(character)) previous = character;
     index += 1;
   }
-  if (/(?:^|[^\w$.])import(?![\w$])\s*(?!\s*\.)/.test(masked))
+  // A property named import (e.g. { import: "Import a build" }) is not a module load.
+  if (/(?:^|[^\w$.])import(?![\w$])\s*(?!\s*[.:])/.test(masked))
     fail(
       `unresolved module import in ${label}; build a single self-contained entry first`,
     );

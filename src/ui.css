@@ -2633,3 +2633,59 @@ p {
     height: calc(100% - 44px);
   }
 }
+
+/* Every modification family is visible from the main garage. */
+@media (min-width: 1100px) {
+  .category-menu {
+    height: auto;
+    gap: 5px;
+    padding: 12px 10px;
+  }
+  .menu-heading {
+    height: 27px;
+    font-size: 14px;
+  }
+  .category-menu .category {
+    height: 45px;
+    gap: 12px;
+  }
+  .category-menu .category svg {
+    width: 27px;
+    height: 27px;
+  }
+  .category-menu .category > span {
+    font-size: 16px;
+  }
+}
+@media (max-width: 1099px) {
+  .category-menu {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 7px;
+    overflow: visible;
+    padding: 10px;
+  }
+  .category-menu .category {
+    width: 100%;
+    min-width: 0;
+    min-height: 64px;
+    height: auto;
+    padding: 7px 2px;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    text-align: center;
+  }
+  .category-menu .category > span {
+    font-size: 11px;
+    line-height: 1.2;
+  }
+  .category-menu .category > small {
+    position: absolute;
+    top: 3px;
+    right: 3px;
+    margin: 0;
+    padding: 2px;
+    font-size: 7px;
+  }
+}

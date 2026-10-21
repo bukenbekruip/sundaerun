@@ -6,7 +6,7 @@ The player chooses a car, customises it, saves a named build, completes a themed
 
 ## Current delivery
 
-The local build-and-show loop, all five confirmed cars, model-specific Original/Club cabins and static brand-website integration are now implemented. The game remains at the existing root URL; `website/play.html` launches it. Real retailer offers, clothing checkout, online profiles and public galleries remain future work. Interiors currently use two coordinated packages per car; independent accessory selections and right-hand-drive artwork are not implemented.
+The local build-and-show loop, all five confirmed cars, model-specific Original/Club cabins and static brand-website integration are now implemented. The user also requested per-car engine sounds that respond to upgrades, with directly accessible Interior and Performance menus. These use offline Web Audio synthesis, free auditions, explicit start/stop and a phone menu showing all eight modification families. Authentic licensed recordings may replace the synthesised concepts later. The game remains at the existing root URL; `website/play.html` launches it. Real retailer offers, clothing checkout, online profiles and public galleries remain future work. Interiors currently use two coordinated packages per car; independent accessory selections and right-hand-drive artwork are not implemented.
 
 ## Model roster
 

@@ -10,19 +10,22 @@ Build and show five enthusiast cars in the warm Sundae Run workshop: **Subaru WR
 - [Sundae Run website, culture and clothing](https://bukenbekruip.github.io/sundaerun/website/)
 - **[Download the offline game ZIP](https://github.com/bukenbekruip/sundaerun/raw/refs/heads/main/downloads/Sundae-Run-Playable.zip)**
 
-Extract the ZIP completely, then open `OPEN-SUNDAE-RUN.html` in Chrome or Edge. No Node.js installation is needed. If clicking the download does nothing, open [the GitHub file page](https://github.com/bukenbekruip/sundaerun/blob/main/downloads/Sundae-Run-Playable.zip) and choose **Download raw file**. Sign in with repository access if prompted. The exact verified download and its hashes are recorded in `qa/expansion/release.json`.
+Extract the ZIP completely, then open `OPEN-SUNDAE-RUN.html` in Chrome or Edge. No Node.js installation is needed. If clicking the download does nothing, open [the GitHub file page](https://github.com/bukenbekruip/sundaerun/blob/main/downloads/Sundae-Run-Playable.zip) and choose **Download raw file**. Sign in with repository access if prompted. The exact verified download and its hashes are recorded in `qa/sound-navigation/release.json`.
 
-The Pages workflow deploys pushes to `main`; a push alone does not prove the deployment finished. Deployment run `39595381851` succeeded for the integrated website and five-car game. Live verification on 21 October 2026 passed 70 website/game checks at desktop and mobile viewport sizes; all website files and game entry/bundles matched the production build. See the progress record for scope and evidence.
+The Pages workflow deploys pushes to `main`; a push alone does not prove the deployment finished. Deployment run `39595381851` succeeded for the integrated website and five-car game. Live verification on 21 October 2026 passed 70 website/game checks at desktop and mobile viewport sizes; all website files and game entry/bundles matched the production build. See the progress record for scope and evidence. That verification predates the engine-sound update; this release has separate local production and portable evidence below.
 
 ## Build Club
 
-Open **BUILD CLUB · Build / Show / Earn** in the garage header:
+Use the main garage menu for **Interior**, **Performance** or **Sound**. All eight modification categories are visible on phones in two rows. **BUILD CLUB · Build / Show / Earn** in the header also opens your saved builds and briefs:
 
 - **Interior:** preview the model-specific Original cabin or Sundae Club cabin. Club costs 1,800 fictional credits per car; owned cabin refits are free. Download a PNG of the fitted cabin.
 - **My builds:** save up to 24 named fitted snapshots, make exterior PNG show cards and share SR1 codes or JSON recipes.
 - **Build briefs:** complete seven one-time briefs per car for credits and XP, including a fitted Club cabin build. Save the fitted build before collecting its reward.
-- **Performance:** fit a panel filter/intake, exhaust and tune using game credits. Ratings are fictional progression values, not measured physical gains or engine audio.
+- **Performance:** fit a panel filter/intake, exhaust and tune using game credits. Use **Listen · free** to audition any part without buying it. Ratings are fictional progression values, not measured physical gains.
+- **Engine sound:** each of the five cars has its own synthesised voice. Intake and exhaust change tone; tunes change rev response and the game rev limit. Use Start/Stop, Hold to rev, throttle and volume controls. Sound starts only on request and stops when the page is hidden. These are authored sound concepts, not authentic recordings or verified factory specifications.
 - **Import:** inspect a friend's build code and preview its exterior. Imports do not grant purchases, money, rewards, cabin ownership or performance parts.
+
+Free sound auditions last about four seconds and return to the fitted sound. If the engine was off beforehand, the audition stops it afterward. Leaving the section cancels the audition. Volume is remembered separately; sound never autoplays after reload.
 
 Every car keeps its own exterior parts, cabin and performance purchases. The wallet is shared. Previews are free; Apply charges only unowned selected exterior parts. The first default wheel-and-paint purchase is 3,700 credits from the initial 48,320. Switching cars cancels unfinished exterior previews. Existing version 2/3/4 saves retain valid purchases, credits and progress; newly added cars start unowned with included baseline parts and an Original cabin.
 
@@ -53,11 +56,13 @@ npm run preview -- --host 127.0.0.1 --port 4173
 
 Normal web output is `dist/` after `npm run build`. `npm run build:standalone` also creates the single-file `dist/OPEN-SUNDAE-RUN.html`, embedding 68 runtime images and the game font. New portable artwork uses compact WebP distribution copies to stay within the unchanged 96 MiB budget. Source PNGs and original reference images are preserved. The legacy `OPEN-THIS-GAME.html` is historical diagnostic material.
 
-`.github/workflows/deploy-pages.yml` tests, builds and deploys `dist/` on `main` pushes or manual workflow runs. Select **GitHub Actions** in repository **Settings → Pages**. Keep `base: './'` in `vite.config.js` so the game and website work inside the `/sundaerun/` project path. No backend, app secrets or external fonts are required.
+`.github/workflows/deploy-pages.yml` tests, builds and deploys `dist/` on `main` pushes or manual workflow runs. Select **GitHub Actions** in repository **Settings → Pages**. Keep `base: './'` in `vite.config.js` so the game and website work inside the `/sundaerun/` project path. No backend, app secrets, external fonts or downloaded audio files are required. Web Audio synthesis works in the portable game too.
 
 ## Verification and artwork
 
-Node tests cover catalogue/state, save migration, ownership, cabin recipes/rewards and asset geometry. Browser scripts cover native controls, body-only paint pixels, planted wheel/contact probes, cabin transactions and PNG downloads, responsive layouts, missing-image recovery, offline networking and the website/game roundtrip. Current evidence is in `qa/expansion/`; historical evidence remains in `qa/current/`, `qa/expanded/`, `qa/upgrades/` and `qa/club/`.
+Node tests cover catalogue/state, save migration, ownership, cabin recipes/rewards and asset geometry. Browser scripts cover native controls, body-only paint pixels, planted wheel/contact probes, cabin transactions and PNG downloads, responsive layouts, missing-image recovery, offline networking and the website/game roundtrip. Current sound/navigation evidence is in `qa/sound-navigation/`; five-car artwork evidence is in `qa/expansion/`; historical evidence remains in `qa/current/`, `qa/expanded/`, `qa/upgrades/` and `qa/club/`.
+
+Run `python tests/sound-browser.py` against the production preview; add `--portable` to test the single file with all extra requests blocked. `python tests/engine-offline.py` uses the Vite dev server to render the production audio graph and save comparison audio.
 
 Read [the progress record](docs/PROGRESS_AND_TEST_RESULTS.md), [art pipeline](docs/ART_PIPELINE.md) and [agreed expansion plan](docs/BUILD_AND_SHOW_PLAN.md). Browser evidence for the portable artifact uses HTTP delivery with every additional request blocked. Managed Chromium blocks direct `file://` navigation, so that protocol is not claimed as tested here.
 

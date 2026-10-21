@@ -1,0 +1,61 @@
+PASS No AudioContext or autoplay on page load
+PASS Start engine produces a real non-zero audio signal
+PASS Holding Rev raises the engine RPM
+PASS Pointer release returns toward idle
+PASS Keyboard Space operates Hold to rev
+PASS Keyboard release and pointer cancellation release the throttle
+PASS Volume zero mutes the actual output signal
+PASS Throttle slider produces a sustained rev
+PASS Window blur releases held and sustained throttle
+PASS sti: changing cars updates the running voice without autoplay or a second AudioContext
+PASS porsche: changing cars updates the running voice without autoplay or a second AudioContext
+PASS gt86: changing cars updates the running voice without autoplay or a second AudioContext
+PASS m3: changing cars updates the running voice without autoplay or a second AudioContext
+PASS golf: changing cars updates the running voice without autoplay or a second AudioContext
+PASS All five cars share one AudioContext
+PASS Performance opens directly with Intake, Exhaust and Calibration groups
+PASS Audio controls are expandable so parts are easy to find
+PASS Listening to an unowned exhaust changes no purchases, fitted parts or credits
+PASS Free audition automatically returns to the fitted sound when the engine was already running
+PASS An audition started with the engine off stops automatically and remains free
+PASS Changing sections cancels an unpaid audition and restores fitted sound
+PASS filter: Fit charges once and installs the selected upgrade
+PASS exhaust: Fit charges once and installs the selected upgrade
+PASS tune: Fit charges once and installs the selected upgrade
+PASS Fitting all three upgrades updates the live engine recipe
+PASS Performance ownership and audio recipes stay separate for each car
+PASS Hiding the page stops the actual audio output
+PASS Reload restores progress but never starts sound automatically
+PASS Volume, per-car performance and exact credit balance survive reload
+PASS 320px: all eight modification categories fit without horizontal scrolling
+PASS 320px: interior opens in one click
+PASS 320px: performance opens in one click
+PASS 320px: sound opens in one click
+PASS 320px: all exterior categories remain operable
+PASS 360px: all eight modification categories fit without horizontal scrolling
+PASS 360px: interior opens in one click
+PASS 360px: performance opens in one click
+PASS 360px: sound opens in one click
+PASS 360px: all exterior categories remain operable
+PASS 390px: all eight modification categories fit without horizontal scrolling
+PASS 390px: interior opens in one click
+PASS 390px: performance opens in one click
+PASS 390px: sound opens in one click
+PASS 390px: all exterior categories remain operable
+PASS 768px: all eight modification categories fit without horizontal scrolling
+PASS 768px: interior opens in one click
+PASS 768px: performance opens in one click
+PASS 768px: sound opens in one click
+PASS 768px: all exterior categories remain operable
+PASS 1366px: all eight modification categories fit without horizontal scrolling
+PASS 1366px: interior opens in one click
+PASS 1366px: performance opens in one click
+PASS 1366px: sound opens in one click
+PASS 1920px: all eight modification categories fit without horizontal scrolling
+PASS 1920px: interior opens in one click
+PASS 1920px: performance opens in one click
+PASS 1920px: sound opens in one click
+PASS Closing while audio permission resumes cannot start a cancelled audition
+PASS Unsupported audio browsers show a clear message without breaking the garage
+PASS No uncaught errors, console errors or missing requests
+PASS No extra network requests in portable mode

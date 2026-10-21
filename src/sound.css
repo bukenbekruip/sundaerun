@@ -1,0 +1,137 @@
+.engine-panel {
+  padding: 22px;
+  border: 1px solid #bad4ab38;
+  border-radius: 16px;
+  background: linear-gradient(130deg, #29402b, #18261c);
+  margin-bottom: 24px;
+}
+.engine-heading {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 8px 24px;
+}
+.engine-heading h3 {
+  margin: 0;
+}
+.engine-character {
+  color: #c4dab8;
+  font-size: 13px;
+  line-height: 1.5;
+}
+.engine-note,
+.engine-spec {
+  font-size: 13px;
+  line-height: 1.65;
+  color: #ccd2c3;
+  margin: 12px 0;
+}
+.engine-spec {
+  color: #ded5b6;
+}
+.engine-actions {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-block: 18px;
+}
+.engine-actions button {
+  min-height: 46px;
+}
+.engine-rev {
+  touch-action: none;
+  user-select: none;
+  -webkit-user-select: none;
+}
+.engine-rev:active {
+  background: #465d39;
+}
+.engine-rpm {
+  font-variant-numeric: tabular-nums;
+  font-size: 22px;
+  font-weight: 700;
+  color: #e7d399;
+  margin-left: auto;
+}
+.engine-sliders {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+.engine-slider {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 8px;
+  font-size: 13px;
+}
+.engine-slider input {
+  grid-row: 2;
+  grid-column: 1 / -1;
+  width: 100%;
+  min-width: 0;
+  height: 30px;
+  accent-color: #c6d9b5;
+}
+.engine-slider-value {
+  grid-row: 1;
+  grid-column: 2;
+  font-variant-numeric: tabular-nums;
+}
+.engine-status {
+  font-size: 13px;
+  color: #c5d6ba;
+  line-height: 1.6;
+  margin-top: 14px;
+  min-height: 21px;
+}
+.engine-compact {
+  padding: 18px;
+}
+.engine-compact .engine-note {
+  font-size: 12px;
+}
+.club-performance-part .club-card-actions {
+  margin-top: 10px;
+}
+.club-performance-part [data-listen-kind] {
+  color: #d5e7c9;
+}
+@media (max-width: 600px) {
+  .engine-panel {
+    padding: 15px;
+  }
+  .engine-sliders {
+    gap: 16px;
+  }
+  .engine-rpm {
+    font-size: 19px;
+  }
+  .engine-actions {
+    gap: 8px;
+  }
+  .engine-actions button {
+    font-size: 12px;
+    padding-inline: 12px;
+  }
+}
+.performance-sound-details {
+  border: 1px solid #bad4ab38;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+.performance-sound-details > summary {
+  cursor: pointer;
+  padding: 15px;
+  font-size: 14px;
+  color: #d5e7c9;
+}
+.performance-sound-details .engine-panel {
+  border: 0;
+  border-radius: 0 0 12px 12px;
+  margin: 0;
+}
+.engine-compact .engine-note,
+.engine-compact .engine-character {
+  display: none;
+}

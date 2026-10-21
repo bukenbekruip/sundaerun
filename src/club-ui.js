@@ -1,4 +1,5 @@
 import "./club.css";
+import { mountSoundControls } from "./sound-ui.js";
 import { getProduct, getVehicle, selectionKinds } from "./catalogue.js";
 import { getQuote, selectPreview, selectVehicle } from "./state.js";
 import {
@@ -49,7 +50,7 @@ const download = (url, name) => {
   a.click();
 };
 
-export function mountClub({ getState, setState, notify, sceneReady }) {
+export function mountClub({ getState, setState, notify, sceneReady, engine }) {
   const dialog = document.querySelector("#club-dialog"),
     content = document.querySelector("#club-content");
   let tab = "builds",
@@ -57,6 +58,7 @@ export function mountClub({ getState, setState, notify, sceneReady }) {
     deleted = null,
     imported = null;
   let interiorPreview = null;
+  let disposeSoundControls = () => {};
   const photoCache = new Map();
   const status = (text) => {
     document.querySelector("#club-status").textContent = text;
@@ -71,6 +73,14 @@ export function mountClub({ getState, setState, notify, sceneReady }) {
       p = clubProgress(s.club),
       car = getVehicle(s.vehicle);
     document.querySelector("#club-car-name").textContent = car.name;
+    document.querySelector("#club-title").textContent = {
+      interior: "Interior",
+      performance: "Performance",
+      sound: "Engine sound",
+      builds: "My builds",
+      briefs: "Build briefs",
+      import: "Import a build",
+    }[tab];
     document.querySelector("#club-wallet").textContent = money(s.balance);
     document.querySelector("#club-progress").textContent =
       `Level ${p.level} · ${p.completed} briefs completed · ${p.buildCount}/${MAX_SAVED_BUILDS} builds`;
@@ -279,6 +289,14 @@ export function mountClub({ getState, setState, notify, sceneReady }) {
         "Small changes, personal character. Fit a filter, exhaust or tune using game credits. These selections count toward your saved build and build briefs.",
       ),
     );
+    const soundDetails = el("details", "performance-sound-details");
+    soundDetails.append(
+      el("summary", "", "Engine controls · Start, rev & volume"),
+    );
+    content.append(soundDetails);
+    disposeSoundControls = mountSoundControls(soundDetails, engine, {
+      compact: true,
+    });
     const ratings = el("div", "club-ratings");
     for (const [name, value] of Object.entries(
       performanceRatings(car.fitted),
@@ -298,7 +316,7 @@ export function mountClub({ getState, setState, notify, sceneReady }) {
       el(
         "p",
         "club-fineprint",
-        "Game ratings only. These are not horsepower figures, measured gains, installation advice or audio previews.",
+        "Game ratings are fictional, not measured gains or installation advice. Listen is a free synthesised preview; only Fit uses credits.",
       ),
     );
     const grid = el("div", "club-performance-grid");
@@ -349,7 +367,16 @@ export function mountClub({ getState, setState, notify, sceneReady }) {
         fit.dataset.performanceKind = kind;
         fit.dataset.performancePart = part.id;
         fit.disabled = fitted || price > s.balance;
-        card.append(fit);
+        const listen = button("Listen · free", () => {
+          soundDetails.open = true;
+          engine.previewPart(kind, part.id);
+          soundDetails.scrollIntoView({ block: "nearest", behavior: "smooth" });
+        });
+        listen.dataset.listenKind = kind;
+        listen.dataset.listenPart = part.id;
+        const actions = el("div", "club-card-actions");
+        actions.append(fit, listen);
+        card.append(actions);
         family.append(card);
       }
       grid.append(family);
@@ -674,6 +701,8 @@ export function mountClub({ getState, setState, notify, sceneReady }) {
   }
 
   function render() {
+    disposeSoundControls();
+    disposeSoundControls = () => {};
     ++photoRequest;
     summary();
     content.replaceChildren();
@@ -681,15 +710,19 @@ export function mountClub({ getState, setState, notify, sceneReady }) {
     else if (tab === "briefs") renderChallenges();
     else if (tab === "performance") renderPerformance();
     else if (tab === "interior") renderInterior();
+    else if (tab === "sound")
+      disposeSoundControls = mountSoundControls(content, engine);
     else renderImport();
   }
   for (const b of dialog.querySelectorAll("[data-club-tab]"))
     b.addEventListener("click", () => {
+      engine.cancelPreview();
       tab = b.dataset.clubTab;
       deleted = null;
       interiorPreview = null;
       status("");
       render();
+      dialog.scrollTop = 0;
     });
   const region = document.querySelector("#club-shopping-region");
   for (const [value, name] of SHOPPING_REGIONS) {
@@ -707,16 +740,20 @@ export function mountClub({ getState, setState, notify, sceneReady }) {
     );
   });
   dialog.addEventListener("close", () => {
+    disposeSoundControls();
+    engine.cancelPreview();
     ++photoRequest;
   });
   return {
     open(nextTab = "builds") {
+      engine.cancelPreview();
       tab = nextTab;
       interiorPreview = null;
       region.value = normaliseClub(getState().club).region;
       status("");
       render();
       dialog.showModal();
+      dialog.scrollTop = 0;
     },
     refresh() {
       const p = clubProgress(getState().club),

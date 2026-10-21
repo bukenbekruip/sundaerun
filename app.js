@@ -36,6 +36,7 @@ import {
 import { renderCar } from "./src/paint-renderer.js";
 import { renderUpgrades } from "./src/upgrade-renderer.js";
 import { mountClub } from "./src/club-ui.js";
+import { createEngineAudio } from "./src/engine-audio.js";
 
 if (globalThis.__SUNDAE_INLINE_ASSETS__) {
   document.querySelector("#brand-website").href =
@@ -54,6 +55,11 @@ try {
   state = createInitialState();
   storageAvailable = false;
 }
+const engine = createEngineAudio({ getState: () => state });
+engine.subscribe((s) => {
+  const badge = $("[data-engine-nav-status]");
+  if (badge) badge.textContent = s.running ? "On" : "Off";
+});
 const selectionFor = (preview = state.preview) => ({
   ...preview,
   vehicle: state.vehicle,
@@ -538,6 +544,7 @@ function updateCheckout() {
   clubUI?.refresh();
 }
 function render() {
+  engine.syncState(state);
   updateControls();
   updateCheckout();
   showCar(selectionFor());
@@ -754,6 +761,7 @@ $("#scene-retry").addEventListener("click", () => {
   showCar(selectionFor());
 });
 clubUI = mountClub({
+  engine,
   getState: () => state,
   setState: (next) => {
     state = next;
@@ -764,4 +772,9 @@ clubUI = mountClub({
     !artLoading && garageReady && currentArt === getVariantKey(selectionFor()),
 });
 $("#club-open").addEventListener("click", () => clubUI.open());
+for (const button of $$("[data-garage-section]")) {
+  button.addEventListener("click", () =>
+    clubUI.open(button.dataset.garageSection),
+  );
+}
 render();

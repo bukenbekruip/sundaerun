@@ -1,0 +1,84 @@
+RUN five-car-cabin-transactions-snapshots-rewards-exports
+PASS sti: starts with its own original cabin
+PASS sti: cabin preview is free
+PASS sti: restore returns to fitted original
+PASS sti: original snapshot records stock cabin
+PASS sti: fitting charges exactly 1800 once
+PASS sti: repeated fit cannot double charge
+PASS sti: included and owned cabin refits are free
+PASS sti: fitted cabin card has full export dimensions
+PASS sti: card uses fitted Club cabin while original is only previewed
+PASS sti: cabin download is an actual PNG
+PASS sti: new cabin snapshot preserves original saved build
+PASS sti: seven build briefs available
+PASS sti: first build and cabin brief award exact one-time rewards
+PASS porsche: starts with its own original cabin
+PASS porsche: cabin preview is free
+PASS porsche: restore returns to fitted original
+PASS porsche: original snapshot records stock cabin
+PASS porsche: fitting charges exactly 1800 once
+PASS porsche: repeated fit cannot double charge
+PASS porsche: included and owned cabin refits are free
+PASS porsche: fitted cabin card has full export dimensions
+PASS porsche: card uses fitted Club cabin while original is only previewed
+PASS porsche: cabin download is an actual PNG
+PASS porsche: new cabin snapshot preserves original saved build
+PASS porsche: seven build briefs available
+PASS porsche: first build and cabin brief award exact one-time rewards
+PASS gt86: starts with its own original cabin
+PASS gt86: cabin preview is free
+PASS gt86: restore returns to fitted original
+PASS gt86: original snapshot records stock cabin
+PASS gt86: fitting charges exactly 1800 once
+PASS gt86: repeated fit cannot double charge
+PASS gt86: included and owned cabin refits are free
+PASS gt86: fitted cabin card has full export dimensions
+PASS gt86: card uses fitted Club cabin while original is only previewed
+PASS gt86: cabin download is an actual PNG
+PASS gt86: new cabin snapshot preserves original saved build
+PASS gt86: seven build briefs available
+PASS gt86: first build and cabin brief award exact one-time rewards
+PASS m3: starts with its own original cabin
+PASS m3: cabin preview is free
+PASS m3: restore returns to fitted original
+PASS m3: original snapshot records stock cabin
+PASS m3: fitting charges exactly 1800 once
+PASS m3: repeated fit cannot double charge
+PASS m3: included and owned cabin refits are free
+PASS m3: fitted cabin card has full export dimensions
+PASS m3: card uses fitted Club cabin while original is only previewed
+PASS m3: cabin download is an actual PNG
+PASS m3: new cabin snapshot preserves original saved build
+PASS m3: seven build briefs available
+PASS m3: first build and cabin brief award exact one-time rewards
+PASS m3: exterior saved build renders actual show card
+PASS golf: starts with its own original cabin
+PASS golf: cabin preview is free
+PASS golf: restore returns to fitted original
+PASS golf: original snapshot records stock cabin
+PASS golf: fitting charges exactly 1800 once
+PASS golf: repeated fit cannot double charge
+PASS golf: included and owned cabin refits are free
+PASS golf: fitted cabin card has full export dimensions
+PASS golf: card uses fitted Club cabin while original is only previewed
+PASS golf: cabin download is an actual PNG
+PASS golf: new cabin snapshot preserves original saved build
+PASS golf: seven build briefs available
+PASS golf: first build and cabin brief award exact one-time rewards
+PASS golf: exterior saved build renders actual show card
+PASS All five cars retain purchases, ten snapshots and ten claimed rewards on reload
+PASS All five fitted cabins survive reload
+PASS No uncaught page errors
+PASS No HTTP errors
+PASS No extra portable network requests
+PASS No unexpected console errors
+{
+  "status": "passed",
+  "passed_checks": 73,
+  "cases": [
+    {
+      "name": "five-car-cabin-transactions-snapshots-rewards-exports",
+      "status": "passed"
+    }
+  ]
+}
