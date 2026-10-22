@@ -35,7 +35,9 @@ Cabins are left-hand-drive illustrated views with four coordinated packages per 
 
 The supplied website is integrated under `public/website/`, retaining its brand design and apparel artwork. Its Play page launches the existing root game, and Build Club links back to the website. Old jobs/staff/lifts descriptions have been replaced with the actual build-and-show loop and current game images. The original website intake and original game/reference art were preserved.
 
-The clothing collection is a preview without checkout. Community signup is a local demonstration; it sends no email or personal details to a service. The offline ZIP contains the game; its website link opens the hosted brand site when internet is available.
+The website uses the shirt collection’s stacked soft-serve/cherry identity. The clothing preview has **eight designs: two adult and six kids’ styles**, including the new girls’ edit (Cherry Club, Daisy Drive and Lilac Racers) and Mint Mini Crew. Collection jump links and full-size front/back artwork make the designs easy to browse on phones and desktop. Original apparel artwork is preserved; new sources and encoding fingerprints are recorded in `docs/WEBSITE_APPAREL_ART.json`.
+
+The clothing collection is a preview without checkout. Community signup is a local demonstration; it sends no email or personal details to a service. The offline ZIP contains the game; its website link opens the hosted brand site when internet is available. Website-only artwork changes do not rebuild the existing game ZIP.
 
 ## Run and build
 

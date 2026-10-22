@@ -59,3 +59,28 @@
 @media(max-width:460px){.hero-title{font-size:clamp(3rem,12vw,3.6rem)}}
 
 .link-arrow{display:inline-block;width:.85em;height:.85em;margin-left:.2em;vertical-align:-.02em;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+
+/* Shirt identity and the expanded clothing collection. */
+.brand{gap:12px;min-width:190px}
+.brand img{width:80px;height:80px;flex:none;object-fit:contain}
+.brand .brand-tagline{font-size:.59rem;letter-spacing:.1em;line-height:1.6;font-weight:800;color:#6f6761;border-left:1px solid var(--line);padding-left:12px}
+.footer-brand img{width:112px;height:112px;object-fit:contain;background:var(--cream);padding:8px;border-radius:20px}
+.footer-brand span{font-family:'Space Grotesk',sans-serif;font-size:.88rem;letter-spacing:.06em;line-height:1.5;font-weight:700}
+.page-hero img.brand-story-logo{height:390px;object-fit:contain;padding:28px;background:#fcebed}
+.collection-jumps{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin-top:26px}
+.collection-jumps a{display:inline-flex;align-items:center;gap:14px;border:1px solid #d8c7b8;border-radius:999px;padding:10px 18px;font-size:.84rem;font-weight:800;background:#fffaf1}
+.collection-jumps a:hover{background:#fcebed;border-color:#c54e5d}
+.collection-jumps span{font-size:.68rem;color:#9e414b}
+.girls-collection{background:linear-gradient(135deg,#fffaf1,#fcebed)}
+#girls,#kids,#adults{scroll-margin-top:128px}
+.kids-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+.kids-grid .product-info{display:block;padding:20px}
+.kids-grid .coming{display:inline-block;margin-top:16px}
+.product-art{display:block;position:relative}
+.product-art img{height:auto;aspect-ratio:1.5;object-fit:contain}
+.art-link{position:absolute;right:12px;bottom:12px;border-radius:99px;background:#fffaf1ed;color:var(--ink);font-size:.66rem;font-weight:800;padding:6px 10px;border:1px solid #d8c7b8}
+.product-art:hover .art-link{background:var(--yellow)}
+@media(max-width:1040px){.brand{min-width:170px;gap:8px}.brand .brand-tagline{font-size:.52rem;padding-left:8px}.kids-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:920px){.header-inner{justify-content:space-between}.header-action .btn{display:none}.menu-button{display:inline-flex}.nav{display:none;position:absolute;top:100%;left:0;right:0;background:#fff9f1;box-shadow:0 23px 40px #0002;padding:18px 25px 25px;align-items:stretch;gap:0;flex-direction:column}.nav.open{display:flex}.nav a{padding:13px 0;border-bottom:1px solid #e6dad0}.nav a.active:after,.nav a:hover:after{display:none}}
+@media(max-width:780px){.header-inner{justify-content:space-between}.brand{min-width:0}.brand img{width:68px;height:68px}.brand .brand-tagline{font-size:.55rem;padding-left:12px}.kids-grid{grid-template-columns:1fr}.page-hero img.brand-story-logo{height:300px}.collection-jumps a{padding:9px 13px;gap:9px;font-size:.78rem}#girls,#kids,#adults{scroll-margin-top:110px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}

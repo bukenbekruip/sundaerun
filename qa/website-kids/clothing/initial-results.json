@@ -1,0 +1,12 @@
+{
+  "checks": [
+    "320: eight collection designs",
+    "320: six kids styles including three in the girls\u2019 edit",
+    "320: each new design appears once"
+  ],
+  "page_errors": [],
+  "http_errors": [],
+  "console_errors": [],
+  "status": "failed",
+  "passed_checks": 3
+}

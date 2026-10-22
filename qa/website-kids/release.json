@@ -1,0 +1,65 @@
+{
+  "date": "2026-10-22",
+  "scope": "Website shirt identity and eight-design collection; game and existing portable download unchanged",
+  "status": "passed",
+  "node_tests": 48,
+  "browser_reports": {
+    "qa/website-kids/clothing/clothing-results.json": {
+      "checks": 65,
+      "sha256": "642c4bdc8145cd148f7291a5837500605b0a7a7b18c4c2277e4ba98a47b17531"
+    },
+    "qa/website-kids/website/website-results.json": {
+      "checks": 70,
+      "sha256": "4cfdf92e4889bd0cd84db2c3e074af531712eaff0183b173ed7abd868d0d0adc"
+    }
+  },
+  "source_website": {
+    "public/website/about.html": "e0d7156aea549556ee1834975b1783fa383f8c566bbc8cf64cabe833762fdfb9",
+    "public/website/assets/cabin-current.webp": "3b0b3fee3157cc9dfd0ba9e9c45678e7e0cd780120b65db0566a9b75d8aaf762",
+    "public/website/assets/game-customize.webp": "c9b5418cd43066287a4921bcca52fb3c439744b8935b5c77bc833fd483b04572",
+    "public/website/assets/game-dashboard.webp": "f27b9a41287cd6c714586230bf59ac73074f56be1347f9176147062ac6b420de",
+    "public/website/assets/game-management.webp": "5ea322376933b3bbea4a5cf96962749418470a25f354f91e84b15dd79b5532b2",
+    "public/website/assets/garage-current.jpg": "24472a11d41eca6f4504432ed7fc776aa15f55c8e1a328dda15d940784ac7942",
+    "public/website/assets/logo-shirt.webp": "a6d8399c23d24f32a389ade482dc36b7e28035eeb82b097159649eb63af10570",
+    "public/website/assets/logo.webp": "3bf9c4390f691f9662b78a4a45524ca2dc202f2e7098e47a9f051edba3ba5edd",
+    "public/website/assets/m3-current.jpg": "23f86caee099a970c9ba4bda1f663542e22b6e50b541208eaa626c6757af58f7",
+    "public/website/assets/shirt-cherry-club.webp": "b2933224472c74a589b08f6aeeed49025435af303188619f7941b400778d1b15",
+    "public/website/assets/shirt-daisy-drive.webp": "949fc2a480b34e4640336445f22102e8807c82d0d7c8527669116d03f75f71f7",
+    "public/website/assets/shirt-lilac-racers.webp": "c60fbb4f3d82dd23b8824782df5b7c17c303deffbcf108c82f2d54c80c1184cb",
+    "public/website/assets/shirt-mint-mini-crew.webp": "b2577df64785d5a35e3512c2fbf4ec9cfbf694f842b36c11653a851c1666fb13",
+    "public/website/assets/shirt-pit-stop.webp": "59c5ee233f82212bbe3e8fb18e36f2c2ce8455819a59408d9545b9a50f48160d",
+    "public/website/assets/shirt-sundae-cruiser.webp": "b8dd9d6c4ba7898e2c4cbe2e88a6033413113094c1100c8cd0f94463dcc80535",
+    "public/website/assets/shirt-sunday-drive.webp": "2a343d86607305d73540e2998d5e1167c775817a27c6802b287cb69bd75ff4b6",
+    "public/website/assets/shirt-weekend-lineup.webp": "3040505ff6073a11805d0542c9029f0dd8da6b1b86fa010a6f79dacf33935bd4",
+    "public/website/community.html": "e0864b8b3c2b1e0692c0d60ad19564630c8c23ef6933b1403bc404f61643d78a",
+    "public/website/culture.html": "83cf5c4b5a832739847570f1fd128f6a0f86c7a5bb5e90ffc3d5f2a0e5a50f3d",
+    "public/website/fonts/dm-sans-LICENSE.txt": "6fbd040a29c2037a765dfb9f2561e9965b5c95c6dcb5dce516089d63d5f17af7",
+    "public/website/fonts/dm-sans-latin-ext-wght-normal.woff2": "a5d38fe99f930275684999b462c7123faa063d9e44e73b4b241723d884aa0f49",
+    "public/website/fonts/dm-sans-latin-wght-normal.woff2": "9fea608a947e67020c33cad9a6fe3d60c54119dfb8cff87768a8117a15ed7543",
+    "public/website/fonts/sources.json": "897d66d7a4480c8e8af5aec0bd17ffe83842d1fc32713f6c00ced41ab3060110",
+    "public/website/fonts/space-grotesk-LICENSE.txt": "18a4de52385f6b988782639d5d0cc1326e5a8c2de9a7f01d7b20d9aedcc60943",
+    "public/website/fonts/space-grotesk-latin-ext-wght-normal.woff2": "952dddb45d2f96f71cbf3b7f510b24379afc3c89ea02fcf89d377b45d62c0166",
+    "public/website/fonts/space-grotesk-latin-wght-normal.woff2": "0640890476fc1198ab4de571fb658de443c4d85b66466ec09534a8737ab1ce9d",
+    "public/website/fonts/space-grotesk-vietnamese-wght-normal.woff2": "8895e3d49825128bfa5238e4c96e9b432d7a3dadbe5c17c6081267398305dc71",
+    "public/website/garage.html": "22db15ce7b480837c12b15c4ea244e95f9835e60fe2081e11e6dd27faf400d6d",
+    "public/website/index.html": "6029d396a6426559c03ba16f8d9f81eb791cc19c7cb1ec4323c4e728ad6fa6af",
+    "public/website/play.html": "1dd2cd85f44e25d9c2e362c426f63acb5948caaf70cae76954d23293fb5274ee",
+    "public/website/privacy.html": "c16ae5410bcf1d52cef39928b8992261758cec6310aa3a4910ad0f4f73dd1a0d",
+    "public/website/shop.html": "f81f55ad0c08afba299f67357ef394246341e48d66ba538adc5a96990b7d9903",
+    "public/website/site.js": "b78d46038b9d0fdb5f23fe13580b6fd4edf5fa4ba3590ebc8613defff08ce433",
+    "public/website/styles.css": "f02bd7fc0c41c0bdffea70012bfa64c639015976b8d328763d584570163f8fd5"
+  },
+  "test_source_sha256": "7b3f7cb7b3833140096d41692a73bd030304cd7fcced2601fb7a8aa213781391",
+  "art_provenance_sha256": "bb7ec2ed308e84097e4823f9e536c0a430ce96cf59dcb6614b6b1a75b180c6e0",
+  "log_sha256": {
+    "qa/website-kids/build.log": "12bc0713f27c13b2d19f9672b00647e94ba9c75e4db2e4e113020883bdac3c55",
+    "qa/website-kids/node-tests.log": "35ce9ab9b26827831a685d17dc299b3a4c5e3b3a0041220348a2939d9ee1835f"
+  },
+  "preserved_prior_apparel_files": 9,
+  "game_paths_unchanged_from": "c07e89a44051b5fa9d3ffbb5eaa109dbcafcc87a",
+  "existing_game_zip": {
+    "path": "downloads/Sundae-Run-Playable.zip",
+    "bytes": 68522414,
+    "sha256": "b2b05f6da117c1e6ed95d4162eb83e19d1753d2e8c48835f077842fa25000db3"
+  }
+}
