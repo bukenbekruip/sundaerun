@@ -11,9 +11,13 @@ Primary host: **www.sundaerun.com**. GitHub repository: **bukenbekruip/sundaerun
 
 Pushes to `main` and manual runs of `.github/workflows/deploy-pages.yml` run `npm ci`, Node tests and `npm run build:pages`. That command retains the normal Vite build, moves the complete game and its relative asset tree into `/garage/`, publishes the existing website at `/`, retains the `/website/` pages, and verifies local references, runtime game images and canonical URLs before upload. The normal `npm run build` and portable download layout remain unchanged.
 
-`public/CNAME` contains only `www.sundaerun.com`. With an Actions deployment, a CNAME file alone does not configure the repository setting: the workflow explicitly saves the Pages custom domain through the GitHub API using its repository-scoped `pages: write` permission. Its separate deploy job uses the existing Pages action and OIDC permission. No extra secret or registrar credential is required.
+`public/CNAME` contains only `www.sundaerun.com`. With an Actions deployment, a CNAME file alone does not configure the repository setting. The workflow checks and attempts to save the Pages custom domain using its repository-scoped `pages: write` permission. If GitHub refuses, it emits a warning and continues publishing; this must not be mistaken for a configured custom domain. Its separate deploy job uses the existing Pages action and OIDC permission. No registrar credential is used.
 
-The workflow enables HTTPS enforcement when GitHub reports an approved certificate covering `www.sundaerun.com`. Before DNS is connected, certificate approval and public redirects cannot be verified. After DNS propagates and the certificate is approved, re-run the deployment workflow, or turn on **Enforce HTTPS** in repository Settings → Pages. The GitHub default address redirects to the configured custom host.
+The workflow attempts HTTPS enforcement when GitHub reports an approved certificate covering `www.sundaerun.com`; it warns if an administrator must enable the setting manually. Before DNS is connected, certificate approval and public redirects cannot be verified. After DNS propagates and the certificate is approved, re-run the workflow, or turn on **Enforce HTTPS** in repository Settings → Pages. The GitHub default address redirects once the custom host is saved in Pages settings.
+
+## Save the Pages custom domain before editing DNS
+
+Open [repository Settings → Pages](https://github.com/bukenbekruip/sundaerun/settings/pages). Confirm the source is **GitHub Actions**. Under **Custom domain**, enter **www.sundaerun.com** and choose **Save**. The repository integration rejected this change with HTTP 403; the first Actions attempt also failed at this step. An administrator may need to save it through GitHub’s interface. DNS checks can remain pending until the registrar update, but the domain itself must be saved before describing the full configuration as ready for DNS.
 
 ## GoDaddy records to update after deployment is confirmed
 

@@ -18,3 +18,8 @@ See `release.json` for exact tested production/report/download fingerprints and 
 ## DNS boundary
 
 No registrar or email records are changed. [The setup guide](../../docs/GITHUB_PAGES_DOMAIN.md) gives `www` CNAME → `bukenbekruip.github.io`, the four GitHub apex A records and optional IPv6 records. GitHub Pages supplies the apex redirect when www is the saved custom domain and both names resolve to Pages. HTTPS enforcement is enabled by the workflow once the www certificate is approved; before DNS, the public host, certificate and live apex redirects cannot be verified. A fresh public-host browser audit is not claimed from local tests or a successful Actions job.
+
+
+## Publication correction
+
+[Actions run 39932990351](https://github.com/bukenbekruip/sundaerun/actions/runs/39932990351) passed tests and the production build, then failed while setting the custom domain. The saved Pages CNAME remained null. The workflow now reports a rejected settings change as an explicit warning and publishes the verified artifact independently. A successful deployment does not prove www is saved: the administrator may need to enter www.sundaerun.com in repository Settings → Pages before changing GoDaddy DNS. The HTTPS step similarly reports when manual administrator action is required. No public website/game artifact bytes changed in this correction, so the existing browser evidence and production hashes remain applicable.

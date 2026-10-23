@@ -33,9 +33,16 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          gh api --method PUT "repos/$GITHUB_REPOSITORY/pages" --input - <<'JSON'
-          {"cname":"www.sundaerun.com","build_type":"workflow"}
-          JSON
+          current=$(gh api "repos/$GITHUB_REPOSITORY/pages" --jq '.cname // ""')
+          if [ "$current" = "www.sundaerun.com" ]; then
+            echo "The official www domain is already configured."
+          elif gh api --method PUT "repos/$GITHUB_REPOSITORY/pages" --raw-field cname=www.sundaerun.com --raw-field build_type=workflow > domain-response.json 2> domain-error.txt; then
+            echo "The official www domain is configured."
+          else
+            detail=$(jq -r '.message // "GitHub rejected the domain settings change"' domain-response.json)
+            echo "::warning title=Pages domain requires repository administrator::$detail"
+            echo "Set **www.sundaerun.com** in repository **Settings → Pages → Custom domain** before changing registrar DNS. Code deployment can proceed independently." >> "$GITHUB_STEP_SUMMARY"
+          fi
       - uses: actions/configure-pages@v6.0.0
       - uses: actions/upload-pages-artifact@v5.0.0
         with:
@@ -60,7 +67,9 @@ jobs:
         run: |
           ready=$(gh api "repos/$GITHUB_REPOSITORY/pages" --jq '(.https_certificate // {}) | .state == "approved" and ((.domains // []) | index("www.sundaerun.com") != null)')
           if [ "$ready" = "true" ]; then
-            gh api --method PUT "repos/$GITHUB_REPOSITORY/pages" --field https_enforced=true
+            if ! gh api --method PUT "repos/$GITHUB_REPOSITORY/pages" --field https_enforced=true; then
+              echo "::warning title=HTTPS enforcement requires repository administrator::Enable Enforce HTTPS in repository Settings → Pages."
+            fi
           else
             echo "HTTPS enforcement awaits DNS and GitHub certificate approval. Re-run this workflow after DNS is connected."
           fi

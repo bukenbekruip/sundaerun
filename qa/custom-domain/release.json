@@ -277,5 +277,6 @@
   "dns_modified": false,
   "email_dns_modified": false,
   "initial_build_note": "Validator initially rejected the valid root directory /; corrected before all final checks. Initial log retained.",
-  "direct_pages_setting_attempt": "Repository integration returned HTTP 403; workflow uses its own scoped pages:write token to apply the domain."
+  "direct_pages_setting_attempt": "Repository integration returned HTTP 403; workflow uses its own scoped pages:write token to apply the domain.",
+  "domain_setting_status": "Not confirmed: direct mutation returned 403; initial Actions settings step failed; saved Pages CNAME remained null. Follow-up deployment reports actual rejection as a warning."
 }

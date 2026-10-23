@@ -61,7 +61,7 @@ Normal web output is `dist/` after `npm run build`. `npm run build:standalone` a
 
 `.github/workflows/deploy-pages.yml` tests, runs `npm run build:pages` and deploys `dist/` on `main` pushes or manual workflow runs. The production website is at `/`, the shop at `/shop.html` and the game at `/garage/`; old `/website/` routes remain available. `base: './'` in `vite.config.js` keeps assets relative. Normal development and portable builds retain their existing layout. No backend, app secrets, external fonts or downloaded audio files are required. Web Audio synthesis works in the portable game too.
 
-The official Pages domain is **www.sundaerun.com**; the DNS CNAME target is **bukenbekruip.github.io**. See [domain setup and GoDaddy records](docs/GITHUB_PAGES_DOMAIN.md). Public access, the apex redirect and certificate approval depend on the registrar DNS change. The workflow configures Pages without touching registrar or email DNS.
+The intended official Pages domain is **www.sundaerun.com**; the DNS CNAME target is **bukenbekruip.github.io**. See [domain setup and GoDaddy records](docs/GITHUB_PAGES_DOMAIN.md). Confirm GitHub has saved the custom domain before updating DNS; settings changes may require the repository administrator. Public access, the apex redirect and certificate approval then depend on the registrar DNS change. The workflow does not touch registrar or email DNS.
 
 ## Verification and artwork
 
