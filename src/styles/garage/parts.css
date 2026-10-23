@@ -1,0 +1,265 @@
+/* Native tyre, suspension and body-kit package cards. */
+.part-products {
+  display: flex;
+  gap: 12px;
+  overflow-x: auto;
+  overscroll-behavior-x: contain;
+  scrollbar-width: none;
+  scroll-behavior: smooth;
+  scroll-snap-type: x proximity;
+  padding: 3px 2px 5px;
+}
+.part-products::-webkit-scrollbar {
+  display: none;
+}
+.part-card {
+  position: relative;
+  flex: 1 0 0;
+  min-width: 0;
+  height: 188px;
+  overflow: hidden;
+  scroll-snap-align: start;
+  border: 1px solid #acb79f4d;
+  border-radius: 13px;
+  background: linear-gradient(145deg, #f8ffed0d, #070e0a31);
+  box-shadow: inset 0 1px 0 #eaffd809;
+  transition:
+    border-color 0.18s,
+    background 0.18s,
+    box-shadow 0.18s;
+}
+.part-select {
+  position: relative;
+  display: grid;
+  grid-template-columns: 54px minmax(0, 1fr);
+  grid-template-rows: auto minmax(0, 1fr) auto;
+  gap: 8px 13px;
+  align-items: start;
+  width: 100%;
+  height: 100%;
+  padding: 20px 15px;
+  background: transparent;
+  text-align: left;
+}
+.part-card:has(.product-details) .part-select {
+  height: 154px;
+  padding: 14px 15px;
+}
+.part-select > .part-icon,
+.part-select > .part-thumbnail,
+.part-select > svg {
+  grid-column: 1;
+  grid-row: 1/4;
+  align-self: center;
+  width: 54px;
+  height: 66px;
+  object-fit: contain;
+  color: #a5f8c6;
+  filter: drop-shadow(0 6px 8px #0005);
+}
+.part-icon {
+  display: grid;
+  place-items: center;
+  border: 1px solid #a5f8c62b;
+  border-radius: 11px;
+  background: #a5f8c60a;
+}
+.part-icon svg,
+.part-select > svg {
+  display: block;
+  width: 44px;
+  height: 54px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.6;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.part-name {
+  grid-column: 2;
+  grid-row: 1;
+  display: block;
+  min-width: 0;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 700;
+  letter-spacing: -0.35px;
+  color: #f1f5e9;
+}
+.part-description {
+  grid-column: 2;
+  grid-row: 2;
+  display: block;
+  min-width: 0;
+  font-size: 11px;
+  line-height: 17px;
+  color: #b7c6ac;
+}
+.part-price {
+  grid-column: 2;
+  grid-row: 3;
+  align-self: end;
+  display: block;
+  font-size: 17px;
+  line-height: 22px;
+  font-weight: 750;
+  letter-spacing: -0.25px;
+  color: #b6f7cd;
+  font-variant-numeric: tabular-nums;
+}
+.part-card:has(.part-select[aria-pressed="true"]) {
+  border: 2px solid #a5f8c6;
+  background: linear-gradient(145deg, #a5f8c617, #a5f8c604);
+  box-shadow:
+    0 0 14px #92f2b12b,
+    inset 0 0 17px #a5f8c60c;
+}
+.part-select[aria-pressed="true"] > .selection-check {
+  display: grid;
+}
+.part-select[aria-pressed="true"]:not(:has(.selection-check))::after {
+  content: "✓";
+  position: absolute;
+  top: 7px;
+  right: 7px;
+  display: grid;
+  place-items: center;
+  width: 23px;
+  height: 23px;
+  border-radius: 50%;
+  background: #adffd1;
+  color: #173f28;
+  font-size: 16px;
+  font-weight: 900;
+  box-shadow: 0 2px 8px #0006;
+}
+.part-select:not(:disabled):hover {
+  background: #a5f8c60b;
+}
+.part-card:has(.part-select:not(:disabled):hover) {
+  border-color: #cfffe0;
+}
+.part-select:disabled {
+  opacity: 0.45;
+}
+@media (min-width: 1100px) {
+  .checkout-panel {
+    padding: 12px 14px;
+    gap: 4px;
+  }
+  .checkout-panel h2 {
+    font-size: 17px;
+    line-height: 20px;
+  }
+  .quote-items {
+    margin-top: 2px;
+    gap: 2px;
+    font-size: 11px;
+    line-height: 14px;
+  }
+  .quote-line strong {
+    font-size: 11px;
+    line-height: 14px;
+  }
+  .total-row {
+    margin-top: 0;
+    padding-top: 6px;
+  }
+  .total-row > strong {
+    font-size: 30px;
+    line-height: 36px;
+  }
+  .apply-button {
+    height: 44px;
+    min-height: 44px;
+    margin-top: 0;
+    flex: none;
+  }
+  .cancel-preview {
+    height: 20px;
+    min-height: 20px;
+    padding: 2px 6px;
+    font-size: 10px;
+    line-height: 14px;
+    flex: none;
+  }
+  .preview-status {
+    font-size: 9px;
+    line-height: 12px;
+  }
+}
+@media (max-width: 1099px) {
+  .part-products {
+    gap: 10px;
+    padding: 3px 2px 9px;
+  }
+  .part-card {
+    width: calc((100% - 20px) / 3);
+    min-width: 220px;
+    height: 213px;
+    flex: none;
+  }
+  .part-select {
+    padding: 18px 14px;
+    grid-template-columns: 48px minmax(0, 1fr);
+    gap: 8px 11px;
+  }
+  .part-card:has(.product-details) .part-select {
+    height: 166px;
+    padding: 13px 14px;
+  }
+  .part-select > .part-icon,
+  .part-select > .part-thumbnail,
+  .part-select > svg {
+    width: 48px;
+    height: 64px;
+  }
+  .part-icon svg,
+  .part-select > svg {
+    width: 40px;
+    height: 50px;
+  }
+  .part-name {
+    font-size: 17px;
+    line-height: 22px;
+  }
+  .part-description {
+    font-size: 11px;
+    line-height: 17px;
+  }
+  .part-price {
+    font-size: 17px;
+    line-height: 22px;
+  }
+  .part-select,
+  .part-select + .product-details {
+    min-height: 44px;
+  }
+}
+@media (max-width: 649px) {
+  .part-card {
+    width: 238px;
+    min-width: 238px;
+  }
+  .part-select {
+    grid-template-columns: 48px minmax(0, 1fr);
+    gap: 8px 12px;
+  }
+  .part-description {
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .part-name {
+    font-size: 18px;
+    line-height: 23px;
+  }
+}
+/* Full package descriptions remain readable on narrow card rails. */
+@media (max-width: 1099px) {
+  .part-card {
+    height: 244px;
+  }
+  .part-card:has(.product-details) .part-select {
+    height: calc(100% - 44px);
+  }
+}

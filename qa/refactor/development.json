@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "checks": [
+    "Development middleware renders shared header and active Home link",
+    "Development modules and responsive navigation work",
+    "No unresolved shared partials",
+    "Play development CTA retains Garage overview",
+    "Development game renders all six models",
+    "No uncaught development errors"
+  ],
+  "page_errors": []
+}

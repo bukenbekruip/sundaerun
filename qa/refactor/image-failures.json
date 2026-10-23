@@ -1,0 +1,27 @@
+{
+  "started_at_utc": "2026-10-23T12:04:23.230146+00:00",
+  "portable": false,
+  "checks": [
+    "Failed cabin image disables purchase without spending",
+    "Cabin retry restores preview and purchase availability",
+    "Late cabin load cannot replace a newer original selection or charge credits",
+    "No uncaught page errors",
+    "No HTTP errors",
+    "No extra portable network requests",
+    "No unexpected console errors"
+  ],
+  "cases": [
+    {
+      "name": "cabin-failure-retry-and-late-load",
+      "status": "passed"
+    }
+  ],
+  "page_errors": [],
+  "console_errors": [
+    "Failed to load resource: net::ERR_FAILED"
+  ],
+  "http_errors": [],
+  "extra_requests": [],
+  "status": "passed",
+  "passed_checks": 7
+}

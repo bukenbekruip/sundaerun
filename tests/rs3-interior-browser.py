@@ -24,7 +24,7 @@ async def run(args):
   p.on('console',lambda m:report['console_errors'].append(m.text) if m.type=='error' else None)
   p.on('response',lambda r:report['http_errors'].append(r.url) if r.status>=400 else None)
   async def click(sel):await p.locator(sel).click()
-  async def ready():await p.wait_for_function("document.querySelector('#scene').getAttribute('aria-busy')==='false'",polling=100)
+  async def ready():await p.wait_for_function("() => (document.querySelector('#scene').getAttribute('aria-busy')==='false')",polling=100)
   async def cabin():await p.wait_for_function("()=>{let i=document.querySelector('.interior-preview img'),n=document.querySelector('.interior-loading');return i&&i.complete&&i.naturalWidth>0&&n.hidden}",polling=50)
   async def stored():return await p.evaluate('(k)=>JSON.parse(localStorage.getItem(k))',KEY)
   async def close():await click('#club-dialog [data-close-dialog]')
@@ -87,7 +87,7 @@ async def run(args):
    # Capture expected fitted cabin, then preview a different unowned package before export.
    await p.evaluate("window.__expectedCabin=document.createElement('canvas');__expectedCabin.width=1600;__expectedCabin.height=900;__expectedCabin.getContext('2d').drawImage(document.querySelector('.interior-preview img'),0,0,1600,900)")
    await click('[data-interior=club]');await cabin();await click('button:has-text("Create cabin show card")')
-   await p.wait_for_selector('.club-show-card');await p.wait_for_function("document.querySelector('.club-show-card').complete")
+   await p.wait_for_selector('.club-show-card');await p.wait_for_function("() => (document.querySelector('.club-show-card').complete)")
    export=await p.evaluate('''()=>{const i=document.querySelector('.club-show-card'),c=document.createElement('canvas');c.width=1600;c.height=1060;const ctx=c.getContext('2d');ctx.drawImage(i,0,0);const actual=ctx.getImageData(0,0,1600,900).data,expected=__expectedCabin.getContext('2d').getImageData(0,0,1600,900).data;let differences=0;for(let n=0;n<actual.length;n++)if(actual[n]!==expected[n])differences++;return {w:i.naturalWidth,h:i.naturalHeight,differences}}''')
    check(export=={'w':1600,'h':1060,'differences':0},'Cabin show card contains the fitted Heritage/carbon image, even while Club is previewed')
    async with p.expect_download() as info:await click('button:has-text("Download cabin image")')

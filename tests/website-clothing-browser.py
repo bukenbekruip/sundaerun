@@ -58,7 +58,13 @@ async def main(base, out, site_path="website/"):
                     # Exclude the sticky header from isolated section captures;
                     # the untouched viewport screenshots above include the actual header.
                     for selector, name in [("#girls", "girls"), ("#kids", "kids"), (".footer", "footer")]:
-                        await page.locator(selector).screenshot(path=str(out / f"{name}-{width}.jpg"), type="jpeg", quality=92, style=".header { visibility: hidden; }")
+                        # Use a CSSOM property rather than injecting an inline
+                        # stylesheet, so this works under the production CSP.
+                        await page.locator('.header').evaluate("e => e.style.visibility = 'hidden'")
+                        try:
+                            await page.locator(selector).screenshot(path=str(out / f"{name}-{width}.jpg"), type="jpeg", quality=92)
+                        finally:
+                            await page.locator('.header').evaluate("e => e.style.visibility = ''")
                     async with page.expect_popup() as popup_info:
                         await page.locator('[data-design="cherry-club"] .product-art').click()
                     popup = await popup_info.value

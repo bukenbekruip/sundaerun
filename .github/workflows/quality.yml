@@ -1,0 +1,73 @@
+name: Pull request quality checks
+on:
+  pull_request:
+    branches: [main]
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v7.0.1
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v7.1.0
+        with:
+          node-version: "24"
+          cache: npm
+      - uses: actions/setup-python@v6.0.0
+        with:
+          python-version: "3.12"
+          cache: pip
+          cache-dependency-path: requirements-browser.txt
+      - run: npm ci
+      - name: Static, dependency and secret checks
+        run: |
+          npm run lint
+          npm run format:check
+          npm test
+          npm audit --audit-level=high
+          python scripts/security-audit.py --history
+          npm run build:pages
+      - name: Browser tooling
+        run: |
+          pip install -r requirements-browser.txt
+          pip install pip-audit==2.10.1
+          pip-audit -r requirements-browser.txt
+          python -m playwright install --with-deps chromium
+          sudo ln -sf "$(python -c 'from playwright.sync_api import sync_playwright; p=sync_playwright().start(); print(p.chromium.executable_path)')" /usr/bin/chromium
+      - name: Preserve baseline and run browser comparisons
+        env:
+          BASE_SHA: ${{ github.event.pull_request.base.sha }}
+        run: |
+          git worktree add --detach /tmp/sundae-baseline "$BASE_SHA"
+          (cd /tmp/sundae-baseline && npm ci && npm run build:pages)
+          python -m http.server 4200 --bind 127.0.0.1 --directory /tmp/sundae-baseline/dist > /tmp/baseline-server.log 2>&1 &
+          python -m http.server 4201 --bind 127.0.0.1 --directory dist > /tmp/refactor-server.log 2>&1 &
+          trap 'kill $(jobs -pr) 2>/dev/null || true' EXIT
+          python tests/refactor-visual.py --base-url http://127.0.0.1:4200/ --output /tmp/visual-before
+          python tests/refactor-visual.py --base-url http://127.0.0.1:4201/ --output /tmp/visual-after --compare /tmp/visual-before --max-changed-pixels 128 --max-channel-delta 32
+          python tests/website-browser.py --base-url http://127.0.0.1:4201/ --site-path '' --return-path index.html --output /tmp/review/website
+          python tests/website-browser.py --base-url http://127.0.0.1:4201/ --site-path website/ --return-path index.html --output /tmp/review/website-legacy
+          python tests/website-clothing-browser.py --base-url http://127.0.0.1:4201/ --site-path '' --output /tmp/review/clothing
+          python tests/refactor-accessibility.py --output /tmp/review/accessibility
+          python tests/rs3-interior-browser.py --base-url http://127.0.0.1:4201/garage --output /tmp/review/interiors
+          python tests/sound-browser.py --base-url http://127.0.0.1:4201/garage --output /tmp/review/sound
+          python tests/club-browser.py --base-url http://127.0.0.1:4201/garage --output /tmp/review/club
+      - name: Portable game build and regression
+        run: |
+          npm run build:standalone
+          python -m http.server 4203 --bind 127.0.0.1 --directory dist > /tmp/portable-server.log 2>&1 &
+          trap 'kill $(jobs -pr) 2>/dev/null || true' EXIT
+          python tests/rs3-interior-browser.py --base-url http://127.0.0.1:4203 --portable --output /tmp/review/portable-interiors
+          python tests/sound-browser.py --base-url http://127.0.0.1:4203 --portable --output /tmp/review/portable-sound
+      - name: Retain review evidence
+        if: always()
+        uses: actions/upload-artifact@v5.0.0
+        with:
+          name: refactor-review
+          path: |
+            /tmp/review
+            /tmp/visual-after
+          retention-days: 7

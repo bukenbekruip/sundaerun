@@ -8,7 +8,14 @@ import { buildPages, websitePages } from "../scripts/build-pages.mjs";
 async function fixture(fn, domain = "www.sundaerun.com") {
   const root = await mkdtemp(join(tmpdir(), "sundae-pages-"));
   try {
-    for (const dir of ["assets", "licenses", "website/assets", "website/fonts"])
+    for (const dir of [
+      "assets",
+      "licenses",
+      "website/assets",
+      "website/fonts",
+      "website/css",
+      "website/js",
+    ])
       await mkdir(join(root, dir), { recursive: true });
     await writeFile(join(root, "CNAME"), domain + "\n");
     await writeFile(
@@ -22,6 +29,8 @@ async function fixture(fn, domain = "www.sundaerun.com") {
       "fonts/site.woff2",
       "styles.css",
       "site.js",
+      "css/components.css",
+      "js/navigation.js",
     ])
       await writeFile(
         join(root, "website", file),
@@ -41,6 +50,14 @@ async function fixture(fn, domain = "www.sundaerun.com") {
 test("Pages serves the brand homepage, isolates game assets and retains legacy website routes", async () => {
   await fixture(async (root) => {
     await buildPages(root);
+    assert.equal(
+      await readFile(join(root, "css/components.css"), "utf8"),
+      "unchanged-website-resource",
+    );
+    assert.equal(
+      await readFile(join(root, "js/navigation.js"), "utf8"),
+      "unchanged-website-resource",
+    );
     assert.match(
       await readFile(join(root, "index.html"), "utf8"),
       /<h1>index<\/h1>/,

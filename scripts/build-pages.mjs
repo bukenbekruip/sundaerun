@@ -8,21 +8,14 @@ import {
 } from "node:fs/promises";
 import { resolve } from "node:path";
 import { pathToFileURL } from "node:url";
+import { withSecurityPolicy } from "./security-policy.mjs";
+import { sitePages } from "./website.mjs";
 
-export const websitePages = [
-  "index",
-  "culture",
-  "garage",
-  "community",
-  "shop",
-  "about",
-  "privacy",
-  "play",
-];
+export const websitePages = sitePages;
 export const officialDomain = "www.sundaerun.com";
 
 function canonical(html, path) {
-  return html.replace(
+  return withSecurityPolicy(html).replace(
     "</head>",
     `    <link rel="canonical" href="https://${officialDomain}${path}" />\n  </head>`,
   );
@@ -72,7 +65,8 @@ export async function buildPages(dist) {
     await writeFile(resolve(dist, `${page}.html`), rootHtml);
     await writeFile(resolve(dist, "website", `${page}.html`), legacyHtml);
   }
-  for (const entry of ["assets", "fonts", "styles.css", "site.js"]) {
+  for (const entry of await readdir(resolve(dist, "website"))) {
+    if (entry.endsWith(".html")) continue;
     await cp(resolve(dist, "website", entry), resolve(dist, entry), {
       recursive: true,
     });

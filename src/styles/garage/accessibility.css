@@ -1,0 +1,19 @@
+.game-skip-link {
+  position: fixed;
+  top: 8px;
+  left: 8px;
+  z-index: 10000;
+  padding: var(--sr-space-3) var(--sr-space-4);
+  color: var(--sr-game-ink);
+  background: var(--sr-game-mint);
+  transform: translateY(-200%);
+}
+.game-skip-link:focus {
+  transform: none;
+}
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: 3px solid #ffe2a3;
+  outline-offset: 4px;
+}

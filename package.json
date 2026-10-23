@@ -9,12 +9,24 @@
     "build:pages": "npm run build && node scripts/build-pages.mjs && node scripts/verify-pages-build.mjs",
     "build:standalone": "npm run build && node scripts/build-standalone.mjs",
     "preview": "vite preview",
-    "test": "node --test tests/*.test.js"
+    "test": "node --test tests/*.test.js",
+    "lint": "eslint app.js src scripts tests/*.js public/website/**/*.js vite.config.js copy-assets.mjs",
+    "format:check": "prettier --check website public/website/css public/website/js src/styles scripts/website.mjs scripts/security-policy.mjs src/ui src/progress-storage.js",
+    "security:secrets": "python scripts/security-audit.py --history"
   },
   "devDependencies": {
+    "@eslint/js": "9.39.1",
+    "axe-core": "4.14.0",
+    "eslint": "9.39.1",
+    "globals": "16.5.0",
+    "lightningcss": "1.33.0",
+    "prettier": "3.6.2",
     "vite": "^8.3.4"
   },
   "dependencies": {
     "@fontsource-variable/inter": "5.3.0"
+  },
+  "engines": {
+    "node": ">=22.12.0"
   }
 }

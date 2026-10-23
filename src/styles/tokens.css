@@ -1,0 +1,35 @@
+/* Shared primitives; semantic themes preserve the website and garage identities. */
+:root {
+  --sr-font-site-body: "DM Sans", Arial, sans-serif;
+  --sr-font-site-display: "Space Grotesk", "DM Sans", sans-serif;
+  --sr-font-game: "Inter Variable", Inter, "Segoe UI", sans-serif;
+  --sr-space-1: 4px;
+  --sr-space-2: 8px;
+  --sr-space-3: 12px;
+  --sr-space-4: 16px;
+  --sr-space-5: 20px;
+  --sr-space-6: 24px;
+  --sr-button-padding-y: 14px;
+  --sr-button-gap: 10px;
+  --sr-radius-site-button: 99px;
+  --sr-radius-badge: 999px;
+  --sr-site-ink: #24211e;
+  --sr-site-charcoal: #292622;
+  --sr-site-cream: #fffaf1;
+  --sr-site-paper: #f5efe7;
+  --sr-site-pink: #f5b5bb;
+  --sr-site-rose: #ed7d8e;
+  --sr-site-cherry: #d9404e;
+  --sr-site-yellow: #ffd580;
+  --sr-site-mint: #b7edce;
+  --sr-site-subtle: #6f6761;
+  --sr-site-border: #e4dcd3;
+  --sr-game-text: #fff8ed;
+  --sr-game-background: #0e110f;
+  --sr-game-mint: #a5f8c6;
+  --sr-game-mint-dark: #8be7b0;
+  --sr-game-ink: #15241c;
+  --sr-game-muted: #b7bcb4;
+  --sr-game-panel: rgba(23, 26, 24, 0.94);
+  --sr-game-border: rgba(172, 151, 119, 0.39);
+}

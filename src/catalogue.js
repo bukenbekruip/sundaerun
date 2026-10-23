@@ -73,7 +73,7 @@ const pendingFitment = () => ({
   tyreSize: null,
 });
 
-const wheel = (id, name, brand, gamePrice, image) => ({
+const wheel = (id, name, brand, gamePrice, _image) => ({
   id,
   type: "wheel",
   name,

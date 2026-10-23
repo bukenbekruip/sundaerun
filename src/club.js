@@ -113,6 +113,8 @@ export const getPerformancePart = (kind, id) =>
 const cleanName = (v) =>
   typeof v === "string"
     ? v
+        // Strip control characters from untrusted names before storage/export.
+        // eslint-disable-next-line no-control-regex
         .replace(/[\u0000-\u001f\u007f]/g, "")
         .trim()
         .slice(0, 48)

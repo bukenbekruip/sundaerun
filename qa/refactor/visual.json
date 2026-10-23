@@ -1,0 +1,366 @@
+{
+  "base_url": "http://127.0.0.1:4201/",
+  "screenshots": [
+    {
+      "name": "website-index-390",
+      "same_dimensions": true,
+      "changed_pixels": 0,
+      "max_channel_delta": 0,
+      "total_pixels": 2800590
+    },
+    {
+      "name": "website-culture-390",
+      "same_dimensions": true,
+      "changed_pixels": 0,
+      "max_channel_delta": 0,
+      "total_pixels": 1339260
+    },
+    {
+      "name": "website-garage-390",
+      "same_dimensions": true,
+      "changed_pixels": 0,
+      "max_channel_delta": 0,
+      "total_pixels": 1504620
+    },
+    {
+      "name": "website-community-390",
+      "same_dimensions": true,
+      "changed_pixels": 0,
+      "max_channel_delta": 0,
+      "total_pixels": 1437930
+    },
+    {
+      "name": "website-shop-390",
+      "same_dimensions": true,
+      "changed_pixels": 0,
+      "max_channel_delta": 0,
+      "total_pixels": 2408250
+    },
+    {
+      "name": "website-about-390",
+      "same_dimensions": true,
+      "changed_pixels": 0,
+      "max_channel_delta": 0,
+      "total_pixels": 1424670
+    },
+    {
+      "name": "website-privacy-390",
+      "same_dimensions": true,
+      "changed_pixels": 0,
+      "max_channel_delta": 0,
+      "total_pixels": 708630
+    },
+    {
+      "name": "website-play-390",
+      "same_dimensions": true,
+      "changed_pixels": 0,
+      "max_channel_delta": 0,
+      "total_pixels": 480480
+    },
+    {
+      "name": "website-index-820",
+      "same_dimensions": true,
+      "changed_pixels": 0,
+      "max_channel_delta": 0,
+      "total_pixels": 3369380
+    },
+    {
+      "name": "website-culture-820",
+      "same_dimensions": true,
+      "changed_pixels": 0,
+      "max_channel_delta": 0,
+      "total_pixels": 1798260
+    },
+    {
+      "name": "website-garage-820",
+      "same_dimensions": true,
+      "changed_pixels": 0,
+      "max_channel_delta": 0,
+      "total_pixels": 2029500
+    },
+    {
+      "name": "website-community-820",
+      "same_dimensions": true,
+      "changed_pixels": 0,
+      "max_channel_delta": 0,
+      "total_pixels": 1919620
+    },
+    {
+      "name": "website-shop-820",
+      "same_dimensions": true,
+      "changed_pixels": 0,
+      "max_channel_delta": 0,
+      "total_pixels": 3508780
+    },
+    {
+      "name": "website-about-820",
+      "same_dimensions": true,
+      "changed_pixels": 0,
+      "max_channel_delta": 0,
+      "total_pixels": 1839260
+    },
+    {
+      "name": "website-privacy-820",
+      "same_dimensions": true,
+      "changed_pixels": 0,
+      "max_channel_delta": 0,
+      "total_pixels": 1036480
+    },
+    {
+      "name": "website-play-820",
+      "same_dimensions": true,
+      "changed_pixels": 0,
+      "max_channel_delta": 0,
+      "total_pixels": 941360
+    },
+    {
+      "name": "website-index-1440",
+      "same_dimensions": true,
+      "changed_pixels": 0,
+      "max_channel_delta": 0,
+      "total_pixels": 6661440
+    },
+    {
+      "name": "website-culture-1440",
+      "same_dimensions": true,
+      "changed_pixels": 0,
+      "max_channel_delta": 0,
+      "total_pixels": 3467520
+    },
+    {
+      "name": "website-garage-1440",
+      "same_dimensions": true,
+      "changed_pixels": 0,
+      "max_channel_delta": 0,
+      "total_pixels": 3666240
+    },
+    {
+      "name": "website-community-1440",
+      "same_dimensions": true,
+      "changed_pixels": 0,
+      "max_channel_delta": 0,
+      "total_pixels": 3516480
+    },
+    {
+      "name": "website-shop-1440",
+      "same_dimensions": true,
+      "changed_pixels": 0,
+      "max_channel_delta": 0,
+      "total_pixels": 5423040
+    },
+    {
+      "name": "website-about-1440",
+      "same_dimensions": true,
+      "changed_pixels": 0,
+      "max_channel_delta": 0,
+      "total_pixels": 3468960
+    },
+    {
+      "name": "website-privacy-1440",
+      "same_dimensions": true,
+      "changed_pixels": 0,
+      "max_channel_delta": 0,
+      "total_pixels": 2083680
+    },
+    {
+      "name": "website-play-1440",
+      "same_dimensions": true,
+      "changed_pixels": 0,
+      "max_channel_delta": 0,
+      "total_pixels": 1860480
+    },
+    {
+      "name": "game-sti-default-1672",
+      "same_dimensions": true,
+      "changed_pixels": 0,
+      "max_channel_delta": 0,
+      "total_pixels": 1573352
+    },
+    {
+      "name": "game-sti-te37-1672",
+      "same_dimensions": true,
+      "changed_pixels": 18,
+      "max_channel_delta": 5,
+      "total_pixels": 1573352
+    },
+    {
+      "name": "game-sti-te37-black",
+      "same_dimensions": true,
+      "changed_pixels": 26,
+      "max_channel_delta": 10,
+      "total_pixels": 1573352
+    },
+    {
+      "name": "game-sti-te37-mint",
+      "same_dimensions": true,
+      "changed_pixels": 0,
+      "max_channel_delta": 0,
+      "total_pixels": 1573352
+    },
+    {
+      "name": "game-sti-te37-blue",
+      "same_dimensions": true,
+      "changed_pixels": 26,
+      "max_channel_delta": 10,
+      "total_pixels": 1573352
+    },
+    {
+      "name": "game-sti-exterior",
+      "same_dimensions": true,
+      "changed_pixels": 26,
+      "max_channel_delta": 10,
+      "total_pixels": 1573352
+    },
+    {
+      "name": "game-sti-heritage",
+      "same_dimensions": true,
+      "changed_pixels": 13,
+      "max_channel_delta": 1,
+      "total_pixels": 1573352
+    },
+    {
+      "name": "game-sti-performance",
+      "same_dimensions": true,
+      "changed_pixels": 13,
+      "max_channel_delta": 1,
+      "total_pixels": 1573352
+    },
+    {
+      "name": "game-porsche-exterior",
+      "same_dimensions": true,
+      "changed_pixels": 0,
+      "max_channel_delta": 0,
+      "total_pixels": 1573352
+    },
+    {
+      "name": "game-porsche-heritage",
+      "same_dimensions": true,
+      "changed_pixels": 28,
+      "max_channel_delta": 1,
+      "total_pixels": 1573352
+    },
+    {
+      "name": "game-porsche-performance",
+      "same_dimensions": true,
+      "changed_pixels": 0,
+      "max_channel_delta": 0,
+      "total_pixels": 1573352
+    },
+    {
+      "name": "game-gt86-exterior",
+      "same_dimensions": true,
+      "changed_pixels": 0,
+      "max_channel_delta": 0,
+      "total_pixels": 1573352
+    },
+    {
+      "name": "game-gt86-heritage",
+      "same_dimensions": true,
+      "changed_pixels": 0,
+      "max_channel_delta": 0,
+      "total_pixels": 1573352
+    },
+    {
+      "name": "game-gt86-performance",
+      "same_dimensions": true,
+      "changed_pixels": 0,
+      "max_channel_delta": 0,
+      "total_pixels": 1573352
+    },
+    {
+      "name": "game-m3-exterior",
+      "same_dimensions": true,
+      "changed_pixels": 18,
+      "max_channel_delta": 5,
+      "total_pixels": 1573352
+    },
+    {
+      "name": "game-m3-heritage",
+      "same_dimensions": true,
+      "changed_pixels": 16,
+      "max_channel_delta": 1,
+      "total_pixels": 1573352
+    },
+    {
+      "name": "game-m3-performance",
+      "same_dimensions": true,
+      "changed_pixels": 15,
+      "max_channel_delta": 1,
+      "total_pixels": 1573352
+    },
+    {
+      "name": "game-golf-exterior",
+      "same_dimensions": true,
+      "changed_pixels": 0,
+      "max_channel_delta": 0,
+      "total_pixels": 1573352
+    },
+    {
+      "name": "game-golf-heritage",
+      "same_dimensions": true,
+      "changed_pixels": 28,
+      "max_channel_delta": 1,
+      "total_pixels": 1573352
+    },
+    {
+      "name": "game-golf-performance",
+      "same_dimensions": true,
+      "changed_pixels": 0,
+      "max_channel_delta": 0,
+      "total_pixels": 1573352
+    },
+    {
+      "name": "game-rs3-exterior",
+      "same_dimensions": true,
+      "changed_pixels": 0,
+      "max_channel_delta": 0,
+      "total_pixels": 1573352
+    },
+    {
+      "name": "game-rs3-heritage",
+      "same_dimensions": true,
+      "changed_pixels": 0,
+      "max_channel_delta": 0,
+      "total_pixels": 1573352
+    },
+    {
+      "name": "game-rs3-performance",
+      "same_dimensions": true,
+      "changed_pixels": 0,
+      "max_channel_delta": 0,
+      "total_pixels": 1573352
+    },
+    {
+      "name": "game-responsive-320",
+      "same_dimensions": true,
+      "changed_pixels": 0,
+      "max_channel_delta": 0,
+      "total_pixels": 571840
+    },
+    {
+      "name": "game-responsive-390",
+      "same_dimensions": true,
+      "changed_pixels": 0,
+      "max_channel_delta": 0,
+      "total_pixels": 679380
+    },
+    {
+      "name": "game-responsive-1366",
+      "same_dimensions": true,
+      "changed_pixels": 0,
+      "max_channel_delta": 0,
+      "total_pixels": 1049088
+    },
+    {
+      "name": "game-responsive-1920",
+      "same_dimensions": true,
+      "changed_pixels": 0,
+      "max_channel_delta": 0,
+      "total_pixels": 2073600
+    }
+  ],
+  "errors": [],
+  "max_changed_pixels": 128,
+  "max_channel_delta": 32,
+  "status": "passed"
+}

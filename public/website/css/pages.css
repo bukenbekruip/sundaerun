@@ -1,0 +1,45 @@
+#main .story-brand-image {
+  object-fit: contain;
+  box-shadow: none;
+  max-height: 365px;
+  max-width: 380px;
+  margin: auto;
+}
+#main .garage-development-note {
+  margin-top: 14px;
+}
+#main .garage-play-cta {
+  text-align: center;
+  margin-top: 30px;
+}
+#main .play-intro {
+  max-width: 850px;
+  text-align: center;
+  padding-block: 10vh;
+}
+#main .play-logo {
+  height: 110px;
+  width: auto;
+  object-fit: contain;
+  margin-inline: auto;
+}
+#main .play-heading {
+  margin: 16px 0 20px;
+}
+#main .play-description {
+  max-width: 610px;
+  margin: 0 auto 26px;
+  line-height: 1.7;
+}
+#main .play-download {
+  margin-top: 24px;
+}
+#main .privacy-copy {
+  max-width: 800px;
+}
+#main .collection-preview-label {
+  margin-top: 20px;
+}
+.footer-description {
+  max-width: 310px;
+}
