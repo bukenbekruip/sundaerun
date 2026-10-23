@@ -3,7 +3,8 @@ import http from "node:http";
 
 // Read-only diagnostics run from GitHub's public-network runner. Never touches DNS.
 const escape = value => String(value).replaceAll("%", "%25").replaceAll("\r", "%0D").replaceAll("\n", "%0A");
-const notice = (title, value) => console.log(`::notice title=${escape(title)}::${escape(value)}`);
+const results = [];
+const notice = (title, value) => results.push({ check: title, result: value });
 for (const host of ["sundaerun.com", "www.sundaerun.com"]) {
   for (const type of ["CNAME", "A", "AAAA", "CAA"]) {
     try {
@@ -26,3 +27,5 @@ for (const host of ["sundaerun.com", "www.sundaerun.com"]) {
     });
   }
 }
+// GitHub caps per-step annotations; one report retains every DNS/TLS result.
+console.log(`::notice title=Public DNS and HTTPS results::${escape(JSON.stringify(results))}`);
