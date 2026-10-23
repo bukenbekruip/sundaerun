@@ -1,5 +1,7 @@
 import https from "node:https";
 import http from "node:http";
+import { readFile } from "node:fs/promises";
+import { createHash } from "node:crypto";
 
 // Read-only diagnostics run from GitHub's public-network runner. Never touches DNS.
 const escape = value => String(value).replaceAll("%", "%25").replaceAll("\r", "%0D").replaceAll("\n", "%0A");
@@ -29,3 +31,29 @@ for (const host of ["sundaerun.com", "www.sundaerun.com"]) {
 }
 // GitHub caps per-step annotations; one report retains every DNS/TLS result.
 console.log(`::notice title=Public DNS and HTTPS results::${escape(JSON.stringify(results))}`);
+
+// This verification branch is never deployed. Compare public release files
+// with the already reviewed production snapshot, using GET requests only.
+const expected = JSON.parse(await readFile(new URL("../qa/refactor/production-files.json", import.meta.url), "utf8"));
+const paths = [
+  ...["index", "culture", "garage", "community", "shop", "about", "privacy", "play"].map(page => `${page}.html`),
+  "website/index.html", "website/shop.html", "garage/index.html",
+  "styles.css", "site.js", "js/navigation.js", "js/signup-demo.js",
+  ...Object.keys(expected).filter(path => /^garage\/assets\/index-[\w-]+\.(js|css)$/.test(path)),
+  "garage/assets/approved-scene-fixed.jpg", "garage/assets/portable/rs3-sr-01.webp",
+  "garage/assets/interiors/sti/heritage.webp",
+];
+const release = [];
+for (const path of paths) {
+  try {
+    if (!expected[path]) throw new Error("No reviewed fingerprint for " + path);
+    const url = new URL(path, "http://www.sundaerun.com/");
+    url.searchParams.set("release", "129f67037dc86654f0c3f7f343475e41ab907013");
+    const response = await fetch(url, { signal: AbortSignal.timeout(20000), headers: { "Cache-Control": "no-cache" } });
+    const bytes = Buffer.from(await response.arrayBuffer());
+    const sha256 = createHash("sha256").update(bytes).digest("hex");
+    release.push({ path, status: response.status, bytes: bytes.length, matchesReviewedBuild: response.ok && sha256 === expected[path], sha256 });
+  } catch (error) { release.push({ path, matchesReviewedBuild: false, error: error.message }); }
+}
+console.log(`::notice title=Deployed release fingerprints::${escape(JSON.stringify(release))}`);
+if (release.some(item => !item.matchesReviewedBuild)) process.exitCode = 1;
