@@ -47,7 +47,7 @@ const release = [];
 for (const path of paths) {
   try {
     if (!expected[path]) throw new Error("No reviewed fingerprint for " + path);
-    const url = new URL(path, "http://www.sundaerun.com/");
+    const url = new URL(path, "https://www.sundaerun.com/");
     url.searchParams.set("release", "129f67037dc86654f0c3f7f343475e41ab907013");
     const response = await fetch(url, { signal: AbortSignal.timeout(20000), headers: { "Cache-Control": "no-cache" } });
     const bytes = Buffer.from(await response.arrayBuffer());
