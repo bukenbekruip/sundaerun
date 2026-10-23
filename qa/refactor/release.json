@@ -1,0 +1,33 @@
+{
+  "base_commit": "100718c7686762d8660c2b2445c660cf675a90a6",
+  "implementation_commit": "c217053a92d0c601f59c95d5b80e0b78113f29ba",
+  "production_files": 267,
+  "production_matches_tested_snapshot": true,
+  "source_files": 81,
+  "preserved_paths": [
+    ".github/workflows/deploy-pages.yml",
+    "public/CNAME",
+    "downloads/",
+    "assets/",
+    "public/assets/",
+    "reference/",
+    "source-art/",
+    "public/website/assets/",
+    "public/website/fonts/"
+  ],
+  "changed_preserved_paths": [],
+  "portable": {
+    "bytes": 92177315,
+    "sha256": "fde40669737060daba7e715b1661701981c269d8a4b8925ee494dea288cf5aef",
+    "runtime_images": 92
+  },
+  "existing_zip": {
+    "bytes": 68522414,
+    "sha256": "b2b05f6da117c1e6ed95d4162eb83e19d1753d2e8c48835f077842fa25000db3"
+  },
+  "limitations": [
+    "Chromium automation; no cross-browser, physical-device or expert audio certification.",
+    "HTTP portable tests block all extra requests; direct file:// was not tested.",
+    "Full-resolution comparison screenshots are retained as PR CI artifacts, not added to the historical QA tree."
+  ]
+}

@@ -1,0 +1,241 @@
+{
+  "checks": [
+    "Website skip link is keyboard reachable and focuses main content",
+    "Escape closes navigation and returns keyboard focus",
+    "Outside click closes the mobile navigation",
+    "Viewport changes reset stale mobile-menu state",
+    "Production CSP blocks an injected inline script",
+    "CSP does not permit unsafe inline execution",
+    "Garage skip link focuses the existing game without moving its layout",
+    "A saved HTML-like name remains literal text, not executable markup",
+    "No-script signup cannot send personal details in a URL",
+    "No-script signup remains a local preview",
+    "Refactor introduces no new axe violation categories compared with the preserved baseline",
+    "No uncaught errors in normal keyboard, privacy and name-handling flows"
+  ],
+  "axe": [
+    {
+      "version": "4.14.0",
+      "site": "baseline",
+      "page": "index.html",
+      "violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "nodes": [
+            [
+              ".cta-banner > div > .eyebrow"
+            ]
+          ]
+        }
+      ],
+      "passes": 19
+    },
+    {
+      "version": "4.14.0",
+      "site": "baseline",
+      "page": "culture.html",
+      "violations": [],
+      "passes": 19
+    },
+    {
+      "version": "4.14.0",
+      "site": "baseline",
+      "page": "garage.html",
+      "violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "nodes": [
+            [
+              ".btn-pink"
+            ]
+          ]
+        }
+      ],
+      "passes": 19
+    },
+    {
+      "version": "4.14.0",
+      "site": "baseline",
+      "page": "community.html",
+      "violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "nodes": [
+            [
+              ".btn-pink"
+            ],
+            [
+              ".muted-note"
+            ]
+          ]
+        }
+      ],
+      "passes": 25
+    },
+    {
+      "version": "4.14.0",
+      "site": "baseline",
+      "page": "shop.html",
+      "violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "nodes": [
+            [
+              ".cta-banner > div > .eyebrow"
+            ]
+          ]
+        }
+      ],
+      "passes": 19
+    },
+    {
+      "version": "4.14.0",
+      "site": "baseline",
+      "page": "about.html",
+      "violations": [],
+      "passes": 19
+    },
+    {
+      "version": "4.14.0",
+      "site": "baseline",
+      "page": "privacy.html",
+      "violations": [],
+      "passes": 19
+    },
+    {
+      "version": "4.14.0",
+      "site": "baseline",
+      "page": "play.html",
+      "violations": [],
+      "passes": 19
+    },
+    {
+      "version": "4.14.0",
+      "site": "baseline",
+      "page": "garage/",
+      "violations": [],
+      "passes": 24
+    },
+    {
+      "version": "4.14.0",
+      "site": "refactor",
+      "page": "index.html",
+      "violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "nodes": [
+            [
+              ".cta-banner > div > .eyebrow"
+            ]
+          ]
+        }
+      ],
+      "passes": 18
+    },
+    {
+      "version": "4.14.0",
+      "site": "refactor",
+      "page": "culture.html",
+      "violations": [],
+      "passes": 18
+    },
+    {
+      "version": "4.14.0",
+      "site": "refactor",
+      "page": "garage.html",
+      "violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "nodes": [
+            [
+              ".btn-pink"
+            ]
+          ]
+        }
+      ],
+      "passes": 18
+    },
+    {
+      "version": "4.14.0",
+      "site": "refactor",
+      "page": "community.html",
+      "violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "nodes": [
+            [
+              ".btn-pink"
+            ],
+            [
+              ".muted-note"
+            ]
+          ]
+        }
+      ],
+      "passes": 24
+    },
+    {
+      "version": "4.14.0",
+      "site": "refactor",
+      "page": "shop.html",
+      "violations": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "nodes": [
+            [
+              ".cta-banner > div > .eyebrow"
+            ]
+          ]
+        }
+      ],
+      "passes": 18
+    },
+    {
+      "version": "4.14.0",
+      "site": "refactor",
+      "page": "about.html",
+      "violations": [],
+      "passes": 18
+    },
+    {
+      "version": "4.14.0",
+      "site": "refactor",
+      "page": "privacy.html",
+      "violations": [],
+      "passes": 18
+    },
+    {
+      "version": "4.14.0",
+      "site": "refactor",
+      "page": "play.html",
+      "violations": [],
+      "passes": 18
+    },
+    {
+      "version": "4.14.0",
+      "site": "refactor",
+      "page": "garage/",
+      "violations": [],
+      "passes": 25
+    }
+  ],
+  "page_errors": [],
+  "new_axe_rules": [],
+  "status": "passed"
+}

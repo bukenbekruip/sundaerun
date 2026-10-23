@@ -35,6 +35,8 @@ npm run build:pages
 npm run build:standalone
 ```
 
+The PR job also installs `pip-audit==2.10.1` and runs `pip-audit -r requirements-browser.txt`. These are development/test dependencies; Pillow is pinned to patched 13.0.0. Recheck advisories when updating either the npm lockfile or browser requirements.
+
 Pages production serves `/`, `/shop.html`, `/garage/` and the retained `/website/` aliases. The current Pages workflow, official CNAME and publish commands are unchanged. A source change that introduces a CSS import or JavaScript module must ship at both website paths; the recursive build gate checks those resources.
 
 The separate PR quality workflow has read-only repository permissions and does not deploy. It builds the PR base and branch, compares website/game screenshots, runs actual game transactions/audio/import tests and checks a fresh portable artifact. Keep baseline screenshots from the unmodified base. Website frames require zero changed pixels; game frames permit an explicit tiny glass/shadow rasterization allowance, with raw differences retained. Never update a baseline simply to hide a design change.
