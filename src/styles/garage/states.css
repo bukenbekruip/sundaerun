@@ -1,0 +1,218 @@
+/* Controller-rendered controls and failure states. */
+.car-image {
+  object-position: left top;
+}
+.wheel-select[aria-pressed="true"]::after {
+  content: none;
+}
+.selection-check {
+  display: none;
+  position: absolute;
+  top: 7px;
+  right: 7px;
+  place-items: center;
+  width: 23px;
+  height: 23px;
+  border-radius: 50%;
+  background: #adffd1;
+  color: #173f28;
+  font-size: 16px;
+  font-weight: 900;
+  box-shadow: 0 2px 8px #0006;
+}
+.wheel-select[aria-pressed="true"] .selection-check {
+  display: grid;
+}
+.wheel-select img {
+  width: 88px;
+  height: 80px;
+}
+.wheel-name {
+  min-height: 28px;
+  max-height: 28px;
+  line-height: 14px;
+}
+.wheel-price {
+  margin-top: 3px;
+  line-height: 17px;
+}
+.availability-label {
+  font-size: 8px;
+  line-height: 11px;
+  margin-top: 2px;
+  color: #96ac8b;
+  white-space: nowrap;
+}
+.quote-items {
+  padding: 0;
+  list-style: none;
+}
+.quote-line strong {
+  color: #dce8d3;
+  font-size: 11px;
+  font-weight: 650;
+  white-space: nowrap;
+}
+.brand-lockup:has(.brand-logo[hidden]) .brand-fallback[hidden] {
+  display: block !important;
+}
+.scene-notice {
+  position: absolute;
+  left: 50%;
+  top: 44%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  width: 390px;
+  max-width: calc(100% - 30px);
+  padding: 22px;
+  background: #1a291ff0;
+  border: 1px solid #afd29a7a;
+  border-radius: 17px;
+  box-shadow: 0 15px 50px #0008;
+  z-index: 5;
+  text-align: center;
+  color: #efffe7;
+  font-size: 15px;
+  line-height: 1.5;
+}
+.scene-notice .primary-button {
+  min-width: 150px;
+}
+.detail-wheel {
+  display: block;
+  width: 128px;
+  height: 128px;
+  object-fit: contain;
+  margin: 18px auto;
+  filter: drop-shadow(0 10px 12px #0005);
+}
+#product-content > .eyebrow {
+  display: none;
+}
+#product-content > h2 {
+  font-size: 23px;
+  line-height: 31px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+#product-content > p {
+  margin-top: 13px;
+}
+.detail-caption {
+  text-align: center;
+  font-size: 11px !important;
+  letter-spacing: 0.5px;
+  color: #aabf9f !important;
+}
+.retailer-price {
+  font-size: 20px !important;
+  font-weight: 650;
+  color: #e7ffda !important;
+}
+.primary-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 48px;
+  padding: 12px 18px;
+  margin-top: 19px;
+  border-radius: 11px;
+  background: #a5f8c6;
+  color: #183c26;
+  font-size: 15px;
+  font-weight: 750;
+  text-decoration: none;
+}
+.primary-link:hover {
+  background: #c4ffdb;
+}
+@media (min-width: 1100px) {
+  .car-image {
+    left: var(--car-left, 418.273px);
+    top: var(--car-top, 169.636px);
+    width: var(--car-width, 912px);
+    height: var(--car-height, 513.273px);
+  }
+}
+@media (max-width: 1099px) {
+  .wheel-select img {
+    width: 92px;
+    height: 86px;
+  }
+  .wheel-name {
+    min-height: 32px;
+    max-height: 32px;
+    line-height: 16px;
+  }
+  .wheel-price {
+    margin-top: 3px;
+    line-height: 20px;
+  }
+  .availability-label {
+    font-size: 9px;
+    line-height: 12px;
+    margin-top: 3px;
+  }
+  .quote-line strong {
+    font-size: 12px;
+  }
+  .scene-notice {
+    width: 330px;
+    font-size: 13px;
+    padding: 16px;
+    gap: 12px;
+    border-radius: 13px;
+  }
+  .scene-notice .primary-button {
+    min-height: 40px;
+    padding: 8px 15px;
+    font-size: 12px;
+  }
+}
+@media (max-width: 649px) {
+  .scene-notice {
+    width: 275px;
+    font-size: 11px;
+    padding: 12px;
+    gap: 8px;
+    top: 51%;
+  }
+  .scene-notice .primary-button {
+    min-height: 36px;
+    padding: 7px 13px;
+    font-size: 11px;
+  }
+  .quote-line strong {
+    font-size: 13px;
+  }
+}
+.quote-items {
+  margin: 4px 0 0;
+}
+@media (max-width: 1099px) {
+  .wheel-card {
+    height: 213px;
+  }
+  .product-details,
+  .wheel-card:has(.wheel-select[aria-pressed="true"]) .product-details {
+    height: 44px;
+    min-height: 44px;
+  }
+  .rail-arrows button {
+    width: 44px;
+    height: 44px;
+  }
+  .wheel-tabs button {
+    min-height: 44px;
+  }
+  .cancel-preview {
+    min-height: 44px;
+  }
+  .scene-notice .primary-button {
+    min-height: 44px;
+  }
+}

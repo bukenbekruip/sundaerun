@@ -1,0 +1,18 @@
+@media (max-width: 920px) {
+  .header .header-inner {
+    flex-wrap: wrap;
+  }
+  .header-inner .nav {
+    display: flex;
+    position: static;
+    width: 100%;
+    order: 3;
+    box-shadow: none;
+  }
+  .header-inner .menu-button {
+    display: none;
+  }
+  .header {
+    position: static;
+  }
+}

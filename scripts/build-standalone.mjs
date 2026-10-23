@@ -197,7 +197,7 @@ function inspectJavaScript(source, label) {
     if (
       character === "/" &&
       (!previous ||
-        /^(?:[=(:,;!?\[{]|return|throw|case|yield|await|typeof|void|delete)$/.test(
+        /^(?:[=(:,;!?[{]|return|throw|case|yield|await|typeof|void|delete)$/.test(
           previous,
         ))
     ) {

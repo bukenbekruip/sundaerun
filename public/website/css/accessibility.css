@@ -1,0 +1,28 @@
+.skip-link {
+  position: fixed;
+  top: 8px;
+  left: 8px;
+  z-index: 1000;
+  padding: var(--sr-space-3) var(--sr-space-4);
+  background: var(--cream);
+  color: var(--ink);
+  border: 2px solid var(--cherry);
+  transform: translateY(-200%);
+}
+.skip-link:focus {
+  transform: none;
+}
+#main {
+  scroll-margin-top: 120px;
+}
+select:focus-visible,
+textarea:focus-visible {
+  outline: 3px solid var(--cherry);
+  outline-offset: 3px;
+}
+@media (prefers-reduced-motion: reduce) {
+  .btn,
+  .feature-card {
+    transition: none;
+  }
+}

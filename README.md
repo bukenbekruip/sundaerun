@@ -34,6 +34,8 @@ Cabins are left-hand-drive illustrated views with four coordinated packages per 
 
 ## Website
 
+The design-preserving refactor keeps static HTML/ES modules and Vite. Website content remains in `public/website/`; shared header/footer source is in `website/components/`, and the build renders static pages. Readable website/game CSS modules share `src/styles/tokens.css` while retaining their distinct themes. See [the repository audit](docs/ARCHITECTURE_AUDIT.md), [development guide](docs/DEVELOPMENT.md) and [refactor review](docs/REFACTOR_REVIEW.md).
+
 The supplied website is integrated under `public/website/`, retaining its brand design and apparel artwork. Its Play page launches the existing game, and Build Club links back to the website. The Pages production layout puts the website at `/` and the game at `/garage/`; development/portable builds retain their earlier layout. Old jobs/staff/lifts descriptions have been replaced with the actual build-and-show loop and current game images. The original website intake and original game/reference art were preserved.
 
 The website uses the shirt collection’s stacked soft-serve/cherry identity. The clothing preview has **eight designs: two adult and six kids’ styles**, including the new girls’ edit (Cherry Club, Daisy Drive and Lilac Racers) and Mint Mini Crew. Collection jump links and full-size front/back artwork make the designs easy to browse on phones and desktop. Original apparel artwork is preserved; new sources and encoding fingerprints are recorded in `docs/WEBSITE_APPAREL_ART.json`.

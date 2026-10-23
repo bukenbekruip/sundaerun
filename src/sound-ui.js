@@ -1,13 +1,8 @@
+import { element as el } from "./ui/dom.js";
 import "./sound.css";
 import { getVehicle } from "./catalogue.js";
 import { getPerformancePart } from "./club.js";
 
-const el = (tag, cls, text) => {
-  const n = document.createElement(tag);
-  if (cls) n.className = cls;
-  if (text) n.textContent = text;
-  return n;
-};
 export function mountSoundControls(parent, engine, { compact = false } = {}) {
   const panel = el(
     "section",
