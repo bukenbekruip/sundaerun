@@ -15,3 +15,5 @@ The JPEGs are review copies from final comparison PNGs, including the required d
 `npm-audit.json`, `python-audit.json` and `secrets.json` record time-specific advisory/pattern results. Python test dependencies were updated from Pillow 12.3 to patched 13.0.0 after its advisory scan; neither is a browser runtime dependency. The secret scanner reports matching values redacted and is limited to its documented common high-confidence patterns.
 
 Chromium automation covers the listed cases; it does not certify Safari/Firefox, physical phones, authentic engine audio or real product fitment. Portable tests serve a fresh self-contained HTML through HTTP and block all further requests; direct `file://` was not tested. Commerce and signup remain previews. The branch has no production deployment step.
+
+`pages-readonly.json` records the existing hosting configuration independently of local tests. Its correct www CNAME does not imply HTTPS enforcement: GitHub still reports that as disabled. No settings were changed and no fresh public-host TLS certification is claimed.
