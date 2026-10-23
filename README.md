@@ -6,8 +6,9 @@ Build and show six enthusiast cars in the warm Sundae Run workshop: **Subaru WRX
 
 ## Play and download
 
-- [Garage game](https://bukenbekruip.github.io/sundaerun/)
-- [Sundae Run website, culture and clothing](https://bukenbekruip.github.io/sundaerun/website/)
+- [Garage game](https://www.sundaerun.com/garage/)
+- [Sundae Run website, culture and clothing](https://www.sundaerun.com/)
+- [Clothing collection preview](https://www.sundaerun.com/shop.html)
 - **[Download the offline game ZIP](https://github.com/bukenbekruip/sundaerun/raw/refs/heads/main/downloads/Sundae-Run-Playable.zip)**
 
 Extract the ZIP completely, then open `OPEN-SUNDAE-RUN.html` in Chrome or Edge. No Node.js installation is needed. If clicking the download does nothing, open [the GitHub file page](https://github.com/bukenbekruip/sundaerun/blob/main/downloads/Sundae-Run-Playable.zip) and choose **Download raw file**. Sign in with repository access if prompted. The exact verified download and its hashes are recorded in `qa/rs3-interiors/release.json`.
@@ -33,7 +34,7 @@ Cabins are left-hand-drive illustrated views with four coordinated packages per 
 
 ## Website
 
-The supplied website is integrated under `public/website/`, retaining its brand design and apparel artwork. Its Play page launches the existing root game, and Build Club links back to the website. Old jobs/staff/lifts descriptions have been replaced with the actual build-and-show loop and current game images. The original website intake and original game/reference art were preserved.
+The supplied website is integrated under `public/website/`, retaining its brand design and apparel artwork. Its Play page launches the existing game, and Build Club links back to the website. The Pages production layout puts the website at `/` and the game at `/garage/`; development/portable builds retain their earlier layout. Old jobs/staff/lifts descriptions have been replaced with the actual build-and-show loop and current game images. The original website intake and original game/reference art were preserved.
 
 The website uses the shirt collection’s stacked soft-serve/cherry identity. The clothing preview has **eight designs: two adult and six kids’ styles**, including the new girls’ edit (Cherry Club, Daisy Drive and Lilac Racers) and Mint Mini Crew. Collection jump links and full-size front/back artwork make the designs easy to browse on phones and desktop. Original apparel artwork is preserved; new sources and encoding fingerprints are recorded in `docs/WEBSITE_APPAREL_ART.json`.
 
@@ -58,7 +59,9 @@ npm run preview -- --host 127.0.0.1 --port 4173
 
 Normal web output is `dist/` after `npm run build`. `npm run build:standalone` also creates the single-file `dist/OPEN-SUNDAE-RUN.html`, embedding 92 runtime images and the game font. New portable artwork uses compact WebP distribution copies to stay within the unchanged 96 MiB budget. Source PNGs and original reference images are preserved. The legacy `OPEN-THIS-GAME.html` is historical diagnostic material.
 
-`.github/workflows/deploy-pages.yml` tests, builds and deploys `dist/` on `main` pushes or manual workflow runs. Select **GitHub Actions** in repository **Settings → Pages**. Keep `base: './'` in `vite.config.js` so the game and website work inside the `/sundaerun/` project path. No backend, app secrets, external fonts or downloaded audio files are required. Web Audio synthesis works in the portable game too.
+`.github/workflows/deploy-pages.yml` tests, runs `npm run build:pages` and deploys `dist/` on `main` pushes or manual workflow runs. The production website is at `/`, the shop at `/shop.html` and the game at `/garage/`; old `/website/` routes remain available. `base: './'` in `vite.config.js` keeps assets relative. Normal development and portable builds retain their existing layout. No backend, app secrets, external fonts or downloaded audio files are required. Web Audio synthesis works in the portable game too.
+
+The official Pages domain is **www.sundaerun.com**; the DNS CNAME target is **bukenbekruip.github.io**. See [domain setup and GoDaddy records](docs/GITHUB_PAGES_DOMAIN.md). Public access, the apex redirect and certificate approval depend on the registrar DNS change. The workflow configures Pages without touching registrar or email DNS.
 
 ## Verification and artwork
 

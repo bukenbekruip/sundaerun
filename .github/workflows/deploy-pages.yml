@@ -1,4 +1,4 @@
-name: Deploy game to GitHub Pages
+name: Deploy Sundae Run website and garage
 
 on:
   push:
@@ -15,16 +15,27 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: write
     steps:
       - uses: actions/checkout@v7.0.1
       - uses: actions/setup-node@v7.1.0
         with:
-          node-version: '24'
+          node-version: "24"
           cache: npm
       - run: npm ci
       - run: npm test
-      # Relative Vite base keeps every asset inside the Pages project path.
-      - run: npm run build
+      # Preserve the normal/portable build, then assemble the website at / and
+      # the complete game at /garage/ with all its relative assets.
+      - run: npm run build:pages
+      - name: Configure the official www domain
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh api --method PUT "repos/$GITHUB_REPOSITORY/pages" --input - <<'JSON'
+          {"cname":"www.sundaerun.com","build_type":"workflow"}
+          JSON
       - uses: actions/configure-pages@v6.0.0
       - uses: actions/upload-pages-artifact@v5.0.0
         with:
@@ -43,3 +54,13 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v5.0.1
+      - name: Enforce HTTPS when the domain certificate is ready
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          ready=$(gh api "repos/$GITHUB_REPOSITORY/pages" --jq '(.https_certificate // {}) | .state == "approved" and ((.domains // []) | index("www.sundaerun.com") != null)')
+          if [ "$ready" = "true" ]; then
+            gh api --method PUT "repos/$GITHUB_REPOSITORY/pages" --field https_enforced=true
+          else
+            echo "HTTPS enforcement awaits DNS and GitHub certificate approval. Re-run this workflow after DNS is connected."
+          fi

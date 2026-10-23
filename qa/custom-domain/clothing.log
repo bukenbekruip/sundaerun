@@ -1,0 +1,65 @@
+PASS 320: eight collection designs
+PASS 320: six kids styles including three in the girls’ edit
+PASS 320: each new design appears once
+PASS 320: complete front/back artwork fits landscape cards and links to its full-size file
+PASS 320: shirt identity renders legibly in header
+PASS 320: header and product cards fit viewport
+PASS 320: collection remains a clearly labelled preview
+PASS 320: girls jump shows heading below sticky header
+PASS 320: kids jump shows heading below sticky header
+PASS 320: adults jump shows heading below sticky header
+PASS 390: eight collection designs
+PASS 390: six kids styles including three in the girls’ edit
+PASS 390: each new design appears once
+PASS 390: complete front/back artwork fits landscape cards and links to its full-size file
+PASS 390: shirt identity renders legibly in header
+PASS 390: header and product cards fit viewport
+PASS 390: collection remains a clearly labelled preview
+PASS 390: girls jump shows heading below sticky header
+PASS 390: kids jump shows heading below sticky header
+PASS 390: adults jump shows heading below sticky header
+PASS 390: full-size design actually opens in a new tab
+PASS 768: eight collection designs
+PASS 768: six kids styles including three in the girls’ edit
+PASS 768: each new design appears once
+PASS 768: complete front/back artwork fits landscape cards and links to its full-size file
+PASS 768: shirt identity renders legibly in header
+PASS 768: header and product cards fit viewport
+PASS 768: collection remains a clearly labelled preview
+PASS 768: girls jump shows heading below sticky header
+PASS 768: kids jump shows heading below sticky header
+PASS 768: adults jump shows heading below sticky header
+PASS 820: eight collection designs
+PASS 820: six kids styles including three in the girls’ edit
+PASS 820: each new design appears once
+PASS 820: complete front/back artwork fits landscape cards and links to its full-size file
+PASS 820: shirt identity renders legibly in header
+PASS 820: header and product cards fit viewport
+PASS 820: collection remains a clearly labelled preview
+PASS 820: girls jump shows heading below sticky header
+PASS 820: kids jump shows heading below sticky header
+PASS 820: adults jump shows heading below sticky header
+PASS 820: tablet navigation opens and reaches Our Story
+PASS 1024: eight collection designs
+PASS 1024: six kids styles including three in the girls’ edit
+PASS 1024: each new design appears once
+PASS 1024: complete front/back artwork fits landscape cards and links to its full-size file
+PASS 1024: shirt identity renders legibly in header
+PASS 1024: header and product cards fit viewport
+PASS 1024: collection remains a clearly labelled preview
+PASS 1024: girls jump shows heading below sticky header
+PASS 1024: kids jump shows heading below sticky header
+PASS 1024: adults jump shows heading below sticky header
+PASS 1440: eight collection designs
+PASS 1440: six kids styles including three in the girls’ edit
+PASS 1440: each new design appears once
+PASS 1440: complete front/back artwork fits landscape cards and links to its full-size file
+PASS 1440: shirt identity renders legibly in header
+PASS 1440: header and product cards fit viewport
+PASS 1440: collection remains a clearly labelled preview
+PASS 1440: girls jump shows heading below sticky header
+PASS 1440: kids jump shows heading below sticky header
+PASS 1440: adults jump shows heading below sticky header
+PASS 1440: full-size design actually opens in a new tab
+PASS Home promotes the expanded eight-design collection
+PASS No browser, console or HTTP errors

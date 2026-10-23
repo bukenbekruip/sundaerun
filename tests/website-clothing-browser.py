@@ -9,7 +9,7 @@ from playwright.async_api import async_playwright, expect
 ROOT = Path(__file__).resolve().parents[1]
 
 
-async def main(base, out):
+async def main(base, out, site_path="website/"):
     out.mkdir(parents=True, exist_ok=True)
     report = {"checks": [], "page_errors": [], "http_errors": [], "console_errors": []}
 
@@ -28,7 +28,7 @@ async def main(base, out):
         try:
             for width in [320, 390, 768, 820, 1024, 1440]:
                 await page.set_viewport_size({"width": width, "height": 900})
-                await page.goto(base + "website/shop.html", wait_until="networkidle")
+                await page.goto(base + site_path + "shop.html", wait_until="networkidle")
                 await page.evaluate("Promise.all([...document.images].map(i=>{i.loading='eager';return i.decode()}))")
                 check(await page.locator(".product").count() == 8, f"{width}: eight collection designs")
                 check(await page.locator("#girls .product").count() == 3 and await page.locator("#kids .product").count() == 3, f"{width}: six kids styles including three in the girls’ edit")
@@ -51,7 +51,7 @@ async def main(base, out):
                 for section in ["girls", "kids", "adults"]:
                     await page.evaluate("scrollTo({top:0,behavior:'instant'})")
                     await page.locator(f'.collection-jumps a[href="#{section}"]').click()
-                    await expect(page).to_have_url(base + "website/shop.html#" + section)
+                    await expect(page).to_have_url(base + site_path + "shop.html#" + section)
                     check(await page.evaluate("""id=>document.getElementById(id).getBoundingClientRect().top >=
                         document.querySelector('.header').getBoundingClientRect().bottom-1""", section), f"{width}: {section} jump shows heading below sticky header")
                 if width in [390, 1440]:
@@ -63,18 +63,18 @@ async def main(base, out):
                         await page.locator('[data-design="cherry-club"] .product-art').click()
                     popup = await popup_info.value
                     await popup.wait_for_load_state()
-                    check(popup.url == base + "website/assets/shirt-cherry-club.webp", f"{width}: full-size design actually opens in a new tab")
+                    check(popup.url == base + site_path + "assets/shirt-cherry-club.webp", f"{width}: full-size design actually opens in a new tab")
                     await popup.close()
                 if width == 820:
                     await page.locator(".menu-button").click()
                     await expect(page.locator(".nav")).to_be_visible()
                     await page.locator('.nav a[href="about.html"]').click()
-                    await expect(page).to_have_url(base + "website/about.html")
+                    await expect(page).to_have_url(base + site_path + "about.html")
                     check(True, "820: tablet navigation opens and reaches Our Story")
-            await page.goto(base + "website/index.html", wait_until="networkidle")
+            await page.goto(base + site_path + "index.html", wait_until="networkidle")
             check(await page.get_by_role("link", name="Explore all eight designs").count() == 1, "Home promotes the expanded eight-design collection")
             await page.get_by_role("link", name="Explore all eight designs").click()
-            await expect(page).to_have_url(base + "website/shop.html")
+            await expect(page).to_have_url(base + site_path + "shop.html")
             check(not report["page_errors"] and not report["http_errors"] and not report["console_errors"], "No browser, console or HTTP errors")
             report["status"] = "passed"
         except Exception:
@@ -91,5 +91,6 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--base-url", default="http://127.0.0.1:4184/sundaerun/")
     parser.add_argument("--output", type=Path, default=ROOT / "qa/website-kids/clothing")
+    parser.add_argument("--site-path", default="website/")
     args = parser.parse_args()
-    asyncio.run(main(args.base_url.rstrip("/") + "/", args.output))
+    asyncio.run(main(args.base_url.rstrip("/") + "/", args.output, args.site_path))

@@ -2,7 +2,7 @@
 import argparse,asyncio,json
 from pathlib import Path
 from playwright.async_api import async_playwright,expect
-ROOT=Path(__file__).resolve().parents[1];OUT=ROOT/'qa/expansion/website';BASE='http://127.0.0.1:4183/sundaerun/'
+ROOT=Path(__file__).resolve().parents[1];OUT=ROOT/'qa/expansion/website';BASE='http://127.0.0.1:4183/sundaerun/';SITE_PATH='website/';RETURN_PATH='website/index.html'
 async def main():
  OUT.mkdir(parents=True,exist_ok=True);r={'checks':[],'page_errors':[],'http_errors':[],'console_errors':[]}
  def check(ok,label):
@@ -15,7 +15,7 @@ async def main():
    for w,h in [(390,844),(1440,1000)]:
     await p.set_viewport_size({'width':w,'height':h})
     for name in ['index','culture','garage','community','shop','about','privacy','play']:
-     response=await p.goto(BASE+'website/'+name+'.html',wait_until='networkidle')
+     response=await p.goto(BASE+SITE_PATH+name+'.html',wait_until='networkidle')
      check(response.status==200,f'{w}/{name}: HTML responds 200 under project path')
      await p.evaluate("Promise.all([...document.images].map(i=>{i.loading='eager';return i.decode()}))")
      check(await p.evaluate('document.documentElement.scrollWidth<=innerWidth+1'),f'{w}/{name}: no horizontal overflow')
@@ -32,8 +32,8 @@ async def main():
     await p.locator('[data-vehicle="m3"]').click(no_wait_after=True)
     await p.wait_for_function("()=>document.querySelector('#car-image').dataset.variant==='m3:blue:sr-01'&&document.querySelector('#scene').getAttribute('aria-busy')==='false'",polling=100)
     await p.locator('#club-open').click();await p.locator('#brand-website').click()
-    await expect(p).to_have_url(BASE+'website/index.html');check(True,f'{w}: game links back to the brand website')
-   await p.goto(BASE+'website/community.html');await p.locator('#signup-demo input[name="name"]').fill('Garage visitor');await p.locator('#signup-demo input[type="email"]').fill('visitor@example.com');await p.locator('#signup-demo button').click();await expect(p.locator('#signup-status')).to_contain_text('nothing was submitted');check(True,'Community form is clearly a local demo without submitting an email')
+    await expect(p).to_have_url(BASE+RETURN_PATH);check(True,f'{w}: game links back to the brand website')
+   await p.goto(BASE+SITE_PATH+'community.html');await p.locator('#signup-demo input[name="name"]').fill('Garage visitor');await p.locator('#signup-demo input[type="email"]').fill('visitor@example.com');await p.locator('#signup-demo button').click();await expect(p.locator('#signup-status')).to_contain_text('nothing was submitted');check(True,'Community form is clearly a local demo without submitting an email')
    check(not r['page_errors'] and not r['http_errors'] and not r['console_errors'],'Website and game roundtrip have no page or HTTP errors')
    r['status']='passed'
   except Exception:
@@ -41,4 +41,4 @@ async def main():
   finally:
    r['passed_checks']=len(r['checks']);(OUT/'website-results.json').write_text(json.dumps(r,indent=2)+'\n');await b.close()
 if __name__=='__main__':
- parser=argparse.ArgumentParser(description=__doc__);parser.add_argument('--base-url',default=BASE);parser.add_argument('--output',type=Path,default=ROOT/'qa/rs3-interiors/website');args=parser.parse_args();BASE=args.base_url.rstrip('/')+'/';OUT=args.output;asyncio.run(main())
+ parser=argparse.ArgumentParser(description=__doc__);parser.add_argument('--base-url',default=BASE);parser.add_argument('--site-path',default=SITE_PATH);parser.add_argument('--return-path',default=RETURN_PATH);parser.add_argument('--output',type=Path,default=ROOT/'qa/rs3-interiors/website');args=parser.parse_args();BASE=args.base_url.rstrip('/')+'/';SITE_PATH=args.site_path;RETURN_PATH=args.return_path;OUT=args.output;asyncio.run(main())

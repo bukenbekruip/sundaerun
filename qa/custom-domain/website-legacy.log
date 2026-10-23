@@ -1,0 +1,70 @@
+PASS 390/index: HTML responds 200 under project path
+PASS 390/index: no horizontal overflow
+PASS 390/index: main page heading present
+PASS 390/index: all local navigation destinations exist
+PASS 390/culture: HTML responds 200 under project path
+PASS 390/culture: no horizontal overflow
+PASS 390/culture: main page heading present
+PASS 390/culture: all local navigation destinations exist
+PASS 390/garage: HTML responds 200 under project path
+PASS 390/garage: no horizontal overflow
+PASS 390/garage: main page heading present
+PASS 390/garage: all local navigation destinations exist
+PASS 390/community: HTML responds 200 under project path
+PASS 390/community: no horizontal overflow
+PASS 390/community: main page heading present
+PASS 390/community: all local navigation destinations exist
+PASS 390/shop: HTML responds 200 under project path
+PASS 390/shop: no horizontal overflow
+PASS 390/shop: main page heading present
+PASS 390/shop: all local navigation destinations exist
+PASS 390/about: HTML responds 200 under project path
+PASS 390/about: no horizontal overflow
+PASS 390/about: main page heading present
+PASS 390/about: all local navigation destinations exist
+PASS 390/privacy: HTML responds 200 under project path
+PASS 390/privacy: no horizontal overflow
+PASS 390/privacy: main page heading present
+PASS 390/privacy: all local navigation destinations exist
+PASS 390/play: HTML responds 200 under project path
+PASS 390/play: no horizontal overflow
+PASS 390/play: main page heading present
+PASS 390/play: all local navigation destinations exist
+PASS 390: website Play launches the six-car game
+PASS 390: game links back to the brand website
+PASS 1440/index: HTML responds 200 under project path
+PASS 1440/index: no horizontal overflow
+PASS 1440/index: main page heading present
+PASS 1440/index: all local navigation destinations exist
+PASS 1440/culture: HTML responds 200 under project path
+PASS 1440/culture: no horizontal overflow
+PASS 1440/culture: main page heading present
+PASS 1440/culture: all local navigation destinations exist
+PASS 1440/garage: HTML responds 200 under project path
+PASS 1440/garage: no horizontal overflow
+PASS 1440/garage: main page heading present
+PASS 1440/garage: all local navigation destinations exist
+PASS 1440/community: HTML responds 200 under project path
+PASS 1440/community: no horizontal overflow
+PASS 1440/community: main page heading present
+PASS 1440/community: all local navigation destinations exist
+PASS 1440/shop: HTML responds 200 under project path
+PASS 1440/shop: no horizontal overflow
+PASS 1440/shop: main page heading present
+PASS 1440/shop: all local navigation destinations exist
+PASS 1440/about: HTML responds 200 under project path
+PASS 1440/about: no horizontal overflow
+PASS 1440/about: main page heading present
+PASS 1440/about: all local navigation destinations exist
+PASS 1440/privacy: HTML responds 200 under project path
+PASS 1440/privacy: no horizontal overflow
+PASS 1440/privacy: main page heading present
+PASS 1440/privacy: all local navigation destinations exist
+PASS 1440/play: HTML responds 200 under project path
+PASS 1440/play: no horizontal overflow
+PASS 1440/play: main page heading present
+PASS 1440/play: all local navigation destinations exist
+PASS 1440: website Play launches the six-car game
+PASS 1440: game links back to the brand website
+PASS Community form is clearly a local demo without submitting an email
+PASS Website and game roundtrip have no page or HTTP errors
