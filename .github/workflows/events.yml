@@ -1,0 +1,26 @@
+name: Events calendar source checks
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - scripts/events/**
+      - .github/workflows/events.yml
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  sources:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v7.0.1
+      - uses: actions/setup-node@v7.1.0
+        with:
+          node-version: '24'
+      - run: node scripts/events/source-audit.mjs
+      - uses: actions/upload-artifact@v5.0.0
+        if: always()
+        with:
+          name: events-source-audit
+          path: /tmp/events-source-audit
+          retention-days: 7
