@@ -17,6 +17,7 @@ jobs:
       - uses: actions/setup-node@v7.1.0
         with:
           node-version: '24'
+      - run: npm ci
       - run: node scripts/events/source-audit.mjs
       - uses: actions/upload-artifact@v5.0.0
         if: always()

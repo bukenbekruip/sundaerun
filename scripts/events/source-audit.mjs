@@ -1,14 +1,15 @@
 import { mkdir, writeFile } from "node:fs/promises";
+import { load } from "cheerio";
 
 const urls = [
   "https://www.formula1.com/en/racing/2026",
   "https://www.motogp.com/en/calendar",
   "https://www.fiawec.com/en/calendar",
   "https://www.wrc.com/en/calendar",
-  "https://www.motorsport.co.za/",
+  "https://www.fiawec.com/",
   "https://www.motorsport.co.za/events/",
   "https://www.zwartkops.co.za/events/",
-  "https://wpmc.co.za/events/",
+  "https://wpmc.co.za/upcoming-events/",
   "https://www.bmwcarclub.co.za/events/",
   "https://dezziraceway.co.za/",
   "https://www.redstarraceway.co.za/",
@@ -24,12 +25,17 @@ for (const [index, url] of urls.entries()) {
     const links = [...body.matchAll(/href=["']([^"']+)["']/gi)].map(m => m[1]).filter(h => /event|calendar|ical|\.ics|wp-json|\/racing\//i.test(h));
     const scripts = [...body.matchAll(/<script\b([^>]*)>([\s\S]*?)<\/script>/gi)].filter(m => /json/i.test(m[1])).map(m => ({ attrs: m[1], content: m[2].slice(0, 5500) }));
     const text = body.replace(/<(script|style)\b[^>]*>[\s\S]*?<\/\1>/gi, " ").replace(/<[^>]+>/g, " ").replace(/\s+/g, " ");
-    reports.push({ url, final: response.url, status: response.status, bytes: body.length, links: [...new Set(links)].slice(0, 20), scripts: scripts.slice(0, 3), text: text.slice(0, 3500) });
+    const $ = load(body);
+    const samples = $("a[href]").toArray().filter(a => /\/racing\/\d{4}\/.+|\/calendar\/\d{4}\/|\/en\/events\//.test($(a).attr("href"))).slice(0, 3).map(a => ({ href: $(a).attr("href"), text: $(a).text().replace(/\s+/g, " ").slice(0, 650), leaves: $(a).find("*").toArray().filter(n => !$(n).children().length && $(n).text().trim()).slice(0, 16).map(n => ({ tag: n.tagName, class: $(n).attr("class"), text: $(n).text().trim().slice(0, 100), datetime: $(n).attr("datetime") })) }));
+    reports.push({ url, final: response.url, status: response.status, bytes: body.length, links: [...new Set(links)].slice(0, 20), scripts: scripts.slice(0, 3), samples, text: text.slice(0, 3500) });
   } catch (error) { reports.push({ url, error: error.message }); }
 }
 await writeFile("/tmp/events-source-audit/report.json", JSON.stringify(reports, null, 2));
 const emit = (title, value) => console.log(`::notice title=${title}::${JSON.stringify(value).replaceAll("%", "%25").replaceAll("\n", "%0A").replaceAll("\r", "%0D")}`);
 emit("Source overview", reports.map(r => ({ url: r.url, status: r.status, error: r.error, bytes: r.bytes, scripts: r.scripts?.map(s => s.attrs) })));
-for (const [index, report] of reports.slice(0, 8).entries()) {
-  emit(`Source details ${index}`, { ...report, scripts: report.scripts?.map(s => ({ attrs: s.attrs, content: s.content.slice(0, 900) })), text: report.text?.slice(0, 1000), links: report.links?.slice(0, 12) });
+for (const [index, report] of reports.entries()) {
+  if (![0, 1, 3, 4, 7, 8, 9, 11].includes(index)) continue;
+  const detail = report.samples?.length ? { url: report.url, samples: report.samples.slice(0, 2) } : { ...report, scripts: report.scripts?.slice(0, 1).map(s => ({ attrs: s.attrs, content: s.content.slice(0, 800) })), text: report.text?.slice(0, 1800), links: report.links?.slice(0, 10) };
+  if (JSON.stringify(detail).length > 3700) detail.samples = detail.samples?.slice(0, 1);
+  emit(`Source details ${index}`, detail);
 }
