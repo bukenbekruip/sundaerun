@@ -56,8 +56,7 @@
       "name": "Motorsport South Africa",
       "scope": "south-africa",
       "url": "https://www.motorsport.co.za/events/",
-      "hosts": ["www.motorsport.co.za", "motorsport.co.za"],
-      "country": "ZA"
+      "hosts": ["www.motorsport.co.za", "motorsport.co.za"]
     },
     {
       "id": "zwartkops",
