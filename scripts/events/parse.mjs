@@ -22,9 +22,11 @@ export function publicUrl(value, base) {
 }
 export function dateOnly(value) {
   if (typeof value !== "string") return null;
-  const match = /^(\d{4})-?(\d{2})-?(\d{2})(?:$|[T ])/u.exec(value);
+  const match =
+    /^(\d{4})-(\d{1,2})-(\d{1,2})(?:$|[T ])/u.exec(value) ||
+    /^(\d{4})(\d{2})(\d{2})(?:$|[T ])/u.exec(value);
   if (!match) return null;
-  const result = `${match[1]}-${match[2]}-${match[3]}`;
+  const result = `${match[1]}-${match[2].padStart(2, "0")}-${match[3].padStart(2, "0")}`;
   const date = new Date(result + "T12:00:00Z");
   return Number.isFinite(date.getTime()) &&
     date.toISOString().startsWith(result)
@@ -119,6 +121,11 @@ function schemaEvents(value, output = [], depth = 0) {
 export function parseHtml(text, base) {
   const $ = load(text),
     events = [];
+  const elementIds = new Set(
+    $("[id]")
+      .toArray()
+      .map((node) => node.attribs.id),
+  );
   $('script[type="application/ld+json"]').each((_, node) => {
     try {
       for (const event of schemaEvents(JSON.parse($(node).text()))) {
@@ -155,7 +162,16 @@ export function parseHtml(text, base) {
               : address?.addressCountry,
           organizer:
             typeof organizer === "string" ? organizer : organizer?.name,
-          url: publicUrl(event.url || event["@id"] || base, base),
+          url: publicUrl(
+            event.url ||
+              (typeof event["@id"] === "string" &&
+              /^https:\/\//.test(event["@id"])
+                ? event["@id"]
+                : elementIds.has(event["@id"])
+                  ? new URL("#" + encodeURIComponent(event["@id"]), base).href
+                  : base),
+            base,
+          ),
           status: /cancelled/i.test(event.eventStatus ?? "")
             ? "cancelled"
             : /postponed/i.test(event.eventStatus ?? "")

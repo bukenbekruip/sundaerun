@@ -53,6 +53,8 @@ test("calendar dates reject rollover and handle real leap days and local date pr
   assert.equal(dateOnly("2028-02-29T08:30:00+02:00"), "2028-02-29");
   assert.equal(dateOnly("20260329T090000"), "2026-03-29");
   assert.equal(dateOnly("tomorrow"), null);
+  assert.equal(dateOnly("2026-11-1T07:30+2:00"), "2026-11-01");
+  assert.equal(dateOnly("2026111"), null);
   for (const [text, expected] of [
     ["30 Oct - 1 Nov 2026", ["2026-10-30", "2026-11-01"]],
     ["21 – 24 January 2027", ["2027-01-21", "2027-01-24"]],
@@ -85,6 +87,12 @@ test("only actual schema events become listings; publication dates and malformed
   assert.equal(parsed.events[0].province, "GP");
   assert.equal(parsed.events[0].country, "ZA");
   assert.equal(parsed.events[0].venue, raw.venue);
+  const club = parseHtml(
+    '<div id="event_12"></div>' +
+      schema([record({ "@id": "event_12", url: undefined })]),
+    source.url,
+  );
+  assert.equal(club.events[0].url, source.url + "#event_12");
 });
 test("missing locations, invalid dates, promotional year-long entries and foreign local events are withheld", () => {
   assert.equal(normalizeEvent({ ...raw, venue: "" }, source, now), null);

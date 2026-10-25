@@ -75,27 +75,6 @@ export async function refresh({
           found.push(...parseIcs(response.text));
         else {
           const parsed = parseHtml(response.text, response.url);
-          if (source.id === "bmw-club" && visited.size === 1) {
-            const cards = parsed
-              .$(".eventon_list_event")
-              .toArray()
-              .slice(0, 3)
-              .map((node) => ({
-                attrs: node.attribs,
-                text: parsed.$(node).text().replace(/\s+/g, " ").slice(0, 180),
-                microdata: parsed
-                  .$(node)
-                  .find('[itemprop="startDate"],[itemprop="location"]')
-                  .toArray()
-                  .map((child) => ({
-                    attrs: child.attribs,
-                    text: parsed.$(child).text().slice(0, 100),
-                  })),
-              }));
-            console.log(
-              `::notice title=Club calendar markup::${JSON.stringify(cards)}`,
-            );
-          }
           found.push(...parsed.events, ...parseSeries(parsed.$, source, now));
           if (!source.adapter) {
             // Follow only explicit next/calendar-feed links on trusted source hosts.

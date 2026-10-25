@@ -72,22 +72,18 @@
     },
     {
       "id": "bmw-club",
-      "name": "BMW Clubs Africa — South African events",
+      "name": "BMW Clubs Africa \u2014 South African events",
       "scope": "south-africa",
       "url": "https://www.bmwclubs.africa/bmw-clubs-africa/events/",
       "hosts": ["www.bmwclubs.africa", "bmwclubs.africa"],
       "category": "meet"
-    },
+    }
+  ],
+  "candidates": [
     {
-      "id": "dezzi",
       "name": "Dezzi Raceway",
-      "scope": "south-africa",
       "url": "https://www.dezziraceway.co.za/events",
-      "hosts": ["www.dezziraceway.co.za", "dezziraceway.co.za"],
-      "country": "ZA",
-      "venue": "Dezzi Raceway",
-      "city": "Port Shepstone",
-      "province": "KwaZulu-Natal"
+      "reason": "No usable dated public records found; requires a verified adapter before publication."
     }
   ]
 }
