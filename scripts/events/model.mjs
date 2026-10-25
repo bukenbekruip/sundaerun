@@ -1,6 +1,7 @@
 import { createHash } from "node:crypto";
 import { clean, dateOnly, publicUrl } from "./parse.mjs";
 import { provinces, provinceFor, isForeignLocation } from "./geography.mjs";
+import { expiryDay } from "../../public/website/js/events-data.js";
 
 export const categories = [
   "racing",
@@ -116,19 +117,17 @@ export function normalizeEvent(raw, source, now) {
   };
 }
 export function upcoming(events, now) {
-  const today = new Intl.DateTimeFormat("en-CA", {
-    timeZone: "Africa/Johannesburg",
-    year: "numeric",
-    month: "2-digit",
-    day: "2-digit",
-  }).format(now);
   const limit = new Date(now.getTime() + 366 * 86400000)
     .toISOString()
     .slice(0, 10);
   const seen = new Set(),
     seenIds = new Set();
   return events
-    .filter((event) => event.endDate >= today && event.startDate <= limit)
+    .filter(
+      (event) =>
+        event.endDate >= expiryDay(event.scope, now) &&
+        event.startDate <= limit,
+    )
     .sort(
       (a, b) =>
         a.startDate.localeCompare(b.startDate) ||

@@ -4,6 +4,8 @@ Use Node 24 (the Pages/PR CI version) and `npm ci`. Node 22.12+ is supported by 
 
 ## Source ownership
 
+The Events calendar and its data-only daily updater are documented in [EVENTS_CALENDAR.md](EVENTS_CALENDAR.md). Its publication workflow is separate from PR quality checks and the existing Pages deployment.
+
 | Location | Responsibility |
 | --- | --- |
 | `public/website/*.html` | Page-specific static content; shared component markers are expanded during development/build |

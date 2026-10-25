@@ -4,6 +4,8 @@ import { pathToFileURL } from "node:url";
 import { validEvent, safeLink } from "../../public/website/js/events-data.js";
 
 export function validateSnapshot(data, config) {
+  if (Buffer.byteLength(JSON.stringify(data), "utf8") > 1024 * 1024)
+    throw new Error("Snapshot exceeds its 1 MiB public size limit");
   if (
     data.version !== 1 ||
     !Array.isArray(data.events) ||

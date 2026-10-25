@@ -1,0 +1,82 @@
+
+> sundae-run-sti-customisation@1.0.0 test
+> node --test tests/*.test.js
+
+✔ default quote is itemised game credits and previewing is free (7.31422ms)
+✔ Apply charges the default 3700 once and repeats cannot charge again (1.58896ms)
+✔ owned parts can be fitted again for free while only new parts are charged (4.460689ms)
+✔ insufficient funds leave the applied look, purchases and balance unchanged (1.179295ms)
+✔ cancel restores applied look and reload does not fit an uncommitted preview (2.516353ms)
+✔ malformed or unsupported stored data recovers to a usable initial state (3.936233ms)
+✔ unknown product IDs and categories cannot enter preview state (1.937076ms)
+✔ concept products have no fabricated merchant destinations or fitment claims (0.398009ms)
+✔ merchant links require HTTPS, expose sponsorship, and keep real prices separate (1.093438ms)
+✔ only a registered vehicle/wheel render enables the supported paint renderer (1.028801ms)
+✔ catalogue exposes the six requested vehicles, six concepts and twelve paints (0.470877ms)
+✔ each car remembers its own fitted build and discards unfinished previews when switching (3.151121ms)
+✔ ownership belongs to each vehicle while the credit balance is shared (6.047667ms)
+✔ canonical garage persistence restores all fitted cars without saving a free preview (2.110422ms)
+✔ v2 migration keeps old credits, STI purchases and fitted parts without transferring ownership to new cars (1.437887ms)
+✔ derived active-car aliases cannot overwrite the garage's saved source of truth (1.053058ms)
+✔ upgrade catalogue provides three options per category with included baselines (0.630864ms)
+✔ all five parts charge once, while returning to included parts is free and changes the fitted build (1.466169ms)
+✔ upgrade ownership is typed and per car; insufficient funds never partially apply a build (2.840522ms)
+✔ v3 migration retains every car and credit balance and supplies free included upgrades (2.331028ms)
+✔ five-part previews cancel, switch and reload without changing fitted upgrades or credits (1.576532ms)
+✔ upgrade previews require the correct vehicle assets and verified suspension support (0.397228ms)
+✔ a named build snapshots fitted appearance and performance, never an unpaid preview (12.892303ms)
+✔ repeat saves rename a build without farming collection entries; removal is independent of rewards (2.443815ms)
+✔ brief rewards are atomic, one-time per car and persist above the starting balance (3.547799ms)
+✔ performance parts charge once per vehicle, refit free, reject insufficient funds and preserve exterior previews (2.346261ms)
+✔ a daily build needs fitted performance and matching saved exterior, not current previews (3.894832ms)
+✔ build codes round-trip Unicode safely and transfer neither ownership nor reward state (1.448533ms)
+✔ club normalisation safely migrates older saves and excludes unknown receipts, malformed builds and duplicate rewards (1.338731ms)
+✔ all six voices produce distinct bounded, centred and repeatable engine loops (559.849423ms)
+✔ every performance recipe changes its audible parameters without changing its car voice (1.167646ms)
+✔ tunes change the rev envelope; RPM stays bounded and settles back to idle (1.33335ms)
+✔ unknown sound recipes safely recover to an included voice and stock components (0.874803ms)
+✔ calendar dates reject rollover and handle real leap days and local date prefixes (2.918243ms)
+✔ iCalendar folding, escaped text, cancellation and exclusive all-day ends are preserved (0.437146ms)
+✔ only actual schema events become listings; publication dates and malformed blocks do not (7.684949ms)
+✔ missing locations, invalid dates, promotional year-long entries and foreign local events are withheld (1.505545ms)
+✔ official international adapters handle supported markup without executing page scripts (6.171ms)
+✔ identities survive date amendments and duplicate feeds do not duplicate cards (18.605639ms)
+✔ failed source retains earlier provenance; a fresh cancellation does not remain an upcoming result (2.522768ms)
+✔ redirects stay within approved HTTPS hosts and unsafe targets never become event links (10.388224ms)
+✔ client filters cover international, provinces, event types, date windows and ongoing events (2.570108ms)
+✔ publication validation rejects unapproved provenance, duplicate identities and foreign local records (4.310461ms)
+✔ late overseas date-only weekends survive South African midnight without claiming a finish time (0.681827ms)
+✔ every model has four distinct, real, checksummed cabin assets (25.337879ms)
+✔ legacy three-car saves retain credits, builds and earned rewards while new cars/cabins start unowned (4.776258ms)
+✔ cabin fitting is an atomic per-car purchase and owned/stock refits are free (4.11356ms)
+✔ saved cabins are immutable recipes, count for briefs and survive serialisation (4.083289ms)
+✔ old SR1 recipes default to stock; new codes list a cabin without granting ownership (2.719589ms)
+✔ Pages serves the brand homepage, isolates game assets and retains legacy website routes (32.840919ms)
+✔ Pages assembly rejects a wrong domain before moving any game files (5.774995ms)
+✔ Pages assembly rejects a second run without disturbing the assembled site (31.462191ms)
+✔ unavailable or full progress storage leaves the game playable and recovers when writable (6.070622ms)
+✔ shared static components retain page-specific active links, Play CTA and compact footer (19.945881ms)
+✔ production policy blocks script injection, object embeds and form submission without unsafe-inline (0.493049ms)
+✔ enabled car variants resolve to the reviewed transparent artwork (112.953594ms)
+✔ each complete car has one uniform transform and all 432 baseline appearances have artwork (4.102643ms)
+✔ all twenty-four upgrades retain reviewed bytes, actual transparency and registered camera bounds (1178.142721ms)
+✔ all 11,664 six-car exterior configurations have explicit preview support (74.857659ms)
+✔ original reference and source artwork remains byte-identical to the handover (25.407622ms)
+✔ portable scanner accepts import property names while rejecting every actual module-loading syntax (9.084435ms)
+✔ steering purchases are atomic, per-car and independent of all four cabin packages (8.56217ms)
+✔ legacy saves retain every purchase and migrate steering to free factory defaults (1.778969ms)
+✔ saved builds and sharing snapshot the steering wheel without granting ownership on import (3.170591ms)
+✔ the embedded mechanical texture has a retained CC0 source and reproducible PCM fingerprint (1.541088ms)
+ℹ tests 65
+ℹ suites 0
+ℹ pass 65
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1839.827964
+npm notice
+npm notice New major version of npm available! 11.9.0 -> 12.2.1
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.1
+npm notice To update run: npm install -g npm@12.2.1
+npm notice

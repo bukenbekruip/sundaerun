@@ -273,6 +273,7 @@ test("client filters cover international, provinces, event types, date windows a
   );
   assert.equal(validEvent({ ...local, url: "javascript:alert(1)" }), false);
   assert.equal(validEvent({ ...local, startDate: "2026-02-30" }), false);
+  assert.equal(validEvent({ ...local, city: { unexpected: true } }), false);
 });
 test("publication validation rejects unapproved provenance, duplicate identities and foreign local records", () => {
   const config = { sources: [source], internationalSeries: [] };
@@ -283,6 +284,11 @@ test("publication validation rejects unapproved provenance, duplicate identities
     events: [event()],
   };
   assert.equal(validateSnapshot(data, config), true);
+  assert.throws(
+    () =>
+      validateSnapshot({ ...data, oversized: "x".repeat(1024 * 1024) }, config),
+    /size limit/,
+  );
   assert.throws(
     () => validateSnapshot({ ...data, events: [event(), event()] }, config),
     /duplicate/,
@@ -305,5 +311,36 @@ test("publication validation rejects unapproved provenance, duplicate identities
         config,
       ),
     /Foreign/,
+  );
+});
+
+test("late overseas date-only weekends survive South African midnight without claiming a finish time", () => {
+  const overseas = normalizeEvent(
+    {
+      ...raw,
+      country: "United States",
+      startDate: "2026-11-19",
+      endDate: "2026-11-21",
+    },
+    { ...source, id: "f1", scope: "international", series: "f1" },
+    now,
+  );
+  const afterSouthAfricanMidnight = new Date("2026-11-22T07:00:00Z");
+  assert.equal(
+    filterEvents([overseas], {}, afterSouthAfricanMidnight).length,
+    1,
+  );
+  assert.equal(upcoming([overseas], afterSouthAfricanMidnight).length, 1);
+  assert.equal(
+    filterEvents([overseas], {}, new Date("2026-11-22T13:00:00Z")).length,
+    0,
+  );
+  assert.equal(
+    filterEvents(
+      [{ ...overseas, scope: "south-africa", country: "ZA" }],
+      {},
+      afterSouthAfricanMidnight,
+    ).length,
+    0,
   );
 });

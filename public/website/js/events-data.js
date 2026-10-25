@@ -19,6 +19,7 @@ export const seriesLabels = Object.freeze({
   "major-endurance": "Major endurance",
 });
 export function safeLink(value) {
+  if (typeof value !== "string" || value.length > 2048) return null;
   try {
     const url = new URL(value);
     return url.protocol === "https:" && !url.username && !url.password
@@ -37,6 +38,10 @@ export function validEvent(event) {
   return Boolean(
     event &&
       typeof event.id === "string" &&
+      event.id.length <= 64 &&
+      ["city", "province", "country", "organizer", "series"].every(
+        (key) => typeof event[key] === "string" && event[key].length <= 240,
+      ) &&
       ["title", "venue", "sourceName", "sourceId"].every(
         (key) =>
           typeof event[key] === "string" &&
@@ -82,6 +87,13 @@ export function today(now = new Date()) {
     day: "2-digit",
   }).format(now);
 }
+export function expiryDay(scope, now = new Date()) {
+  // Without an organiser-supplied finish time, do not expire international
+  // date-only listings before that calendar day has ended everywhere (UTC-12).
+  return scope === "international"
+    ? new Date(now.getTime() - 12 * 3600000).toISOString().slice(0, 10)
+    : today(now);
+}
 export function filterEvents(events, filters = {}, now = new Date()) {
   const date = today(now),
     end = new Date(
@@ -95,7 +107,7 @@ export function filterEvents(events, filters = {}, now = new Date()) {
     .filter(
       (event) =>
         event.status === "scheduled" &&
-        event.endDate >= date &&
+        event.endDate >= expiryDay(event.scope, now) &&
         event.startDate <= end &&
         (!filters.scope ||
           filters.scope === "all" ||

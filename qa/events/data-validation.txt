@@ -1,0 +1,5 @@
+
+> sundae-run-sti-customisation@1.0.0 events:validate
+> node scripts/events/validate.mjs
+
+Validated 72 events from 7 approved source calendars.

@@ -1,0 +1,155 @@
+{
+  "checks": [
+    "Production publishes a real refreshed calendar snapshot",
+    "Snapshot contains verified international and South African listings",
+    "320: upcoming event cards load",
+    "320: event page has no horizontal overflow",
+    "320: Events navigation is active",
+    "390: upcoming event cards load",
+    "390: event page has no horizontal overflow",
+    "390: Events navigation is active",
+    "820: upcoming event cards load",
+    "820: event page has no horizontal overflow",
+    "820: Events navigation is active",
+    "1024: upcoming event cards load",
+    "1024: event page has no horizontal overflow",
+    "1024: Events navigation is active",
+    "1440: upcoming event cards load",
+    "1440: event page has no horizontal overflow",
+    "1440: Events navigation is active",
+    "1920: upcoming event cards load",
+    "1920: event page has no horizontal overflow",
+    "1920: Events navigation is active",
+    "International filter only shows approved major-series records",
+    "Province filtering applies to verified South African records",
+    "No-match filter gives an honest empty state",
+    "Event destinations use HTTPS and safe external-link behavior",
+    "Events page passes scoped axe accessibility checks",
+    "root/: Events modules and snapshot resolve at the production route",
+    "website/: Events modules and snapshot resolve at the production route",
+    "index: upcoming-events preview contains three source-backed cards",
+    "community: upcoming-events preview contains three source-backed cards",
+    "390/culture: preserved main content matches the production baseline exactly",
+    "390/garage: preserved main content matches the production baseline exactly",
+    "390/shop: preserved main content matches the production baseline exactly",
+    "390/about: preserved main content matches the production baseline exactly",
+    "390/privacy: preserved main content matches the production baseline exactly",
+    "390/play: preserved main content matches the production baseline exactly",
+    "820/culture: preserved main content matches the production baseline exactly",
+    "820/garage: preserved main content matches the production baseline exactly",
+    "820/shop: preserved main content matches the production baseline exactly",
+    "820/about: preserved main content matches the production baseline exactly",
+    "820/privacy: preserved main content matches the production baseline exactly",
+    "820/play: preserved main content matches the production baseline exactly",
+    "1440/culture: preserved main content matches the production baseline exactly",
+    "1440/garage: preserved main content matches the production baseline exactly",
+    "1440/shop: preserved main content matches the production baseline exactly",
+    "1440/about: preserved main content matches the production baseline exactly",
+    "1440/privacy: preserved main content matches the production baseline exactly",
+    "1440/play: preserved main content matches the production baseline exactly",
+    "Normal Events, preview and preserved-page flows have no page/console/HTTP errors",
+    "Pagination reveals all matching records without publishing cancelled or unsafe-link entries",
+    "Source text is rendered literally and cannot inject executable markup",
+    "Local fun runs use the same searchable, paginated calendar as major events",
+    "Outdated snapshots and old confirmations are visibly labelled",
+    "No-script visitors retain direct official-calendar access"
+  ],
+  "errors": [],
+  "console_errors": [],
+  "http_errors": [],
+  "preserved": [
+    {
+      "page": "culture",
+      "width": 390,
+      "exact": true
+    },
+    {
+      "page": "garage",
+      "width": 390,
+      "exact": true
+    },
+    {
+      "page": "shop",
+      "width": 390,
+      "exact": true
+    },
+    {
+      "page": "about",
+      "width": 390,
+      "exact": true
+    },
+    {
+      "page": "privacy",
+      "width": 390,
+      "exact": true
+    },
+    {
+      "page": "play",
+      "width": 390,
+      "exact": true
+    },
+    {
+      "page": "culture",
+      "width": 820,
+      "exact": true
+    },
+    {
+      "page": "garage",
+      "width": 820,
+      "exact": true
+    },
+    {
+      "page": "shop",
+      "width": 820,
+      "exact": true
+    },
+    {
+      "page": "about",
+      "width": 820,
+      "exact": true
+    },
+    {
+      "page": "privacy",
+      "width": 820,
+      "exact": true
+    },
+    {
+      "page": "play",
+      "width": 820,
+      "exact": true
+    },
+    {
+      "page": "culture",
+      "width": 1440,
+      "exact": true
+    },
+    {
+      "page": "garage",
+      "width": 1440,
+      "exact": true
+    },
+    {
+      "page": "shop",
+      "width": 1440,
+      "exact": true
+    },
+    {
+      "page": "about",
+      "width": 1440,
+      "exact": true
+    },
+    {
+      "page": "privacy",
+      "width": 1440,
+      "exact": true
+    },
+    {
+      "page": "play",
+      "width": 1440,
+      "exact": true
+    }
+  ],
+  "axe": [],
+  "status": "passed",
+  "passed_checks": 53
+}

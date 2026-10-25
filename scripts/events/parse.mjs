@@ -8,7 +8,8 @@ export const clean = (value) => {
   return decoded.replace(/\s+/g, " ").trim().slice(0, 240);
 };
 export function publicUrl(value, base) {
-  if (typeof value !== "string" || !value.trim()) return null;
+  if (typeof value !== "string" || !value.trim() || value.length > 2048)
+    return null;
   try {
     const url = new URL(value, base);
     if (url.protocol !== "https:" || url.username || url.password || url.port)
