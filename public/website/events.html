@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#fffaf1" />
+    <meta
+      name="description"
+      content="Major international motorsport and South African race days, track days, car meets and fun runs. Find your next good weekend with Sundae Run."
+    />
+    <title>Events — Sundae Run</title>
+    <link rel="icon" href="assets/logo-shirt.webp" type="image/webp" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="topline">
+      GOOD CARS. GOOD ROADS. BETTER COMPANY. ✳ &nbsp; MADE FOR THE DRIVE.
+    </div>
+    <!-- component:header -->
+    <main id="main" tabindex="-1">
+      <section class="page-hero-small events-intro">
+        <div class="container">
+          <span class="eyebrow">PUT SOMETHING GOOD IN THE DIARY.</span>
+          <h1>GOOD PLANS.<br />GREAT WEEKENDS.</h1>
+          <p class="lead">
+            The big race weekends around the world. The early starts, track days
+            and good-company runs closer to home. Find your next one.
+          </p>
+          <div class="events-coverage">
+            <span class="pill">MAJOR INTERNATIONAL MOTORSPORT</span
+            ><span class="pill">SOUTH AFRICA · NATIONWIDE</span>
+          </div>
+        </div>
+      </section>
+      <section
+        class="section-tight"
+        id="events-calendar"
+        aria-labelledby="events-heading"
+      >
+        <div class="container" data-events-page>
+          <div class="section-head">
+            <div>
+              <span class="eyebrow">MAKE A WEEKEND OF IT</span>
+              <h2 id="events-heading">What’s coming up.</h2>
+            </div>
+            <p class="muted" data-events-updated>Checking the calendar…</p>
+          </div>
+          <fieldset class="events-scope" disabled>
+            <legend>Where do you want to go?</legend>
+            <button
+              type="button"
+              class="btn btn-dark"
+              data-scope="all"
+              aria-pressed="true"
+            >
+              All events</button
+            ><button
+              type="button"
+              class="btn btn-outline"
+              data-scope="south-africa"
+              aria-pressed="false"
+            >
+              South Africa</button
+            ><button
+              type="button"
+              class="btn btn-outline"
+              data-scope="international"
+              aria-pressed="false"
+            >
+              International
+            </button>
+          </fieldset>
+          <div class="events-filters">
+            <label
+              >Find an event<input
+                type="search"
+                id="event-search"
+                maxlength="100"
+                placeholder="Name, city or circuit"
+                disabled
+            /></label>
+            <label
+              >Event type<select id="event-category" disabled>
+                <option value="all">All types</option>
+                <option value="racing">Racing</option>
+                <option value="rally">Rally</option>
+                <option value="karting">Karting</option>
+                <option value="drifting">Drifting</option>
+                <option value="drag">Drag racing</option>
+                <option value="trackday">Track days</option>
+                <option value="meet">Car meets &amp; shows</option>
+                <option value="funrun">Fun runs &amp; social drives</option>
+                <option value="bikes">Bikes</option>
+              </select></label
+            >
+            <label
+              >South African province<select id="event-province" disabled>
+                <option value="all">All provinces</option>
+                <option>Eastern Cape</option>
+                <option>Free State</option>
+                <option>Gauteng</option>
+                <option>KwaZulu-Natal</option>
+                <option>Limpopo</option>
+                <option>Mpumalanga</option>
+                <option>North West</option>
+                <option>Northern Cape</option>
+                <option>Western Cape</option>
+              </select></label
+            >
+            <label
+              >When<select id="event-period" disabled>
+                <option value="30">Next 30 days</option>
+                <option value="90" selected>Next 90 days</option>
+                <option value="366">All upcoming dates</option>
+              </select></label
+            >
+          </div>
+          <p class="events-notice" data-events-notice hidden></p>
+          <p
+            class="events-results-note"
+            role="status"
+            aria-live="polite"
+            data-events-count
+          >
+            Loading confirmed listings…
+          </p>
+          <div class="events-grid" data-events-list aria-busy="true"></div>
+          <button
+            type="button"
+            class="btn btn-outline events-more"
+            data-events-more
+            hidden
+          >
+            Show more events
+          </button>
+          <noscript
+            ><p class="events-notice">
+              Enable JavaScript to browse and filter the calendar, or use the
+              official calendar links below.
+            </p></noscript
+          >
+          <p class="events-smallprint">
+            Dates are local to each event. Confirm session times, entry
+            requirements, tickets and any changes with the organiser before
+            travelling. Sundae Run lists events; bookings are handled by the
+            organiser.
+          </p>
+          <details class="events-sources">
+            <summary>Our calendars &amp; coverage</summary>
+            <p>
+              International coverage follows selected major series. South
+              African coverage includes national, regional and club events of
+              every size from the public calendars we monitor. This is a growing
+              selection, rather than a guarantee that every event is listed.
+            </p>
+            <ul data-events-sources>
+              <li>
+                <a
+                  href="https://www.motorsport.co.za/events/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Motorsport South Africa calendar</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.zwartkops.co.za/events/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Zwartkops Raceway calendar</a
+                >
+              </li>
+            </ul>
+          </details>
+        </div>
+      </section>
+    </main>
+    <!-- component:footer -->
+    <script type="module" src="site.js"></script>
+    <script type="module" src="js/events-page.js"></script>
+  </body>
+</html>

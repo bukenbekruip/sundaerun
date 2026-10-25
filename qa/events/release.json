@@ -1,0 +1,27 @@
+{
+  "base_commit": "129f67037dc86654f0c3f7f343475e41ab907013",
+  "snapshot": {
+    "refreshed_at": "2026-10-25T09:16:44.531Z",
+    "sha256": "f27aa6952dcf7b93eee038b9d22d202b47fbf064db0e607656b858c6f7590eaa",
+    "events": 72,
+    "international": 32,
+    "south_africa": 40,
+    "sources": 7
+  },
+  "preview_refresh_run": "https://github.com/bukenbekruip/sundaerun/actions/runs/40179936807",
+  "preview_publish_succeeded": true,
+  "preview_deploy_skipped": true,
+  "production_files": 281,
+  "changed_protected_paths": [],
+  "existing_zip": {
+    "bytes": 68522414,
+    "sha256": "b2b05f6da117c1e6ed95d4162eb83e19d1753d2e8c48835f077842fa25000db3"
+  },
+  "review_images": "Crops of actual final browser screenshots; comparison PNGs are unaltered CI artifacts.",
+  "limitations": [
+    "Initial official-source coverage; not every private or unlisted local event.",
+    "Date-only international entries use a conservative UTC-12 expiry allowance.",
+    "Pure validator tested without node_modules; privileged publisher installs no ingestion dependencies.",
+    "CI conclusion is recorded separately in the PR before readiness."
+  ]
+}

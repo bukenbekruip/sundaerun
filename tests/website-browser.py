@@ -14,7 +14,7 @@ async def main():
    p=await b.new_page();p.on('pageerror',lambda e:r['page_errors'].append(str(e)));p.on('console',lambda e:r['console_errors'].append(e.text) if e.type=='error' else None);p.on('response',lambda x:r['http_errors'].append(x.url) if x.status>=400 else None)
    for w,h in [(390,844),(1440,1000)]:
     await p.set_viewport_size({'width':w,'height':h})
-    for name in ['index','culture','garage','community','shop','about','privacy','play']:
+    for name in ['index','culture','garage','community','events','shop','about','privacy','play']:
      response=await p.goto(BASE+SITE_PATH+name+'.html',wait_until='networkidle')
      check(response.status==200,f'{w}/{name}: HTML responds 200 under project path')
      await p.evaluate("Promise.all([...document.images].map(i=>{i.loading='eager';return i.decode()}))")

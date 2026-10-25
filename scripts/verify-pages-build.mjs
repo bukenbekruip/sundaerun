@@ -73,5 +73,5 @@ const images = new Set([
 ]);
 for (const image of images) await exists(`/garage/${image}`);
 console.log(
-  `Pages build verified: ${checked} local references, ${images.size} runtime game images, 17 HTML routes, official www CNAME and canonicals.`,
+  `Pages build verified: ${checked} local references, ${images.size} runtime game images, ${websitePages.length * 2 + 1} HTML routes, official www CNAME and canonicals.`,
 );

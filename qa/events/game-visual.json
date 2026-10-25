@@ -1,0 +1,198 @@
+{
+  "base_url": "http://127.0.0.1:4301/",
+  "screenshots": [
+    {
+      "name": "game-sti-default-1672",
+      "same_dimensions": true,
+      "changed_pixels": 0,
+      "max_channel_delta": 0,
+      "total_pixels": 1573352
+    },
+    {
+      "name": "game-sti-te37-1672",
+      "same_dimensions": true,
+      "changed_pixels": 0,
+      "max_channel_delta": 0,
+      "total_pixels": 1573352
+    },
+    {
+      "name": "game-sti-te37-black",
+      "same_dimensions": true,
+      "changed_pixels": 26,
+      "max_channel_delta": 10,
+      "total_pixels": 1573352
+    },
+    {
+      "name": "game-sti-te37-mint",
+      "same_dimensions": true,
+      "changed_pixels": 0,
+      "max_channel_delta": 0,
+      "total_pixels": 1573352
+    },
+    {
+      "name": "game-sti-te37-blue",
+      "same_dimensions": true,
+      "changed_pixels": 26,
+      "max_channel_delta": 10,
+      "total_pixels": 1573352
+    },
+    {
+      "name": "game-sti-exterior",
+      "same_dimensions": true,
+      "changed_pixels": 26,
+      "max_channel_delta": 10,
+      "total_pixels": 1573352
+    },
+    {
+      "name": "game-sti-heritage",
+      "same_dimensions": true,
+      "changed_pixels": 13,
+      "max_channel_delta": 1,
+      "total_pixels": 1573352
+    },
+    {
+      "name": "game-sti-performance",
+      "same_dimensions": true,
+      "changed_pixels": 13,
+      "max_channel_delta": 1,
+      "total_pixels": 1573352
+    },
+    {
+      "name": "game-porsche-exterior",
+      "same_dimensions": true,
+      "changed_pixels": 0,
+      "max_channel_delta": 0,
+      "total_pixels": 1573352
+    },
+    {
+      "name": "game-porsche-heritage",
+      "same_dimensions": true,
+      "changed_pixels": 28,
+      "max_channel_delta": 1,
+      "total_pixels": 1573352
+    },
+    {
+      "name": "game-porsche-performance",
+      "same_dimensions": true,
+      "changed_pixels": 0,
+      "max_channel_delta": 0,
+      "total_pixels": 1573352
+    },
+    {
+      "name": "game-gt86-exterior",
+      "same_dimensions": true,
+      "changed_pixels": 0,
+      "max_channel_delta": 0,
+      "total_pixels": 1573352
+    },
+    {
+      "name": "game-gt86-heritage",
+      "same_dimensions": true,
+      "changed_pixels": 28,
+      "max_channel_delta": 1,
+      "total_pixels": 1573352
+    },
+    {
+      "name": "game-gt86-performance",
+      "same_dimensions": true,
+      "changed_pixels": 0,
+      "max_channel_delta": 0,
+      "total_pixels": 1573352
+    },
+    {
+      "name": "game-m3-exterior",
+      "same_dimensions": true,
+      "changed_pixels": 0,
+      "max_channel_delta": 0,
+      "total_pixels": 1573352
+    },
+    {
+      "name": "game-m3-heritage",
+      "same_dimensions": true,
+      "changed_pixels": 28,
+      "max_channel_delta": 1,
+      "total_pixels": 1573352
+    },
+    {
+      "name": "game-m3-performance",
+      "same_dimensions": true,
+      "changed_pixels": 28,
+      "max_channel_delta": 1,
+      "total_pixels": 1573352
+    },
+    {
+      "name": "game-golf-exterior",
+      "same_dimensions": true,
+      "changed_pixels": 17,
+      "max_channel_delta": 20,
+      "total_pixels": 1573352
+    },
+    {
+      "name": "game-golf-heritage",
+      "same_dimensions": true,
+      "changed_pixels": 0,
+      "max_channel_delta": 0,
+      "total_pixels": 1573352
+    },
+    {
+      "name": "game-golf-performance",
+      "same_dimensions": true,
+      "changed_pixels": 0,
+      "max_channel_delta": 0,
+      "total_pixels": 1573352
+    },
+    {
+      "name": "game-rs3-exterior",
+      "same_dimensions": true,
+      "changed_pixels": 18,
+      "max_channel_delta": 5,
+      "total_pixels": 1573352
+    },
+    {
+      "name": "game-rs3-heritage",
+      "same_dimensions": true,
+      "changed_pixels": 16,
+      "max_channel_delta": 1,
+      "total_pixels": 1573352
+    },
+    {
+      "name": "game-rs3-performance",
+      "same_dimensions": true,
+      "changed_pixels": 15,
+      "max_channel_delta": 1,
+      "total_pixels": 1573352
+    },
+    {
+      "name": "game-responsive-320",
+      "same_dimensions": true,
+      "changed_pixels": 0,
+      "max_channel_delta": 0,
+      "total_pixels": 571840
+    },
+    {
+      "name": "game-responsive-390",
+      "same_dimensions": true,
+      "changed_pixels": 0,
+      "max_channel_delta": 0,
+      "total_pixels": 679380
+    },
+    {
+      "name": "game-responsive-1366",
+      "same_dimensions": true,
+      "changed_pixels": 0,
+      "max_channel_delta": 0,
+      "total_pixels": 1049088
+    },
+    {
+      "name": "game-responsive-1920",
+      "same_dimensions": true,
+      "changed_pixels": 0,
+      "max_channel_delta": 0,
+      "total_pixels": 2073600
+    }
+  ],
+  "errors": [],
+  "max_changed_pixels": 128,
+  "max_channel_delta": 32,
+  "status": "passed"
+}

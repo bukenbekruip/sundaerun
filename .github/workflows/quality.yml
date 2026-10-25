@@ -46,8 +46,12 @@ jobs:
           python -m http.server 4200 --bind 127.0.0.1 --directory /tmp/sundae-baseline/dist > /tmp/baseline-server.log 2>&1 &
           python -m http.server 4201 --bind 127.0.0.1 --directory dist > /tmp/refactor-server.log 2>&1 &
           trap 'kill $(jobs -pr) 2>/dev/null || true' EXIT
-          python tests/refactor-visual.py --base-url http://127.0.0.1:4200/ --output /tmp/visual-before
-          python tests/refactor-visual.py --base-url http://127.0.0.1:4201/ --output /tmp/visual-after --compare /tmp/visual-before --max-changed-pixels 128 --max-channel-delta 32
+          # The Events feature deliberately adds navigation and homepage/community
+          # previews. Compare the unchanged game here; events-browser separately
+          # compares preserved website content and reviews the new page.
+          python tests/refactor-visual.py --scope game --base-url http://127.0.0.1:4200/ --output /tmp/visual-before
+          python tests/refactor-visual.py --scope game --base-url http://127.0.0.1:4201/ --output /tmp/visual-after --compare /tmp/visual-before --max-changed-pixels 128 --max-channel-delta 32
+          python tests/events-browser.py --base-url http://127.0.0.1:4201/ --baseline-url http://127.0.0.1:4200/ --output /tmp/review/events
           python tests/website-browser.py --base-url http://127.0.0.1:4201/ --site-path '' --return-path index.html --output /tmp/review/website
           python tests/website-browser.py --base-url http://127.0.0.1:4201/ --site-path website/ --return-path index.html --output /tmp/review/website-legacy
           python tests/website-clothing-browser.py --base-url http://127.0.0.1:4201/ --site-path '' --output /tmp/review/clothing
