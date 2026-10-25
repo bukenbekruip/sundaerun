@@ -1,0 +1,7 @@
+{
+  "version": 1,
+  "refreshedAt": null,
+  "coverage": { "local": "South Africa nationwide", "internationalSeries": ["f1", "motogp", "wrc", "wec", "indycar", "formulae", "major-endurance"] },
+  "sources": [],
+  "events": []
+}

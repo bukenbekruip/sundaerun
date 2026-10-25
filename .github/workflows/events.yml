@@ -1,27 +1,94 @@
-name: Events calendar source checks
+name: Verified events calendar
 on:
+  schedule:
+    - cron: '15 4 * * *' # 06:15 South Africa; GitHub schedules are best effort.
+  workflow_dispatch:
+    inputs:
+      publish:
+        description: Commit the verified snapshot to this branch
+        type: boolean
+        default: false
   pull_request:
     branches: [main]
     paths:
       - scripts/events/**
+      - public/website/data/**
       - .github/workflows/events.yml
-  workflow_dispatch:
 permissions:
   contents: read
+concurrency:
+  group: events-calendar-${{ github.ref }}
+  cancel-in-progress: false
 jobs:
-  sources:
+  collect:
     runs-on: ubuntu-latest
-    timeout-minutes: 8
+    timeout-minutes: 12
     steps:
       - uses: actions/checkout@v7.0.1
       - uses: actions/setup-node@v7.1.0
         with:
           node-version: '24'
+          cache: npm
       - run: npm ci
-      - run: node scripts/events/source-audit.mjs
+      - run: node --test tests/events.test.js
+      - run: npm run events:refresh
+      - run: npm run events:validate
       - uses: actions/upload-artifact@v5.0.0
         if: always()
         with:
-          name: events-source-audit
-          path: /tmp/events-source-audit
+          name: verified-events
+          path: /tmp/events-refresh
           retention-days: 7
+  publish:
+    needs: collect
+    if: github.event_name != 'pull_request' && (github.event_name == 'schedule' || inputs.publish) && (github.ref == 'refs/heads/main' || github.ref == 'refs/heads/feature/events-calendar')
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    outputs:
+      changed: ${{ steps.commit.outputs.changed }}
+    steps:
+      - uses: actions/checkout@v7.0.1
+        with:
+          ref: ${{ github.ref_name }}
+      - uses: actions/setup-node@v7.1.0
+        with:
+          node-version: '24'
+      - run: npm ci
+      - uses: actions/download-artifact@v5.0.0
+        with:
+          name: verified-events
+          path: /tmp/events-publish
+      - run: node scripts/events/validate.mjs /tmp/events-publish/events.json
+      - name: Commit only the validated calendar snapshot
+        id: commit
+        env:
+          BRANCH: ${{ github.ref_name }}
+        run: |
+          cp /tmp/events-publish/events.json public/website/data/events.json
+          if git diff --quiet -- public/website/data/events.json; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -- public/website/data/events.json
+          git commit -m 'Refresh verified motorsport and motoring events'
+          git pull --rebase origin "$BRANCH"
+          git push origin "HEAD:$BRANCH"
+          echo "changed=true" >> "$GITHUB_OUTPUT"
+  deploy:
+    needs: publish
+    if: github.ref == 'refs/heads/main' && needs.publish.outputs.changed == 'true'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      actions: write
+    steps:
+      # GITHUB_TOKEN commits do not trigger the normal push workflow. Dispatch
+      # the existing deployment explicitly; preview branches never deploy.
+      - name: Deploy the refreshed main calendar
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+        run: gh workflow run deploy-pages.yml --ref main

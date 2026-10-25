@@ -1,13 +1,93 @@
 {
   "version": 1,
-  "internationalSeries": ["f1", "motogp", "wrc", "wec", "indycar", "formulae", "major-endurance"],
+  "internationalSeries": [
+    "f1",
+    "motogp",
+    "wrc",
+    "wec",
+    "indycar",
+    "formulae",
+    "major-endurance"
+  ],
   "sources": [
-    { "id": "f1", "name": "Formula 1", "scope": "international", "series": "f1", "adapter": "f1", "url": "https://www.formula1.com/en/racing/{year}", "hosts": ["www.formula1.com"], "category": "racing" },
-    { "id": "motogp", "name": "MotoGP", "scope": "international", "series": "motogp", "adapter": "motogp", "url": "https://www.motogp.com/en/calendar", "hosts": ["www.motogp.com"], "category": "bikes" },
-    { "id": "wrc", "name": "World Rally Championship", "scope": "international", "series": "wrc", "adapter": "wrc", "url": "https://www.wrc.com/en/calendar", "pages": ["https://www.wrc.com/en/calendar/wrc-{year}"], "hosts": ["www.wrc.com"], "category": "rally" },
-    { "id": "msa", "name": "Motorsport South Africa", "scope": "south-africa", "url": "https://www.motorsport.co.za/events/", "hosts": ["www.motorsport.co.za", "motorsport.co.za"], "country": "ZA" },
-    { "id": "zwartkops", "name": "Zwartkops Raceway", "scope": "south-africa", "url": "https://www.zwartkops.co.za/events/", "hosts": ["www.zwartkops.co.za", "zwartkops.co.za"], "country": "ZA", "province": "Gauteng", "city": "Pretoria", "venue": "Zwartkops Raceway" },
-    { "id": "bmw-club", "name": "BMW Clubs Africa — South African events", "scope": "south-africa", "url": "https://www.bmwclubs.africa/bmw-clubs-africa/events/", "hosts": ["www.bmwclubs.africa", "bmwclubs.africa"], "category": "meet" },
-    { "id": "dezzi", "name": "Dezzi Raceway", "scope": "south-africa", "url": "https://www.dezziraceway.co.za/events", "hosts": ["www.dezziraceway.co.za", "dezziraceway.co.za"], "country": "ZA", "venue": "Dezzi Raceway", "city": "Port Shepstone", "province": "KwaZulu-Natal" }
+    {
+      "id": "f1",
+      "name": "Formula 1",
+      "scope": "international",
+      "series": "f1",
+      "adapter": "f1",
+      "url": "https://www.formula1.com/en/racing/{year}",
+      "hosts": ["www.formula1.com"],
+      "category": "racing"
+    },
+    {
+      "id": "motogp",
+      "name": "MotoGP",
+      "scope": "international",
+      "series": "motogp",
+      "adapter": "motogp",
+      "url": "https://www.motogp.com/en/calendar",
+      "hosts": ["www.motogp.com"],
+      "category": "bikes"
+    },
+    {
+      "id": "wrc",
+      "name": "World Rally Championship",
+      "scope": "international",
+      "series": "wrc",
+      "adapter": "wrc",
+      "url": "https://www.wrc.com/en/calendar",
+      "pages": ["https://www.wrc.com/en/calendar/wrc-{year}"],
+      "hosts": ["www.wrc.com"],
+      "category": "rally"
+    },
+    {
+      "id": "wec",
+      "name": "FIA World Endurance Championship",
+      "scope": "international",
+      "series": "wec",
+      "adapter": "wec",
+      "url": "https://www.fiawec.com/",
+      "hosts": ["www.fiawec.com"],
+      "category": "racing"
+    },
+    {
+      "id": "msa",
+      "name": "Motorsport South Africa",
+      "scope": "south-africa",
+      "url": "https://www.motorsport.co.za/events/",
+      "hosts": ["www.motorsport.co.za", "motorsport.co.za"],
+      "country": "ZA"
+    },
+    {
+      "id": "zwartkops",
+      "name": "Zwartkops Raceway",
+      "scope": "south-africa",
+      "url": "https://www.zwartkops.co.za/events/",
+      "hosts": ["www.zwartkops.co.za", "zwartkops.co.za"],
+      "country": "ZA",
+      "province": "Gauteng",
+      "city": "Pretoria",
+      "venue": "Zwartkops Raceway"
+    },
+    {
+      "id": "bmw-club",
+      "name": "BMW Clubs Africa — South African events",
+      "scope": "south-africa",
+      "url": "https://www.bmwclubs.africa/bmw-clubs-africa/events/",
+      "hosts": ["www.bmwclubs.africa", "bmwclubs.africa"],
+      "category": "meet"
+    },
+    {
+      "id": "dezzi",
+      "name": "Dezzi Raceway",
+      "scope": "south-africa",
+      "url": "https://www.dezziraceway.co.za/events",
+      "hosts": ["www.dezziraceway.co.za", "dezziraceway.co.za"],
+      "country": "ZA",
+      "venue": "Dezzi Raceway",
+      "city": "Port Shepstone",
+      "province": "KwaZulu-Natal"
+    }
   ]
 }

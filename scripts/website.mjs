@@ -9,12 +9,18 @@ export const sitePages = [
   "culture",
   "garage",
   "community",
+  "events",
   "shop",
   "about",
   "privacy",
   "play",
 ];
-const components = new Set(["header", "footer", "footer-compact"]);
+const components = new Set([
+  "header",
+  "footer",
+  "footer-compact",
+  "events-preview",
+]);
 
 /** Only repository-owned partials are supported; no template evaluation or user HTML. */
 export async function renderWebsitePage(page) {

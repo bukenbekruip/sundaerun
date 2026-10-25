@@ -45,7 +45,7 @@ async def run(args):
             await page.evaluate("Promise.all(['car-image','garage-image'].map(id=>document.getElementById(id).decode()))")
 
         try:
-            for width in [390, 820, 1440]:
+            for width in ([] if args.scope == 'game' else [390, 820, 1440]):
                 await page.set_viewport_size({"width": width, "height": 900})
                 for name in ["index", "culture", "garage", "community", "shop", "about", "privacy", "play"]:
                     await page.goto(args.base_url + name + ".html", wait_until="networkidle")
@@ -98,6 +98,7 @@ if __name__ == "__main__":
     parser.add_argument("--compare", type=Path)
     parser.add_argument("--max-changed-pixels", type=int, default=0)
     parser.add_argument("--max-channel-delta", type=int, default=0)
+    parser.add_argument("--scope", choices=['all', 'game'], default='all')
     args = parser.parse_args()
     args.base_url = args.base_url.rstrip("/") + "/"
     asyncio.run(run(args))
