@@ -6,7 +6,7 @@ permissions:
 jobs:
   check:
     runs-on: ubuntu-latest
-    timeout-minutes: 5
+    timeout-minutes: 15
     steps:
       - uses: actions/checkout@v7.0.1
       - uses: actions/setup-node@v7.1.0
@@ -14,3 +14,36 @@ jobs:
           node-version: '24'
       - name: Inspect public DNS, redirects and TLS without changing records
         run: node scripts/check-public-domain.mjs
+      - uses: actions/setup-python@v6.0.0
+        with:
+          python-version: "3.12"
+      - name: Install browser verification tools
+        run: |
+          npm ci
+          pip install -r requirements-browser.txt
+          python -m playwright install --with-deps chromium
+          sudo ln -sf "$(python -c 'from playwright.sync_api import sync_playwright; p=sync_playwright().start(); print(p.chromium.executable_path)')" /usr/bin/chromium
+      - name: Test public Events, website, shop and six-car game
+        run: |
+          python tests/events-browser.py --base-url https://www.sundaerun.com/ --output /tmp/live-events
+          python tests/website-browser.py --base-url https://www.sundaerun.com/ --site-path '' --return-path index.html --output /tmp/live-website
+          python tests/rs3-interior-browser.py --base-url https://www.sundaerun.com/garage --output /tmp/live-interiors
+          python tests/sound-browser.py --base-url https://www.sundaerun.com/garage --output /tmp/live-sound
+      - name: Summarize live browser results
+        if: always()
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          for folder in ['events', 'website', 'interiors', 'sound']:
+              files = list(Path('/tmp/live-'+folder).glob('*results.json'))
+              for path in files:
+                  data = json.loads(path.read_text())
+                  print('::notice title=Live '+folder+' browser checks::'+json.dumps({k:data[k] for k in ['status','passed_checks','errors','page_errors','console_errors','http_errors'] if k in data}))
+          PY
+      - uses: actions/upload-artifact@v5.0.0
+        if: always()
+        with:
+          name: live-events-release-verification
+          path: /tmp/live-*
+          retention-days: 7
