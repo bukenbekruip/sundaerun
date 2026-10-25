@@ -81,7 +81,8 @@ export async function refresh({
             for (const href of parsed.links)
               if (
                 source.hosts.includes(new URL(href).hostname) &&
-                /[?&]ical=1|\/events\/list\/page\/\d+/.test(href) &&
+                (/[?&]ical=1|\/events\/list\/page\/\d+/.test(href) ||
+                  (!parsed.events.length && /\/event-details\//.test(href))) &&
                 !visited.has(href)
               )
                 urls.push(href);
@@ -140,6 +141,16 @@ export async function refresh({
         reason:
           errors[0] ||
           "No usable dated event records; previous verified entries retained",
+        sample: found
+          .filter((event) => event.endDate >= now.toISOString().slice(0, 10))
+          .slice(0, 3)
+          .map((event) => ({
+            title: event.title?.slice(0, 80),
+            venue: event.venue?.slice(0, 100),
+            province: event.province,
+            country: event.country,
+            startDate: event.startDate,
+          })),
       });
     }
   }

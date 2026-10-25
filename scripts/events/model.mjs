@@ -1,5 +1,6 @@
 import { createHash } from "node:crypto";
 import { clean, dateOnly, publicUrl } from "./parse.mjs";
+import { provinces, provinceFor, isForeignLocation } from "./geography.mjs";
 
 export const categories = [
   "racing",
@@ -14,14 +15,14 @@ export const categories = [
 ];
 export function categoryFor(title, fallback = "racing") {
   for (const [pattern, category] of [
-    [/breakfast|fun run|convoy|social drive/i, "funrun"],
-    [/cars.{0,5}coffee|car meet|car show|show.{0,3}shine/i, "meet"],
+    [/breakfast|fun run|convoy|social drive|brunch cruise/i, "funrun"],
+    [/cars.{0,5}coffee|car meet|car show|show.{0,3}shine|japan drive/i, "meet"],
     [/track.?day|open track/i, "trackday"],
     [/drift/i, "drifting"],
     [/drag/i, "drag"],
     [/kart/i, "karting"],
     [/rally|rallycross/i, "rally"],
-    [/motorcycle|motogp|superbike|bike/i, "bikes"],
+    [/motorcycle|motogp|superbike|bike|motocross|enduro|flat.?track/i, "bikes"],
   ])
     if (pattern.test(title)) return category;
   return categories.includes(fallback) ? fallback : "racing";
@@ -35,6 +36,9 @@ export function normalizeEvent(raw, source, now) {
   if (
     !title ||
     !venue ||
+    /^(TBA|TBC|to be (?:advised|announced|confirmed)|venue (?:TBA|TBC|to be))/i.test(
+      venue,
+    ) ||
     !startDate ||
     !endDate ||
     endDate < startDate ||
@@ -55,28 +59,25 @@ export function normalizeEvent(raw, source, now) {
     ].includes(source.series)
   )
     return null;
-  const country = clean(raw.country || source.country);
+  const province = provinceFor(
+    clean(raw.province || source.province),
+    `${venue} ${clean(raw.city)}`,
+  );
+  const country = clean(
+    raw.country ||
+      source.country ||
+      (Object.values(provinces).includes(province) ? "ZA" : ""),
+  );
   if (
     source.scope === "south-africa" &&
-    !/^(ZA|ZAF|South Africa)$/i.test(country)
+    (!/^(ZA|ZAF|RSA|South\s*Africa)$/i.test(country) ||
+      isForeignLocation(`${venue} ${clean(raw.province)} ${country}`))
   )
     return null;
   const uid =
     url !== source.url
       ? url
       : clean(raw.uid) || `${title}|${startDate}|${venue}`;
-  const regions = {
-    EC: "Eastern Cape",
-    FS: "Free State",
-    GP: "Gauteng",
-    KZN: "KwaZulu-Natal",
-    LP: "Limpopo",
-    MP: "Mpumalanga",
-    NW: "North West",
-    NC: "Northern Cape",
-    WC: "Western Cape",
-  };
-  const region = clean(raw.province || source.province);
   return {
     id: createHash("sha256")
       .update(`${source.id}|${uid}`)
@@ -87,8 +88,8 @@ export function normalizeEvent(raw, source, now) {
     endDate,
     venue,
     city: clean(raw.city || source.city),
-    province: regions[region] || region,
-    country,
+    province,
+    country: source.scope === "south-africa" ? "ZA" : country,
     organizer: clean(raw.organizer),
     category: categoryFor(title, source.category),
     scope: source.scope,

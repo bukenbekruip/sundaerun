@@ -1,9 +1,12 @@
 import { load } from "cheerio";
 
-export const clean = (value) =>
-  typeof value === "string"
-    ? value.replace(/\s+/g, " ").trim().slice(0, 240)
-    : "";
+export const clean = (value) => {
+  if (typeof value !== "string") return "";
+  const decoded = /&(?:#\d+|#x[\da-f]+|[a-z]+);/i.test(value)
+    ? load(value, null, false).text()
+    : value;
+  return decoded.replace(/\s+/g, " ").trim().slice(0, 240);
+};
 export function publicUrl(value, base) {
   if (typeof value !== "string" || !value.trim()) return null;
   try {

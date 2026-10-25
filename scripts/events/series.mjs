@@ -55,9 +55,14 @@ export function parseSeries($, source, now) {
       const title =
         leaves.find((t) => /^FORMULA 1\b/.test(t)) ||
         `Formula 1 — ${leaves.find((t) => !/^ROUND\b/.test(t) && !dateRange(t, match[1]))}`;
-      const venue = leaves.find(
-        (t) => !/^ROUND\b|^FORMULA 1\b/.test(t) && !dateRange(t, match[1]),
-      );
+      const venue = (
+        leaves.find((t) => /^Flag of /i.test(t)) ||
+        leaves.find(
+          (t) =>
+            !/^ROUND\b|^FORMULA 1\b|^Chequered Flag$/.test(t) &&
+            !dateRange(t, match[1]),
+        )
+      )?.replace(/^Flag of /i, "");
       if (!venue) return;
       const url = publicUrl(href, source.url),
         previous = byUrl.get(url);
