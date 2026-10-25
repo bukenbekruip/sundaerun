@@ -1,5 +1,5 @@
 export const labels = Object.freeze({
-  racing: "Circuit racing",
+  racing: "Racing",
   rally: "Rally",
   karting: "Karting",
   drifting: "Drifting",

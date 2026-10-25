@@ -117,8 +117,10 @@ async def run(args):
             await page.unroute('**/data/events.json')
             nojs=await browser.new_context(java_script_enabled=False,viewport={'width':390,'height':844})
             offline=await nojs.new_page();await offline.goto(args.base_url+'events.html',wait_until='networkidle')
-            await expect(offline.locator('noscript')).to_contain_text('official calendar links')
-            check(await offline.locator('a[href="https://www.motorsport.co.za/events/"]').count()>0,'No-script visitors retain direct official-calendar access')
+            await expect(offline.locator('[data-events-page] noscript')).to_contain_text('official calendar links')
+            await offline.locator('.events-sources summary').click()
+            await expect(offline.locator('a[href="https://www.motorsport.co.za/events/"]')).to_be_visible()
+            check(True,'No-script visitors retain direct official-calendar access')
             await nojs.close()
             report['status']='passed'
         except Exception:

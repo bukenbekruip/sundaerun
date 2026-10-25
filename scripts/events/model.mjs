@@ -15,9 +15,9 @@ export const categories = [
 ];
 export function categoryFor(title, fallback = "racing") {
   for (const [pattern, category] of [
-    [/breakfast|fun run|convoy|social drive|brunch cruise/i, "funrun"],
+    [/track.?day|open track|supertrax|brunch cruise/i, "trackday"],
+    [/breakfast|fun run|convoy|social drive/i, "funrun"],
     [/cars.{0,5}coffee|car meet|car show|show.{0,3}shine|japan drive/i, "meet"],
-    [/track.?day|open track/i, "trackday"],
     [/drift/i, "drifting"],
     [/drag/i, "drag"],
     [/kart/i, "karting"],
@@ -33,6 +33,12 @@ export function normalizeEvent(raw, source, now) {
     startDate = dateOnly(raw.startDate),
     endDate = dateOnly(raw.endDate || raw.startDate);
   const url = publicUrl(raw.url || source.url, source.url);
+  if (
+    /\bagm\b|annual general meeting|newsletter|our invite|about us|committee meeting|\bgolf day\b/i.test(
+      title,
+    )
+  )
+    return null;
   if (
     !title ||
     !venue ||
@@ -61,17 +67,22 @@ export function normalizeEvent(raw, source, now) {
     return null;
   const province = provinceFor(
     clean(raw.province || source.province),
-    `${venue} ${clean(raw.city)}`,
+    `${venue} ${clean(raw.city)} ${clean(raw.addressText)}`,
   );
   const country = clean(
     raw.country ||
       source.country ||
-      (Object.values(provinces).includes(province) ? "ZA" : ""),
+      (Object.values(provinces).includes(province) ||
+      /\bSouth Africa\b/i.test(raw.addressText || "")
+        ? "ZA"
+        : ""),
   );
   if (
     source.scope === "south-africa" &&
     (!/^(ZA|ZAF|RSA|South\s*Africa)$/i.test(country) ||
-      isForeignLocation(`${venue} ${clean(raw.province)} ${country}`))
+      isForeignLocation(
+        `${venue} ${clean(raw.province)} ${country} ${clean(raw.addressText)}`,
+      ))
   )
     return null;
   const uid =

@@ -75,6 +75,7 @@ jobs:
           git add -- public/website/data/events.json
           git commit -m 'Refresh verified motorsport and motoring events'
           git pull --rebase origin "$BRANCH"
+          node scripts/events/validate.mjs public/website/data/events.json
           git push origin "HEAD:$BRANCH"
           echo "changed=true" >> "$GITHUB_OUTPUT"
   deploy:

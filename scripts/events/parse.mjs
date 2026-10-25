@@ -92,21 +92,27 @@ export function parseIcs(text) {
   }
   return result;
 }
-function schemaEvents(value, output = []) {
+function schemaEvents(value, output = [], depth = 0) {
+  if (depth > 24) return output;
   if (Array.isArray(value))
-    for (const item of value) schemaEvents(item, output);
+    for (const item of value) schemaEvents(item, output, depth + 1);
   else if (value && typeof value === "object") {
     const types = Array.isArray(value["@type"])
       ? value["@type"]
       : [value["@type"]];
     if (
-      types.some((type) =>
-        /^(SportsEvent|Event|Festival|BusinessEvent)$/.test(type),
+      types.some(
+        (type) =>
+          typeof type === "string" &&
+          /^(SportsEvent|Event|Festival|BusinessEvent)$/.test(
+            type.replace(/^https?:\/\/schema.org\//, ""),
+          ),
       )
     )
       output.push(value);
     for (const item of Object.values(value))
-      if (item && typeof item === "object") schemaEvents(item, output);
+      if (item && typeof item === "object")
+        schemaEvents(item, output, depth + 1);
   }
   return output;
 }
@@ -131,6 +137,18 @@ export function parseHtml(text, base) {
           venue: typeof location === "string" ? location : location?.name,
           city: address?.addressLocality,
           province: address?.addressRegion,
+          addressText:
+            typeof address === "string"
+              ? clean(address)
+              : clean(
+                  [
+                    address?.streetAddress,
+                    address?.addressLocality,
+                    address?.addressRegion,
+                  ]
+                    .filter(Boolean)
+                    .join(" "),
+                ),
           country:
             typeof address?.addressCountry === "object"
               ? address.addressCountry.name
