@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "refreshedAt": "2026-10-29T10:52:22.460Z",
+  "refreshedAt": "2026-10-30T10:50:50.856Z",
   "coverage": {
     "internationalSeries": [
       "f1",
@@ -21,8 +21,8 @@
       "url": "https://www.formula1.com/en/racing/2026",
       "scope": "international",
       "series": "f1",
-      "checkedAt": "2026-10-29T10:52:22.460Z",
-      "lastSuccessAt": "2026-10-29T10:52:22.460Z",
+      "checkedAt": "2026-10-30T10:50:50.856Z",
+      "lastSuccessAt": "2026-10-30T10:50:50.856Z",
       "status": "ok",
       "parsed": 23
     },
@@ -32,8 +32,8 @@
       "url": "https://www.motogp.com/en/calendar",
       "scope": "international",
       "series": "motogp",
-      "checkedAt": "2026-10-29T10:52:22.460Z",
-      "lastSuccessAt": "2026-10-29T10:52:22.460Z",
+      "checkedAt": "2026-10-30T10:50:50.856Z",
+      "lastSuccessAt": "2026-10-30T10:50:50.856Z",
       "status": "ok",
       "parsed": 3
     },
@@ -43,10 +43,10 @@
       "url": "https://www.wrc.com/en/calendar",
       "scope": "international",
       "series": "wrc",
-      "checkedAt": "2026-10-29T10:52:22.460Z",
-      "lastSuccessAt": "2026-10-29T10:52:22.460Z",
+      "checkedAt": "2026-10-30T10:50:50.856Z",
+      "lastSuccessAt": "2026-10-30T10:50:50.856Z",
       "status": "ok",
-      "parsed": 28
+      "parsed": 15
     },
     {
       "id": "wec",
@@ -54,8 +54,8 @@
       "url": "https://www.fiawec.com/",
       "scope": "international",
       "series": "wec",
-      "checkedAt": "2026-10-29T10:52:22.460Z",
-      "lastSuccessAt": "2026-10-29T10:52:22.460Z",
+      "checkedAt": "2026-10-30T10:50:50.856Z",
+      "lastSuccessAt": "2026-10-30T10:50:50.856Z",
       "status": "ok",
       "parsed": 17
     },
@@ -65,8 +65,8 @@
       "url": "https://www.motorsport.co.za/events/",
       "scope": "south-africa",
       "series": "",
-      "checkedAt": "2026-10-29T10:52:22.460Z",
-      "lastSuccessAt": "2026-10-29T10:52:22.460Z",
+      "checkedAt": "2026-10-30T10:50:50.856Z",
+      "lastSuccessAt": "2026-10-30T10:50:50.856Z",
       "status": "ok",
       "parsed": 74
     },
@@ -76,8 +76,8 @@
       "url": "https://www.zwartkops.co.za/events/",
       "scope": "south-africa",
       "series": "",
-      "checkedAt": "2026-10-29T10:52:22.460Z",
-      "lastSuccessAt": "2026-10-29T10:52:22.460Z",
+      "checkedAt": "2026-10-30T10:50:50.856Z",
+      "lastSuccessAt": "2026-10-30T10:50:50.856Z",
       "status": "ok",
       "parsed": 23
     },
@@ -87,8 +87,8 @@
       "url": "https://www.bmwclubs.africa/bmw-clubs-africa/events/",
       "scope": "south-africa",
       "series": "",
-      "checkedAt": "2026-10-29T10:52:22.460Z",
-      "lastSuccessAt": "2026-10-29T10:52:22.460Z",
+      "checkedAt": "2026-10-30T10:50:50.856Z",
+      "lastSuccessAt": "2026-10-30T10:50:50.856Z",
       "status": "ok",
       "parsed": 11
     }
@@ -112,7 +112,7 @@
       "sourceId": "f1",
       "sourceName": "Formula 1",
       "sourceUrl": "https://www.formula1.com/en/racing/2026",
-      "verifiedAt": "2026-10-29T10:52:22.460Z"
+      "verifiedAt": "2026-10-30T10:50:50.856Z"
     },
     {
       "id": "62f641e18d13033402e7dc0c",
@@ -132,7 +132,7 @@
       "sourceId": "msa",
       "sourceName": "Motorsport South Africa",
       "sourceUrl": "https://www.motorsport.co.za/events/",
-      "verifiedAt": "2026-10-29T10:52:22.460Z"
+      "verifiedAt": "2026-10-30T10:50:50.856Z"
     },
     {
       "id": "d3d6181db0ae4df84a6036ae",
@@ -152,7 +152,7 @@
       "sourceId": "msa",
       "sourceName": "Motorsport South Africa",
       "sourceUrl": "https://www.motorsport.co.za/events/",
-      "verifiedAt": "2026-10-29T10:52:22.460Z"
+      "verifiedAt": "2026-10-30T10:50:50.856Z"
     },
     {
       "id": "7287d4a615a20f5bbbafa572",
@@ -172,7 +172,7 @@
       "sourceId": "msa",
       "sourceName": "Motorsport South Africa",
       "sourceUrl": "https://www.motorsport.co.za/events/",
-      "verifiedAt": "2026-10-29T10:52:22.460Z"
+      "verifiedAt": "2026-10-30T10:50:50.856Z"
     },
     {
       "id": "99d550a43e33ef8a57b11fb4",
@@ -192,7 +192,7 @@
       "sourceId": "msa",
       "sourceName": "Motorsport South Africa",
       "sourceUrl": "https://www.motorsport.co.za/events/",
-      "verifiedAt": "2026-10-29T10:52:22.460Z"
+      "verifiedAt": "2026-10-30T10:50:50.856Z"
     },
     {
       "id": "56b8d153db41eb0ba0432f0e",
@@ -212,7 +212,7 @@
       "sourceId": "msa",
       "sourceName": "Motorsport South Africa",
       "sourceUrl": "https://www.motorsport.co.za/events/",
-      "verifiedAt": "2026-10-29T10:52:22.460Z"
+      "verifiedAt": "2026-10-30T10:50:50.856Z"
     },
     {
       "id": "aea450fc0ba97e328dbed9e4",
@@ -232,7 +232,7 @@
       "sourceId": "zwartkops",
       "sourceName": "Zwartkops Raceway",
       "sourceUrl": "https://www.zwartkops.co.za/events/",
-      "verifiedAt": "2026-10-29T10:52:22.460Z"
+      "verifiedAt": "2026-10-30T10:50:50.856Z"
     },
     {
       "id": "41f6ff0eef0fb1bc54a982f4",
@@ -252,7 +252,7 @@
       "sourceId": "wec",
       "sourceName": "FIA World Endurance Championship",
       "sourceUrl": "https://www.fiawec.com/",
-      "verifiedAt": "2026-10-29T10:52:22.460Z"
+      "verifiedAt": "2026-10-30T10:50:50.856Z"
     },
     {
       "id": "531c55dfce6c3e183d678548",
@@ -272,7 +272,7 @@
       "sourceId": "f1",
       "sourceName": "Formula 1",
       "sourceUrl": "https://www.formula1.com/en/racing/2026",
-      "verifiedAt": "2026-10-29T10:52:22.460Z"
+      "verifiedAt": "2026-10-30T10:50:50.856Z"
     },
     {
       "id": "96809e9ad39f28b021f8ab5a",
@@ -292,7 +292,7 @@
       "sourceId": "motogp",
       "sourceName": "MotoGP",
       "sourceUrl": "https://www.motogp.com/en/calendar",
-      "verifiedAt": "2026-10-29T10:52:22.460Z"
+      "verifiedAt": "2026-10-30T10:50:50.856Z"
     },
     {
       "id": "fc69f49dc3f84f2785c51d24",
@@ -312,7 +312,7 @@
       "sourceId": "msa",
       "sourceName": "Motorsport South Africa",
       "sourceUrl": "https://www.motorsport.co.za/events/",
-      "verifiedAt": "2026-10-29T10:52:22.460Z"
+      "verifiedAt": "2026-10-30T10:50:50.856Z"
     },
     {
       "id": "3d7f1dbec70285f44684d589",
@@ -332,7 +332,7 @@
       "sourceId": "msa",
       "sourceName": "Motorsport South Africa",
       "sourceUrl": "https://www.motorsport.co.za/events/",
-      "verifiedAt": "2026-10-29T10:52:22.460Z"
+      "verifiedAt": "2026-10-30T10:50:50.856Z"
     },
     {
       "id": "1f83c31c4615c7f9476c6230",
@@ -352,7 +352,7 @@
       "sourceId": "msa",
       "sourceName": "Motorsport South Africa",
       "sourceUrl": "https://www.motorsport.co.za/events/",
-      "verifiedAt": "2026-10-29T10:52:22.460Z"
+      "verifiedAt": "2026-10-30T10:50:50.856Z"
     },
     {
       "id": "f5347717d7653c533e2ef250",
@@ -372,7 +372,7 @@
       "sourceId": "msa",
       "sourceName": "Motorsport South Africa",
       "sourceUrl": "https://www.motorsport.co.za/events/",
-      "verifiedAt": "2026-10-29T10:52:22.460Z"
+      "verifiedAt": "2026-10-30T10:50:50.856Z"
     },
     {
       "id": "e7fe19fe6244ef952e806097",
@@ -392,7 +392,7 @@
       "sourceId": "msa",
       "sourceName": "Motorsport South Africa",
       "sourceUrl": "https://www.motorsport.co.za/events/",
-      "verifiedAt": "2026-10-29T10:52:22.460Z"
+      "verifiedAt": "2026-10-30T10:50:50.856Z"
     },
     {
       "id": "7f1bd05b81b84ac07e80014b",
@@ -412,7 +412,7 @@
       "sourceId": "bmw-club",
       "sourceName": "BMW Clubs Africa — South African events",
       "sourceUrl": "https://www.bmwclubs.africa/bmw-clubs-africa/events/",
-      "verifiedAt": "2026-10-29T10:52:22.460Z"
+      "verifiedAt": "2026-10-30T10:50:50.856Z"
     },
     {
       "id": "a54dd11bf0760ed5a59b4dbf",
@@ -432,7 +432,7 @@
       "sourceId": "msa",
       "sourceName": "Motorsport South Africa",
       "sourceUrl": "https://www.motorsport.co.za/events/",
-      "verifiedAt": "2026-10-29T10:52:22.460Z"
+      "verifiedAt": "2026-10-30T10:50:50.856Z"
     },
     {
       "id": "35b029a80cbfd4e6f280d887",
@@ -452,7 +452,7 @@
       "sourceId": "bmw-club",
       "sourceName": "BMW Clubs Africa — South African events",
       "sourceUrl": "https://www.bmwclubs.africa/bmw-clubs-africa/events/",
-      "verifiedAt": "2026-10-29T10:52:22.460Z"
+      "verifiedAt": "2026-10-30T10:50:50.856Z"
     },
     {
       "id": "c61db48b68832876f9003c9c",
@@ -472,7 +472,7 @@
       "sourceId": "msa",
       "sourceName": "Motorsport South Africa",
       "sourceUrl": "https://www.motorsport.co.za/events/",
-      "verifiedAt": "2026-10-29T10:52:22.460Z"
+      "verifiedAt": "2026-10-30T10:50:50.856Z"
     },
     {
       "id": "072678178af85c2d8d992515",
@@ -492,7 +492,7 @@
       "sourceId": "msa",
       "sourceName": "Motorsport South Africa",
       "sourceUrl": "https://www.motorsport.co.za/events/",
-      "verifiedAt": "2026-10-29T10:52:22.460Z"
+      "verifiedAt": "2026-10-30T10:50:50.856Z"
     },
     {
       "id": "9712e5db85912e880001e3db",
@@ -512,7 +512,7 @@
       "sourceId": "msa",
       "sourceName": "Motorsport South Africa",
       "sourceUrl": "https://www.motorsport.co.za/events/",
-      "verifiedAt": "2026-10-29T10:52:22.460Z"
+      "verifiedAt": "2026-10-30T10:50:50.856Z"
     },
     {
       "id": "1ed9751ffbf35747911794ca",
@@ -532,7 +532,7 @@
       "sourceId": "msa",
       "sourceName": "Motorsport South Africa",
       "sourceUrl": "https://www.motorsport.co.za/events/",
-      "verifiedAt": "2026-10-29T10:52:22.460Z"
+      "verifiedAt": "2026-10-30T10:50:50.856Z"
     },
     {
       "id": "2a3d9c0262e7012018d55995",
@@ -552,7 +552,7 @@
       "sourceId": "msa",
       "sourceName": "Motorsport South Africa",
       "sourceUrl": "https://www.motorsport.co.za/events/",
-      "verifiedAt": "2026-10-29T10:52:22.460Z"
+      "verifiedAt": "2026-10-30T10:50:50.856Z"
     },
     {
       "id": "8e8bf6637f77902afd12980f",
@@ -572,7 +572,7 @@
       "sourceId": "msa",
       "sourceName": "Motorsport South Africa",
       "sourceUrl": "https://www.motorsport.co.za/events/",
-      "verifiedAt": "2026-10-29T10:52:22.460Z"
+      "verifiedAt": "2026-10-30T10:50:50.856Z"
     },
     {
       "id": "7f921d92983e9eb46ed121d3",
@@ -592,7 +592,7 @@
       "sourceId": "msa",
       "sourceName": "Motorsport South Africa",
       "sourceUrl": "https://www.motorsport.co.za/events/",
-      "verifiedAt": "2026-10-29T10:52:22.460Z"
+      "verifiedAt": "2026-10-30T10:50:50.856Z"
     },
     {
       "id": "b5ff55795caeb1fcd88ab0fb",
@@ -612,7 +612,7 @@
       "sourceId": "bmw-club",
       "sourceName": "BMW Clubs Africa — South African events",
       "sourceUrl": "https://www.bmwclubs.africa/bmw-clubs-africa/events/",
-      "verifiedAt": "2026-10-29T10:52:22.460Z"
+      "verifiedAt": "2026-10-30T10:50:50.856Z"
     },
     {
       "id": "312be9a1e5423f12e867724b",
@@ -632,7 +632,7 @@
       "sourceId": "zwartkops",
       "sourceName": "Zwartkops Raceway",
       "sourceUrl": "https://www.zwartkops.co.za/events/",
-      "verifiedAt": "2026-10-29T10:52:22.460Z"
+      "verifiedAt": "2026-10-30T10:50:50.856Z"
     },
     {
       "id": "654038db33943fd8d6b7ddef",
@@ -652,7 +652,7 @@
       "sourceId": "f1",
       "sourceName": "Formula 1",
       "sourceUrl": "https://www.formula1.com/en/racing/2026",
-      "verifiedAt": "2026-10-29T10:52:22.460Z"
+      "verifiedAt": "2026-10-30T10:50:50.856Z"
     },
     {
       "id": "1ff0530a09b49587e46c1460",
@@ -672,7 +672,7 @@
       "sourceId": "msa",
       "sourceName": "Motorsport South Africa",
       "sourceUrl": "https://www.motorsport.co.za/events/",
-      "verifiedAt": "2026-10-29T10:52:22.460Z"
+      "verifiedAt": "2026-10-30T10:50:50.856Z"
     },
     {
       "id": "2d0d1fa3af4fe94069179503",
@@ -692,7 +692,7 @@
       "sourceId": "motogp",
       "sourceName": "MotoGP",
       "sourceUrl": "https://www.motogp.com/en/calendar",
-      "verifiedAt": "2026-10-29T10:52:22.460Z"
+      "verifiedAt": "2026-10-30T10:50:50.856Z"
     },
     {
       "id": "1df15264c829f6257a9ef349",
@@ -712,7 +712,7 @@
       "sourceId": "zwartkops",
       "sourceName": "Zwartkops Raceway",
       "sourceUrl": "https://www.zwartkops.co.za/events/",
-      "verifiedAt": "2026-10-29T10:52:22.460Z"
+      "verifiedAt": "2026-10-30T10:50:50.856Z"
     },
     {
       "id": "8cefbed4d24421b733667a5a",
@@ -732,7 +732,7 @@
       "sourceId": "msa",
       "sourceName": "Motorsport South Africa",
       "sourceUrl": "https://www.motorsport.co.za/events/",
-      "verifiedAt": "2026-10-29T10:52:22.460Z"
+      "verifiedAt": "2026-10-30T10:50:50.856Z"
     },
     {
       "id": "1fd2558fa7a2ad13a008da28",
@@ -752,7 +752,7 @@
       "sourceId": "f1",
       "sourceName": "Formula 1",
       "sourceUrl": "https://www.formula1.com/en/racing/2026",
-      "verifiedAt": "2026-10-29T10:52:22.460Z"
+      "verifiedAt": "2026-10-30T10:50:50.856Z"
     },
     {
       "id": "982d2356754843d04d107a7c",
@@ -772,7 +772,7 @@
       "sourceId": "motogp",
       "sourceName": "MotoGP",
       "sourceUrl": "https://www.motogp.com/en/calendar",
-      "verifiedAt": "2026-10-29T10:52:22.460Z"
+      "verifiedAt": "2026-10-30T10:50:50.856Z"
     },
     {
       "id": "c056cc62e2e982137d5877e8",
@@ -792,7 +792,7 @@
       "sourceId": "msa",
       "sourceName": "Motorsport South Africa",
       "sourceUrl": "https://www.motorsport.co.za/events/",
-      "verifiedAt": "2026-10-29T10:52:22.460Z"
+      "verifiedAt": "2026-10-30T10:50:50.856Z"
     },
     {
       "id": "0a54d2d8ed016895fc91fc2d",
@@ -812,7 +812,7 @@
       "sourceId": "msa",
       "sourceName": "Motorsport South Africa",
       "sourceUrl": "https://www.motorsport.co.za/events/",
-      "verifiedAt": "2026-10-29T10:52:22.460Z"
+      "verifiedAt": "2026-10-30T10:50:50.856Z"
     },
     {
       "id": "ed2305cc45cbf04773ab49be",
@@ -832,7 +832,7 @@
       "sourceId": "msa",
       "sourceName": "Motorsport South Africa",
       "sourceUrl": "https://www.motorsport.co.za/events/",
-      "verifiedAt": "2026-10-29T10:52:22.460Z"
+      "verifiedAt": "2026-10-30T10:50:50.856Z"
     },
     {
       "id": "dadc2b4332ce79b6d08faf15",
@@ -852,7 +852,7 @@
       "sourceId": "f1",
       "sourceName": "Formula 1",
       "sourceUrl": "https://www.formula1.com/en/racing/2026",
-      "verifiedAt": "2026-10-29T10:52:22.460Z"
+      "verifiedAt": "2026-10-30T10:50:50.856Z"
     },
     {
       "id": "224f56c093dec4f735b6b22d",
@@ -872,7 +872,7 @@
       "sourceId": "bmw-club",
       "sourceName": "BMW Clubs Africa — South African events",
       "sourceUrl": "https://www.bmwclubs.africa/bmw-clubs-africa/events/",
-      "verifiedAt": "2026-10-29T10:52:22.460Z"
+      "verifiedAt": "2026-10-30T10:50:50.856Z"
     },
     {
       "id": "6d903b4fd1dc609a555e1d34",
@@ -892,7 +892,7 @@
       "sourceId": "zwartkops",
       "sourceName": "Zwartkops Raceway",
       "sourceUrl": "https://www.zwartkops.co.za/events/",
-      "verifiedAt": "2026-10-29T10:52:22.460Z"
+      "verifiedAt": "2026-10-30T10:50:50.856Z"
     },
     {
       "id": "e86b07be4ebc1e002c98de8b",
@@ -912,7 +912,7 @@
       "sourceId": "zwartkops",
       "sourceName": "Zwartkops Raceway",
       "sourceUrl": "https://www.zwartkops.co.za/events/",
-      "verifiedAt": "2026-10-29T10:52:22.460Z"
+      "verifiedAt": "2026-10-30T10:50:50.856Z"
     },
     {
       "id": "ca4ccc56a5b85c15be1a7f88",
@@ -932,7 +932,7 @@
       "sourceId": "wrc",
       "sourceName": "World Rally Championship",
       "sourceUrl": "https://www.wrc.com/en/calendar",
-      "verifiedAt": "2026-10-29T10:52:22.460Z"
+      "verifiedAt": "2026-10-30T10:50:50.856Z"
     },
     {
       "id": "11b99254dc1dc85a8c7f1022",
@@ -952,7 +952,7 @@
       "sourceId": "zwartkops",
       "sourceName": "Zwartkops Raceway",
       "sourceUrl": "https://www.zwartkops.co.za/events/",
-      "verifiedAt": "2026-10-29T10:52:22.460Z"
+      "verifiedAt": "2026-10-30T10:50:50.856Z"
     },
     {
       "id": "757246969c4f277153e31500",
@@ -972,7 +972,7 @@
       "sourceId": "wrc",
       "sourceName": "World Rally Championship",
       "sourceUrl": "https://www.wrc.com/en/calendar",
-      "verifiedAt": "2026-10-29T10:52:22.460Z"
+      "verifiedAt": "2026-10-30T10:50:50.856Z"
     },
     {
       "id": "bc4ede99221f794f84faca74",
@@ -992,7 +992,7 @@
       "sourceId": "wrc",
       "sourceName": "World Rally Championship",
       "sourceUrl": "https://www.wrc.com/en/calendar",
-      "verifiedAt": "2026-10-29T10:52:22.460Z"
+      "verifiedAt": "2026-10-30T10:50:50.856Z"
     },
     {
       "id": "6d73d893b828a3f321c5a920",
@@ -1012,7 +1012,7 @@
       "sourceId": "wec",
       "sourceName": "FIA World Endurance Championship",
       "sourceUrl": "https://www.fiawec.com/",
-      "verifiedAt": "2026-10-29T10:52:22.460Z"
+      "verifiedAt": "2026-10-30T10:50:50.856Z"
     },
     {
       "id": "874157e77270b1e676a74edc",
@@ -1032,7 +1032,7 @@
       "sourceId": "wrc",
       "sourceName": "World Rally Championship",
       "sourceUrl": "https://www.wrc.com/en/calendar",
-      "verifiedAt": "2026-10-29T10:52:22.460Z"
+      "verifiedAt": "2026-10-30T10:50:50.856Z"
     },
     {
       "id": "d9d89bc8022abfd696f7cccc",
@@ -1052,7 +1052,7 @@
       "sourceId": "wec",
       "sourceName": "FIA World Endurance Championship",
       "sourceUrl": "https://www.fiawec.com/",
-      "verifiedAt": "2026-10-29T10:52:22.460Z"
+      "verifiedAt": "2026-10-30T10:50:50.856Z"
     },
     {
       "id": "7cb99364b78fab71d5eff484",
@@ -1072,7 +1072,7 @@
       "sourceId": "wec",
       "sourceName": "FIA World Endurance Championship",
       "sourceUrl": "https://www.fiawec.com/",
-      "verifiedAt": "2026-10-29T10:52:22.460Z"
+      "verifiedAt": "2026-10-30T10:50:50.856Z"
     },
     {
       "id": "f7406802459b35b6ea4bb826",
@@ -1092,7 +1092,7 @@
       "sourceId": "wrc",
       "sourceName": "World Rally Championship",
       "sourceUrl": "https://www.wrc.com/en/calendar",
-      "verifiedAt": "2026-10-29T10:52:22.460Z"
+      "verifiedAt": "2026-10-30T10:50:50.856Z"
     },
     {
       "id": "fa5124237da60f107fc154a2",
@@ -1112,7 +1112,7 @@
       "sourceId": "wec",
       "sourceName": "FIA World Endurance Championship",
       "sourceUrl": "https://www.fiawec.com/",
-      "verifiedAt": "2026-10-29T10:52:22.460Z"
+      "verifiedAt": "2026-10-30T10:50:50.856Z"
     },
     {
       "id": "137f499a84dd8748b26798bd",
@@ -1132,7 +1132,7 @@
       "sourceId": "wrc",
       "sourceName": "World Rally Championship",
       "sourceUrl": "https://www.wrc.com/en/calendar",
-      "verifiedAt": "2026-10-29T10:52:22.460Z"
+      "verifiedAt": "2026-10-30T10:50:50.856Z"
     },
     {
       "id": "74196d0bb3f8006aeaee74f2",
@@ -1152,7 +1152,7 @@
       "sourceId": "wec",
       "sourceName": "FIA World Endurance Championship",
       "sourceUrl": "https://www.fiawec.com/",
-      "verifiedAt": "2026-10-29T10:52:22.460Z"
+      "verifiedAt": "2026-10-30T10:50:50.856Z"
     },
     {
       "id": "418f2c27cad5fc533433a7ed",
@@ -1172,7 +1172,7 @@
       "sourceId": "wrc",
       "sourceName": "World Rally Championship",
       "sourceUrl": "https://www.wrc.com/en/calendar",
-      "verifiedAt": "2026-10-29T10:52:22.460Z"
+      "verifiedAt": "2026-10-30T10:50:50.856Z"
     },
     {
       "id": "bf3c306b2ff7990f1e85706b",
@@ -1192,7 +1192,7 @@
       "sourceId": "wrc",
       "sourceName": "World Rally Championship",
       "sourceUrl": "https://www.wrc.com/en/calendar",
-      "verifiedAt": "2026-10-29T10:52:22.460Z"
+      "verifiedAt": "2026-10-30T10:50:50.856Z"
     },
     {
       "id": "85057477a28d86ca618ce433",
@@ -1212,7 +1212,7 @@
       "sourceId": "wec",
       "sourceName": "FIA World Endurance Championship",
       "sourceUrl": "https://www.fiawec.com/",
-      "verifiedAt": "2026-10-29T10:52:22.460Z"
+      "verifiedAt": "2026-10-30T10:50:50.856Z"
     },
     {
       "id": "0544f4f091183a0ff2bdc733",
@@ -1232,7 +1232,7 @@
       "sourceId": "wrc",
       "sourceName": "World Rally Championship",
       "sourceUrl": "https://www.wrc.com/en/calendar",
-      "verifiedAt": "2026-10-29T10:52:22.460Z"
+      "verifiedAt": "2026-10-30T10:50:50.856Z"
     },
     {
       "id": "94947138371c63e02b0a3f55",
@@ -1252,7 +1252,7 @@
       "sourceId": "wrc",
       "sourceName": "World Rally Championship",
       "sourceUrl": "https://www.wrc.com/en/calendar",
-      "verifiedAt": "2026-10-29T10:52:22.460Z"
+      "verifiedAt": "2026-10-30T10:50:50.856Z"
     },
     {
       "id": "25c4cf5c2884285a33337d02",
@@ -1272,7 +1272,7 @@
       "sourceId": "wrc",
       "sourceName": "World Rally Championship",
       "sourceUrl": "https://www.wrc.com/en/calendar",
-      "verifiedAt": "2026-10-29T10:52:22.460Z"
+      "verifiedAt": "2026-10-30T10:50:50.856Z"
     },
     {
       "id": "0c25dbf8857ca6a7c6cc620a",
@@ -1292,7 +1292,7 @@
       "sourceId": "wec",
       "sourceName": "FIA World Endurance Championship",
       "sourceUrl": "https://www.fiawec.com/",
-      "verifiedAt": "2026-10-29T10:52:22.460Z"
+      "verifiedAt": "2026-10-30T10:50:50.856Z"
     },
     {
       "id": "f7280c4d5ac4432647a22066",
@@ -1312,7 +1312,7 @@
       "sourceId": "wec",
       "sourceName": "FIA World Endurance Championship",
       "sourceUrl": "https://www.fiawec.com/",
-      "verifiedAt": "2026-10-29T10:52:22.460Z"
+      "verifiedAt": "2026-10-30T10:50:50.856Z"
     },
     {
       "id": "a62209f93e2e69188f2c3466",
@@ -1332,7 +1332,7 @@
       "sourceId": "wrc",
       "sourceName": "World Rally Championship",
       "sourceUrl": "https://www.wrc.com/en/calendar",
-      "verifiedAt": "2026-10-29T10:52:22.460Z"
+      "verifiedAt": "2026-10-30T10:50:50.856Z"
     },
     {
       "id": "d121d95919a9d021730d02fd",
@@ -1352,7 +1352,7 @@
       "sourceId": "wrc",
       "sourceName": "World Rally Championship",
       "sourceUrl": "https://www.wrc.com/en/calendar",
-      "verifiedAt": "2026-10-29T10:52:22.460Z"
+      "verifiedAt": "2026-10-30T10:50:50.856Z"
     }
   ]
 }
