@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "refreshedAt": "2026-11-14T11:25:08.845Z",
+  "refreshedAt": "2026-11-15T11:55:06.694Z",
   "coverage": {
     "internationalSeries": [
       "f1",
@@ -21,8 +21,8 @@
       "url": "https://www.formula1.com/en/racing/2026",
       "scope": "international",
       "series": "f1",
-      "checkedAt": "2026-11-14T11:25:08.845Z",
-      "lastSuccessAt": "2026-11-14T11:25:08.845Z",
+      "checkedAt": "2026-11-15T11:55:06.694Z",
+      "lastSuccessAt": "2026-11-15T11:55:06.694Z",
       "status": "ok",
       "parsed": 23
     },
@@ -32,7 +32,7 @@
       "url": "https://www.motogp.com/en/calendar",
       "scope": "international",
       "series": "motogp",
-      "checkedAt": "2026-11-14T11:25:08.845Z",
+      "checkedAt": "2026-11-15T11:55:06.694Z",
       "lastSuccessAt": "2026-11-08T11:14:37.727Z",
       "status": "unavailable",
       "parsed": 0
@@ -43,8 +43,8 @@
       "url": "https://www.wrc.com/en/calendar",
       "scope": "international",
       "series": "wrc",
-      "checkedAt": "2026-11-14T11:25:08.845Z",
-      "lastSuccessAt": "2026-11-14T11:25:08.845Z",
+      "checkedAt": "2026-11-15T11:55:06.694Z",
+      "lastSuccessAt": "2026-11-15T11:55:06.694Z",
       "status": "ok",
       "parsed": 28
     },
@@ -54,8 +54,8 @@
       "url": "https://www.fiawec.com/",
       "scope": "international",
       "series": "wec",
-      "checkedAt": "2026-11-14T11:25:08.845Z",
-      "lastSuccessAt": "2026-11-14T11:25:08.845Z",
+      "checkedAt": "2026-11-15T11:55:06.694Z",
+      "lastSuccessAt": "2026-11-15T11:55:06.694Z",
       "status": "ok",
       "parsed": 9
     },
@@ -65,10 +65,10 @@
       "url": "https://www.motorsport.co.za/events/",
       "scope": "south-africa",
       "series": "",
-      "checkedAt": "2026-11-14T11:25:08.845Z",
-      "lastSuccessAt": "2026-11-14T11:25:08.845Z",
+      "checkedAt": "2026-11-15T11:55:06.694Z",
+      "lastSuccessAt": "2026-11-15T11:55:06.694Z",
       "status": "ok",
-      "parsed": 81
+      "parsed": 94
     },
     {
       "id": "zwartkops",
@@ -76,8 +76,8 @@
       "url": "https://www.zwartkops.co.za/events/",
       "scope": "south-africa",
       "series": "",
-      "checkedAt": "2026-11-14T11:25:08.845Z",
-      "lastSuccessAt": "2026-11-14T11:25:08.845Z",
+      "checkedAt": "2026-11-15T11:55:06.694Z",
+      "lastSuccessAt": "2026-11-15T11:55:06.694Z",
       "status": "ok",
       "parsed": 12
     },
@@ -87,33 +87,13 @@
       "url": "https://www.bmwclubs.africa/bmw-clubs-africa/events/",
       "scope": "south-africa",
       "series": "",
-      "checkedAt": "2026-11-14T11:25:08.845Z",
+      "checkedAt": "2026-11-15T11:55:06.694Z",
       "lastSuccessAt": "2026-11-14T11:25:08.845Z",
-      "status": "ok",
-      "parsed": 4
+      "status": "unavailable",
+      "parsed": 0
     }
   ],
   "events": [
-    {
-      "id": "a54dd11bf0760ed5a59b4dbf",
-      "title": "FS REGIONAL & SPS CLUB OVAL DIRT CHAMPIONSHIPS",
-      "startDate": "2026-11-13",
-      "endDate": "2026-11-14",
-      "venue": "SCHOEMANSPARK SPEEDWAY, MAZELSPOORT ROAD, BLOEMFONTEIN",
-      "city": "",
-      "province": "Free State",
-      "country": "ZA",
-      "organizer": "DO4SA-SPS",
-      "category": "racing",
-      "scope": "south-africa",
-      "series": "",
-      "status": "scheduled",
-      "url": "https://www.motorsport.co.za/event/fs-regional-sps-club-oval-dirt-championships-5/",
-      "sourceId": "msa",
-      "sourceName": "Motorsport South Africa",
-      "sourceUrl": "https://www.motorsport.co.za/events/",
-      "verifiedAt": "2026-11-14T11:25:08.845Z"
-    },
     {
       "id": "35b029a80cbfd4e6f280d887",
       "title": "Kudu Kaya Weekend",
@@ -132,146 +112,6 @@
       "sourceId": "bmw-club",
       "sourceName": "BMW Clubs Africa — South African events",
       "sourceUrl": "https://www.bmwclubs.africa/bmw-clubs-africa/events/",
-      "verifiedAt": "2026-11-14T11:25:08.845Z"
-    },
-    {
-      "id": "c61db48b68832876f9003c9c",
-      "title": "POWERSERIES",
-      "startDate": "2026-11-13",
-      "endDate": "2026-11-14",
-      "venue": "KILLARNEY INTERNATIONAL RACEWAY",
-      "city": "",
-      "province": "Western Cape",
-      "country": "ZA",
-      "organizer": "WPMC",
-      "category": "racing",
-      "scope": "south-africa",
-      "series": "",
-      "status": "scheduled",
-      "url": "https://www.motorsport.co.za/event/powerseries-29/",
-      "sourceId": "msa",
-      "sourceName": "Motorsport South Africa",
-      "sourceUrl": "https://www.motorsport.co.za/events/",
-      "verifiedAt": "2026-11-14T11:25:08.845Z"
-    },
-    {
-      "id": "072678178af85c2d8d992515",
-      "title": "ROSEBOWL",
-      "startDate": "2026-11-13",
-      "endDate": "2026-11-14",
-      "venue": "SCHOEMANSPARK SPEEDWAY, MAZELSPOORT ROAD, BLOEMFONTEIN….",
-      "city": "",
-      "province": "Free State",
-      "country": "ZA",
-      "organizer": "DO4SA-SPS..",
-      "category": "racing",
-      "scope": "south-africa",
-      "series": "",
-      "status": "scheduled",
-      "url": "https://www.motorsport.co.za/event/rosebowl-2/",
-      "sourceId": "msa",
-      "sourceName": "Motorsport South Africa",
-      "sourceUrl": "https://www.motorsport.co.za/events/",
-      "verifiedAt": "2026-11-14T11:25:08.845Z"
-    },
-    {
-      "id": "9712e5db85912e880001e3db",
-      "title": "SAES NINE HOUR ENDURANCE",
-      "startDate": "2026-11-13",
-      "endDate": "2026-11-14",
-      "venue": "KYALAMI GRAND PRIX CIRCUIT",
-      "city": "",
-      "province": "Gauteng",
-      "country": "ZA",
-      "organizer": "SAES",
-      "category": "racing",
-      "scope": "south-africa",
-      "series": "",
-      "status": "scheduled",
-      "url": "https://www.motorsport.co.za/event/saes-nine-hour-endurance/",
-      "sourceId": "msa",
-      "sourceName": "Motorsport South Africa",
-      "sourceUrl": "https://www.motorsport.co.za/events/",
-      "verifiedAt": "2026-11-14T11:25:08.845Z"
-    },
-    {
-      "id": "1ed9751ffbf35747911794ca",
-      "title": "FKR SHIFTER SERIES",
-      "startDate": "2026-11-14",
-      "endDate": "2026-11-14",
-      "venue": "FORMULA K KART CIRCUIT",
-      "city": "",
-      "province": "Gauteng",
-      "country": "ZA",
-      "organizer": "FK",
-      "category": "racing",
-      "scope": "south-africa",
-      "series": "",
-      "status": "scheduled",
-      "url": "https://www.motorsport.co.za/event/fkr-shifter-series-8/",
-      "sourceId": "msa",
-      "sourceName": "Motorsport South Africa",
-      "sourceUrl": "https://www.motorsport.co.za/events/",
-      "verifiedAt": "2026-11-14T11:25:08.845Z"
-    },
-    {
-      "id": "2a3d9c0262e7012018d55995",
-      "title": "KZN REGIONAL ENDURO CHAMPIONSHIP – ESHOWE",
-      "startDate": "2026-11-14",
-      "endDate": "2026-11-14",
-      "venue": "ESHOWE",
-      "city": "",
-      "province": "KwaZulu-Natal",
-      "country": "ZA",
-      "organizer": "NEC",
-      "category": "bikes",
-      "scope": "south-africa",
-      "series": "",
-      "status": "scheduled",
-      "url": "https://www.motorsport.co.za/event/kzn-regional-enduro-championship-eshowe/",
-      "sourceId": "msa",
-      "sourceName": "Motorsport South Africa",
-      "sourceUrl": "https://www.motorsport.co.za/events/",
-      "verifiedAt": "2026-11-14T11:25:08.845Z"
-    },
-    {
-      "id": "8e8bf6637f77902afd12980f",
-      "title": "KZNRRC CLUB CHAMPIONSHIP",
-      "startDate": "2026-11-14",
-      "endDate": "2026-11-14",
-      "venue": "DEZZI RACEWAY, PORT SHEPSTONE",
-      "city": "",
-      "province": "KwaZulu-Natal",
-      "country": "ZA",
-      "organizer": "KZNRRC",
-      "category": "racing",
-      "scope": "south-africa",
-      "series": "",
-      "status": "scheduled",
-      "url": "https://www.motorsport.co.za/event/kznrrc-club-championship-8/",
-      "sourceId": "msa",
-      "sourceName": "Motorsport South Africa",
-      "sourceUrl": "https://www.motorsport.co.za/events/",
-      "verifiedAt": "2026-11-14T11:25:08.845Z"
-    },
-    {
-      "id": "7f921d92983e9eb46ed121d3",
-      "title": "ROCK RACEWAY CLUB CHAMPIONSHIP",
-      "startDate": "2026-11-14",
-      "endDate": "2026-11-14",
-      "venue": "ROCK RACEWAY, BRAKPAN",
-      "city": "",
-      "province": "Gauteng",
-      "country": "ZA",
-      "organizer": "SSP-ROCK RW",
-      "category": "racing",
-      "scope": "south-africa",
-      "series": "",
-      "status": "scheduled",
-      "url": "https://www.motorsport.co.za/event/rock-raceway-club-championship-4/",
-      "sourceId": "msa",
-      "sourceName": "Motorsport South Africa",
-      "sourceUrl": "https://www.motorsport.co.za/events/",
       "verifiedAt": "2026-11-14T11:25:08.845Z"
     },
     {
@@ -312,7 +152,7 @@
       "sourceId": "zwartkops",
       "sourceName": "Zwartkops Raceway",
       "sourceUrl": "https://www.zwartkops.co.za/events/",
-      "verifiedAt": "2026-11-14T11:25:08.845Z"
+      "verifiedAt": "2026-11-15T11:55:06.694Z"
     },
     {
       "id": "654038db33943fd8d6b7ddef",
@@ -332,18 +172,18 @@
       "sourceId": "f1",
       "sourceName": "Formula 1",
       "sourceUrl": "https://www.formula1.com/en/racing/2026",
-      "verifiedAt": "2026-11-14T11:25:08.845Z"
+      "verifiedAt": "2026-11-15T11:55:06.694Z"
     },
     {
       "id": "1ff0530a09b49587e46c1460",
       "title": "AMSC 3HR & PE 200",
       "startDate": "2026-11-20",
       "endDate": "2026-11-21",
-      "venue": "ALDO SCRIBANTE, EC",
+      "venue": "ALDO SCRIBANTE",
       "city": "",
       "province": "Eastern Cape",
       "country": "ZA",
-      "organizer": "",
+      "organizer": "AMSC",
       "category": "racing",
       "scope": "south-africa",
       "series": "",
@@ -352,7 +192,7 @@
       "sourceId": "msa",
       "sourceName": "Motorsport South Africa",
       "sourceUrl": "https://www.motorsport.co.za/events/",
-      "verifiedAt": "2026-11-14T11:25:08.845Z"
+      "verifiedAt": "2026-11-15T11:55:06.694Z"
     },
     {
       "id": "2d0d1fa3af4fe94069179503",
@@ -392,7 +232,7 @@
       "sourceId": "zwartkops",
       "sourceName": "Zwartkops Raceway",
       "sourceUrl": "https://www.zwartkops.co.za/events/",
-      "verifiedAt": "2026-11-14T11:25:08.845Z"
+      "verifiedAt": "2026-11-15T11:55:06.694Z"
     },
     {
       "id": "8cefbed4d24421b733667a5a",
@@ -412,7 +252,7 @@
       "sourceId": "msa",
       "sourceName": "Motorsport South Africa",
       "sourceUrl": "https://www.motorsport.co.za/events/",
-      "verifiedAt": "2026-11-14T11:25:08.845Z"
+      "verifiedAt": "2026-11-15T11:55:06.694Z"
     },
     {
       "id": "1fd2558fa7a2ad13a008da28",
@@ -432,7 +272,7 @@
       "sourceId": "f1",
       "sourceName": "Formula 1",
       "sourceUrl": "https://www.formula1.com/en/racing/2026",
-      "verifiedAt": "2026-11-14T11:25:08.845Z"
+      "verifiedAt": "2026-11-15T11:55:06.694Z"
     },
     {
       "id": "982d2356754843d04d107a7c",
@@ -472,7 +312,7 @@
       "sourceId": "msa",
       "sourceName": "Motorsport South Africa",
       "sourceUrl": "https://www.motorsport.co.za/events/",
-      "verifiedAt": "2026-11-14T11:25:08.845Z"
+      "verifiedAt": "2026-11-15T11:55:06.694Z"
     },
     {
       "id": "bbe02634b875fb34fa43e4d0",
@@ -492,7 +332,7 @@
       "sourceId": "msa",
       "sourceName": "Motorsport South Africa",
       "sourceUrl": "https://www.motorsport.co.za/events/",
-      "verifiedAt": "2026-11-14T11:25:08.845Z"
+      "verifiedAt": "2026-11-15T11:55:06.694Z"
     },
     {
       "id": "c056cc62e2e982137d5877e8",
@@ -512,7 +352,7 @@
       "sourceId": "msa",
       "sourceName": "Motorsport South Africa",
       "sourceUrl": "https://www.motorsport.co.za/events/",
-      "verifiedAt": "2026-11-14T11:25:08.845Z"
+      "verifiedAt": "2026-11-15T11:55:06.694Z"
     },
     {
       "id": "ff96f8b8861c6bc05750a3e9",
@@ -532,7 +372,7 @@
       "sourceId": "msa",
       "sourceName": "Motorsport South Africa",
       "sourceUrl": "https://www.motorsport.co.za/events/",
-      "verifiedAt": "2026-11-14T11:25:08.845Z"
+      "verifiedAt": "2026-11-15T11:55:06.694Z"
     },
     {
       "id": "bbe04de91e921d59d30e7605",
@@ -552,7 +392,7 @@
       "sourceId": "msa",
       "sourceName": "Motorsport South Africa",
       "sourceUrl": "https://www.motorsport.co.za/events/",
-      "verifiedAt": "2026-11-14T11:25:08.845Z"
+      "verifiedAt": "2026-11-15T11:55:06.694Z"
     },
     {
       "id": "0a54d2d8ed016895fc91fc2d",
@@ -572,7 +412,7 @@
       "sourceId": "msa",
       "sourceName": "Motorsport South Africa",
       "sourceUrl": "https://www.motorsport.co.za/events/",
-      "verifiedAt": "2026-11-14T11:25:08.845Z"
+      "verifiedAt": "2026-11-15T11:55:06.694Z"
     },
     {
       "id": "1d3e0306e6a70503634719f1",
@@ -592,18 +432,18 @@
       "sourceId": "msa",
       "sourceName": "Motorsport South Africa",
       "sourceUrl": "https://www.motorsport.co.za/events/",
-      "verifiedAt": "2026-11-14T11:25:08.845Z"
+      "verifiedAt": "2026-11-15T11:55:06.694Z"
     },
     {
       "id": "ed2305cc45cbf04773ab49be",
       "title": "RICHARDS BAY CLUB CHAMPIONSHIP",
       "startDate": "2026-11-28",
       "endDate": "2026-11-28",
-      "venue": "CERAMIC CURVE, RICHARDS BAY CENTRAL, RICHARDS BAY, GP",
+      "venue": "CERAMIC CURVE, RICHARDS BAY CENTRAL, RICHARDS BAY",
       "city": "",
-      "province": "KwaZulu-Natal",
+      "province": "Gauteng",
       "country": "ZA",
-      "organizer": "",
+      "organizer": "SSP-RICHARDS BAY",
       "category": "racing",
       "scope": "south-africa",
       "series": "",
@@ -612,7 +452,7 @@
       "sourceId": "msa",
       "sourceName": "Motorsport South Africa",
       "sourceUrl": "https://www.motorsport.co.za/events/",
-      "verifiedAt": "2026-11-14T11:25:08.845Z"
+      "verifiedAt": "2026-11-15T11:55:06.694Z"
     },
     {
       "id": "f8c3134a12a7f6ea0314f04d",
@@ -632,7 +472,7 @@
       "sourceId": "msa",
       "sourceName": "Motorsport South Africa",
       "sourceUrl": "https://www.motorsport.co.za/events/",
-      "verifiedAt": "2026-11-14T11:25:08.845Z"
+      "verifiedAt": "2026-11-15T11:55:06.694Z"
     },
     {
       "id": "a29be58d4d8cd30b83e2399e",
@@ -652,7 +492,7 @@
       "sourceId": "msa",
       "sourceName": "Motorsport South Africa",
       "sourceUrl": "https://www.motorsport.co.za/events/",
-      "verifiedAt": "2026-11-14T11:25:08.845Z"
+      "verifiedAt": "2026-11-15T11:55:06.694Z"
     },
     {
       "id": "9e2be41f706b91a5a244011a",
@@ -672,7 +512,7 @@
       "sourceId": "msa",
       "sourceName": "Motorsport South Africa",
       "sourceUrl": "https://www.motorsport.co.za/events/",
-      "verifiedAt": "2026-11-14T11:25:08.845Z"
+      "verifiedAt": "2026-11-15T11:55:06.694Z"
     },
     {
       "id": "54aace409cf5728fa13660cc",
@@ -692,7 +532,7 @@
       "sourceId": "msa",
       "sourceName": "Motorsport South Africa",
       "sourceUrl": "https://www.motorsport.co.za/events/",
-      "verifiedAt": "2026-11-14T11:25:08.845Z"
+      "verifiedAt": "2026-11-15T11:55:06.694Z"
     },
     {
       "id": "dadc2b4332ce79b6d08faf15",
@@ -712,18 +552,18 @@
       "sourceId": "f1",
       "sourceName": "Formula 1",
       "sourceUrl": "https://www.formula1.com/en/racing/2026",
-      "verifiedAt": "2026-11-14T11:25:08.845Z"
+      "verifiedAt": "2026-11-15T11:55:06.694Z"
     },
     {
       "id": "a21ee5b17c006bc5c71a4b61",
       "title": "BSCA CHALLENGE",
       "startDate": "2026-12-05",
       "endDate": "2026-12-05",
-      "venue": "SUMMERPRIDE SHOWGROUNDS, EAST LONDON",
+      "venue": "SUMMERPRIDE SHOWGROUNDS, EAST LONDON, EC",
       "city": "",
       "province": "Eastern Cape",
       "country": "ZA",
-      "organizer": "DO4SA-BSCA",
+      "organizer": "",
       "category": "racing",
       "scope": "south-africa",
       "series": "",
@@ -732,7 +572,7 @@
       "sourceId": "msa",
       "sourceName": "Motorsport South Africa",
       "sourceUrl": "https://www.motorsport.co.za/events/",
-      "verifiedAt": "2026-11-14T11:25:08.845Z"
+      "verifiedAt": "2026-11-15T11:55:06.694Z"
     },
     {
       "id": "72b92e3f6c22643e1ad3fa63",
@@ -752,7 +592,7 @@
       "sourceId": "msa",
       "sourceName": "Motorsport South Africa",
       "sourceUrl": "https://www.motorsport.co.za/events/",
-      "verifiedAt": "2026-11-14T11:25:08.845Z"
+      "verifiedAt": "2026-11-15T11:55:06.694Z"
     },
     {
       "id": "3988f69ccb0751764075b651",
@@ -772,18 +612,18 @@
       "sourceId": "msa",
       "sourceName": "Motorsport South Africa",
       "sourceUrl": "https://www.motorsport.co.za/events/",
-      "verifiedAt": "2026-11-14T11:25:08.845Z"
+      "verifiedAt": "2026-11-15T11:55:06.694Z"
     },
     {
       "id": "ad72020015e2d21d07d0476f",
       "title": "MAHEM RACEWAY CLUB CHAMPIONSHIP",
       "startDate": "2026-12-05",
       "endDate": "2026-12-05",
-      "venue": "MAHEM RACEWAY, ZANDFONTEIN, PRETORIA",
+      "venue": "MAHEM RACEWAY, ZANDFONTEIN, PRETORIA, GP",
       "city": "",
       "province": "Gauteng",
       "country": "ZA",
-      "organizer": "SSP-MAHEM RW",
+      "organizer": "",
       "category": "racing",
       "scope": "south-africa",
       "series": "",
@@ -792,7 +632,27 @@
       "sourceId": "msa",
       "sourceName": "Motorsport South Africa",
       "sourceUrl": "https://www.motorsport.co.za/events/",
-      "verifiedAt": "2026-11-14T11:25:08.845Z"
+      "verifiedAt": "2026-11-15T11:55:06.694Z"
+    },
+    {
+      "id": "3b408034d7a063bfdee789f7",
+      "title": "RIETKUIL RACEWAY CLUB CHAMPIONSHIP",
+      "startDate": "2026-12-05",
+      "endDate": "2026-12-05",
+      "venue": "RIETKUIL RACEWAY……",
+      "city": "",
+      "province": "Mpumalanga",
+      "country": "ZA",
+      "organizer": "SSP-RIETKUIL……",
+      "category": "racing",
+      "scope": "south-africa",
+      "series": "",
+      "status": "scheduled",
+      "url": "https://www.motorsport.co.za/event/rietkuil-raceway-club-championship-5/",
+      "sourceId": "msa",
+      "sourceName": "Motorsport South Africa",
+      "sourceUrl": "https://www.motorsport.co.za/events/",
+      "verifiedAt": "2026-11-15T11:55:06.694Z"
     },
     {
       "id": "224f56c093dec4f735b6b22d",
@@ -832,7 +692,7 @@
       "sourceId": "msa",
       "sourceName": "Motorsport South Africa",
       "sourceUrl": "https://www.motorsport.co.za/events/",
-      "verifiedAt": "2026-11-14T11:25:08.845Z"
+      "verifiedAt": "2026-11-15T11:55:06.694Z"
     },
     {
       "id": "06e860de783e3c638d005968",
@@ -852,7 +712,7 @@
       "sourceId": "msa",
       "sourceName": "Motorsport South Africa",
       "sourceUrl": "https://www.motorsport.co.za/events/",
-      "verifiedAt": "2026-11-14T11:25:08.845Z"
+      "verifiedAt": "2026-11-15T11:55:06.694Z"
     },
     {
       "id": "3f7c489bb75f7fdc75408132",
@@ -872,7 +732,7 @@
       "sourceId": "msa",
       "sourceName": "Motorsport South Africa",
       "sourceUrl": "https://www.motorsport.co.za/events/",
-      "verifiedAt": "2026-11-14T11:25:08.845Z"
+      "verifiedAt": "2026-11-15T11:55:06.694Z"
     },
     {
       "id": "4e078a940d1690ad27cedcc1",
@@ -892,7 +752,107 @@
       "sourceId": "msa",
       "sourceName": "Motorsport South Africa",
       "sourceUrl": "https://www.motorsport.co.za/events/",
-      "verifiedAt": "2026-11-14T11:25:08.845Z"
+      "verifiedAt": "2026-11-15T11:55:06.694Z"
+    },
+    {
+      "id": "d90aae3e4dec2a038df6baeb",
+      "title": "ROCK RACEWAY CLUB CHAMPIONSHIP",
+      "startDate": "2026-12-12",
+      "endDate": "2026-12-12",
+      "venue": "ROCK RACEWAY, BRAKPAN, GP",
+      "city": "",
+      "province": "Gauteng",
+      "country": "ZA",
+      "organizer": "",
+      "category": "racing",
+      "scope": "south-africa",
+      "series": "",
+      "status": "scheduled",
+      "url": "https://www.motorsport.co.za/event/rock-raceway-club-championship-5/",
+      "sourceId": "msa",
+      "sourceName": "Motorsport South Africa",
+      "sourceUrl": "https://www.motorsport.co.za/events/",
+      "verifiedAt": "2026-11-15T11:55:06.694Z"
+    },
+    {
+      "id": "647a847ad8af765907823e20",
+      "title": "WC REGIONAL & GEORGE MC CLUB OVAL DIRT CHAMPIONSHIPS (CHAMPION OF CHAMPIONS)",
+      "startDate": "2026-12-18",
+      "endDate": "2026-12-19",
+      "venue": "GEORGE SHOWGROUNDS, GEORGE",
+      "city": "",
+      "province": "Western Cape",
+      "country": "ZA",
+      "organizer": "DO4SA-GEORGE",
+      "category": "racing",
+      "scope": "south-africa",
+      "series": "",
+      "status": "scheduled",
+      "url": "https://www.motorsport.co.za/event/wc-regional-george-mc-club-oval-dirt-championships-champion-of-champions/",
+      "sourceId": "msa",
+      "sourceName": "Motorsport South Africa",
+      "sourceUrl": "https://www.motorsport.co.za/events/",
+      "verifiedAt": "2026-11-15T11:55:06.694Z"
+    },
+    {
+      "id": "983ef3a133f9125a16dbd2d3",
+      "title": "PEOTR HOLIDAY RACE",
+      "startDate": "2026-12-19",
+      "endDate": "2026-12-19",
+      "venue": "MISSION ROAD, GREENBUSHES, GQEBERHA",
+      "city": "",
+      "province": "Eastern Cape",
+      "country": "ZA",
+      "organizer": "DO4SA-PEOTR",
+      "category": "racing",
+      "scope": "south-africa",
+      "series": "",
+      "status": "scheduled",
+      "url": "https://www.motorsport.co.za/event/peotr-holiday-race/",
+      "sourceId": "msa",
+      "sourceName": "Motorsport South Africa",
+      "sourceUrl": "https://www.motorsport.co.za/events/",
+      "verifiedAt": "2026-11-15T11:55:06.694Z"
+    },
+    {
+      "id": "527245f3fee506253437fb95",
+      "title": "RICHARDS BAY CLUB CHAMPION OF CHAMPIONS",
+      "startDate": "2026-12-19",
+      "endDate": "2026-12-19",
+      "venue": "CERAMIC CURVE, RICHARDS BAY CENTRAL, RICHARDS BAY",
+      "city": "",
+      "province": "Gauteng",
+      "country": "ZA",
+      "organizer": "SSP-RICHARDS BAY",
+      "category": "racing",
+      "scope": "south-africa",
+      "series": "",
+      "status": "scheduled",
+      "url": "https://www.motorsport.co.za/event/richards-bay-club-champion-of-champions/",
+      "sourceId": "msa",
+      "sourceName": "Motorsport South Africa",
+      "sourceUrl": "https://www.motorsport.co.za/events/",
+      "verifiedAt": "2026-11-15T11:55:06.694Z"
+    },
+    {
+      "id": "baafeeaecaa9ea825708f865",
+      "title": "VICTORY RW 11TH ANNUAL ATTA VICTOR MEMORIAL",
+      "startDate": "2026-12-26",
+      "endDate": "2026-12-26",
+      "venue": "VICTORIA DRIVE, SCHOENMAKERSKOP, GQEBERHA",
+      "city": "",
+      "province": "Eastern Cape",
+      "country": "ZA",
+      "organizer": "DO4SA-VR",
+      "category": "racing",
+      "scope": "south-africa",
+      "series": "",
+      "status": "scheduled",
+      "url": "https://www.motorsport.co.za/event/victory-rw-11th-annual-atta-victor-memorial/",
+      "sourceId": "msa",
+      "sourceName": "Motorsport South Africa",
+      "sourceUrl": "https://www.motorsport.co.za/events/",
+      "verifiedAt": "2026-11-15T11:55:06.694Z"
     },
     {
       "id": "ca4ccc56a5b85c15be1a7f88",
@@ -912,7 +872,7 @@
       "sourceId": "wrc",
       "sourceName": "World Rally Championship",
       "sourceUrl": "https://www.wrc.com/en/calendar",
-      "verifiedAt": "2026-11-14T11:25:08.845Z"
+      "verifiedAt": "2026-11-15T11:55:06.694Z"
     },
     {
       "id": "11b99254dc1dc85a8c7f1022",
@@ -932,7 +892,7 @@
       "sourceId": "zwartkops",
       "sourceName": "Zwartkops Raceway",
       "sourceUrl": "https://www.zwartkops.co.za/events/",
-      "verifiedAt": "2026-11-14T11:25:08.845Z"
+      "verifiedAt": "2026-11-15T11:55:06.694Z"
     },
     {
       "id": "757246969c4f277153e31500",
@@ -952,7 +912,7 @@
       "sourceId": "wrc",
       "sourceName": "World Rally Championship",
       "sourceUrl": "https://www.wrc.com/en/calendar",
-      "verifiedAt": "2026-11-14T11:25:08.845Z"
+      "verifiedAt": "2026-11-15T11:55:06.694Z"
     },
     {
       "id": "bc4ede99221f794f84faca74",
@@ -972,7 +932,7 @@
       "sourceId": "wrc",
       "sourceName": "World Rally Championship",
       "sourceUrl": "https://www.wrc.com/en/calendar",
-      "verifiedAt": "2026-11-14T11:25:08.845Z"
+      "verifiedAt": "2026-11-15T11:55:06.694Z"
     },
     {
       "id": "6d73d893b828a3f321c5a920",
@@ -992,7 +952,7 @@
       "sourceId": "wec",
       "sourceName": "FIA World Endurance Championship",
       "sourceUrl": "https://www.fiawec.com/",
-      "verifiedAt": "2026-11-14T11:25:08.845Z"
+      "verifiedAt": "2026-11-15T11:55:06.694Z"
     },
     {
       "id": "874157e77270b1e676a74edc",
@@ -1012,7 +972,7 @@
       "sourceId": "wrc",
       "sourceName": "World Rally Championship",
       "sourceUrl": "https://www.wrc.com/en/calendar",
-      "verifiedAt": "2026-11-14T11:25:08.845Z"
+      "verifiedAt": "2026-11-15T11:55:06.694Z"
     },
     {
       "id": "d9d89bc8022abfd696f7cccc",
@@ -1032,7 +992,7 @@
       "sourceId": "wec",
       "sourceName": "FIA World Endurance Championship",
       "sourceUrl": "https://www.fiawec.com/",
-      "verifiedAt": "2026-11-14T11:25:08.845Z"
+      "verifiedAt": "2026-11-15T11:55:06.694Z"
     },
     {
       "id": "7cb99364b78fab71d5eff484",
@@ -1052,7 +1012,7 @@
       "sourceId": "wec",
       "sourceName": "FIA World Endurance Championship",
       "sourceUrl": "https://www.fiawec.com/",
-      "verifiedAt": "2026-11-14T11:25:08.845Z"
+      "verifiedAt": "2026-11-15T11:55:06.694Z"
     },
     {
       "id": "f7406802459b35b6ea4bb826",
@@ -1072,7 +1032,7 @@
       "sourceId": "wrc",
       "sourceName": "World Rally Championship",
       "sourceUrl": "https://www.wrc.com/en/calendar",
-      "verifiedAt": "2026-11-14T11:25:08.845Z"
+      "verifiedAt": "2026-11-15T11:55:06.694Z"
     },
     {
       "id": "fa5124237da60f107fc154a2",
@@ -1092,7 +1052,7 @@
       "sourceId": "wec",
       "sourceName": "FIA World Endurance Championship",
       "sourceUrl": "https://www.fiawec.com/",
-      "verifiedAt": "2026-11-14T11:25:08.845Z"
+      "verifiedAt": "2026-11-15T11:55:06.694Z"
     },
     {
       "id": "137f499a84dd8748b26798bd",
@@ -1112,7 +1072,7 @@
       "sourceId": "wrc",
       "sourceName": "World Rally Championship",
       "sourceUrl": "https://www.wrc.com/en/calendar",
-      "verifiedAt": "2026-11-14T11:25:08.845Z"
+      "verifiedAt": "2026-11-15T11:55:06.694Z"
     },
     {
       "id": "74196d0bb3f8006aeaee74f2",
@@ -1132,7 +1092,7 @@
       "sourceId": "wec",
       "sourceName": "FIA World Endurance Championship",
       "sourceUrl": "https://www.fiawec.com/",
-      "verifiedAt": "2026-11-14T11:25:08.845Z"
+      "verifiedAt": "2026-11-15T11:55:06.694Z"
     },
     {
       "id": "418f2c27cad5fc533433a7ed",
@@ -1152,7 +1112,7 @@
       "sourceId": "wrc",
       "sourceName": "World Rally Championship",
       "sourceUrl": "https://www.wrc.com/en/calendar",
-      "verifiedAt": "2026-11-14T11:25:08.845Z"
+      "verifiedAt": "2026-11-15T11:55:06.694Z"
     },
     {
       "id": "bf3c306b2ff7990f1e85706b",
@@ -1172,7 +1132,7 @@
       "sourceId": "wrc",
       "sourceName": "World Rally Championship",
       "sourceUrl": "https://www.wrc.com/en/calendar",
-      "verifiedAt": "2026-11-14T11:25:08.845Z"
+      "verifiedAt": "2026-11-15T11:55:06.694Z"
     },
     {
       "id": "85057477a28d86ca618ce433",
@@ -1192,7 +1152,7 @@
       "sourceId": "wec",
       "sourceName": "FIA World Endurance Championship",
       "sourceUrl": "https://www.fiawec.com/",
-      "verifiedAt": "2026-11-14T11:25:08.845Z"
+      "verifiedAt": "2026-11-15T11:55:06.694Z"
     },
     {
       "id": "0544f4f091183a0ff2bdc733",
@@ -1212,7 +1172,7 @@
       "sourceId": "wrc",
       "sourceName": "World Rally Championship",
       "sourceUrl": "https://www.wrc.com/en/calendar",
-      "verifiedAt": "2026-11-14T11:25:08.845Z"
+      "verifiedAt": "2026-11-15T11:55:06.694Z"
     },
     {
       "id": "94947138371c63e02b0a3f55",
@@ -1232,7 +1192,7 @@
       "sourceId": "wrc",
       "sourceName": "World Rally Championship",
       "sourceUrl": "https://www.wrc.com/en/calendar",
-      "verifiedAt": "2026-11-14T11:25:08.845Z"
+      "verifiedAt": "2026-11-15T11:55:06.694Z"
     },
     {
       "id": "a884d605dcf046414da7639f",
@@ -1252,7 +1212,7 @@
       "sourceId": "wrc",
       "sourceName": "World Rally Championship",
       "sourceUrl": "https://www.wrc.com/en/calendar",
-      "verifiedAt": "2026-11-14T11:25:08.845Z"
+      "verifiedAt": "2026-11-15T11:55:06.694Z"
     },
     {
       "id": "0c25dbf8857ca6a7c6cc620a",
@@ -1272,7 +1232,7 @@
       "sourceId": "wec",
       "sourceName": "FIA World Endurance Championship",
       "sourceUrl": "https://www.fiawec.com/",
-      "verifiedAt": "2026-11-14T11:25:08.845Z"
+      "verifiedAt": "2026-11-15T11:55:06.694Z"
     },
     {
       "id": "f7280c4d5ac4432647a22066",
@@ -1292,7 +1252,7 @@
       "sourceId": "wec",
       "sourceName": "FIA World Endurance Championship",
       "sourceUrl": "https://www.fiawec.com/",
-      "verifiedAt": "2026-11-14T11:25:08.845Z"
+      "verifiedAt": "2026-11-15T11:55:06.694Z"
     },
     {
       "id": "a62209f93e2e69188f2c3466",
@@ -1312,7 +1272,7 @@
       "sourceId": "wrc",
       "sourceName": "World Rally Championship",
       "sourceUrl": "https://www.wrc.com/en/calendar",
-      "verifiedAt": "2026-11-14T11:25:08.845Z"
+      "verifiedAt": "2026-11-15T11:55:06.694Z"
     },
     {
       "id": "57a15e83812f44791d1f0fdb",
@@ -1332,7 +1292,7 @@
       "sourceId": "wrc",
       "sourceName": "World Rally Championship",
       "sourceUrl": "https://www.wrc.com/en/calendar",
-      "verifiedAt": "2026-11-14T11:25:08.845Z"
+      "verifiedAt": "2026-11-15T11:55:06.694Z"
     },
     {
       "id": "d24eb59b516979b7c9931713",
@@ -1352,7 +1312,7 @@
       "sourceId": "wec",
       "sourceName": "FIA World Endurance Championship",
       "sourceUrl": "https://www.fiawec.com/",
-      "verifiedAt": "2026-11-14T11:25:08.845Z"
+      "verifiedAt": "2026-11-15T11:55:06.694Z"
     },
     {
       "id": "b1b7aac18380dd5fe9c27f28",
@@ -1372,7 +1332,7 @@
       "sourceId": "wrc",
       "sourceName": "World Rally Championship",
       "sourceUrl": "https://www.wrc.com/en/calendar",
-      "verifiedAt": "2026-11-14T11:25:08.845Z"
+      "verifiedAt": "2026-11-15T11:55:06.694Z"
     }
   ]
 }
